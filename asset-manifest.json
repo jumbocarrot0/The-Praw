@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/The-Praw/static/css/main.7b38250d.css",
+    "main.js": "/The-Praw/static/js/main.860cd5df.js",
+    "static/js/787.f04aa610.chunk.js": "/The-Praw/static/js/787.f04aa610.chunk.js",
+    "index.html": "/The-Praw/index.html",
+    "static/media/searchIcon.svg": "/The-Praw/static/media/searchIcon.4b174aba3ca9225719f55dc131b8d17e.svg",
+    "main.7b38250d.css.map": "/The-Praw/static/css/main.7b38250d.css.map",
+    "main.860cd5df.js.map": "/The-Praw/static/js/main.860cd5df.js.map",
+    "787.f04aa610.chunk.js.map": "/The-Praw/static/js/787.f04aa610.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b38250d.css",
+    "static/js/main.860cd5df.js"
+  ]
+}
