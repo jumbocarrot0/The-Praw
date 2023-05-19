@@ -10,6 +10,8 @@ export default function Footer() {
         Kevin Wilson for curating it into what it is today.
         <br />
         Bill Martinson for the Cosmodex, which this site started upon
+        <br />
+        Last updated 2023-05-19 11:28pm AEST
       </span>
     </footer>
   );
