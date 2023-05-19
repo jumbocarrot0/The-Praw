@@ -1,6 +1,6 @@
 import React, { createContext } from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
@@ -27,7 +27,7 @@ body.setAttribute("data-bs-theme", appThemeContext._currentValue) // This is so 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/The-Praw">
+    <HashRouter>
       <div className="App">
         <appThemeContext.Provider value={"dark"}>
           <Header />
@@ -43,7 +43,7 @@ root.render(
           <Footer />
         </appThemeContext.Provider>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
