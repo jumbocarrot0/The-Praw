@@ -41,7 +41,7 @@ export default function PrawNav() {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="https://github.com/jumbocarrot0/jumbocarrot0.github.io" target="_blank" rel="external">
+            <NavLink href="https://github.com/jumbocarrot0/The-Praw" target="_blank" rel="external">
               GitHub
             </NavLink>
           </NavItem>
