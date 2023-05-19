@@ -27,7 +27,7 @@ body.setAttribute("data-bs-theme", appThemeContext._currentValue) // This is so 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/The-Praw">
       <div className="App">
         <appThemeContext.Provider value={"dark"}>
           <Header />
