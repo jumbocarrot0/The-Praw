@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 // Reactstrap
 import {
@@ -10,7 +10,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-  NavbarText,
+  NavbarText
 } from 'reactstrap';
 
 // navigation links
@@ -26,24 +26,24 @@ export default function PrawNav() {
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar>
           <NavItem>
-            <NavLink href="/">
+            <Link className="nav-link" to="/">
               Home
-            </NavLink>
+            </Link>
           </NavItem>
           <NavItem>
-            <NavLink href="/Combos">
+            <Link className="nav-link" to="/Combos">
               Combos
-            </NavLink>
+            </Link>
           </NavItem>
           <NavItem>
-            <NavLink href="/Aliens">
+            <Link className="nav-link" to="/Aliens">
               Aliens
-            </NavLink>
+            </Link>
           </NavItem>
           <NavItem>
-            <NavLink href="https://github.com/jumbocarrot0/The-Praw" target="_blank" rel="external">
+            <Link className="nav-link" to="https://github.com/jumbocarrot0/The-Praw" target="_blank" rel="external">
               GitHub
-            </NavLink>
+            </Link>
           </NavItem>
         </Nav>
         <NavbarText>Powered by React</NavbarText>
