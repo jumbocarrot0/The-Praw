@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/The-Praw/static/css/main.7288930e.css",
-    "main.js": "/The-Praw/static/js/main.2a15e0ad.js",
+    "main.js": "/The-Praw/static/js/main.440bc43d.js",
     "static/js/787.f04aa610.chunk.js": "/The-Praw/static/js/787.f04aa610.chunk.js",
     "static/media/gridwallpaper.jpg": "/The-Praw/static/media/gridwallpaper.4ed625b9df813ed00df4.jpg",
     "index.html": "/The-Praw/index.html",
     "static/media/searchIcon.svg": "/The-Praw/static/media/searchIcon.4b174aba3ca9225719f55dc131b8d17e.svg",
     "main.7288930e.css.map": "/The-Praw/static/css/main.7288930e.css.map",
-    "main.2a15e0ad.js.map": "/The-Praw/static/js/main.2a15e0ad.js.map",
+    "main.440bc43d.js.map": "/The-Praw/static/js/main.440bc43d.js.map",
     "787.f04aa610.chunk.js.map": "/The-Praw/static/js/787.f04aa610.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7288930e.css",
-    "static/js/main.2a15e0ad.js"
+    "static/js/main.440bc43d.js"
   ]
 }
