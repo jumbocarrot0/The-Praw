@@ -5,7 +5,6 @@ import {
 import { useParams, Link } from "react-router-dom"
 import Aliens from '../dataFiles/originalAliens.json';
 import RevisedAliens from '../dataFiles/revisedAliens.json';
-import warpBG from '../images/gridwallpaper.jpg'
 
 function Phases(props) {
   if (props.flare && Object.values(props.phases).reduce((accumulator, phase) => accumulator && phase)) {

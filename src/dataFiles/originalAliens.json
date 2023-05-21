@@ -12582,7 +12582,7 @@
                 }
             },
             "history": "Originating on a highly ferrous planetoid, the Magnets thrived on the intense fields generated at its poles. Soon they achieved the ability to manipulate and reverse energy fields by group induction, and are now attempting to use their magnetic personalities to attract (and repel) all they meet.",
-            "wildBody": "As a amin player, before cards are selected, name one encounter card. Your opponent cannot select that card unless they have no other encounter cards (for example: attack 20).",
+            "wildBody": "As a main player, before cards are selected, name one encounter card. Your opponent cannot select that card unless they have no other encounter cards (for example: attack 20).",
             "wildTiming": {
                 "player": "Main Player Only",
                 "choice": "",

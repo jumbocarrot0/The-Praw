@@ -10,25 +10,6 @@ export default function AliensListPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const search = (searchParams.get('search') || '').toLowerCase();
 
-  Aliens.aliens.sort(function(a, b) {
-    const expansions = ["Base Set", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "42nd Anniversary Edition", "Cosmic Odyssey"]
-    console.log(a.expansion)
-    if (expansions.findIndex((e) => e === a.expansion) < expansions.findIndex((e) => e === b.expansion)) {
-      return -1;
-    }
-    else if (expansions.findIndex((e) => e === a.expansion) > expansions.findIndex((e) => e === b.expansion)) {
-      return 1;
-    } else {
-      if (a.name < b.name) {
-        return -1;
-      }
-      else if (a.name > b.name) {
-        return 1;
-      }
-    }
-    return 0;
-  })
-
   return (
     <main>
       <Container>
