@@ -29,3 +29,5 @@ favicon/
 /.vscode
 /src/dataFiles/old
 /old
+
+*.py

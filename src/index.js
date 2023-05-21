@@ -28,8 +28,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <HashRouter>
-      <div className="App">
-        <appThemeContext.Provider value={"dark"}>
+      <appThemeContext.Provider value={"dark"}>
+        <div className="App">
           <Header />
           {/* Content */}
           <main>
@@ -41,8 +41,8 @@ root.render(
             </Routes>
           </main>
           <Footer />
-        </appThemeContext.Provider>
-      </div>
+        </div>
+      </appThemeContext.Provider>
     </HashRouter>
   </React.StrictMode>
 );

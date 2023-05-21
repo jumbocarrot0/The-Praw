@@ -9,6 +9,11 @@ body {
   padding: 0;
 }
 
+div.App.throwback {
+  background-image: url("./images/gridwallpaper.jpg");
+  background-color: #000000;
+}
+
 [data-bs-theme="dark"] {
   --bs-heading-color: #fff;
   --bs-body-color: #cfd9e2;
@@ -16,6 +21,10 @@ body {
 
 p {
   white-space: pre-line;
+}
+
+.throwback {
+  color: #fff;
 }
 
 table.th-w-50 tbody tr th {

@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { createSearchParams, useNavigate, useSearchParams } from 'react-router-dom'
+import { createSearchParams, useNavigate
+  // , useSearchParams 
+} from 'react-router-dom'
 import { ReactComponent as SearchLogo } from '../searchIcon.svg';
 
 import {
@@ -9,8 +11,10 @@ import {
   InputGroupText
 } from 'reactstrap';
 
+import Aliens from '../dataFiles/originalAliens.json';
+
 export default function Home() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  // const [searchParams, setSearchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
@@ -21,14 +25,28 @@ export default function Home() {
         <p className="hero__subtitle">A Fan-Made Website for <a href="https://futurepastimes.com/cosmic-encounter-board-game">Cosmic Encounter</a></p>
         <form onSubmit={(event) => {
           event.preventDefault();
-          navigate({
-              pathname: `/Aliens`,
-              search: `?${createSearchParams([['search', searchQuery]])}`
+          const results = Object.keys(Aliens.aliens).filter((i) => {
+            return Aliens.aliens[i].name.toLowerCase().includes(searchQuery.toLowerCase())
           });
+          if (results.length === 1){
+            navigate({
+              pathname: `/Aliens/${results[0]}`
+          });
+          } else {
+            navigate({
+                pathname: `/Aliens`,
+                search: `?${createSearchParams([['search', searchQuery]])}`
+            });
+          }
         }}>
           <InputGroup>
             <Input placeholder="Search the Cosmos"
-              onChange={(e) => setSearchQuery(e.target.value)} />
+              value = {searchQuery}
+              onChange={(e) => {
+                if (!/[^A-Za-z0-9\-,]/.test(e.target.value)){
+                  setSearchQuery(e.target.value)
+                }
+              }} />
             <InputGroupText>
               <SearchLogo />
             </InputGroupText>

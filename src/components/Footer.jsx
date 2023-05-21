@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 // the footer
 export default function Footer() {
   return (
@@ -7,11 +9,13 @@ export default function Footer() {
         <br />
         Thanks to Bill Eberle, Jack Kittredge, Bill Norton & Peter Olotka for this amazing game.
         <br />
-        Kevin Wilson for curating it into what it is today.
+        Kevin Wilson for curating it the FFG edition that we play today.
         <br />
-        Bill Martinson for the Cosmodex, which this site started upon
+        Jack Reda for The Warp - <Link to="http://warp.redamedia.com/" target="_blank" rel="external">the original Cosmic Encounter fan site</Link> - as well as for his continued work on Cosmic Encounter.
         <br />
-        Last updated 2023-05-19 11:35pm AEST
+        Bill Martinson for the Cosmodex, which this site started upon.
+        <br />
+        Last updated 2023-May-21 7:35pm AEST
       </span>
     </footer>
   );

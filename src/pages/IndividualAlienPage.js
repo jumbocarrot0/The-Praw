@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import {
-  Container, Card, CardBody
+  Container, Card, Row, Col
 } from 'reactstrap';
 import { useParams, Link } from "react-router-dom"
 import Aliens from '../dataFiles/originalAliens.json';
 import RevisedAliens from '../dataFiles/revisedAliens.json';
+import warpBG from '../images/gridwallpaper.jpg'
 
 function Phases(props) {
   if (props.flare && Object.values(props.phases).reduce((accumulator, phase) => accumulator && phase)) {
@@ -33,8 +34,49 @@ export default function IndividualAlienPage(props) {
   const [alien, setAlien] = useState(Aliens.aliens[alienIndex])
   const [revised, setRevised] = useState(false)
 
-  return (
-    <main>
+  if (alien.name === 'Throwback') {
+    return (<Container className='throwback'>
+      <Row>
+        <Col xs={2}>
+        </Col>
+        <Col xs={8}>
+          <table width="100%" cellspacing="2" cellpadding="2" border="1" bgcolor="#800080">
+            <tbody>
+              <tr>
+                <td>
+                  <table width="100%" cellspacing="5" cellpadding="5" border="0" bgcolor="#000000">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <b>{alien.name.toUpperCase()}</b> [FFG:CO] {alien.short.toUpperCase()} <Link href="#">Fantasy Flight</Link>
+                          <p><strong>{alien.powerName}</strong> {alien.powerBody}</p>
+                          <p>
+                            <strong>History:</strong> {alien.history}
+                          </p>
+                          <p>
+                            <strong>Notes:</strong> The recommended experience level for this power is <strong>Expert</strong>. This is a <strong>Resource</strong> type power.
+                          </p>
+                          <p>
+                            <strong>Wild:</strong> {alien.wildBody}
+                          </p>
+                          <p>
+                            <strong>Super:</strong> {alien.superBody}
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </Col>
+        <Col xs={2}>
+        </Col>
+      </Row>
+    </Container>)
+  } else {
+    return (
       <Container>
         <ul className="nav nav-tabs ps-5 mx-5">
           <li className="nav-item">
@@ -79,7 +121,7 @@ export default function IndividualAlienPage(props) {
           }
         </Card>
       </Container>
-    </main>
-  );
+    );
+  }
 }
 
