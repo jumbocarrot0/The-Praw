@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {
-  Container, Card, CardBody, Row, Col
+  Container, Card, CardBody, Row, Col, CardHeader
 } from 'reactstrap';
 import { useParams, Link } from "react-router-dom"
 import Aliens from '../dataFiles/originalAliens.json';
@@ -119,6 +119,16 @@ export default function IndividualAlienPage(props) {
                 </div>
               ) : null
             }
+
+
+            {revised ? (
+              <Card className="bg-light border-warning border-5">
+                <CardBody>
+                  <p className="text-dark">{alien.notes}</p>
+                </CardBody>
+              </Card>
+            ) : null}
+
           </CardBody>
         </Card>
       </Container>
