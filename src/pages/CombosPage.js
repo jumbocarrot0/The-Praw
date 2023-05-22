@@ -10,7 +10,7 @@ function Combo(props) {
     <Table dark className="text-center w-50 th-w-50">
       <thead>
         <tr>
-          <th colSpan={2}>{props.Name}</th>
+          <th colSpan={2}><h2>{props.Name}</h2></th>
         </tr>
       </thead>
       <tbody>

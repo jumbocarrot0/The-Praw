@@ -12227,7 +12227,7 @@
         {
             "name": "Guardian",
             "alert": "Green",
-            "short": "",
+            "short": "Ships Are Worth More as Ally",
             "gameSetup": "",
             "powerName": "You have the power to Guard.",
             "powerBody": "As an ally, after encounter cards are revealed, use this power to change the value of your ships for encounter totals. Each of your ships is worth the number of ships that the main player on your side has in the encounter. For example, if the main player on your side has three ships in the encounter, each of your ships is worth three for encounter totals.",
@@ -13353,6 +13353,7 @@
         {
             "name": "Grumpus",
             "alert": "Green",
+            "altTimeline": true,
             "short": "Kicks Others Off Home System",
             "gameSetup": "",
             "powerName": "You have the power to Grrr-ump.",
@@ -13409,6 +13410,7 @@
         {
             "name": "Locust",
             "alert": "Yellow",
+            "altTimeline": true,
             "short": "Eats Planets",
             "gameSetup": "",
             "powerName": "You have the power to Consume.",
@@ -13522,6 +13524,7 @@
         {
             "name": "Micron",
             "alert": "Green",
+            "altTimeline": true,
             "short": "Ships are Worth 2",
             "gameSetup": "",
             "powerName": "You have the power of Mass Numbers.",
@@ -13636,7 +13639,7 @@
             "name": "Sadist",
             "alert": "Red",
             "altTimeline": true,
-            "short": "",
+            "short": "Defeats Ships to Win",
             "gameSetup": "",
             "powerName": "You have the power of Cruelty.",
             "powerBody": "When another player has at least eight ships in the warp, captured and/or out of the game, place a token under that player's colony marker. At the end of the resolution phase, if all other players have a token under their colony marker, use this power to win the game. You may still win the game via the normal manner. As a main player or ally, after your side wins the encounter, if any players on the other side would lose fewer than three ships to the warp, use this power to force each of those players to lose one additional ship to the warp.",
@@ -13696,7 +13699,8 @@
         {
             "name": "Schizoid",
             "alert": "Red",
-            "short": "",
+            "altTimeline": true,
+            "short": "Changes How the Game Ends",
             "gameSetup": "Choose one condition card from your essence card set and place it facedown on this sheet. Shuffle the remaining seven condition cards as a deck and place them facedown near this sheet. Ignore normal essence card rules.",
             "powerName": "You have the power to Shift Reality.",
             "powerBody": "As a main player, after you lose an encounter or fail to make a deal, the opposing main player draws a card at random from your condition deck and places it faceup on this sheet.\n\nWhen any player(s) would win by the normal (not alternate) victory conditions, use this power to prevent that win. When any player(s) would win by one of your conditions (faceup or facedown), use this power to declare them the winner(s).",
@@ -13810,6 +13814,7 @@
         {
             "name": "Zombie",
             "alert": "Green",
+            "altTimeline": true,
             "short": "Ships Never Stay in the Warp",
             "gameSetup": "",
             "powerName": "You have the power of Reanimation.",

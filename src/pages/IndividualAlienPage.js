@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {
-  Container, Card, Row, Col
+  Container, Card, CardBody, Row, Col
 } from 'reactstrap';
 import { useParams, Link } from "react-router-dom"
 import Aliens from '../dataFiles/originalAliens.json';
@@ -88,36 +88,38 @@ export default function IndividualAlienPage(props) {
           </li>
         </ul>
         <Card>
-          <h1>{alien.name}</h1>
-          <h3>{alien.alert}</h3>
-          {alien.gameSetup ? <p><strong>Game Setup:</strong> {alien.gameSetup}</p> : null}
-          <p><strong>{alien.powerName}</strong> {alien.powerBody}</p>
-          {alien.powerSpecialName ? <p><strong>{alien.powerSpecialName}</strong> {alien.powerSpecialBody}</p> : null}
-          <br />
-          <p><em>{alien.history}</em></p>
-          <p>({alien.powerTiming.player}) ({alien.powerTiming.choice}) <Phases phases={alien.powerTiming.phases} /></p>
-          <br />
-          <h3>Wild Flare</h3>
-          <p>{alien.wildBody}</p>
-          <p>({alien.wildTiming.player}) <Phases phases={alien.wildTiming.phases} flare /></p>
-          <br />
-          <h3>Super Flare</h3>
-          <p>{alien.superBody}</p>
-          <p>({alien.superTiming.player}) <Phases phases={alien.superTiming.phases} flare /></p>
-          <br />
-          <br />{
-            alien.wildClassicBody ? (
-              <div>
-                <h3>Classic Wild Flare</h3>
-                <p>{alien.wildClassicBody}</p>
-                <p>({alien.wildClassicTiming.player}) <Phases phases={alien.wildClassicTiming.phases} flare /></p>
-                <br />
-                <h3>Classic Super Flare</h3>
-                <p>{alien.superClassicBody}</p>
-                <p>({alien.superClassicTiming.player}) <Phases phases={alien.superClassicTiming.phases} flare /></p>
-              </div>
-            ) : null
-          }
+          <CardBody>
+            <h1 className='text-light'>{alien.name}</h1>
+            <h3>{alien.alert}</h3>
+            {alien.gameSetup ? <p><strong>Game Setup:</strong> {alien.gameSetup}</p> : null}
+            <p><strong>{alien.powerName}</strong> {alien.powerBody}</p>
+            {alien.powerSpecialName ? <p><strong>{alien.powerSpecialName}</strong> {alien.powerSpecialBody}</p> : null}
+            <br />
+            <p><em>{alien.history}</em></p>
+            <p>({alien.powerTiming.player}) ({alien.powerTiming.choice}) <Phases phases={alien.powerTiming.phases} /></p>
+            <br />
+            <h3>Wild Flare</h3>
+            <p>{alien.wildBody}</p>
+            <p>({alien.wildTiming.player}) <Phases phases={alien.wildTiming.phases} flare /></p>
+            <br />
+            <h3>Super Flare</h3>
+            <p>{alien.superBody}</p>
+            <p>({alien.superTiming.player}) <Phases phases={alien.superTiming.phases} flare /></p>
+            <br />
+            <br />{
+              alien.wildClassicBody ? (
+                <div>
+                  <h3>Classic Wild Flare</h3>
+                  <p>{alien.wildClassicBody}</p>
+                  <p>({alien.wildClassicTiming.player}) <Phases phases={alien.wildClassicTiming.phases} flare /></p>
+                  <br />
+                  <h3>Classic Super Flare</h3>
+                  <p>{alien.superClassicBody}</p>
+                  <p>({alien.superClassicTiming.player}) <Phases phases={alien.superClassicTiming.phases} flare /></p>
+                </div>
+              ) : null
+            }
+          </CardBody>
         </Card>
       </Container>
     );

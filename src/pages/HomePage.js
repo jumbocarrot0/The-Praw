@@ -8,7 +8,8 @@ import {
   Container,
   Input,
   InputGroup,
-  InputGroupText
+  InputGroupText,
+  Form
 } from 'reactstrap';
 
 import Aliens from '../dataFiles/originalAliens.json';
@@ -23,7 +24,7 @@ export default function Home() {
       <section className="hero text-center">
         <h1 className="hero__title">The Praw</h1>
         <p className="hero__subtitle">A Fan-Made Website for <a href="https://futurepastimes.com/cosmic-encounter-board-game">Cosmic Encounter</a></p>
-        <form onSubmit={(event) => {
+        <Form onSubmit={(event) => {
           event.preventDefault();
           const results = Object.keys(Aliens.aliens).filter((i) => {
             return Aliens.aliens[i].name.toLowerCase().includes(searchQuery.toLowerCase())
@@ -51,7 +52,7 @@ export default function Home() {
               <SearchLogo />
             </InputGroupText>
           </InputGroup>
-        </form>
+        </Form>
       </section>
     </Container>
   );
