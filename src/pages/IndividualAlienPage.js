@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {
-  Container, Card, CardBody, Row, Col, CardHeader
+  Container, Card, CardBody, Row, Col, CardHeader, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams, Link } from "react-router-dom"
 import Aliens from '../dataFiles/originalAliens.json';
@@ -36,14 +36,14 @@ export default function IndividualAlienPage(props) {
   if (alien.name === 'Throwback') {
     return (<Container className='throwback'>
       <Row>
-        <Col xs={2}>
+        <Col md={2}>
         </Col>
-        <Col xs={8}>
+        <Col md={8}>
           <table width="100%" cellspacing="2" cellpadding="2" border="1" bgcolor="#800080">
             <tbody>
               <tr>
                 <td>
-                  <table width="100%" cellspacing="5" cellpadding="5" border="0" bgcolor="#000000">
+                  <table width="100%" cellspacing="5" cellpadding="10" border="0" bgcolor="#000000">
                     <tbody>
                       <tr>
                         <td>
@@ -70,23 +70,25 @@ export default function IndividualAlienPage(props) {
             </tbody>
           </table>
         </Col>
-        <Col xs={2}>
+        <Col md={2}>
         </Col>
       </Row>
     </Container>)
   } else {
     return (
       <Container>
-        <ul className="nav nav-tabs ps-5 mx-5">
-          <li className="nav-item">
-            <Link className={"nav-link" + (revised ? "" : " active")} aria-current="page" to="#"
-              onClick={() => { setAlien(Aliens.aliens[alienIndex]); setRevised(false) }}>Original</Link>
-          </li>
-          <li className="nav-item">
-            <Link className={"nav-link" + (revised ? " active" : "")} to="#"
-              onClick={() => { setAlien(RevisedAliens.aliens[alienIndex]); setRevised(true) }}>Revised</Link>
-          </li>
-        </ul>
+        {Aliens.aliens[alienIndex] !== RevisedAliens.aliens[alienIndex] ?
+          <Nav className="ps-5 mx-5 border-bottom-0" tabs>
+            <NavItem>
+              <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
+                onClick={() => { setAlien(Aliens.aliens[alienIndex]); setRevised(false) }}>Original</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className={"nav-link" + (revised ? " active" : "")} href="#"
+                onClick={() => { setAlien(RevisedAliens.aliens[alienIndex]); setRevised(true) }}>Revised</NavLink>
+            </NavItem>
+          </Nav> : null
+        }
         <Card>
           <CardBody>
             <h1 className='text-light'>{alien.name}</h1>
@@ -121,10 +123,10 @@ export default function IndividualAlienPage(props) {
             }
 
 
-            {revised ? (
+            {revised && alien.revisionNotes ? (
               <Card className="bg-light border-warning border-5">
                 <CardBody>
-                  <p className="text-dark">{alien.notes}</p>
+                  <p className="text-dark">{alien.revisionNotes}</p>
                 </CardBody>
               </Card>
             ) : null}
