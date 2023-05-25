@@ -19,6 +19,7 @@ import Home from "./pages/HomePage"
 import Combos from "./pages/CombosPage"
 import AlienListPage from "./pages/AlienListPage"
 import IndividualAlienPage from "./pages/IndividualAlienPage"
+import VariantsListPage from './pages/VariantsListPage';
 
 import Aliens from './dataFiles/originalAliens.json';
 import revisedAlienData from './dataFiles/revisedAliens.json';
@@ -81,6 +82,7 @@ root.render(
               <Route path="/Combos" element={<Combos />} />
               <Route path="/Aliens/:alienIndex" element={<IndividualAlienPage />} />
               <Route path="/Aliens" element={<AlienListPage />} />
+              <Route path="/Variants" element={<VariantsListPage />} />
             </Routes>
           </main>
           <Footer />

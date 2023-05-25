@@ -4,7 +4,7 @@ import {
   Container,
   Card,
   CardBody,
-  CardHeader,
+  // CardHeader,
   Row,
   Col,
   Badge,
@@ -49,7 +49,7 @@ function Alien(props) {
 
 function filterAliens(aliens, search, expansions
   // , phases, exactPhases
-  ) {
+) {
   if (expansions.includes("42nd Anniversary Edition")) {
     expansions.push("Base Set");
   }
@@ -72,7 +72,7 @@ function filterAliens(aliens, search, expansions
 }
 
 export default function AliensListPage() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const searchParams = useSearchParams()[0];
   const submittedQuery = (searchParams.get('search') || '');
   const [searchQuery, setSearchQuery] = useState(submittedQuery);
 
@@ -117,9 +117,9 @@ export default function AliensListPage() {
 
   return (
     <Container>
-      <h1 className='mb-5'>Aliens</h1>
-      <Card className='mb-5 bg-light'>
-        <CardHeader>
+      <h1 className='mb-4'>Aliens</h1>
+      <Card className='mb-4 bg-light'>
+        <CardBody>
           <h2 className='text-dark mb-3'>Filters</h2>
           <Form onSubmit={
             (event) => {
@@ -204,8 +204,9 @@ export default function AliensListPage() {
               </Col> */}
             </Row>
           </Form>
-        </CardHeader>
+        </CardBody>
       </Card>
+      <hr class="border border-light border-2 opacity-100 mb-5" />
       {groupByN(3, filteredAliens).map((aliens) => {
         return (
           <Row>

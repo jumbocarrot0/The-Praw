@@ -9,7 +9,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
+  // NavLink,
   NavbarText
 } from 'reactstrap';
 
@@ -25,22 +25,27 @@ export default function PrawNav() {
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar>
-          <NavItem>
+          <NavItem key={0}>
             <Link className="nav-link" to="/">
               Home
             </Link>
           </NavItem>
-          <NavItem>
+          <NavItem key={1}>
             <Link className="nav-link" to="/Combos">
               Combos
             </Link>
           </NavItem>
-          <NavItem>
+          <NavItem key={2}>
             <Link className="nav-link" to="/Aliens">
               Aliens
             </Link>
           </NavItem>
-          <NavItem>
+          <NavItem key={3}>
+            <Link className="nav-link" to="/Variants">
+              Variants
+            </Link>
+          </NavItem>
+          <NavItem key={4}>
             <Link className="nav-link" to="https://github.com/jumbocarrot0/The-Praw" target="_blank" rel="external">
               GitHub
             </Link>
