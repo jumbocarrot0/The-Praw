@@ -15,7 +15,7 @@ export default function Footer() {
         <br />
         Bill Martinson for the Cosmodex, which this site started upon.
         <br />
-        Last updated 2023-May-23 8:10am AEST
+        Last updated 2023-May-25 5:50pm AEST
       </span>
     </footer>
   );
