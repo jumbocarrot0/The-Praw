@@ -212,7 +212,7 @@ export default function AliensListPage() {
           <Row>
             {aliens.map((alien) => {
               return (<Col lg={4}>
-                <Alien alien={alien} to={"/Aliens/" + alien.ID} />
+                <Alien alien={alien} to={`/Aliens/${alien.ID}`} />
               </Col>)
             })}
           </Row>

@@ -13,7 +13,7 @@ function Variant(props) {
     return (
         <Card className='mb-5'>
             <Link className="btn border border-5"
-                to="#" reloadDocument>
+                to={props.to} reloadDocument>
                 <CardBody>
                     <h2>{props.name}</h2>
                     <h6 className="align-items-center">
@@ -32,7 +32,7 @@ function Variant(props) {
 export default function VariantsListPage() {
 
     const variants = [
-        { name: "Technology", image: "", complexity: 2, desc: "Research Powerful Techs", href: "" },
+        { name: "Technology", image: "", complexity: 2, desc: "Research Powerful Techs", href: "/Variants/Tech" },
         { name: "Rewards Deck", image: "", complexity: 1, desc: "Special Deck for Rewards", href: "" },
         { name: "Hazards", image: "", complexity: 1, desc: "Random Events", href: "" },
         { name: "Space Stations", image: "", complexity: 2, desc: "Attach Abilities to Planets", href: "" },
@@ -60,7 +60,7 @@ export default function VariantsListPage() {
                     <Row>
                         {variants.map((variant) => {
                             return (<Col lg={4}>
-                                <Variant name={variant.name} desc={variant.desc} complexity={variant.complexity} />
+                                <Variant name={variant.name} desc={variant.desc} complexity={variant.complexity} to={variant.href}/>
                             </Col>)
                         })}
                     </Row>
