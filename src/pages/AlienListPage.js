@@ -18,6 +18,7 @@ import {
 } from 'reactstrap';
 import { Link } from "react-router-dom"
 import Aliens from '../dataFiles/originalAliens.json';
+import Layout from '../components/Layout'
 import { ReactComponent as SearchLogo } from '../searchIcon.svg';
 // import revisedAlienData from '../dataFiles/revisedAliens.json';
 
@@ -49,7 +50,7 @@ function Alien(props) {
 
 function filterAliens(aliens, search, expansions
   // , phases, exactPhases
-  ) {
+) {
   if (expansions.includes("42nd Anniversary Edition")) {
     expansions.push("Base Set");
   }
@@ -111,12 +112,12 @@ export default function AliensListPage() {
 
   let groupByN = (n, arr) => {
     let result = [];
-    for (let i = 0; i < arr.length; i += n) result.push(arr.slice(i, i + n));
+    for (let i = 0; i < arr.length; i += n) result.push({index: i, aliens: arr.slice(i, i + n)});
     return result;
   };
 
   return (
-    <Container>
+    <Layout>
       <h1 className='mb-5'>Aliens</h1>
       <Card className='mb-5 bg-light'>
         <CardHeader>
@@ -161,18 +162,17 @@ export default function AliensListPage() {
               <Col>
                 <h3 className='text-dark'>Expansions</h3>
                 {
-                  Object.keys(expansions).map((expansion) => {
-                    return (
-                      <FormGroup switch>
-                        <Input type="switch" role="switch"
-                          checked={expansions[expansion][0]}
-                          onChange={() => expansions[expansion][1](!expansions[expansion][0])} />
-                        <Label className="text-dark" check>
-                          {expansion}
-                        </Label>
-                      </FormGroup>
-                    )
-                  })
+                  Object.keys(expansions).map((expansion) => (
+                    <FormGroup key={expansion} switch>
+                      <Input type="switch" role="switch"
+                        checked={expansions[expansion][0]}
+                        onChange={() => expansions[expansion][1](!expansions[expansion][0])} />
+                      <Label className="text-dark" check>
+                        {expansion}
+                      </Label>
+                    </FormGroup>
+                  )
+                  )
                 }
               </Col>
               {/* <Col>
@@ -206,17 +206,18 @@ export default function AliensListPage() {
           </Form>
         </CardHeader>
       </Card>
-      {groupByN(3, filteredAliens).map((aliens) => {
-        return (
-          <Row>
-            {aliens.map((alien) => {
-              return (<Col lg={4}>
+      <div>
+        {groupByN(3, filteredAliens).map((aliens) => (
+          <Row key={aliens.index}>
+            {aliens.aliens.map((alien) => (
+              <Col key={alien.ID} lg={4}>
                 <Alien alien={alien} to={"/Aliens/" + alien.ID} />
               </Col>)
-            })}
+            )}
           </Row>
         )
-      })}
-    </Container>
+        )}
+      </div>
+    </Layout>
   );
 }

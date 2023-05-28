@@ -5,6 +5,7 @@ import {
 import { useParams, Link } from "react-router-dom"
 import Aliens from '../dataFiles/originalAliens.json';
 import RevisedAliens from '../dataFiles/revisedAliens.json';
+import Layout from '../components/Layout'
 
 function Phases(props) {
   if (props.flare && Object.values(props.phases).reduce((accumulator, phase) => accumulator && phase)) {
@@ -33,8 +34,8 @@ export default function IndividualAlienPage(props) {
   const [alien, setAlien] = useState(Aliens.aliens[alienIndex])
   const [revised, setRevised] = useState(false)
 
-  if (alien.name === 'Throwback') {
-    return (<Container className='throwback'>
+  if (alien.name === 'Throwback') { 
+    return (<Layout className='throwback'>
       <Row>
         <Col md={2}>
         </Col>
@@ -73,10 +74,10 @@ export default function IndividualAlienPage(props) {
         <Col md={2}>
         </Col>
       </Row>
-    </Container>)
+    </Layout>)
   } else {
     return (
-      <Container>
+      <Layout>
         {Aliens.aliens[alienIndex] !== RevisedAliens.aliens[alienIndex] ?
           <Nav className="ps-5 mx-5 border-bottom-0" tabs>
             <NavItem>
@@ -133,7 +134,7 @@ export default function IndividualAlienPage(props) {
 
           </CardBody>
         </Card>
-      </Container>
+      </Layout>
     );
   }
 }

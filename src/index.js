@@ -1,29 +1,30 @@
-import React, { 
+import React, {
   // createContext 
 } from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter, Routes, Route } from "react-router-dom"
+import { createHashRouter, createRoutesFromElements, Routes, Route, RouterProvider } from "react-router-dom"
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 // import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
-import './App.scss'
 
 // Components
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+// import Breadcrumbs from "./components/Breadcrumbs"
 
-//Pages
-import Home from "./pages/HomePage"
-import Combos from "./pages/CombosPage"
-import AlienListPage from "./pages/AlienListPage"
-import IndividualAlienPage from "./pages/IndividualAlienPage"
+//Routes
+import {routes} from "./routes"
+
 
 import Aliens from './dataFiles/originalAliens.json';
 import revisedAlienData from './dataFiles/revisedAliens.json';
 
-Aliens.aliens.sort(function(a, b) {
+// Reactstrap
+import { BreadcrumbItem } from 'reactstrap';
+
+Aliens.aliens.sort(function (a, b) {
   const expansions = ["Base Set", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "42nd Anniversary Edition", "Cosmic Odyssey"]
   // console.log(a.expansion)
   if (expansions.findIndex((e) => e === a.expansion) < expansions.findIndex((e) => e === b.expansion)) {
@@ -42,7 +43,7 @@ Aliens.aliens.sort(function(a, b) {
   return 0;
 })
 
-revisedAlienData.aliens.sort(function(a, b) {
+revisedAlienData.aliens.sort(function (a, b) {
   const expansions = ["Base Set", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "42nd Anniversary Edition", "Cosmic Odyssey"]
   // console.log(a.expansion)
   if (expansions.findIndex((e) => e === a.expansion) < expansions.findIndex((e) => e === b.expansion)) {
@@ -61,32 +62,12 @@ revisedAlienData.aliens.sort(function(a, b) {
   return 0;
 })
 
-// Context
-// export const appThemeContext = createContext("dark");
+const router = createHashRouter(routes
+);
 
-// const body = document.getElementById('body');
-// body.setAttribute("data-bs-theme", appThemeContext._currentValue) // This is so damn jank
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <HashRouter>
-      {/* <appThemeContext.Provider value={"dark"}> */}
-        <div className="App">
-          <Header />
-          {/* Content */}
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/Combos" element={<Combos />} />
-              <Route path="/Aliens/:alienIndex" element={<IndividualAlienPage />} />
-              <Route path="/Aliens" element={<AlienListPage />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      {/* </appThemeContext.Provider> */}
-    </HashRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

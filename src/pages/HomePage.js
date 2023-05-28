@@ -3,6 +3,7 @@ import { createSearchParams, useNavigate
   // , useSearchParams 
 } from 'react-router-dom'
 import { ReactComponent as SearchLogo } from '../searchIcon.svg';
+import Layout from '../components/Layout'
 
 import {
   Container,
@@ -20,7 +21,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
-    <Container>
+    <Layout>
       <section className="hero text-center">
         <h1 className="hero__title">The Praw</h1>
         <p className="hero__subtitle">A Fan-Made Website for <a href="https://futurepastimes.com/cosmic-encounter-board-game">Cosmic Encounter</a></p>
@@ -54,6 +55,6 @@ export default function Home() {
           </InputGroup>
         </Form>
       </section>
-    </Container>
+    </Layout>
   );
 }

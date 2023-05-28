@@ -4,6 +4,7 @@ import {
   Button, Table, Container, Row
 } from 'reactstrap';
 import { Link } from "react-router-dom"
+import Layout from '../components/Layout'
 
 function Combo(props) {
   return (
@@ -35,7 +36,7 @@ function RandomCombo() {
 export default function Combos() {
   const [combo, setCombo] = useState(RandomCombo())
   return (
-    <Container>
+    <Layout>
       <Row>
         <h1 className="text-center">Combos</h1>
         <div className="d-flex justify-content-center">
@@ -55,6 +56,6 @@ export default function Combos() {
           <Link className="btn btn-primary w-50" to="https://forms.gle/Xg7aXQsrtitM1dFw9" role="button" target="_blank" rel="external">Submit your own Combo!</Link>
         </div>
       </Row>
-    </Container>
+    </Layout>
   );
 }
