@@ -22,6 +22,8 @@ import IndividualAlienPage from "./pages/IndividualAlienPage"
 import VariantsListPage from './pages/VariantsListPage';
 import TechListPage from './pages/TechListPage';
 import IndividualTechPage from "./pages/IndividualTechPage"
+import HazardListPage from './pages/HazardListPage';
+import IndividualHazardPage from "./pages/IndividualHazardPage"
 
 import Aliens from './dataFiles/originalAliens.json';
 import revisedAlienData from './dataFiles/revisedAliens.json';
@@ -87,6 +89,8 @@ root.render(
               <Route path="/Variants" element={<VariantsListPage />} />
               <Route path="/Variants/Tech" element={<TechListPage />} />
               <Route path="/Variants/Tech/:techIndex" element={<IndividualTechPage />} />
+              <Route path="/Variants/Hazard" element={<HazardListPage />} />
+              <Route path="/Variants/Hazard/:hazardIndex" element={<IndividualHazardPage />} />
             </Routes>
           </main>
           <Footer />

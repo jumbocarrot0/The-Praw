@@ -12,7 +12,8 @@ import { Link } from "react-router-dom"
 function Variant(props) {
     return (
         <Card className='mb-5'>
-            <Link className="btn border border-5"
+            <Link className={"btn btn-dark border border-5 " +
+            (props.complexity === 1 ? "border-success" : props.complexity === 2 ? "border-warning" : "border-danger")}
                 to={props.to} reloadDocument>
                 <CardBody>
                     <h2>{props.name}</h2>
@@ -34,7 +35,7 @@ export default function VariantsListPage() {
     const variants = [
         { name: "Technology", image: "", complexity: 2, desc: "Research Powerful Techs", href: "/Variants/Tech" },
         { name: "Rewards Deck", image: "", complexity: 1, desc: "Special Deck for Rewards", href: "" },
-        { name: "Hazards", image: "", complexity: 1, desc: "Random Events", href: "" },
+        { name: "Hazards", image: "", complexity: 1, desc: "Random Events", href: "/Variants/Hazard" },
         { name: "Space Stations", image: "", complexity: 2, desc: "Attach Abilities to Planets", href: "" },
         { name: "Evolutions", image: "", complexity: 2, desc: "Mutate with Ships", href: "" },
         { name: "Moons", image: "", complexity: 3, desc: "Discover Abilities on Planets", href: "" },

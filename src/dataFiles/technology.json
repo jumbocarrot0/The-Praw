@@ -929,7 +929,7 @@
                 "name": "Station Dock",
                 "refresh": false,
                 "short": "Create a Space Station.",
-                "body": "During the regroup phase, you may discard this tech to draw three space station cards (even if the Space Station variant (\u00f0\u0178\u2022\u00ae13) is not being used). Choose one to put into play in your home system and shuffle the other back into the space station deck.",
+                "body": "During the regroup phase, you may discard this tech to draw three space station cards (even if the Space Station variant [\u00f0\u0178\u2022\u00ae13]is not being used). Choose one to put into play in your home system and shuffle the other back into the space station deck.",
                 "cost": "5",
                 "type": "Tech",
                 "timing": {
@@ -944,7 +944,7 @@
                 "name": "Station Dock",
                 "refresh": false,
                 "short": "Create a Space Station.",
-                "body": "During the regroup phase, you may discard this tech to draw three space station cards (even if the Space Station variant [\u00f0\u0178\u2022\u00ae13]is not being used). Choose one to put into play in your home system and shuffle the other back into the space station deck.",
+                "body": "During the regroup phase, you may discard this tech to draw three space station cards (even if the Space Station variant [\u00f0\u0178\u2022\u00ae13] is not being used). Choose one to put into play in your home system and shuffle the other back into the space station deck.",
                 "cost": "5",
                 "type": "Tech",
                 "timing": {
@@ -954,7 +954,7 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
+                "revisionNotes": "Revisions from The Praw\n\nEdited to add a missing space."
             }
         },
         "26": {
