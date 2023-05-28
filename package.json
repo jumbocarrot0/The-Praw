@@ -1,6 +1,5 @@
 {
   "name": "praw",
-  "version": "0.1.0",
   "homepage": "https://jumbocarrot0.github.io/The-Praw/",
   "private": true,
   "dependencies": {
