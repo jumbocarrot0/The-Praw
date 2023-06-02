@@ -9,10 +9,10 @@
             },
             "revised": {
                 "name": "Alliance",
-                "body": "Place one of your ships from one of your colonies on this card and give it to another player. For the rest of the game, the two of you have an alliance. When either of you is the main player in an encounter, they must always invite their ally.",
+                "body": "The offense places one ship from any of their colonies onto this card and give it to another player. For the rest of the game, those players alliance. When either are a main player in an encounter, they must always invite their ally.",
                 "expansion": "Base Set",
                 "type": "Permanent",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency."
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency.\n\n\nRevisions from The Praw\n\nEdited to remove an ambigious use of the 'you' pronoun."
             }
         },
         "1": {

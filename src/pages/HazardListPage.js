@@ -11,19 +11,21 @@ import {
 } from 'reactstrap';
 import { Link } from "react-router-dom"
 import Hazards from '../dataFiles/hazard.json';
+import GridBrowser from "../components/GridBrowser";
 
 function Hazard(props) {
+  const hazard = props.content.original;
   return (
     <Card className='mb-5'>
       <Link className={"btn btn-light border border-5 " +
-        (props.hazard.type === "SemiPermanent" ? "border-warning" : props.hazard.type === "Permanent" ? "border-danger" : "border-light")
+        (hazard.type === "SemiPermanent" ? "border-warning" : hazard.type === "Permanent" ? "border-danger" : hazard.type === "AltHazard" ? "border-success" : "border-secondary")
       } to={props.to} reloadDocument>
         <CardBody>
-          <h2 className="text-dark">{props.hazard.name}</h2>
+          <h2 className="text-dark">{hazard.name}</h2>
           <h6 className="align-items-center">
             <Badge className="text-light border border-2 border-light"
               color="dark">
-              {props.hazard.expansion}
+              {hazard.expansion}
             </Badge>
           </h6>
         </CardBody>
@@ -60,19 +62,15 @@ export default function HazardListPage() {
       <p className="text-light">Hazards are an official variant introduced in Cosmic Conflict. The variant adds an additional hazard deck which is drawn from whenever a destiny card with a hazard warning is drawn (which is roughly 25% of the destiny deck).
         <br />
         Cosmic Conflict introduced 17 hazard cards, 8 of which had duplicated to create a 24-card deck. Cosmic Odyssey introduced an additional 26 cards to bring the total up to 50 hazard cards.</p>
-
+      <h2>Trivia</h2>
+      <ul>
+        <li className="text-light">Alt-Hazards were originally called Armistices during playtesting.</li>
+      </ul>
       <hr class="border border-light border-2 opacity-100 mb-5" />
-      {groupByN(3, Object.keys(Hazards.hazards)).map((hazards) => {
-        return (
-          <Row>
-            {hazards.map((hazardIndex) => {
-              return (<Col lg={4}>
-                <Hazard hazard={Hazards.hazards[hazardIndex].original} to={`/Variants/Hazard/${hazardIndex}`} />
-              </Col>)
-            })}
-          </Row>
-        )
-      })}
+      <GridBrowser cardTemplate={Hazard}
+        url="/Variants/Hazard"
+        content={Hazards.hazards}
+      />
     </Container>
   );
 }

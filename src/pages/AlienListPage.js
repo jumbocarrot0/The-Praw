@@ -17,30 +17,31 @@ import {
 
 } from 'reactstrap';
 import { Link } from "react-router-dom"
-import Aliens from '../dataFiles/originalAliens.json';
+import Aliens from '../dataFiles/aliens.json';
 import { ReactComponent as SearchLogo } from '../searchIcon.svg';
-// import revisedAlienData from '../dataFiles/revisedAliens.json';
+import GridBrowser from "../components/GridBrowser";
 
 function Alien(props) {
+  const alien = props.content.original
   return (
     <Card className='mb-5'>
       <Link className={"btn border border-5 " +
-        (props.alien.altTimeline ? "btn-dark " : "btn-light ") +
-        (props.alien.alert === "Green" ? "border-success" : props.alien.alert === "Yellow" ? "border-warning" : "border-danger")
+        (alien.altTimeline ? "btn-dark " : "btn-light ") +
+        (alien.alert === "Green" ? "border-success" : alien.alert === "Yellow" ? "border-warning" : "border-danger")
       } to={props.to} reloadDocument>
         <CardBody>
-          <h2 className={!props.alien.altTimeline ? "text-dark" : null}>{props.alien.name}</h2>
+          <h2 className={!alien.altTimeline ? "text-dark" : null}>{alien.name}</h2>
           <h6 className="align-items-center">
-            <Badge className={props.alien.alert === "Yellow" ? " text-dark" : ""}
-              color={props.alien.alert === "Green" ? "success" : props.alien.alert === "Yellow" ? "warning" : "danger"}>
-              {props.alien.alert}
+            <Badge className={alien.alert === "Yellow" ? " text-dark" : ""}
+              color={alien.alert === "Green" ? "success" : alien.alert === "Yellow" ? "warning" : "danger"}>
+              {alien.alert}
             </Badge>
-            {props.alien.altTimeline ? (
+            {alien.altTimeline ? (
               <Badge className="ms-3 text-dark" color="light">
                 AT
               </Badge>) : null}
           </h6>
-          <strong>{props.alien.short}</strong>
+          <strong>{alien.short}</strong>
         </CardBody>
       </Link>
     </Card>
@@ -54,20 +55,16 @@ function filterAliens(aliens, search, expansions
     expansions.push("Base Set");
   }
 
-  let filteredAliens = Object.keys(aliens).map((i) => {
-    let newAlien = aliens[i];
-    newAlien.ID = i;
-    return newAlien;
-  });
+  let filteredAliens = Object.entries(aliens);
 
-  filteredAliens = filteredAliens.filter((alien) => alien.name.toLowerCase().includes(search.toLowerCase()))
-  filteredAliens = filteredAliens.filter((alien) => expansions.includes(alien.expansion))
+  filteredAliens = filteredAliens.filter((alien) => alien[1].original.name.toLowerCase().includes(search.toLowerCase()))
+  filteredAliens = filteredAliens.filter((alien) => expansions.includes(alien[1].original.expansion))
   // if (exactPhases){
   //   filteredAliens = filteredAliens.filter((alien) => phases === Object.keys(alien.phases).filter((phase) => alien.phases[phase]).map((phase) => phase))
   // } else {
   //   filteredAliens = filteredAliens.filter((alien) => phases.filter(phase => alien.phases[phase]).length > 0)
   // }
-  return filteredAliens
+  return Object.fromEntries(filteredAliens)
 
 }
 
@@ -109,11 +106,28 @@ export default function AliensListPage() {
 
   const filteredAliens = filterAliens(Aliens.aliens, submittedQuery, submittedExpansions)
 
-  let groupByN = (n, arr) => {
-    let result = [];
-    for (let i = 0; i < arr.length; i += n) result.push(arr.slice(i, i + n));
-    return result;
-  };
+  // filteredAliens = Object.entries(filteredAliens)
+  
+  // filteredAliens.sort(function(a, b) {
+  //   const expansions = ["Base Set", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "42nd Anniversary Edition", "Cosmic Odyssey"]
+  //   // console.log(a.expansion)
+  //   if (expansions.findIndex((e) => e === a[1].original.expansion) < expansions.findIndex((e) => e === b[1].original.expansion)) {
+  //     return -1;
+  //   }
+  //   else if (expansions.findIndex((e) => e === a[1].original.expansion) > expansions.findIndex((e) => e === b[1].original.expansion)) {
+  //     return 1;
+  //   } else {
+  //     if (a[1].original.name < b[1].original.name) {
+  //       return -1;
+  //     }
+  //     else if (a[1].original.name > b[1].original.name) {
+  //       return 1;
+  //     }
+  //   }
+  //   return 0;
+  // })
+  
+  // filteredAliens = Object.fromEntries(filteredAliens)
 
   return (
     <Container>
@@ -129,7 +143,7 @@ export default function AliensListPage() {
               console.log(results)
               if (results.length === 1) {
                 navigate({
-                  pathname: `/Aliens/${results[0].ID}`
+                  pathname: `/Aliens/${Object.keys(results)[0]}`
                 });
               } else {
                 navigate({
@@ -207,17 +221,10 @@ export default function AliensListPage() {
         </CardBody>
       </Card>
       <hr class="border border-light border-2 opacity-100 mb-5" />
-      {groupByN(3, filteredAliens).map((aliens) => {
-        return (
-          <Row>
-            {aliens.map((alien) => {
-              return (<Col lg={4}>
-                <Alien alien={alien} to={`/Aliens/${alien.ID}`} />
-              </Col>)
-            })}
-          </Row>
-        )
-      })}
+      <GridBrowser cardTemplate={Alien}
+        url="/Aliens"
+        content={filteredAliens}
+      />
     </Container>
   );
 }

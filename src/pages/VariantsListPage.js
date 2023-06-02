@@ -36,7 +36,7 @@ export default function VariantsListPage() {
         { name: "Technology", image: "", complexity: 2, desc: "Research Powerful Techs", href: "/Variants/Tech" },
         { name: "Rewards Deck", image: "", complexity: 1, desc: "Special Deck for Rewards", href: "" },
         { name: "Hazards", image: "", complexity: 1, desc: "Random Events", href: "/Variants/Hazard" },
-        { name: "Space Stations", image: "", complexity: 2, desc: "Attach Abilities to Planets", href: "" },
+        { name: "Space Stations", image: "", complexity: 2, desc: "Attach Abilities to Planets", href: "/Variants/Stations" },
         { name: "Evolutions", image: "", complexity: 2, desc: "Mutate with Ships", href: "" },
         { name: "Moons", image: "", complexity: 3, desc: "Discover Abilities on Planets", href: "" },
         { name: "Lux", image: "", complexity: 3, desc: "Stardust Economy", href: "" },

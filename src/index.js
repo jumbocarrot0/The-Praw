@@ -24,53 +24,17 @@ import TechListPage from './pages/TechListPage';
 import IndividualTechPage from "./pages/IndividualTechPage"
 import HazardListPage from './pages/HazardListPage';
 import IndividualHazardPage from "./pages/IndividualHazardPage"
+import StationListPage from './pages/StationListPage';
+import IndividualStationPage from "./pages/IndividualStationPage"
 
-import Aliens from './dataFiles/originalAliens.json';
-import revisedAlienData from './dataFiles/revisedAliens.json';
-
-Aliens.aliens.sort(function(a, b) {
-  const expansions = ["Base Set", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "42nd Anniversary Edition", "Cosmic Odyssey"]
-  // console.log(a.expansion)
-  if (expansions.findIndex((e) => e === a.expansion) < expansions.findIndex((e) => e === b.expansion)) {
-    return -1;
-  }
-  else if (expansions.findIndex((e) => e === a.expansion) > expansions.findIndex((e) => e === b.expansion)) {
-    return 1;
-  } else {
-    if (a.name < b.name) {
-      return -1;
-    }
-    else if (a.name > b.name) {
-      return 1;
-    }
-  }
-  return 0;
-})
-
-revisedAlienData.aliens.sort(function(a, b) {
-  const expansions = ["Base Set", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "42nd Anniversary Edition", "Cosmic Odyssey"]
-  // console.log(a.expansion)
-  if (expansions.findIndex((e) => e === a.expansion) < expansions.findIndex((e) => e === b.expansion)) {
-    return -1;
-  }
-  else if (expansions.findIndex((e) => e === a.expansion) > expansions.findIndex((e) => e === b.expansion)) {
-    return 1;
-  } else {
-    if (a.name < b.name) {
-      return -1;
-    }
-    else if (a.name > b.name) {
-      return 1;
-    }
-  }
-  return 0;
-})
+import Aliens from './dataFiles/aliens.json';
 
 // Context
 // export const appThemeContext = createContext("dark");
 
 // const body = document.getElementById('body');
 // body.setAttribute("data-bs-theme", appThemeContext._currentValue) // This is so damn jank
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -91,6 +55,8 @@ root.render(
               <Route path="/Variants/Tech/:techIndex" element={<IndividualTechPage />} />
               <Route path="/Variants/Hazard" element={<HazardListPage />} />
               <Route path="/Variants/Hazard/:hazardIndex" element={<IndividualHazardPage />} />
+              <Route path="/Variants/Stations" element={<StationListPage />} />
+              <Route path="/Variants/Stations/:stationIndex" element={<IndividualStationPage />} />
             </Routes>
           </main>
           <Footer />

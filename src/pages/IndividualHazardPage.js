@@ -14,22 +14,25 @@ export default function IndividualHazardPage(props) {
 
   return (
     <Container>
-      {Hazards.technologies[hazardIndex].revised ?
+      {Hazards.hazards[hazardIndex].revised ?
         <Nav className="ps-5 mx-5 border-bottom-0" tabs>
           <NavItem>
             <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
-              onClick={() => { setHazard(Hazards.technologies[hazardIndex].original); setRevised(false) }}>Original</NavLink>
+              onClick={() => { setHazard(Hazards.hazards[hazardIndex].original); setRevised(false) }}>Original</NavLink>
           </NavItem>
           <NavItem>
             <NavLink className={"nav-link" + (revised ? " active" : "")} href="#"
-              onClick={() => { setHazard(Hazards.technologies[hazardIndex].revised); setRevised(true) }}>Revised</NavLink>
+              onClick={() => { setHazard(Hazards.hazards[hazardIndex].revised); setRevised(true) }}>Revised</NavLink>
           </NavItem>
         </Nav> : null
       }
       <Card>
         <CardBody>
           <h1 className='text-light'>{hazard.name}</h1>
-          <p>{hazard.body}</p>
+          {hazard.type === "AltHazard" ? <p><strong>Offense:</strong>{hazard.body}<br/><br/><strong>Others:</strong>{hazard.body2}</p> :
+            <p>{hazard.body}</p>}
+            {hazard.type === "Permanent" ? <p><strong>(This Card Remains in Play)</strong></p> :
+              hazard.type === "SemiPermanent" ? <p><strong>(Semi-Permanent)</strong></p> : null}
           <br />
 
 

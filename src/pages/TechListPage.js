@@ -9,26 +9,32 @@ import {
   Badge
 
 } from 'reactstrap';
+import Button from '../components/Button'
 import { Link } from "react-router-dom"
 import Techs from '../dataFiles/technology.json';
+import GridBrowser from "../components/GridBrowser";
 
 function Tech(props) {
+  const tech = props.content.original
+  const navigate = useNavigate();
+
   return (
     <Card className='mb-5'>
-      <Link className={"btn btn-light border border-5 " +
-        (props.tech.type === "Mili-Tech" ? "border-success" : props.tech.type === "Haz-Tech" ? "border-danger" : "border-warning")
-      } to={props.to} reloadDocument>
+      <Button color="light"
+        width={5}
+        border={tech.type === "Mili-Tech" ? "success" : tech.type === "Haz-Tech" ? "danger" : "warning"}
+        onClick={() => navigate(props.to)}>
         <CardBody>
-          <h2 className="text-dark">{props.tech.name}</h2>
+          <h2 className="text-dark">{tech.name}</h2>
           <h6 className="align-items-center">
             <Badge className="text-light border border-2 border-light"
               color="dark">
-              {props.tech.expansion}
+              {tech.expansion}
             </Badge>
           </h6>
-          <strong>{props.tech.short}</strong>
+          <strong>{tech.short}</strong>
         </CardBody>
-      </Link>
+      </Button>
     </Card>
   )
 }
@@ -59,20 +65,13 @@ export default function TechListPage() {
     <Container>
       <h1 className='mb-4'>Technology</h1>
       <p className="text-light">Technology is an official variant introduced in the base set of Cosmic Encounter. In it, players draw tech cards and keep them facedown. Each regroup phase, a player may research a facedown tech using their ships. One fully researched, techs grant useful abilities to its owner.
-      <br/>
-      The base set includes 20 regular tech cards. Cosmic Odyssey introduced an additional 25 tech cards, including new mili-tech and haz-tech types that are completed in different ways.</p>
+        <br />
+        The base set includes 20 regular tech cards. Cosmic Odyssey introduced an additional 25 tech cards, including new mili-tech and haz-tech types that are completed in different ways.</p>
       <hr class="border border-light border-2 opacity-100 mb-5" />
-      {groupByN(3, Object.keys(Techs.technologies)).map((techs) => {
-        return (
-          <Row>
-            {techs.map((techIndex) => {
-              return (<Col lg={4}>
-                <Tech tech={Techs.technologies[techIndex].original} to={`/Variants/Tech/${techIndex}`} />
-              </Col>)
-            })}
-          </Row>
-        )
-      })}
+      <GridBrowser cardTemplate={Tech}
+        url="/Variants/Tech"
+        content={Techs.technologies}
+      />
     </Container>
   );
 }
