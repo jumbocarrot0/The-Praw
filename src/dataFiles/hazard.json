@@ -20,13 +20,13 @@
                 "name": "Black Hole",
                 "body": "During this encounter, ships that would be lost to the warp are instead removed from the game entirely. A player cannot have fewer ships left in the game than the number of foreign colonies required to win. Any ships lost that would reduce a player below this number are sent to the warp after all.",
                 "expansion": "Base Set",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Black Hole",
                 "body": "During this encounter, ships that would be lost to the warp are instead removed from the game. A player cannot have fewer ships left in the game than the number of foreign colonies required to win. Any ships lost that would reduce a player below this number are sent to the warp as usual.",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency."
             }
         },
@@ -50,13 +50,13 @@
                 "name": "Cosmic Nebula",
                 "body": "During this encounter, any alien powers that are used are immediately zapped.",
                 "expansion": "Base Set",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Cosmic Nebula",
                 "body": "During this encounter, any alien powers that are used are immediately zapped.",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": ""
             }
         },
@@ -65,13 +65,13 @@
                 "name": "Cosmic Upheaval",
                 "body": "Immediately shuffle all players' hands together and then deal each player back as many cards as he or she had beforehand. No cards may be played in response to this card.",
                 "expansion": "Base Set",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Cosmic Upheaval",
                 "body": "Immediately shuffle all players' hands together and then deal each player back as many cards as they had beforehand. No cards may be played in response to this card.",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": "Revisions from The Praw\n\nEdited to include gender-neutral language."
             }
         },
@@ -80,13 +80,13 @@
                 "name": "Energy Fields",
                 "body": "Each main player draws two cards, showing them to the other players, before allies are invited.",
                 "expansion": "Base Set",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Energy Fields",
                 "body": "Before allies are invited, each main player draws two cards from the deck, showing them to all players.",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify that the card draws came from the cosmic deck, to eliminate the ambiguity of whether \"the other players\" means the non-main players or all players, and to remove redundancy.\n\n\nRevisions from The Praw\n\nEdited to making the timing clearer when hazard is drawn in destiny."
             }
         },
@@ -110,14 +110,14 @@
                 "name": "Galactic Council",
                 "body": "Instead of having a normal encounter, all of the players in the game have three minutes to make a deal. All players must accept the deal or it fails. If the deal fails, all players lose 3 ships to the warp.",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\n"
             },
             "revised": {
                 "name": "Galactic Council",
                 "body": "Instead of having a normal encounter, proceed to the reveal phase. All of the players in the game have three minutes to make a deal. All players must accept the deal or it fails. If the deal fails, all players lose 3 ships to the warp.",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify that the encounter skips ahead to the reveal phase."
             }
         },
@@ -126,13 +126,13 @@
                 "name": "It's Full of Stars...",
                 "body": "During this encounter, allies may send ships from the warp into the encounter (normal max applies). If the ships survive the encounter, they do not return to the warp.",
                 "expansion": "Base Set",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "It's Full of Stars...",
                 "body": "During this encounter, allies may retrieve ships from the warp to send into the encounter (the normal limit of four applies).",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited to properly use the game term \"retrieve\" (for consistency with Super Observer and clarity with effects that trigger on ship retrieval), to strike its overclarifying final sentence (to avoid any rules-lawyering against effects that send winning ships to the warp), and to eliminate sloppy \"max\" shorthand."
             }
         },
@@ -141,13 +141,13 @@
                 "name": "Meteor Storm",
                 "body": "During this encounter, if both main players reveal attack cards, add together the totals of both sides. If the combined total is over 25, a deadly meteor storm is triggered by the fighting, causing both sides to lose, regardless of other game effects.",
                 "expansion": "Base Set",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Meteor Storm",
                 "body": "During this encounter, if both main players reveal attack cards, add together the totals of both sides. If the combined total is over 25, a deadly meteor storm is triggered by the fighting, causing both sides to lose, regardless of other game effects.",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": ""
             }
         },
@@ -156,13 +156,13 @@
                 "name": "Mirror Universe",
                 "body": "Immediately flip over both the discard pile and the deck. The deck becomes the new discard pile and vice versa. Afterwards, shuffle the new deck.",
                 "expansion": "Base Set",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Mirror Universe",
                 "body": "Immediately flip over both the discard pile and the deck. The deck becomes the new discard pile and vice versa. Afterwards, shuffle the new deck.",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": ""
             }
         },
@@ -171,13 +171,13 @@
                 "name": "Odd Way to Win a War",
                 "body": "During this encounter, if one main player reveals an odd-numbered attack card and the other reveals an even-numbered attack card, the player who revealed the odd-numbered attack card automatically wins the encounter.",
                 "expansion": "Base Set",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Odd Way to Win a War",
                 "body": "During this encounter, if one main player reveals an odd-numbered attack card and the other reveals an even-numbered attack card, the player who revealed the odd-numbered attack card automatically wins the encounter.",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": ""
             }
         },
@@ -186,13 +186,13 @@
                 "name": "Psychic Switcheroo",
                 "body": "For the duration of this encounter, the two main players trade powers. This includes everything that goes with a power, such as the Miser's hoard, Industrialist's stack, etc. After the end of the encounter, the main players trade back.",
                 "expansion": "Base Set",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Psychic Switcheroo",
                 "body": "After the defense has been determined, the two main players trade powers. This includes everything that goes with a power, such as the Miser's hoard, the Industrialist's stack, etc. After the end of the encounter, powers traded due to this hazard are given back.",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency.\n\n\nRevisions from The Praw\n\nEdited to clarify what happens when the hazard is drawn in destiny and the defense has not yet been determined, and to prevent erroneous trading of powers at the end of the encounter if the main players change (e.g. via Delegator)"
             }
         },
@@ -201,13 +201,13 @@
                 "name": "Reverse Rewards",
                 "body": "Defensive allies receive a colony if their side wins this encounter, while offensive allies receive defender rewards if their side wins this encounter.",
                 "expansion": "Base Set",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Reverse Rewards",
                 "body": "Defensive allies receive a colony if their side wins this encounter, while offensive allies receive rewards if their side wins this encounter.",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited to fix the rewards bug."
             }
         },
@@ -216,13 +216,13 @@
                 "name": "Sargasso Web",
                 "body": "During this encounter, any cards played (including encounter cards, flares, artifacts, etc.) are removed from the game after taking effect.",
                 "expansion": "Base Set",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Sargasso Web",
                 "body": "During this encounter, any cards played (including encounter cards, flares, artifacts, etc.) are removed from the game after taking effect.",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": ""
             }
         },
@@ -231,13 +231,13 @@
                 "name": "Temporal Anomaly",
                 "body": "Play now proceeds in the opposite direction (i.e., if play was passing clockwise, it now proceeds counterclockwise).",
                 "expansion": "Base Set",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Temporal Anomaly",
                 "body": "Play now proceeds in the opposite direction (i.e., if play was passing clockwise, it now proceeds counterclockwise).",
                 "expansion": "Base Set",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": ""
             }
         },
@@ -315,7 +315,7 @@
                 "name": "Confined Launches",
                 "body": "Each player that sends ships into this encounter can only send ships from one planet in their home system. If the offense has no ships on home planets, the offense immediately loses the encounter.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             }
         },
         "24": {
@@ -323,7 +323,7 @@
                 "name": "Domestic Difficulties",
                 "body": "Each ally that sends ships into this encounter can only send ships from their foreign colonies. Players that have no foreign colonies cannot become allies.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             }
         },
         "25": {
@@ -331,7 +331,7 @@
                 "name": "Economic Aid",
                 "body": "The offense gives one card of their choice from their hand to each player whose system they have a colony in. If the offense would not have enough cards to do this, they send one of their ships from each of their foreign colonies to the warp instead.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             }
         },
         "26": {
@@ -339,7 +339,7 @@
                 "name": "Ill-Gotten Gains",
                 "body": "Add the Reward Deck variant (\u00f0\u0178\u2022\u00ae10). If it was already being used, add the Ultra Reward Deck sub-variant. If the Ultra Reward Deck sub-variant was already being used, starting with the offense and proceeding clockwise, each player draws one card from the reward deck.\n\nThen, if there are at least three cards in the hazard deck, suffle this card into it.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             }
         },
         "27": {
@@ -347,13 +347,13 @@
                 "name": "Incentives",
                 "body": "The defense looks at the top six cards of the deck and sets them aside facedown. If the defense wins, they may draw any number of the cards, give any number to their allies, and discard the rest. If the offense wins, they may look at the set-aside cards, draw any number of them, and discard the rest. Otherwise, discard the set-aside cards.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Incentives",
                 "body": "Before allies are invited, the defense looks at the top six cards of the deck and sets them aside facedown. If the defense wins, they may draw any number of the cards, give any number to their allies, and discard the rest. If the offense wins, they may look at the set-aside cards, draw any number of them, and discard the rest. Otherwise, discard the set-aside cards.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes":"Revisions from The Praw\n\nEdited to clarify the timing when the hazard is drawn in destiny (before allies are invited was chosen as the timing simple because \"after the defense is determined, the defense...\" was clunky to read and say aloud."
             }
         },
@@ -362,7 +362,7 @@
                 "name": "No Quarter",
                 "body": "During the planning phase, each main player cannot select a negotiate card if they could select an attack card. If one main player reveals a negotiate card and the other reveals an attack card, no compensation is collected.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             }
         },
         "29": {
@@ -370,13 +370,13 @@
                 "name": "Obligatory Solidarity",
                 "body": "If a main player loses this encounter, the player to their left must send a number of their ships to the warp from any of their colonies equal to the number of ships that that main player had lost in the encounter.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Obligatory Solidarity",
                 "body": "If a main player loses this encounter, the player to their left must send a number of their ships to the warp from any of their colonies equal to the number of ships the losing main player had lost in the encounter.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": "Revisions from The Praw\n\nEdited for clarity."
             }
         },
@@ -385,7 +385,7 @@
                 "name": "Psionic Resonator",
                 "body": "During this encounter, this card may be offered as part of a deal. Otherwise, at the end of the encounter, it is added to the winner's hand (after compensation, if any). While this card is in a player's hand, it has the following ability:\n\nAfter you reveal an attack card, you may reveal this card to treat the attack card at an attack 15 or, if you discard this card, an atrtack 30.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             }
         },
         "31": {
@@ -393,13 +393,13 @@
                 "name": "Shameful War",
                 "body": "At the end of this encounter, for each revealed attack card or played reinforcement card, its owner must discard one card from their hand at random, if able. Then, each player who revealed a negotiate card gains one reward, and each non-main player who is not an ally gains two rewards.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Shameful War",
                 "body": "At the end of this encounter, for each revealed attack card or played reinforcement card, its owner must discard one card from their hand at random, if able. Then, each player who revealed a negotiate card recieves one reward, and each non-main player who is not an ally recieves two rewards.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular",
+                "type": "Hazard",
                 "revisionNotes": "Revisions from The Praw\n\nEdited for wording consistency."
             }
         },
@@ -408,7 +408,7 @@
                 "name": "Supply Mix-Up",
                 "body": "The offense discards their hand (this effect does not end the encounter). Each other player gives a card of their choice from their hand. Then, each player draws one card from the deck.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             }
         },
         "33": {
@@ -416,7 +416,7 @@
                 "name": "Tech Advantage",
                 "body": "If a main player wins this encounter, they draw a tech card (even if the technology variant [🕮9] is not being used). If there is a successful deal, each main player draws a tech card.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             }
         },
         "34": {
@@ -424,7 +424,7 @@
                 "name": "Unstable",
                 "body": "After determining the winner of the encounter, add both encounter total together. If the sum is at least 42, the planet explodes and is removed from the game. All ships in the encounter are sent to the warp.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             }
         },
         "35": {
@@ -432,7 +432,7 @@
                 "name": "Warp Research",
                 "body": "If the offense wins this encounter, they may release all of their ships from the warp. If the defense wins, all players except the offense may free all of their ships from the warp.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             }
         },
         "36": {
@@ -440,7 +440,7 @@
                 "name": "Win, Lose, or Draw",
                 "body": "For each ship the offense has in the encounter: if the offense wins they draw one card from the deck; if they lose they give the defense one card from their hand at random; or if they attempt to make a deal, the players have an additional 30 seconds.",
                 "expansion": "Cosmic Odyssey",
-                "type": "Regular"
+                "type": "Hazard"
             }
         },
         "37": {

@@ -17,15 +17,17 @@ import Footer from "./components/Footer"
 //Pages
 import Home from "./pages/HomePage"
 import Combos from "./pages/CombosPage"
-import AlienListPage from "./pages/AlienListPage"
+import AlienListPage from "./pages/Lists/AlienListPage"
 import IndividualAlienPage from "./pages/IndividualAlienPage"
-import VariantsListPage from './pages/VariantsListPage';
-import TechListPage from './pages/TechListPage';
+import VariantsListPage from './pages/Lists/VariantsListPage';
+import TechListPage from './pages/Lists/TechListPage';
 import IndividualTechPage from "./pages/IndividualTechPage"
-import HazardListPage from './pages/HazardListPage';
+import HazardListPage from './pages/Lists/HazardListPage';
 import IndividualHazardPage from "./pages/IndividualHazardPage"
-import StationListPage from './pages/StationListPage';
+import StationListPage from './pages/Lists/StationListPage';
 import IndividualStationPage from "./pages/IndividualStationPage"
+import LuxListPage from './pages/Lists/LuxListPage';
+import IndividualLuxPage from "./pages/IndividualLuxPage"
 
 import Aliens from './dataFiles/aliens.json';
 
@@ -51,12 +53,14 @@ root.render(
               <Route path="/Aliens/:alienIndex" element={<IndividualAlienPage />} />
               <Route path="/Aliens" element={<AlienListPage />} />
               <Route path="/Variants" element={<VariantsListPage />} />
-              <Route path="/Variants/Tech" element={<TechListPage />} />
-              <Route path="/Variants/Tech/:techIndex" element={<IndividualTechPage />} />
-              <Route path="/Variants/Hazard" element={<HazardListPage />} />
-              <Route path="/Variants/Hazard/:hazardIndex" element={<IndividualHazardPage />} />
+              <Route path="/Variants/Techs" element={<TechListPage />} />
+              <Route path="/Variants/Techs/:techIndex" element={<IndividualTechPage />} />
+              <Route path="/Variants/Hazards" element={<HazardListPage />} />
+              <Route path="/Variants/Hazards/:hazardIndex" element={<IndividualHazardPage />} />
               <Route path="/Variants/Stations" element={<StationListPage />} />
               <Route path="/Variants/Stations/:stationIndex" element={<IndividualStationPage />} />
+              <Route path="/Variants/Lux" element={<LuxListPage />} />
+              <Route path="/Variants/Lux/:luxIndex" element={<IndividualLuxPage />} />
             </Routes>
           </main>
           <Footer />

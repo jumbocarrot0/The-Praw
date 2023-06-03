@@ -1,48 +1,58 @@
 import {
-    Row,
-    Col
+  Row,
+  Col
 } from 'reactstrap';
 
 export default function GridBrowser(props) {
 
-    console.log(props.content)
+  console.log(props.content)
 
-    let groupByN = (n, arr) => {
-        let result = [];
-        for (let i = 0; i < arr.length; i += n) result.push(arr.slice(i, i + n));
-        return result;
-    };
+  let groupByN = (n, arr) => {
+    let result = [];
+    for (let i = 0; i < arr.length; i += n) result.push(arr.slice(i, i + n));
+    return result;
+  };
 
-    let sortedKeys = Object.keys(props.content)
-  
-    sortedKeys.sort(function(a, b) {
+  let content = props.content;
+  let sortedKeys = Object.keys(content)
+
+  if (content[sortedKeys[0]].original) {
+    content = Object.entries(content)
+    content = content.map((item) => [item[0], item[1].original])
+    console.log(content)
+    content = Object.fromEntries(content)
+  }
+
+  if (!props.noSort) {
+    sortedKeys.sort(function (a, b) {
       const expansions = ["Base Set", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "42nd Anniversary Edition", "Cosmic Odyssey"]
       // console.log(a.expansion)
-      if (expansions.findIndex((e) => e === props.content[a].original.expansion) < expansions.findIndex((e) => e === props.content[b].original.expansion)) {
+      if (expansions.findIndex((e) => e === content[a].expansion) < expansions.findIndex((e) => e === content[b].expansion)) {
         return -1;
       }
-      else if (expansions.findIndex((e) => e === props.content[a].original.expansion) > expansions.findIndex((e) => e === props.content[b].original.expansion)) {
+      else if (expansions.findIndex((e) => e === content[a].expansion) > expansions.findIndex((e) => e === content[b].expansion)) {
         return 1;
       } else {
-        if (props.content[a].original.name < props.content[b].original.name) {
+        if (content[a].name < content[b].name) {
           return -1;
         }
-        else if (props.content[a].original.name > props.content[b].original.name) {
+        else if (content[a].name > content[b].name) {
           return 1;
         }
       }
       return 0;
     })
+  }
 
-    return groupByN(3, sortedKeys).map((row) => {
-        return (
-            <Row>
-                {row.map((cardIndex) => {
-                    return (<Col lg={4}>
-                        <props.cardTemplate content={props.content[cardIndex]} to={`${props.url}/${cardIndex}`} />
-                    </Col>)
-                })}
-            </Row>
-        )
-    })
+  return groupByN(3, sortedKeys).map((row) => {
+    return (
+      <Row>
+        {row.map((cardIndex) => {
+          return (<Col lg={4}>
+            <props.cardTemplate content={content[cardIndex]} to={`${props.url}/${cardIndex}`} border={props.border} />
+          </Col>)
+        })}
+      </Row>
+    )
+  })
 }

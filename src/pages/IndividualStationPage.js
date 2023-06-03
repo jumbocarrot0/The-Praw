@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import {
-  Container, Card, CardBody, Row, Col, CardHeader, Nav, NavItem, NavLink
+  Container, Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
-import { useParams, Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import Stations from '../dataFiles/stations.json';
 import Phases from '../components/Phases';
 
-export default function IndividualTechPage(props) {
+export default function IndividualStationPage() {
 
   const { stationIndex } = useParams();
 

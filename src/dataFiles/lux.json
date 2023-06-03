@@ -1,0 +1,409 @@
+{
+    "lux": {
+        "0": {
+            "original": {
+                "name": "Auxiliary Lux Scoop",
+                "body": "After you ally with the offense, you may gain an amount of lux tokens equal to four minus the number of ships you sent. If you would gain exactly three lux tokens, gain one ultra lux token instead.",
+                "type": "Re-Lux",
+                "timing": {
+                    "player": "Offensive Ally Only",
+                    "phases": {
+                        "alliance": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "1": {
+            "original": {
+                "name": "Bootleg Market",
+                "body": "During your regroup phase, instead of retrieving a ship from the warp, you may gain one ultra lux token.",
+                "type": "Re-Lux",
+                "timing": {
+                    "player": "Offense Only",
+                    "phases": {
+                        "regroup": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "2": {
+            "original": {
+                "name": "Bureaucrat",
+                "body": "After the offense establishes a foreign colony, you may take one lux token from them.",
+                "type": "Re-Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "3": {
+            "original": {
+                "name": "Chronovizier",
+                "body": "When a player draws any number of cards from the deck, they may discard any number of those cards at a cost of 1 Lux per card. Then, they draw the same number of cards, but cannot use this ability again on these cards.\n\nIf another player resolves this effect, they pay that Lux to you.",
+                "type": "De-Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "4": {
+            "original": {
+                "name": "Conservator",
+                "body": "Before cards are revealed, the defense may spend any amount of Lux to add 3 to either side's total for each Lux they spend.\n\nIf another player resolves this effect, they pay that Lux to you.",
+                "type": "De-Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "planning": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "5": {
+            "original": {
+                "name": "Defector Recruiter",
+                "body": "As an ally, after alliances are formed, you may choose an ally on the other side that is not already on the targeted planet. Pay that player one ultra lux token to force that player to return their ships to their colonies.",
+                "type": "Ultra Lux",
+                "timing": {
+                    "player": "Ally Only",
+                    "phases": {
+                        "alliance": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "6": {
+            "original": {
+                "name": "Double Ultra Luxurious Lifestyle",
+                "body": "As any player except the offense, when you buy rewards using Lux, if you pay with at least one ultra lux token, gain two additional rewards.",
+                "type": "Ultra Lux",
+                "timing": {
+                    "player": "Not Offense",
+                    "phases": {
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "7": {
+            "original": {
+                "name": "Evacuator",
+                "body": "If you are not the offense, after cards are selected but before they are revealed, you may spend one ultra lux token to remove all of any player's ships from the encounter, if that player has given you their permission.",
+                "type": "Ultra Lux",
+                "timing": {
+                    "player": "Not Offense",
+                    "phases": {
+                        "planning": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "8": {
+            "original": {
+                "name": "Flare Access",
+                "body": "You may spend 5 Lux to resolve this effect; or another player can pay you 3 Lux to resolve this effect:\n\nDraw two flares from the unused flare deck. Add one to your hand and shuffle the other back into the unused flare deck.",
+                "type": "De-Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "9": {
+            "original": {
+                "name": "Garbage Sifter",
+                "body": "Before a player draws a new hand, they may spend 2 Lux to choose one card in the discard pile and draw it as the first card of their new hand.\n\nIf another player resolves this effect, they pay that Lux to you.",
+                "type": "De-Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "10": {
+            "original": {
+                "name": "Immunizer",
+                "body": "At the start of a player's turn, you may spend one ultra token to choose any one alien power. That power cannot be canceled by any effect for the rest of the encounter.",
+                "type": "Ultra Lux",
+                "timing": {
+                    "player": "Offense Only",
+                    "phases": {
+                        "start turn": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "11": {
+            "original": {
+                "name": "Landlord",
+                "body": "At the start of your turn, each player with a foreign colony in your home system must either pay you 1 Lux or send one of their ships in your system to the warp.",
+                "type": "De-Lux",
+                "timing": {
+                    "player": "Offense Only",
+                    "phases": {
+                        "start turn": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "12": {
+            "original": {
+                "name": "Liberator",
+                "body": "During your regroup phase, you may spend one ultra lux token to free all of one player's ships from the warp, if that player has given you their permission.",
+                "type": "Ultra Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "regroup": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "13": {
+            "original": {
+                "name": "Liquefier",
+                "body": "As the defense, before cards are selected, you may spend any amount of Lux to discard one card from your hand for each Lux you spend.\n\nIf you are not the defense, before cards are played, the defense may pay you 1 Lux to discard one card from their hand.",
+                "type": "De-Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "planning": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "14": {
+            "original": {
+                "name": "Liquidation Sale",
+                "body": "When a player draws a new hand, for each non-encounter card they had to discard, gain one lux token.",
+                "type": "Re-Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "15": {
+            "original": {
+                "name": "Lux Skimmer",
+                "body": "After another player gains at least 3 Lux or at least 1 ultra lux token, you may take one lux token from that player, if able.",
+                "type": "Re-Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "16": {
+            "original": {
+                "name": "Palm Greaser",
+                "body": "During a deal, you may spend one ultra lux token. Both main players may establish one more colony than normal as part of this deal.",
+                "type": "Ultra Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "17": {
+            "original": {
+                "name": "Patron",
+                "body": "As an ally, after encounter cards are revealed, you may spent any amount of Lux to add 3 to either side's total for each Lux you spend.\n\nIf you are not a main player or ally, after cards are revealed, each ally may pay you 1 Lux to add 3 to either side's total.",
+                "type": "De-Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "18": {
+            "original": {
+                "name": "Pillager",
+                "body": "After the defense collects lux tokens, if you won as the offense, take one lux token from the defense for each of your ships that landed on the targeted planet.",
+                "type": "Re-Lux",
+                "timing": {
+                    "player": "Offense Only",
+                    "phases": {
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "19": {
+            "original": {
+                "name": "Reassurance Agent",
+                "body": "You may pay 2 Lux to resolve this effect, or another player can pay you 2 Lux for them to resolve this effect:\n\nBefore a player would collect compensation, double the amount of compensation that player collects.",
+                "type": "De-Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "20": {
+            "original": {
+                "name": "Stealth Device",
+                "body": "Before a player discards cards or has cards taken from their hand, they may spend any amount of Lux to set aside one card from their hand for each Lux they spend. These set-aside cards return to their hand after the effect is resolved.\n\nIf another player resolves this effect, they pay that Lux to you.",
+                "type": "De-Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "21": {
+            "original": {
+                "name": "Sticky Digits",
+                "body": "After any player plays an artifact (including you), you may spend one ultra lux token to return that card to the player's hand instead of discarding it. That artifact cannot be played again during this incounter.",
+                "type": "Ultra Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "22": {
+            "original": {
+                "name": "Surge Protector",
+                "body": "After a player plays an artifact with \"Zap\" in its name, gain 3 Lux.",
+                "type": "Re-Lux",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "23": {
+            "original": {
+                "name": "Trading Halt",
+                "body": "At the start of another player's turn, you may spend one ultra lux token to prevent all players from being able to spend Lux for the rest of this encounter",
+                "type": "Ultra Lux",
+                "timing": {
+                    "player": "Not Offense",
+                    "phases": {
+                        "start turn": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        }
+    }
+}

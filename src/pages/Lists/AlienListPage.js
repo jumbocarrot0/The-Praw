@@ -17,12 +17,12 @@ import {
 
 } from 'reactstrap';
 import { Link } from "react-router-dom"
-import Aliens from '../dataFiles/aliens.json';
-import { ReactComponent as SearchLogo } from '../searchIcon.svg';
-import GridBrowser from "../components/GridBrowser";
+import Aliens from '../../dataFiles/aliens.json';
+import { ReactComponent as SearchLogo } from '../../searchIcon.svg';
+import GridBrowser from "../../components/GridBrowser";
 
 function Alien(props) {
-  const alien = props.content.original
+  const alien = props.content
   return (
     <Card className='mb-5'>
       <Link className={"btn border border-5 " +

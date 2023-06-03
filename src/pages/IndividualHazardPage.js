@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import {
-  Container, Card, CardBody, Row, Col, CardHeader, Nav, NavItem, NavLink
+  Container, Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
-import { useParams, Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import Hazards from '../dataFiles/hazard.json';
 
-export default function IndividualHazardPage(props) {
+
+export default function IndividualHazardPage() {
 
   const { hazardIndex } = useParams();
 
