@@ -26,7 +26,7 @@ export default function Item(props) {
                         </Badge>
                         <Badge className={props.border(content) === "warning" ? " text-dark" : ""}
                         color={props.border(content) ? props.border(content) : "secondary"}>
-                        {content.type}
+                        {props.type(content) ? props.type(content) : null}
                         </Badge>
                     </h6>
                     <strong>{content.short}</strong>

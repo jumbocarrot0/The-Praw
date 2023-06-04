@@ -49,7 +49,7 @@ export default function GridBrowser(props) {
       <Row>
         {row.map((cardIndex) => {
           return (<Col lg={4}>
-            <props.cardTemplate content={content[cardIndex]} to={`${props.url}/${cardIndex}`} border={props.border} />
+            <props.cardTemplate content={content[cardIndex]} to={`${props.url}/${cardIndex}`} border={props.border} type={props.type} />
           </Col>)
         })}
       </Row>

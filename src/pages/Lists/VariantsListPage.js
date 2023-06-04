@@ -1,8 +1,4 @@
-import {
-    Container,
-    Row,
-    Col
-} from 'reactstrap';
+import { Container } from 'reactstrap';
 import Item from '../../components/Item'
 import GridBrowser from "../../components/GridBrowser";
 
@@ -22,12 +18,6 @@ export default function VariantsListPage() {
         "Campaign": { name: "Campaign Mode", image: "", complexity: 3, short: "4+ Games of Legacy Cosmic" },
     }
 
-    let groupByN = (n, arr) => {
-        let result = [];
-        for (let i = 0; i < arr.length; i += n) result.push(arr.slice(i, i + n));
-        return result;
-    };
-
     return (
         <Container>
             <h1 className='mb-4'>Official Variants</h1>
@@ -40,6 +30,7 @@ export default function VariantsListPage() {
                     const borders = { 1: "success", 2: "warning", 3: "danger" };
                     return borders[variant.complexity];
                 }}
+                type={(variant) => { return { 1: "Beginner", 2: "Intermediate", 3: "Advanced" }[variant.complexity] }}
             />
             {/* {groupByN(3, variants).map((variants) => {
                 return (

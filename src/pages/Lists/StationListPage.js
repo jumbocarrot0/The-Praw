@@ -17,6 +17,7 @@ export default function StationListPage() {
         border={(item) => {
           return {"Sky City" : "success", "Space Station" : "primary", "Deep Space Station": "secondary"}[item.type];
         }}
+        type={(item) => { return item.type }}
       />
     </Container>
   );

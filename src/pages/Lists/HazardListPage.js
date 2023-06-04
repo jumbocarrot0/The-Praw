@@ -21,6 +21,7 @@ export default function HazardListPage() {
         border={(item) => {
           return {"AltHazard" : "success", "Permanent" : "danger", "SemiPermanent": "warning", "Hazard": "secondary"}[item.type];
         }}
+        type={(item) => { return item.type }}
       />
     </Container>
   );

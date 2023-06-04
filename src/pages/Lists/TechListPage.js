@@ -17,6 +17,7 @@ export default function TechListPage() {
         border={(item) => {
           return {"Mili-Tech" : "success", "Haz-Tech" : "danger", "Tech": "warning"}[item.type];
         }}
+        type={(item) => { return item.type }}
       />
     </Container>
   );

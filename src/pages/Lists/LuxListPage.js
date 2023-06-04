@@ -21,6 +21,7 @@ export default function LuxListPage() {
         border={(item) => {
           return {"De-Lux" : "info", "Re-Lux" : "success", "Ultra Lux": "danger"}[item.type];
         }}
+        type={(item) => { return item.type }}
       />
     </Container>
   );
