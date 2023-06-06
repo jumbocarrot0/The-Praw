@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Container } from 'reactstrap';
+import Layout from '../components/Layout'
 
 export default function AllianceDialPage() {
   return (
-    <Container>
+    <Layout>
       <h1 className='mb-4'>Hidden Alliances</h1>
       <p className="text-light">Hidden Alliances is an official variant introduced in Cosmic Eons. When players are joining as allies, each non main player is given a dial to secretly, and simultaneously, record who they're joining and with how many ships. All players reveal this simultaneously.</p>
       <hr class="border border-light border-2 opacity-100 my-4" />
@@ -21,6 +22,6 @@ export default function AllianceDialPage() {
         <li className="text-light">After selecting positions on their dials, players place their dials facedown in front of them. When all players have made their choice, all dials are revealed simultaneously. Those who have chosen to ally send their ships to the encounter according to the position of their dial.</li>
         <li className="text-light">In special circumstances where the alliance dial cannot show enough information to indicate a player’s intentions (e.g., when using the Yin- Yang alien in Cosmic Dominion), the player dials the star into an appropriate window. After all of the dials are facedown in front of alien sheets, but before they are revealed, the player with such a special circumstance announces their choice out loud.</li>
       </ul>
-    </Container>
+    </Layout>
   );
 }

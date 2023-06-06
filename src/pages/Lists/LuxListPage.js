@@ -2,10 +2,11 @@ import { Container } from 'reactstrap';
 import Item from '../../components/Item'
 import Lux from '../../dataFiles/lux.json';
 import GridBrowser from "../../components/GridBrowser";
+import Layout from '../../components/Layout'
 
 export default function LuxListPage() {
   return (
-    <Container>
+    <Layout>
       <h1 className='mb-4'>Lux</h1>
       <p className="text-light">Lux is an official variant introduced in Cosmic Odyssey. The variant adds a currency to the game, which players earn by being a main player. Players are also given lux cards that provide unique ways to spend lux, and may also spend lux to earn rewards at any time.
         <br />
@@ -23,6 +24,6 @@ export default function LuxListPage() {
         }}
         type={(item) => { return item.type }}
       />
-    </Container>
+    </Layout>
   );
 }

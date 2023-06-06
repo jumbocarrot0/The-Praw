@@ -5,6 +5,7 @@ import {
 import { useParams } from "react-router-dom"
 import Stations from '../dataFiles/stations.json';
 import Phases from '../components/Phases';
+import Layout from '../components/Layout'
 
 export default function IndividualStationPage() {
 
@@ -14,7 +15,7 @@ export default function IndividualStationPage() {
   const [revised, setRevised] = useState(false)
 
   return (
-    <Container>
+    <Layout>
       {Stations.stations[stationIndex].revised ?
         <Nav className="ps-5 mx-5 border-bottom-0" tabs>
           <NavItem>
@@ -45,7 +46,7 @@ export default function IndividualStationPage() {
 
         </CardBody>
       </Card>
-    </Container>
+    </Layout>
   );
 }
 

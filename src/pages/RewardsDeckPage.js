@@ -1,8 +1,9 @@
 import { Container } from 'reactstrap';
+import Layout from '../components/Layout'
 
 export default function RewardsDeckPage() {
   return (
-    <Container>
+    <Layout>
       <h1 className='mb-4'>Rewards Deck</h1>
       <p className="text-light">The rewards deck is an official variant introduced in Cosmic Incursion. The deck is a purple-backed deck of cards that can only be drawn from when players gain rewards.
         <br />
@@ -30,6 +31,6 @@ export default function RewardsDeckPage() {
         <li className="text-light">While a player is gaining rewards and draws cards from the reward deck, if they would draw two ultra reward cards, instead of drawing the second ultra reward card they must gain the remaining rewards either in the form of drawing cards from the cosmic deck or freeing ships from the warp.</li>
         <li className="ms-5 text-light">If players find the above rule too ambiguous, The Praw recommends the following altnerative rule: If a player has already drawn an ultra reward from the rewards deck in this encounter (not from another source like another player's hand), they may not draw another from the rewards deck.</li>
       </ul>
-    </Container>
+    </Layout>
   );
 }

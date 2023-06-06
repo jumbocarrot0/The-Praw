@@ -4,6 +4,7 @@ import {
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
 import Objectives from '../dataFiles/objectives.json';
+import Layout from '../components/Layout'
 
 
 export default function IndividualObjectivePage() {
@@ -14,7 +15,7 @@ export default function IndividualObjectivePage() {
   const [revised, setRevised] = useState(false)
 
   return (
-    <Container>
+    <Layout>
       {Objectives.objectives[objectiveIndex].revised ?
         <Nav className="ps-5 mx-5 border-bottom-0" tabs>
           <NavItem>
@@ -46,7 +47,7 @@ export default function IndividualObjectivePage() {
 
         </CardBody>
       </Card>
-    </Container>
+    </Layout>
   );
 }
 

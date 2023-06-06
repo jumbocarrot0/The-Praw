@@ -5,6 +5,7 @@ import {
 import { useParams } from "react-router-dom"
 import Evolutions from '../dataFiles/evolutions.json';
 import Phases from '../components/Phases';
+import Layout from '../components/Layout'
 
 export default function IndividualEvolutionPage() {
 
@@ -16,7 +17,7 @@ export default function IndividualEvolutionPage() {
   console.log(Object.entries(evolution.body))
 
   return (
-    <Container>
+    <Layout>
       {Evolutions.evolutions[evolutionIndex].revised ?
         <Nav className="ps-5 mx-5 border-bottom-0" tabs>
           <NavItem>
@@ -51,7 +52,7 @@ export default function IndividualEvolutionPage() {
 
         </CardBody>
       </Card>
-    </Container>
+    </Layout>
   );
 }
 

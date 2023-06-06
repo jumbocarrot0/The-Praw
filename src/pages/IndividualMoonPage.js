@@ -5,6 +5,7 @@ import {
 import { useParams } from "react-router-dom"
 import Moons from '../dataFiles/moons.json';
 import Phases from '../components/Phases';
+import Layout from '../components/Layout'
 
 export default function IndividualMoonPage() {
 
@@ -14,7 +15,7 @@ export default function IndividualMoonPage() {
   const [revised, setRevised] = useState(false)
 
   return (
-    <Container>
+    <Layout>
       {Moons.moons[moonIndex].revised ?
         <Nav className="ps-5 mx-5 border-bottom-0" tabs>
           <NavItem>
@@ -45,7 +46,7 @@ export default function IndividualMoonPage() {
 
         </CardBody>
       </Card>
-    </Container>
+    </Layout>
   );
 }
 

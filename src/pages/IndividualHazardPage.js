@@ -3,7 +3,8 @@ import {
   Container, Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
-import Hazards from '../dataFiles/hazard.json';
+import Hazards from '../dataFiles/hazards.json';
+import Layout from '../components/Layout'
 
 
 export default function IndividualHazardPage() {
@@ -14,7 +15,7 @@ export default function IndividualHazardPage() {
   const [revised, setRevised] = useState(false)
 
   return (
-    <Container>
+    <Layout>
       {Hazards.hazards[hazardIndex].revised ?
         <Nav className="ps-5 mx-5 border-bottom-0" tabs>
           <NavItem>
@@ -47,7 +48,7 @@ export default function IndividualHazardPage() {
 
         </CardBody>
       </Card>
-    </Container>
+    </Layout>
   );
 }
 

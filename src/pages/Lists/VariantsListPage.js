@@ -1,6 +1,7 @@
 import { Container } from 'reactstrap';
 import Item from '../../components/Item'
 import GridBrowser from "../../components/GridBrowser";
+import Layout from '../../components/Layout'
 
 export default function VariantsListPage() {
 
@@ -20,7 +21,7 @@ export default function VariantsListPage() {
     }
 
     return (
-        <Container>
+        <Layout>
             <h1 className='mb-4'>Official Variants</h1>
             <hr class="border border-light border-2 opacity-100 mb-5" />
             <GridBrowser cardTemplate={Item}
@@ -34,6 +35,6 @@ export default function VariantsListPage() {
                 type={(variant) => { return { 1: "Beginner", 2: "Intermediate", 3: "Advanced" }[variant.complexity] }}
                 width={4}
             />
-        </Container>
+        </Layout>
     );
 }

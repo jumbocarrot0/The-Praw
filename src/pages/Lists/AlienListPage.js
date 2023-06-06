@@ -20,6 +20,7 @@ import { Link } from "react-router-dom"
 import Aliens from '../../dataFiles/aliens.json';
 import { ReactComponent as SearchLogo } from '../../searchIcon.svg';
 import GridBrowser from "../../components/GridBrowser";
+import Layout from '../../components/Layout'
 
 function Alien(props) {
   const alien = props.content
@@ -130,7 +131,7 @@ export default function AliensListPage() {
   // filteredAliens = Object.fromEntries(filteredAliens)
 
   return (
-    <Container>
+    <Layout>
       <h1 className='mb-4'>Aliens</h1>
       <Card className='mb-4 bg-light'>
         <CardBody>
@@ -225,6 +226,6 @@ export default function AliensListPage() {
         url="/Aliens"
         content={filteredAliens}
       />
-    </Container>
+    </Layout>
   );
 }
