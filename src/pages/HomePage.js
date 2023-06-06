@@ -32,7 +32,7 @@ export default function Home() {
               results = results.filter((alien) => alien[1].original.name.toLowerCase().includes(searchQuery.toLowerCase()))
               if (results.length === 1) {
                 navigate({
-                  pathname: `/Aliens/${Object.keys(results)[0]}`
+                  pathname: `/Aliens/${results[0][0]}`
                 });
               } else {
                 navigate({
