@@ -4,13 +4,13 @@
             "original": {
                 "name": "Alliance",
                 "body": "Place one of your ships from one of your colonies on this card and give it to another player. For the rest of the game, the two of you have an alliance. When either of you is the main player in an encounter, he or she must always invite their ally.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Permanent"
             },
             "revised": {
                 "name": "Alliance",
                 "body": "The offense places one ship from any of their colonies onto this card and give it to another player. For the rest of the game, those players alliance. When either are a main player in an encounter, they must always invite their ally.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Permanent",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency.\n\n\nRevisions from The Praw\n\nEdited to remove an ambigious use of the 'you' pronoun."
             }
@@ -19,13 +19,13 @@
             "original": {
                 "name": "Black Hole",
                 "body": "During this encounter, ships that would be lost to the warp are instead removed from the game entirely. A player cannot have fewer ships left in the game than the number of foreign colonies required to win. Any ships lost that would reduce a player below this number are sent to the warp after all.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard"
             },
             "revised": {
                 "name": "Black Hole",
                 "body": "During this encounter, ships that would be lost to the warp are instead removed from the game. A player cannot have fewer ships left in the game than the number of foreign colonies required to win. Any ships lost that would reduce a player below this number are sent to the warp as usual.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency."
             }
@@ -34,13 +34,13 @@
             "original": {
                 "name": "The Cosmic Guardian",
                 "body": "While the Cosmic Guardian is in play, all attack cards higher than 20 are considered to be negotiate cards.\n\nDiscard the Entropy Beast and the Witness when the Cosmic Guardian enters play.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Permanent"
             },
             "revised": {
                 "name": "The Cosmic Guardian",
                 "body": "All attack cards higher than 20 are considered to be negotiate cards.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "SemiPermanent",
                 "revisionNotes": "Revisions from The Praw\n\nEdited to change this hazard to a semi-permanet hazard, which gives a much cleaner hazard that interacts intuitively with Cosmic Odyssey hazards."
             }
@@ -49,13 +49,13 @@
             "original": {
                 "name": "Cosmic Nebula",
                 "body": "During this encounter, any alien powers that are used are immediately zapped.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard"
             },
             "revised": {
                 "name": "Cosmic Nebula",
                 "body": "During this encounter, any alien powers that are used are immediately zapped.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": ""
             }
@@ -64,13 +64,13 @@
             "original": {
                 "name": "Cosmic Upheaval",
                 "body": "Immediately shuffle all players' hands together and then deal each player back as many cards as he or she had beforehand. No cards may be played in response to this card.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard"
             },
             "revised": {
                 "name": "Cosmic Upheaval",
                 "body": "Immediately shuffle all players' hands together and then deal each player back as many cards as they had beforehand. No cards may be played in response to this card.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": "Revisions from The Praw\n\nEdited to include gender-neutral language."
             }
@@ -79,13 +79,13 @@
             "original": {
                 "name": "Energy Fields",
                 "body": "Each main player draws two cards, showing them to the other players, before allies are invited.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard"
             },
             "revised": {
                 "name": "Energy Fields",
                 "body": "Before allies are invited, each main player draws two cards from the deck, showing them to all players.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify that the card draws came from the cosmic deck, to eliminate the ambiguity of whether \"the other players\" means the non-main players or all players, and to remove redundancy.\n\n\nRevisions from The Praw\n\nEdited to making the timing clearer when hazard is drawn in destiny."
             }
@@ -94,13 +94,13 @@
             "original": {
                 "name": "The Entropy Beast",
                 "body": "While the Entropy Beast is in play, each time a special or wild destiny card is drawn, remove the planet with the most ships on it from the game (offense breaks ties), sending all ships on it to the warp. If a player's home system is reduced below three planets, all players lose the game.\n\nDiscard the Cosmic Guardian and the Witness when the Entropy Beast enters play.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Permanent"
             },
             "revised": {
                 "name": "The Entropy Beast",
                 "body": "Each time a special or wild destiny card is drawn, remove the planet with the most ships on it from the game (offense breaks ties), sending all ships on it to the warp. If a player's home system is reduced below three planets, all players lose the game.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "SemiPermanent",
                 "revisionNotes": "Revisions from The Praw\n\nEdited to change this hazard to a semi-permanet hazard, which gives a much cleaner hazard that interacts intuitively with Cosmic Odyssey hazards."
             }
@@ -109,14 +109,14 @@
             "original": {
                 "name": "Galactic Council",
                 "body": "Instead of having a normal encounter, all of the players in the game have three minutes to make a deal. All players must accept the deal or it fails. If the deal fails, all players lose 3 ships to the warp.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\n"
             },
             "revised": {
                 "name": "Galactic Council",
                 "body": "Instead of having a normal encounter, proceed to the reveal phase. All of the players in the game have three minutes to make a deal. All players must accept the deal or it fails. If the deal fails, all players lose 3 ships to the warp.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify that the encounter skips ahead to the reveal phase."
             }
@@ -125,13 +125,13 @@
             "original": {
                 "name": "It's Full of Stars...",
                 "body": "During this encounter, allies may send ships from the warp into the encounter (normal max applies). If the ships survive the encounter, they do not return to the warp.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard"
             },
             "revised": {
                 "name": "It's Full of Stars...",
                 "body": "During this encounter, allies may retrieve ships from the warp to send into the encounter (the normal limit of four applies).",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited to properly use the game term \"retrieve\" (for consistency with Super Observer and clarity with effects that trigger on ship retrieval), to strike its overclarifying final sentence (to avoid any rules-lawyering against effects that send winning ships to the warp), and to eliminate sloppy \"max\" shorthand."
             }
@@ -140,13 +140,13 @@
             "original": {
                 "name": "Meteor Storm",
                 "body": "During this encounter, if both main players reveal attack cards, add together the totals of both sides. If the combined total is over 25, a deadly meteor storm is triggered by the fighting, causing both sides to lose, regardless of other game effects.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard"
             },
             "revised": {
                 "name": "Meteor Storm",
                 "body": "During this encounter, if both main players reveal attack cards, add together the totals of both sides. If the combined total is over 25, a deadly meteor storm is triggered by the fighting, causing both sides to lose, regardless of other game effects.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": ""
             }
@@ -155,13 +155,13 @@
             "original": {
                 "name": "Mirror Universe",
                 "body": "Immediately flip over both the discard pile and the deck. The deck becomes the new discard pile and vice versa. Afterwards, shuffle the new deck.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard"
             },
             "revised": {
                 "name": "Mirror Universe",
                 "body": "Immediately flip over both the discard pile and the deck. The deck becomes the new discard pile and vice versa. Afterwards, shuffle the new deck.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": ""
             }
@@ -170,13 +170,13 @@
             "original": {
                 "name": "Odd Way to Win a War",
                 "body": "During this encounter, if one main player reveals an odd-numbered attack card and the other reveals an even-numbered attack card, the player who revealed the odd-numbered attack card automatically wins the encounter.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard"
             },
             "revised": {
                 "name": "Odd Way to Win a War",
                 "body": "During this encounter, if one main player reveals an odd-numbered attack card and the other reveals an even-numbered attack card, the player who revealed the odd-numbered attack card automatically wins the encounter.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": ""
             }
@@ -185,13 +185,13 @@
             "original": {
                 "name": "Psychic Switcheroo",
                 "body": "For the duration of this encounter, the two main players trade powers. This includes everything that goes with a power, such as the Miser's hoard, Industrialist's stack, etc. After the end of the encounter, the main players trade back.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard"
             },
             "revised": {
                 "name": "Psychic Switcheroo",
                 "body": "After the defense has been determined, the two main players trade powers. This includes everything that goes with a power, such as the Miser's hoard, the Industrialist's stack, etc. After the end of the encounter, powers traded due to this hazard are given back.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency.\n\n\nRevisions from The Praw\n\nEdited to clarify what happens when the hazard is drawn in destiny and the defense has not yet been determined, and to prevent erroneous trading of powers at the end of the encounter if the main players change (e.g. via Delegator)"
             }
@@ -200,13 +200,13 @@
             "original": {
                 "name": "Reverse Rewards",
                 "body": "Defensive allies receive a colony if their side wins this encounter, while offensive allies receive defender rewards if their side wins this encounter.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard"
             },
             "revised": {
                 "name": "Reverse Rewards",
                 "body": "Defensive allies receive a colony if their side wins this encounter, while offensive allies receive rewards if their side wins this encounter.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited to fix the rewards bug."
             }
@@ -215,13 +215,13 @@
             "original": {
                 "name": "Sargasso Web",
                 "body": "During this encounter, any cards played (including encounter cards, flares, artifacts, etc.) are removed from the game after taking effect.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard"
             },
             "revised": {
                 "name": "Sargasso Web",
                 "body": "During this encounter, any cards played (including encounter cards, flares, artifacts, etc.) are removed from the game after taking effect.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": ""
             }
@@ -230,13 +230,13 @@
             "original": {
                 "name": "Temporal Anomaly",
                 "body": "Play now proceeds in the opposite direction (i.e., if play was passing clockwise, it now proceeds counterclockwise).",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard"
             },
             "revised": {
                 "name": "Temporal Anomaly",
                 "body": "Play now proceeds in the opposite direction (i.e., if play was passing clockwise, it now proceeds counterclockwise).",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Hazard",
                 "revisionNotes": ""
             }
@@ -245,13 +245,13 @@
             "original": {
                 "name": "The Witness",
                 "body": "While The Witness is in play, players do not lose their alien powers because they have too few home colonies. Any player who has lost his or her alien power in this manner gets it back while The Witness remains in play.\n\nDiscard The Entropy Beast and The Cosmic Guardian when The Witness enters play.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "Permanent"
             },
             "revised": {
                 "name": "The Witness",
                 "body": "Players do not lose their alien powers because of having too few home colonies. Any player who has lost their alien power in this manner gets it back while this is in play.",
-                "expansion": "Base Set",
+                "expansion": "Cosmic Conflict",
                 "type": "SemiPermanent",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency.\n\n\nRevisions from The Praw\n\nEdited to change this hazard to a semi-permanet hazard, which gives a much cleaner hazard that interacts intuitively with Cosmic Odyssey hazards."
             }

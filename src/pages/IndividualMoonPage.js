@@ -3,42 +3,42 @@ import {
   Container, Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
-import Stations from '../dataFiles/stations.json';
+import Moons from '../dataFiles/moons.json';
 import Phases from '../components/Phases';
 
-export default function IndividualStationPage() {
+export default function IndividualMoonPage() {
 
-  const { stationIndex } = useParams();
+  const { moonIndex } = useParams();
 
-  const [station, setStation] = useState(Stations.stations[stationIndex].original)
+  const [moon, setMoon] = useState(Moons.moons[moonIndex].original)
   const [revised, setRevised] = useState(false)
 
   return (
     <Container>
-      {Stations.stations[stationIndex].revised ?
+      {Moons.moons[moonIndex].revised ?
         <Nav className="ps-5 mx-5 border-bottom-0" tabs>
           <NavItem>
             <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
-              onClick={() => { setStation(Stations.stations[stationIndex].original); setRevised(false) }}>Original</NavLink>
+              onClick={() => { setMoon(Moons.moons[moonIndex].original); setRevised(false) }}>Original</NavLink>
           </NavItem>
           <NavItem>
             <NavLink className={"nav-link" + (revised ? " active" : "")} href="#"
-              onClick={() => { setStation(Stations.stations[stationIndex].revised); setRevised(true) }}>Revised</NavLink>
+              onClick={() => { setMoon(Moons.moons[moonIndex].revised); setRevised(true) }}>Revised</NavLink>
           </NavItem>
         </Nav> : null
       }
       <Card>
         <CardBody>
-          <h1 className='text-light'>{station.name}</h1>
-          <p>{station.body}</p>
+          <h1 className='text-light'>{moon.name}</h1>
+          <p>{moon.body}</p>
           <br />
-          <p>({station.timing.player}) <Phases phases={station.timing.phases} /></p>
+          <p>({moon.timing.player}) <Phases phases={moon.timing.phases} /></p>
 
 
-          {revised && station.revisionNotes ? (
+          {revised && moon.revisionNotes ? (
             <Card className="bg-light border-warning border-5">
               <CardBody>
-                <p className="text-dark">{station.revisionNotes}</p>
+                <p className="text-dark">{moon.revisionNotes}</p>
               </CardBody>
             </Card>
           ) : null}

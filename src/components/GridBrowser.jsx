@@ -44,11 +44,11 @@ export default function GridBrowser(props) {
     })
   }
 
-  return groupByN(3, sortedKeys).map((row) => {
+  return groupByN(props.width || 3, sortedKeys).map((row) => {
     return (
       <Row>
         {row.map((cardIndex) => {
-          return (<Col lg={4}>
+          return (<Col lg={12 / (props.width || 3)}>
             <props.cardTemplate content={content[cardIndex]} to={`${props.url}/${cardIndex}`} border={props.border} type={props.type} />
           </Col>)
         })}

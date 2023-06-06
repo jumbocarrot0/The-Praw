@@ -15,7 +15,7 @@ export default function StationListPage() {
         url="/Variants/Stations"
         content={Stations.stations}
         border={(item) => {
-          return {"Sky City" : "success", "Space Station" : "primary", "Deep Space Station": "secondary"}[item.type];
+          return {"Sky City" : "success", "Space Station" : "primary", "Deep Space Station": "indigo"}[item.type];
         }}
         type={(item) => { return item.type }}
       />

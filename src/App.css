@@ -64,3 +64,23 @@ table.th-w-50 tbody tr th {
   font-size: 40px;
   font-style: italic;
 }
+
+.border-indigo {
+  --bs-border-opacity: 1;
+  border-color: #6610f2 !important;
+}
+
+.bg-indigo {
+  --bs-border-opacity: 1;
+  background-color: #6610f2 !important;
+}
+
+.border-orange {
+  --bs-border-opacity: 1;
+  border-color: #fd7e14 !important;
+}
+
+.bg-orange {
+  --bs-border-opacity: 1;
+  background-color: #fd7e14 !important;
+}
