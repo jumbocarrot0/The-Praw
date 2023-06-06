@@ -3,35 +3,15 @@ import {
   Container, Card, CardBody, Row, Col, CardHeader, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams, Link } from "react-router-dom"
-import Aliens from '../dataFiles/originalAliens.json';
-import RevisedAliens from '../dataFiles/revisedAliens.json';
+import Aliens from '../dataFiles/aliens.json';
+import Phases from '../components/Phases';
 import Layout from '../components/Layout'
-
-function Phases(props) {
-  if (props.flare && Object.values(props.phases).reduce((accumulator, phase) => accumulator && phase)) {
-    return <span>(Any Phase)</span>
-  } else {
-    return <span>
-      {props.phases.startTurn ? "(Start Turn) " : null}
-      {props.phases.regroup ? "(Regroup) " : null}
-      {props.phases.destiny ? "(Destiny) " : null}
-      {props.phases.launch ? "(Launch) " : null}
-      {props.phases.alliance ? "(Alliance) " : null}
-      {props.phases.planning ? "(Planning) " : null}
-      {props.phases.reveal ? "(Reveal) " : null}
-      {props.phases.resolution ? "(Resolution) " : null}
-      {props.phases.special ? "(Special) " : null}
-      {props.phases.gameSetup ? "(Game Setup) " : null}
-      {props.phases.varies ? "(Varies) " : null}
-    </span>
-  }
-}
 
 export default function IndividualAlienPage(props) {
 
   const { alienIndex } = useParams();
 
-  const [alien, setAlien] = useState(Aliens.aliens[alienIndex])
+  const [alien, setAlien] = useState(Aliens.aliens[alienIndex].original)
   const [revised, setRevised] = useState(false)
 
   if (alien.name === 'Throwback') { 
@@ -78,15 +58,15 @@ export default function IndividualAlienPage(props) {
   } else {
     return (
       <Layout>
-        {Aliens.aliens[alienIndex] !== RevisedAliens.aliens[alienIndex] ?
+        {Aliens.aliens[alienIndex].revised ?
           <Nav className="ps-5 mx-5 border-bottom-0" tabs>
             <NavItem>
               <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
-                onClick={() => { setAlien(Aliens.aliens[alienIndex]); setRevised(false) }}>Original</NavLink>
+                onClick={() => { setAlien(Aliens.aliens[alienIndex].original); setRevised(false) }}>Original</NavLink>
             </NavItem>
             <NavItem>
               <NavLink className={"nav-link" + (revised ? " active" : "")} href="#"
-                onClick={() => { setAlien(RevisedAliens.aliens[alienIndex]); setRevised(true) }}>Revised</NavLink>
+                onClick={() => { setAlien(Aliens.aliens[alienIndex].revised); setRevised(true) }}>Revised</NavLink>
             </NavItem>
           </Nav> : null
         }

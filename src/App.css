@@ -19,8 +19,13 @@ div.App.throwback {
   --bs-body-color: #cfd9e2;
 }
 
-p {
+p, li {
   white-space: pre-line;
+  /* line-height: 1.5; */
+}
+
+li:not(.nav-item){
+  margin-bottom: 1em;
 }
 
 .throwback {
@@ -63,4 +68,24 @@ table.th-w-50 tbody tr th {
 .hero__subtitle{
   font-size: 40px;
   font-style: italic;
+}
+
+.border-indigo {
+  --bs-border-opacity: 1;
+  border-color: #6610f2 !important;
+}
+
+.bg-indigo {
+  --bs-border-opacity: 1;
+  background-color: #6610f2 !important;
+}
+
+.border-orange {
+  --bs-border-opacity: 1;
+  border-color: #fd7e14 !important;
+}
+
+.bg-orange {
+  --bs-border-opacity: 1;
+  background-color: #fd7e14 !important;
 }

@@ -1,0 +1,612 @@
+{
+    "stations": {
+        "0": {
+            "original": {
+                "name": "Alien Outpost",
+                "type": "Space Station",
+                "body": "When you receive this card, draw one card from the flare deck. Place the matching alien sheet next to this card, then remove that flare from the game. If the alien has Game Setup text, is not allowed in this game, or has an alternate victory condition, discard it and draw again. While you have a colony on this planet, you have this alien power in addition to any other alien(s) you control.",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Storm"
+            },
+            "revised": {
+                "name": "Alien Outpost",
+                "type": "Space Station",
+                "body": "When you receive this card, draw one card from the unused flare deck. Place the matching alien sheet next to this card, then remove that flare from the game. If the alien has Game Setup text, is not allowed in this game, or has an alternate victory condition, discard it and draw again. While you have a colony on this planet, you have this alien power in addition to any other alien(s) you control.",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Storm",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency"
+            }
+        },
+        "1": {
+            "original": {
+                "name": "Big Space Laser",
+                "type": "Space Station",
+                "body": "As a main player, after you reveal an attack card, you may add 10 to your total if there are no allies on your side.",
+                "timing": {
+                    "player": "Main Player Only",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Storm"
+            }
+        },
+        "2": {
+            "original": {
+                "name": "Colony Cloak",
+                "type": "Space Station",
+                "body": "As the defense, after the hyperspace gate is aimed at one of your colonies or planets in this system, you may send one of your ships from this space station's planet to the warp. Then, the offense must (if possible) target a different colony or planet in this system where he or she can have a legal encounter.",
+                "timing": {
+                    "player": "Defense Only",
+                    "phases": {
+                        "launch": true
+                    }
+                },
+                "expansion": "Cosmic Storm"
+            }
+        },
+        "3": {
+            "original": {
+                "name": "Cosmic Energy Generator",
+                "type": "Space Station",
+                "body": "After your side wins an encounter, place two tokens on this card. After your side loses an encounter, discard one token from this card. As long as there are five or more tokens on this card, it counts as a foreign colony toward victory.",
+                "timing": {
+                    "player": "Main Player or Ally Only",
+                    "phases": {
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Storm"
+            }
+        },
+        "4": {
+            "original": {
+                "name": "Observation Platform",
+                "type": "Space Station",
+                "body": "After alliances are formed during an encounter in which you are not involved, you may either retrieve one ship from the warp or draw one card from the deck.",
+                "timing": {
+                    "player": "Not Main Player or Ally",
+                    "phases": {
+                        "alliance": true
+                    }
+                },
+                "expansion": "Cosmic Storm"
+            },
+            "revised": {
+                "name": "Observation Platform",
+                "type": "Space Station",
+                "body": "After alliances are formed, if you are not a main player or ally, you may recieve one reward.",
+                "timing": {
+                    "player": "Not Main Player or Ally",
+                    "phases": {
+                        "alliance": true
+                    }
+                },
+                "expansion": "Cosmic Storm",
+                "revisionNotes": "Revisions from The Praw\n\nEdited to be consistent with Odyssey's observation platform, which is clearer in its wording and to give it a small buff to make it not a subset of Odyssey's observation platform. The latter is a very opinionated change, feel free to ignore it."
+            }
+        },
+        "5": {
+            "original": {
+                "name": "Shield Generator",
+                "type": "Space Station",
+                "body": "As an ally in a losing encounter, instead of sending your ships to the warp, you may place any or all of those ships on this planet instead.",
+                "timing": {
+                    "player": "Ally Only",
+                    "phases": {
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Storm"
+            }
+        },
+        "6": {
+            "original": {
+                "name": "Shock Trooper Shuttle Pods",
+                "type": "Space Station",
+                "body": "During each other player's regroup phase, you may retrieve one of your ships from the warp. If you have no ships in the warp, you may instead choose one player to send one of his or her ships to the warp.",
+                "timing": {
+                    "player": "Not Offense",
+                    "phases": {
+                        "regroup": true
+                    }
+                },
+                "expansion": "Cosmic Storm"
+            }
+        },
+        "7": {
+            "original": {
+                "name": "Tactical Array",
+                "type": "Space Station",
+                "body": "As the defense, during the launch phase, you may draw two cards from the deck.",
+                "timing": {
+                    "player": "Defense Only",
+                    "phases": {
+                        "launch": true
+                    }
+                },
+                "expansion": "Cosmic Storm"
+            }
+        },
+        "8": {
+            "original": {
+                "name": "Temporal Matrix",
+                "type": "Space Station",
+                "body": "If you lose the first encounter of your turn, you may still have a second encounter as long as you have an encounter card in your hand. If you win the first encounter of your turn and choose to have a second encounter, you may place the destiny card from the first encounter on top of the destiny deck.",
+                "timing": {
+                    "player": "Offense Only",
+                    "phases": {
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Storm"
+            }
+        },
+        "9": {
+            "original": {
+                "name": "Transdimensional Rift Relay",
+                "type": "Space Station",
+                "body": "As a main player, after encounter cards are revealed, if you have at least one ship in the encounter, you may send up to four of your ships from this planet and add them to your ships already in the encounter. You may use this ability for encounters in any system.",
+                "timing": {
+                    "player": "Main Player Only",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Storm"
+            }
+        },
+        "10": {
+            "original": {
+                "name": "Artifact Detection Grid",
+                "type": "Space Station",
+                "body": "After another player plays an artfiact card, you may gain one reward.",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {}
+        },
+        "11": {
+            "original": {
+                "name": "Fluxx Capacitory",
+                "type": "Space Station",
+                "body": "After alliances are formed, if you were invited to both sides, place a cosmic token on this card.\n\nAfter cards are selected but before they are revealed, if you are an ally, you may spend a token from this card to switch to the other side.",
+                "timing": {
+                    "player": "Ally Only",
+                    "phases": {
+                        "planning": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "12": {
+            "original": {
+                "name": "Massive Battery",
+                "type": "Space Station",
+                "body": "When you play a reinforcement card, increase its value by the number of your ships on this planet.",
+                "timing": {
+                    "player": "Main Player or Ally Only",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "13": {
+            "original": {
+                "name": "Observation Platform",
+                "type": "Space Station",
+                "body": "After alliances are formed, if you are not a main player or ally, you may either free two of your ships from the warp or draw one card from the deck.",
+                "timing": {
+                    "player": "Not Main Player or Ally Only",
+                    "phases": {
+                        "alliance": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "14": {
+            "original": {
+                "name": "Orbital Billboards",
+                "type": "Space Station",
+                "body": "During your regroup phase, you may show your entire hand to all players. If you do this, double the value of an attack card you reveal in this encounter. If you double an attack card in this way, send one of your ships from this planet to the warp.",
+                "timing": {
+                    "player": "Offense Only",
+                    "phases": {
+                        "regroup": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "15": {
+            "original": {
+                "name": "Oscillation Overthruster",
+                "type": "Space Station",
+                "body": "After determining the winner of the encounter, add both encounter totals together. If the sum is at least 42, you may send all of your ships from this planet to the targeted planet.",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "16": {
+            "original": {
+                "name": "Stun Apparatus",
+                "type": "Space Station",
+                "body": "As a main player, after encounter cards are revealed, the value of your opponent's attack card is reduced by the number of ships on this planet (before any other effects alter that card's value) to a minimum of 00.",
+                "timing": {
+                    "player": "Main Player Only",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "17": {
+            "original": {
+                "name": "Targeting Depot",
+                "type": "Space Station",
+                "body": "As an ally, before encounter cards are selected, you may show an attack card from your hand to all players. The value of each main player's revealed attack card becomes the difference between its printed value and the card you showed; e.g. if you showed a 12, a revealed 12 would be worth 08 and a revealed 03 would be worth 09.",
+                "timing": {
+                    "player": "Ally Only",
+                    "phases": {
+                        "planning": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "18": {
+            "original": {
+                "name": "Rift Enhancer",
+                "type": "Space Station",
+                "body": "After a player takes an attack 01-06 from your hand, you may force that player to lose a number of their ships equal to the value of the card and discard that card. During the regroup phase, you may discard an attack 01-06 to free a number of the offense's ships from the warp equal to the value of the card.",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "19": {
+            "original": {
+                "name": "Zap Zapper",
+                "type": "Space Station",
+                "body": "When a card with \"Zap\" in its name is played, you may send one ship from this planet to the warp to cancel and discard that card.",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "20": {
+            "original": {
+                "name": "Big Sky Laser",
+                "type": "Sky City",
+                "body": "As a main player, after encounter cards are revealed, you may add 3 to your total for each player with a colony on this planet.",
+                "timing": {
+                    "player": "Main Player Only",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "21": {
+            "original": {
+                "name": "Exhortation",
+                "type": "Sky City",
+                "body": "Each player who does not have a colony on this planet has the following effects:\n\nWhen they fail to make a deal, they lose three additional ships.\n\nWhen they have compensation collected from them, increase that compensation by two cards.",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "22": {
+            "original": {
+                "name": "Golden City",
+                "type": "Sky City",
+                "body": "After you make a deal, gain two rewards.",
+                "timing": {
+                    "player": "Main Player Only",
+                    "phases": {
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "23": {
+            "original": {
+                "name": "Hand Additor",
+                "type": "Sky City",
+                "body": "When you draw a new hand (including your starting hand), draw two additional cards.",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "24": {
+            "original": {
+                "name": "Icy Optimization",
+                "type": "Sky City",
+                "body": "During your regroup phase, instead of retrieving a ship from the warp, you may discard a card from your hand.",
+                "timing": {
+                    "player": "Offense Only",
+                    "phases": {
+                        "regroup": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "25": {
+            "original": {
+                "name": "Recycler",
+                "type": "Sky City",
+                "body": "As an ally, after the outcome of the encounter is determined, you may shuffle the discard pile and draw one card from it at random.",
+                "timing": {
+                    "player": "Ally Only",
+                    "phases": {
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "26": {
+            "original": {
+                "name": "Warp Harvester",
+                "type": "Sky City",
+                "body": "As an ally, when you play a reinforcement card, increase its value by the number of ships you have in the warp.",
+                "timing": {
+                    "player": "Ally Only",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "27": {
+            "original": {
+                "name": "Zaptimizer",
+                "type": "Sky City",
+                "body": "You may treat any artifact you play as a Card Zap:\n\nPlay this card at any time to negate a flare or artifact card just as a player attempts to use it. The flare or artifact must then be discarded.",
+                "timing": {
+                    "player": "Ally Only",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Zaptimizer",
+                "type": "Sky City",
+                "body": "You may treat any artifact you play as a Card Zap:\n\nPlay at any time to negate a flare or artifact card just as a player attempts to use it. The flare or artifact must then be discarded.",
+                "timing": {
+                    "player": "Ally Only",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw\n\nEdited to be consistent with the Cosmodex's revised Card Zap"
+            }
+        },
+        "28": {
+            "original": {
+                "name": "Burst Targeter",
+                "type": "Deep Space Station",
+                "body": "As the defense or a defensive ally, before encounter cards are selected, you may force two ships of your choice on the other side to return to their colonies.",
+                "timing": {
+                    "player": "Defensive Player",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Burst Targeter",
+                "type": "Deep Space Station",
+                "body": "As the defense or a defensive ally, before encounter cards are selected, you may force two ships of your choice on the other side to return to their colonies.",
+                "timing": {
+                    "player": "Defensive Player Only",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw\n\nEdited for wording consistency"
+            }
+        },
+        "29": {
+            "original": {
+                "name": "Freewheeling Intensifier",
+                "type": "Deep Space Station",
+                "body": "You can play any number of flares per encounter. (Each flare can only be played once per encounter.) At the end of the encounter, if you played only one flare, you may draw one flare from the unused flare deck, and then discard one flare.",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "start turn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {}
+        },
+        "30": {
+            "original": {
+                "name": "High-Activity Staging Zone",
+                "type": "Deep Space Station",
+                "body": "As a main player, when a player becomes your opponent's ally, they must specifiy the number of ships they wish to send. Then, you choose which colonies those ships come from.",
+                "timing": {
+                    "player": "Main Player Only",
+                    "phases": {
+                        "alliance": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "31": {
+            "original": {
+                "name": "Hyperspace Redirect",
+                "type": "Deep Space Station",
+                "body": "As the defense, before allies are invited, you may declare the effects of winning for allies is reversed (i.e. offensive allies gain rewards, defensive allies land on the targeted planet).",
+                "timing": {
+                    "player": "Main Player Only",
+                    "phases": {
+                        "alliance": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "32": {
+            "original": {
+                "name": "Obligatron",
+                "type": "Deep Space Station",
+                "body": "As an ally, after you send ships into the encounter, declare a number. For each play that becomes an ally after you, if that player sends more ships than the number you chose, you may take a card from their hand at random.",
+                "timing": {
+                    "player": "Ally Only",
+                    "phases": {
+                        "alliance": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "33": {
+            "original": {
+                "name": "Population Monitor",
+                "type": "Deep Space Station",
+                "body": "As a main player, after cards are revealed, you may add 2 to your total for each of your home colonies.",
+                "timing": {
+                    "player": "Main Player Only",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "34": {
+            "original": {
+                "name": "Quark Refinery",
+                "type": "Deep Space Station",
+                "body": "As a main player, if you reveal an odd-valued attack card, you may increase its value by 5. If your opponent reveals an odd-valued attack card, you may reduce its value by 5.",
+                "timing": {
+                    "player": "Main Player Only",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "35": {
+            "original": {
+                "name": "Option Cycler",
+                "type": "Deep Space Station",
+                "body": "As a main player, after you reveal an attack card with a value of at least 11, you may treat it as a negotiate. If the card's value was at least 20, collect triple the compensation, if applicable.",
+                "timing": {
+                    "player": "Main Player Only",
+                    "phases": {
+                        "reveal": true
+                    }
+                },
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {}
+        }
+    }
+}
