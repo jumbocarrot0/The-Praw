@@ -19,8 +19,13 @@ div.App.throwback {
   --bs-body-color: #cfd9e2;
 }
 
-p {
+p, li {
   white-space: pre-line;
+  /* line-height: 1.5; */
+}
+
+li:not(.nav-item){
+  margin-bottom: 1em;
 }
 
 .throwback {

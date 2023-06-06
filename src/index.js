@@ -34,6 +34,10 @@ import EvolutionListPage from './pages/Lists/EvolutionListPage';
 import IndividualEvolutionPage from "./pages/IndividualEvolutionPage";
 import ObjectivesListPage from './pages/Lists/ObjectivesListPage';
 import IndividualObjectivePage from "./pages/IndividualObjectivePage";
+import RewardsDeckPage from "./pages/RewardsDeckPage";
+import TeamCosmicPage from "./pages/TeamCosmicPage";
+import AllianceDialPage from "./pages/AllianceDialPage";
+import ForeignAidPage from "./pages/ForeignAidPage";
 
 import Aliens from './dataFiles/aliens.json';
 
@@ -73,6 +77,10 @@ root.render(
               <Route path="/Variants/Evolutions/:evolutionIndex" element={<IndividualEvolutionPage />} />
               <Route path="/Variants/Objectives" element={<ObjectivesListPage />} />
               <Route path="/Variants/Objectives/:objectiveIndex" element={<IndividualObjectivePage />} />
+              <Route path="/Variants/RewardsDeck" element={<RewardsDeckPage />} />
+              <Route path="/Variants/TeamMode" element={<TeamCosmicPage />} />
+              <Route path="/Variants/Dials" element={<AllianceDialPage />} />
+              <Route path="/Variants/ForeignAid" element={<ForeignAidPage />} />
             </Routes>
           </main>
           <Footer />
