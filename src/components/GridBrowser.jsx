@@ -5,7 +5,7 @@ import {
 
 export default function GridBrowser(props) {
 
-  console.log(props.content)
+  // console.log(props.content)
 
   let groupByN = (n, arr) => {
     let result = [];
@@ -16,10 +16,10 @@ export default function GridBrowser(props) {
   let content = props.content;
   let sortedKeys = Object.keys(content)
 
-  if (content[sortedKeys[0]].original) {
+  if (content[sortedKeys[0]] && content[sortedKeys[0]].original) {
     content = Object.entries(content)
     content = content.map((item) => [item[0], item[1].original])
-    console.log(content)
+    // console.log(content)
     content = Object.fromEntries(content)
   }
 

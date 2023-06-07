@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useSearchParams, createSearchParams, useNavigate } from 'react-router-dom'
 import {
-  Container,
   Card,
   CardBody,
   // CardHeader,
@@ -178,7 +177,7 @@ export default function AliensListPage() {
                 {
                   Object.keys(expansions).map((expansion) => {
                     return (
-                      <FormGroup switch>
+                      <FormGroup key={expansion} switch>
                         <Input type="switch" role="switch"
                           checked={expansions[expansion][0]}
                           onChange={() => expansions[expansion][1](!expansions[expansion][0])} />
@@ -221,7 +220,7 @@ export default function AliensListPage() {
           </Form>
         </CardBody>
       </Card>
-      <hr class="border border-light border-2 opacity-100 mb-5" />
+      <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Alien}
         url="/Aliens"
         content={filteredAliens}

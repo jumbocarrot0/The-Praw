@@ -6,7 +6,6 @@ import { ReactComponent as SearchLogo } from '../searchIcon.svg';
 import Layout from '../components/Layout'
 
 import {
-  Container,
   Input,
   InputGroup,
   InputGroupText,
