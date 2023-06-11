@@ -1,6 +1,7 @@
 //Pages
 import Home from "./pages/HomePage";
 import Combos from "./pages/CombosPage";
+import SelectionPage from "./pages/SelectionPage";
 import AlienListPage from "./pages/Lists/AlienListPage";
 import IndividualAlienPage from "./pages/IndividualAlienPage";
 import VariantsListPage from './pages/Lists/VariantsListPage';
@@ -52,6 +53,10 @@ export const routes = [
       path: "/Aliens/:alienIndex",
       element: <IndividualAlienPage />,
       breadcrumb: ({ match }) => Aliens.aliens[match.params.alienIndex].original.name
+    },
+    {
+      path: '/Selection',
+      element: <SelectionPage />,
     },
     {
       path: "/Variants",
