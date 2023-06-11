@@ -22,7 +22,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -37,7 +37,7 @@
         },
         "2": {
             "original": {
-                "body": "Keep secret until: As an you may reveal this moon triple the value of each to reinforcement played by allies your side fof this encounter: on",
+                "body": "Keep secret until: As an ally you may reveal this moon to triple the value of each reinforcement played by allies on your side for this encounter.",
                 "name": "Threeinforce",
                 "type": "Blue Moon",
                 "timing": {
@@ -51,13 +51,13 @@
         },
         "3": {
             "original": {
-                "body": "Keep secret until: At any time, you may reveal this moon to remove any moon from the ships and send any game the warp",
+                "body": "Keep secret until: At any time, you may reveal this moon to remove any moon from the game and send any ships on it to the warp",
                 "name": "Moon Boom",
                 "type": "Blue Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -72,13 +72,13 @@
         },
         "4": {
             "original": {
-                "body": "Keep secret until: At any time, you may reveal this moon to force a player with the most foreign colonies to send all their ships foreign colony to from a their other colonies.",
+                "body": "Keep secret until: At any time, you may reveal this moon to force a player with the most foreign colonies to send all their ships from a foreign colony to their other colonies.",
                 "name": "Inertia",
                 "type": "Blue Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -113,7 +113,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -142,13 +142,13 @@
         },
         "8": {
             "original": {
-                "body": "At the start of your turn, shuffle and deal all the discard pile of those cards to the players, starting with yourself and proceeding clockwise.",
+                "body": "At the start of your turn, shuffle the discard pile and deal all of those cards to the players, starting with yourself and proceeding clockwise.",
                 "name": "Discard Deal",
                 "type": "Cheesy Moon",
                 "timing": {
                     "player": "Offense Only",
                     "phases": {
-                        "start turn": true
+                        "startTurn": true
                     }
                 },
                 "expansion": "Cosmic Odyssey"
@@ -156,13 +156,13 @@
         },
         "9": {
             "original": {
-                "body": "Each player must hum whenever talking or breathing they are not in. Each time & player is caught humming, they send one of not ships to the warp. their",
+                "body": "Each player must hum whenever they are not talking or breathing in. Each time a player is caught not humming, they send one of their ships not in the encounter to the warp.",
                 "name": "Mind Blank",
                 "type": "Cheesy Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -183,7 +183,7 @@
                 "timing": {
                     "player": "Offense Only",
                     "phases": {
-                        "start turn": true
+                        "startTurn": true
                     }
                 },
                 "expansion": "Cosmic Odyssey"
@@ -205,13 +205,13 @@
         },
         "12": {
             "original": {
-                "body": "At the start of your turn, deal the cards remaining in the players, starting deck to the with yourself and proceeding clockwise.",
+                "body": "At the start of your turn, deal the cards remaining in the deck to the players, starting with yourself and proceeding clockwise.",
                 "name": "Deal Deck",
                 "type": "Cheesy Moon",
                 "timing": {
                     "player": "Offense Only",
                     "phases": {
-                        "start turn": true
+                        "startTurn": true
                     }
                 },
                 "expansion": "Cosmic Odyssey"
@@ -219,13 +219,13 @@
         },
         "13": {
             "original": {
-                "body": "When revealed, the game ends. The player with the most colonies (including foreign and home) wins! If playing a campaign, use the number of colonies to determine",
+                "body": "When revealed, the game ends. The player with the most colonies (including foreign and home) wins! If playing a campaign, use the number of colonies to determine ranking.",
                 "name": "Game Over",
                 "type": "Cheesy Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -246,7 +246,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -267,7 +267,7 @@
                 "timing": {
                     "player": "Offense Only",
                     "phases": {
-                        "start turn": true
+                        "startTurn": true
                     }
                 },
                 "expansion": "Cosmic Odyssey"
@@ -303,13 +303,13 @@
         },
         "18": {
             "original": {
-                "body": "When a player draws a new they draw three fewer hand, cards.",
+                "body": "When a player draws a new hand, they draw three fewer cards.",
                 "name": "Limiter",
                 "type": "Full Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -338,7 +338,7 @@
         },
         "20": {
             "original": {
-                "body": "The offenses limit is increased by one.",
+                "body": "The offense's ship limit is increased by one.",
                 "name": "Gate Version 1.1",
                 "type": "Full Moon",
                 "timing": {
@@ -352,7 +352,7 @@
         },
         "21": {
             "original": {
-                "body": "The offenses limit is decreased by one.",
+                "body": "The offense's ship limit is decreased by one.",
                 "name": "Gate Version 0.9",
                 "type": "Full Moon",
                 "timing": {
@@ -372,7 +372,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -387,7 +387,7 @@
         },
         "23": {
             "original": {
-                "body": "The number of encounters player can have per turn is a reduced by one (to minimum a of one).",
+                "body": "The number of encounters a player can have per turn is reduced by one (to minimum a of one).",
                 "name": "Deceleration",
                 "type": "Full Moon",
                 "timing": {
@@ -401,7 +401,7 @@
         },
         "24": {
             "original": {
-                "body": "The number of encounters player can have per turn is a increased by one.",
+                "body": "The number of encounters a player can have per turn is increased by one.",
                 "name": "Acceleration",
                 "type": "Full Moon",
                 "timing": {
@@ -427,7 +427,7 @@
                 "expansion": "Cosmic Odyssey"
             },
             "revised": {
-                "body": "Each main player must select negotiate, if able. a",
+                "body": "Each main player must select a negotiate, if able.",
                 "name": "Compassion",
                 "type": "Full Moon",
                 "timing": {
@@ -517,7 +517,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -532,13 +532,13 @@
         },
         "31": {
             "original": {
-                "body": "rewards, When you gain gain one additional reward. If you occupy at least two half moons, two additional instead. gain",
+                "body": "When you gain rewards, gain one additional reward. If you occupy at least two half moons, gain two additional instead.",
                 "name": "+1/+2 Rewards",
                 "type": "Half Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -587,7 +587,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -630,7 +630,7 @@
         },
         "37": {
             "original": {
-                "body": "After you make a successful deal, reward. one gain",
+                "body": "After you make a successful deal, gain one reward.",
                 "name": "Deal Reward",
                 "type": "Hub Moon",
                 "timing": {
@@ -644,7 +644,7 @@
         },
         "38": {
             "original": {
-                "body": "As part of a deal,you and your opponent can each discard up to two cards from hand.",
+                "body": "As part of a deal, you and your opponent can each discard up to two cards from hand.",
                 "name": "Discard Deal",
                 "type": "Hub Moon",
                 "timing": {
@@ -734,7 +734,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true
+                        "startTurn": true
                     }
                 },
                 "expansion": "Cosmic Odyssey"
@@ -748,7 +748,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -769,7 +769,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -798,7 +798,7 @@
         },
         "48": {
             "original": {
-                "body": "This moon is treated as a foreign colony. During the regroup phase, ifyou have nine or fewer ships ships in the warp, send your ships to the warp until there are ten of your ships there.",
+                "body": "This moon is treated as a foreign colony. During the regroup phase, if you have nine or fewer ships ships in the warp, send your ships to the warp until there are ten of your ships there.",
                 "name": "Streamlined",
                 "type": "Moon Base",
                 "timing": {
@@ -818,7 +818,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -868,7 +868,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -883,14 +883,14 @@
         },
         "53": {
             "original": {
-                "body": "To win the game normally, player must also occupy at a least one moon_",
+                "body": "To win the game normally, player must also occupy at a least one moon.",
                 "name": "Moon Mandate",
                 "type": "New Moon",
                 "trueType": "Full Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -927,7 +927,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -964,7 +964,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -986,7 +986,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1008,7 +1008,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1030,7 +1030,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1067,7 +1067,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1089,7 +1089,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1111,7 +1111,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1148,7 +1148,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1185,7 +1185,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1200,14 +1200,14 @@
         },
         "69": {
             "original": {
-                "body": "When revealed, draw a sky city card (\u00f0\u0178\u2022\u00ae13) and place its marker on this moon's planet. Move the ship from this moon to the planet and remove this moon from the game.",
+                "body": "When revealed, draw a sky city card (🕮13) and place its marker on this moon's planet. Move the ship from this moon to the planet and remove this moon from the game.",
                 "name": "That's No Moon!",
                 "type": "New Moon",
                 "trueType": "Cheesy Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1237,14 +1237,14 @@
         },
         "71": {
             "original": {
-                "body": "Keep secret until: At any time, you may reveal this moon to discard hand and draw a your new one.",
+                "body": "Keep secret until: At any time, you may reveal this moon to discard your hand and draw a new one.",
                 "name": "Harvest",
                 "type": "New Moon",
                 "trueType": "Blue Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1265,7 +1265,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1286,7 +1286,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1301,13 +1301,13 @@
         },
         "74": {
             "original": {
-                "body": "When revealed, draw another alien sheet to use in addition to alien(s) . Redraw any that your Setup have Game text or are not allowed. If this moon is unoccupied, flip it facedown.",
+                "body": "When revealed, draw another alien sheet to use in addition to your alien(s). Redraw any that have Game Setup text or are not allowed. If this moon is unoccupied, flip it facedown.",
                 "name": "Emergence",
                 "type": "Quarter Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1328,7 +1328,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1343,13 +1343,13 @@
         },
         "76": {
             "original": {
-                "body": "When revealed, discard one of your alien sheets and draw another one Redraw any that have Game Setup text or are not allowed. If this moon is unoccupied, flip it facedown.",
+                "body": "When revealed, discard one of your alien sheets and draw another one. Redraw any that have Game Setup text or are not allowed. If this moon is unoccupied, flip it facedown.",
                 "name": "Metamorph",
                 "type": "Quarter Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1370,7 +1370,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1385,13 +1385,13 @@
         },
         "78": {
             "original": {
-                "body": "When revealed, move one of ships to another of each player's their colonies. If this moon is unoccupied, flip it facedown.",
+                "body": "When revealed, move one of each player's ships to another of their colonies. If this moon is unoccupied, flip it facedown.",
                 "name": "Migration",
                 "type": "Quarter Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1406,13 +1406,13 @@
         },
         "79": {
             "original": {
-                "body": "When revealed, each player gives you one card from their hand at keep random. You one of them and discard the rest. If this moon is unoccupied, flip it facedown.",
+                "body": "When revealed, each player gives you one card from their hand at random. You keep one of them and discard the rest. If this moon is unoccupied, flip it facedown.",
                 "name": "Treasure Hunt",
                 "type": "Quarter Moon",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1427,7 +1427,7 @@
         },
         "80": {
             "original": {
-                "body": "Reveal at any time: As an occupied add the number of sides total. moons tO your",
+                "body": "Reveal at any time: As an ally, add the number of occupied moons to your sides total.",
                 "name": "Moon Solidarity",
                 "type": "Secret Moon",
                 "timing": {
@@ -1447,7 +1447,7 @@
                 "timing": {
                     "player": "???",
                     "phases": {
-                        "???": true
+                        "secret": true
                     }
                 },
                 "expansion": "Cosmic Odyssey"
@@ -1455,8 +1455,8 @@
         },
         "82": {
             "original": {
-                "body": "Reveal at any time: While you ships are worth ally, allies' are an double for totals, compensation, and rewards.",
-                "name": "Strengthen",
+                "body": "Reveal at any time: While you are an ally, allies' ships are worth double for totals, compensation, and rewards.",
+                "name": "Strengthen Allies",
                 "type": "Secret Moon",
                 "timing": {
                     "player": "Ally Only",
@@ -1469,7 +1469,7 @@
         },
         "83": {
             "original": {
-                "body": "Reveal at any time: While you ships are worth ally, allies' are an half (rounding down) for totals, compensation, and rewards.",
+                "body": "Reveal at any time: While you are an ally, allies' ships are worth half (rounding down) for totals, compensation, and rewards.",
                 "name": "Weaken Allies",
                 "type": "Secret Moon",
                 "timing": {
@@ -1489,7 +1489,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1524,7 +1524,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true
+                        "startTurn": true
                     }
                 },
                 "expansion": "Cosmic Odyssey"
@@ -1532,7 +1532,7 @@
         },
         "87": {
             "original": {
-                "body": "Reveal at any time: After if you determining the outcome, losing side, ally on the are an you may collect compensation from either main player.",
+                "body": "Reveal at any time: After determining the outcome, if you are an ally on the losing side, you may collect compensation from either main player.",
                 "name": "Payback",
                 "type": "Secret Moon",
                 "timing": {

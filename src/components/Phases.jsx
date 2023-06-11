@@ -14,6 +14,7 @@ export default function Phases(props) {
         {props.phases.special ? "(Special) " : null}
         {props.phases.gameSetup ? "(Game Setup) " : null}
         {props.phases.varies ? "(Varies) " : null}
+        {props.phases.secret ? "(???) " : null}
       </span>
     }
   }

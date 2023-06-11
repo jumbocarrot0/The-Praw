@@ -929,7 +929,7 @@
                 "name": "Station Dock",
                 "refresh": false,
                 "short": "Create a Space Station.",
-                "body": "During the regroup phase, you may discard this tech to draw three space station cards (even if the Space Station variant [\u00f0\u0178\u2022\u00ae13]is not being used). Choose one to put into play in your home system and shuffle the other back into the space station deck.",
+                "body": "During the regroup phase, you may discard this tech to draw three space station cards (even if the Space Station variant [🕮13]is not being used). Choose one to put into play in your home system and shuffle the other back into the space station deck.",
                 "cost": "5",
                 "type": "Tech",
                 "timing": {
@@ -944,7 +944,7 @@
                 "name": "Station Dock",
                 "refresh": false,
                 "short": "Create a Space Station.",
-                "body": "During the regroup phase, you may discard this tech to draw three space station cards (even if the Space Station variant [\u00f0\u0178\u2022\u00ae13] is not being used). Choose one to put into play in your home system and shuffle the other back into the space station deck.",
+                "body": "During the regroup phase, you may discard this tech to draw three space station cards (even if the Space Station variant [🕮13] is not being used). Choose one to put into play in your home system and shuffle the other back into the space station deck.",
                 "cost": "5",
                 "type": "Tech",
                 "timing": {
@@ -1472,7 +1472,7 @@
                 "name": "Rewards Distributor",
                 "refresh": true,
                 "short": "Adds Reward Deck.",
-                "body": "Add the Reward Deck variant (\u00f0\u0178\u2022\u00ae10) to the game. If it is already being used, or if you discarded attack cards with a total value of at least 21, add the Ultra Reward Deck sub-variant. Then, discard this tech and draw two reward cards.",
+                "body": "Add the Reward Deck variant (🕮10) to the game. If it is already being used, or if you discarded attack cards with a total value of at least 21, add the Ultra Reward Deck sub-variant. Then, discard this tech and draw two reward cards.",
                 "cost": "\u00e2\u2030\u00a510",
                 "type": "Mili-Tech",
                 "timing": {
@@ -1487,7 +1487,7 @@
                 "name": "Rewards Distributor",
                 "refresh": true,
                 "short": "Adds Reward Deck.",
-                "body": "Add the Reward Deck variant (\u00f0\u0178\u2022\u00ae10) to the game. If it is already being used, or if you discarded attack cards with a total value of at least 21, add the Ultra Reward Deck sub-variant. Then, discard this tech and draw two reward cards.",
+                "body": "Add the Reward Deck variant (🕮10) to the game. If it is already being used, or if you discarded attack cards with a total value of at least 21, add the Ultra Reward Deck sub-variant. Then, discard this tech and draw two reward cards.",
                 "cost": "\u00e2\u2030\u00a510",
                 "type": "Mili-Tech",
                 "timing": {

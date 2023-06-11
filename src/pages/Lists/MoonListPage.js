@@ -16,7 +16,7 @@ export default function MoonListPage() {
         url="/Variants/Moons"
         content={Moons.moons}
         border={(item) => {
-          const types = {"Cheesy Moon" : "success", "Blue Moon" : "primary", "Full Moon": "warning", "Half Moon": "indigo", "Hub Moon": "orange", "New Moon": "danger", "Quarter Moon": "danger-subtle", "Secret Moon": "primary-subtle"}
+          const types = {"Cheesy Moon" : "success", "Blue Moon" : "primary", "Full Moon": "warning", "Half Moon": "indigo", "Hub Moon": "orange", "New Moon": "primary-subtle", "Quarter Moon": "danger-subtle", "Secret Moon": "danger"}
           return types[item.type] ? types[item.type] : "secondary";
         }}
         type={(item) => { return item.type }}
