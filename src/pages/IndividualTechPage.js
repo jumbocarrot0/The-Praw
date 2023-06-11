@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Container, Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
@@ -13,6 +13,11 @@ export default function IndividualTechPage() {
 
   const [tech, setTech] = useState(Techs.technologies[techIndex].original)
   const [revised, setRevised] = useState(false)
+
+  useEffect(() => {
+    setTech(Techs.technologies[techIndex].original)
+    setRevised(false)
+  }, [techIndex])
 
   return (
     <Layout>

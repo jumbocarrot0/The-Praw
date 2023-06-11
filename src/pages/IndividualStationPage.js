@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Container, Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
@@ -13,6 +13,11 @@ export default function IndividualStationPage() {
 
   const [station, setStation] = useState(Stations.stations[stationIndex].original)
   const [revised, setRevised] = useState(false)
+
+  useEffect(() => {
+    setStation(Stations.stations[stationIndex].original)
+    setRevised(false)
+  }, [stationIndex])
 
   return (
     <Layout>

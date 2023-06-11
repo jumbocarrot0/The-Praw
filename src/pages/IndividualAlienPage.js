@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Container, Card, CardBody, Row, Col, CardHeader, Nav, NavItem, NavLink
 } from 'reactstrap';
@@ -7,12 +7,17 @@ import Aliens from '../dataFiles/aliens.json';
 import Phases from '../components/Phases';
 import Layout from '../components/Layout'
 
-export default function IndividualAlienPage(props) {
+export default function IndividualAlienPage() {
 
   const { alienIndex } = useParams();
 
   const [alien, setAlien] = useState(Aliens.aliens[alienIndex].original)
   const [revised, setRevised] = useState(false)
+
+  useEffect(() => {
+    setAlien(Aliens.aliens[alienIndex].original)
+    setRevised(false)
+  }, [alienIndex])
 
   if (alien.name === 'Throwback') { 
     return (<Layout className='throwback'>

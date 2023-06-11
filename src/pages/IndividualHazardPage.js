@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Container, Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
@@ -13,6 +13,11 @@ export default function IndividualHazardPage() {
 
   const [hazard, setHazard] = useState(Hazards.hazards[hazardIndex].original)
   const [revised, setRevised] = useState(false)
+
+  useEffect(() => {
+    setHazard(Hazards.hazards[hazardIndex].original)
+    setRevised(false)
+  }, [hazardIndex])
 
   return (
     <Layout>

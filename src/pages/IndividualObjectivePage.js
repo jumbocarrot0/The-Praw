@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Container, Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
@@ -13,6 +13,11 @@ export default function IndividualObjectivePage() {
 
   const [objective, setObjective] = useState(Objectives.objectives[objectiveIndex].original)
   const [revised, setRevised] = useState(false)
+
+  useEffect(() => {
+    setObjective(Objectives.objectives[objectiveIndex].original)
+    setRevised(false)
+  }, [objectiveIndex])
 
   return (
     <Layout>

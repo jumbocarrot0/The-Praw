@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Container, Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
@@ -13,6 +13,11 @@ export default function IndividualLuxPage() {
 
   const [lux, setLux] = useState(Lux.lux[luxIndex].original)
   const [revised, setRevised] = useState(false)
+
+  useEffect(() => {
+    setLux(Lux.lux[luxIndex].original)
+    setRevised(false)
+  }, [luxIndex])
 
   return (
     <Layout>

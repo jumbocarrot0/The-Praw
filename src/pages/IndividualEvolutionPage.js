@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Container, Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
@@ -13,6 +13,11 @@ export default function IndividualEvolutionPage() {
 
   const [evolution, setEvolution] = useState(Evolutions.evolutions[evolutionIndex].original)
   const [revised, setRevised] = useState(false)
+
+  useEffect(() => {
+    setEvolution(Evolutions.evolutions[evolutionIndex].original)
+    setRevised(false)
+  }, [evolutionIndex])
 
   console.log(Object.entries(evolution.body))
 

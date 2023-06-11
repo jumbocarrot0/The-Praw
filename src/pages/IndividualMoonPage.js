@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
-  Container, Card, CardBody, Nav, NavItem, NavLink
+  Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
 import Moons from '../dataFiles/moons.json';
@@ -13,6 +13,11 @@ export default function IndividualMoonPage() {
 
   const [moon, setMoon] = useState(Moons.moons[moonIndex].original)
   const [revised, setRevised] = useState(false)
+
+  useEffect(() => {
+    setMoon(Moons.moons[moonIndex].original)
+    setRevised(false)
+  }, [moonIndex])
 
   return (
     <Layout>
