@@ -2,7 +2,7 @@
     "moons": {
         "0": {
             "original": {
-                "body": "Keep secret until: As a main player, after cards are revealed, you may reveal this moon to cause ships to be worth each of your triple for totals, compensation, and rewards for this encounter.",
+                "body": "Keep secret until: As a main player, after cards are revealed, you may reveal this moon to cause each of your ships to be worth triple for totals, compensation, and rewards for this encounter.",
                 "name": "Hulk Out",
                 "type": "Blue Moon",
                 "timing": {
@@ -16,7 +16,7 @@
         },
         "1": {
             "original": {
-                "body": "Keep secret until: At any time, you may reveal this moon to force all players who have your nobody flare to give it to you: If can, you may search the discard for it and take it pile",
+                "body": "Keep secret until: At any time, you may reveal this moon to force all players who have your flare to give it to you. If nobody can, you may search the discard pile for it and take it",
                 "name": "Hearth Fire",
                 "type": "Blue Moon",
                 "timing": {
