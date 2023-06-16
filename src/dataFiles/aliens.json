@@ -3527,7 +3527,7 @@
                 "powerName": "You have the power to Schedule.",
                 "powerBody": "As the offense, instead of drawing a card from the destiny deck, you may use this power to look at the top three cards of the destiny deck and choose any one of them to be the destiny card you have drawn. Place the other two cards on the top and/or bottom of the destiny deck in any order you choose.\n\nWhen you use your power, if there are fewer than three cards remaining in the destiny deck, shuffle the destiny discard pile together with the destiny deck to form a new deck. You may only use this power once per encounter.",
                 "bans": [
-                    "Dictator"
+                    "44"
                 ],
                 "powerTiming": {
                     "player": "Offense Only",
@@ -3587,7 +3587,7 @@
                 "powerName": "You have the power to Schedule.",
                 "powerBody": "As the offense, instead of drawing a card from the destiny deck, you may use this power to look at the top three cards of the destiny deck and choose any one of them to be the destiny card you have drawn. Place the other two cards on the top and/or bottom of the destiny deck in any order you choose.\n\nWhen you use this power, if there are fewer than three cards remaining in the destiny deck, shuffle the destiny discard pile together with the destiny deck to form a new deck. You may only use this power once per encounter.",
                 "bans": [
-                    "Dictator"
+                    "4"
                 ],
                 "powerTiming": {
                     "player": "Offense Only",
@@ -7113,7 +7113,7 @@
                 "powerName": "You have the power to Bluff.",
                 "powerBody": "After your opponent reveals his or her encounter card, you may use this power to keep yours facedown, instead stating what it is (and lying if you like). If your opponent does not challenge your claim, conclude the encounter as if your statement were true, then place your encounter card facedown on the bottom of the deck instead of discarding it. If your opponent challenges your claim, reveal your card. If you lied, you lose as many ships to the warp as you had in the encounter. If you told the truth, your opponent loses as many ships as he or she had in the encounter. These lost ships may not be ships involved in the encounter. Afterwards, conclude the encounter normally using the revealed cards.\n\n",
                 "bans": [
-                    "Sorcerer"
+                    "161"
                 ],
                 "powerTiming": {
                     "player": "Main Player Only",
@@ -10991,7 +10991,7 @@
                 "powerName": "You have the power of Prestidigitation.",
                 "powerBody": "As a main player, use this power before encounter cards are selected to force your opponent to play two encounter cards facedown. Choose one of the two cards at random and add it to your hand. Then, play an encounter card from your hand normally (even the card you just took). Your opponent must play the card you didn't choose as his or her encounter card. The rest of the encounter is resolved as usual.\n\nIf your opponent has only one encounter card left in hand (and proves it by showing you his hand except for the encounter card),your power has no effect.",
                 "bans": [
-                    "Oracle"
+                    "119"
                 ],
                 "powerTiming": {
                     "player": "Main Player Only",
@@ -16628,8 +16628,9 @@
                 "powerName": "You have the power to Inflict Pain.",
                 "powerBody": "At the start of any player's regroup phase, before the offense retrieves a ship from the warp, use this power to win the game if all other players have lost at least eight ships . Lost ships include ships in the warp, ships removed from the game, and ships captured by other players.\n\nYou may still win the game via the normal manner.",
                 "bans": [
-                    "Zombie",
-                    "Healer"
+                    "195",
+                    "237",
+                    "75"
                 ],
                 "powerTiming": {
                     "player": "As Any Player",
@@ -16690,8 +16691,9 @@
                 "powerName": "You have the power to Inflict Pain.",
                 "powerBody": "At the start of any regroup phase before the offense retrieves a ship from the warp, use this power to win the game if all other players have lost at least eight ships each. Lost ships include ships in the warp, ships removed from the game, and ships captured by other players.\n\nYou may still win the game via the normal method.",
                 "bans": [
-                    "Zombie",
-                    "Healer"
+                    "195",
+                    "237",
+                    "75"
                 ],
                 "powerTiming": {
                     "player": "As Any Player",
@@ -26084,8 +26086,9 @@
                 "powerName": "You have the power of Cruelty.",
                 "powerBody": "When another player has at least eight ships in the warp, captured and/or out of the game, place a token under that player's colony marker. At the end of the resolution phase, if all other players have a token under their colony marker, use this power to win the game. You may still win the game via the normal manner. As a main player or ally, after your side wins the encounter, if any players on the other side would lose fewer than three ships to the warp, use this power to force each of those players to lose one additional ship to the warp.",
                 "bans": [
-                    "Zombie",
-                    "Healer"
+                    "195",
+                    "237",
+                    "75"
                 ],
                 "powerTiming": {
                     "player": "As Any Player",
@@ -26144,8 +26147,9 @@
                 "powerName": "You have the power of Cruelty.",
                 "powerBody": "When another player has at least eight ships in the warp, captured and/or removed of the game, place a token under that player's colony marker. At the end of the resolution phase, if all other players have a token under their colony marker, use this power to win the game. You may still win the game via the normal manner. As a main player or ally, after your side wins the encounter, if any players on the other side would lose fewer than three ships to the warp, use this power to force each of those players to lose one additional ship to the warp.",
                 "bans": [
-                    "Zombie",
-                    "Healer"
+                    "195",
+                    "237",
+                    "75"
                 ],
                 "powerTiming": {
                     "player": "As Any Player",

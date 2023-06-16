@@ -42,8 +42,8 @@ function filterAliens(aliens, search, expansions, revised, alerts
 
   let filteredAliens = Object.entries(aliens);
 
-  console.log(filteredAliens)
-  console.log(revised)
+  // console.log(filteredAliens)
+  // console.log(revised)
 
   if (revised) {
     filteredAliens = filteredAliens.filter(alien => alien[1].revised ? alien[1].revised.name.toLowerCase().includes(search.toLowerCase()) : alien[1].original.name.toLowerCase().includes(search.toLowerCase()))
@@ -103,10 +103,32 @@ function random(seed) {
   return x - Math.floor(x);
 }
 
-function giveAliens(aliens, player, seed, drawnCount) {
+function giveAliens(aliens, player, seed, drawnCount, preventBans) {
   const alienIDS = Object.keys(aliens)
   // seed = seed.toLowerCase()
-  const shuffledAlienIDS = shuffle(alienIDS, seed.toLowerCase().hashCode())
+  let shuffledAlienIDS = shuffle(alienIDS, seed.toLowerCase().hashCode())
+  if (preventBans){
+    const bans = []
+    alienIDS.forEach(alienID => {
+      if (aliens[alienID].original.bans) {
+        aliens[alienID].original.bans.forEach(ban => {
+          bans.push([alienID, ban])
+        }
+        )
+      }
+    })
+    console.log(shuffledAlienIDS)
+    bans.forEach(ban => {
+      if (shuffledAlienIDS.includes(ban[0]) && shuffledAlienIDS.includes(ban[1])) {
+        if (shuffledAlienIDS.indexOf(ban[0]) > shuffledAlienIDS.indexOf(ban[1])) {
+          shuffledAlienIDS = shuffledAlienIDS.filter(alienID => alienID !== ban[0])
+        } else {
+          shuffledAlienIDS = shuffledAlienIDS.filter(alienID => alienID !== ban[1])
+        }
+      }
+    })
+  }
+
   // console.log(shuffledAlienIDS)
   return shuffledAlienIDS.slice(player * drawnCount, player * drawnCount + drawnCount)
 }
@@ -116,7 +138,7 @@ function AlienViewButton(props) {
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
 
-  console.log(alien)
+  // console.log(alien)
 
   return (<div>
     <Modal isOpen={modal} toggle={toggle} {...props} scrollable>
@@ -170,13 +192,17 @@ export default function Selection() {
   const [gameSeed, setGameSeed] = useState('');
   const [playerNumber, setPlayerNumber] = useState(undefined);
   const [drawnCount, setDrawnCount] = useState(2);
-  const [revised, setRevised] = useState(false)
-  const [useATAliens, setUseATAliens] = useState(false)
-  const [useATAliensAndOG, setUseATAliensAndOG] = useState(false)
-  const [excludeAliensSearch, setExcludeAliensSearch] = useState("")
-  const [excludedAliens, setExcludedAliens] = useState([])
-  const [alerts, setAlerts] = useState(["Green", "Yellow", "Red"])
-  const [useGameSetup, setUseGameSetup] = useState(true)
+  const [revised, setRevised] = useState(false);
+  const [useATAliens, setUseATAliens] = useState(false);
+  const [useATAliensAndOG, setUseATAliensAndOG] = useState(false);
+  const [excludeAliensSearch, setExcludeAliensSearch] = useState("");
+  const [excludedAliens, setExcludedAliens] = useState([]);
+  const [alerts, setAlerts] = useState(["Green", "Yellow", "Red"]);
+  const [useGameSetup, setUseGameSetup] = useState(true);
+  const [preventBans, setPreventBans] = useState(true);
+
+  const [errorModal, setErrorModal] = useState(false);
+
   const navigate = useNavigate();
 
   let submittedExpansions = ["Base Set", "42nd Anniversary Edition", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "Cosmic Odyssey"];
@@ -250,6 +276,17 @@ export default function Selection() {
   return (
     <Layout>
       <h1 className='mb-4'>Aliens</h1>
+      <Modal isOpen={errorModal} toggle={() => setErrorModal(!errorModal)}>
+        <ModalHeader toggle={() => setErrorModal(!errorModal)}>Invalid Filters</ModalHeader>
+        <ModalBody>
+          Your selected filters resulted in too few aliens to give to all players.
+        </ModalBody>
+        <ModalFooter>
+          <Button color="danger" onClick={() => setErrorModal(!errorModal)}>
+            Go Back
+          </Button>
+        </ModalFooter>
+      </Modal>
       <Card className='mb-4 bg-light'>
         <CardBody>
           <Form onSubmit={
@@ -263,7 +300,7 @@ export default function Selection() {
                 let results = Object.entries(filterAliens(Aliens.aliens, "",
                   Object.keys(expansions).filter((expansion) => expansions[expansion][0]).map((expansion) => expansion), revised, alerts));
                 results = results.filter(alien => !excludedAliens.includes(alien[0]))
-                if (!useGameSetup){
+                if (!useGameSetup) {
                   results = results.filter(alien => revised ? alien[1].revised.gameSetup === "" : alien[1].original.gameSetup === "")
                 }
                 if (!useATAliens) {
@@ -273,9 +310,11 @@ export default function Selection() {
                 }
                 results = Object.fromEntries(results)
                 if (Object.keys(results).length > drawnCount * 8) {
-                  let selectedAliens = giveAliens(results, playerNumber, usedSeed, Number(drawnCount));
+                  let selectedAliens = giveAliens(results, playerNumber, usedSeed, Number(drawnCount), preventBans);
                   selectedAliens = selectedAliens.map((alien) => [alien, Aliens.aliens[alien]])
                   setGivenAliens(Object.fromEntries(selectedAliens))
+                } else {
+                  setErrorModal(true)
                 }
               }
             }}>
@@ -412,6 +451,14 @@ export default function Selection() {
                     Include Aliens with Game Setup
                   </Label>
                 </FormGroup>
+                <FormGroup switch>
+                  <Input type="switch" role="switch"
+                    checked={preventBans}
+                    onChange={() => setPreventBans(!preventBans)} />
+                  <Label className="text-dark" check>
+                    Prevent Conflicts (e.g. Sadist & Healer)
+                  </Label>
+                </FormGroup>
               </Col>
               <Col sm={6}>
                 <h2 className='text-dark'>Exclude Aliens</h2>
@@ -429,15 +476,15 @@ export default function Selection() {
                   <div className="overflow-y-scroll" style={{ height: '10vh' }}>
                     {groupByN(3, Object.entries(filterAliens(Aliens.aliens, excludeAliensSearch))).map(row => {
                       return (
-                        <Row>
+                        <Row key={row}>
                           {
                             row.map(alien => {
                               return (
-                                <Col sm={4}>
+                                <Col sm={4} key={alien}>
                                   <FormGroup check>
                                     <Input type="checkbox"
                                       checked={excludedAliens.includes(alien[0])}
-                                      onClick={() => {
+                                      onChange={() => {
                                         if (excludedAliens.includes(alien[0])) {
                                           setExcludedAliens(excludedAliens.filter(alienID => alienID !== alien[0]))
                                         } else {
@@ -471,10 +518,10 @@ export default function Selection() {
                 {
                   ["Green", "Yellow", "Red"].map(alert => {
                     return (
-                      <FormGroup switch>
+                      <FormGroup switch key={alert}>
                         <Input type="switch" role="switch"
                           checked={alerts.includes(alert)}
-                          onClick={() => {
+                          onChange={() => {
                             if (alerts.includes(alert)) {
                               setAlerts(alerts.filter(includedAlert => includedAlert !== alert))
                             } else {
