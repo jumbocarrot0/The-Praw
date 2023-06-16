@@ -23,7 +23,8 @@ import {
   Modal,
   ModalBody,
   ModalFooter,
-  ModalHeader
+  ModalHeader,
+  FormFeedback
 
 } from 'reactstrap';
 
@@ -107,7 +108,7 @@ function giveAliens(aliens, player, seed, drawnCount, preventBans) {
   const alienIDS = Object.keys(aliens)
   // seed = seed.toLowerCase()
   let shuffledAlienIDS = shuffle(alienIDS, seed.toLowerCase().hashCode())
-  if (preventBans){
+  if (preventBans) {
     const bans = []
     alienIDS.forEach(alienID => {
       if (aliens[alienID].original.bans) {
@@ -191,8 +192,9 @@ export default function Selection() {
   const searchParams = useSearchParams()[0];
   const [gameSeed, setGameSeed] = useState('');
   const [playerNumber, setPlayerNumber] = useState(undefined);
+  const [playerNumberError, setPlayerNumberError] = useState(false);
   const [drawnCount, setDrawnCount] = useState(2);
-  const [revised, setRevised] = useState(false);
+  const [revised, setRevised] = useState(true);
   const [useATAliens, setUseATAliens] = useState(false);
   const [useATAliensAndOG, setUseATAliensAndOG] = useState(false);
   const [excludeAliensSearch, setExcludeAliensSearch] = useState("");
@@ -279,7 +281,7 @@ export default function Selection() {
       <Modal isOpen={errorModal} toggle={() => setErrorModal(!errorModal)}>
         <ModalHeader toggle={() => setErrorModal(!errorModal)}>Invalid Filters</ModalHeader>
         <ModalBody>
-          Your selected filters resulted in too few aliens to give to all players.
+          Your selected filters resulted in too few aliens to give to you
         </ModalBody>
         <ModalFooter>
           <Button color="danger" onClick={() => setErrorModal(!errorModal)}>
@@ -297,6 +299,7 @@ export default function Selection() {
                 usedSeed = (Math.random() * 1000000).toString()
               }
               if (playerNumber) {
+                setPlayerNumberError(false)
                 let results = Object.entries(filterAliens(Aliens.aliens, "",
                   Object.keys(expansions).filter((expansion) => expansions[expansion][0]).map((expansion) => expansion), revised, alerts));
                 results = results.filter(alien => !excludedAliens.includes(alien[0]))
@@ -309,13 +312,15 @@ export default function Selection() {
                   results = results.filter(alien => !alien[1].original.altTimelineID)
                 }
                 results = Object.fromEntries(results)
-                if (Object.keys(results).length > drawnCount * 8) {
-                  let selectedAliens = giveAliens(results, playerNumber, usedSeed, Number(drawnCount), preventBans);
-                  selectedAliens = selectedAliens.map((alien) => [alien, Aliens.aliens[alien]])
-                  setGivenAliens(Object.fromEntries(selectedAliens))
-                } else {
+                let selectedAliens = giveAliens(results, playerNumber, usedSeed, Number(drawnCount), preventBans);
+                selectedAliens = selectedAliens.map((alien) => [alien, Aliens.aliens[alien]])
+                if (selectedAliens.length < Number(drawnCount)) {
                   setErrorModal(true)
+                } else {
+                  setGivenAliens(Object.fromEntries(selectedAliens))
                 }
+              } else {
+                setPlayerNumberError(true)
               }
             }}>
             <Row>
@@ -351,6 +356,7 @@ export default function Selection() {
                     onChange={(e) => setPlayerNumber(e.target.value)}
                     value={playerNumber}
                     defaultValue={"Please Select"}
+                    invalid={playerNumberError && playerNumber === undefined}
                   >
                     <option value={undefined} disabled>
                       Please Select
@@ -383,6 +389,9 @@ export default function Selection() {
                       Pink
                     </option>
                   </Input>
+                  <FormFeedback invalid>
+                    Please select a colour
+                  </FormFeedback>
                 </FormGroup>
               </Col>
             </Row>
