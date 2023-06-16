@@ -16,9 +16,10 @@ export default function GridBrowser(props) {
   let content = props.content;
   let sortedKeys = Object.keys(content)
 
+
   if (content[sortedKeys[0]] && content[sortedKeys[0]].original) {
     content = Object.entries(content)
-    content = content.map((item) => [item[0], item[1].original])
+    content = content.map((item) => [item[0], props.revised && item[1].revised ? item[1].revised : item[1].original])
     // console.log(content)
     content = Object.fromEntries(content)
   }
@@ -49,7 +50,7 @@ export default function GridBrowser(props) {
       <Row key={row}>
         {row.map((cardIndex) => {
           return (<Col lg={12 / (props.width || 3)} key={cardIndex}>
-            <props.cardTemplate content={content[cardIndex]} to={`${props.url}/${cardIndex}`} border={props.border} type={props.type} />
+            <props.cardTemplate content={content[cardIndex]} to={`${props.url}/${cardIndex}`} border={props.border} type={props.type} revised={props.revised} />
           </Col>)
         })}
       </Row>

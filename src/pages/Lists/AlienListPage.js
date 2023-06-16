@@ -40,6 +40,10 @@ function Alien(props) {
               <Badge className="ms-3 text-dark" color="light">
                 AT
               </Badge>) : null}
+            {alien.gameSetup !== "" ? (
+              <Badge className="ms-3 text-light" color="info">
+                Game Setup
+              </Badge>) : null}
           </h6>
           <strong>{alien.short}</strong>
         </CardBody>
