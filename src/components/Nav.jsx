@@ -45,6 +45,11 @@ export default function PrawNav() {
               Variants
             </Link>
           </NavItem>
+          <NavItem key={5}>
+            <Link className="nav-link" to="/Selection">
+              Selection
+            </Link>
+          </NavItem>
           <NavItem key={4}>
             <Link className="nav-link" to="https://github.com/jumbocarrot0/The-Praw" target="_blank" rel="external">
               GitHub
