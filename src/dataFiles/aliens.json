@@ -5440,7 +5440,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "As a main player or an ally, if the main player opposing your side reveals a negotiate card, you may exchange it for an attack card from your hand. Conclude the encounter as if he or she revealed that attack card.\n\n \n\nClassic Edition\n\n Use this flare only as a main player. For the rest of this encounter, you may remove one ship from any colony (your choice) to the warp from each player who does not say \"Sir\" or \"Ma'am\" (whichever is appropriate) each time he or she speaks.\n\n \n\n As a main player or an ally, if the main player opposing your side reveals a negotiate card, you may exchange it for an attack card from your hand. Conclude the encounter as if he or she revealed that attack card.",
+                "superBody": "As a main player or an ally, if the main player opposing your side reveals a negotiate card, you may exchange it for an attack card from your hand. Conclude the encounter as if he or she revealed that attack card.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -5528,7 +5528,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "As a main player or ally, if the opposing main player reveals a negotiate card, you may exchange it for an attack card from your hand. Conclude the encounter as if they revealed that attack card.\n\n \n\nClassic Edition\n\n As a main player, for the rest of this encounter, you may remove one ship from any colony (your choice) to the warp from each other player who does not say \"Sir\" or \"Ma'am\" (whichever is appropriate) each time they speak.\n\n \n\n As a main player or ally, if the opposing main player reveals a negotiate card, you may exchange it for an attack card from your hand. Conclude the encounter as if they revealed that attack card.",
+                "superBody": "As a main player or ally, if the opposing main player reveals a negotiate card, you may exchange it for an attack card from your hand. Conclude the encounter as if they revealed that attack card.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -17020,7 +17020,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "At the end of your turn, you may choose a card from your unused Schizoid deck and swap it with the Schizoid card on your sheet, as long as this does not give any player an immediate win.\n\n \n\nClassic Edition\n\n After the end of any encounter, you may switch home systems (and therefore player colors) with any other player of your choice. Afterwards, discard this flare.\n\n \n\n If this flare is in your starting hand, reveal it and write a victory condition down instead of choosing a Schizoid card. The condition must 1) be possible for all players to meet, 2) be clear to all as it happens, 3) not require remembering past events, and 4) require at least 3 foreign colonies. If this card leaves your hand, reveal your written victory condition to all players.\n\n \n\nSFkStartingHands",
+                "superBody": "At the end of your turn, you may choose a card from your unused Schizoid deck and swap it with the Schizoid card on your sheet, as long as this does not give any player an immediate win.",
                 "superTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -17110,7 +17110,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "At the end of your turn, you may choose a card from your unused schizoid deck and swap it with the schizoid card on your sheet, as long as this does not give any player an immediate win.\n\n \n\nClassic Edition\n\n After the end of any encounter, you may switch home systems (and therefore player colors) with any other player of your choice. Afterwards, discard this flare.\n\n \n\n If this flare is in your starting hand, reveal it and write a victory condition down instead of choosing a schizoid card. The condition must 1) be possible for all players to meet, 2) be clear to all as it happens, 3) not require remembering past events, and 4) require at least 3 foreign colonies. If this flare leaves your hand, reveal your written victory condition to all players.\n\n \n\nSFkStartingHands",
+                "superBody": "At the end of your turn, you may choose a card from your unused schizoid deck and swap it with the schizoid card on your sheet, as long as this does not give any player an immediate win.",
                 "superTiming": {
                     "player": "As Any Player",
                     "choice": "",
