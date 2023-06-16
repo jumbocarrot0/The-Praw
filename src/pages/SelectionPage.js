@@ -412,11 +412,7 @@ export default function Selection() {
                     //   }
                     // }}
                     onChange={(e) => {
-                      if (e.target.value > 10) {
-                        setDrawnCount(10)
-                      } else {
-                        setDrawnCount(e.target.value)
-                      }
+                      setDrawnCount(e.target.value)
                     }}
                     value={drawnCount}
                   >
