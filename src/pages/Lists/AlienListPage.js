@@ -144,7 +144,7 @@ export default function AliensListPage() {
               event.preventDefault();
               const results = filterAliens(Aliens.aliens, searchQuery,
                 Object.keys(expansions).filter((expansion) => expansions[expansion][0]).map((expansion) => expansion))
-              console.log(results)
+              // console.log(results)
               if (results.length === 1) {
                 navigate({
                   pathname: `/Aliens/${Object.keys(results)[0]}`
@@ -166,7 +166,7 @@ export default function AliensListPage() {
                   placeholder="Search the Cosmos"
                   value={searchQuery}
                   onChange={(e) => {
-                    if (!/[^A-Za-z0-9\-,]/.test(e.target.value)) {
+                    if (!/[^ A-Za-z0-9\-,]/.test(e.target.value)) {
                       setSearchQuery(e.target.value)
                     }
                   }} />

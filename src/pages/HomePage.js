@@ -44,7 +44,7 @@ export default function Home() {
             <Input placeholder="Search the Cosmos"
               value = {searchQuery}
               onChange={(e) => {
-                if (!/[^A-Za-z0-9\-,]/.test(e.target.value)){
+                if (!/[^ A-Za-z0-9\-,]/.test(e.target.value)){
                   setSearchQuery(e.target.value)
                 }
               }} />

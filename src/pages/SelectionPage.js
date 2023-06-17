@@ -475,7 +475,11 @@ export default function Selection() {
                       placeholder="Filter Aliens"
                       type="text"
                       value={excludeAliensSearch}
-                      onChange={(e) => setExcludeAliensSearch(e.target.value)}
+                      onChange={(e) => {
+                        if (!/[^ A-Za-z0-9\-,]/.test(e.target.value)){
+                          setExcludeAliensSearch(e.target.value)
+                        }
+                      }}
                     />
                   </FormGroup>
                   <div className="overflow-y-scroll" style={{ height: '10vh' }}>
