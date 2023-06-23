@@ -61,5 +61,6 @@
     {"Name": "Your Power is What?", "Author": "Jumbocarrot", "Aliens": ["Schizoid", "Machine", "Reincarnator", "The Claw", "Void", "The Meek", "Dictator", "Sadist"]},
     {"Name": "Ravenswood Bluff", "Author": "Jumbocarrot", "Aliens": ["Lunatic", "Empath", "Pacifist", "Gambler", "Mutant", "Magician", "Leviathan", "Demon"]},
 
-    {"Name": "Wait, what power did I have again?", "Author": "User Submission", "Aliens": ["Plant", "Geek", "Reincarnator", "Pentaform", "Insect", "Changeling", "Chrysalis", "Swindler"]}
+    {"Name": "Wait, what power did I have again?", "Author": "User Submission", "Aliens": ["Plant", "Geek", "Reincarnator", "Pentaform", "Insect", "Changeling", "Chrysalis", "Swindler"]},
+    {"Name": "Nothing Is Secret", "Author": "YoKai21", "Aliens": ["Aura", "AI", "Seeker", "Oracle", "Mind", "Quartermaster", "Hacker", "Angler"]}
 ]
