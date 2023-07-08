@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {
-  Container, Card, CardBody, Nav, NavItem, NavLink
+  Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
 import Evolutions from '../dataFiles/evolutions.json';
@@ -22,7 +22,7 @@ export default function IndividualEvolutionPage() {
   console.log(Object.entries(evolution.body))
 
   return (
-    <Layout>
+    <Layout title={evolution.name}>
       {Evolutions.evolutions[evolutionIndex].revised ?
         <Nav className="ps-5 mx-5 border-bottom-0" tabs>
           <NavItem>

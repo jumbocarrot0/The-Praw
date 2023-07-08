@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {
-  Container, Card, CardBody, Nav, NavItem, NavLink
+  Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
 import Objectives from '../dataFiles/objectives.json';
@@ -20,7 +20,7 @@ export default function IndividualObjectivePage() {
   }, [objectiveIndex])
 
   return (
-    <Layout>
+    <Layout title={objective.name}>
       {Objectives.objectives[objectiveIndex].revised ?
         <Nav className="ps-5 mx-5 border-bottom-0" tabs>
           <NavItem>

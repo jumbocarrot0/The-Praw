@@ -33,7 +33,7 @@ import Evolutions from './dataFiles/evolutions.json'
 import Moons from './dataFiles/moons.json'
 import Objectives from './dataFiles/objectives.json'
 
-const AlienBreadcrumb = ({ match }) => Aliens.aliens[match.params.alienIndex].original.name;
+// const AlienBreadcrumb = ({ match }) => Aliens.aliens[match.params.alienIndex].original.name;
 
 export const routes = [
     {

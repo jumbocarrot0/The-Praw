@@ -291,7 +291,48 @@
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
-                ]
+                ],
+                "essences": {
+                    "name": "Trauma",
+                    "list": {
+                        "1" : {
+                            "name": "Victim Complex",
+                            "body": "If both sides reveal attack cards and you have the lower total, add 2 to your total. Otherwise, add 2 to any compensation you are due, subtract 2 from any compensation you owe, or lose no ships if you fail to deal."
+                        },
+                        "2" : {
+                            "name": "Nervous Breakdown",
+                            "body": "You immediately lose the encounter and collect no compensation. Proceed to the resolution phase and discard the played cards normally."
+                        },
+                        "3" : {
+                            "name": "Abandonmenmt",
+                            "body": "Any or all of your allies may return their involved ships to their colonies, or switch them to the other side of the encounter."
+                        },
+                        "4" : {
+                            "name": "Hearing Voices",
+                            "body": "If all other players can unanimously agree, they may update your reality in one of the following ways: sending 1 of your colonies to the warp, discarding half of the cards in your hand at random, or giving you any 1 or 2 cards from the discard pile."
+                        },
+                        "5" : {
+                            "name": "Hearing Voices",
+                            "body": "If all other players can unanimously agree, they may update your reality in one of the following ways: sending 1 of your colonies to the warp, discarding half of the cards in your hand at random, or giving you any 1 or 2 cards from the discard pile."
+                        },
+                        "6" : {
+                            "name": "Hallucinations",
+                            "body": "Your opponent may exchange his or her revealed encounter card with any other encounter card from his or her hand."
+                        },
+                        "7" : {
+                            "name": "Hallucinations",
+                            "body": "Your opponent may exchange his or her revealed encounter card with any other encounter card from his or her hand."
+                        },
+                        "8" : {
+                            "name": "Aggression",
+                            "body": "You may play any attack cards in your hand as reinforcements."
+                        },
+                        "9" : {
+                            "name": "Depression",
+                            "body": "If you reveal an attack card, its value is 00."
+                        }
+                    }
+                }
             },
             "revised": {
                 "name": "Alien",
@@ -345,11 +386,52 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
-                ]
+                ],
+                "essences": {
+                    "name": "Trauma",
+                    "list": {
+                        "1" : {
+                            "name": "Victim Complex",
+                            "body": "If both sides reveal attack cards and you have the lower total, add 2 to your total. Otherwise, add 2 to any compensation you are due, subtract 2 from any compensation you owe, or lose no ships if you fail to deal."
+                        },
+                        "2" : {
+                            "name": "Nervous Breakdown",
+                            "body": "You immediately lose the encounter and collect no compensation. Proceed to the resolution phase and discard the played cards normally."
+                        },
+                        "3" : {
+                            "name": "Abandonmenmt",
+                            "body": "Any or all of your allies may return their involved ships to their colonies, or switch them to the other side of the encounter."
+                        },
+                        "4" : {
+                            "name": "Hearing Voices",
+                            "body": "If all other players can unanimously agree, they may update your reality in one of the following ways: sending 1 of your colonies to the warp, discarding half of the cards in your hand at random, or giving you any 1 or 2 cards from the discard pile."
+                        },
+                        "5" : {
+                            "name": "Hearing Voices",
+                            "body": "If all other players can unanimously agree, they may update your reality in one of the following ways: sending 1 of your colonies to the warp, discarding half of the cards in your hand at random, or giving you any 1 or 2 cards from the discard pile."
+                        },
+                        "6" : {
+                            "name": "Hallucinations",
+                            "body": "Your opponent may exchange their revealed encounter card with any other encounter card from their hand."
+                        },
+                        "7" : {
+                            "name": "Hallucinations",
+                            "body": "Your opponent may exchange their revealed encounter card with any other encounter card from their hand."
+                        },
+                        "8" : {
+                            "name": "Aggression",
+                            "body": "You may play any attack cards in your hand as reinforcements."
+                        },
+                        "9" : {
+                            "name": "Depression",
+                            "body": "If you reveal an attack card, its value is 00."
+                        }
+                    }
+                }
             }
         },
         "4": {
@@ -432,7 +514,7 @@
                     }
                 },
                 "history": "Spawned on a totally liquid world, Amoebas are highly conscious of vibrations. Quick to withdraw from danger, they are equally able to ooze menacingly into combat when confronted with the proper turbulences. Amoebas pity those who are less able to respond to circumstance and will be sensitive Cosmic masters.",
-                "wildBody": "As a main player, before encounter cards are selected, you may increase or decrease the number of your ships in the encounter by up to four . This may result in you having more than four ships in the hyperspace gate.",
+                "wildBody": "As a main player, before encounter cards are selected, you may increase or decrease the number of your ships in the encounter by up to four. This may result in you having more than four ships in the hyperspace gate.",
                 "wildTiming": {
                     "player": "Main Player Only",
                     "choice": "",
@@ -525,7 +607,44 @@
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
-                ]
+                ],
+                "essences": {
+                    "name": "Disruption",
+                    "list": {
+                        "1" : {
+                            "name": "Warp",
+                            "body": "When you should retrieve one or more of your ships from the warp, you may retrieve all of them."
+                        },
+                        "2" : {
+                            "name": "Success",
+                            "body": "You do not need to be successful on your first encounter to have a second encounter."
+                        },
+                        "3" : {
+                            "name": "Rewards",
+                            "body": "You have a right to see all cards drawn from deck(s) for rewards."
+                        },
+                        "4" : {
+                            "name": "Hand",
+                            "body": "When you have no attack cards, you may discard your hand and draw a new one at any time (potentially continuing your turn if you are the offense)."
+                        },
+                        "5" : {
+                            "name": "Gate",
+                            "body": "All limits on the total number of ships that you can send to the hyperspace gate are ignored, including specific limits (such as those of the Macron)."
+                        },
+                        "6" : {
+                            "name": "Destiny",
+                            "body": "Whenever you should draw from the destiny deck, you may instead look through that deck and choose which card to draw. Afterwards, shuffle the destiny deck unless this disruption has become usable by all players."
+                        },
+                        "7" : {
+                            "name": "Compensation",
+                            "body": "All or part of your compensation may be converted to rewards.\n\nWhen you should receive a reward, you may take a card from any player in compensation instead."
+                        },
+                        "8" : {
+                            "name": "Alliance",
+                            "body": "You may ally without being invited, but if you do and you lose ships to the warp, you lose twice as many."
+                        }
+                    }
+                }
             },
             "revised": {
                 "name": "Anarchist",
@@ -583,7 +702,44 @@
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
-                ]
+                ],
+                "essences": {
+                    "name": "Disruption",
+                    "list": {
+                        "1" : {
+                            "name": "Warp",
+                            "body": "When you should retrieve one or more of your ships from the warp, you may retrieve all of them."
+                        },
+                        "2" : {
+                            "name": "Success",
+                            "body": "You do not need to be successful on your first encounter to have a second encounter."
+                        },
+                        "3" : {
+                            "name": "Rewards",
+                            "body": "You have a right to see all cards drawn from deck(s) for rewards."
+                        },
+                        "4" : {
+                            "name": "Hand",
+                            "body": "When you have no attack cards, you may discard your hand and draw a new one at any time (potentially continuing your turn if you are the offense)."
+                        },
+                        "5" : {
+                            "name": "Gate",
+                            "body": "All limits on the total number of ships that you can send to the hyperspace gate are ignored, including specific limits (such as those of the Macron)."
+                        },
+                        "6" : {
+                            "name": "Destiny",
+                            "body": "Whenever you should draw from the destiny deck, you may instead look through that deck and choose which card to draw. Afterwards, shuffle the destiny deck unless this disruption has become usable by all players."
+                        },
+                        "7" : {
+                            "name": "Compensation",
+                            "body": "All or part of your compensation may be converted to rewards.\n\nWhen you should receive a reward, you may take a card from any player in compensation instead."
+                        },
+                        "8" : {
+                            "name": "Alliance",
+                            "body": "You may ally without being invited, but if you do and you lose ships to the warp, you lose twice as many."
+                        }
+                    }
+                }
             }
         },
         "6": {
@@ -827,7 +983,7 @@
                 "short": "Lower Total Wins",
                 "gameSetup": "",
                 "powerName": "You have the power of Negation.",
-                "powerBody": "As a main player, after both you and your opponent reveal attack cards, use this power to make the lower total win. Furthermore, when this power is used, your ships as well as any offensive and defensive allies' ships are subtracted from the appropriate side's card . Your opponent's total is otherwise figured normally, however.",
+                "powerBody": "As a main player, after both you and your opponent reveal attack cards, use this power to make the lower total win. Furthermore, when this power is used, your ships as well as any offensive and defensive allies' ships are subtracted from the appropriate side's card. Your opponent's total is otherwise figured normally, however.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Mandatory",
@@ -858,7 +1014,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "During each encounter, you may prevent one player from using a super or wild flare, stopping him or her when he or she tries to use the flare .",
+                "superBody": "During each encounter, you may prevent one player from using a super or wild flare, stopping him or her when he or she tries to use the flare.",
                 "superTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -1288,7 +1444,36 @@
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
-                ]
+                ],
+                "essences": {
+                    "name": "Help",
+                    "list": {
+                        "1" : {
+                            "name": "Lost Territory",
+                            "body": "At any time, if you have lost a home colony, the Assistant will recolonize one of your home planets using up to 3 of your ships from your other colonies and/or the warp per your instructions."
+                        },
+                        "2" : {
+                            "name": "Ship Scarcity",
+                            "body": "At any time, the Assistant will retrieve any or all of your ships from the warp per your instructions."
+                        },
+                        "3" : {
+                            "name": "Messy Hand",
+                            "body": "When you draw a new hand, the Assistant will pre-screen it for you, discarding some of the cards per your instructions, returning to you a more efficient and useful hand."
+                        },
+                        "4" : {
+                            "name": "Messy Colonies",
+                            "body": "At any time, the Assistant will redistribute your ships among your colonies per your instructions."
+                        },
+                        "5" : {
+                            "name": "Needed Card",
+                            "body": "All limits on the total number of ships that you can send to the hyperspace gate are ignored, including specific limits (such as those of the Macron)."
+                        },
+                        "6" : {
+                            "name": "Unwilling Ally",
+                            "body": "After a player other than the Assistant has chosen whether or not to ally and/or how many ships to bring, the Assistant will override that player's decision per your instructions."
+                        }
+                    }
+                }
             }
         },
         "13": {
@@ -1446,7 +1631,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "You may use your power as an offensive ally .",
+                "superBody": "You may use your power as an offensive ally.",
                 "superTiming": {
                     "player": "Offensive Ally Only",
                     "choice": "",
@@ -2135,7 +2320,7 @@
                     }
                 },
                 "history": "\"To serve is to live.\" The motto of the house of Butt guides its family as they build for their true inner hope: to turn the Cosmic tables and rule forever.",
-                "wildBody": "As the offense, at the start of your regroup phase, you may choose another player to be the offense for this encounter by saying \"After you, I insist.\" The encounter is then carried out as normal, except that player must invite you to ally with him or her . After the encounter ends, play resumes from where it left off.",
+                "wildBody": "As the offense, at the start of your regroup phase, you may choose another player to be the offense for this encounter by saying \"After you, I insist.\" The encounter is then carried out as normal, except that player must invite you to ally with him or her. After the encounter ends, play resumes from where it left off.",
                 "wildTiming": {
                     "player": "Offense Only",
                     "choice": "",
@@ -2823,7 +3008,7 @@
                 "short": "Becomes Another Alien",
                 "gameSetup": "Place eight tokens on this sheet (six if playing with four planets per player).",
                 "powerName": "You have the power to Change.",
-                "powerBody": "At the start of any encounter, use this power to discard one token from this sheet. If there are no tokens left on this sheet, look at the top 10 flares of the unused flare deck. Choose one of these 10 flares corresponding to an alien that does not have Game Setup text on its alien sheet . You become that alien for the rest of the game. Add its flare card to your hand and take its alien sheet. Then, discard the other nine flare cards and return this sheet to the game box.",
+                "powerBody": "At the start of any encounter, use this power to discard one token from this sheet. If there are no tokens left on this sheet, look at the top 10 flares of the unused flare deck. Choose one of these 10 flares corresponding to an alien that does not have Game Setup text on its alien sheet. You become that alien for the rest of the game. Add its flare card to your hand and take its alien sheet. Then, discard the other nine flare cards and return this sheet to the game box.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -2880,7 +3065,7 @@
                 "short": "Becomes Another Alien",
                 "gameSetup": "Place eight tokens on this sheet (six if playing with four planets per player).",
                 "powerName": "You have the power to Change.",
-                "powerBody": "At the start of every encounter, use this power to discard one token from this sheet. If there are no tokens left on this sheet, look at the top 10 flares of the unused flare deck. Choose one of these 10 flares corresponding to an alien that does not have Game Setup text and is allowed in the current game. You become that alien for the rest of the game. Add its flare card to your hand and take its alien sheet. Then, remove the other nine flare cards from the game and discard this sheet .",
+                "powerBody": "At the start of every encounter, use this power to discard one token from this sheet. If there are no tokens left on this sheet, look at the top 10 flares of the unused flare deck. Choose one of these 10 flares corresponding to an alien that does not have Game Setup text and is allowed in the current game. You become that alien for the rest of the game. Add its flare card to your hand and take its alien sheet. Then, remove the other nine flare cards from the game and discard this sheet.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -3998,7 +4183,7 @@
                 "powerBody": "As a main player or ally, use this power after both main players reveal attack cards. Any one player on your side can discard one attack card from his or her hand that matches the value of your side's revealed attack card. If a player does so, multiply your side's revealed card by the discarded card's value. For instance, if your side reveals an attack 08, any one player on your side may discard an attack 08 to change the revealed card to an attack 64.",
                 "powerTiming": {
                     "player": "As Main Player or Ally",
-                    "choice": "",
+                    "choice": "Mandatory",
                     "phases": {
                         "startTurn": false,
                         "regroup": false,
@@ -4011,7 +4196,7 @@
                     }
                 },
                 "history": "Arranged in orderly three-dimensional lattices, Crystals tend to dominate the arrangement of their local environment. They know that, with a few suggestive seeding hints, they can bring the entire Universe into the most efficient energy packing: Crystalline order.",
-                "wildBody": "",
+                "wildBody": "At the start of any encounter, you may rearrange your ships among your colonies as you wish.",
                 "wildTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -4026,7 +4211,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "At the start of any encounter, you may rearrange your ships among your colonies as you wish.\n\n \n\n When another player discards a card to activate your power, you may add that card to your hand.",
+                "superBody": "When another player discards a card to activate your power, you may add that card to your hand.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -4906,7 +5091,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "After the encounter is resolved, you may discard both your encounter card and your extra card .",
+                "superBody": "After the encounter is resolved, you may discard both your encounter card and your extra card.",
                 "superTiming": {
                     "player": "Main Player Only",
                     "choice": "",
@@ -5409,7 +5594,7 @@
                 "short": "May Change Attack to Negotiate",
                 "gameSetup": "",
                 "powerName": "You have the power of Harmony.",
-                "powerBody": "As a main player, after either main player reveals a negotiate and the other main player reveals an attack, you may use this power to change the revealed attack card into a negotiate . You and the other main player then attempt to make a deal.",
+                "powerBody": "As a main player, after either main player reveals a negotiate and the other main player reveals an attack, you may use this power to change the revealed attack card into a negotiate. You and the other main player then attempt to make a deal.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Optional",
@@ -5835,7 +6020,7 @@
                         "resolution": true
                     }
                 },
-                "history": "Subscribing to a moral code of the utmost purity, the Ethics set a universal standard of conduct. Those who would harm the Ethics find themselves curiously repentant. Knowing that they are possessed of the One True Way, the race of Ethics now seek to convert Outsiders through moral persuasion .",
+                "history": "Subscribing to a moral code of the utmost purity, the Ethics set a universal standard of conduct. Those who would harm the Ethics find themselves curiously repentant. Knowing that they are possessed of the One True Way, the race of Ethics now seek to convert Outsiders through moral persuasion.",
                 "wildBody": "When you draw any new card(s) from the deck, use this flare. For the rest of the encounter, each time you draw cards, you may feel guilty and give away some or all of them to other players. You may not, however, give away more than three cards per encounter in this way.",
                 "wildTiming": {
                     "player": "As Any Player",
@@ -6363,7 +6548,7 @@
                     }
                 },
                 "history": "Within their genteel, sophisticated tribes, the Filches have refined the art of acquisition to a high aesthetic. The most judicious and subtle thefts are memorialized in legend and song. Lately they have taken to eying the depths of space and thoughtfully rippling their tentacles.",
-                "wildBody": "You may discard a negotiate card from your hand to steal any one artifact or flare as it is being played . The stolen card has no effect on its intended victim, going into your hand instead.",
+                "wildBody": "You may discard a negotiate card from your hand to steal any one artifact or flare as it is being played. The stolen card has no effect on its intended victim, going into your hand instead.",
                 "wildTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -6598,7 +6783,7 @@
                     }
                 },
                 "history": "The Filth's reverence for the past leaves it unable to remove any trace of earlier events - whether yesterday's glatorp stains or last year's diseased kinzosh. Having driven all other life forms from their homeworlds, they are slowly extending out to leave their mark - a ring around the Cosmos.",
-                "wildBody": "At any time, you may declare one planet to be \"filthy.\" All ships there return to their other colonies . Any ships that should land there during this encounter instead return to their other colonies. Give this flare to the Filth after use (or discard it, if the Filth isn't playing).",
+                "wildBody": "At any time, you may declare one planet to be \"filthy.\" All ships there return to their other colonies. Any ships that should land there during this encounter instead return to their other colonies. Give this flare to the Filth after use (or discard it, if the Filth isn't playing).",
                 "wildTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -6613,7 +6798,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "As the offense, when you aim the hyperspace gate at a planet, you may play this flare. All other players' ships on that planet (including those of the defense) must immediately return to their other colonies .",
+                "superBody": "As the offense, when you aim the hyperspace gate at a planet, you may play this flare. All other players' ships on that planet (including those of the defense) must immediately return to their other colonies.",
                 "superTiming": {
                     "player": "Offense Only",
                     "choice": "",
@@ -6817,7 +7002,7 @@
                 "short": "Plays Additional Low Cards",
                 "gameSetup": "",
                 "powerName": "You have the power to Overwhelm.",
-                "powerBody": "As a main player, you may use this power after both you and your opponent reveal attack cards . You may discard any or all attack cards in your hand that are both higher than the attack card you played and lower than the attack card played by your opponent, adding their values to your total.",
+                "powerBody": "As a main player, you may use this power after both you and your opponent reveal attack cards. You may discard any or all attack cards in your hand that are both higher than the attack card you played and lower than the attack card played by your opponent, adding their values to your total.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Optional",
@@ -6833,7 +7018,7 @@
                     }
                 },
                 "history": "Always regarded as an inferior, scavenging race, the Fodder have amassed a multitude of generally less-effective arms. With the astonishingly large cache of second-rate weapons, the Fodder can afford to overwhelm their adversaries.",
-                "wildBody": "After encounter cards are revealed, if you were invited to ally and declined, you may ally with one ship on a side that invited you .",
+                "wildBody": "After encounter cards are revealed, if you were invited to ally and declined, you may ally with one ship on a side that invited you.",
                 "wildTiming": {
                     "player": "Not Main Player or Ally",
                     "choice": "",
@@ -6950,7 +7135,7 @@
                     }
                 },
                 "history": "The Fungus clings tenaciously to its basic perceptions, and now its neighbors find its teachings (and tendrils) rapidly growing upon them.",
-                "wildBody": "As the defense, when you win in your home system, you may capture all opposing ships in the encounter and place them in a circle around your system. They now count toward your total when you are the defense in your home system, but do not go to the warp if you lose . Captured ships do not have special characteristics. When you lose this flare, the captured ships return to their owners' colonies.",
+                "wildBody": "As the defense, when you win in your home system, you may capture all opposing ships in the encounter and place them in a circle around your system. They now count toward your total when you are the defense in your home system, but do not go to the warp if you lose. Captured ships do not have special characteristics. When you lose this flare, the captured ships return to their owners' colonies.",
                 "wildTiming": {
                     "player": "Defense Only",
                     "choice": "",
@@ -6994,7 +7179,7 @@
                 "short": "Avenges Lost Ships",
                 "gameSetup": "",
                 "powerName": "You have the power of Vengeance.",
-                "powerBody": "Each time one or more of your ships is lost to the warp or removed from the game, use this power to place one token on this sheet for each of your ships lost to the warp or removed from the game .\n\nAs a main player or ally, after encounter cards are selected but before they are revealed, discard any number of tokens from this sheet to add or subtract 3 from your side's total for each token you discard. Discarded tokens are spent and are not returned to this sheet regardless of the encounter's outcome.",
+                "powerBody": "Each time one or more of your ships is lost to the warp or removed from the game, use this power to place one token on this sheet for each of your ships lost to the warp or removed from the game.\n\nAs a main player or ally, after encounter cards are selected but before they are revealed, discard any number of tokens from this sheet to add or subtract 3 from your side's total for each token you discard. Discarded tokens are spent and are not returned to this sheet regardless of the encounter's outcome.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -7082,7 +7267,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "You don't have to discard tokens from your sheet . Instead, you may add or subtract 3 from your side's total for each token on your sheet.",
+                "superBody": "You don't have to discard tokens from your sheet. Instead, you may add or subtract 3 from your side's total for each token on your sheet.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -7231,7 +7416,7 @@
                 "short": "Draws Cards for Allies",
                 "gameSetup": "",
                 "powerName": "You have the power of Leadership.",
-                "powerBody": "As a main player, after alliances are formed, use this power. You may immediately draw one card per player allied with you. Afterwards, each of your allies may draw one card .",
+                "powerBody": "As a main player, after alliances are formed, use this power. You may immediately draw one card per player allied with you. Afterwards, each of your allies may draw one card.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Mandatory",
@@ -7364,7 +7549,7 @@
                     }
                 },
                 "history": "Originating on a planet filled with some of the universe's deadliest predators, the Geniuses had to be smarter and more ruthless than any other creature on their world in order to survive. Now that they've left their home planet, the Geniuses have turned their prodigious intelligence towards a bloodless coup of the universe.",
-                "wildBody": "As a main player, before allies are invited, any number of players you choose (including yourself) must draw a card .",
+                "wildBody": "As a main player, before allies are invited, any number of players you choose (including yourself) must draw a card.",
                 "wildTiming": {
                     "player": "Main Player Only",
                     "choice": "",
@@ -7379,7 +7564,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "As a main player, after encounter cards are selected, but before they are revealed, guess a number from 0 to 40. If your opponent reveals an attack card with a value within 3 of your guess, shout \"Eureka!\" and draw four cards .",
+                "superBody": "As a main player, after encounter cards are selected, but before they are revealed, guess a number from 0 to 40. If your opponent reveals an attack card with a value within 3 of your guess, shout \"Eureka!\" and draw four cards.",
                 "superTiming": {
                     "player": "Main Player Only",
                     "choice": "",
@@ -7496,7 +7681,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "You may use your power as an offensive ally .",
+                "superBody": "You may use your power as an offensive ally.",
                 "superTiming": {
                     "player": "Offensive Ally Only",
                     "choice": "",
@@ -7522,7 +7707,7 @@
                 "short": "Rewarded for Defeating Ships",
                 "gameSetup": "",
                 "powerName": "You have the power to Feast.",
-                "powerBody": "As a main player, after you win an encounter, use this power. For each opposing ship sent to the warp as a result of the encounter, you receive one reward .",
+                "powerBody": "As a main player, after you win an encounter, use this power. For each opposing ship sent to the warp as a result of the encounter, you receive one reward.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Mandatory",
@@ -7598,7 +7783,7 @@
                     }
                 },
                 "history": "Once described as 50% mouth, 50% stomach, and 50% appetite, the insatiable Gluttons have devoured their way across the Cosmos ever since they (quite literally) ate themselves out of house and home. Those dealing with the Gluttons are advised to count their digits afterwards and to always keep an eyestalk or two on their \"tender, succulent\" offspring.",
-                "wildBody": "When receiving defender rewards, you receive twice as many defender rewards as normal .",
+                "wildBody": "When receiving defender rewards, you receive twice as many defender rewards as normal.",
                 "wildTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -7715,7 +7900,7 @@
                     }
                 },
                 "history": "The horrifying sight of the Gorgons petrifies any creature that looks upon them. A stranger to a Gorgon world might think this race overly fond of statuary, only to find the statues springing back to life once the Gorgons leave. Because of their powerful effect on others, the Gorgons often find it difficult to get others to cooperate in their quest for Cosmic conquest.",
-                "wildBody": "As a main player, before allies are invited, choose a planet. Ships on that planet cannot defend or move during this encounter and cannot be sent to the warp during this encounter unless the planet is destroyed .",
+                "wildBody": "As a main player, before allies are invited, choose a planet. Ships on that planet cannot defend or move during this encounter and cannot be sent to the warp during this encounter unless the planet is destroyed.",
                 "wildTiming": {
                     "player": "Main Player Only",
                     "choice": "",
@@ -8304,7 +8489,7 @@
                     }
                 },
                 "history": "Used to fighting against superior forces, the Guerrillas have learned to strike from the shadows, wearing down their opponents' numbers even when they lose a battle. Seeing themselves as heroic underdogs, the Guerrillas have set out to liberate the Cosmos from those alien races who would oppress it, whether the Cosmos wants to be liberated or not.",
-                "wildBody": "After you lose an encounter as the defense, you may blow your own planet up rather than allow it to be captured . The planet is removed from the game along with all of the attacking ships (your side's ships are sent to the warp as normal ). A player cannot be reduced to fewer ships than the number of foreign colonies needed to win the game. Any ships removed from the game that would reduce a player below this number are sent to the warp as normal .",
+                "wildBody": "After you lose an encounter as the defense, you may blow your own planet up rather than allow it to be captured. The planet is removed from the game along with all of the attacking ships (your side's ships are sent to the warp as normal ). A player cannot be reduced to fewer ships than the number of foreign colonies needed to win the game. Any ships removed from the game that would reduce a player below this number are sent to the warp as normal.",
                 "wildTiming": {
                     "player": "Defense Only",
                     "choice": "",
@@ -8639,7 +8824,7 @@
                 "short": "Can Save Others' Ships from Warp",
                 "gameSetup": "",
                 "powerName": "You have the power to Heal.",
-                "powerBody": "When another player loses ships to the warp or has ships removed from the game, you may use this power to return to that player all the ships he or she just lost and earn one card from the deck. Being healed does not prevent a player from receiving compensation . A healed player replaces his or her ships on any of his or her colonies. During an encounter you may heal several players, drawing one card for each.",
+                "powerBody": "When another player loses ships to the warp or has ships removed from the game, you may use this power to return to that player all the ships he or she just lost and earn one card from the deck. Being healed does not prevent a player from receiving compensation. A healed player replaces his or her ships on any of his or her colonies. During an encounter you may heal several players, drawing one card for each.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Optional",
@@ -8654,7 +8839,7 @@
                         "resolution": true
                     }
                 },
-                "history": "Rapid geological activity forced extreme biological diversification on the Healer home world . Possessing vast knowledge of herbal and mutant lore, Healers are now prized by other beings for their life sustaining skills. Amidst loud rejoicing over renewed health, who could deny them their modest fee?",
+                "history": "Rapid geological activity forced extreme biological diversification on the Healer home world. Possessing vast knowledge of herbal and mutant lore, Healers are now prized by other beings for their life sustaining skills. Amidst loud rejoicing over renewed health, who could deny them their modest fee?",
                 "wildBody": "You may cause any \"Cosmic Zap\" played on you to be discarded without effect.",
                 "wildTiming": {
                     "player": "As Any Player",
@@ -9401,7 +9586,7 @@
                 "short": "Launches Sneak Attacks",
                 "gameSetup": "Shuffle the three \"Invasion!\" destiny cards into the destiny deck. These destiny cards cause you to have an extra encounter when drawn during another player's turn. After you have an extra encounter due to an \"Invasion!\" destiny card, the player who drew it during their turn restarts their encounter.",
                 "powerName": "You have the power of Invasion.",
-                "powerBody": "As a main player, after an \"Invasion!\" destiny card or a destiny card of your player color is drawn, you may use this power to discard your entire hand and draw a new hand of eight cards . Use this power only once per encounter.",
+                "powerBody": "As a main player, after an \"Invasion!\" destiny card or a destiny card of your player color is drawn, you may use this power to discard your entire hand and draw a new hand of eight cards. Use this power only once per encounter.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Optional",
@@ -9654,7 +9839,7 @@
                         "resolution": false
                     }
                 },
-                "history": "Always a close-knit society, the Kamikaze have taken the virtue of self-sacrifice and raised it to an artform . In battle, they are greatly feared for their ability to die explosively at will. But the Kamikaze know that when their race rises to Cosmic superiority, those who gave their lives along the way will be remembered forever.",
+                "history": "Always a close-knit society, the Kamikaze have taken the virtue of self-sacrifice and raised it to an artform. In battle, they are greatly feared for their ability to die explosively at will. But the Kamikaze know that when their race rises to Cosmic superiority, those who gave their lives along the way will be remembered forever.",
                 "wildBody": "As a main player, after encounter cards are selected but before they are revealed, you may send up to four of your ships that are not in the encounter to the warp to add 3 to your side's total for each ship sacrificed.",
                 "wildTiming": {
                     "player": "Main Player Only",
@@ -10021,7 +10206,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "Your worldships may contain any ships except the defense's ships. Other players' ships on your worldship count towards your side's total and those players are automatically allied with you for this encounter, but may not launch additional ships and do not receive a colony if your side wins .",
+                "superBody": "Your worldships may contain any ships except the defense's ships. Other players' ships on your worldship count towards your side's total and those players are automatically allied with you for this encounter, but may not launch additional ships and do not receive a colony if your side wins.",
                 "superTiming": {
                     "player": "Offense Only",
                     "choice": "",
@@ -10123,7 +10308,7 @@
                     }
                 },
                 "history": "The Lightning live out their lives in a matter of hours. They move so fast that the rest of the universe seems to act in slow motion to them. More than one alien race has sneered at the short lifespan of the Lightning, only to find themselves taken over in a flash.",
-                "wildBody": "Each time any other player takes a second encounter during his or her turn, you may draw three cards .",
+                "wildBody": "Each time any other player takes a second encounter during his or her turn, you may draw three cards.",
                 "wildTiming": {
                     "player": "Not Offense",
                     "choice": "",
@@ -10490,7 +10675,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "You may wait until after encounter cards are selected but before they are revealed to declare an upset. When you do so, you and your opponent are not required to play attack cards .",
+                "superBody": "You may wait until after encounter cards are selected but before they are revealed to declare an upset. When you do so, you and your opponent are not required to play attack cards.",
                 "superTiming": {
                     "player": "Main Player Only",
                     "choice": "",
@@ -10519,7 +10704,7 @@
                 "short": "Makes the Cosmos Go 'Round",
                 "gameSetup": "",
                 "powerName": "You have the power of Joy.",
-                "powerBody": "At the start of your turn, use this power. Choose and discard one card from your hand. Every other player, in clockwise, order may then choose and discard one card from his or her hand. If he or she discards the same type as you (attack, negotiate, artifact, etc.), that player may release all of his or her ships from the warp back to colonies.\n\nIf all players discard the same type of card as you, you collect all of the discarded cards (including yours) . If one or more other players do not discard a card matching the type you discarded, you may release all of your ships from the warp and use them to establish a foreign colony in the system of one of those players.",
+                "powerBody": "At the start of your turn, use this power. Choose and discard one card from your hand. Every other player, in clockwise, order may then choose and discard one card from his or her hand. If he or she discards the same type as you (attack, negotiate, artifact, etc.), that player may release all of his or her ships from the warp back to colonies.\n\nIf all players discard the same type of card as you, you collect all of the discarded cards (including yours). If one or more other players do not discard a card matching the type you discarded, you may release all of your ships from the warp and use them to establish a foreign colony in the system of one of those players.",
                 "powerTiming": {
                     "player": "Offense Only",
                     "choice": "Mandatory",
@@ -10769,7 +10954,7 @@
                     }
                 },
                 "history": "A race long lost to antiquity had the foresight to construct a mammoth Machine in the core of their planet. Pouring all their knowledge and ambition into its memory banks, they programmed it with this mandate: \"Top priority... expand control, never cease... eliminate opposition, never cease... achieve mastery, never cease...\"",
-                "wildBody": "As the offense, you may always have a second encounter, even if you lost your first encounter or are out of encounter cards. If you have no encounter cards at the start of your second encounter, draw a new hand .",
+                "wildBody": "As the offense, you may always have a second encounter, even if you lost your first encounter or are out of encounter cards. If you have no encounter cards at the start of your second encounter, draw a new hand.",
                 "wildTiming": {
                     "player": "Offense Only",
                     "choice": "",
@@ -10902,7 +11087,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "As the offense or an ally, you may launch up to four ships in the hyperspace gate .",
+                "superBody": "As the offense or an ally, you may launch up to four ships in the hyperspace gate.",
                 "superTiming": {
                     "player": "Offense or Ally Only",
                     "choice": "",
@@ -11023,7 +11208,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "When using your power, turn one of your opponent's two cards faceup before choosing. Choose either the faceup or facedown card and take it. Your opponent plays the card you did not choose, as normal .",
+                "superBody": "When using your power, turn one of your opponent's two cards faceup before choosing. Choose either the faceup or facedown card and take it. Your opponent plays the card you did not choose, as normal.",
                 "superTiming": {
                     "player": "Main Player Only",
                     "choice": "",
@@ -11110,7 +11295,7 @@
                 "altTimelineID": "231",
                 "gameSetup": "",
                 "powerName": "You have the power to Hurt Yourself.",
-                "powerBody": "At the start of any player's regroup phase, before the offense retrieves a ship from the warp, use this power to win the game if you have lost all of your ships. Lost ships include those in the warp, those removed from the game, and those captured by other players.\n\nYou do not lose this power because of having too few home colonies, and you may still win the game via the normal manner .\n\nDo Not Use with Healer",
+                "powerBody": "At the start of any player's regroup phase, before the offense retrieves a ship from the warp, use this power to win the game if you have lost all of your ships. Lost ships include those in the warp, those removed from the game, and those captured by other players.\n\nYou do not lose this power because of having too few home colonies, and you may still win the game via the normal manner.\n\nDo Not Use with Healer",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -11126,7 +11311,7 @@
                     }
                 },
                 "history": "The Masochists suffer from a neurological disorder where they derive pleasure from self-flagellation. However, some are beginning to wonder if it's really a religious ritual to bring forth their dominance in the universe.",
-                "wildBody": "During any regroup phase, you may choose a player other than the offense. That player retrieves a ship from the warp instead of the offense. You may not use this flare if the offense's ships are all in the warp, captured, or removed from the game .",
+                "wildBody": "During any regroup phase, you may choose a player other than the offense. That player retrieves a ship from the warp instead of the offense. You may not use this flare if the offense's ships are all in the warp, captured, or removed from the game.",
                 "wildTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -11361,7 +11546,7 @@
                     }
                 },
                 "history": "Originally created by another race to serve as police, the robotic Mercenaries were designed to be exert trackers and warriors. However, a terrible plague wiped out their masters and, left alone for eons, the Mercenaries gradually became self-aware. Vowing that they would never be used as slaves again, the Mercenaries made their way out into the Cosmos, always being careful to exact a price for their services.",
-                "wildBody": "When you win an encounter as the defense, you may receive defender rewards as though you were a defensive ally .",
+                "wildBody": "When you win an encounter as the defense, you may receive defender rewards as though you were a defensive ally.",
                 "wildTiming": {
                     "player": "Defense Only",
                     "choice": "",
@@ -11478,7 +11663,7 @@
                     }
                 },
                 "history": "Hailing from a world incredibly rich in natural resources, the Merchants achieved star travel early in their history thanks to a crew of intergalactic mercenaries who crash-landed on their planet. Since then, the Merchants have frequently used their wealth and natural charisma to hire other races to do their fighting for them.",
-                "wildBody": "As a main player or ally, after encounter cards are revealed, add 1 to your side's total for each card in your hand, plus this card .",
+                "wildBody": "As a main player or ally, after encounter cards are revealed, add 1 to your side's total for each card in your hand, plus this card.",
                 "wildTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -11550,7 +11735,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "You may replace any or all hired ships that survive the encounter with any ships you have in the warp on a 1-for-1 basis. Discard the cards representing the replaced hired ships .",
+                "superBody": "You may replace any or all hired ships that survive the encounter with any ships you have in the warp on a 1-for-1 basis. Discard the cards representing the replaced hired ships.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -11655,7 +11840,7 @@
                     }
                 },
                 "history": "Evolving from a small insectoid creature that had an incredible gift for imitating the appearance of the other beings on their homeworld, the Mimics have come to be known as some of the greatest copycats in the Cosmos. Watching a Mimic change form is an eye-watering process, a bit like watching a giant, invisible sculptor at work. The Mimics hope that their ability to blend in throughout the Cosmos will allow them to ascend to Cosmic dominance, but only time will tell.",
-                "wildBody": "Duplicate the effects of a wild flare or artifact card that another player just played. The effects take place as though you had played the card yourself. Then, give this card to the Mimic, or discard it if the Mimic is not playing .",
+                "wildBody": "Duplicate the effects of a wild flare or artifact card that another player just played. The effects take place as though you had played the card yourself. Then, give this card to the Mimic, or discard it if the Mimic is not playing.",
                 "wildTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -12489,7 +12674,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "As a main player, after encounter cards are revealed, you may replace either main player's encounter card with one encounter card on your sheet or one card you had previously removed from play . Discard the replaced card.",
+                "superBody": "As a main player, after encounter cards are revealed, you may replace either main player's encounter card with one encounter card on your sheet or one card you had previously removed from play. Discard the replaced card.",
                 "superTiming": {
                     "player": "Main Player Only",
                     "choice": "",
@@ -12749,7 +12934,7 @@
                 "short": "Grows Exponentially",
                 "gameSetup": "",
                 "powerName": "You have the power of Exponentiation.",
-                "powerBody": "Whenever there are no cosmic tokens on this sheet, place one on the ×1 exponential growth factor.\n\nWhenever your color or any special destiny card is drawn from the destiny deck, use this power to double your exponential growth factor (by moving the token from ×1 to ×2, from ×2 to ×4, etc.). \n\nWhenever a wild destiny card is drawn from the destiny deck, use this power to reset your exponential growth factor to ×1.\n\nAs a main player or ally, the value of each of your ships participating in the encounter is multiplied by your exponential growth factor when counting toward your side's total .",
+                "powerBody": "Whenever there are no cosmic tokens on this sheet, place one on the ×1 exponential growth factor.\n\nWhenever your color or any special destiny card is drawn from the destiny deck, use this power to double your exponential growth factor (by moving the token from ×1 to ×2, from ×2 to ×4, etc.). \n\nWhenever a wild destiny card is drawn from the destiny deck, use this power to reset your exponential growth factor to ×1.\n\nAs a main player or ally, the value of each of your ships participating in the encounter is multiplied by your exponential growth factor when counting toward your side's total.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -12975,7 +13160,44 @@
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
-                ]
+                ],
+                "essences": {
+                    "name": "Consequence",
+                    "list": {
+                        "1" : {
+                            "name": "Warp",
+                            "body": "Incentive: Release all of one other player's ships from the warp and receive one reward for each ship released. Punishment: Lose two ships of your choice to the warp from foreign colonies (if possible). You are on timeout during of the next player's turn."
+                        },
+                        "2" : {
+                            "name": "Ship",
+                            "body": "Incentive: Release 1 of your ships from the warp. Punishment: Lose 1 ship to the warp. You are on timeout during the next player's turn."
+                        },
+                        "3" : {
+                            "name": "Reward",
+                            "body": "Incentive: Recieve 1 reward for every ship you have in the encounter. Punishment: The Nanny looks at your hand and discards any or all artifact cards and cards from the reward deck. You are on timeout during the next player's turn."
+                        },
+                        "4" : {
+                            "name": "Hand",
+                            "body": "Incentive: Discard as many cards as you wish from your hand. Punishment: The Nanny looks at your hand and discards your highest attack card. You are on timeout during the next player's first encounter."
+                        },
+                        "5" : {
+                            "name": "Deck",
+                            "body": "Incentive: Draw up to five cards from the deck. Keep one and discard the rest. Punishment: The Nanny discards half of the cards (rounded up) from your hand at random. You are on timeout during the next player's first encounter."
+                        },
+                        "6" : {
+                            "name": "Colony",
+                            "body": "Incentive: Redistribute your ships among your colonies as you see fit. Punishment: The Nanny sends one of your colonies to the warp. You are on timeout during the next player's turn."
+                        },
+                        "7" : {
+                            "name": "Card",
+                            "body": "Incentive: Draw one card from the cosmic or (if available) reward deck. Punishment: The Nanny discards one card from your hand at random. You are on timeout during the next player's first encounter."
+                        },
+                        "8" : {
+                            "name": "Ally",
+                            "body": "Incentive: Receive a reward for every player who joined your side as an ally. Punishment: The Nanny dismisses one of your allies from this encounter and that player returns his or her ships to colonies. You are on timeout during the next player's first encounter."
+                        }
+                    }
+                }
             },
             "revised": {
                 "name": "Nanny",
@@ -13033,7 +13255,44 @@
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
-                ]
+                ],
+                "essences": {
+                    "name": "Consequence",
+                    "list": {
+                        "1" : {
+                            "name": "Warp",
+                            "body": "Incentive: Release all of one other player's ships from the warp and receive one reward for each ship released. Punishment: Lose two ships of your choice to the warp from foreign colonies (if possible). You are on timeout during the next player's turn."
+                        },
+                        "2" : {
+                            "name": "Ship",
+                            "body": "Incentive: Release 1 of your ships from the warp. Punishment: Lose 1 ship to the warp. You are on timeout during the next player's turn."
+                        },
+                        "3" : {
+                            "name": "Reward",
+                            "body": "Incentive: Receive 1 reward for every ship you have in the encounter. Punishment: The Nanny looks at your hand and discards any or all artifact cards and cards from the reward deck. You are on timeout during the next player's turn."
+                        },
+                        "4" : {
+                            "name": "Hand",
+                            "body": "Incentive: Discard as many cards as you wish from your hand. Punishment: The Nanny looks at your hand and discards your highest attack card. You are on timeout during the next player's first encounter."
+                        },
+                        "5" : {
+                            "name": "Deck",
+                            "body": "Incentive: Draw up to five cards from the deck. Keep one and discard the rest. Punishment: The Nanny discards half of the cards (rounded up) from your hand at random. You are on timeout during the next player's first encounter."
+                        },
+                        "6" : {
+                            "name": "Colony",
+                            "body": "Incentive: Redistribute your ships among your colonies as you see fit. Punishment: The Nanny sends one of your colonies to the warp. You are on timeout during the next player's turn."
+                        },
+                        "7" : {
+                            "name": "Card",
+                            "body": "Incentive: Draw one card from the cosmic or (if available) reward deck. Punishment: The Nanny discards one card from your hand at random. You are on timeout during the next player's first encounter."
+                        },
+                        "8" : {
+                            "name": "Ally",
+                            "body": "Incentive: Receive a reward for every player who joined your side as an ally. Punishment: The Nanny dismisses one of your allies from this encounter and that player returns his or her ships to colonies. You are on timeout during the next player's first encounter."
+                        }
+                    }
+                }
             }
         },
         "115": {
@@ -13209,7 +13468,52 @@
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
-                ]
+                ],
+                "essences": {
+                    "name": "Bad Dream",
+                    "list": {
+                        "1" : {
+                            "name": "Unprepared",
+                            "body": "If you are selecting an encounter card as a main player, instead you are actually drawing cards from the deck, giving all non-encounter cards drawn to the Nightmare, and playing the first encounter card you draw facedown as your encounter card."
+                        },
+                        "2" : {
+                            "name": "Teeth Falling Out",
+                            "body": "If you are revealing an attack card, instead of its face value, the card's value is divided by 2 (rounded down)."
+                        },
+                        "3" : {
+                            "name": "Seeing the Dead",
+                            "body": "If you are retrieving one ship from the warp during your regroup phase, instead every other player is retrieving one ship from the warp."
+                        },
+                        "4" : {
+                            "name": "Running but Getting Nowhere",
+                            "body": "If you are accepting an alliance invitation, instead you are actually declining all invitations."
+                        },
+                        "5" : {
+                            "name": "Out of Fuel",
+                            "body": "If you are starting your second encounter, instead you are actually ending your turn."
+                        },
+                        "6" : {
+                            "name": "Naked in Public",
+                            "body": "If you are winning the game along with one or more other players, instead those other players are actually winning without you."
+                        },
+                        "7" : {
+                            "name": "Lost the Way Home",
+                            "body": "If you are agreeing to a deal that involves receiving a colony, instead you are actually agreeing to a different version of that deal that replaces the colony you would receive with a card at random from the other player's hand."
+                        },
+                        "8" : {
+                            "name": "Late for Work",
+                            "body": "If you are starting your regroup phase, instead you are actually skipping your regroup phase."
+                        },
+                        "9" : {
+                            "name": "Falling Forever",
+                            "body": "If you are landing ships on the targeted planet as a winner in an encounter, instead your ships are falling into the warp."
+                        },
+                        "10" : {
+                            "name": "Being Chased",
+                            "body": "If another player is aiming the hyperspace gate at a colony or home planet which is not yours, instead that player is actually encountering you as the defense in your home system."
+                        }
+                    }
+                }
             },
             "revised": {
                 "name": "Nightmare",
@@ -13267,7 +13571,52 @@
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
-                ]
+                ],
+                "essences": {
+                    "name": "Bad Dream",
+                    "list": {
+                        "1" : {
+                            "name": "Unprepared",
+                            "body": "If you are selecting an encounter card as a main player, instead you are actually drawing cards from the deck, giving all non-encounter cards drawn to the Nightmare, and playing the first encounter card you draw facedown as your encounter card."
+                        },
+                        "2" : {
+                            "name": "Teeth Falling Out",
+                            "body": "If you are revealing an attack card, its face value is divided by 2 (rounded down)."
+                        },
+                        "3" : {
+                            "name": "Seeing the Dead",
+                            "body": "If you are retrieving one ship from the warp during your regroup phase, instead every other player is retrieving one ship from the warp."
+                        },
+                        "4" : {
+                            "name": "Running but Getting Nowhere",
+                            "body": "If you are accepting an alliance invitation, instead you are actually declining all invitations."
+                        },
+                        "5" : {
+                            "name": "Out of Fuel",
+                            "body": "If you are starting your second encounter, instead you are actually ending your turn."
+                        },
+                        "6" : {
+                            "name": "Naked in Public",
+                            "body": "If you are winning the game along with one or more other players, instead those other players are actually winning without you."
+                        },
+                        "7" : {
+                            "name": "Lost the Way Home",
+                            "body": "If you are agreeing to a deal that involves receiving a colony, instead you are actually agreeing to a different version of that deal that replaces the colony you would receive with a card at random from the other player's hand."
+                        },
+                        "8" : {
+                            "name": "Late for Work",
+                            "body": "If you are starting your regroup phase, instead you are actually skipping your regroup phase."
+                        },
+                        "9" : {
+                            "name": "Falling Forever",
+                            "body": "If you are landing ships on the targeted planet as a winner in an encounter, instead your ships are falling into the warp."
+                        },
+                        "10" : {
+                            "name": "Being Chased",
+                            "body": "If another player is aiming the hyperspace gate at a colony or home planet which is not yours, instead that player is actually encountering you as the defense in your home system."
+                        }
+                    }
+                }
             }
         },
         "117": {
@@ -13308,7 +13657,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "when you launch ships as an ally or offense, you may retrieve one ship from the warp to immediately launch . As the offense, this ship is in addition to the ship you normally retrieve during the regroup phase, but does not allow you to exceed your normal limit of four ships in the hyperspace gate .",
+                "superBody": "when you launch ships as an ally or offense, you may retrieve one ship from the warp to immediately launch. As the offense, this ship is in addition to the ship you normally retrieve during the regroup phase, but does not allow you to exceed your normal limit of four ships in the hyperspace gate.",
                 "superTiming": {
                     "player": "Ally or Main Player Only",
                     "choice": "",
@@ -13443,7 +13792,114 @@
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
-                ]
+                ],
+                "essences": {
+                    "name": "Privilege",
+                    "list": {
+                        "1" : {
+                            "name": "Compensation Control",
+                            "body": "When you should collect compensation, collect two more compensation. All other players who should collect compensation collect two less compensation."
+                        },
+                        "2" : {
+                            "name": "Encounter Envy",
+                            "body": "When you are a main player and reveal an attack card, add 3 to your total. All other main players who reveal attack cards subtract 2 from their totals."
+                        },
+                        "3" : {
+                            "name": "Rewards Siphon",
+                            "body": "When you should receive rewards, receive two more rewards. All other players who should receive rewards receive one less reward."
+                        },
+                        "4" : {
+                            "name": "Victory Possession",
+                            "body": "You need one foreign colony fewer than normal to win the game via the normal method. All other players need one more than normal."
+                        },
+                        "5" : {
+                            "name": "Warp Claim",
+                            "body": "When you should lose ship(s) to the warp, lose two fewer ships to the warp. All other players who should lose one or more ships to the warp lose one more ship to the warp. Ships which would have been lost return to other colonies."
+                        }
+                    }
+                }
+            },
+            "revised": {
+                "name": "Oligarch",
+                "alert": "Red",
+                "short": "Gets Richer as Others Get Poorer",
+                "gameSetup": "Take your 5 privileges as your essence card cache. You automatically start the game as the first player.",
+                "powerName": "You have the power of Greed.",
+                "powerBody": "Every time you draw a new hand of cards, including at the beginning of the game, draw one additional card.\n\nYou accumulate privileges up to the highest number of foreign colonies that has been reached by any player. Use this power whenever any one player has more foreign colonies than the number of your faceup privilege cards. Look through your essence card cache, choose one privilege, and play it faceup next to this sheet. If you are zapped, the privilege you attempted to play is removed from the game.",
+                "powerTiming": {
+                    "player": "As Any Player",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "history": "Overheard at the Oligarch's Elite Club Squash'em: \"It's not enough to know that I'm controlling the Universe from my holodecks, it's that I also want to know that my 'friends' see their lives as immeasurably and permanently less successful than mine.\"",
+                "wildBody": "At the start of your turn, if you do not have more cards in hand than all other players, you may draw from the deck until you do (before returning this flare to your hand).",
+                "wildTiming": {
+                    "player": "Offense Only",
+                    "choice": "",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": false
+                    }
+                },
+                "superBody": "When another player should draw a new hand, you may deal the cards for that hand to yourself, choose one card from among them to keep, and give the rest to that player.",
+                "superTiming": {
+                    "player": "As Any Player",
+                    "choice": "",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Eons",
+                "designers": [
+                    "designed by Bill Eberle & Peter Olotka"
+                ],
+                "essences": {
+                    "name": "Privilege",
+                    "list": {
+                        "1" : {
+                            "name": "Compensation Control",
+                            "body": "When you should collect compensation, collect two more compensation cards. All other players who should collect compensation collect two fewer compensation cards."
+                        },
+                        "2" : {
+                            "name": "Encounter Envy",
+                            "body": "When you are a main player and reveal an attack card, add 3 to your total. All other main players who reveal attack cards subtract 2 from their totals."
+                        },
+                        "3" : {
+                            "name": "Rewards Siphon",
+                            "body": "When you should receive rewards, receive two more rewards. All other players who should receive rewards receive one fewer reward."
+                        },
+                        "4" : {
+                            "name": "Victory Possession",
+                            "body": "You need one foreign colony fewer than normal to win the game via the normal method. All other players need one more than normal."
+                        },
+                        "5" : {
+                            "name": "Warp Claim",
+                            "body": "When you should lose ship(s) to the warp, lose two fewer ships to the warp. All other players who should lose one or more ships to the warp lose one more ship to the warp. Ships which would have been lost return to other colonies."
+                        }
+                    }
+                }
             }
         },
         "119": {
@@ -13952,7 +14408,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "As an ally, you may launch any number of ships you want .",
+                "superBody": "As an ally, you may launch any number of ships you want.",
                 "superTiming": {
                     "player": "Ally Only",
                     "choice": "",
@@ -14541,7 +14997,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "Any player to whom you give an encounter card must play it in that encounter if he or she can .",
+                "superBody": "Any player to whom you give an encounter card must play it in that encounter if he or she can.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -14567,7 +15023,7 @@
                 "short": "Gives Away Cards",
                 "gameSetup": "",
                 "powerName": "You have the power of Giving.",
-                "powerBody": "As a main player or ally, after alliances are formed, you may use this power to give one card from your hand to either main player (your opponent, if you are a main player). That player immediately adds the card to their hand . If, after using this power, you do not have any encounter cards in your hand and you are a main player, you draw a new hand.",
+                "powerBody": "As a main player or ally, after alliances are formed, you may use this power to give one card from your hand to either main player (your opponent, if you are a main player). That player immediately adds the card to their hand. If, after using this power, you do not have any encounter cards in your hand and you are a main player, you draw a new hand.",
                 "powerTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "Optional",
@@ -14583,7 +15039,7 @@
                     }
                 },
                 "history": "Rejecting a heavy-handed, dogmatic religious background, the cynical Philanthropists have learned to parody greed itself. Knowing that the Universe cannot bring itself to reject a gift, even when it is no present, the race has grown cunning in the art of self-serving charity.",
-                "wildBody": "At the start of any encounter, you may send one of your ships to the warp to lend your power to another player for the duration of the encounter. Until the end of the encounter, that player is considered to have your power instead of their own. You may not use your power while it is loaned out. The player may not refuse the loan .",
+                "wildBody": "At the start of any encounter, you may send one of your ships to the warp to lend your power to another player for the duration of the encounter. Until the end of the encounter, that player is considered to have your power instead of their own. You may not use your power while it is loaned out. The player may not refuse the loan.",
                 "wildTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -14876,7 +15332,7 @@
                     }
                 },
                 "history": "This species of Plant combines the longevity of the redwood, the persistence of the weed, and the delicacy of the fern. Slowly grafting to themselves the traits of others, they can afford to quietly wait until their enemies grow tired, then spread their tendrils unopposed throughout the Cosmos.",
-                "wildBody": "As a main player, after alliances are formed, you may steal the power of any ally (yours or your opponent's) . Until the end of the encounter, you have the stolen power instead of your own, and the affected ally does not have the power.",
+                "wildBody": "As a main player, after alliances are formed, you may steal the power of any ally (yours or your opponent's). Until the end of the encounter, you have the stolen power instead of your own, and the affected ally does not have the power.",
                 "wildTiming": {
                     "player": "Main Player Only",
                     "choice": "",
@@ -15068,7 +15524,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "When using your power, each card you discard adds three to your side's total instead of one .",
+                "superBody": "When using your power, each card you discard adds three to your side's total instead of one.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -15271,7 +15727,7 @@
                 "short": "Predicts Encounter Winner",
                 "gameSetup": "",
                 "powerName": "You have the power to Predict.",
-                "powerBody": "If you are not involved as a main player or ally in an encounter, you may use this power before encounter cards are selected to predict aloud which main player (offense or defense) will win. A deal counts as a win . If you are correct, you gain a colony on any one planet of your choice. If you are not correct, the winner selects any two of your ships and sends them to the warp.",
+                "powerBody": "If you are not involved as a main player or ally in an encounter, you may use this power before encounter cards are selected to predict aloud which main player (offense or defense) will win. A deal counts as a win. If you are correct, you gain a colony on any one planet of your choice. If you are not correct, the winner selects any two of your ships and sends them to the warp.",
                 "powerTiming": {
                     "player": "Not Main Player or Ally",
                     "choice": "Optional",
@@ -15685,7 +16141,7 @@
                 "short": "Filters Hand of Cards",
                 "gameSetup": "",
                 "powerName": "You have the power of Rebirth.",
-                "powerBody": "For each ship you lose to the warp, you may use this power to draw a card .\n\nFor each ship you retrieve from the warp, you may use this power to discard a card of your choice from your hand.",
+                "powerBody": "For each ship you lose to the warp, you may use this power to draw a card.\n\nFor each ship you retrieve from the warp, you may use this power to discard a card of your choice from your hand.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Optional",
@@ -15701,7 +16157,7 @@
                     }
                 },
                 "history": "The Reborn were once a vibrant, happy race spreading across the Cosmos. But then, one of their scientists discovered a fateful technology that allowed the older members of the race to transfer their consciousness into the bodies of their offspring. Although this allowed them to preserve the memories and skills of their wiser members, the chance to cheat death was ultimately too tempting for the Reborn, who have since become a ghoulish race of nearly immortal beings living on in their children's bodies.",
-                "wildBody": "During any regroup phase, if the offense retrieves a ship from the warp, you may draw a card .",
+                "wildBody": "During any regroup phase, if the offense retrieves a ship from the warp, you may draw a card.",
                 "wildTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -15804,7 +16260,7 @@
                 "short": "Uses Powers Not in Game",
                 "gameSetup": "",
                 "powerName": "You have the power of Reincarnation.",
-                "powerBody": "As a main player or ally, when you lose an encounter (or fail to deal), use this power to reincarnate. Draw an alien power card at random from the unused pile and become that alien. If the alien has Game Setup text or is not allowed in the current game, draw again. If you lose a later encounter, discard that alien and draw a new one . This power stays with you while you use the others. Aliens with the power to copy your power may do so (copying both your Reincarnator power and whatever power you are reincarnated as), but if they lose an encounter while doing so they must reincarnate, losing their original power.",
+                "powerBody": "As a main player or ally, when you lose an encounter (or fail to deal), use this power to reincarnate. Draw an alien power card at random from the unused pile and become that alien. If the alien has Game Setup text or is not allowed in the current game, draw again. If you lose a later encounter, discard that alien and draw a new one. This power stays with you while you use the others. Aliens with the power to copy your power may do so (copying both your Reincarnator power and whatever power you are reincarnated as), but if they lose an encounter while doing so they must reincarnate, losing their original power.",
                 "powerTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "Mandatory",
@@ -15820,7 +16276,7 @@
                     }
                 },
                 "history": "Having conquered the fear of death, the Reincarnators rejoice with the passing of each of their kind. Feeling kinship with all life forms, they know that those who die will soon be born again in an endless cycle.",
-                "wildBody": "After another player besides the Reincarnator loses an encounter or fails to make a deal, you may give this flare to that player . Immediately after the end of this encounter, that player must discard his or her current power and draw a new one . Aliens with Game Setup text or that are not allowed in the current game should be discarded and the player allowed to draw again.",
+                "wildBody": "After another player besides the Reincarnator loses an encounter or fails to make a deal, you may give this flare to that player. Immediately after the end of this encounter, that player must discard his or her current power and draw a new one. Aliens with Game Setup text or that are not allowed in the current game should be discarded and the player allowed to draw again.",
                 "wildTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -15835,7 +16291,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "You don't have to reincarnate when you lose an encounter or fail to make a deal .",
+                "superBody": "You don't have to reincarnate when you lose an encounter or fail to make a deal.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -15877,7 +16333,7 @@
                     }
                 },
                 "history": "Having conquered the fear of death, the Reincarnators rejoice with the passing of each of their kind. Feeling kinship with all life forms, they know that those who die will soon be born again in an endless cycle.",
-                "wildBody": "After another player who is not the Reincarnator is on the losing side of an encounter or fails to make a deal, you may give this flare to that player . Immediately after the end of this encounter, that player must discard their current alien power and draw an unused one at random. If the alien has Game Setup text or is not allowed in the current game, the player must discard it and draw again.",
+                "wildBody": "After another player who is not the Reincarnator is on the losing side of an encounter or fails to make a deal, you may give this flare to that player. Immediately after the end of this encounter, that player must discard their current alien power and draw an unused one at random. If the alien has Game Setup text or is not allowed in the current game, the player must discard it and draw again.",
                 "wildTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -16155,7 +16611,7 @@
                 "short": "Forces Others to Ally",
                 "gameSetup": "",
                 "powerName": "You have the power to Control.",
-                "powerBody": "As a main player, after your side wins an encounter, you may use this power to turn one ship in the encounter belonging to one opposing player into a remote. To turn the ship into a remote, remove the ship from the game and place it on this sheet.\n\nAs a main player, you may use this power to activate one or more of your remotes after allies are invited. Send each activated remote to the warp. Then, the players who own the activated remotes are forced to ally with you for this encounter and must each send four ships . A player must send all his or her ships if he or she has less than four. A controlled player must abandon home and/or foreign colonies to send the requisite four ships, if necessary. You cannot activate a remote belonging to the opposing main player during an encounter.",
+                "powerBody": "As a main player, after your side wins an encounter, you may use this power to turn one ship in the encounter belonging to one opposing player into a remote. To turn the ship into a remote, remove the ship from the game and place it on this sheet.\n\nAs a main player, you may use this power to activate one or more of your remotes after allies are invited. Send each activated remote to the warp. Then, the players who own the activated remotes are forced to ally with you for this encounter and must each send four ships. A player must send all his or her ships if he or she has less than four. A controlled player must abandon home and/or foreign colonies to send the requisite four ships, if necessary. You cannot activate a remote belonging to the opposing main player during an encounter.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Optional",
@@ -16212,7 +16668,7 @@
                 "short": "Forces Others to Ally",
                 "gameSetup": "",
                 "powerName": "You have the power to Control.",
-                "powerBody": "As a main player, after you win an encounter, you may use this power to turn one ship in the encounter belonging to one opposing player into a remote. To turn the ship into a remote, remove the ship from the game and place it on this sheet.\n\nAs a main player, after allies are invited but before alliances are formed, you may use this power to activate one or more of your remotes . Send each activated remote to the warp. Then, the players who own the activated remotes are forced to ally with you for this encounter and must each send four ships (or as many as possible up to four). A player must send all of their ships if they have fewer than four. A controlled player must abandon home and/or foreign colonies to send the requisite number of ships, if necessary. You cannot activate a remote belonging to the opposing main player during an encounter.",
+                "powerBody": "As a main player, after you win an encounter, you may use this power to turn one ship in the encounter belonging to one opposing player into a remote. To turn the ship into a remote, remove the ship from the game and place it on this sheet.\n\nAs a main player, after allies are invited but before alliances are formed, you may use this power to activate one or more of your remotes. Send each activated remote to the warp. Then, the players who own the activated remotes are forced to ally with you for this encounter and must each send four ships (or as many as possible up to four). A player must send all of their ships if they have fewer than four. A controlled player must abandon home and/or foreign colonies to send the requisite number of ships, if necessary. You cannot activate a remote belonging to the opposing main player during an encounter.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Optional",
@@ -16288,7 +16744,7 @@
                     }
                 },
                 "history": "The Reserves became the dominant species on their home world by waiting for other beings to wear each other out and then arriving with timely force to deliver a knockout punch. Showing the effective use of timing, the Reserves call in extra strength just when they need it most.",
-                "wildBody": "Whenever another player discards a reinforcement card (whether after playing it or not) you may take it and add it to your hand. Reinforcement cards you play are discarded as normal .",
+                "wildBody": "Whenever another player discards a reinforcement card (whether after playing it or not) you may take it and add it to your hand. Reinforcement cards you play are discarded as normal.",
                 "wildTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -16303,7 +16759,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "You may use your power to play any attack card of 9 or less as a reinforcement .",
+                "superBody": "You may use your power to play any attack card of 9 or less as a reinforcement.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -16626,7 +17082,7 @@
                 "altTimelineID": "234",
                 "gameSetup": "",
                 "powerName": "You have the power to Inflict Pain.",
-                "powerBody": "At the start of any player's regroup phase, before the offense retrieves a ship from the warp, use this power to win the game if all other players have lost at least eight ships . Lost ships include ships in the warp, ships removed from the game, and ships captured by other players.\n\nYou may still win the game via the normal manner.",
+                "powerBody": "At the start of any player's regroup phase, before the offense retrieves a ship from the warp, use this power to win the game if all other players have lost at least eight ships. Lost ships include ships in the warp, ships removed from the game, and ships captured by other players.\n\nYou may still win the game via the normal manner.",
                 "bans": [
                     "195",
                     "237",
@@ -17079,7 +17535,7 @@
                 "altTimelineID": "235",
                 "gameSetup": "Take the six schizoid cards, choose one of them, and place it facedown on this sheet. Place the other five facedown as a deck near this sheet.",
                 "powerName": "You have the power to Alter Reality.",
-                "powerBody": "The facedown schizoid card on this sheet lists the victory conditions players must fulfill in order to win the game . These conditions replace the normal victory condition of accumulating enough foreign colonies to win, and you must announce when any player(s) have fulfilled them. Alternate victory conditions (such as those of the Masochist or Tick-Tock) are not affected by this power. Any player who has completed the normal victory condition may play a Cosmic Zap on you at any time .\n\nEach time you are on the losing side of an encounter, the winning main player chooses a card from the schizoid deck at random and reveals it to the winner(s) of the encounter. Then, shuffle the chosen card back into the deck.",
+                "powerBody": "The facedown schizoid card on this sheet lists the victory conditions players must fulfill in order to win the game. These conditions replace the normal victory condition of accumulating enough foreign colonies to win, and you must announce when any player(s) have fulfilled them. Alternate victory conditions (such as those of the Masochist or Tick-Tock) are not affected by this power. Any player who has completed the normal victory condition may play a Cosmic Zap on you at any time.\n\nEach time you are on the losing side of an encounter, the winning main player chooses a card from the schizoid deck at random and reveals it to the winner(s) of the encounter. Then, shuffle the chosen card back into the deck.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -17258,7 +17714,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "When using your power, you may ask any question, not just a \"yes or no\" question. The player you ask must still answer it truthfully .",
+                "superBody": "When using your power, you may ask any question, not just a \"yes or no\" question. The player you ask must still answer it truthfully.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -17287,7 +17743,7 @@
                 "short": "Removes Others' Ships",
                 "gameSetup": "",
                 "powerName": "You have the power to Execute.",
-                "powerBody": "Whenever any other player's color or a special destiny card that targets another player is drawn from the destiny deck, use this power to choose one of that player's ships from any colony of your choice and send it to the warp. On a wild destiny card, you may execute one ship belonging to any other player regardless of who the offense chooses to attack .",
+                "powerBody": "Whenever any other player's color or a special destiny card that targets another player is drawn from the destiny deck, use this power to choose one of that player's ships from any colony of your choice and send it to the warp. On a wild destiny card, you may execute one ship belonging to any other player regardless of who the offense chooses to attack.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -17303,7 +17759,7 @@
                     }
                 },
                 "history": "After being subjected to colonial domination for thousands of years, a hive of Shadows rose up on an outpost planet in a forgotten empire. Devoted to guerilla warfare and adept at choosing the most isolated and vulnerable targets as their victims, they mercilessly cleansed their sector of its overlords. Having become imperialists themselves, however, they now have new uses for their old talents.",
-                "wildBody": "As the defense, when you lose an encounter and your opponent played an attack card, you may send one of your ships not in the encounter to the warp to take all opposing ships to the warp with you. In spite of winning, the opposing players do not receive colonies on your planet .",
+                "wildBody": "As the defense, when you lose an encounter and your opponent played an attack card, you may send one of your ships not in the encounter to the warp to take all opposing ships to the warp with you. In spite of winning, the opposing players do not receive colonies on your planet.",
                 "wildTiming": {
                     "player": "Defense Only",
                     "choice": "",
@@ -17453,7 +17909,48 @@
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
-                ]
+                ],
+                "essences": {
+                    "name": "Ticket",
+                    "list": {
+                        "1" : {
+                            "name": "Excessive Force",
+                            "body": "Infraction: Winning an encounter by more than 10 or revealing an attack card of 20 or higher as a main player. Fine: Discard three cards."
+                        },
+                        "2" : {
+                            "name": "Gridlock",
+                            "body": "Infraction: Having more than ten ships in the warp. Fine: Discard two cards."
+                        },
+                        "3" : {
+                            "name": "Illegal Parking",
+                            "body": "Infraction: Having more than four of your ships on a planet. Fine: Discard one card."
+                        },
+                        "4" : {
+                            "name": "Littering",
+                            "body": "Infraction: Discarding more than three cards at one time. Fine: Lose two ships to the warp."
+                        },
+                        "5" : {
+                            "name": "Loitering",
+                            "body": "Infraction: Not accepting an alliance invitation. Fine: Discard one card."
+                        },
+                        "6" : {
+                            "name": "Obstruction",
+                            "body": "Infraction: Canceling a player's card or action. Fine: Discard two cards."
+                        },
+                        "7" : {
+                            "name": "Panhandling",
+                            "body": "Infraction: Being able to send multiple ships as an ally but sending only one. Fine: Lose 2 ships to the warp."
+                        },
+                        "8" : {
+                            "name": "Trespassing",
+                            "body": "Infraction: Aiming the hyperspace gate at a planet with one or fewer ships. Fine: Lose one ship to the warp."
+                        },
+                        "9" : {
+                            "name": "Vagrancy",
+                            "body": "Infraction: Having only one ship on a foreign colony. Fine: Discard two cards."
+                        }
+                    }
+                }
             },
             "revised": {
                 "name": "Sheriff",
@@ -17461,7 +17958,7 @@
                 "short": "Upholds the Law",
                 "gameSetup": "",
                 "powerName": "You have the power to Ticket.",
-                "powerBody": "Once during each player's turn, you may use this power to choose a ticket from your essence card cache and either discard it, or give it to any player who is committing the infraction on that ticket and has the cards or ships needed to pay the fine. That player immediately pays the fine. If the fine is in cards, you select them at random from their hand. If the fine is in ships, the player chooses which of their ships to lose. The player keeps the ticket faceup.\n\nAs the fine is being paid, you may use this power to seize it as a gratuity. Add some or all of the cards to your hand instead of discarding them, or retrieve a number of your ships from the warp up to the number fined. Then the player flips the ticket facedown and gains immunity against further tickets while they have a facedown ticket .\n\nWhen all other players have immunity or you have no tickets remaining, all tickets are returned to you.",
+                "powerBody": "Once during each player's turn, you may use this power to choose a ticket from your essence card cache and either discard it, or give it to any player who is committing the infraction on that ticket and has the cards or ships needed to pay the fine. That player immediately pays the fine. If the fine is in cards, you select them at random from their hand. If the fine is in ships, the player chooses which of their ships to lose. The player keeps the ticket faceup.\n\nAs the fine is being paid, you may use this power to seize it as a gratuity. Add some or all of the cards to your hand instead of discarding them, or retrieve a number of your ships from the warp up to the number fined. Then the player flips the ticket facedown and gains immunity against further tickets while they have a facedown ticket.\n\nWhen all other players have immunity or you have no tickets remaining, all tickets are returned to you.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Optional",
@@ -17511,7 +18008,48 @@
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
-                ]
+                ],
+                "essences": {
+                    "name": "Ticket",
+                    "list": {
+                        "1" : {
+                            "name": "Excessive Force",
+                            "body": "Infraction: Winning an encounter by more than 10 or revealing an attack card of 20 or higher as a main player. Fine: Discard three cards."
+                        },
+                        "2" : {
+                            "name": "Gridlock",
+                            "body": "Infraction: Having more than ten ships in the warp. Fine: Discard two cards."
+                        },
+                        "3" : {
+                            "name": "Illegal Parking",
+                            "body": "Infraction: Having more than four of your ships on a planet. Fine: Discard one card."
+                        },
+                        "4" : {
+                            "name": "Littering",
+                            "body": "Infraction: Discarding more than three cards at one time. Fine: Lose two ships to the warp."
+                        },
+                        "5" : {
+                            "name": "Loitering",
+                            "body": "Infraction: Not accepting an alliance invitation. Fine: Discard one card."
+                        },
+                        "6" : {
+                            "name": "Obstruction",
+                            "body": "Infraction: Canceling a player's card or action. Fine: Discard two cards."
+                        },
+                        "7" : {
+                            "name": "Panhandling",
+                            "body": "Infraction: Being able to send multiple ships as an ally but sending only one. Fine: Lose 2 ships to the warp."
+                        },
+                        "8" : {
+                            "name": "Trespassing",
+                            "body": "Infraction: Aiming the hyperspace gate at a planet with one or fewer of the defense's ships. Fine: Lose one ship to the warp."
+                        },
+                        "9" : {
+                            "name": "Vagrancy",
+                            "body": "Infraction: Having only one ship on a foreign colony. Fine: Discard two cards."
+                        }
+                    }
+                }
             }
         },
         "156": {
@@ -17552,7 +18090,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "As the defense, before allies are invited, you may offer a colony in the offense's system to each defensive ally should you win the encounter. If you make such an offer and win, then when you gain a free foreign colony in the offense's home system, each defensive ally may either gain a colony on that planet with you or take defender rewards as normal .",
+                "superBody": "As the defense, before allies are invited, you may offer a colony in the offense's system to each defensive ally should you win the encounter. If you make such an offer and win, then when you gain a free foreign colony in the offense's home system, each defensive ally may either gain a colony on that planet with you or take defender rewards as normal.",
                 "superTiming": {
                     "player": "Defense Only",
                     "choice": "",
@@ -17638,7 +18176,7 @@
                 "short": "Doubles Risk of Encounters",
                 "gameSetup": "",
                 "powerName": "You have the power to Doubt.",
-                "powerBody": "As a main player or ally, before encounter cards are selected, you may use this power to tell the opposing player: \"I doubt that you will win.\" If the opposing player agrees with you and is the offense, that player ends his or her turn and all ships in the hyperspace gate return to their other colonies. If the opposing player agrees and is the defense, all offensive ships in the hyperspace gate establish a colony on the planet as if they had won (although defending ships already on the planet remain) and defending allies return to their other colonies.\n\nIf the opposing player disagrees or \"double doubts\" you, encounter cards are played . If one side loses or a deal fails, double the number of ships normally lost by either you or the opposing main player .",
+                "powerBody": "As a main player or ally, before encounter cards are selected, you may use this power to tell the opposing player: \"I doubt that you will win.\" If the opposing player agrees with you and is the offense, that player ends his or her turn and all ships in the hyperspace gate return to their other colonies. If the opposing player agrees and is the defense, all offensive ships in the hyperspace gate establish a colony on the planet as if they had won (although defending ships already on the planet remain) and defending allies return to their other colonies.\n\nIf the opposing player disagrees or \"double doubts\" you, encounter cards are played. If one side loses or a deal fails, double the number of ships normally lost by either you or the opposing main player.",
                 "powerTiming": {
                     "player": "As Main Player or Ally Only",
                     "choice": "Optional",
@@ -17669,7 +18207,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "When you tell a player you doubt that he will win, you also tell him how many ships not in the encounter (1 to20) are at risk (instead of your normal Skeptic method of determining risk ). If he double doubts you and plays the encounter, the loser (or both if you fail to deal) loses that number of ships to the warp in addition to the ships lost in the encounter .",
+                "superBody": "When you tell a player you doubt that he will win, you also tell him how many ships not in the encounter (1 to20) are at risk (instead of your normal Skeptic method of determining risk ). If he double doubts you and plays the encounter, the loser (or both if you fail to deal) loses that number of ships to the warp in addition to the ships lost in the encounter.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -18871,7 +19409,7 @@
                 "short": "Has Twice as Many Ships",
                 "gameSetup": "Choose one unused player color and take the 20 ships in that color (16 in a 4 -planet game), placing twice as many ships as usual on each of your planets. Your player color is that of the planets you use. Do not use this power unless you have an unused player color.",
                 "powerName": "You have the power of Symbiosis.",
-                "powerBody": "You have twice as many ships as normal . Your power cannot be zapped, lost, stolen, or copied through any means.",
+                "powerBody": "You have twice as many ships as normal. Your power cannot be zapped, lost, stolen, or copied through any means.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -19515,7 +20053,7 @@
                 "short": "Wins Encounters 50% of the Time",
                 "gameSetup": "",
                 "powerName": "You have the power of Possibilities.",
-                "powerBody": "As a main player, after alliances are formed, you may use this power to manipulate probability instead of having a normal encounter. If you do so, take a cosmic token and conceal it secretly in one of your hands. The other main player then chooses one of your closed fists. You then open both of your fists, revealing which hand held the token. If your opponent chose the hand containing the token, you lose the encounter. If he or she chose your empty hand, you win the encounter. In either case, the resolution phase is then carried out as normal .",
+                "powerBody": "As a main player, after alliances are formed, you may use this power to manipulate probability instead of having a normal encounter. If you do so, take a cosmic token and conceal it secretly in one of your hands. The other main player then chooses one of your closed fists. You then open both of your fists, revealing which hand held the token. If your opponent chose the hand containing the token, you lose the encounter. If he or she chose your empty hand, you win the encounter. In either case, the resolution phase is then carried out as normal.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Optional",
@@ -19663,7 +20201,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "When you use your power, you may triple the value of any attack cards that are 13 or less instead of 10 or less .",
+                "superBody": "When you use your power, you may triple the value of any attack cards that are 13 or less instead of 10 or less.",
                 "superTiming": {
                     "player": "Main Player Only",
                     "choice": "",
@@ -20102,7 +20640,7 @@
                 "short": "Multiplies in Attack",
                 "gameSetup": "",
                 "powerName": "You have the power to Multiply.",
-                "powerBody": "As a main player, after you reveal an attack card in an encounter, use this power to multiply the number of ships you have in the encounter times the value of your card instead of adding . Your allies' ships are still added to your total as usual.",
+                "powerBody": "As a main player, after you reveal an attack card in an encounter, use this power to multiply the number of ships you have in the encounter times the value of your card instead of adding. Your allies' ships are still added to your total as usual.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Mandatory",
@@ -20337,7 +20875,7 @@
                 "altTimelineID": "236",
                 "gameSetup": "",
                 "powerName": "You have the power to Eradicate.",
-                "powerBody": "As a main player, when you win an encounter, use this power to remove the losing side's ships from the game rather than sending them to the warp. A player cannot be reduced to fewer ships than the number of foreign colonies needed to win the game. Any eradicated ships that would reduce a player below this number are sent to the warp as normal .",
+                "powerBody": "As a main player, when you win an encounter, use this power to remove the losing side's ships from the game rather than sending them to the warp. A player cannot be reduced to fewer ships than the number of foreign colonies needed to win the game. Any eradicated ships that would reduce a player below this number are sent to the warp as normal.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Mandatory",
@@ -20353,7 +20891,7 @@
                     }
                 },
                 "history": "Taught from vortexhood that no other intelligent life existed, the Voids were deeply offended to learn of alien races. They are now on a holy campaign to cleanse the heavens of all gross, material beings.",
-                "wildBody": "Once per encounter, you may send one of your ships not in the encounter to the warp to cancel the effect of any one artifact card. The artifact card is discarded as normal .",
+                "wildBody": "Once per encounter, you may send one of your ships not in the encounter to the warp to cancel the effect of any one artifact card. The artifact card is discarded as normal.",
                 "wildTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -20368,7 +20906,7 @@
                         "resolution": true
                     }
                 },
-                "superBody": "You may use your power as an ally .",
+                "superBody": "You may use your power as an ally.",
                 "superTiming": {
                     "player": "Ally Only",
                     "choice": "",
@@ -22659,7 +23197,44 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey",
-                "designers": []
+                "designers": [],
+                "essences": {
+                    "name": "Rule",
+                    "list": {
+                        "1" : {
+                            "name": "Start Turn",
+                            "body": "At the start of your turn, you may draw a card from the deck or discard a card from your hand (before determining if you must draw a new hand)."
+                        },
+                        "2" : {
+                            "name": "Regroup",
+                            "body": "During your regroup phase, you may redistribute any number of your ships on your colonies among your colonies"
+                        },
+                        "3" : {
+                            "name": "Destiny",
+                            "body": "When you draw your own color for destiny, you may treat it as a wild destiny."
+                        },
+                        "4" : {
+                            "name": "Launch",
+                            "body": "After the hyperspace gate is aimed at one of your home planets, you may re-aim the gate at any other planet in your system where the offense does not have a foreign colony."
+                        },
+                        "5" : {
+                            "name": "Alliance",
+                            "body": "After alliances are formed, if you are not a main player or ally, you may ally with either main player by sending more ships into the encounter (without exceeding your ship limit) than the play has in the encounter."
+                        },
+                        "6" : {
+                            "name": "Planning",
+                            "body": "During the planning phase, after cards are selected, you may forced any selected negotiate cards to be flipped faceup. If your opponent did not select a negotiate, you may swap your selected card with another card from your hand."
+                        },
+                        "7" : {
+                            "name": "Reveal",
+                            "body": "As a main player, after cards are revealed, if you revealed a negotiate, you may send one of your ships in the encounter to the warp to discard that negotiate and replace it with an attack card from your hand."
+                        },
+                        "8" : {
+                            "name": "Resolution",
+                            "body": "As a main player, after you win the encounter, you may gain one reward. This occurs after compensation is collected, if any."
+                        }
+                    }
+                }
             },
             "revised": {
                 "name": "Cosmos",
@@ -22716,7 +23291,44 @@
                 },
                 "revisionNotes": "Revisions from the Praw\n\nEdited for wording consistency, to fix the incorrect use of Set, and to fix the mandatory flare bug.",
                 "expansion": "Cosmic Odyssey",
-                "designers": []
+                "designers": [],
+                "essences": {
+                    "name": "Rule",
+                    "list": {
+                        "1" : {
+                            "name": "Start Turn",
+                            "body": "At the start of your turn, you may draw a card from the deck or discard a card from your hand (before determining if you must draw a new hand)."
+                        },
+                        "2" : {
+                            "name": "Regroup",
+                            "body": "During your regroup phase, you may redistribute any number of your ships on your colonies among your colonies"
+                        },
+                        "3" : {
+                            "name": "Destiny",
+                            "body": "When you draw your own color for destiny, you may treat it as a wild destiny."
+                        },
+                        "4" : {
+                            "name": "Launch",
+                            "body": "After the hyperspace gate is aimed at one of your home planets, you may re-aim the gate at any other planet in your system where the offense does not have a foreign colony."
+                        },
+                        "5" : {
+                            "name": "Alliance",
+                            "body": "After alliances are formed, if you are not a main player or ally, you may ally with either main player by sending more ships into the encounter (without exceeding your ship limit) than the play has in the encounter."
+                        },
+                        "6" : {
+                            "name": "Planning",
+                            "body": "During the planning phase, after cards are selected, you may forced any selected negotiate cards to be flipped faceup. If your opponent did not select a negotiate, you may swap your selected card with another card from your hand."
+                        },
+                        "7" : {
+                            "name": "Reveal",
+                            "body": "As a main player, after cards are revealed, if you revealed a negotiate, you may send one of your ships in the encounter to the warp to discard that negotiate and replace it with an attack card from your hand."
+                        },
+                        "8" : {
+                            "name": "Resolution",
+                            "body": "As a main player, after you win the encounter, you may gain one reward. This occurs after compensation is collected, if any."
+                        }
+                    }
+                }
             }
         },
         "202": {
@@ -23066,7 +23678,7 @@
                 "short": "Can Replace an Encounter Card",
                 "gameSetup": "",
                 "powerName": "You have the power to Interlope.",
-                "powerBody": "If you are not a main player or ally, after encounter cards are selectd and before they are revealed, you may use this power to choose a main player. Look at the chosen player's encounter card. You may swap that card with one from your hand (that player may look at the swapped card). If you swapped cards and that player wins the encounter or makes a deal, gain three rewards. If that player loses the encounter or fails to make a deal, send two of your ships from your colonies to the warp, and that player gains one reward.",
+                "powerBody": "If you are not a main player or ally, after encounter cards are selected and before they are revealed, you may use this power to choose a main player. Look at the chosen player's encounter card. You may swap that card with one from your hand (that player may look at the swapped card). If you swapped cards and that player wins the encounter or makes a deal, gain three rewards. If that player loses the encounter or fails to make a deal, send two of your ships from your colonies to the warp, and that player gains one reward.",
                 "powerTiming": {
                     "player": "Not Main Player or Ally",
                     "choice": "Optional",

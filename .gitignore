@@ -31,3 +31,6 @@ favicon/
 /old
 
 *.py
+*.csv
+*.ods
+*.ods#

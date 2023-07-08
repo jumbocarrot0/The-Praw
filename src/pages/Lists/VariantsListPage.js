@@ -1,4 +1,3 @@
-import { Container } from 'reactstrap';
 import Item from '../../components/Item'
 import GridBrowser from "../../components/GridBrowser";
 import Layout from '../../components/Layout'
@@ -21,9 +20,9 @@ export default function VariantsListPage() {
     }
 
     return (
-        <Layout>
+        <Layout title="Variants">
             <h1 className='mb-4'>Official Variants</h1>
-            <hr class="border border-light border-2 opacity-100 mb-5" />
+            <hr className="border border-light border-2 opacity-100 mb-5" />
             <GridBrowser cardTemplate={Item}
                 noSort={true}
                 url="/Variants"

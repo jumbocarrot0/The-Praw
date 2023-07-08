@@ -1,12 +1,11 @@
-import { Container } from 'reactstrap';
 import Layout from '../components/Layout'
 
 export default function TechListPage() {
   return (
-    <Layout>
+    <Layout title="Team Cosmic">
       <h1 className='mb-4'>Team Cosmic</h1>
       <p className="text-light">Team Cosmic is an official variant introduced in Cosmic Alliance. The variant has no additional components, but is designed for higher player counts. Cosmic Odyssey makes this even more explicit, with the age card corresponding to this variant only being usable with 5 or more players.
-</p>
+      </p>
       <hr class="border border-light border-2 opacity-100 mb-5" />
       <h2>Rules</h2>
       <p className="text-light">These are copied from the Cosmic Odyssey rules</p>

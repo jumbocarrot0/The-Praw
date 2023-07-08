@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { useSearchParams, createSearchParams, useNavigate } from 'react-router-dom'
-import { Link } from "react-router-dom"
-import { ReactComponent as SearchLogo } from '../searchIcon.svg';
+import { useSearchParams } from 'react-router-dom'
 import GridBrowser from "../components/GridBrowser";
 import Layout from '../components/Layout'
 import Phases from '../components/Phases';
@@ -13,9 +11,7 @@ import {
   Row,
   Col,
   Badge,
-  InputGroup,
   Input,
-  InputGroupText,
   Form,
   FormGroup,
   Label,
@@ -65,12 +61,12 @@ function filterAliens(aliens, search, expansions, revised, alerts
 }
 
 // https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript
-String.prototype.hashCode = function () {
+function hashString(input) {
   var hash = 0,
     i, chr;
-  if (this.length === 0) return hash;
-  for (i = 0; i < this.length; i++) {
-    chr = this.charCodeAt(i);
+  if (input.length === 0) return hash;
+  for (i = 0; i < input.length; i++) {
+    chr = input.charCodeAt(i);
     hash = ((hash << 5) - hash) + chr;
     hash |= 0; // Convert to 32bit integer
   }
@@ -107,7 +103,7 @@ function random(seed) {
 function giveAliens(aliens, player, seed, drawnCount, preventBans) {
   const alienIDS = Object.keys(aliens)
   // seed = seed.toLowerCase()
-  let shuffledAlienIDS = shuffle(alienIDS, seed.toLowerCase().hashCode())
+  let shuffledAlienIDS = shuffle(alienIDS, hashString(seed.toLowerCase()))
   if (preventBans) {
     const bans = []
     alienIDS.forEach(alienID => {
@@ -205,8 +201,6 @@ export default function Selection() {
 
   const [errorModal, setErrorModal] = useState(false);
 
-  const navigate = useNavigate();
-
   let submittedExpansions = ["Base Set", "42nd Anniversary Edition", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "Cosmic Odyssey"];
   submittedExpansions = submittedExpansions.filter((expansion) => searchParams.get(expansion) !== 'false');
   const expansions = {
@@ -276,7 +270,7 @@ export default function Selection() {
   }
 
   return (
-    <Layout>
+    <Layout title="Alien Selection">
       <h1 className='mb-4'>Aliens</h1>
       <Modal isOpen={errorModal} toggle={() => setErrorModal(!errorModal)}>
         <ModalHeader toggle={() => setErrorModal(!errorModal)}>Invalid Filters</ModalHeader>

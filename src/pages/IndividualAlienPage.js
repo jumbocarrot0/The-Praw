@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import {
-  Container, Card, CardBody, Row, Col, CardHeader, Nav, NavItem, NavLink
+  Card, CardBody, Row, Col, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams, Link } from "react-router-dom"
 import Aliens from '../dataFiles/aliens.json';
@@ -19,8 +19,8 @@ export default function IndividualAlienPage() {
     setRevised(false)
   }, [alienIndex])
 
-  if (alien.name === 'Throwback') { 
-    return (<Layout className='throwback'>
+  if (alien.name === 'Throwback') {
+    return (<Layout title={alien.name} className='throwback'>
       <Row>
         <Col md={2}>
         </Col>
@@ -62,7 +62,7 @@ export default function IndividualAlienPage() {
     </Layout>)
   } else {
     return (
-      <Layout>
+      <Layout title={alien.name}>
         {Aliens.aliens[alienIndex].revised ?
           <Nav className="ps-5 mx-5 border-bottom-0" tabs>
             <NavItem>
@@ -78,6 +78,7 @@ export default function IndividualAlienPage() {
         <Card>
           <CardBody>
             <h1 className='text-light'>{alien.name}</h1>
+            <img alt={alien.name + " Avatar"} src={require(`../images/alien icons/avatar_${alien.name.replace('The ', '').replace(' ', '_')}${alien.altTimeline ? '_AT' : ''}.png`)} />
             <h3>{alien.alert}</h3>
             {alien.gameSetup ? <p><strong>Game Setup:</strong> {alien.gameSetup}</p> : null}
             <p><strong>{alien.powerName}</strong> {alien.powerBody}</p>

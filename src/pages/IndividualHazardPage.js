@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {
-  Container, Card, CardBody, Nav, NavItem, NavLink
+  Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
 import Hazards from '../dataFiles/hazards.json';
@@ -20,7 +20,7 @@ export default function IndividualHazardPage() {
   }, [hazardIndex])
 
   return (
-    <Layout>
+    <Layout title={hazard.name}>
       {Hazards.hazards[hazardIndex].revised ?
         <Nav className="ps-5 mx-5 border-bottom-0" tabs>
           <NavItem>

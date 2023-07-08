@@ -1,9 +1,8 @@
-import { Container } from 'reactstrap';
 import Layout from '../components/Layout'
 
 export default function RewardsDeckPage() {
   return (
-    <Layout>
+    <Layout title="Rewards Deck">
       <h1 className='mb-4'>Rewards Deck</h1>
       <p className="text-light">The rewards deck is an official variant introduced in Cosmic Incursion. The deck is a purple-backed deck of cards that can only be drawn from when players gain rewards.
         <br />

@@ -134,7 +134,7 @@ export default function AliensListPage() {
   // filteredAliens = Object.fromEntries(filteredAliens)
 
   return (
-    <Layout>
+    <Layout title="Aliens">
       <h1 className='mb-4'>Aliens</h1>
       <Card className='mb-4 bg-light'>
         <CardBody>

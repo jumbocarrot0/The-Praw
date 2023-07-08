@@ -20,7 +20,7 @@ export default function IndividualMoonPage() {
   }, [moonIndex])
 
   return (
-    <Layout>
+    <Layout title={moon.name}>
       {Moons.moons[moonIndex].revised ?
         <Nav className="ps-5 mx-5 border-bottom-0" tabs>
           <NavItem>
