@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/The-Praw/static/css/main.39297e2c.css",
-    "main.js": "/The-Praw/static/js/main.924850a0.js",
+    "main.css": "/The-Praw/static/css/main.3e639445.css",
+    "main.js": "/The-Praw/static/js/main.c62dcff3.js",
     "static/js/787.f04aa610.chunk.js": "/The-Praw/static/js/787.f04aa610.chunk.js",
-    "static/media/gridwallpaper.jpg": "/The-Praw/static/media/gridwallpaper.418e836d62d2cc6d99b1.jpg",
+    "static/media/gridwallpaper.jpg": "/The-Praw/static/media/gridwallpaper.4ed625b9df813ed00df4.jpg",
+    "static/media/warplogo2.jpg": "/The-Praw/static/media/warplogo2.a3d71ae8e2ed5e652370.jpg",
     "static/media/avatar_Bleeding_Heart.png": "/The-Praw/static/media/avatar_Bleeding_Heart.7bd13f55afa2b8058120.png",
     "static/media/avatar_Zilch.png": "/The-Praw/static/media/avatar_Zilch.0e378ccdd74d4f337b8f.png",
     "static/media/avatar_Oligarch.png": "/The-Praw/static/media/avatar_Oligarch.0551155595bd7bb8d324.png",
@@ -244,12 +245,12 @@
     "static/media/avatar_Skeptic.png": "/The-Praw/static/media/avatar_Skeptic.20dde78f11f7e8d48006.png",
     "index.html": "/The-Praw/index.html",
     "static/media/searchIcon.svg": "/The-Praw/static/media/searchIcon.4b174aba3ca9225719f55dc131b8d17e.svg",
-    "main.39297e2c.css.map": "/The-Praw/static/css/main.39297e2c.css.map",
-    "main.924850a0.js.map": "/The-Praw/static/js/main.924850a0.js.map",
+    "main.3e639445.css.map": "/The-Praw/static/css/main.3e639445.css.map",
+    "main.c62dcff3.js.map": "/The-Praw/static/js/main.c62dcff3.js.map",
     "787.f04aa610.chunk.js.map": "/The-Praw/static/js/787.f04aa610.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39297e2c.css",
-    "static/js/main.924850a0.js"
+    "static/css/main.3e639445.css",
+    "static/js/main.c62dcff3.js"
   ]
 }
