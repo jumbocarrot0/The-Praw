@@ -9,9 +9,10 @@ body {
   padding: 0;
 }
 
-div.App.throwback {
+body.throwback {
   background-image: url("./images/gridwallpaper.jpg");
   background-color: #000000;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 [data-bs-theme="dark"] {
@@ -80,6 +81,20 @@ table.th-w-50 tbody tr th {
   background-color: #6610f2 !important;
 }
 
+.border-purple {
+  --bs-border-opacity: 1;
+  border-color: #800080 !important;
+}
+
+.bg-purple {
+  --bs-border-opacity: 1;
+  background-color: #800080 !important;
+}
+
+.text-orange {
+  color: #fd7e14 !important;
+}
+
 .border-orange {
   --bs-border-opacity: 1;
   border-color: #fd7e14 !important;
@@ -88,4 +103,9 @@ table.th-w-50 tbody tr th {
 .bg-orange {
   --bs-border-opacity: 1;
   background-color: #fd7e14 !important;
+}
+
+.border-grey {
+  --bs-border-opacity: 1;
+  border-color: #aaaaaa !important;
 }

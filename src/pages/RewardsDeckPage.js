@@ -11,7 +11,8 @@ export default function RewardsDeckPage() {
       <ul>
         <li className="text-light">The Rewards Deck was originally a fan-made variant by Jack Reda to incentivise defensive alliances and to not clutter the main deck.</li>
       </ul>
-      <hr class="border border-light border-2 opacity-100 my-4" />
+      <hr className="border border-light border-2 opacity-100 my-4" />
+      <h2>Rules</h2>
       <p className="text-light">These are copied from the Cosmic Odyssey campaign guide</p>
       <h3>Setup</h3>
       <ul>

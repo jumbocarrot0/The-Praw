@@ -6,7 +6,7 @@ import PrawNav from "./Nav";
 export default function Header() {
 
   return (
-    <header>
+    <header className='mb-5 pb-5'>
       {/* icon */}
       {/* <div id="icon">
         <img src="/logo192.png" alt="Icon" />

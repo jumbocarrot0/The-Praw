@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createSearchParams, useNavigate
   // , useSearchParams 
 } from 'react-router-dom'
-import { ReactComponent as SearchLogo } from '../searchIcon.svg';
+import { ReactComponent as SearchLogo } from '../svg/searchIcon.svg';
 import Layout from '../components/Layout'
 
 import {

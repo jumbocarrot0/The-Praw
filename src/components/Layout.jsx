@@ -4,7 +4,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Breadcrumbs from "./Breadcrumbs";
 import { Container } from "reactstrap";
-import ScrollIntoView from "../components/ScrollIntoView";
+import ScrollIntoView from "./ScrollIntoView";
 
 export default function Layout(props) {
     return (

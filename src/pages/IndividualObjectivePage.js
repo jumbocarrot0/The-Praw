@@ -22,7 +22,7 @@ export default function IndividualObjectivePage() {
   return (
     <Layout title={objective.name}>
       {Objectives.objectives[objectiveIndex].revised ?
-        <Nav className="ps-5 mx-5 border-bottom-0" tabs>
+        <Nav className="ps-5 mx-1" tabs>
           <NavItem>
             <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
               onClick={() => { setObjective(Objectives.objectives[objectiveIndex].original); setRevised(false) }}>Original</NavLink>
@@ -33,7 +33,7 @@ export default function IndividualObjectivePage() {
           </NavItem>
         </Nav> : null
       }
-      <Card>
+      <Card className="mx-1 border-top-0 rounded-top-0">
         <CardBody>
           <h1 className='text-light'>{objective.name}</h1>
 

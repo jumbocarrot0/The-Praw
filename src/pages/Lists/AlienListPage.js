@@ -17,7 +17,7 @@ import {
 } from 'reactstrap';
 import { Link } from "react-router-dom"
 import Aliens from '../../dataFiles/aliens.json';
-import { ReactComponent as SearchLogo } from '../../searchIcon.svg';
+import { ReactComponent as SearchLogo } from '../../svg/searchIcon.svg';
 import GridBrowser from "../../components/GridBrowser";
 import Layout from '../../components/Layout'
 

@@ -22,7 +22,7 @@ export default function IndividualHazardPage() {
   return (
     <Layout title={hazard.name}>
       {Hazards.hazards[hazardIndex].revised ?
-        <Nav className="ps-5 mx-5 border-bottom-0" tabs>
+        <Nav className="ps-5 mx-1" tabs>
           <NavItem>
             <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
               onClick={() => { setHazard(Hazards.hazards[hazardIndex].original); setRevised(false) }}>Original</NavLink>
@@ -33,7 +33,7 @@ export default function IndividualHazardPage() {
           </NavItem>
         </Nav> : null
       }
-      <Card>
+      <Card className="mx-1 border-top-0 rounded-top-0">
         <CardBody>
           <h1 className='text-light'>{hazard.name}</h1>
           {hazard.type === "AltHazard" ? <p><strong>Offense:</strong>{hazard.body}<br/><br/><strong>Others:</strong>{hazard.body2}</p> :

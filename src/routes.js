@@ -4,6 +4,7 @@ import Combos from "./pages/CombosPage";
 import SelectionPage from "./pages/SelectionPage";
 import AlienListPage from "./pages/Lists/AlienListPage";
 import IndividualAlienPage from "./pages/IndividualAlienPage";
+import ThrowbackPage from "./pages/ThrowbackPage";
 import VariantsListPage from './pages/Lists/VariantsListPage';
 import TechListPage from './pages/Lists/TechListPage';
 import IndividualTechPage from "./pages/IndividualTechPage";
@@ -48,6 +49,11 @@ export const routes = [
     {
       path: "/Aliens",
       element: <AlienListPage />,
+    },
+    {
+      path: "/Aliens/221",
+      element: <ThrowbackPage />,
+      breadcrumb: () => Aliens.aliens["221"].original.name
     },
     {
       path: "/Aliens/:alienIndex",

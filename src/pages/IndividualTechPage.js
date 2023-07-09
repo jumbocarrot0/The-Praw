@@ -4,7 +4,7 @@ import {
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
 import Techs from '../dataFiles/technology.json';
-import Phases from '../components/Phases';
+import TimingBar from '../components/TimingBar';
 import Layout from '../components/Layout'
 
 export default function IndividualTechPage() {
@@ -22,7 +22,7 @@ export default function IndividualTechPage() {
   return (
     <Layout title={tech.name}>
       {Techs.technologies[techIndex].revised ?
-        <Nav className="ps-5 mx-5 border-bottom-0" tabs>
+        <Nav className="ps-5 mx-1" tabs>
           <NavItem>
             <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
               onClick={() => { setTech(Techs.technologies[techIndex].original); setRevised(false) }}>Original</NavLink>
@@ -33,13 +33,18 @@ export default function IndividualTechPage() {
           </NavItem>
         </Nav> : null
       }
-      <Card>
+      <Card className="mx-1 border-top-0 rounded-top-0">
         <CardBody>
           <h1 className='text-light'>{tech.name}</h1>
+          <p><strong>Type: {tech.type}</strong></p>
           {tech.refresh ? <p>When completed, draw another Techs.</p> : null}
           <p><strong>{tech.short}</strong> {tech.body}</p>
-          <br />
-          <p>({tech.timing.player}) <Phases phases={tech.timing.phases} /></p>
+          <div style={{ width: (tech.type === "Mili-Tech" ? 60 : 50) + 'px', height: (tech.type === "Mili-Tech" ? 40 : 50) + 'px' }} className={
+            tech.type === "Mili-Tech" ? 'border rounded bg-success text-light text-center mb-2' : 'border rounded-circle bg-indigo text-light text-center mb-2 fs-2'
+          }>
+            <strong><p style={{ paddingTop: 0 + 'px', lineHeight: (tech.type === "Mili-Tech" ? 37 : 45) + "px" }}>{tech.cost}</p></strong>
+          </div>
+          <TimingBar timing={tech.timing}/>
 
 
           {revised && tech.revisionNotes ? (

@@ -4,7 +4,7 @@ import {
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
 import Stations from '../dataFiles/stations.json';
-import Phases from '../components/Phases';
+import TimingBar from '../components/TimingBar';
 import Layout from '../components/Layout'
 
 export default function IndividualStationPage() {
@@ -22,7 +22,7 @@ export default function IndividualStationPage() {
   return (
     <Layout title={station.name}>
       {Stations.stations[stationIndex].revised ?
-        <Nav className="ps-5 mx-5 border-bottom-0" tabs>
+        <Nav className="ps-5 mx-1" tabs>
           <NavItem>
             <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
               onClick={() => { setStation(Stations.stations[stationIndex].original); setRevised(false) }}>Original</NavLink>
@@ -33,12 +33,12 @@ export default function IndividualStationPage() {
           </NavItem>
         </Nav> : null
       }
-      <Card>
+      <Card className="mx-1 border-top-0 rounded-top-0">
         <CardBody>
           <h1 className='text-light'>{station.name}</h1>
           <p>{station.body}</p>
           <br />
-          <p>({station.timing.player}) <Phases phases={station.timing.phases} /></p>
+          <TimingBar timing={station.timing}/>
 
 
           {revised && station.revisionNotes ? (

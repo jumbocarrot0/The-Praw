@@ -4,7 +4,7 @@ import {
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
 import Evolutions from '../dataFiles/evolutions.json';
-import Phases from '../components/Phases';
+import TimingBar from '../components/TimingBar';
 import Layout from '../components/Layout'
 
 export default function IndividualEvolutionPage() {
@@ -24,7 +24,7 @@ export default function IndividualEvolutionPage() {
   return (
     <Layout title={evolution.name}>
       {Evolutions.evolutions[evolutionIndex].revised ?
-        <Nav className="ps-5 mx-5 border-bottom-0" tabs>
+        <Nav className="ps-5 mx-1" tabs>
           <NavItem>
             <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
               onClick={() => { setEvolution(Evolutions.evolutions[evolutionIndex].original); setRevised(false) }}>Original</NavLink>
@@ -35,7 +35,7 @@ export default function IndividualEvolutionPage() {
           </NavItem>
         </Nav> : null
       }
-      <Card>
+      <Card className="mx-1 border-top-0 rounded-top-0">
         <CardBody>
           <h1 className='text-light'>{evolution.name}</h1>
           <ul>
@@ -44,7 +44,7 @@ export default function IndividualEvolutionPage() {
             })}
           </ul>
           <br />
-          <p>({evolution.timing.player}) <Phases phases={evolution.timing.phases} /></p>
+          <TimingBar timing={evolution.timing}/>
 
 
           {revised && evolution.revisionNotes ? (

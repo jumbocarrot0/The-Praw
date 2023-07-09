@@ -1,20 +1,32 @@
-export default function Phases(props) {
-    if (props.flare && (Object.values(props.phases).reduce((accumulator, phase) => accumulator + phase) >= 8)) {
-      return <span>(Any Phase)</span>
-    } else {
-      return <span>
-        {props.phases.startTurn ? "(Start Turn) " : null}
-        {props.phases.regroup ? "(Regroup) " : null}
-        {props.phases.destiny ? "(Destiny) " : null}
-        {props.phases.launch ? "(Launch) " : null}
-        {props.phases.alliance ? "(Alliance) " : null}
-        {props.phases.planning ? "(Planning) " : null}
-        {props.phases.reveal ? "(Reveal) " : null}
-        {props.phases.resolution ? "(Resolution) " : null}
-        {props.phases.special ? "(Special) " : null}
-        {props.phases.gameSetup ? "(Game Setup) " : null}
-        {props.phases.varies ? "(Varies) " : null}
-        {props.phases.secret ? "(???) " : null}
+function Phase(props) {
+  return (
+    <span className='text-orange'>
+      (
+      <span className='text-decoration-underline'>
+        <span className="text-light">{props.children}</span>
       </span>
-    }
+      )
+    </span>
+  )
+}
+
+export default function Phases(props) {
+  if (props.flare && (Object.values(props.phases).reduce((accumulator, phase) => accumulator + phase) >= 8)) {
+    return <Phase>Any Phase</Phase>
+  } else {
+    return <span>
+      {props.phases.startTurn ? <Phase>Start Turn</Phase> : null}
+      {props.phases.regroup ? <Phase>Regroup</Phase> : null}
+      {props.phases.destiny ? <Phase>Destiny</Phase> : null}
+      {props.phases.launch ? <Phase>Launch</Phase> : null}
+      {props.phases.alliance ? <Phase>Alliance</Phase> : null}
+      {props.phases.planning ? <Phase>Planning</Phase> : null}
+      {props.phases.reveal ? <Phase>Reveal</Phase> : null}
+      {props.phases.resolution ? <Phase>Resolution</Phase> : null}
+      {props.phases.special ? <Phase>Special</Phase> : null}
+      {props.phases.gameSetup ? <Phase>Game Setup</Phase> : null}
+      {props.phases.varies ? <Phase>Varies</Phase> : null}
+      {props.phases.secret ? <Phase>???</Phase> : null}
+    </span>
   }
+}

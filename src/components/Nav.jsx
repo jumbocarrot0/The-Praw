@@ -20,9 +20,10 @@ export default function PrawNav() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar className="navbar navbar-expand-md mb-5 bg-light" data-bs-theme="light">
+    <Navbar className="navbar navbar-expand-md bg-light" data-bs-theme="light" fixed="top">
       <NavbarBrand>The Praw</NavbarBrand>
-      <NavbarToggler onClick={toggle} />
+      <NavbarToggler onClick={toggle} className="bg-dark">
+        </NavbarToggler>
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar>
           <NavItem key={0}>

@@ -34,3 +34,8 @@ favicon/
 *.csv
 *.ods
 *.ods#
+*.pdn
+src/svg/Full Moon.svg
+src/svg/Half Moon.svg
+src/svg/Quarter Moon.svg
+src/svg/searchIcon.svg

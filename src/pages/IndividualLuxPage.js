@@ -4,7 +4,7 @@ import {
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
 import Lux from '../dataFiles/lux.json';
-import Phases from '../components/Phases';
+import TimingBar from '../components/TimingBar';
 import Layout from '../components/Layout'
 
 export default function IndividualLuxPage() {
@@ -22,7 +22,7 @@ export default function IndividualLuxPage() {
   return (
     <Layout title={lux.name}>
       {Lux.lux[luxIndex].revised ?
-        <Nav className="ps-5 mx-5 border-bottom-0" tabs>
+        <Nav className="ps-5 mx-1" tabs>
           <NavItem>
             <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
               onClick={() => { setLux(Lux.lux[luxIndex].original); setRevised(false) }}>Original</NavLink>
@@ -33,12 +33,12 @@ export default function IndividualLuxPage() {
           </NavItem>
         </Nav> : null
       }
-      <Card>
+      <Card className="mx-1 border-top-0 rounded-top-0">
         <CardBody>
           <h1 className='text-light'>{lux.name}</h1>
           <p>{lux.body}</p>
           <br />
-          <p>({lux.timing.player}) <Phases phases={lux.timing.phases} /></p>
+          <TimingBar timing={lux.timing}/>
 
 
           {revised && lux.revisionNotes ? (
