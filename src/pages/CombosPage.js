@@ -8,6 +8,8 @@ import Aliens from '../dataFiles/aliens.json';
 import Layout from '../components/Layout'
 
 function Combo(props) {
+  console.log(props.Name)
+  console.log(props.Aliens)
   return (
     <Table dark className="text-center w-50 th-w-50">
       <thead>
