@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { useSearchParams } from 'react-router-dom'
 import GridBrowser from "../components/GridBrowser";
-import Layout from '../components/Layout'
-import Phases from '../components/Phases';
+import Layout from '../components/Layout';
+import TimingBar from '../components/TimingBar';
 import Aliens from '../dataFiles/aliens.json';
 import {
   Card,
   CardBody,
-  // CardHeader,
   Row,
   Col,
   Badge,
@@ -21,7 +20,6 @@ import {
   ModalFooter,
   ModalHeader,
   FormFeedback
-
 } from 'reactstrap';
 
 function filterAliens(aliens, search, expansions, revised, alerts
@@ -56,8 +54,34 @@ function filterAliens(aliens, search, expansions, revised, alerts
   // } else {
   //   filteredAliens = filteredAliens.filter((alien) => phases.filter(phase => alien.phases[phase]).length > 0)
   // }
+  // console.log(filteredAliens)
   return Object.fromEntries(filteredAliens)
 
+}
+
+function sortAliens(aliens) {
+  aliens = Object.entries(aliens)
+  // console.log('unsorted: ', aliens)
+  aliens.sort(function (a, b) {
+    const expansions = ["Base Set", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "42nd Anniversary Edition", "Cosmic Odyssey"]
+    // console.log(a.expansion)
+    if (expansions.findIndex((e) => e === a[1].original.expansion) < expansions.findIndex((e) => e === b[1].original.expansion)) {
+      return -1;
+    }
+    else if (expansions.findIndex((e) => e === a[1].original.expansion) > expansions.findIndex((e) => e === b[1].original.expansion)) {
+      return 1;
+    } else {
+      if (a[1].original.name < b[1].original.name) {
+        return -1;
+      }
+      else if (a[1].original.name > b[1].original.name) {
+        return 1;
+      }
+    }
+    return 0;
+  })
+  // console.log('sorted: ', aliens)
+  return aliens
 }
 
 // https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript
@@ -143,30 +167,50 @@ function AlienViewButton(props) {
       <ModalBody>
         <h3>{alien.alert}</h3>
         {alien.gameSetup ? <p><strong>Game Setup:</strong> {alien.gameSetup}</p> : null}
-        <p><strong>{alien.powerName}</strong> {alien.powerBody}</p>
-        {alien.powerSpecialName ? <p><strong>{alien.powerSpecialName}</strong> {alien.powerSpecialBody}</p> : null}
-        <br />
-        <p><em>{alien.history}</em></p>
-        <p>({alien.powerTiming.player}) ({alien.powerTiming.choice}) <Phases phases={alien.powerTiming.phases} /></p>
+          {/* dangerouslySetInnerHTML is, well, dangerous when used on user submitted stuff. But aliens.json is trustworthy, so this is fine albiet jank.
+          If/when I add a homebrew aliens option, PLEASE PLEASE PLEASE dont forget to sanitise them. */}
+          <p><strong>{alien.powerName}</strong> <span dangerouslySetInnerHTML={
+            {
+              __html: alien.powerBody
+                .replace('may use this power', '<strong><em>may use</em></strong> this power')
+                .replace('use this power', '<strong><em>use</em></strong> this power')
+                .replace('this power is used', 'this power is <strong><em>used</em></strong>')
+            }
+          } />
+          </p>
+          {alien.powerSpecialName ?
+            <p><strong>{alien.powerSpecialName}</strong> <span dangerouslySetInnerHTML={
+              {
+                __html: alien.powerSpecialBody
+                  .replace('may use this power', '<strong><em>may use</em></strong> this power')
+                  .replace('use this power', '<strong><em>use</em></strong> this power')
+                  .replace('this power is used', 'this power is <strong><em>used</em></strong>')
+              }
+            } />
+            </p>
+            : null}
+          <br />
+          <p><em>{alien.history}</em></p>
+        <TimingBar timing={alien.powerTiming} />
         <br />
         <h3>Wild Flare</h3>
         <p>{alien.wildBody}</p>
-        <p>({alien.wildTiming.player}) <Phases phases={alien.wildTiming.phases} flare /></p>
+        <TimingBar timing={alien.wildTiming} />
         <br />
         <h3>Super Flare</h3>
         <p>{alien.superBody}</p>
-        <p>({alien.superTiming.player}) <Phases phases={alien.superTiming.phases} flare /></p>
+        <TimingBar timing={alien.superTiming} />
         <br />
         <br />{
           alien.wildClassicBody ? (
             <div>
               <h3>Classic Wild Flare</h3>
               <p>{alien.wildClassicBody}</p>
-              <p>({alien.wildClassicTiming.player}) <Phases phases={alien.wildClassicTiming.phases} flare /></p>
+              <TimingBar timing={alien.wildClassicTiming} />
               <br />
               <h3>Classic Super Flare</h3>
               <p>{alien.superClassicBody}</p>
-              <p>({alien.superClassicTiming.player}) <Phases phases={alien.superClassicTiming.phases} flare /></p>
+              <TimingBar timing={alien.superClassicTiming} />
             </div>
           ) : null
         }
@@ -350,7 +394,7 @@ export default function Selection() {
                     onChange={(e) => setPlayerNumber(e.target.value)}
                     value={playerNumber}
                     defaultValue={"Please Select"}
-                    invalid={playerNumberError && playerNumber === undefined}
+                    invalid={(playerNumberError && (playerNumber === undefined))}
                   >
                     <option value={undefined} disabled>
                       Please Select
@@ -430,7 +474,7 @@ export default function Selection() {
                     checked={useATAliens}
                     onChange={() => setUseATAliens(!useATAliens)} />
                   <Label className="text-dark" check>
-                    Alternate Timeline Aliens
+                    Alternate Timeline ( <Badge className="text-light" color="dark">AT</Badge> ) Aliens
                   </Label>
                 </FormGroup>
                 <FormGroup switch>
@@ -439,7 +483,7 @@ export default function Selection() {
                     disabled={!useATAliens}
                     onChange={() => setUseATAliensAndOG(!useATAliensAndOG)} />
                   <Label className="text-dark" check>
-                    Use both AT and non-AT Aliens
+                    Use both <Badge className="text-light" color="dark">AT</Badge> and non-<Badge className="text-light" color="dark">AT</Badge> Aliens
                   </Label>
                 </FormGroup>
                 <FormGroup switch>
@@ -470,14 +514,14 @@ export default function Selection() {
                       type="text"
                       value={excludeAliensSearch}
                       onChange={(e) => {
-                        if (!/[^ A-Za-z0-9\-,]/.test(e.target.value)){
+                        if (!/[^ A-Za-z0-9\-,]/.test(e.target.value)) {
                           setExcludeAliensSearch(e.target.value)
                         }
                       }}
                     />
                   </FormGroup>
-                  <div className="overflow-y-scroll" style={{ height: '10vh' }}>
-                    {groupByN(3, Object.entries(filterAliens(Aliens.aliens, excludeAliensSearch))).map(row => {
+                  <div className="overflow-y-scroll overflow-x-hidden" style={{ height: '10vh', resize: "vertical" }}>
+                    {groupByN(3, sortAliens(filterAliens(Aliens.aliens, excludeAliensSearch))).map(row => {
                       return (
                         <Row key={row}>
                           {
@@ -486,6 +530,7 @@ export default function Selection() {
                                 <Col sm={4} key={alien}>
                                   <FormGroup check>
                                     <Input type="checkbox"
+                                      className={excludedAliens.includes(alien[0]) ? "bg-danger border-danger-subtle" : ""}
                                       checked={excludedAliens.includes(alien[0])}
                                       onChange={() => {
                                         if (excludedAliens.includes(alien[0])) {
