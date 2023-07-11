@@ -172,9 +172,9 @@ function AlienViewButton(props) {
           <p><strong>{alien.powerName}</strong> <span dangerouslySetInnerHTML={
             {
               __html: alien.powerBody
-                .replace('may use this power', '<strong><em>may use</em></strong> this power')
-                .replace('use this power', '<strong><em>use</em></strong> this power')
-                .replace('this power is used', 'this power is <strong><em>used</em></strong>')
+                .replaceAll('may use this power', '<strong><em>may use</em></strong> this power')
+                .replaceAll('use this power', '<strong><em>use</em></strong> this power')
+                .replaceAll('this power is used', 'this power is <strong><em>used</em></strong>')
             }
           } />
           </p>
@@ -182,9 +182,9 @@ function AlienViewButton(props) {
             <p><strong>{alien.powerSpecialName}</strong> <span dangerouslySetInnerHTML={
               {
                 __html: alien.powerSpecialBody
-                  .replace('may use this power', '<strong><em>may use</em></strong> this power')
-                  .replace('use this power', '<strong><em>use</em></strong> this power')
-                  .replace('this power is used', 'this power is <strong><em>used</em></strong>')
+                  .replaceAll('may use this power', '<strong><em>may use</em></strong> this power')
+                  .replaceAll('use this power', '<strong><em>use</em></strong> this power')
+                  .replaceAll('this power is used', 'this power is <strong><em>used</em></strong>')
               }
             } />
             </p>
