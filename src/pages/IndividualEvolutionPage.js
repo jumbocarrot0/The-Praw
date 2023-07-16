@@ -35,7 +35,7 @@ export default function IndividualEvolutionPage() {
           </NavItem>
         </Nav> : null
       }
-      <Card className="mx-1 border-top-0 rounded-top-0">
+      <Card className={"mx-1" + (Evolutions.evolutions[evolutionIndex].revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
           <h1 className='text-light'>{evolution.name}</h1>
           <ul>

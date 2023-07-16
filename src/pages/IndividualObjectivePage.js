@@ -33,7 +33,7 @@ export default function IndividualObjectivePage() {
           </NavItem>
         </Nav> : null
       }
-      <Card className="mx-1 border-top-0 rounded-top-0">
+      <Card className={"mx-1" + (Objectives.objectives[objectiveIndex].revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
           <h1 className='text-light'>{objective.name}</h1>
 

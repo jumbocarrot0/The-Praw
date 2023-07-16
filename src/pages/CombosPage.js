@@ -1,7 +1,7 @@
 import { useState } from "react";
 import combosData from '../dataFiles/combos.json';
 import {
-  Button, Table, Row
+  Button, Table, Row, Label, Input, FormGroup
 } from 'reactstrap';
 import { Link } from "react-router-dom"
 import Aliens from '../dataFiles/aliens.json';
@@ -17,12 +17,12 @@ function Combo(props) {
           <th colSpan={2}>
             <h2>{props.Name}</h2>
             <strong>{props.Author}</strong>
-            </th>
+          </th>
         </tr>
       </thead>
       <tbody>
         <tr><th scope="row" rowSpan={3} className="align-middle">3-Player</th>
-        <td>{Aliens.aliens[props.Aliens[0]].original.name}</td></tr>
+          <td>{Aliens.aliens[props.Aliens[0]].original.name}</td></tr>
         <tr><td>{Aliens.aliens[props.Aliens[1]].original.name}</td></tr>
         <tr><td>{Aliens.aliens[props.Aliens[2]].original.name}</td></tr>
         <tr><th scope="row">4-Player</th><td>{Aliens.aliens[props.Aliens[3]].original.name}</td></tr>
@@ -42,6 +42,7 @@ function RandomCombo() {
 
 export default function Combos() {
   const [combo, setCombo] = useState(RandomCombo())
+  console.log(combo)
   return (
     <Layout title="Combos">
       <Row>
@@ -56,6 +57,33 @@ export default function Combos() {
           >
             New Combo!
           </Button>
+        </div>
+        <div className="d-flex justify-content-center">
+          <FormGroup>
+            <Label for="exampleSelect">
+              Select Combo
+            </Label>
+            <Input
+              id="exampleSelect"
+              name="select"
+              type="select"
+              onChange={(e) => {setCombo(combosData[e.target.value])}}
+            >
+              <option value={undefined} disabled>
+                Select Combo
+              </option>
+              {
+                combosData.map((combo, index) => {
+                  console.log(combo, index)
+                  return (
+                    <option key={index} value={index}>
+                      {combo.Name}
+                    </option>
+                  )
+                })
+              }
+            </Input>
+          </FormGroup>
         </div>
       </Row>
       <Row className="row mt-5">

@@ -33,7 +33,7 @@ export default function IndividualMoonPage() {
           </NavItem>
         </Nav> : null
       }
-      <Card className="mx-1 border-top-0 rounded-top-0">
+      <Card className={"mx-1" + (Moons.moons[moonIndex].revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
           <h1 className='text-light'>{moon.name}</h1>
           <p>{moon.body}</p>

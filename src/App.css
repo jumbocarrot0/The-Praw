@@ -91,6 +91,16 @@ table.th-w-50 tbody tr th {
   background-color: #800080 !important;
 }
 
+.border-pink {
+  --bs-border-opacity: 1;
+  border-color: #d63384 !important;
+}
+
+.bg-pink {
+  --bs-border-opacity: 1;
+  background-color: #d63384 !important;
+}
+
 .text-orange {
   color: #fd7e14 !important;
 }

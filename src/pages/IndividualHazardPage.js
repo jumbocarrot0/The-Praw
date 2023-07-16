@@ -33,13 +33,25 @@ export default function IndividualHazardPage() {
           </NavItem>
         </Nav> : null
       }
-      <Card className="mx-1 border-top-0 rounded-top-0">
+      <Card className={"mx-1" + (Hazards.hazards[hazardIndex].revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
           <h1 className='text-light'>{hazard.name}</h1>
-          {hazard.type === "AltHazard" ? <p><strong>Offense:</strong>{hazard.body}<br/><br/><strong>Others:</strong>{hazard.body2}</p> :
+          {hazard.type === "AltHazard" ? <p><strong>Offense: </strong>{hazard.body}<br/><br/><strong>Others: </strong>{hazard.body2}</p> :
             <p>{hazard.body}</p>}
-            {hazard.type === "Permanent" ? <p><strong>(This Card Remains in Play)</strong></p> :
-              hazard.type === "SemiPermanent" ? <p><strong>(Semi-Permanent)</strong></p> : null}
+            {hazard.type === "Permanent" ? <p><strong className='text-danger'>
+            (
+            <span className='text-decoration-underline'>
+                <span className="text-light">This Card Remains in Play</span>
+            </span>
+            )
+        </strong></p> :
+              hazard.type === "SemiPermanent" ? <p><strong className='text-warning'>
+              (
+              <span className='text-decoration-underline'>
+                  <span className="text-light">Semi-Permanent</span>
+              </span>
+              )
+          </strong></p> : null}
           <br />
 
 

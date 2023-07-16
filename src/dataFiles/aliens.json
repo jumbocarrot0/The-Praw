@@ -4103,7 +4103,7 @@
                         "regroup": false,
                         "destiny": false,
                         "launch": false,
-                        "alliance": false,
+                        "alliance": true,
                         "planning": false,
                         "reveal": false,
                         "resolution": false
@@ -22611,7 +22611,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "When you use your power, resolve its effect twice. When giving a refund, you may replace two cards instead of one.",
+                "superBody": "When you use your power, resolve its effect twice. When giving a refund, you may replace two cards (instead of one).",
                 "superTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -22666,7 +22666,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "When you use your power, you may resolve its effect twice. When giving a refund, you may replace two cards instead of one.",
+                "superBody": "When you use your power, you may resolve its effect twice. When giving a refund, you may replace two cards (instead of one).",
                 "superTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -23718,8 +23718,8 @@
                         "regroup": false,
                         "destiny": false,
                         "launch": false,
-                        "alliance": true,
-                        "planning": false,
+                        "alliance": false,
+                        "planning": true,
                         "reveal": false,
                         "resolution": false
                     }

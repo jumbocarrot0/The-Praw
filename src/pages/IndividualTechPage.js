@@ -33,7 +33,7 @@ export default function IndividualTechPage() {
           </NavItem>
         </Nav> : null
       }
-      <Card className="mx-1 border-top-0 rounded-top-0">
+      <Card className={"mx-1" + (Techs.technologies[techIndex].revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
           <h1 className='text-light'>{tech.name}</h1>
           <p><strong>Type: {tech.type}</strong></p>

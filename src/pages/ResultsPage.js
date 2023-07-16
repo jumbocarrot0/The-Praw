@@ -1,16 +1,13 @@
-import { useState } from "react";
-import { createSearchParams, useNavigate
-  // , useSearchParams 
-} from 'react-router-dom'
-import { ReactComponent as SearchLogo } from '../svg/searchIcon.svg';
-import Layout from '../components/Layout'
-
+import { useSearchParams } from 'react-router-dom'
 import {
-  Input,
-  InputGroup,
-  InputGroupText,
-  Form
+  Card,
+  CardBody,
+  Badge
+
 } from 'reactstrap';
+import { Link } from "react-router-dom"
+import GridBrowser from "../components/GridBrowser";
+import Layout from '../components/Layout'
 
 import Aliens from '../dataFiles/aliens.json';
 import Evolutions from '../dataFiles/evolutions.json';
@@ -20,6 +17,49 @@ import Moons from '../dataFiles/moons.json';
 import Objectives from '../dataFiles/objectives.json';
 import Stations from '../dataFiles/stations.json';
 import Technology from '../dataFiles/technology.json';
+
+function Item(props) {
+  const item = props.content
+  return (
+    <Card className='mb-5'>
+      <Link className={"btn border border-5 btn-light border-" + 
+            (
+                item.expansion === "Base Set" ? "primary" : 
+                item.expansion === "Cosmic Incursion" ? "indigo" : 
+                item.expansion === "Cosmic Conflict" ? "info" : 
+                item.expansion === "Cosmic Alliance" ? "warning" : 
+                item.expansion === "Cosmic Storm" ? "danger" : 
+                item.expansion === "Cosmic Dominion" ? "success" : 
+                item.expansion === "Cosmic Eons" ? "pink" : 
+                item.expansion === "Cosmic Odyssey" ? "purple" : 
+                "dark"
+            )
+      } to={props.to} reloadDocument>
+        <CardBody>
+          <h2 className='text-dark'>{item.name}</h2>
+          <h6 className="align-items-center">
+            <Badge
+              className={["Cosmic Alliance", "Cosmic Conflict"].includes(item.expansion) ? " text-dark" : ""}
+              color={
+                item.expansion === "Base Set" ? "primary" : 
+                item.expansion === "Cosmic Incursion" ? "indigo" : 
+                item.expansion === "Cosmic Conflict" ? "info" : 
+                item.expansion === "Cosmic Alliance" ? "warning" : 
+                item.expansion === "Cosmic Storm" ? "danger" : 
+                item.expansion === "Cosmic Dominion" ? "success" : 
+                item.expansion === "Cosmic Eons" ? "pink" : 
+                item.expansion === "Cosmic Odyssey" ? "purple" : 
+                "dark"
+              }>
+              {item.expansion}
+            </Badge>
+          </h6>
+          {/* <strong>{item.short}</strong> */}
+        </CardBody>
+      </Link>
+    </Card>
+  )
+}
 
 function filterItems(search) {
 
@@ -78,45 +118,24 @@ function filterItems(search) {
 
 }
 
-export default function Home() {
-  // const [searchParams, setSearchParams] = useSearchParams();
-  const [searchQuery, setSearchQuery] = useState('');
-  const navigate = useNavigate();
+export default function ResultsPage() {
+  const searchParams = useSearchParams()[0];
+  const submittedQuery = (searchParams.get('search') || '');
+//   const [searchQuery, setSearchQuery] = useState(submittedQuery);
+
+//   const navigate = useNavigate();
+
+  const filteredAliens = filterItems(submittedQuery)
 
   return (
-    <Layout>
-      <section className="hero text-center">
-        <h1 className="hero__title">The Praw</h1>
-        <p className="hero__subtitle">A Fan-Made Website for <a href="https://futurepastimes.com/cosmic-encounter-board-game">Cosmic Encounter</a></p>
-        <Form onSubmit={
-            (event) => {
-              event.preventDefault();
-              const results = Object.entries(filterItems(searchQuery))
-              if (results.length === 1) {
-                navigate({
-                  pathname: results[0][0]
-                });
-              } else {
-                navigate({
-                  pathname: `/Search`,
-                  search: `?${createSearchParams([['search', searchQuery]])}`
-                });
-              }
-            }}>
-          <InputGroup>
-            <Input placeholder="Search the Cosmos"
-              value = {searchQuery}
-              onChange={(e) => {
-                if (!/[^ A-Za-z0-9\-,]/.test(e.target.value)){
-                  setSearchQuery(e.target.value)
-                }
-              }} />
-            <InputGroupText>
-              <SearchLogo />
-            </InputGroupText>
-          </InputGroup>
-        </Form>
-      </section>
+    <Layout title="Search">
+      <h1 className='mb-4'>Search</h1>
+      <hr className="border border-light border-2 opacity-100 mb-5" />
+      <GridBrowser cardTemplate={Item}
+        url=""
+        content={filteredAliens}
+        noSort
+      />
     </Layout>
   );
 }

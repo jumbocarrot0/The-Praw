@@ -33,7 +33,7 @@ export default function IndividualAlienPage() {
           </NavItem>
         </Nav> : null
       }
-      <Card className="mx-1 border-top-0 rounded-top-0">
+      <Card className={"mx-1" + (Aliens.aliens[alienIndex].revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
           <img alt={alien.name + " Avatar"}
             className='float-end'

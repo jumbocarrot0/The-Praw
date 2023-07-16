@@ -1266,7 +1266,7 @@
                 "refresh": false,
                 "short": "Inconvenience Other Players.",
                 "body": "Discard at any time. If you do, each other play must discard all non-encounter cards from their hand or lose eight ships to the warp.",
-                "cost": "\u00e2\u2030\u00a525",
+                "cost": "\u226525",
                 "type": "Mili-Tech",
                 "timing": {
                     "player": "As Any Player",
@@ -1288,7 +1288,7 @@
                 "refresh": false,
                 "short": "Inconvenience Other Players.",
                 "body": "Discard at any time. If you do, each other play must discard all non-encounter cards from their hand or lose eight ships to the warp.",
-                "cost": "\u00e2\u2030\u00a525",
+                "cost": "\u226525",
                 "type": "Mili-Tech",
                 "timing": {
                     "player": "As Any Player",
@@ -1473,7 +1473,7 @@
                 "refresh": true,
                 "short": "Adds Reward Deck.",
                 "body": "Add the Reward Deck variant (🕮10) to the game. If it is already being used, or if you discarded attack cards with a total value of at least 21, add the Ultra Reward Deck sub-variant. Then, discard this tech and draw two reward cards.",
-                "cost": "\u00e2\u2030\u00a510",
+                "cost": "\u226510",
                 "type": "Mili-Tech",
                 "timing": {
                     "player": "As Any Player",
@@ -1488,7 +1488,7 @@
                 "refresh": true,
                 "short": "Adds Reward Deck.",
                 "body": "Add the Reward Deck variant (🕮10) to the game. If it is already being used, or if you discarded attack cards with a total value of at least 21, add the Ultra Reward Deck sub-variant. Then, discard this tech and draw two reward cards.",
-                "cost": "\u00e2\u2030\u00a510",
+                "cost": "\u226510",
                 "type": "Mili-Tech",
                 "timing": {
                     "player": "As Any Player",
@@ -1586,7 +1586,7 @@
                 "refresh": true,
                 "short": "Retain a Lost Ship.",
                 "body": "When more than one of your ships would be sent to the wapr, you may send one of them to any of your colonies instead.",
-                "cost": "\u00e2\u2030\u00a513",
+                "cost": "\u226513",
                 "type": "Mili-Tech",
                 "timing": {
                     "player": "As Any Player",
@@ -1608,7 +1608,7 @@
                 "refresh": true,
                 "short": "Retain a Lost Ship.",
                 "body": "When more than one of your ships would be sent to the wapr, you may send one of them to any of your colonies instead.",
-                "cost": "\u00e2\u2030\u00a513",
+                "cost": "\u226513",
                 "type": "Mili-Tech",
                 "timing": {
                     "player": "As Any Player",

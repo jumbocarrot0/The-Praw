@@ -1,5 +1,6 @@
 //Pages
 import Home from "./pages/HomePage";
+import Results from "./pages/ResultsPage";
 import Combos from "./pages/CombosPage";
 import SelectionPage from "./pages/SelectionPage";
 import AlienListPage from "./pages/Lists/AlienListPage";
@@ -41,6 +42,11 @@ export const routes = [
       path: "/",
       element: <Home />,
       breadcrumb: "Home",
+    },
+    {
+      path: "/Search",
+      element: <Results />,
+      breadcrumb: "Search",
     },
     {
       path: "/Combos",
