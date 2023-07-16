@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import Layout from '../components/Layout'
+import Layout from '../../components/Layout'
 
 export default function AllianceDialPage() {
   return (
     <Layout title="Hidden Alliances">
       <h1 className='mb-4'>Hidden Alliances</h1>
       <p className="text-light">Hidden Alliances is an official variant introduced in Cosmic Eons. When players are joining as allies, each non main player is given a dial to secretly, and simultaneously, record who they're joining and with how many ships. All players reveal this simultaneously.</p>
-      <hr class="border border-light border-2 opacity-100 my-4" />
+      <hr className="border border-light border-2 opacity-100 my-4" />
       <h2>Rules</h2>
       <p className="text-light">These are copied from the Cosmic Eons rules</p>
       <h3>Gameplay</h3>

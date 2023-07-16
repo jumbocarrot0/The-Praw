@@ -16,7 +16,7 @@ export default function VariantsListPage() {
         "Moons": { name: "Moons", image: "", complexity: 3, short: "Discover Abilities on Planets" },
         "Lux": { name: "Lux", image: "", complexity: 3, short: "Stardust Economy" },
         "Objectives": { name: "Array Objectives", image: "", complexity: 2, short: "Win with Points" },
-        // "Campaign": { name: "Campaign Mode", image: "", complexity: 3, short: "4+ Games of Legacy Cosmic" },
+        "Campaign": { name: "Campaign Mode", image: "", complexity: 3, short: "4+ Games of Legacy Cosmic" },
     }
 
     return (

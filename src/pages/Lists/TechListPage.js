@@ -45,9 +45,11 @@ export default function TechListPage() {
             <ul>
               <li className="text-light">Haz-Tech, which do not have a specific number of ships needed to complete them, but they have effects that scale based on the number on it. These techs cannot be completed; instead, they can be revealed when a hazard warning has been drawn during an encounter.</li>
               <li className="text-light">Mili-Tech, which are not researched, but are completed during a single regroup phase by the player discarding attack cards from their hand. There are three types of Mili-Techs:</li>
-              <li className="ms-5 text-light"><strong>X=X</strong>: The player discards two attack cards with the same value (e.g. 08, 08).</li>
-              <li className="ms-5 text-light"><strong>X+1</strong>: The player discards two attack cards with sequential values (e.g. 04, 05).</li>
-              <li className="ms-5 text-light"><strong>≥[#]</strong>: The player discards any number of attack cards whose values sum to equal to or greater than the number listed.</li>
+              <ul>
+                <li className="text-light"><strong>X=X</strong>: The player discards two attack cards with the same value (e.g. 08, 08).</li>
+                <li className="text-light"><strong>X+1</strong>: The player discards two attack cards with sequential values (e.g. 04, 05).</li>
+                <li className="text-light"><strong>≥[#]</strong>: The player discards any number of attack cards whose values sum to equal to or greater than the number listed.</li>
+              </ul>
             </ul>
           </AccordionBody>
         </AccordionItem>

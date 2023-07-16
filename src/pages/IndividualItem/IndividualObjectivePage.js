@@ -3,8 +3,8 @@ import {
   Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
-import Objectives from '../dataFiles/objectives.json';
-import Layout from '../components/Layout'
+import Objectives from '../../dataFiles/objectives.json';
+import Layout from '../../components/Layout'
 
 
 export default function IndividualObjectivePage() {

@@ -42,10 +42,14 @@ export default function StationListPage() {
             <p className="text-light">There are three types of stations:</p>
             <ul>
               <li className="text-light">Space Stations are controlled by the player with the station's card if they have a colony on the planet its attached to.</li>
-              <li className="ms-5 text-light">While the system owner has no ships on a planet with an attached space station, they lose access to the ability of the space station and flip the corresponding space station card facedown. If they reestablish a colony on the planet, flip the corresponding space station card faceup.</li>
+              <ul>
+                <li className="text-light">While the system owner has no ships on a planet with an attached space station, they lose access to the ability of the space station and flip the corresponding space station card facedown. If they reestablish a colony on the planet, flip the corresponding space station card faceup.</li>
+              </ul>
               <li className="text-light">Sky Cities work like space stations, except that any player with a colony on the planet with a sky city attached has access to its ability.</li>
               <li className="text-light">Deep space stations can only be controlled by the owner of the system they're in (they can of course be traded, changing the system its in).</li>
-              <li className="ms-5 text-light">If the owner of the system ever has fewer than four home colonies, that player loses access to the ability of their deep space station. Flip the corresponding space station card facedown</li>
+              <ul>
+                <li className="text-light">If the owner of the system ever has fewer than four home colonies, that player loses access to the ability of their deep space station. Flip the corresponding space station card facedown</li>
+              </ul>
             </ul>
           </AccordionBody>
         </AccordionItem>
@@ -55,7 +59,7 @@ export default function StationListPage() {
         url="/Variants/Stations"
         content={Stations.stations}
         border={(item) => {
-          return {"Sky City" : "success", "Space Station" : "primary", "Deep Space Station": "indigo"}[item.type];
+          return { "Sky City": "success", "Space Station": "primary", "Deep Space Station": "indigo" }[item.type];
         }}
         type={(item) => { return item.type }}
       />

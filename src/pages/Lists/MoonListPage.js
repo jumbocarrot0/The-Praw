@@ -47,7 +47,9 @@ export default function MoonListPage() {
               <li className="text-light">Blue Moons, unlike other moons, are not revealed when occupied. Instead they have a once per game ability that, like quarter moons, have an immediate effect that trigger when revealed. The occupier chooses when to reveal the blue moon but, unlike quarter moons, blue moons are not flipped back facedown.</li>
               <li className="text-light">Secret Moons, similar to blue moons, are not revealed when occupied. Unlike blue moons, they have an ongoing effect that aid the occupier that take effect only while the moon is revealed.</li>
               <li className="text-light">Moon Bases are treated as an addition foreign colony for the occupier, but have an ongoing negative effect for them.</li>
-              <li className="ms-5 text-light">If a player occupies a moon base, but has no ships on the planet, they are still treated as having a colony on that planet. So, a player occupying a moon base in a foreign system without ships on the attached planet will have 2 foreign colonies.</li>
+              <ul>
+                <li className="text-light">If a player occupies a moon base, but has no ships on the planet, they are still treated as having a colony on that planet. So, a player occupying a moon base in a foreign system without ships on the attached planet will have 2 foreign colonies.</li>
+              </ul>
               <li className="text-light">Hub Moons aid the occupier in deal situations.</li>
               <li className="text-light">Cheesy Moons have a wide array of effects, usually ongoing effects, with a shared theme of beiny silly, party-game-style effects.</li>
               <li className="text-light">New Moons, despite havings a common back, have effects that belong to one another type of moon. When a new moon is revealed, it is treated as the type of moon depicted on its other side. E.g., a new moon that becomes a half moon is treated as a half moon for other half moon card abilities.</li>

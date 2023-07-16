@@ -33,7 +33,9 @@ export default function HazardListPage() {
             <h3>Gameplay</h3>
             <ul>
               <li className="text-light">During the destiny phase, if a player draws a destiny card with a hazard warning on it, a hazard card is drawn at the end of the destiny phase, regardless of whether that destiny card is used or redrawn.</li>
-              <li className="ms-5 text-light">Hazard warnings beyond the first drawn during the same encounter have no additional effect.</li>
+              <ul>
+                <li className="text-light">Hazard warnings beyond the first drawn during the same encounter have no additional effect.</li>
+              </ul>
               <li className="text-light">Hazard cards that are drawn take effect for the current encounter and, unless they are marked otherwise, are discarded to a hazard deck discard pile. Any abilities that affect discard piles do not affect this discard pile.</li>
               <li className="text-light">When the hazard deck has no cards in it, shuffle its discard pile to make a new hazard deck.</li>
             </ul>
@@ -53,7 +55,7 @@ export default function HazardListPage() {
         url="/Variants/Hazards"
         content={Hazards.hazards}
         border={(item) => {
-          return {"AltHazard" : "success", "Permanent" : "danger", "SemiPermanent": "warning", "Hazard": "secondary"}[item.type];
+          return { "AltHazard": "success", "Permanent": "danger", "SemiPermanent": "warning", "Hazard": "secondary" }[item.type];
         }}
         type={(item) => { return item.type }}
       />

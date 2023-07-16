@@ -28,7 +28,9 @@ function Alien(props) {
       <Link className={"btn border border-5 " +
         (alien.altTimeline ? "btn-dark " : "btn-light ") +
         (alien.alert === "Green" ? "border-success" : alien.alert === "Yellow" ? "border-warning" : "border-danger")
-      } to={props.to} reloadDocument>
+      } 
+      style={alien.altTimeline ? {boxShadow: "0px 0px 15px #f600ff inset"} : null}
+      to={props.to}>
         <CardBody>
           <h2 className={!alien.altTimeline ? "text-dark" : null}>{alien.name}</h2>
           <h6 className="align-items-center">
@@ -45,6 +47,9 @@ function Alien(props) {
                 Game Setup
               </Badge>) : null}
           </h6>
+          <img alt={alien.name + " Avatar"}
+            className='mx-auto d-block'
+            src={require(`../../images/alien icons/avatar_${alien.name.replace('The ', '').replace(' ', '_')}${alien.altTimeline ? '_AT' : ''}.png`)} />
           <strong>{alien.short}</strong>
         </CardBody>
       </Link>
@@ -228,6 +233,7 @@ export default function AliensListPage() {
       <GridBrowser cardTemplate={Alien}
         url="/Aliens"
         content={filteredAliens}
+        width={4}
       />
     </Layout>
   );

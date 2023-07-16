@@ -4,27 +4,28 @@ import Results from "./pages/ResultsPage";
 import Combos from "./pages/CombosPage";
 import SelectionPage from "./pages/SelectionPage";
 import AlienListPage from "./pages/Lists/AlienListPage";
-import IndividualAlienPage from "./pages/IndividualAlienPage";
-import ThrowbackPage from "./pages/ThrowbackPage";
+import IndividualAlienPage from "./pages/IndividualItem/IndividualAlienPage";
+import ThrowbackPage from "./pages/IndividualItem/ThrowbackPage";
 import VariantsListPage from './pages/Lists/VariantsListPage';
 import TechListPage from './pages/Lists/TechListPage';
-import IndividualTechPage from "./pages/IndividualTechPage";
+import IndividualTechPage from "./pages/IndividualItem/IndividualTechPage";
 import HazardListPage from './pages/Lists/HazardListPage';
-import IndividualHazardPage from "./pages/IndividualHazardPage";
-import StationListPage from './pages/Lists/StationListPage';
-import IndividualStationPage from "./pages/IndividualStationPage";
+import IndividualHazardPage from "./pages/IndividualItem/IndividualHazardPage";
+import StationListPage from './pages/Lists/StationListPage'; 
+import IndividualStationPage from "./pages/IndividualItem/IndividualStationPage";
 import LuxListPage from './pages/Lists/LuxListPage';
-import IndividualLuxPage from "./pages/IndividualLuxPage";
+import IndividualLuxPage from "./pages/IndividualItem/IndividualLuxPage";
 import MoonListPage from './pages/Lists/MoonListPage';
-import IndividualMoonPage from "./pages/IndividualMoonPage";
+import IndividualMoonPage from "./pages/IndividualItem/IndividualMoonPage";
 import EvolutionListPage from './pages/Lists/EvolutionListPage';
-import IndividualEvolutionPage from "./pages/IndividualEvolutionPage";
+import IndividualEvolutionPage from "./pages/IndividualItem/IndividualEvolutionPage";
 import ObjectivesListPage from './pages/Lists/ObjectivesListPage';
-import IndividualObjectivePage from "./pages/IndividualObjectivePage";
-import RewardsDeckPage from "./pages/RewardsDeckPage";
-import TeamCosmicPage from "./pages/TeamCosmicPage";
-import AllianceDialPage from "./pages/AllianceDialPage";
-import ForeignAidPage from "./pages/ForeignAidPage";
+import IndividualObjectivePage from "./pages/IndividualItem/IndividualObjectivePage";
+import RewardsDeckPage from "./pages/Variants/RewardsDeckPage";
+import TeamCosmicPage from "./pages/Variants/TeamCosmicPage";
+import AllianceDialPage from "./pages/Variants/AllianceDialPage";
+import ForeignAidPage from "./pages/Variants/ForeignAidPage";
+import CampaignPage from "./pages/Variants/CampaignPage";
 
 import Aliens from './dataFiles/aliens.json'
 import Techs from './dataFiles/technology.json'
@@ -154,5 +155,10 @@ export const routes = [
       path: "/Variants/ForeignAid",
       element: <ForeignAidPage />,
       breadcrumb: "Foreign Aid"
+    },
+    {
+      path: "/Variants/Campaign",
+      element: <CampaignPage />,
+      breadcrumb: "Campaign Mode"
     }
 ]

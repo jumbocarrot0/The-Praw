@@ -1,4 +1,4 @@
-import Layout from '../components/Layout'
+import Layout from '../../components/Layout'
 
 export default function RewardsDeckPage() {
   return (
@@ -29,7 +29,9 @@ export default function RewardsDeckPage() {
         <li className="text-light">This sub-variant, introduced in Cosmic Odyssey, adds a few even-stronger reward cards to the reward deck that have slightly different rules.</li>
         <li className="text-light">During setup, shuffle the ultra reward deck into the reward deck. Continue to shuffle until a normal reward card is on top.</li>
         <li className="text-light">While a player is gaining rewards and draws cards from the reward deck, if they would draw two ultra reward cards, instead of drawing the second ultra reward card they must gain the remaining rewards either in the form of drawing cards from the cosmic deck or freeing ships from the warp.</li>
-        <li className="ms-5 text-light">If players find the above rule too ambiguous, The Praw recommends the following altnerative rule: If a player has already drawn an ultra reward from the rewards deck in this encounter (not from another source like another player's hand), they may not draw another from the rewards deck.</li>
+        <ul>
+          <li className="text-light">If players find the above rule too ambiguous, The Praw recommends the following altnerative rule: If a player has already drawn an ultra reward from the rewards deck in this encounter (not from another source like another player's hand), they may not draw another from the rewards deck.</li>
+        </ul>
       </ul>
     </Layout>
   );

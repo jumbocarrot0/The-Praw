@@ -3,9 +3,9 @@ import {
   Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
-import Aliens from '../dataFiles/aliens.json';
-import TimingBar from '../components/TimingBar';
-import Layout from '../components/Layout'
+import Aliens from '../../dataFiles/aliens.json';
+import TimingBar from '../../components/TimingBar';
+import Layout from '../../components/Layout'
 
 export default function IndividualAlienPage() {
 
@@ -37,7 +37,7 @@ export default function IndividualAlienPage() {
         <CardBody>
           <img alt={alien.name + " Avatar"}
             className='float-end'
-            src={require(`../images/alien icons/avatar_${alien.name.replace('The ', '').replace(' ', '_')}${alien.altTimeline ? '_AT' : ''}.png`)} />
+            src={require(`../../images/alien icons/avatar_${alien.name.replace('The ', '').replace(' ', '_')}${alien.altTimeline ? '_AT' : ''}.png`)} />
           <span><h1 className='text-light d-inline'>{alien.name} </h1><h3 className='text-light d-inline'>({alien.alert})</h3></span>
           <h3 className='text-light'>{alien.short}</h3>
           

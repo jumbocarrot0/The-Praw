@@ -3,9 +3,9 @@ import {
   Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
-import Lux from '../dataFiles/lux.json';
-import TimingBar from '../components/TimingBar';
-import Layout from '../components/Layout'
+import Lux from '../../dataFiles/lux.json';
+import TimingBar from '../../components/TimingBar';
+import Layout from '../../components/Layout'
 
 export default function IndividualLuxPage() {
 

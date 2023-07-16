@@ -3,8 +3,8 @@ import {
   Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
-import Hazards from '../dataFiles/hazards.json';
-import Layout from '../components/Layout'
+import Hazards from '../../dataFiles/hazards.json';
+import Layout from '../../components/Layout'
 
 
 export default function IndividualHazardPage() {
