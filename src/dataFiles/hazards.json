@@ -39,10 +39,17 @@
             },
             "revised": {
                 "name": "The Cosmic Guardian",
+                "body": "While The Cosmic Guardian is in play, all attack cards higher than 20 are considered to be negotiate cards.\n\nDiscard The Entropy Beast and The Witness when The Cosmic Guardian enters play.",
+                "expansion": "Cosmic Conflict",
+                "type": "Permanent",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for capitalization"
+            },
+            "homebrew": {
+                "name": "The Cosmic Guardian",
                 "body": "All attack cards higher than 20 are considered to be negotiate cards.",
                 "expansion": "Cosmic Conflict",
                 "type": "SemiPermanent",
-                "revisionNotes": "Revisions from The Praw\n\nEdited to change this hazard to a semi-permanet hazard, which gives a much cleaner hazard that interacts intuitively with Cosmic Odyssey hazards."
+                "revisionNotes": "House rule from The Praw\n\nEdited to change this hazard to a semi-permanet hazard, which gives a much cleaner hazard that interacts intuitively with Cosmic Odyssey hazards."
             }
         },
         "3": {
@@ -99,10 +106,17 @@
             },
             "revised": {
                 "name": "The Entropy Beast",
+                "body": "While The Entropy Beast is in play, each time a special or wild destiny card is drawn, remove the planet with the most ships on it from the game (offense breaks ties), sending all ships on it to the warp. If a player's home system is reduced below three planets, all players lose the game.\n\nDiscard The Cosmic Guardian and The Witness when The Entropy Beast enters play.",
+                "expansion": "Cosmic Conflict",
+                "type": "Permanent",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for capitalization"
+            },
+            "homebrew": {
+                "name": "The Entropy Beast",
                 "body": "Each time a special or wild destiny card is drawn, remove the planet with the most ships on it from the game (offense breaks ties), sending all ships on it to the warp. If a player's home system is reduced below three planets, all players lose the game.",
                 "expansion": "Cosmic Conflict",
                 "type": "SemiPermanent",
-                "revisionNotes": "Revisions from The Praw\n\nEdited to change this hazard to a semi-permanet hazard, which gives a much cleaner hazard that interacts intuitively with Cosmic Odyssey hazards."
+                "revisionNotes": "House rule from The Praw\n\nEdited to change this hazard to a semi-permanet hazard, which gives a much cleaner hazard that interacts intuitively with Cosmic Odyssey hazards."
             }
         },
         "7": {
@@ -250,10 +264,17 @@
             },
             "revised": {
                 "name": "The Witness",
+                "body": "While The Witness is in play, players do not lose their alien powers because {they have} of having too few home colonies. Any player who has lost his or her alien power in this manner gets it back while The Witness remains in play.\n\nDiscard The Entropy Beast and The Cosmic Guardian when The Witness enters play.",
+                "expansion": "Cosmic Conflict",
+                "type": "Permanent",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for capitalization and wording consistency."
+            },
+            "homebrew": {
+                "name": "The Witness",
                 "body": "Players do not lose their alien powers because of having too few home colonies. Any player who has lost their alien power in this manner gets it back while this is in play.",
                 "expansion": "Cosmic Conflict",
                 "type": "SemiPermanent",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency.\n\n\nRevisions from The Praw\n\nEdited to change this hazard to a semi-permanet hazard, which gives a much cleaner hazard that interacts intuitively with Cosmic Odyssey hazards."
+                "revisionNotes": "House rule from The Praw\n\nEdited to change this hazard to a semi-permanet hazard, which gives a much cleaner hazard that interacts intuitively with Cosmic Odyssey hazards."
             }
         },
         "17": {

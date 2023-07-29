@@ -3,10 +3,11 @@ import { createSearchParams, useSearchParams, useNavigate } from 'react-router-d
 import { ReactComponent as SearchLogo } from '../svg/searchIcon.svg';
 
 import {
-  Input,
-  InputGroup,
-  InputGroupText,
-  Form
+    Input,
+    InputGroup,
+    InputGroupText,
+    Form,
+    Button
 } from 'reactstrap';
 
 export default function Searchbar(props) {
@@ -24,16 +25,24 @@ export default function Searchbar(props) {
                 });
             }}>
             <InputGroup>
-                <Input placeholder="Search the Cosmos"
+                <Input
+                    className="fs-5"
+                    placeholder="Search the Cosmos"
                     value={searchQuery}
                     onChange={(e) => {
                         if (!/[^ A-Za-z0-9\-,'/+\\]/.test(e.target.value)) {
                             setSearchQuery(e.target.value)
                         }
                     }} />
-                <InputGroupText>
+                {/* <InputGroupText>
                     <SearchLogo />
-                </InputGroupText>
+                </InputGroupText> */}
+                <Button
+                    className="px-3"
+                    color={searchQuery.length === 0 ? "secondary" : "primary"}
+                    disabled={searchQuery.length === 0}>
+                    <SearchLogo />
+                </Button>
             </InputGroup>
         </Form>
     )

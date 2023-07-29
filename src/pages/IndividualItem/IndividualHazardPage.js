@@ -12,27 +12,35 @@ export default function IndividualHazardPage() {
   const { hazardIndex } = useParams();
 
   const [hazard, setHazard] = useState(Hazards.hazards[hazardIndex].original)
-  const [revised, setRevised] = useState(false)
+  const [tab, setTab] = useState("original")
 
   useEffect(() => {
     setHazard(Hazards.hazards[hazardIndex].original)
-    setRevised(false)
+    setTab("original")
   }, [hazardIndex])
 
   return (
     <Layout title={hazard.name}>
-      {Hazards.hazards[hazardIndex].revised ?
-        <Nav className="ps-5 mx-1" tabs>
+    {Hazards.hazards[hazardIndex].revised || Hazards.hazards[hazardIndex].homebrew ?
+      <Nav className="ps-5 mx-1" tabs>
+        <NavItem>
+          <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
+            onClick={() => { setHazard(Hazards.hazards[hazardIndex].original); setTab("original") }}>Original</NavLink>
+        </NavItem>
+        {Hazards.hazards[hazardIndex].revised ?
           <NavItem>
-            <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
-              onClick={() => { setHazard(Hazards.hazards[hazardIndex].original); setRevised(false) }}>Original</NavLink>
-          </NavItem>
+            <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
+              onClick={() => { setHazard(Hazards.hazards[hazardIndex].revised); setTab("revised") }}>Revised</NavLink>
+          </NavItem> : null
+        }
+        {Hazards.hazards[hazardIndex].homebrew ?
           <NavItem>
-            <NavLink className={"nav-link" + (revised ? " active" : "")} href="#"
-              onClick={() => { setHazard(Hazards.hazards[hazardIndex].revised); setRevised(true) }}>Revised</NavLink>
-          </NavItem>
-        </Nav> : null
-      }
+            <NavLink className={"nav-link" + (tab === "homebrew" ? " active" : "")} href="#"
+              onClick={() => { setHazard(Hazards.hazards[hazardIndex].homebrew); setTab("homebrew") }}>House Rules</NavLink>
+          </NavItem> : null
+        }
+      </Nav> : null
+    }
       <Card className={"mx-1" + (Hazards.hazards[hazardIndex].revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
           <h1 className='text-light'>{hazard.name}</h1>
@@ -55,7 +63,7 @@ export default function IndividualHazardPage() {
           <br />
 
 
-          {revised && hazard.revisionNotes ? (
+          {hazard.revisionNotes ? (
             <Card className="bg-light border-warning border-5">
               <CardBody>
                 <p className="text-dark">{hazard.revisionNotes}</p>

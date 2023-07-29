@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useSearchParams, createSearchParams, useNavigate } from 'react-router-dom'
 import {
   Card,
+  CardTitle,
   CardBody,
   // CardHeader,
   Row,
@@ -12,8 +13,8 @@ import {
   InputGroupText,
   Form,
   FormGroup,
-  Label
-
+  Label,
+  Button
 } from 'reactstrap';
 import { Link } from "react-router-dom"
 import Aliens from '../../dataFiles/aliens.json';
@@ -152,7 +153,7 @@ export default function AliensListPage() {
       <h1 className='mb-4'>Aliens</h1>
       <Card className='mb-4 bg-light'>
         <CardBody>
-          <h2 className='text-dark mb-3'>Filters</h2>
+          <CardTitle className='text-dark mb-3 text-center' tag="h2">Search Filters</CardTitle>
           <Form onSubmit={
             (event) => {
               event.preventDefault();
@@ -174,20 +175,30 @@ export default function AliensListPage() {
               });
             }}>
             <Row className="mb-3">
-              <InputGroup>
-                <Input
-                  className="bg-light text-dark"
-                  placeholder="Search the Cosmos"
-                  value={searchQuery}
-                  onChange={(e) => {
-                    if (!/[^ A-Za-z0-9\-,]/.test(e.target.value)) {
-                      setSearchQuery(e.target.value)
-                    }
-                  }} />
-                <InputGroupText className="bg-light text-dark">
-                  <SearchLogo />
-                </InputGroupText>
-              </InputGroup>
+              <Col sm={3}></Col>
+              <Col sm={6}>
+                <InputGroup>
+                  <Input
+                    className="bg-light text-dark fs-5"
+                    placeholder="Search the Cosmos"
+                    value={searchQuery}
+                    onChange={(e) => {
+                      if (!/[^ A-Za-z0-9\-,]/.test(e.target.value)) {
+                        setSearchQuery(e.target.value)
+                      }
+                    }} />
+                  {/* <InputGroupText className="bg-light text-dark">
+                  </InputGroupText> */}
+                  <Button
+                    className="px-3"
+                    color={searchQuery.length === 0 ? "dark" : "primary"}
+                    disabled={searchQuery.length === 0}
+                    outline={searchQuery.length === 0}>
+                    <SearchLogo/>
+                  </Button>
+                </InputGroup>
+              </Col>
+              <Col sm={3}></Col>
             </Row>
             <Row>
               <Col>

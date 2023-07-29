@@ -6689,6 +6689,65 @@
                     "designed by Brandon Freels"
                 ],
                 "thumbnail": "avatar_Fido.png"
+            },
+            "homebrew": {
+                "name": "Fido",
+                "alert": "Yellow",
+                "short": "Retrieves Discarded Cards",
+                "gameSetup": "",
+                "powerName": "You have the power to Fetch.",
+                "powerBody": "After encounter cards are discarded at the end of an encounter, you may use this power to retrieve one of the discarded cards and offer it to another player. If the card is refused, you may keep or discard it. If the card is accepted, the other player keeps the card and you may receive one reward. You may retrieve only an encounter card that was used to resolve the encounter, not one that was discarded for some other reason.",
+                "powerTiming": {
+                    "player": "As Any Player",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": true
+                    }
+                },
+                "history": "Trained for generations by a strict, but unknown, alien race, the Fidos were bred for retrieval. Slinking out on their own, they cannot help but fetch the debris of outer space for whomever happens by, knowing they will still be rewarded in some way.",
+                "wildBody": "As a main player, before encounter cards are selected, you may force your opponent to take the top card of the discard pile and add it to their hand. You then draw a card from the deck.",
+                "wildTiming": {
+                    "player": "Main Player Only",
+                    "choice": "",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": true,
+                        "reveal": false,
+                        "resolution": false
+                    }
+                },
+                "superBody": "You may fetch any or all of the encounter cards discarded at the end of an encounter and offer them, one by one, to the other players in any order you choose.",
+                "superTiming": {
+                    "player": "As Any Player",
+                    "choice": "",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": true
+                    }
+                },
+                "revisionNotes": "House rule from The Praw\n\nSlight change to give Fido access to the rewards deck whilst simplifying the wording slightly.",
+                "expansion": "Base Set",
+                "designers": [
+                    "designed by Brandon Freels"
+                ],
+                "thumbnail": "avatar_Fido.png"
             }
         },
         "56": {
@@ -20428,7 +20487,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for correct terminology.",
+                "revisionNotes": "House rules from The Praw\n\nSimple change to make opposing players discard at random when Tide loses. Also reworded to remove Game Setup, akin to Multitude.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -26911,6 +26970,64 @@
                 "gameSetup": "",
                 "powerName": "You have the power to Dominate.",
                 "powerBody": "If you are not a main player or ally, after encounter cards are selected but before they are revealed, you may use this power to discard an attack card from your hand. After encounter cards are revealed, if your card is lower than both revealed attack cards, each main player sends one of your ships to the warp from any of your colonies. If your card is higher than a main player's attack card, you may \"dominate\" ships of that player's allies. After the outcome is determined, you may take up to four of your ships from one of your colonies and use them to replace any of those allies' ships in the encounter on a one-for-one basis before those ships land on the planet or their owners gain rewards. Dominated ships are captured and placed on this sheet. Then, the encounter is completed normally.\n\nAfter you draw a new hand, send all ships on this sheet to the warp and gain one reward for each player whose ships were on this sheet.",
+                "powerTiming": {
+                    "player": "Not Main Player or Ally",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": true,
+                        "reveal": false,
+                        "resolution": false
+                    }
+                },
+                "history": "The opportunistic Demons seek to sap the will to win out of any whom they encounter. The molten homeworlds of their original galaxy will be reclaimed in the name of vengance.",
+                "wildBody": "When a player is about to take compensation from another player, you may force that player to take compensation from you instead, and then you take compensation from the original targeted player.",
+                "wildTiming": {
+                    "player": "Not Main Player",
+                    "choice": "",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": true
+                    }
+                },
+                "superBody": "You may use your power as an ally. You cannot have more than your normal limit of ships in the encounter after dominating ships.",
+                "superTiming": {
+                    "player": "Ally Only",
+                    "choice": "",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": true,
+                        "reveal": false,
+                        "resolution": false
+                    }
+                },
+                "revisionNotes": "Revisions from the Praw\n\nEdited to fix the mandatory flare bug.",
+                "expansion": "Cosmic Odyssey",
+                "designers": [],
+                "thumbnail": "avatar_Demon_AT.png"
+            },
+            "homebrew": {
+                "name": "Demon",
+                "alert": "Yellow",
+                "altTimeline": true,
+                "short": "Dominates Allies' Ships",
+                "gameSetup": "",
+                "powerName": "You have the power to Dominate.",
+                "powerBody": "If you are not a main player or ally, after encounter cards are selected but before they are revealed, you may use this power to discard an attack card from your hand. After encounter cards are revealed, if your card is lower than both revealed attack cards, each main player sends one of your ships to the warp from any of your colonies. If your card is higher than a main player's attack card, you may \"dominate\" ships involved on that side. After the outcome is determined, you may take up to four of your ships from one of your colonies and use them to replace any of those ships in the encounter, except those on the targetted planet, on a one-for-one basis before those ships land on the planet or their owners gain rewards. Dominated ships are captured and placed on this sheet. Then, the encounter is completed normally.\n\nAfter you draw a new hand, send all ships on this sheet to the warp and gain one reward for each player whose ships were on this sheet.",
                 "powerTiming": {
                     "player": "Not Main Player or Ally",
                     "choice": "Optional",
