@@ -46,6 +46,11 @@ export default function PrawNav() {
               Variants
             </Link>
           </NavItem>
+          <NavItem key={6}>
+            <Link className="nav-link" to="/HouseRules">
+              House Rules
+            </Link>
+          </NavItem>
           <NavItem key={5}>
             <Link className="nav-link" to="/Selection">
               Selection

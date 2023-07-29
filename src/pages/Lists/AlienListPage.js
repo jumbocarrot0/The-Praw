@@ -28,9 +28,9 @@ function Alien(props) {
       <Link className={"btn border border-5 " +
         (alien.altTimeline ? "btn-dark " : "btn-light ") +
         (alien.alert === "Green" ? "border-success" : alien.alert === "Yellow" ? "border-warning" : "border-danger")
-      } 
-      style={alien.altTimeline ? {boxShadow: "0px 0px 15px #f600ff inset"} : null}
-      to={props.to}>
+      }
+        style={alien.altTimeline ? { boxShadow: "0px 0px 15px #f600ff inset" } : null}
+        to={props.to}>
         <CardBody>
           <h2 className={!alien.altTimeline ? "text-dark" : null}>{alien.name}</h2>
           <h6 className="align-items-center">
@@ -43,13 +43,14 @@ function Alien(props) {
                 AT
               </Badge>) : null}
             {alien.gameSetup !== "" ? (
-              <Badge className="ms-3 text-light" color="info">
+              <Badge className="ms-3 text-dark" color="info">
                 Game Setup
               </Badge>) : null}
           </h6>
-          <img alt={alien.name + " Avatar"}
+          <img alt={alien.name + " Thumbnail"}
             className='mx-auto d-block'
-            src={require(`../../images/alien icons/avatar_${alien.name.replace('The ', '').replace(' ', '_')}${alien.altTimeline ? '_AT' : ''}.png`)} />
+            src={require(`../../images/alien icons/${alien.thumbnail}`)}
+          />
           <strong>{alien.short}</strong>
         </CardBody>
       </Link>
@@ -57,9 +58,8 @@ function Alien(props) {
   )
 }
 
-function filterAliens(aliens, search, expansions
-  // , phases, exactPhases
-) {
+function filterAliens(aliens, search, expansions, phases, exactPhases) {
+
   if (expansions.includes("42nd Anniversary Edition")) {
     expansions.push("Base Set");
   }
@@ -68,11 +68,18 @@ function filterAliens(aliens, search, expansions
 
   filteredAliens = filteredAliens.filter((alien) => alien[1].original.name.toLowerCase().includes(search.toLowerCase()))
   filteredAliens = filteredAliens.filter((alien) => expansions.includes(alien[1].original.expansion))
-  // if (exactPhases){
-  //   filteredAliens = filteredAliens.filter((alien) => phases === Object.keys(alien.phases).filter((phase) => alien.phases[phase]).map((phase) => phase))
-  // } else {
-  //   filteredAliens = filteredAliens.filter((alien) => phases.filter(phase => alien.phases[phase]).length > 0)
-  // }
+  if (exactPhases) {
+    filteredAliens = filteredAliens.filter((alien) => {
+      const alienPhases = Object.keys(alien[1].original.powerTiming.phases).filter(phase => alien[1].original.powerTiming.phases[phase])
+      // console.log(alienPhases)
+      // console.log(phases)
+      return (alienPhases.length === phases.length) && alienPhases.every((phase, index) => phase === phases[index])
+    }
+    )
+    // filteredAliens = filteredAliens.filter((alien) => phases === Object.keys(alien[1].original.powerTiming.phases).filter(phase => alien[1].original.powerTiming.phases[phase]))
+  } else {
+    filteredAliens = filteredAliens.filter((alien) => phases.filter(phase => alien[1].original.powerTiming.phases[phase]).length > 0)
+  }
   return Object.fromEntries(filteredAliens)
 
 }
@@ -96,28 +103,30 @@ export default function AliensListPage() {
     "Cosmic Odyssey": useState(submittedExpansions.includes("Cosmic Odyssey"))
   }
 
-  // let submittedPhases = ["Start Turn", "Regroup", "Destiny", "Launch", "Alliance", "Planning", "Reveal", "Resolution"];
-  // submittedPhases = submittedPhases.filter((phase) => searchParams.get(phase) !== 'false');
-  // const submittedExactPhases = searchParams.get('exactPhase') !== 'false'
-  // const [exactPhases, setExactPhases] = useState(false)
-  // const phases = {
-  //   "Start Turn": useState(submittedPhases.includes("Start Turn")),
-  //   "Regroup": useState(submittedPhases.includes("Regroup")),
-  //   "Destiny": useState(submittedPhases.includes("Destiny")),
-  //   "Launch": useState(submittedPhases.includes("Launch")),
-  //   "Alliance": useState(submittedPhases.includes("Alliance")),
-  //   "Planning": useState(submittedPhases.includes("Planning")),
-  //   "Reveal": useState(submittedPhases.includes("Reveal")),
-  //   "Resolution": useState(submittedPhases.includes("Resolution"))
-  // }
+  let submittedPhases = ["startTurn", "regroup", "destiny", "launch", "alliance", "planning", "reveal", "resolution"];
+  submittedPhases = submittedPhases.filter((phase) => searchParams.get(phase) !== 'false');
+  const submittedExactPhases = searchParams.get('exactPhases') === 'true'
+  const [exactPhases, setExactPhases] = useState(submittedExactPhases)
+  const phases = {
+    "startTurn": useState(submittedPhases.includes("startTurn")),
+    "regroup": useState(submittedPhases.includes("regroup")),
+    "destiny": useState(submittedPhases.includes("destiny")),
+    "launch": useState(submittedPhases.includes("launch")),
+    "alliance": useState(submittedPhases.includes("alliance")),
+    "planning": useState(submittedPhases.includes("planning")),
+    "reveal": useState(submittedPhases.includes("reveal")),
+    "resolution": useState(submittedPhases.includes("resolution"))
+  }
 
   const navigate = useNavigate();
 
-  const filteredAliens = filterAliens(Aliens.aliens, submittedQuery, submittedExpansions)
+  // console.log(phases)
+  // console.log(exactPhases)
+  let filteredAliens = filterAliens(Aliens.aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases)
 
   // filteredAliens = Object.entries(filteredAliens)
-  
-  // filteredAliens.sort(function(a, b) {
+
+  // filteredAliens.sort(function (a, b) {
   //   const expansions = ["Base Set", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "42nd Anniversary Edition", "Cosmic Odyssey"]
   //   // console.log(a.expansion)
   //   if (expansions.findIndex((e) => e === a[1].original.expansion) < expansions.findIndex((e) => e === b[1].original.expansion)) {
@@ -135,7 +144,7 @@ export default function AliensListPage() {
   //   }
   //   return 0;
   // })
-  
+
   // filteredAliens = Object.fromEntries(filteredAliens)
 
   return (
@@ -147,22 +156,22 @@ export default function AliensListPage() {
           <Form onSubmit={
             (event) => {
               event.preventDefault();
-              const results = filterAliens(Aliens.aliens, searchQuery,
-                Object.keys(expansions).filter((expansion) => expansions[expansion][0]).map((expansion) => expansion))
               // console.log(results)
-              if (results.length === 1) {
-                navigate({
-                  pathname: `/Aliens/${Object.keys(results)[0]}`
-                });
-              } else {
-                navigate({
-                  pathname: `/Aliens`,
-                  search: `?${createSearchParams([['search', searchQuery]]
-                    .concat(Object.keys(expansions)
+              navigate({
+                pathname: `/Aliens`,
+                search: `?${createSearchParams([['search', searchQuery], ['exactPhases', exactPhases]]
+                  .concat(
+                    Object.keys(expansions)
                       .filter((expansion) => !expansions[expansion][0])
-                      .map((expansion) => [expansion, expansions[expansion][0]])))}`
-                });
-              }
+                      .map((expansion) => [expansion, expansions[expansion][0]])
+                  )
+                  .concat(
+                    Object.keys(phases)
+                      .filter((phase) => !phases[phase][0])
+                      .map((phase) => [phase, phases[phase][0]])
+                  )
+                )}`
+              });
             }}>
             <Row className="mb-3">
               <InputGroup>
@@ -198,7 +207,7 @@ export default function AliensListPage() {
                   })
                 }
               </Col>
-              {/* <Col>
+              <Col>
                 <h3 className='text-dark'>Phases</h3>
                 <FormGroup>
                   <Input
@@ -213,7 +222,7 @@ export default function AliensListPage() {
                 {
                   Object.keys(phases).map((phase) => {
                     return (
-                      <FormGroup switch>
+                      <FormGroup key={phase} switch>
                         <Input type="switch" role="switch"
                           checked={phases[phase][0]}
                           onChange={() => phases[phase][1](!phases[phase][0])} />
@@ -224,7 +233,7 @@ export default function AliensListPage() {
                     )
                   })
                 }
-              </Col> */}
+              </Col>
             </Row>
           </Form>
         </CardBody>

@@ -14,7 +14,7 @@ export default function Header(props) {
       <Row className="d-flex align-items-end">
         <Col md={8}>
           <Link to="/">
-            <img src={require("../images/warplogo2.jpg")} />
+            <img src={require("../images/warplogo2.jpg")} alt="The Praw Logo"/>
           </Link>
         </Col>
         <Col md={4}>

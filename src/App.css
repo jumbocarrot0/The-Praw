@@ -71,6 +71,10 @@ table.th-w-50 tbody tr th {
   font-style: italic;
 }
 
+input.text-dark::placeholder{
+  color: #495057 !important;
+}
+
 .border-indigo {
   --bs-border-opacity: 1;
   border-color: #6610f2 !important;

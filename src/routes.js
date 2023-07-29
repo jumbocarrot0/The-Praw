@@ -2,7 +2,9 @@
 import Home from "./pages/HomePage";
 import Results from "./pages/ResultsPage";
 import Combos from "./pages/CombosPage";
+import HouseRulesPage from "./pages/HouseRulesPage";
 import SelectionPage from "./pages/SelectionPage";
+
 import AlienListPage from "./pages/Lists/AlienListPage";
 import IndividualAlienPage from "./pages/IndividualItem/IndividualAlienPage";
 import ThrowbackPage from "./pages/IndividualItem/ThrowbackPage";
@@ -48,6 +50,11 @@ export const routes = [
       path: "/Search",
       element: <Results />,
       breadcrumb: "Search",
+    },
+    {
+      path: "/HouseRules",
+      element: <HouseRulesPage />,
+      breadcrumb: "House Rules",
     },
     {
       path: "/Combos",
@@ -140,7 +147,8 @@ export const routes = [
     },
     {
       path: "/Variants/RewardsDeck",
-      element: <RewardsDeckPage />
+      element: <RewardsDeckPage />,
+      breadcrumb: "Rewards Deck"
     },
     {
       path: "/Variants/TeamMode",

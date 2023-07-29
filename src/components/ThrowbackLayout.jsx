@@ -5,8 +5,6 @@ import {
 } from 'reactstrap';
 
 import Header from "./ThrowbackHeader";
-import Footer from "./Footer";
-import Breadcrumbs from "./Breadcrumbs";
 import ScrollIntoView from "./ScrollIntoView";
 
 export default function Layout(props) {
@@ -26,7 +24,7 @@ export default function Layout(props) {
                             {props.children}
                             <div className="d-flex justify-content-center my-3">
                                 <Link to="/Aliens">
-                                    <img src={require('../images/goback.gif')} />
+                                    <img src={require('../images/goback.gif')} alt="Go Back" />
                                 </Link>
                             </div>
                         </main>

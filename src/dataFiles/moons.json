@@ -533,7 +533,7 @@
         "31": {
             "original": {
                 "body": "When you gain rewards, gain one additional reward. If you occupy at least two half moons, gain two additional instead.",
-                "name": "+1/+2 Rewards",
+                "name": "Rewards +1/+2",
                 "type": "Half Moon",
                 "timing": {
                     "player": "As Any Player",
