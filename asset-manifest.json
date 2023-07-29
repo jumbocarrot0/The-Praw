@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/The-Praw/static/css/main.3e639445.css",
-    "main.js": "/The-Praw/static/js/main.68330e29.js",
+    "main.css": "/The-Praw/static/css/main.3842229e.css",
+    "main.js": "/The-Praw/static/js/main.264ffb6d.js",
     "static/js/787.f04aa610.chunk.js": "/The-Praw/static/js/787.f04aa610.chunk.js",
     "static/media/gridwallpaper.jpg": "/The-Praw/static/media/gridwallpaper.4ed625b9df813ed00df4.jpg",
     "static/media/warplogo2.jpg": "/The-Praw/static/media/warplogo2.a3d71ae8e2ed5e652370.jpg",
+    "static/media/avatar_Sorcerer.png": "/The-Praw/static/media/avatar_Sorcerer.80e1aeb2937f261f2fc7.png",
     "static/media/avatar_Bleeding_Heart.png": "/The-Praw/static/media/avatar_Bleeding_Heart.7bd13f55afa2b8058120.png",
     "static/media/avatar_Zilch.png": "/The-Praw/static/media/avatar_Zilch.0e378ccdd74d4f337b8f.png",
     "static/media/avatar_Oligarch.png": "/The-Praw/static/media/avatar_Oligarch.0551155595bd7bb8d324.png",
@@ -135,7 +136,7 @@
     "static/media/avatar_Architect.png": "/The-Praw/static/media/avatar_Architect.55426eb2841d693e9078.png",
     "static/media/avatar_Hacker.png": "/The-Praw/static/media/avatar_Hacker.3fed585dabd59b80277a.png",
     "static/media/avatar_Bully.png": "/The-Praw/static/media/avatar_Bully.dcca9622e51b0c87b8a7.png",
-    "static/media/avatar_Sorcerer.png": "/The-Praw/static/media/avatar_Sorcerer.f661632c61f8df7e40b1.png",
+    "static/media/avatar_Sorcerer1.png": "/The-Praw/static/media/avatar_Sorcerer1.f661632c61f8df7e40b1.png",
     "static/media/avatar_Fungus.png": "/The-Praw/static/media/avatar_Fungus.0e0aee3db8fb61c0123c.png",
     "static/media/avatar_Voyager.png": "/The-Praw/static/media/avatar_Voyager.6fe8e1ee196356fbe42d.png",
     "static/media/avatar_Leviathan.png": "/The-Praw/static/media/avatar_Leviathan.4d49c37728f9562409b0.png",
@@ -245,12 +246,12 @@
     "static/media/avatar_Skeptic.png": "/The-Praw/static/media/avatar_Skeptic.20dde78f11f7e8d48006.png",
     "index.html": "/The-Praw/index.html",
     "static/media/searchIcon.svg": "/The-Praw/static/media/searchIcon.4b174aba3ca9225719f55dc131b8d17e.svg",
-    "main.3e639445.css.map": "/The-Praw/static/css/main.3e639445.css.map",
-    "main.68330e29.js.map": "/The-Praw/static/js/main.68330e29.js.map",
+    "main.3842229e.css.map": "/The-Praw/static/css/main.3842229e.css.map",
+    "main.264ffb6d.js.map": "/The-Praw/static/js/main.264ffb6d.js.map",
     "787.f04aa610.chunk.js.map": "/The-Praw/static/js/787.f04aa610.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e639445.css",
-    "static/js/main.68330e29.js"
+    "static/css/main.3842229e.css",
+    "static/js/main.264ffb6d.js"
   ]
 }
