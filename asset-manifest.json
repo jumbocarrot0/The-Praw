@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/The-Praw/static/css/main.3842229e.css",
-    "main.js": "/The-Praw/static/js/main.264ffb6d.js",
+    "main.css": "/The-Praw/static/css/main.0f1341ce.css",
+    "main.js": "/The-Praw/static/js/main.3a4e6ebd.js",
     "static/js/787.f04aa610.chunk.js": "/The-Praw/static/js/787.f04aa610.chunk.js",
     "static/media/gridwallpaper.jpg": "/The-Praw/static/media/gridwallpaper.4ed625b9df813ed00df4.jpg",
+    "static/media/BlippoBlk.ttf": "/The-Praw/static/media/BlippoBlk.2b7645c9f32e9feaf43b.ttf",
     "static/media/warplogo2.jpg": "/The-Praw/static/media/warplogo2.a3d71ae8e2ed5e652370.jpg",
     "static/media/avatar_Sorcerer.png": "/The-Praw/static/media/avatar_Sorcerer.80e1aeb2937f261f2fc7.png",
     "static/media/avatar_Bleeding_Heart.png": "/The-Praw/static/media/avatar_Bleeding_Heart.7bd13f55afa2b8058120.png",
@@ -246,12 +247,12 @@
     "static/media/avatar_Skeptic.png": "/The-Praw/static/media/avatar_Skeptic.20dde78f11f7e8d48006.png",
     "index.html": "/The-Praw/index.html",
     "static/media/searchIcon.svg": "/The-Praw/static/media/searchIcon.4b174aba3ca9225719f55dc131b8d17e.svg",
-    "main.3842229e.css.map": "/The-Praw/static/css/main.3842229e.css.map",
-    "main.264ffb6d.js.map": "/The-Praw/static/js/main.264ffb6d.js.map",
+    "main.0f1341ce.css.map": "/The-Praw/static/css/main.0f1341ce.css.map",
+    "main.3a4e6ebd.js.map": "/The-Praw/static/js/main.3a4e6ebd.js.map",
     "787.f04aa610.chunk.js.map": "/The-Praw/static/js/787.f04aa610.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3842229e.css",
-    "static/js/main.264ffb6d.js"
+    "static/css/main.0f1341ce.css",
+    "static/js/main.3a4e6ebd.js"
   ]
 }
