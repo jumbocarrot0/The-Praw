@@ -28153,7 +28153,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for wording consistency, to restore the original intent for the AT Schizoid (i.e. only the facedown condition changed the victory condition), to clarify that the facedown condition replaces the normal winning condition, to remove reference of a non-existant 'selection card', and to fix the mandatory flare bug.",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for wording consistency, to remove reference of a non-existant 'selection card', and to fix the mandatory flare bug.",
                 "expansion": "Cosmic Odyssey",
                 "designers": [],
                 "essences": {
@@ -28248,7 +28248,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for wording consistency, to restore the original intent for the AT Schizoid (i.e. only the facedown condition changed the victory condition), to clarify that the facedown condition replaces the normal winning condition, to remove reference of a non-existant 'selection card', and to fix the mandatory flare bug.",
+                "revisionNotes": "House Rule from the Praw\n\nRestores the original intention that only the facedown condition replaces the normal winning condition",
                 "expansion": "Cosmic Odyssey",
                 "designers": [],
                 "essences": {

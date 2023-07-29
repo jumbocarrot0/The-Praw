@@ -10,7 +10,7 @@ import {
   Badge,
   InputGroup,
   Input,
-  InputGroupText,
+  // InputGroupText,
   Form,
   FormGroup,
   Label,
@@ -192,7 +192,6 @@ export default function AliensListPage() {
                   <Button
                     className="px-3"
                     color={searchQuery.length === 0 ? "dark" : "primary"}
-                    disabled={searchQuery.length === 0}
                     outline={searchQuery.length === 0}>
                     <SearchLogo/>
                   </Button>
