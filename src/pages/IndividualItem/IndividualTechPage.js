@@ -39,10 +39,10 @@ export default function IndividualTechPage() {
           <p><strong>Type: {tech.type}</strong></p>
           {tech.refresh ? <p>When completed, draw another Techs.</p> : null}
           <p><strong>{tech.short}</strong> {tech.body}</p>
-          <div style={{ width: (tech.type === "Mili-Tech" ? 60 : 50) + 'px', height: (tech.type === "Mili-Tech" ? 40 : 50) + 'px' }} className={
-            tech.type === "Mili-Tech" ? 'border rounded bg-success text-light text-center mb-2' : 'border rounded-circle bg-indigo text-light text-center mb-2 fs-2'
+          <div style={{ width: (tech.type === "Mili-Tech" ? 75 : 50) + 'px', height: (tech.type === "Mili-Tech" ? 40 : 50) + 'px' }} className={
+            tech.type === "Mili-Tech" ? 'border rounded bg-success text-light text-center mb-2 fs-3' : 'border rounded-circle bg-indigo text-light text-center mb-2 fs-2'
           }>
-            <strong><p style={{ paddingTop: 0 + 'px', lineHeight: (tech.type === "Mili-Tech" ? 37 : 45) + "px" }}>{tech.cost}</p></strong>
+            <strong><p className='font-digit' style={{ paddingTop: 0 + 'px', textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black", lineHeight: (tech.type === "Mili-Tech" ? 37 : 45) + "px" }}>{tech.cost}</p></strong>
           </div>
           <TimingBar timing={tech.timing}/>
 

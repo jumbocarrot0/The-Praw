@@ -75,6 +75,14 @@ input.text-dark::placeholder{
   color: #495057 !important;
 }
 
+@font-face {
+  font-family: 'BlippoBlk';
+  src: url(./fonts/BlippoBlk.ttf) format('truetype');
+}
+.font-digit {
+  font-family: "BlippoBlk"
+}
+
 .border-indigo {
   --bs-border-opacity: 1;
   border-color: #6610f2 !important;

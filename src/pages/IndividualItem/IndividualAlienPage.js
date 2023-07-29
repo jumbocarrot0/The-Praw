@@ -109,6 +109,18 @@ export default function IndividualAlienPage() {
               </div>
             ) : null
           }
+          {alien.essences ? <div>
+            <h3>{alien.name} {alien.essences.name}s</h3>
+            <ol>
+              {Object.keys(alien.essences.list).sort().map((essenceID => {
+                return <li><strong>{alien.essences.list[essenceID].name}</strong>: {alien.essences.list[essenceID].body}{
+                  alien.essences.list[essenceID].value ? <strong className='font-digit fs-4'> {alien.essences.list[essenceID].value}</strong> : null
+                  }</li>
+              }))}
+              
+            </ol>
+          </div>
+            : null}
 
 
           {alien.revisionNotes ? (

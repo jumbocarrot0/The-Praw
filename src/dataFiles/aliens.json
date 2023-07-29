@@ -11838,7 +11838,9 @@
                 "alert": "Red",
                 "short": "Tries to Lose Own Ships",
                 "altTimelineID": "231",
-                "bans": ["75"],
+                "bans": [
+                    "75"
+                ],
                 "gameSetup": "",
                 "powerName": "You have the power to Hurt Yourself.",
                 "powerBody": "At the start of any regroup phase before the offense retrieves a ship from the warp, use this power to win the game if you have lost all of your ships. Lost ships include those in the warp, those removed from the game, and those captured by other players.\n\nYou do not lose this power because of having too few home colonies, and you may still win the game via the normal method.",
@@ -23964,7 +23966,6 @@
                         "resolution": true
                     }
                 },
-                "powerEssence": true,
                 "history": "The vastness of the Cosmos forces them to operate at the very edge of reality, barely perceiving the life around them as they modify the fabric of the universe to suit their needs. The ever-increasing chaos and anarchy they create requires that they continue to revise and revisit what they have sown.",
                 "wildBody": "At the start of another player's turn, you may demand anything that that player can give you in a deal. If they refuse, for the rest of the encounter, you may zap their alien powers. At the end of the encounter, give this card to the Cosmos, or discard it if the Cosmos is not playing.",
                 "wildTiming": {
@@ -24058,7 +24059,6 @@
                         "resolution": true
                     }
                 },
-                "powerEssence": true,
                 "history": "The vastness of the Cosmos forces them to operate at the very edge of reality, barely perceiving the life around them as they modify the fabric of the universe to suit their needs. The ever-increasing chaos and anarchy they create requires that they continue to revise and revisit what they have sown.",
                 "wildBody": "At the start of another player's turn, you may demand anything that that player can give you in a deal. If they refuse, for the rest of the encounter, you may zap their alien powers. At the end of the encounter, give this card to the Cosmos (or discard it if the Cosmos isn't playing).",
                 "wildTiming": {
@@ -25580,7 +25580,6 @@
                 "gameSetup": "",
                 "powerName": "You have the power to Negate.",
                 "powerBody": "Once per encounter, you may use this power to play a negation from your essence card cache on another player as per the timing on the negation.",
-                "powerEssence": true,
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Optional",
@@ -25627,6 +25626,43 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey",
+                "essences": {
+                    "name": "Negation",
+                    "list": {
+                        "8": {
+                            "name": "Ally Action",
+                            "body": "After an ally uses an optional power or uses an ability that requires them to be an ally, cancel that power or ability."
+                        },
+                        "4": {
+                            "name": "Choosing Ships",
+                            "body": "After ships on a specific location (planet, tech card, etc.) are chosen for any reason, the player must choose ships from another valid location and the number of ships must be different, if possible."
+                        },
+                        "6": {
+                            "name": "Destiny",
+                            "body": "After the offense draws a wild destiny and chooses a player, they must chose another player. Or, after the offense draws a destiny of their color, they must choose option A unless there is no player to encounter in their home system."
+                        },
+                        "2": {
+                            "name": "Encounter Card",
+                            "body": "After an encounter card is selected but before it is revealed, return it to its owner's hand. That player must select another card, if able."
+                        },
+                        "5": {
+                            "name": "Enter Alliance",
+                            "body": "When a player would accept an invitation to become an ally, they cannot ally with that side. (They may still become an ally with the other side if they were invited.)"
+                        },
+                        "3": {
+                            "name": "Hyperspace Gate",
+                            "body": "After a player aims the hyperspace gate or uses an effect that targets a specific planet, that player must choose another valid planet, if able."
+                        },
+                        "7": {
+                            "name": "Main Player Action",
+                            "body": "After a main player uses an optional power or uses an ability that requires them to be a main player, cancel that power or ability."
+                        },
+                        "1": {
+                            "name": "Non-Encounter Card",
+                            "body": "After an artifact, flare, or reinforcement card is played, return it to its owner's hand. That specific card cannot be played again during this encounter."
+                        }
+                    }
+                },
                 "designers": [],
                 "thumbnail": "avatar_Negator.png"
             },
@@ -25637,7 +25673,6 @@
                 "gameSetup": "",
                 "powerName": "You have the power to Negate.",
                 "powerBody": "Once per encounter, you may use this power to play a negation from your essence card cache on another player as per the timing on the negation.",
-                "powerEssence": true,
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Optional",
@@ -25686,6 +25721,43 @@
                 "revisionNotes": "Revisions from the Praw\n\nEdited to fix the mandatory flare bug.",
                 "expansion": "Cosmic Odyssey",
                 "designers": [],
+                "essences": {
+                    "name": "Negation",
+                    "list": {
+                        "8": {
+                            "name": "Ally Action",
+                            "body": "After an ally uses an optional power or uses an ability that requires them to be an ally, cancel that power or ability."
+                        },
+                        "4": {
+                            "name": "Choosing Ships",
+                            "body": "After ships on a specific location (planet, tech card, etc.) are chosen for any reason, the player must choose ships from another valid location and the number of ships must be different, if possible."
+                        },
+                        "6": {
+                            "name": "Destiny",
+                            "body": "After the offense draws a wild destiny and chooses a player, they must chose another player. Or, after the offense draws a destiny of their color, they must choose option A unless there is no player to encounter in their home system."
+                        },
+                        "2": {
+                            "name": "Encounter Card",
+                            "body": "After an encounter card is selected but before it is revealed, return it to its owner's hand. That player must select another card, if able."
+                        },
+                        "5": {
+                            "name": "Enter Alliance",
+                            "body": "When a player would accept an invitation to become an ally, they cannot ally with that side. (They may still become an ally with the other side if they were invited.)"
+                        },
+                        "3": {
+                            "name": "Hyperspace Gate",
+                            "body": "After a player aims the hyperspace gate or uses an effect that targets a specific planet, that player must choose another valid planet, if able."
+                        },
+                        "7": {
+                            "name": "Main Player Action",
+                            "body": "After a main player uses an optional power or uses an ability that requires them to be a main player, cancel that power or ability."
+                        },
+                        "1": {
+                            "name": "Non-Encounter Card",
+                            "body": "After an artifact, flare, or reinforcement card is played, return it to its owner's hand. That specific card cannot be played again during this encounter."
+                        }
+                    }
+                },
                 "thumbnail": "avatar_Negator.png"
             }
         },
@@ -26387,7 +26459,6 @@
                 "gameSetup": "",
                 "powerName": "You have the power to Curse.",
                 "powerBody": "As a main player or ally, after you lose an encounter, use this power to \"curse\" one or more opposing players. For each player, choose a curse from your essence card cache and place it faceup in from of them. You cannot curse a player who is already cursed.\n\nDuring each regroup phase, each cursed player may place one of their ships from their colonies onto their curse card. After a curse card has a number of ships on it equal to the number on the card, all of those ships are sent to the warp and the curse is placed in your unavailable pile.",
-                "powerEssence": true,
                 "powerTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "Mandatory",
@@ -26435,6 +26506,46 @@
                 },
                 "expansion": "Cosmic Odyssey",
                 "designers": [],
+                "essences": {
+                    "name": "Curse",
+                    "list": {
+                        "1": {
+                            "name": "Alliance",
+                            "body": "You cannot become an ally or invite allies.",
+                            "value": 3
+                        },
+                        "2": {
+                            "name": "Artifact",
+                            "body": "Discard all artifacts in your hand. If you gain an artifact, you must discard it immediately.",
+                            "value": 3
+                        },
+                        "4": {
+                            "name": "Attack Card",
+                            "body": "As a main player, before encounter cards are selected, you must reveal the attack card in your hand that has the highest value to all players.",
+                            "value": 4
+                        },
+                        "3": {
+                            "name": "Flare",
+                            "body": "Discard all flares in your hand. If you gain a flare, you must discard it immediately.",
+                            "value": 3
+                        },
+                        "7": {
+                            "name": "Non-Encounter",
+                            "body": "You annot play any non-encounter cards from your hand.",
+                            "value": 3
+                        },
+                        "6": {
+                            "name": "Totals",
+                            "body": "As a main player, ships on your side subtract from your encounter total (instead of adding).",
+                            "value": 4
+                        },
+                        "5": {
+                            "name": "Win",
+                            "body": "You cannot win the game.",
+                            "value": 3
+                        }
+                    }
+                },
                 "thumbnail": "avatar_Witch.png"
             },
             "revised": {
@@ -26444,7 +26555,6 @@
                 "gameSetup": "",
                 "powerName": "You have the power to Curse.",
                 "powerBody": "As a main player or ally, after you lose an encounter, use this power to \"curse\" one or more opposing players. For each player, choose a curse from your essence card cache and place it faceup in from of them. You cannot curse a player who is already cursed.\n\nDuring each regroup phase, each cursed player may place one of their ships from their colonies onto their curse card. After a curse card has a number of ships on it equal to the number on the card, all of those ships are sent to the warp and the curse is placed in your unavailable pile.",
-                "powerEssence": true,
                 "powerTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "Mandatory",
@@ -26493,6 +26603,46 @@
                 "revisionNotes": "Revisions from the Praw\n\nEdited for wording consistency.",
                 "expansion": "Cosmic Odyssey",
                 "designers": [],
+                "essences": {
+                    "name": "Curse",
+                    "list": {
+                        "1": {
+                            "name": "Alliance",
+                            "body": "You cannot become an ally or invite allies.",
+                            "value": 3
+                        },
+                        "2": {
+                            "name": "Artifact",
+                            "body": "Discard all artifacts in your hand. If you gain an artifact, you must discard it immediately.",
+                            "value": 3
+                        },
+                        "4": {
+                            "name": "Attack Card",
+                            "body": "As a main player, before encounter cards are selected, you must reveal the attack card in your hand that has the highest value to all players.",
+                            "value": 4
+                        },
+                        "3": {
+                            "name": "Flare",
+                            "body": "Discard all flares in your hand. If you gain a flare, you must discard it immediately.",
+                            "value": 3
+                        },
+                        "7": {
+                            "name": "Non-Encounter",
+                            "body": "You annot play any non-encounter cards from your hand.",
+                            "value": 3
+                        },
+                        "6": {
+                            "name": "Totals",
+                            "body": "As a main player, ships on your side subtract from your encounter total (instead of adding).",
+                            "value": 4
+                        },
+                        "5": {
+                            "name": "Win",
+                            "body": "You cannot win the game.",
+                            "value": 3
+                        }
+                    }
+                },
                 "thumbnail": "avatar_Witch.png"
             }
         },
@@ -26619,7 +26769,6 @@
                 "gameSetup": "Secretly choose a destiny card that matches a player color and does not have a hazard warning. Place it facedown on this sheet. That player is \"ordained\".",
                 "powerName": "You have the power of Zilch.",
                 "powerBody": "Once per encounter, you may use this power to play a fate from your essence card cache.\n\nIf the ordained player wins the game alone, you win the game with them. If the ordained player would be part of a shared win that does not include you, you win by yourself instead.\n\nYou may still win the game via the normal method.",
-                "powerEssence": true,
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Optional",
@@ -26667,6 +26816,39 @@
                 },
                 "expansion": "Cosmic Odyssey",
                 "designers": [],
+                "essences": {
+                    "name": "Fate",
+                    "list": {
+                        "5": {
+                            "name": "Donate!",
+                            "body": "Give a non-encounter card from your hand to another player."
+                        },
+                        "3": {
+                            "name": "Peek!",
+                            "body": "Look at one of the following: a player's hand, any facedown cards on an alien sheet, the top five cards of a deck, a token, an essence cache, or a selected encounter card. Then, you may speak privately (or publically) with one or more players."
+                        },
+                        "4": {
+                            "name": "Psych!",
+                            "body": "As an ally, after encounter cards are selected but before they are revealed, return your ships from the encounter to your colonies. You may force another ally on either side to do the same."
+                        },
+                        "6": {
+                            "name": "Reward!",
+                            "body": "You you would gain rewards, you may choose anohter player to gain some or all of them instead."
+                        },
+                        "2": {
+                            "name": "Shield!",
+                            "body": "Before another player uses their alien power, prevent it from being canceled by any effect for the rest of the encounter."
+                        },
+                        "7": {
+                            "name": "Steal!",
+                            "body": "Take a card at random from another player's hand. After looking at it, give it to a player other than yourself."
+                        },
+                        "1": {
+                            "name": "Zap!",
+                            "body": "Cancel one use of another alien's power. That power may not be used again during this encounter."
+                        }
+                    }
+                },
                 "thumbnail": "avatar_Zilch.png"
             },
             "revised": {
@@ -26676,7 +26858,6 @@
                 "gameSetup": "Secretly choose a destiny card that matches a player color and does not have a hazard warning. Place it facedown on this sheet. That player is \"ordained\".",
                 "powerName": "You have the power of Zilch.",
                 "powerBody": "Once per encounter, you may use this power to play a fate from your essence card cache.\n\nIf the ordained player wins the game alone, you win the game with them. If the ordained player would be part of a shared win that does not include you, you win by yourself instead.\n\nYou may still win the game via the normal method.",
-                "powerEssence": true,
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Optional",
@@ -26725,6 +26906,39 @@
                 "revisionNotes": "Revisions from the Praw\n\nEdited to fix the mandatory flare bug.",
                 "expansion": "Cosmic Odyssey",
                 "designers": [],
+                "essences": {
+                    "name": "Fate",
+                    "list": {
+                        "5": {
+                            "name": "Donate!",
+                            "body": "Give a non-encounter card from your hand to another player."
+                        },
+                        "3": {
+                            "name": "Peek!",
+                            "body": "Look at one of the following: a player's hand, any facedown cards on an alien sheet, the top five cards of a deck, a token, an essence cache, or a selected encounter card. Then, you may speak privately (or publically) with one or more players."
+                        },
+                        "4": {
+                            "name": "Psych!",
+                            "body": "As an ally, after encounter cards are selected but before they are revealed, return your ships from the encounter to your colonies. You may force another ally on either side to do the same."
+                        },
+                        "6": {
+                            "name": "Reward!",
+                            "body": "You you would gain rewards, you may choose anohter player to gain some or all of them instead."
+                        },
+                        "2": {
+                            "name": "Shield!",
+                            "body": "Before another player uses their alien power, prevent it from being canceled by any effect for the rest of the encounter."
+                        },
+                        "7": {
+                            "name": "Steal!",
+                            "body": "Take a card at random from another player's hand. After looking at it, give it to a player other than yourself."
+                        },
+                        "1": {
+                            "name": "Zap!",
+                            "body": "Cancel one use of another alien's power. That power may not be used again during this encounter."
+                        }
+                    }
+                },
                 "thumbnail": "avatar_Zilch.png"
             }
         },
@@ -27800,7 +28014,6 @@
                 "gameSetup": "Choose one condition card from your essence card set and place it facedown on this sheet. Shuffle the remaining seven condition cards as a deck and place them facedown near this sheet. Ignore normal essence card rules.",
                 "powerName": "You have the power to Shift Reality.",
                 "powerBody": "As a main player, after you lose an encounter or fail to make a deal, the opposing main player draws a card at random from your condition deck and places it faceup on this sheet.\n\nWhen any player(s) would win by the normal (not alternate) victory conditions, use this power to prevent that win. When any player(s) would win by one of your conditions (faceup or facedown), use this power to declare them the winner(s).",
-                "powerEssence": true,
                 "powerTiming": {
                     "player": "Player",
                     "choice": "Mandatory",
@@ -27848,6 +28061,43 @@
                 },
                 "expansion": "Cosmic Odyssey",
                 "designers": [],
+                "essences": {
+                    "name": "Condition",
+                    "list": {
+                        "1": {
+                            "name": "Bluffer",
+                            "body": "After you fail to make a deal, if you have at least four foreign colonies, you win the game!"
+                        },
+                        "2": {
+                            "name": "Colonizer",
+                            "body": "After you draw a new hand, if you have at least three foreign colonies, you win the game!"
+                        },
+                        "3": {
+                            "name": "Conciliator",
+                            "body": "After you make a deal, if you have at least three foreign colonies, you win the game!"
+                        },
+                        "4": {
+                            "name": "Intruder",
+                            "body": "If three of your foreign colonies each have at least four ships, you win the game!"
+                        },
+                        "5": {
+                            "name": "Relocator",
+                            "body": "If you have at least three foreign colonies in the same system, you win the game!"
+                        },
+                        "6": {
+                            "name": "Traditionalist",
+                            "body": "If you have at least five foreign colonies and at least three home colonies, you win the game!"
+                        },
+                        "7": {
+                            "name": "Wanderer",
+                            "body": "If you have foreign colonies in at least three different systems and have three or fewer home colonies, you win the game! This condition cannot be chosen in a three player game."
+                        },
+                        "8": {
+                            "name": "Xenophobe",
+                            "body": "After you re-establish a home colony, if you have at least two foreign colonies, you win the game!"
+                        }
+                    }
+                },
                 "thumbnail": "avatar_Schizoid_AT.png"
             },
             "revised": {
@@ -27858,7 +28108,6 @@
                 "gameSetup": "Choose one condition card from your essence card set and place it facedown on this sheet. Shuffle the remaining seven condition cards as a deck and place them facedown near this sheet. Ignore normal essence card rules.",
                 "powerName": "You have the power to Shift Reality.",
                 "powerBody": "As a main player, after you lose an encounter or fail to make a deal, the opposing main player draws a card at random from your condition deck and places it faceup on this sheet.\n\nWhen any player(s) would win by the normal (not alternate) victory conditions, use this power to prevent that win. When any player(s) would win by one of your conditions (faceup or facedown), use this power to declare them the winner(s).",
-                "powerEssence": true,
                 "powerTiming": {
                     "player": "Player",
                     "choice": "Mandatory",
@@ -27907,6 +28156,43 @@
                 "revisionNotes": "Revisions from the Praw\n\nEdited for wording consistency, to restore the original intent for the AT Schizoid (i.e. only the facedown condition changed the victory condition), to clarify that the facedown condition replaces the normal winning condition, to remove reference of a non-existant 'selection card', and to fix the mandatory flare bug.",
                 "expansion": "Cosmic Odyssey",
                 "designers": [],
+                "essences": {
+                    "name": "Condition",
+                    "list": {
+                        "1": {
+                            "name": "Bluffer",
+                            "body": "After you fail to make a deal, if you have at least four foreign colonies, you win the game!"
+                        },
+                        "2": {
+                            "name": "Colonizer",
+                            "body": "After you draw a new hand, if you have at least three foreign colonies, you win the game!"
+                        },
+                        "3": {
+                            "name": "Conciliator",
+                            "body": "After you make a deal, if you have at least three foreign colonies, you win the game!"
+                        },
+                        "4": {
+                            "name": "Intruder",
+                            "body": "If three of your foreign colonies each have at least four ships, you win the game!"
+                        },
+                        "5": {
+                            "name": "Relocator",
+                            "body": "If you have at least three foreign colonies in the same system, you win the game!"
+                        },
+                        "6": {
+                            "name": "Traditionalist",
+                            "body": "If you have at least five foreign colonies and at least three home colonies, you win the game!"
+                        },
+                        "7": {
+                            "name": "Wanderer",
+                            "body": "If you have foreign colonies in at least three different systems and have three or fewer home colonies, you win the game! This condition cannot be chosen in a three player game."
+                        },
+                        "8": {
+                            "name": "Xenophobe",
+                            "body": "After you re-establish a home colony, if you have at least two foreign colonies, you win the game!"
+                        }
+                    }
+                },
                 "thumbnail": "avatar_Schizoid_AT.png"
             },
             "homebrew": {
@@ -27917,7 +28203,6 @@
                 "gameSetup": "Choose one condition card from your essence card set and place it facedown on this sheet. Shuffle the remaining seven condition cards as a deck and place them facedown near this sheet. Ignore normal essence card rules.",
                 "powerName": "You have the power to Shift Reality.",
                 "powerBody": "As a main player, after you lose an encounter or fail to make a deal, the opposing main player draws a card at random from your condition deck and places it faceup on this sheet.\n\nWhen any player(s) would win by the normal (not alternate) victory conditions, use this power to prevent that win. When any player(s) would win by the facedown condition on this sheet, use this power to declare them the winner(s).",
-                "powerEssence": true,
                 "powerTiming": {
                     "player": "Player",
                     "choice": "Mandatory",
@@ -27966,6 +28251,43 @@
                 "revisionNotes": "Revisions from the Praw\n\nEdited for wording consistency, to restore the original intent for the AT Schizoid (i.e. only the facedown condition changed the victory condition), to clarify that the facedown condition replaces the normal winning condition, to remove reference of a non-existant 'selection card', and to fix the mandatory flare bug.",
                 "expansion": "Cosmic Odyssey",
                 "designers": [],
+                "essences": {
+                    "name": "Condition",
+                    "list": {
+                        "1": {
+                            "name": "Bluffer",
+                            "body": "After you fail to make a deal, if you have at least four foreign colonies, you win the game!"
+                        },
+                        "2": {
+                            "name": "Colonizer",
+                            "body": "After you draw a new hand, if you have at least three foreign colonies, you win the game!"
+                        },
+                        "3": {
+                            "name": "Conciliator",
+                            "body": "After you make a deal, if you have at least three foreign colonies, you win the game!"
+                        },
+                        "4": {
+                            "name": "Intruder",
+                            "body": "If three of your foreign colonies each have at least four ships, you win the game!"
+                        },
+                        "5": {
+                            "name": "Relocator",
+                            "body": "If you have at least three foreign colonies in the same system, you win the game!"
+                        },
+                        "6": {
+                            "name": "Traditionalist",
+                            "body": "If you have at least five foreign colonies and at least three home colonies, you win the game!"
+                        },
+                        "7": {
+                            "name": "Wanderer",
+                            "body": "If you have foreign colonies in at least three different systems and have three or fewer home colonies, you win the game! This condition cannot be chosen in a three player game."
+                        },
+                        "8": {
+                            "name": "Xenophobe",
+                            "body": "After you re-establish a home colony, if you have at least two foreign colonies, you win the game!"
+                        }
+                    }
+                },
                 "thumbnail": "avatar_Schizoid_AT.png"
             }
         },
