@@ -1,6 +1,6 @@
 {
   "name": "praw",
-  "homepage": "https://jumbocarrot0.github.io/The-Praw/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
