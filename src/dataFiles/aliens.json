@@ -4318,7 +4318,7 @@
                         "launch": false,
                         "alliance": false,
                         "planning": false,
-                        "reveal": false,
+                        "reveal": true,
                         "resolution": false
                     }
                 },
@@ -4376,7 +4376,7 @@
                         "launch": false,
                         "alliance": false,
                         "planning": false,
-                        "reveal": false,
+                        "reveal": true,
                         "resolution": false
                     }
                 },
@@ -4700,14 +4700,14 @@
                     "player": "As Any Player",
                     "choice": "",
                     "phases": {
-                        "startTurn": false,
-                        "regroup": false,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": false,
-                        "planning": false,
-                        "reveal": false,
-                        "resolution": false
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
                     }
                 },
                 "expansion": "Cosmic Alliance",
@@ -7338,7 +7338,7 @@
                         "alliance": false,
                         "planning": false,
                         "reveal": false,
-                        "resolution": false
+                        "resolution": true
                     }
                 },
                 "expansion": "Cosmic Incursion",
@@ -8357,7 +8357,7 @@
                         "alliance": false,
                         "planning": false,
                         "reveal": false,
-                        "resolution": false
+                        "resolution": true
                     }
                 },
                 "expansion": "Cosmic Conflict",
@@ -9815,7 +9815,7 @@
                         "launch": false,
                         "alliance": false,
                         "planning": false,
-                        "reveal": false,
+                        "reveal": true,
                         "resolution": false
                     }
                 },
@@ -12466,7 +12466,7 @@
                         "regroup": false,
                         "destiny": false,
                         "launch": false,
-                        "alliance": false,
+                        "alliance": true,
                         "planning": false,
                         "reveal": false,
                         "resolution": false
@@ -14481,7 +14481,7 @@
                         "launch": false,
                         "alliance": false,
                         "planning": false,
-                        "reveal": false,
+                        "reveal": true,
                         "resolution": false
                     }
                 },
@@ -14954,7 +14954,7 @@
                         "startTurn": false,
                         "regroup": false,
                         "destiny": false,
-                        "launch": false,
+                        "launch": true,
                         "alliance": false,
                         "planning": false,
                         "reveal": false,
@@ -18844,7 +18844,7 @@
                         "destiny": false,
                         "launch": false,
                         "alliance": false,
-                        "planning": false,
+                        "planning": true,
                         "reveal": false,
                         "resolution": false
                     }
@@ -20845,7 +20845,7 @@
                         "alliance": false,
                         "planning": false,
                         "reveal": false,
-                        "resolution": false
+                        "resolution": true
                     }
                 },
                 "expansion": "Cosmic Conflict",
@@ -22541,7 +22541,7 @@
                         "startTurn": false,
                         "regroup": false,
                         "destiny": false,
-                        "launch": false,
+                        "launch": true,
                         "alliance": false,
                         "planning": false,
                         "reveal": false,

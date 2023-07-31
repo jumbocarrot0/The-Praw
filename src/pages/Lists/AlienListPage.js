@@ -59,7 +59,7 @@ function Alien(props) {
   )
 }
 
-function filterAliens(aliens, search, expansions, phases, exactPhases) {
+function filterAliens(aliens, search, expansions, phases, exactPhases, player, exactPlayer, alertLevels) {
 
   if (expansions.includes("42nd Anniversary Edition")) {
     expansions.push("Base Set");
@@ -69,6 +69,8 @@ function filterAliens(aliens, search, expansions, phases, exactPhases) {
 
   filteredAliens = filteredAliens.filter((alien) => alien[1].original.name.toLowerCase().includes(search.toLowerCase()))
   filteredAliens = filteredAliens.filter((alien) => expansions.includes(alien[1].original.expansion))
+  filteredAliens = filteredAliens.filter((alien) => alertLevels.includes(alien[1].original.alert))
+
   if (exactPhases) {
     filteredAliens = filteredAliens.filter((alien) => {
       const alienPhases = Object.keys(alien[1].original.powerTiming.phases).filter(phase => alien[1].original.powerTiming.phases[phase])
@@ -81,6 +83,155 @@ function filterAliens(aliens, search, expansions, phases, exactPhases) {
   } else {
     filteredAliens = filteredAliens.filter((alien) => phases.filter(phase => alien[1].original.powerTiming.phases[phase]).length > 0)
   }
+
+  // console.log(exactPlayer)
+  // console.log(player)
+  filteredAliens = filteredAliens.filter((alien) => {
+    let alienPlayerTiming = {
+      offense: true,
+      defense: true,
+      offensiveAlly: true,
+      defensiveAlly: true,
+      notInvolved: false
+    }
+    switch ('revised' in alien[1] ? alien[1].revised.powerTiming.player : alien[1].original.powerTiming.player) {
+      case "Offense Only":
+        alienPlayerTiming = {
+          offense: true,
+          defense: false,
+          offensiveAlly: false,
+          defensiveAlly: false,
+          notInvolved: false
+        }
+        break;
+      case "Defense Only":
+        alienPlayerTiming = {
+          offense: false,
+          defense: true,
+          offensiveAlly: false,
+          defensiveAlly: false,
+          notInvolved: false
+        }
+        break;
+      case "Offensive Ally Only":
+        alienPlayerTiming = {
+          offense: false,
+          defense: false,
+          offensiveAlly: true,
+          defensiveAlly: false,
+          notInvolved: false
+        }
+        break;
+      case "Defensive Ally Only":
+        alienPlayerTiming = {
+          offense: false,
+          defense: false,
+          offensiveAlly: false,
+          defensiveAlly: true,
+          notInvolved: false
+        }
+        break;
+      case "Main Player Only":
+        alienPlayerTiming = {
+          offense: true,
+          defense: true,
+          offensiveAlly: false,
+          defensiveAlly: false,
+          notInvolved: false
+        }
+        break;
+      case "Not Main Player":
+        alienPlayerTiming = {
+          offense: false,
+          defense: false,
+          offensiveAlly: true,
+          defensiveAlly: true,
+          notInvolved: false
+        }
+        break;
+      case "Offense or Offensive Only":
+        alienPlayerTiming = {
+          offense: true,
+          defense: false,
+          offensiveAlly: true,
+          defensiveAlly: false,
+          notInvolved: false
+        }
+        break;
+      case "Defense or Defensive Only":
+        alienPlayerTiming = {
+          offense: false,
+          defense: true,
+          offensiveAlly: false,
+          defensiveAlly: true,
+          notInvolved: false
+        }
+        break;
+      case "Main Player or Ally Only":
+        alienPlayerTiming = {
+          offense: true,
+          defense: true,
+          offensiveAlly: true,
+          defensiveAlly: true,
+          notInvolved: false
+        }
+        break;
+      case "Not Main Player or Ally":
+        alienPlayerTiming = {
+          offense: false,
+          defense: false,
+          offensiveAlly: false,
+          defensiveAlly: false,
+          notInvolved: true
+        }
+        break;
+      case "Main Player or Offensive Ally Only":
+        alienPlayerTiming = {
+          offense: true,
+          defense: true,
+          offensiveAlly: true,
+          defensiveAlly: false,
+          notInvolved: false
+        }
+        break;
+      case "Main Player or Defensive Ally Only":
+        alienPlayerTiming = {
+          offense: true,
+          defense: true,
+          offensiveAlly: false,
+          defensiveAlly: true,
+          notInvolved: false
+        }
+        break;
+      case "Offense or Ally Only":
+        alienPlayerTiming = {
+          offense: true,
+          defense: false,
+          offensiveAlly: true,
+          defensiveAlly: true,
+          notInvolved: false
+        }
+        break;
+      case "Defense or Ally Only":
+        alienPlayerTiming = {
+          offense: false,
+          defense: true,
+          offensiveAlly: true,
+          defensiveAlly: true,
+          notInvolved: false
+        }
+        break;
+      default:
+        break;
+    }
+
+    if (exactPlayer) {
+      return (player.length === Object.values(alienPlayerTiming).filter(value => value).length) && Object.keys(alienPlayerTiming).filter(key => alienPlayerTiming[key]).every((playerCategory, index) => player.includes(playerCategory))
+    } else {
+      return Object.keys(alienPlayerTiming).filter(key => alienPlayerTiming[key]).some(playerCategory => player.includes(playerCategory))
+    }
+  })
+
   return Object.fromEntries(filteredAliens)
 
 }
@@ -104,6 +255,16 @@ export default function AliensListPage() {
     "Cosmic Odyssey": useState(submittedExpansions.includes("Cosmic Odyssey"))
   }
 
+  const phaseLabels = {
+    "startTurn": "Start Turn",
+    "regroup": "Regroup",
+    "destiny": "Destiny",
+    "launch": "Launch",
+    "alliance": "Alliance",
+    "planning": "Planning",
+    "reveal": "Reveal",
+    "resolution": "Resolution"
+  }
   let submittedPhases = ["startTurn", "regroup", "destiny", "launch", "alliance", "planning", "reveal", "resolution"];
   submittedPhases = submittedPhases.filter((phase) => searchParams.get(phase) !== 'false');
   const submittedExactPhases = searchParams.get('exactPhases') === 'true'
@@ -119,34 +280,37 @@ export default function AliensListPage() {
     "resolution": useState(submittedPhases.includes("resolution"))
   }
 
+
+  const playerLabels = {
+    "offense": "Offense",
+    "defense": "Defense",
+    "offensiveAlly": "Offensive Ally",
+    "defensiveAlly": "Defensive Ally",
+    "notInvolved": "Not Involved"
+  }
+  let submittedPlayer = ["offense", "defense", "offensiveAlly", "defensiveAlly", "notInvolved"];
+  submittedPlayer = submittedPlayer.filter((player) => searchParams.get(player) !== 'false');
+  const submittedExactPlayer = searchParams.get('exactPlayer') === 'true'
+  const [exactPlayer, setExactPlayer] = useState(submittedExactPlayer)
+  const player = {
+    "offense": useState(submittedPlayer.includes("offense")),
+    "defense": useState(submittedPlayer.includes("defense")),
+    "offensiveAlly": useState(submittedPlayer.includes("offensiveAlly")),
+    "defensiveAlly": useState(submittedPlayer.includes("defensiveAlly")),
+    "notInvolved": useState(submittedPlayer.includes("notInvolved"))
+  }
+
+  let submittedAlertLevels = ["Green", "Yellow", "Red"];
+  submittedAlertLevels = submittedAlertLevels.filter((alert) => searchParams.get(alert) !== 'false');
+  const alertLevels = {
+    "Green": useState(submittedAlertLevels.includes("Green")),
+    "Yellow": useState(submittedAlertLevels.includes("Yellow")),
+    "Red": useState(submittedAlertLevels.includes("Red"))
+  }
+
   const navigate = useNavigate();
 
-  // console.log(phases)
-  // console.log(exactPhases)
-  let filteredAliens = filterAliens(Aliens.aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases)
-
-  // filteredAliens = Object.entries(filteredAliens)
-
-  // filteredAliens.sort(function (a, b) {
-  //   const expansions = ["Base Set", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "42nd Anniversary Edition", "Cosmic Odyssey"]
-  //   // console.log(a.expansion)
-  //   if (expansions.findIndex((e) => e === a[1].original.expansion) < expansions.findIndex((e) => e === b[1].original.expansion)) {
-  //     return -1;
-  //   }
-  //   else if (expansions.findIndex((e) => e === a[1].original.expansion) > expansions.findIndex((e) => e === b[1].original.expansion)) {
-  //     return 1;
-  //   } else {
-  //     if (a[1].original.name < b[1].original.name) {
-  //       return -1;
-  //     }
-  //     else if (a[1].original.name > b[1].original.name) {
-  //       return 1;
-  //     }
-  //   }
-  //   return 0;
-  // })
-
-  // filteredAliens = Object.fromEntries(filteredAliens)
+  let filteredAliens = filterAliens(Aliens.aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases, submittedPlayer, submittedExactPlayer, submittedAlertLevels)
 
   return (
     <Layout title="Aliens">
@@ -160,7 +324,7 @@ export default function AliensListPage() {
               // console.log(results)
               navigate({
                 pathname: `/Aliens`,
-                search: `?${createSearchParams([['search', searchQuery], ['exactPhases', exactPhases]]
+                search: `?${createSearchParams([['search', searchQuery], ['exactPhases', exactPhases], ['exactPlayer', exactPlayer]]
                   .concat(
                     Object.keys(expansions)
                       .filter((expansion) => !expansions[expansion][0])
@@ -170,6 +334,16 @@ export default function AliensListPage() {
                     Object.keys(phases)
                       .filter((phase) => !phases[phase][0])
                       .map((phase) => [phase, phases[phase][0]])
+                  )
+                  .concat(
+                    Object.keys(player)
+                      .filter((playerCategory) => !player[playerCategory][0])
+                      .map((playerCategory) => [playerCategory, player[playerCategory][0]])
+                  )
+                  .concat(
+                    Object.keys(alertLevels)
+                      .filter((alert) => !alertLevels[alert][0])
+                      .map((alert) => [alert, alertLevels[alert][0]])
                   )
                 )}`
               });
@@ -187,13 +361,11 @@ export default function AliensListPage() {
                         setSearchQuery(e.target.value)
                       }
                     }} />
-                  {/* <InputGroupText className="bg-light text-dark">
-                  </InputGroupText> */}
                   <Button
                     className="px-3"
                     color={searchQuery.length === 0 ? "dark" : "primary"}
                     outline={searchQuery.length === 0}>
-                    <SearchLogo/>
+                    <SearchLogo />
                   </Button>
                 </InputGroup>
               </Col>
@@ -226,7 +398,7 @@ export default function AliensListPage() {
                     checked={exactPhases}
                     onChange={() => setExactPhases(!exactPhases)} />
                   <Label className="text-dark" check>
-                    Exact
+                    Exact Matches Only
                   </Label>
                 </FormGroup>
                 {
@@ -237,7 +409,49 @@ export default function AliensListPage() {
                           checked={phases[phase][0]}
                           onChange={() => phases[phase][1](!phases[phase][0])} />
                         <Label className="text-dark" check>
-                          {phase}
+                          {phaseLabels[phase]}
+                        </Label>
+                      </FormGroup>
+                    )
+                  })
+                }
+              </Col>
+              <Col>
+                <h3 className='text-dark'>Player Requirements</h3>
+                <FormGroup>
+                  <Input
+                    className="me-4"
+                    type="checkbox"
+                    checked={exactPlayer}
+                    onChange={() => setExactPlayer(!exactPlayer)} />
+                  <Label className="text-dark" check>
+                    Exact Matches Only
+                  </Label>
+                </FormGroup>
+                {
+                  Object.keys(player).map((playerCategory) => {
+                    return (
+                      <FormGroup key={playerCategory} switch>
+                        <Input type="switch" role="switch"
+                          checked={player[playerCategory][0]}
+                          onChange={() => player[playerCategory][1](!player[playerCategory][0])} />
+                        <Label className="text-dark" check>
+                          {playerLabels[playerCategory]}
+                        </Label>
+                      </FormGroup>
+                    )
+                  })
+                }
+                <h3 className='text-dark mt-2'>Alert Levels</h3>
+                {
+                  Object.keys(alertLevels).map((alert) => {
+                    return (
+                      <FormGroup key={alert} switch>
+                        <Input type="switch" role="switch"
+                          checked={alertLevels[alert][0]}
+                          onChange={() => alertLevels[alert][1](!alertLevels[alert][0])} />
+                        <Label className="text-dark" check>
+                          {alert}
                         </Label>
                       </FormGroup>
                     )
@@ -248,7 +462,8 @@ export default function AliensListPage() {
           </Form>
         </CardBody>
       </Card>
-      <hr className="border border-light border-2 opacity-100 mb-5" />
+      <hr className="border border-light border-2 opacity-100 mb-4" />
+      <p>{Object.keys(filteredAliens).length}/238 Results</p>
       <GridBrowser cardTemplate={Alien}
         url="/Aliens"
         content={filteredAliens}
