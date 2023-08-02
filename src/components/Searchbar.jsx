@@ -30,7 +30,7 @@ export default function Searchbar(props) {
                     placeholder="Search the Cosmos"
                     value={searchQuery}
                     onChange={(e) => {
-                        if (!/[^ A-Za-z0-9\-,'/+\\]/.test(e.target.value)) {
+                        if (!/[^ \p{L}+|\p{M}+\d\-,'/+\\,:.!?]/.test(e.target.value)) {
                             setSearchQuery(e.target.value)
                         }
                     }} />

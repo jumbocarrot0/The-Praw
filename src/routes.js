@@ -29,6 +29,8 @@ import AllianceDialPage from "./pages/Variants/AllianceDialPage";
 import ForeignAidPage from "./pages/Variants/ForeignAidPage";
 import CampaignPage from "./pages/Variants/CampaignPage";
 
+import HomebrewAlienSubmissionPage from "./pages/HomebrewAlienSubmissionPage";
+
 import Aliens from './dataFiles/aliens.json'
 import Techs from './dataFiles/technology.json'
 import Hazards from './dataFiles/hazards.json'
@@ -168,5 +170,10 @@ export const routes = [
       path: "/Variants/Campaign",
       element: <CampaignPage />,
       breadcrumb: "Campaign Mode"
+    },
+    {
+      path: "/Homebrew/Aliens/Submit",
+      element: <HomebrewAlienSubmissionPage />,
+      breadcrumb: "Submission Page"
     }
 ]
