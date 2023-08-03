@@ -4329,12 +4329,12 @@
                     "choice": "",
                     "phases": {
                         "startTurn": false,
-                        "regroup": false,
+                        "regroup": true,
                         "destiny": false,
                         "launch": false,
                         "alliance": false,
                         "planning": false,
-                        "reveal": true,
+                        "reveal": false,
                         "resolution": false
                     }
                 },
@@ -4344,7 +4344,7 @@
                     "choice": "",
                     "phases": {
                         "startTurn": false,
-                        "regroup": true,
+                        "regroup": false,
                         "destiny": false,
                         "launch": false,
                         "alliance": false,
@@ -4381,28 +4381,28 @@
                     }
                 },
                 "history": "Arranged in orderly three-dimensional lattices, Crystals tend to dominate the arrangement of their local environment. They know that, with a few suggestive seeding hints, they can bring the entire Universe into the most efficient energy packing: Crystalline order.",
-                "wildBody": "",
+                "wildBody": "At the start of any encounter, you may rearrange your ships among your colonies as you wish.",
                 "wildTiming": {
                     "player": "Only",
                     "choice": "",
                     "phases": {
                         "startTurn": false,
-                        "regroup": false,
+                        "regroup": true,
                         "destiny": false,
                         "launch": false,
                         "alliance": false,
                         "planning": false,
-                        "reveal": true,
+                        "reveal": false,
                         "resolution": false
                     }
                 },
-                "superBody": "At the start of any encounter, you may rearrange your ships among your colonies as you wish.\n\n \n\n When another player discards a card to activate your power, you may add that card to your hand.",
+                "superBody": "When another player discards a card to activate your power, you may add that card to your hand.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
                     "phases": {
                         "startTurn": false,
-                        "regroup": true,
+                        "regroup": false,
                         "destiny": false,
                         "launch": false,
                         "alliance": false,
@@ -21277,10 +21277,10 @@
             "original": {
                 "name": "Vacuum",
                 "alert": "Green",
-                "short": "Takes Other",
+                "short": "Takes Other Ships to Warp",
                 "gameSetup": "",
                 "powerName": "You have the power of Catharsis.",
-                "powerBody": "Ships to Warp Whenever you lose ships to the warp, use this power to take along up to an equal number of other ships. You specify which players must lose them, and how many each player must lose. The targeted players decide which colony or colonies the ships are taken from. Ships lost to the Vacuum this way are in addition to any ships normally lost in an encounter.",
+                "powerBody": "Whenever you lose ships to the warp, use this power to take along up to an equal number of other ships. You specify which players must lose them, and how many each player must lose. The targeted players decide which colony or colonies the ships are taken from. Ships lost to the Vacuum this way are in addition to any ships normally lost in an encounter.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -21335,10 +21335,10 @@
             "revised": {
                 "name": "Vacuum",
                 "alert": "Green",
-                "short": "Takes Other",
+                "short": "Takes Others' Ships to Warp",
                 "gameSetup": "",
                 "powerName": "You have the power of Catharsis.",
-                "powerBody": "s' Ships to Warp Whenever you lose ships to the warp, use this power to take along up to an equal number of other players' ships. You specify which players must lose them, and how many each player must lose. The targeted players decide which colonies the ships are taken from. Ships lost to the Vacuum this way are in addition to any ships normally lost in an encounter.",
+                "powerBody": "Whenever you lose ships to the warp, use this power to take along up to an equal number of other players' ships. You specify which players must lose them, and how many each player must lose. The targeted players decide which colonies the ships are taken from. Ships lost to the Vacuum this way are in addition to any ships normally lost in an encounter.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -25995,7 +25995,7 @@
             "original": {
                 "name": "Tentacle",
                 "alert": "Green",
-                "short": "Adds Dgitis to the Total",
+                "short": "Adds Digits to the Total",
                 "gameSetup": "",
                 "powerName": "You have the power of Appendages.",
                 "powerBody": "As a main player or ally, after encounter cards are revealed, use this power. Choose one revealed encounter card that has a numerical value (including a morph). Add each of the value's digits to that side's total. For example, if you reveal an attack 15, add 1 and 5 to the card's value for a total of 21.",
@@ -26051,7 +26051,7 @@
             "revised": {
                 "name": "Tentacle",
                 "alert": "Green",
-                "short": "Adds Dgitis to the Total",
+                "short": "Adds Digits to the Total",
                 "gameSetup": "",
                 "powerName": "You have the power of Appendages.",
                 "powerBody": "As a main player or ally, after encounter cards are revealed, use this power. Choose one revealed encounter card that has a numerical value (including a morph). Add each of the value's digits to that side's total. For example, if you reveal an attack 15, add 1 and 5 to the card's value for a total of 21.",
@@ -26285,7 +26285,7 @@
                 "short": "Does things the old way",
                 "gameSetup": "",
                 "powerName": "You have the power of anarchronism.",
-                "powerBody": "Whenever you draw a hand, including your starting hand, draw seven cards instead of eight.\n\nWhen speaking, you should refer to colonies as bases, ships as tokens, encounters as challenges, encounter cards as challenge cards, artifacts as edicts, negotiate cards as compromise cards, compensation as consolation, and the hyperspace gate as the cone. When other players use the modern terms, you may this power to receive one reward when you correct another player in this way.\n\nAt any time, you may use this power to purge from your hand one or more modern cards having: a card type other than Attack, Compromise (Negotiate), Flare, Edict (Artifact), or kicker; a cardback not matching the cosmic deck; or an Attack value other than 01, 04-10, 12-18, 20, 30 or 40. You may discard them and draw an equal number of cards; give these cards to another player; or trade these cards to other players (if willing) for anything they could give you as part of a deal.\n\nYou may play any number of flares per challenge, even playing the same flare more than once if the context for playing it comes up more than once.",
+                "powerBody": "Whenever you draw a hand, including your starting hand, draw seven cards instead of eight.\n\nWhen speaking, you should refer to colonies as bases, ships as tokens, encounters as challenges, encounter cards as challenge cards, artifacts as edicts, negotiate cards as compromise cards, compensation as consolation, and the hyperspace gate as the cone. When other players use the modern terms, you may use this power to receive one reward when you correct another player in this way.\n\nAt any time, you may use this power to purge from your hand one or more modern cards having: a card type other than Attack, Compromise (Negotiate), Flare, Edict (Artifact), or kicker; a cardback not matching the cosmic deck; or an Attack value other than 01, 04-10, 12-18, 20, 30 or 40. You may discard them and draw an equal number of cards; give these cards to another player; or trade these cards to other players (if willing) for anything they could give you as part of a deal.\n\nYou may play any number of flares per challenge, even playing the same flare more than once if the context for playing it comes up more than once.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Optional",
