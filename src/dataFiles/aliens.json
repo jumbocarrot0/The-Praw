@@ -4367,7 +4367,7 @@
                 "powerName": "You have the power to Refract.",
                 "powerBody": "As a main player or ally, use this power after both main players reveal attack cards. Any one player on your side can discard one attack card from their hand that matches the value of your side's revealed attack card. If a player does so, multiply your side's revealed card by the discarded card's value. For instance, if your side reveals an attack 08, any one player on your side may discard an attack 08 to change the revealed card into an attack 64.",
                 "powerTiming": {
-                    "player": "Main Player or Ally ",
+                    "player": "Main Player or Ally Only",
                     "choice": "",
                     "phases": {
                         "startTurn": false,
@@ -4383,7 +4383,7 @@
                 "history": "Arranged in orderly three-dimensional lattices, Crystals tend to dominate the arrangement of their local environment. They know that, with a few suggestive seeding hints, they can bring the entire Universe into the most efficient energy packing: Crystalline order.",
                 "wildBody": "At the start of any encounter, you may rearrange your ships among your colonies as you wish.",
                 "wildTiming": {
-                    "player": "Only",
+                    "player": "As Any Player",
                     "choice": "",
                     "phases": {
                         "startTurn": false,
