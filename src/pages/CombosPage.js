@@ -8,8 +8,8 @@ import Aliens from '../dataFiles/aliens.json';
 import Layout from '../components/Layout'
 
 function Combo(props) {
-  console.log(props.Name)
-  console.log(props.Aliens)
+  // console.log(props.Name)
+  // console.log(props.Aliens)
   return (
     <Table dark className="text-center w-50 th-w-50">
       <thead>
@@ -42,7 +42,7 @@ function RandomCombo() {
 
 export default function Combos() {
   const [combo, setCombo] = useState(RandomCombo())
-  console.log(combo)
+  // console.log(combo)
   return (
     <Layout title="Combos">
       <Row>
@@ -74,7 +74,7 @@ export default function Combos() {
               </option>
               {
                 combosData.map((combo, index) => {
-                  console.log(combo, index)
+                  // console.log(combo, index)
                   return (
                     <option key={index} value={index}>
                       {combo.Name}

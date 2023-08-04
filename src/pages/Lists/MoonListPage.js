@@ -51,8 +51,8 @@ export default function MoonListPage() {
                 <li className="text-light">If a player occupies a moon base, but has no ships on the planet, they are still treated as having a colony on that planet. So, a player occupying a moon base in a foreign system without ships on the attached planet will have 2 foreign colonies.</li>
               </ul>
               <li className="text-light">Hub Moons aid the occupier in deal situations.</li>
-              <li className="text-light">Cheesy Moons have a wide array of effects, usually ongoing effects, with a shared theme of beiny silly, party-game-style effects.</li>
-              <li className="text-light">New Moons, despite havings a common back, have effects that belong to one another type of moon. When a new moon is revealed, it is treated as the type of moon depicted on its other side. E.g., a new moon that becomes a half moon is treated as a half moon for other half moon card abilities.</li>
+              <li className="text-light">Cheesy Moons have a wide array of effects, usually ongoing effects, with a shared theme of being silly, party-game-style effects.</li>
+              <li className="text-light">New Moons, despite having a common back on their moon tokens, have effects that belong to one another type of moon. When a new moon is revealed, it is treated as the type of moon depicted on its other side. E.g., a new moon that becomes a half moon is treated as a half moon for other half moon card abilities.</li>
             </ul>
           </AccordionBody>
         </AccordionItem>

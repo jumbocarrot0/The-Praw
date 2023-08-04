@@ -394,7 +394,7 @@ export default function Selection() {
                     onChange={(e) => setPlayerNumber(e.target.value)}
                     value={playerNumber}
                     defaultValue={"Please Select"}
-                    invalid={(playerNumberError && (playerNumber === undefined))}
+                    invalid={playerNumberError && (playerNumber === undefined)}
                   >
                     <option value={undefined} disabled>
                       Please Select
@@ -427,7 +427,7 @@ export default function Selection() {
                       Pink
                     </option>
                   </Input>
-                  <FormFeedback invalid>
+                  <FormFeedback invalid="true">
                     Please select a colour
                   </FormFeedback>
                 </FormGroup>
