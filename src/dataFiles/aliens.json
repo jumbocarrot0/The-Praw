@@ -707,7 +707,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -863,7 +863,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Cedric Chin (as Fish)"
@@ -1220,7 +1220,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to remove uncesessary capitalisation.\n\nRevisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -1279,7 +1279,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "House rule from The Praw\n\nPrevents Arcade from pwning when losing the encounter with attack vs negotiate.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -2025,7 +2025,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Lila Boutin"
@@ -2146,7 +2146,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex\n\nClarifies that super flare does not let opposing players remove any ship in the encounter, only their own.\n\nRevisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -3814,7 +3814,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -4649,7 +4649,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -4889,7 +4889,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Zach Whelchel"
@@ -5010,7 +5010,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "42nd Anniversary Edition",
                 "designers": [
                     "designed by Robin Raianiemi"
@@ -5129,7 +5129,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -5489,7 +5489,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Future Pastimes",
@@ -5729,7 +5729,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Future Pastimes",
@@ -6028,7 +6028,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [],
                 "thumbnail": "avatar_Emperor.png"
@@ -8537,7 +8537,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Chris Oliveira"
@@ -8777,7 +8777,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify Grumpus' power cannot prevent other powers that player has from being lost due to home colonies.\n\nRevisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -10075,7 +10075,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "At any time, you may name any encounter card to become the new wild card, such as attack 06, the regular negotiate card, or egotiate (Epic Oratory). When you lose this flare, attack 08 immediately becomes the wild card again.",
+                "superBody": "At any time, you may name any encounter card to become the new wild card, such as attack 06, the regular negotiate card, or negotiate (Epic Oratory). When you lose this flare, attack 08 immediately becomes the wild card again.",
                 "superTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -10149,7 +10149,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for capitalization.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Phil Fleischmann and the Cosmodex's trained human minion",
@@ -10565,7 +10565,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Future Pastimes",
@@ -12664,7 +12664,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Cedric Chin (as Alexander)"
@@ -13140,7 +13140,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -13378,7 +13378,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by the fans"
@@ -13772,7 +13772,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -14662,7 +14662,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -14900,7 +14900,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -15257,7 +15257,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify the timing of the 2nd paragraph, to prevent power use well after intended.\n\nRevisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -15795,7 +15795,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by the fans"
@@ -16752,7 +16752,7 @@
                     }
                 },
                 "flareSpecialBody": "If at any time you play any other super flare and the Reactor is playing, you must give them this flare.",
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Jack Reda"
@@ -19593,7 +19593,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -21144,7 +21144,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency and removing redudant rules on a card.\n\nRevisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -21264,7 +21264,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Bryan Stout (as Federalist)",
@@ -22518,7 +22518,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Tess Boutin"
@@ -22996,7 +22996,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -23235,7 +23235,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by George Membreno",

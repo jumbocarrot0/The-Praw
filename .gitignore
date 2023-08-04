@@ -28,6 +28,7 @@ favicon/
 /.venv
 /.vscode
 /src/dataFiles/old
+/src/dataFiles/Appendix B Ripper
 /old
 
 *.py
