@@ -79,7 +79,9 @@ export default function IndividualAlienPage() {
           {alien.bans ?
             <p className='fs-3'>Do not use with {
               alien.bans.map((alienID, index) => {
-                return <span ><Link to={`/Aliens/${alienID}`}>{Aliens.aliens[alienID].original.name}</Link>{index !== alien.bans.length - 1 ? <span>, or </span> : null}</span>
+                return <span ><Link to={`/Aliens/${alienID}`}>{
+                  Aliens.aliens[alienID].original.altTimelineID ? (Aliens.aliens[alienID].original.name + " (AT)") : Aliens.aliens[alienID].original.name
+                  }</Link>{index !== alien.bans.length - 1 ? <span>, or </span> : null}</span>
               })
             }</p>
             : null

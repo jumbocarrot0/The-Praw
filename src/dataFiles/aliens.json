@@ -5296,7 +5296,7 @@
                 },
                 "superBody": "You may use your power as the offense.",
                 "superTiming": {
-                    "player": "Offense ",
+                    "player": "Offense",
                     "choice": "",
                     "phases": {
                         "startTurn": false,
@@ -5355,7 +5355,7 @@
                 },
                 "superBody": "You may use your power as the offense.",
                 "superTiming": {
-                    "player": "Only",
+                    "player": "Offense Only",
                     "choice": "",
                     "phases": {
                         "startTurn": false,
@@ -18155,7 +18155,7 @@
                         "resolution": true
                     }
                 },
-                "superClassicBody": "If this flare is in your starting hand, reveal it and write a victory condition down instead of choosing a Schizoid card. The condition must 1) be possible for all players to meet, 2) be clear to all as it happens, 3) not require remembering past events, and 4) require at least 3 foreign colonies. If this card leaves your hand, reveal your written victory condition to all players.\n\n \n\nSFkStartingHands",
+                "superClassicBody": "If this flare is in your starting hand, reveal it and write a victory condition down instead of choosing a Schizoid card. The condition must 1) be possible for all players to meet, 2) be clear to all as it happens, 3) not require remembering past events, and 4) require at least 3 foreign colonies. If this card leaves your hand, reveal your written victory condition to all players.",
                 "superClassicTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -18245,7 +18245,7 @@
                         "resolution": true
                     }
                 },
-                "superClassicBody": "If this flare is in your starting hand, reveal it and write a victory condition down instead of choosing a schizoid card. The condition must 1) be possible for all players to meet, 2) be clear to all as it happens, 3) not require remembering past events, and 4) require at least 3 foreign colonies. If this flare leaves your hand, reveal your written victory condition to all players.\n\n \n\nSFkStartingHands",
+                "superClassicBody": "If this flare is in your starting hand, reveal it and write a victory condition down instead of choosing a schizoid card. The condition must 1) be possible for all players to meet, 2) be clear to all as it happens, 3) not require remembering past events, and 4) require at least 3 foreign colonies. If this flare leaves your hand, reveal your written victory condition to all players.",
                 "superClassicTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -18499,7 +18499,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for grammar, to fix the attack bug, for wording consistency, and to prevent Wild Shadow from incorrectly referring to a planet that may not be yours as \"your planet,\" as well as to avoid problems with effects like Winner and (perhaps someday) moons. Links: [Corrected flare]",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for grammar, to fix the attack bug, for wording consistency, and to prevent Wild Shadow from incorrectly referring to a planet that may not be yours as \"your planet,\" as well as to avoid problems with effects like Winner and (perhaps someday) moons.",
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Future Pastimes (as Assassin)"

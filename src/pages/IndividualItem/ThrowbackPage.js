@@ -19,7 +19,7 @@ export default function ThrowbackPage() {
   return (<Layout title={alien.name} className='throwback'>
     <ThrowbackBox>
       <div className='px-1'>
-        <b>{alien.name.toUpperCase()}</b> [FFG:CO] {alien.short.toUpperCase()} <Link to="/Aliens">Fantasy Flight</Link>
+        <b>{alien.name.toUpperCase()}</b> [O:CO] {alien.short.toUpperCase()} <Link to="/Aliens">Fantasy Flight</Link>
         <img className='float-end' alt={alien.name + " Avatar"} src={require(`../../images/alien icons/avatar_${alien.name.replace('The ', '').replace(' ', '_')}${alien.altTimeline ? '_AT' : ''}.png`)} />
         <p><strong>{alien.powerName}</strong> {alien.powerBody}</p>
         <p>
