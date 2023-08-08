@@ -11721,7 +11721,7 @@
                 "altTimelineID": "231",
                 "gameSetup": "",
                 "powerName": "You have the power to Hurt Yourself.",
-                "powerBody": "At the start of any player's regroup phase, before the offense retrieves a ship from the warp, use this power to win the game if you have lost all of your ships. Lost ships include those in the warp, those removed from the game, and those captured by other players.\n\nYou do not lose this power because of having too few home colonies, and you may still win the game via the normal manner.\n\nDo Not Use with Healer",
+                "powerBody": "At the start of any player's regroup phase, before the offense retrieves a ship from the warp, use this power to win the game if you have lost all of your ships. Lost ships include those in the warp, those removed from the game, and those captured by other players.\n\nYou do not lose this power because of having too few home colonies, and you may still win the game via the normal manner.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -27886,7 +27886,7 @@
                 "short": "Defeats Ships to Win",
                 "gameSetup": "",
                 "powerName": "You have the power of Cruelty.",
-                "powerBody": "When another player has at least eight ships in the warp, captured and/or out of the game, place a token under that player's colony marker. At the end of the resolution phase, if all other players have a token under their colony marker, use this power to win the game. You may still win the game via the normal manner. As a main player or ally, after your side wins the encounter, if any players on the other side would lose fewer than three ships to the warp, use this power to force each of those players to lose one additional ship to the warp.",
+                "powerBody": "When another player has at least eight ships in the warp, captured and/or out of the game, place a token under that player's colony marker. At the end of the resolution phase, if all other players have a token under their colony marker, use this power to win the game. You may still win the game via the normal manner.\n\nAs a main player or ally, after your side wins the encounter, if any players on the other side would lose fewer than three ships to the warp, use this power to force each of those players to lose one additional ship to the warp.",
                 "bans": [
                     "195",
                     "237",
@@ -27948,7 +27948,7 @@
                 "short": "Defeats Ships to Win",
                 "gameSetup": "",
                 "powerName": "You have the power of Cruelty.",
-                "powerBody": "When another player has at least eight ships in the warp, captured and/or removed of the game, place a token under that player's colony marker. At the end of the resolution phase, if all other players have a token under their colony marker, use this power to win the game. You may still win the game via the normal manner. As a main player or ally, after your side wins the encounter, if any players on the other side would lose fewer than three ships to the warp, use this power to force each of those players to lose one additional ship to the warp.",
+                "powerBody": "When another player has at least eight ships in the warp, captured and/or removed of the game, place a token under that player's colony marker. At the end of the resolution phase, if all other players have a token under their colony marker, use this power to win the game. You may still win the game via the normal method.\n\nAs a main player or ally, after your side wins the encounter, if any players on the other side would lose fewer than three ships to the warp, use this power to force each of those players to lose one additional ship to the warp.",
                 "bans": [
                     "195",
                     "237",

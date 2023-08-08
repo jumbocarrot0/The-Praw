@@ -48,7 +48,7 @@ export default function IndividualAlienPage() {
             // src={require(`../../images/alien icons/avatar_${alien.name.replace('The ', '').replace(' ', '_')}${alien.altTimeline ? '_AT' : ''}.png`)} 
             src={require(`../../images/alien icons/${alien.thumbnail}`)}
           />
-          <span><h1 className='text-light d-inline'>{alien.name} </h1><h3 className='text-light d-inline'>({alien.alert})</h3></span>
+          <span><h1 className='text-light d-inline'>{alien.altTimeline ? (alien.name + " (AT)") : alien.name} </h1><h3 className='text-light d-inline'>({alien.alert})</h3></span>
           <h3 className='text-light'>{alien.short}</h3>
 
           {alien.gameSetup ? <p><strong>Game Setup:</strong> {alien.gameSetup}</p> : null}
@@ -80,8 +80,8 @@ export default function IndividualAlienPage() {
             <p className='fs-3'>Do not use with {
               alien.bans.map((alienID, index) => {
                 return <span ><Link to={`/Aliens/${alienID}`}>{
-                  Aliens.aliens[alienID].original.altTimelineID ? (Aliens.aliens[alienID].original.name + " (AT)") : Aliens.aliens[alienID].original.name
-                  }</Link>{index !== alien.bans.length - 1 ? <span>, or </span> : null}</span>
+                  Aliens.aliens[alienID].original.altTimeline ? (Aliens.aliens[alienID].original.name + " (AT)") : Aliens.aliens[alienID].original.name
+                }</Link>{index !== alien.bans.length - 1 ? <span>, or </span> : null}</span>
               })
             }</p>
             : null
@@ -117,9 +117,9 @@ export default function IndividualAlienPage() {
               {Object.keys(alien.essences.list).sort().map((essenceID => {
                 return <li><strong>{alien.essences.list[essenceID].name}</strong>: {alien.essences.list[essenceID].body}{
                   alien.essences.list[essenceID].value ? <strong className='font-digit fs-4'> {alien.essences.list[essenceID].value}</strong> : null
-                  }</li>
+                }</li>
               }))}
-              
+
             </ol>
           </div>
             : null}
