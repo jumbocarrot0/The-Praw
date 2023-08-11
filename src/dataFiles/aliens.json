@@ -6936,7 +6936,7 @@
                 "short": "Drives Away Others' Ships",
                 "gameSetup": "",
                 "powerName": "You have the power to Reek.",
-                "powerBody": "Any time any of your ships are coexisting on the same planet as any other player's ships, use this power to force the other player's ships to return to his or her other colonies.\n\n, our allies in a winning offensive encounter do not land on the defending planet with you. However, they each still gain a colony on any other planet of their choice (each player chooses separately) in the defending system.\n\nWhen you lose an encounter as the defense on a planet where you have ships, use this power to force all opposing ships to return to their other colonies instead of landing on your planet. Your losing ships go to the warp normally and the planet is then \"fumigated.\"\n\nWhen you agree to trade colonies in a deal, you and that other player must each vacate a planet for the other player to land on.",
+                "powerBody": "Any time any of your ships are coexisting on the same planet as any other player's ships, use this power to force the other player's ships to return to his or her other colonies.\n\nYour allies in a winning offensive encounter do not land on the defending planet with you. However, they each still gain a colony on any other planet of their choice (each player chooses separately) in the defending system.\n\nWhen you lose an encounter as the defense on a planet where you have ships, use this power to force all opposing ships to return to their other colonies instead of landing on your planet. Your losing ships go to the warp normally and the planet is then \"fumigated.\"\n\nWhen you agree to trade colonies in a deal, you and that other player must each vacate a planet for the other player to land on.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -18865,7 +18865,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "When you tell a player you doubt that he will win, you also tell him how many ships not in the encounter (1 to20) are at risk (instead of your normal Skeptic method of determining risk ). If he double doubts you and plays the encounter, the loser (or both if you fail to deal) loses that number of ships to the warp in addition to the ships lost in the encounter.",
+                "superBody": "When you tell a player you doubt that he will win, you also tell him how many ships not in the encounter (1 to20) are at risk (instead of your normal Skeptic method of determining risk). If he double doubts you and plays the encounter, the loser (or both if you fail to deal) loses that number of ships to the warp in addition to the ships lost in the encounter.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
