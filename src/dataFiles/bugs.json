@@ -1,0 +1,76 @@
+{
+    "bugs" : {
+        "0" : {
+            "name": "Attack Bug",
+            "origin": "Cosmodex",
+            "description": "Several alien powers and cards use the word \"attack\" in a nonstandard way that has nothing to do with attack cards. This use of the word is not really appropriate as a synonym for encounter since players might reveal negotiate cards, and it should not be interpreted as a requirement that somebody actually be attacking (with an attack card) in order to use these game effects. These powers and cards have been revised to use existing wording conventions.",
+            "examples": []
+        },
+        "1" : {
+            "name": "Coexistence Bug",
+            "origin": "Cosmodex",
+            "description": "At least 25 different aliens and cards cause two or more players' ships to coexist on the same planet. Most of these simply state (or even just imply) the coexistence, without any extra verbiage, and they all work correctly as expected. However, two of them (Bully and Disease) specifically outline scenarios for their power if another game effect \"prevents\" coexistence, and a third (Spiff) has similar but less specific language apparently intended for the same purpose. These \"clarifications\" are \"rules on card\" that add needless verboseness and unintended side-efects. It seems they were written with Filth in mind, however a careful reading of Filth's power reveals it does not actually prevent coexistence, rather its effect triggers off coexistence. The other 22 coexistence-causing game effects have no such clarification, and work perfectly well (even with Filth). It should be assuemd there is an unstated general rule that coexistence is always allowed unless some game effect specifies otherwise. (And indeed, this has been the case since the Eons days.) There is no apparent reason why Bully, Disease, and Spiff should be treated any differently from the other 22 game effects.",
+            "examples": []
+        },
+        "2" : {
+            "name": "Defensive Ally Bug",
+            "origin": "Cosmodex",
+            "description": "Previous editions of the game required defensive allies to be placed on the on what was then the hyperspace cone, near the pointed end towards the planet. This allowed the phrase \"ships in the cone\" to refer to all ships in the encounter except those of the defense (that is, all the ships that came to the encounter from somewhere else and are currently in a kind of \"game-state limbo,\" since they eventually have to go back to colonies or the warp). The FFG edition instead requires defensive allies to be sort of \"floating near the planet\" and emphatically not in the hyperspace gate. Unfortunately, this change was not carried out through the cards and so there are some game effects that refer to ships in the gate when they really mean \"ships in the gate plus defensive allies (if any)\" or \"ships in the gate and those floating between the gate and the planet\" or \"all ships in the encounter except those of the defense\" or somesuch. As of the 2018 FAQ it has been clarified that defensive allies ships count as being on the hyperpsace gate for these purposes, but these components are still revised to maintain clarity.",
+            "examples": []
+        },
+        "3" : {
+            "name": "Launch Bug",
+            "origin": "Cosmodex",
+            "description": "The FFG edition of the game sometimes confusingly uses the word \"launch\" to mean \"send ships into the encounter,\" even for allies. This leads to a problem on several game effects that, in spite of being intended for use by allies, have only a (Launch) icon and no (Alliance) icon. (This error means that these effects as written actually cannot be used by allies, and Super Parasite is a dead card; it cannot be played ever.)",
+            "examples": []
+        },
+        "4" : {
+            "name": "Main Player Bug",
+            "origin": "Cosmodex",
+            "description": "Several game effects are intended to be usable when you are an ally, but are written as if you are always a main player. This typically consists of a power or flare saying \"you\" instead of \"your side,\" or perhaps referring to the opposing main player as \"your opponent.\" For the most part the intent is reasonably obvious, but there are some ambiguous cases.",
+            "examples": []
+        },
+        "5" : {
+            "name": "Mandatory Flare \"Bug\"",
+            "origin": "Cosmodex",
+            "description": "This is not really a bug, more a pedantic wording thing. The use of flares is always optional. Although flares in earlier editions often sounded mandatory, they were generally written in the context of \"once you decide to play this card, here is what you must do.\" The FFG edition seems to have made an effort to write all flares to reinforce their optional nature by using \"you may\" (or \"you don't have to\") language on every flare. They did a good job in the base set, missing only a few flares. Unfortunately it seems they forgot about this convention in Cosmic Incursion, as almost one-third of its flare effects are phrased in the imperative. Cosmic Conflict and Cosmic Alliance are inconsistent, and Cosmic Odyssey similarly seem to forget this convention almost entirely.",
+            "examples": []
+        },
+        "6" : {
+            "name": "Recurrent Flare Bug",
+            "origin": "Cosmodex",
+            "description": "Several flares use wordings that imply that their game effect can happen more than once during the encounter, or that it recurs every time the appropriate situation comes up. In actual practice under Eon, those wordings were not a problem because there was no limit on the number of flares that could be played or the number of times each flare could be used. But in FFG's one-flare-per-encounter model, these old templates are misleading (and inconsistent with other flares). These flares are revised to use non-recurrent language.",
+            "examples": []
+        },
+        "7" : {
+            "name": "Rewards Bug",
+            "origin": "Cosmodex",
+            "description": "Rewards are specified inconsistently. Some effects just says \"rewards\" (which is perfectly adequate). Some say \"defender rewards\", Extortionist says \"defensive rewards\" and Ionic Gas says \"defensive ally rewards.\" These latter examples, aside from being inconsistent and unnecessarily verbose, are also potentially confusing with effects like the Reverse Rewards hazard, Vector, etc.. For conciseness, these are revised to just say \"rewards.\" In addition, Ghoul, Wild Ghoul, and Mercenary (but oddly not Wild Mercenary) add redundant text that partially explains what rewards are. Curiously, these additions omit any mention of the reward deck, even though it debuted in the same expansion set as those powers. These \"rules on cards\" have been removed, again, for conciseness and to prevent the implication that you, say, can't draw from the rewards deck.",
+            "examples": []
+        },
+        "8" : {
+            "name": "Rules on a Card",
+            "origin": "The Praw",
+            "description": "Some effects opt to restate game rules on the card or sheet. In many cases this is a simple and harmless clarification preventing rules mistakes. Sometimes, however, the clarification is worded in an unhelpful way that implies unintended edge-case behaviour. Other times there are incorrect \"rules on a card\" that wrongly imply a general rule (such as deals counting as wins). These are more suited as conditions or effects unique to the effect.",
+            "examples": []
+        },
+        "9" : {
+            "name": "Grammar, Capitalisation, Wording Consistency, etc.",
+            "origin": "The Praw",
+            "description": "This is a very broad category that encompasses many effects and goes into punctuation, grammer, spelling, etc. This, usually, is not a rules issue, just pedantic corrections.",
+            "examples": []
+        },
+        "10" : {
+            "name": "Inclusive Language",
+            "origin": "The Praw",
+            "description": "The Praw opts to edit components to use 'they/them' when referring to players in the third-person, as opposed to the clunkier 'he or she' as used by most components (except in Cosmic Odyssey where it's used consistently).",
+            "examples": []
+        },
+        "11" : {
+            "name": "Timing Icon Errors",
+            "origin": "Cosmodex",
+            "description": "There are roughly thirty-two cases of incorrect icons on cards and alien sheets. Perhaps two dozen of them would be worthy of fixing when sets are reprinted. (A few of these may already be corrected in later editions; it's hard to be sure because FFG does not announce which errors they fix.)",
+            "examples": []
+        }
+    }
+}
