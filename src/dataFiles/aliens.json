@@ -6493,7 +6493,11 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency, for grammar, to fix the mandatory flare bug, and to restore the history's original (and appropriate) use of moral suasion, a term meaning \"a persuasion tactic used by an authority to influence and pressure.\" (It appears that the history was \"corrected\" by an editor unfamiliar with this term.)",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    { "bugID": "9", "description": "Restores the history's original (and appropriate) use of moral suasion, a term meaning \"a persuasion tactic used by an authority to influence and pressure.\"" },
+                    { "bugID": "5" }
+                ],
                 "expansion": "Cosmic Incursion",
                 "designers": [
                     "designed by Future Pastimes"
@@ -6612,7 +6616,11 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to use the correct name of Nightmare's essence cards.",
+                "revisionNotes": "Revisions from the Cosmodex and The Praw",
+                "revisedBugs": [
+                    { "bugID": "9", "description": "Use the correct name of Nightmare's essence cards." },
+                    { "bugID": "10" }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -6791,7 +6799,13 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency; to prevent Extortionist from affecting card draws by effects such as Chosen, Miser, Chrysalis, and gaining new tech; to restore Eon's approach of taking the cards after the other player has collected them rather than the leaky method of trying to acquire cards instead of the other player; to fix the rewards bug, the recurrent flare bug, and the mandatory flare bug; and to recast Super Extortionist for readability and removal of the old Eon reference to a Lucre \"payment.\"",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to prevent Extortionist from affecting card draws by effects such as Chosen, Miser, Chrysalis, and gaining new tech; to restore Eon's approach of taking the cards after the other player has collected them rather than the leaky method of trying to acquire cards instead of the other player; and to recast Super Extortionist for readability and removal of the old Eon reference to a Lucre \"payment.\"",
+                "revisedBugs": [
+                    { "bugID": "9" },
+                    { "bugID": "7" },
+                    { "bugID": "6" },
+                    { "bugID": "5" }
+                ],
                 "expansion": "Cosmic Alliance",
                 "designers": [
                     "designed by Future Pastimes"
@@ -6910,7 +6924,10 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to specify what happens if Fido does not want to keep a card that has been refused, for grammar, to resolve the conflict between \"you may\" implying the payment is optional and \"either\" implying it is mandatory, to clarify the scope of the power as defined in the FAQ, to fix punctuation, for wording consistency, and to eliminate Super Fido's confusing requirement that there be \"several\" encounter cards from which to choose. The wording of the FAQ-inspired clarification assumes that the intention was to include all encounter cards used in resolving the encounter, including extra ones from things like Cavalry, Chosen, Deuce, and Reserve (see encounter cards for comments on the ambiguity of that phrase).",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to specify what happens if Fido does not want to keep a card that has been refused, to resolve the conflict between \"you may\" implying the payment is optional and \"either\" implying it is mandatory, to clarify the scope of the power as defined in the FAQ, and to eliminate Super Fido's confusing requirement that there be \"several\" encounter cards from which to choose. The wording of the FAQ-inspired clarification assumes that the intention was to include all encounter cards used in resolving the encounter, including extra ones from things like Cavalry, Chosen, Deuce, and Reserve (see encounter cards for comments on the ambiguity of that phrase).",
+                "revisedBugs": [
+                    { "bugID": "9" }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Brandon Freels"
@@ -6970,6 +6987,9 @@
                     }
                 },
                 "revisionNotes": "House rule from The Praw\n\nSlight change to give Fido access to the rewards deck whilst simplifying the wording slightly.",
+                "revisedBugs": [
+                    { "bugID": "9" }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Brandon Freels"
@@ -7148,7 +7168,11 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to implement the FAQ ruling on Sorcerer, for wording consistency, to remove incorrect implication that all artifacts and flares have a \"victim,\" to clarify that Super Filch steals only one card, to implement the FAQ ruling on when Classic Edition Wild Filch is actually played, and to fix Classic Edition Super Filch's incorrect timing bar (so it agrees with both the text and the standard edition Super Filch).",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to implement the FAQ ruling on Sorcerer, to remove incorrect implication that all artifacts and flares have a \"victim,\" to clarify that Super Filch steals only one card, to implement the FAQ ruling on when Classic Edition Wild Filch is actually played.",
+                "revisedBugs": [
+                    { "bugID": "9" },
+                    { "bugID": "11" }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Future Pastimes"
@@ -7268,7 +7292,11 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify the reciprocal use of \"allies,\" for wording consistency, to avoid referring to a foreign planet as \"your\" planet, to fix the incorrect implication that all colony trades involve colonies from both players (as written, Filth technically requires both to vacate planets even if only one colony is being granted), to more safely attach this requirement to the actual trade itself rather than to the initial agreement (which could cause planets to be vacated too soon if something happens to alter or cancel the deal), for spelling consistency (all other powers that mention life forms - Chronos, Disease, Empath, Mutant, Parasite, Reincarnator, and Virus - spell it as two words), and to fix the mandatory flare bug. The power also incorrectly uses the word \"that\" without an antecedent, but this error is rendered moot by the colony trade recast.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify the reciprocal use of \"allies,\" to avoid referring to a foreign planet as \"your\" planet, to fix the incorrect implication that all colony trades involve colonies from both players (as written, Filth technically requires both to vacate planets even if only one colony is being granted), and to more safely attach this requirement to the actual trade itself rather than to the initial agreement (which could cause planets to be vacated too soon if something happens to alter or cancel the deal). The power also incorrectly uses the word \"that\" without an antecedent, but this error is rendered moot by the colony trade recast.",
+                "revisedBugs": [
+                    { "bugID": "9" },
+                    { "bugID": "5" }
+                ],
                 "expansion": "Cosmic Conflict",
                 "designers": [
                     "designed by the White Plains group",
@@ -7389,6 +7417,12 @@
                     }
                 },
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited to restore the correct wording convention (these two terms are not actually interchangeable).",
+                "revisedBugs": [
+                    {
+                        "bugID": "9",
+                        "description": "\"If this sheet is turned facedown\" is correct here, and makes the power resiliant against a cosmic zap."
+                    }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -7507,7 +7541,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency, to clarify that Wild Fodder does not allow you to join a side that did not invite you, and to resolve Super Fodder's ambiguity.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify that Wild Fodder does not allow you to join a side that did not invite you.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Jack Reda"
@@ -7626,7 +7665,13 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to fix the main player bug, to eliminate comma splice, for grammar, wording consistency, and brevity, to clarify interactions with game effects like Anti-Matter and Virus, to eliminate unnecessary/redundant/confusing phrases, to plug the leak introduced into Wild Fungus when Eon's original word \"lose\" was changed to \"discard\" (which sometimes leaves captured ships stranded ambiguously for the rest of the game), to fix the mandatory flare bug, to use consistent terminology between Fungus and Super Fungus, to fix Super Fungus' incorrect prerequisite and timing icons, and to apply Super Fungus consistently regardless of who releases their ships from the warp (such as another player using a Rift). The \"if any\" clause is puzzling. If it is trying to say \"if there are any captured ships\" then it is unnecessary, because if the flare was used then there will be captured ships. On the other hand, if it is trying to say \"if their owners have any colonies\" then it is starting a job it doesn't finish since it does not define what we should do if one or more owners do not have any colonies. This situation (like dozens of others) simply defaults to the general rule that if you are supposed to return ships to colonies and have none, you send your ships to the warp. In either case, the \"if any\" clause is neither necessary nor helpful.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify interactions with game effects like Anti-Matter and Virus, to plug the leak introduced into Wild Fungus when Eon's original word \"lose\" was changed to \"discard\" (which sometimes leaves captured ships stranded ambiguously for the rest of the game), and to apply Super Fungus consistently regardless of who releases their ships from the warp (such as another player using a Rift). The \"if any\" clause is puzzling. If it is trying to say \"if there are any captured ships\" then it is unnecessary, because if the flare was used then there will be captured ships. On the other hand, if it is trying to say \"if their owners have any colonies\" then it is starting a job it doesn't finish since it does not define what we should do if one or more owners do not have any colonies. This situation (like dozens of others) simply defaults to the general rule that if you are supposed to return ships to colonies and have none, you send your ships to the warp. In either case, the \"if any\" clause is unnecessary.",
+                "revisedBugs": [
+                    { "bugID": "4" },
+                    { "bugID": "9" },
+                    { "bugID": "5" },
+                    { "bugID": "11" }
+                ],
                 "expansion": "Cosmic Incursion",
                 "designers": [
                     "designed by Future Pastimes"
@@ -7745,7 +7790,11 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for readability, grammar, and wording consistency, to eliminate redundancy (no other effect in the game says to discard something and then adds another sentence to say that it stays discarded), to fix the mandatory flare bug, and to prevent Super Fury from saying \"use your power\" in a context where you don't actually use your power.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to prevent Super Fury from saying \"use your power\" in a context where you don't actually use your power.",
+                "revisedBugs": [
+                    { "bugID": "9" },
+                    { "bugID": "5" }
+                ],
                 "expansion": "Cosmic Incursion",
                 "designers": [
                     "designed by Kevin Wilson"
@@ -7870,7 +7919,10 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to resolve what happens with an unchallenged reward-back card, for grammar, to eliminate the Do Not Use conflict with Sorcerer, to implement FAQ ruling on Oracle, for wording consistency and punctuation, to eliminate trying to calculate a \"spread\" with negotiate cards, for terminology, and to fix Super Gambler's mathematical ambiguity.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to resolve what happens with an unchallenged reward-back card, to implement FAQ ruling on Oracle, to eliminate trying to calculate a \"spread\" with negotiate cards, and to fix Super Gambler's mathematical ambiguity.",
+                "revisedBugs": [
+                    { "bugID": "9" }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Future Pastimes"
@@ -7930,6 +7982,9 @@
                     }
                 },
                 "revisionNotes": "House rule from the Cosmodex\n\nThe printed Do Not Use restriction is easily overcome by simply allowing Gambler to still bluff about the card he originally played; in this case, Sorcerer must then accept or challenge Gambler's claim about the card Sorcerer is about to reveal (and may not look at it if he accepts the claim). This solution was offered by Bryan Stout in Encounter magazine v1n4p3.",
+                "revisedBugs": [
+                    { "bugID": "9" }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Future Pastimes"

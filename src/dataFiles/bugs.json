@@ -43,7 +43,7 @@
             "examples": []
         },
         "7" : {
-            "name": "Rewards Bug",
+            "name": "Rewards \"Bug\"",
             "origin": "Cosmodex",
             "description": "Rewards are specified inconsistently. Some effects just says \"rewards\" (which is perfectly adequate). Some say \"defender rewards\", Extortionist says \"defensive rewards\" and Ionic Gas says \"defensive ally rewards.\" These latter examples, aside from being inconsistent and unnecessarily verbose, are also potentially confusing with effects like the Reverse Rewards hazard, Vector, etc.. For conciseness, these are revised to just say \"rewards.\" In addition, Ghoul, Wild Ghoul, and Mercenary (but oddly not Wild Mercenary) add redundant text that partially explains what rewards are. Curiously, these additions omit any mention of the reward deck, even though it debuted in the same expansion set as those powers. These \"rules on cards\" have been removed, again, for conciseness and to prevent the implication that you, say, can't draw from the rewards deck.",
             "examples": []
