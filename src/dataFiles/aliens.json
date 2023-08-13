@@ -127,64 +127,6 @@
                 "short": "Converts Cards by Type",
                 "gameSetup": "",
                 "powerName": "You have the power of Transmutation.",
-                "powerBody": "Once per encounter, you may use this power to send one of your ships to the warp. Then, discard one card from your hand and take a card of the same type (attack, negotiate, artifact, etc) from any discard pile. You may transmute an attack card only if the two cards' values are within 4 of each other (such as an attack 08 and an attack 12).",
-                "powerTiming": {
-                    "player": "As Any Player",
-                    "choice": "Optional",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "history": "In a dark age, the Alchemists spun others' trash into treasure - for a substantial fee. Few knew it was all a scam, a generational confidence game of black-market purchases and using one race's abandoned input as another's miraculous output. Then, in an even darker age, as their intergalactic fraud seemed on the verge of exposure, the Alchemists discovered that harvesting and manipulating their own species' cerebella could provide the \"magic\" to make transmutation a reality. Thus was their operation finally legitimized, at a terrible cost.",
-                "wildBody": "You may discard one non-encounter card from your hand and take a different card of the same type (artifact, reinforcement, flare, etc.) from any discard pile.",
-                "wildTiming": {
-                    "player": "As Any Player",
-                    "choice": "",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "superBody": "When transmuting an attack card, you may exchange it for another attack card of any value.",
-                "superTiming": {
-                    "player": "As Any Player",
-                    "choice": "",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Dominion",
-                "designers": [
-                    "designed by the fans"
-                ],
-                "thumbnail": "avatar_Alchemist.png"
-            },
-            "revised": {
-                "name": "Alchemist",
-                "alert": "Yellow",
-                "short": "Converts Cards by Type",
-                "gameSetup": "",
-                "powerName": "You have the power of Transmutation.",
                 "powerBody": "Once per encounter, you may use this power to send one of your ships to the warp. Then, discard one card from your hand and take a card of the same type (attack, negotiate, artifact, etc.) from any discard pile. You may transmute an attack card only if the two cards' values are within 4 of each other (such as an attack 08 and an attack 12).",
                 "powerTiming": {
                     "player": "As Any Player",
@@ -231,7 +173,6 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by the fans"
@@ -391,7 +332,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -551,7 +497,16 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency and to eliminate the unnecessary and inconsistent \"rule on a card\" that has unintended consequences when the Amoeba player has some other way to gain a colony.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "8",
+                        "description": "The last sentence of the power has unintended consequences when the Amoeba player has some other way to gain a colony."
+                    }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Future Pastimes"
@@ -707,7 +662,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -863,7 +823,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Cedric Chin (as Fish)"
@@ -982,7 +947,19 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for grammar, to make the incorrect prerequisite icon consistent with other similar powers, for wording and capitalization consistency, and to fix the mandatory flare bug.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "5"
+                    },
+                    {
+                        "bugID": "11",
+                        "description": "\"As Any Player\" is more consistent with other powers' and effects' timing icons than \"Varies\", which is used only by Animal and Poison."
+                    }
+                ],
                 "expansion": "Cosmic Alliance",
                 "designers": [
                     "designed by Kevin Wilson"
@@ -1101,7 +1078,13 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to avoid implying that card values are modified, to clarify that the subtraction replaces the normal addition, for wording consistency, and for readability and consistency between Wild and Super Anti-Matter.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to avoid implying that card values are modified, and to clarify that the subtraction replaces the normal addition.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9",
+                        "description": "The super flare is modified to be consistent with the wild flare."
+                    }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Future Pastimes"
@@ -1220,7 +1203,15 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to remove uncesessary capitalisation.\n\nRevisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Cosmodex and The Praw.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -1280,6 +1271,14 @@
                     }
                 },
                 "revisionNotes": "House rule from The Praw\n\nPrevents Arcade from pwning when losing the encounter with attack vs negotiate.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -1459,7 +1458,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Future Pastimes",
@@ -1668,7 +1672,15 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for terminology, grammar, and punctuation, and to fix the rewards bug.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "7"
+                    }
+                ],
                 "expansion": "Cosmic Alliance",
                 "designers": [
                     "designed by Kevin Wilson"
@@ -1787,7 +1799,13 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for grammar, to clarify that Wild Barbarian can wait to see all the cards before deciding what to discard, and to fix Super Barbarian's main player bug.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for grammar, to clarify that Wild Barbarian can wait to see all the cards before deciding what to discard.",
+                "revisedBugs": [
+                    {
+                        "bugID": "4",
+                        "description": "Revised super flare."
+                    }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Alan Emrich"
@@ -1906,7 +1924,12 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for punctuation.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -2025,7 +2048,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Lila Boutin"
@@ -2146,7 +2174,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nClarifies that super flare does not let opposing players remove any ship in the encounter, only their own.\n\nRevisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Cosmodex and The Praw\n\nClarifies that super flare does not let opposing players remove any ship in the encounter, only their own.",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -2265,7 +2298,15 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to avoid suggesting that Bully increases the number of ships going to the warp when something like Lunatic, Spiff, or Sting is in play; to fix the coexistence bug; for wording consistency; to clarify that Wild Bully is allowing the opponent to choose between the two penalties; and to prevent that opponent from choosing ships that they are going to lose anyway (cf. Gambler).",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to avoid suggesting that Bully increases the number of ships going to the warp when something like Lunatic, Spiff, or Sting is in play; to clarify that Wild Bully is allowing the opponent to choose between the two penalties; and to prevent that opponent from choosing ships that they are going to lose anyway (cf. Gambler).",
+                "revisedBugs": [
+                    {
+                        "bugID": "1"
+                    },
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Cosmic Incursion",
                 "designers": [
                     "designed by Future Pastimes"
@@ -2384,7 +2425,15 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency and to fix the recurrent flare bug.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "6"
+                    }
+                ],
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -2503,7 +2552,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for terminology, sequencing, and wording consistency, to make the base power work correctly when the offense draws their own color, to prevent Wild Butler from allowing the player to ally against himself if they are the defense, to eliminate confusion from the incorrect statement about play resuming from where it left off, and to clarify that the surrogate offense's outcome affects whether the original offense may continue their turn.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to make the base power work correctly when the offense draws their own color, to prevent Wild Butler from allowing the player to ally against themselves if they are the defense, to eliminate confusion from the incorrect statement about play resuming from where it left off, and to clarify that the surrogate offense's outcome affects whether the original offense may continue their turn.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Cosmic Alliance",
                 "designers": [
                     "designed by Future Pastimes"
@@ -2622,7 +2676,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for capitalization, wording, and numeric formatting consistency, and to clarify that there is no equalization if the attack cards have the same value.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify that there is no equalization if the attack cards have the same value.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Future Pastimes"
@@ -2741,7 +2800,15 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for clarity and wording consistency, to fix the mandatory flare bug, and to clarify that the ally affected by Super Cavalry must still adhere to the base power's timing.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify that the ally affected by Super Cavalry must still adhere to the base power's timing.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "5"
+                    }
+                ],
                 "expansion": "Cosmic Conflict",
                 "designers": [
                     "designed by Mayfair Games"
@@ -2860,7 +2927,13 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording and capitalization consistency and to correctly refer to Warrior's tokens rather than the \"points\" they had in previous editions and for wording consistency.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9",
+                        "description": "Edited to correctly refer to the Warrior's tokens rather than \"points\", a relic from previous editions."
+                    }
+                ],
                 "expansion": "Cosmic Conflict",
                 "designers": [
                     "designed by Future Pastimes"
@@ -2980,7 +3053,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency and to eliminate the part of the history that is now untrue because of the retooled gameplay.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to eliminate the part of the history that is now untrue because of the retooled gameplay.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Mayfair Games",
@@ -3100,7 +3178,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for grammar, to add missing punctuation, for wording consistency, and to eliminate the implication that Super Chronos forces Chronos to change their encounter card.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to eliminate the implication that Super Chronos forces Chronos to change their encounter card.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Cosmic Incursion",
                 "designers": [
                     "designed by Future Pastimes"
@@ -3219,7 +3302,15 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to avoid the appearance of optionality, for wording consistency, to clarify that the nine unused flares are not sent to the discard pile, to resolve Wild Chrysalis' \"transform\" ambiguity and properly sequence its redraw before the go/no-go decision rather than after, and to fix the mandatory flare bug.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to avoid the appearance of optionality, to clarify that the nine unused flares are not sent to the discard pile, to resolve Wild Chrysalis' \"transform\" ambiguity and properly sequence its redraw before the go/no-go decision rather than after.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "5"
+                    }
+                ],
                 "expansion": "Cosmic Alliance",
                 "designers": [
                     "designed by Kevin Wilson"
@@ -3338,7 +3429,15 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify that placing a citadel card is limited to once per encounter rather than once per turn, to fix the attack bug, for wording consistency and grammar, to plug the gameplay leak that left deals, failed deals, and canceled encounters undefined, and to give the power a cleaner exit condition (even though this contradicts the FAQ). (Note from The Praw, as of the 2018 FAQ the cleaner exit condition is actually no longer a contradiction.)",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify that placing a citadel card is limited to once per encounter rather than once per turn, to plug the gameplay leak that left deals, failed deals, and canceled encounters undefined, and to give the power a cleaner exit condition.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "4"
+                    }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Kevin Wilson"
@@ -3457,7 +3556,15 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to fix the negotiate card leak; for clarity, spelling, and wording consistency; for brevity (to make room for other corrections); and to fix the mandatory flare bug.\n\n:",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to fix the negotiate card leak; and for brevity (to make room for other corrections)",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "5"
+                    }
+                ],
                 "expansion": "Cosmic Conflict",
                 "designers": [
                     "designed by James Hata"
@@ -3576,7 +3683,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for grammar.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -3695,7 +3807,15 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for capitalization, to implement the FAQ ruling on Sorcerer, to fix Wild Clone's recurrent flare bug, and to clarify that Wild Clone can be played after the artifact has had its effect (rather than having to play the flare first and risk the artifact getting Card Zapped).",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to implement the FAQ ruling on Sorcerer, and to clarify that Wild Clone can be played after the artifact has had its effect (rather than having to play the flare first and risk the artifact getting Card Zapped).",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "6"
+                    }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Future Pastimes"
@@ -3814,7 +3934,12 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -3939,7 +4064,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -4007,7 +4137,7 @@
             "revised": {
                 "name": "Coward",
                 "alert": "Yellow",
-                "short": "Withdraws From Encounter",
+                "short": "Withdraws From Encounters",
                 "gameSetup": "",
                 "powerName": "You have the power to Flee.",
                 "powerBody": "s As a main player, after encounter cards are selected but before they are revealed, you may use this power to flee. Proceed to the resolution phase. Your opponent wins, your ships and those of your allies return to other colonies, and your flight counts as a success for you rather than a loss. After encounter cards are discarded, you receive one reward for each ship your opponent had in the encounter.",
@@ -4056,7 +4186,13 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to make the alien sheet's short power description agree with that of the flare.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9",
+                        "description": "Alien sheet's short description modified to match the flare."
+                    }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [],
                 "thumbnail": "avatar_Coward.png"
@@ -4173,7 +4309,13 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to restore the correct wording convention (these two terms are not actually interchangeable).",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9",
+                        "description": "\"If this sheet is turned facedown\" is correct here, and makes the power resiliant against a cosmic zap."
+                    }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -4292,7 +4434,16 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for clarity, spelling, wording consistency, and grammar; to fix Super Cryo's prerequisite and timing indicators to accommodate its second effect; and to clarify its first effect in light of the revised indicators.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "11",
+                        "description": "Edited to accomodate the super's second effect."
+                    }
+                ],
                 "expansion": "Cosmic Incursion",
                 "designers": [
                     "designed by Jack Reda"
@@ -4411,7 +4562,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for grammar and wording consistency.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Cosmic Alliance",
                 "designers": [
                     "designed by Kevin Wilson"
@@ -4530,7 +4686,15 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency and to fix the recurrent flare bug.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "6"
+                    }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Ken Hubbard"
@@ -4649,7 +4813,12 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -4768,7 +4937,15 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency, to fix major leaks, to eliminate the ambiguity about cards that \"would normally be discarded,\" to eliminate redundancy, for readability, to fit the text onto the standard art template, for grammar, to fix the mandatory flare bug, and to fix various issues with Super Cyborg not actually being \"played,\" leaving your hand temporarily but remaining under your control, ending up stuck as a useless bionics card, etc.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to fix major leaks, to eliminate the ambiguity about cards that \"would normally be discarded,\" to eliminate redundancy, and to fix various issues with Super Cyborg not actually being \"played,\" leaving your hand temporarily but remaining under your control, ending up stuck as a useless bionics card, etc.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    },
+                    {
+                        "bugID": "5"
+                    }
+                ],
                 "expansion": "Cosmic Alliance",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -4889,7 +5066,11 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Zach Whelchel"
@@ -5010,7 +5191,11 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "42nd Anniversary Edition",
                 "designers": [
                     "designed by Robin Raianiemi"
@@ -5129,7 +5314,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -5248,7 +5438,12 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency and to clarify that Wild Deuce allows discarding a card only from your hand.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify that Wild Deuce allows discarding a card only from your hand.",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Cosmic Incursion",
                 "designers": [
                     "designed by Future Pastimes"
@@ -5368,7 +5563,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency.",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {
+                        "bugID": "9"
+                    }
+                ],
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Future Pastimes",
@@ -5489,7 +5689,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Future Pastimes",
@@ -5609,7 +5814,11 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to fix the thematic impossibility of infecting a player that was already infected, to remove the ambiguity about the prerequisite for infecting, to fix the coexistence bug, to clarify that Disease cannot infect himself even on a wild destiny, for grammar and wording consistency, to avoid misusing the game term \"reveal,\" and to clarify that Super Disease does not allow moving other players' ships.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to fix the thematic impossibility of infecting a player that was already infected, to remove the ambiguity about the prerequisite for infecting, to clarify that Disease cannot infect himself even on a wild destiny, to avoid misusing the game term \"reveal,\" and to clarify that Super Disease does not allow moving other players' ships.",
+                "revisedBugs": [
+                    {"bugID": "9"},
+                    {"bugID": "1"}
+                ],
                 "expansion": "Cosmic Incursion",
                 "designers": [
                     "designed by Future Pastimes"
@@ -5729,7 +5938,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Future Pastimes",
@@ -5910,7 +6124,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency, to clarify that the first use of \"negotiate\" includes Crooked Deals while the second use excludes them, to fix the mandatory flare bug and the rewards bug, and to keep Masochist from abusing Classic Wild Empath for an immediate win.",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify that the first use of \"negotiate\" includes Crooked Deals while the second use excludes them, and to keep Masochist from abusing Classic Wild Empath for an immediate win.",
+                "revisedBugs": [
+                    {"bugID": "9"},
+                    {"bugID": "5"},
+                    {"bugID": "7"}
+                ],
                 "expansion": "Cosmic Conflict",
                 "designers": [
                     "designed by Future Pastimes",
@@ -6028,7 +6247,12 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [],
                 "thumbnail": "avatar_Emperor.png"
@@ -6146,7 +6370,10 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex",
+                "revisedBugs": [
+                    {"bugID": "9"}
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Warren Denning",
@@ -8537,7 +8764,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Chris Oliveira"
@@ -10565,7 +10797,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Future Pastimes",
@@ -12664,7 +12901,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Cedric Chin (as Alexander)"
@@ -13140,7 +13382,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -13378,7 +13625,12 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by the fans"
@@ -13772,7 +14024,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -14662,7 +14919,12 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -14900,7 +15162,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -15795,7 +16062,12 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by the fans"
@@ -16752,7 +17024,12 @@
                     }
                 },
                 "flareSpecialBody": "If at any time you play any other super flare and the Reactor is playing, you must give them this flare.",
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Jack Reda"
@@ -19593,7 +19870,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -21264,7 +21546,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Bryan Stout (as Federalist)",
@@ -22518,7 +22805,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Tess Boutin"
@@ -22996,7 +23288,12 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -23235,7 +23532,12 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
+                "revisionNotes": "Revisions from the Praw",
+                "revisedBugs": [
+                    {
+                        "bugID": "10"
+                    }
+                ],
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by George Membreno",
