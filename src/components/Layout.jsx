@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -9,19 +9,21 @@ import ScrollIntoView from "./ScrollIntoView";
 export default function Layout(props) {
     return (
         <div className="App">
-            <Helmet>
-            <title>The Praw {props.title ? "- " + props.title : "" }</title>
-            </Helmet>
-            <ScrollIntoView>
-                <Header />
-                <main>
-                    <Container>
-                        <Breadcrumbs />
-                        {props.children}
-                    </Container>
-                </main>
-                <Footer />
-            </ScrollIntoView>
+            <HelmetProvider>
+                <Helmet>
+                    <title>The Praw {props.title ? "- " + props.title : ""}</title>
+                </Helmet>
+                <ScrollIntoView>
+                    <Header />
+                    <main>
+                        <Container>
+                            <Breadcrumbs />
+                            {props.children}
+                        </Container>
+                    </main>
+                    <Footer />
+                </ScrollIntoView>
+            </HelmetProvider>
         </div>
     );
 }
