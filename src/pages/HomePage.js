@@ -1,15 +1,22 @@
 import Layout from '../components/Layout'
-import Searchbar from '../components/Searchbar'
-
+import { Alert } from 'reactstrap'
 
 export default function Home() {
   return (
     <Layout>
-      <section className="hero text-center">
-        <h1 className="hero__title">The Praw</h1>
-        <p className="hero__subtitle">A Fan-Made Website for <a href="https://futurepastimes.com/cosmic-encounter-board-game">Cosmic Encounter</a></p>
-        <Searchbar/>
-      </section>
+      <br/>
+      <br/>
+      <br/>
+      <h1>We've moved!</h1>
+      <Alert color="light">
+        <p className="d-inline"></p><a
+          className="alert-link"
+          href="https://the-praw.vercel.app/"
+          rel="noreferrer"
+          target="_external"
+        >Click here to access the new site!
+        </a>
+      </Alert>
     </Layout>
   );
 }
