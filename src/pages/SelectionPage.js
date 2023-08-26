@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSearchParams } from 'react-router-dom'
 import GridBrowser from "../components/GridBrowser";
 import Layout from '../components/Layout';
-import TimingBar from '../components/TimingBar';
-import Aliens from '../dataFiles/aliens.json';
+import Loading from '../components/Loading';
 import {
   Card,
   CardBody,
@@ -22,6 +21,10 @@ import {
   FormFeedback
 } from 'reactstrap';
 
+import { getAllAliens } from "../supabaseAPI/getAlien"
+
+import Alien from '../components/Alien'
+
 function filterAliens(aliens, search, expansions, revised, alerts
   // , phases, exactPhases
 ) {
@@ -37,9 +40,6 @@ function filterAliens(aliens, search, expansions, revised, alerts
 
   let filteredAliens = Object.entries(aliens);
 
-  // console.log(filteredAliens)
-  // console.log(revised)
-
   if (revised) {
     filteredAliens = filteredAliens.filter(alien => alien[1].revised ? alien[1].revised.name.toLowerCase().includes(search.toLowerCase()) : alien[1].original.name.toLowerCase().includes(search.toLowerCase()))
     filteredAliens = filteredAliens.filter(alien => alien[1].revised ? expansions.includes(alien[1].revised.expansion) : expansions.includes(alien[1].original.expansion))
@@ -49,12 +49,6 @@ function filterAliens(aliens, search, expansions, revised, alerts
     filteredAliens = filteredAliens.filter(alien => expansions.includes(alien[1].original.expansion))
     filteredAliens = filteredAliens.filter(alien => alerts.includes(alien[1].original.alert))
   }
-  // if (exactPhases){
-  //   filteredAliens = filteredAliens.filter((alien) => phases === Object.keys(alien.phases).filter((phase) => alien.phases[phase]).map((phase) => phase))
-  // } else {
-  //   filteredAliens = filteredAliens.filter((alien) => phases.filter(phase => alien.phases[phase]).length > 0)
-  // }
-  // console.log(filteredAliens)
   return Object.fromEntries(filteredAliens)
 
 }
@@ -132,13 +126,13 @@ function giveAliens(aliens, player, seed, drawnCount, preventBans) {
     const bans = []
     alienIDS.forEach(alienID => {
       if (aliens[alienID].original.bans) {
-        aliens[alienID].original.bans.forEach(ban => {
+        Object.keys(aliens[alienID].original.bans).forEach(ban => {
           bans.push([alienID, ban])
         }
         )
       }
     })
-    console.log(shuffledAlienIDS)
+    // console.log(shuffledAlienIDS)
     bans.forEach(ban => {
       if (shuffledAlienIDS.includes(ban[0]) && shuffledAlienIDS.includes(ban[1])) {
         if (shuffledAlienIDS.indexOf(ban[0]) > shuffledAlienIDS.indexOf(ban[1])) {
@@ -165,10 +159,11 @@ function AlienViewButton(props) {
     <Modal isOpen={modal} toggle={toggle} {...props} scrollable>
       <ModalHeader toggle={toggle}>{alien.name}</ModalHeader>
       <ModalBody>
-        <h3>{alien.alert}</h3>
+        <Alien alien={{"original": alien}} tab="original" />
+        {/* <h3>{alien.alert}</h3>
         {alien.gameSetup ? <p><strong>Game Setup:</strong> {alien.gameSetup}</p> : null}
-          {/* dangerouslySetInnerHTML is, well, dangerous when used on user submitted stuff. But aliens.json is trustworthy, so this is fine albiet jank.
-          If/when I add a homebrew aliens option, PLEASE PLEASE PLEASE dont forget to sanitise them. */}
+          {/ * dangerouslySetInnerHTML is, well, dangerous when used on user submitted stuff. But aliens.json is trustworthy, so this is fine albiet jank.
+          If/when I add a homebrew aliens option, PLEASE PLEASE PLEASE dont forget to sanitise them. * /}
           <p><strong>{alien.powerName}</strong> <span dangerouslySetInnerHTML={
             {
               __html: alien.powerBody
@@ -213,7 +208,7 @@ function AlienViewButton(props) {
               <TimingBar timing={alien.superClassicTiming} />
             </div>
           ) : null
-        }
+        } */}
       </ModalBody>
       <ModalFooter>
         <Button color="secondary" onClick={toggle}>
@@ -244,6 +239,15 @@ export default function Selection() {
   const [preventBans, setPreventBans] = useState(true);
 
   const [errorModal, setErrorModal] = useState(false);
+
+  const [allAliens, setAllAliens] = useState([])
+
+  useEffect(() => {
+    getAllAliens()
+      .then((data) => {
+        setAllAliens(data)
+      })
+  }, [])
 
   let submittedExpansions = ["Base Set", "42nd Anniversary Edition", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "Cosmic Odyssey"];
   submittedExpansions = submittedExpansions.filter((expansion) => searchParams.get(expansion) !== 'false');
@@ -338,7 +342,7 @@ export default function Selection() {
               }
               if (playerNumber) {
                 setPlayerNumberError(false)
-                let results = Object.entries(filterAliens(Aliens.aliens, "",
+                let results = Object.entries(filterAliens(allAliens, "",
                   Object.keys(expansions).filter((expansion) => expansions[expansion][0]).map((expansion) => expansion), revised, alerts));
                 results = results.filter(alien => !excludedAliens.includes(alien[0]))
                 if (!useGameSetup) {
@@ -351,7 +355,7 @@ export default function Selection() {
                 }
                 results = Object.fromEntries(results)
                 let selectedAliens = giveAliens(results, playerNumber, usedSeed, Number(drawnCount), preventBans);
-                selectedAliens = selectedAliens.map((alien) => [alien, Aliens.aliens[alien]])
+                selectedAliens = selectedAliens.map((alien) => [alien, allAliens[alien]])
                 if (selectedAliens.length < Number(drawnCount)) {
                   setErrorModal(true)
                 } else {
@@ -521,7 +525,8 @@ export default function Selection() {
                     />
                   </FormGroup>
                   <div className="overflow-y-scroll overflow-x-hidden" style={{ height: '10vh', resize: "vertical" }}>
-                    {groupByN(3, sortAliens(filterAliens(Aliens.aliens, excludeAliensSearch))).map(row => {
+                    {Object.keys(allAliens).length === 0 ? <Loading color="dark"/> : null}
+                    {groupByN(3, sortAliens(filterAliens(allAliens, excludeAliensSearch))).map(row => {
                       return (
                         <Row key={row}>
                           {
@@ -613,7 +618,7 @@ export default function Selection() {
             </Row>
             <Row>
               <Col>
-                <Button type="submit" className="w-100 mt-3">Submit</Button>
+                <Button type="submit" className="w-100 mt-3" disabled={allAliens === []}>Submit</Button>
               </Col>
             </Row>
           </Form>

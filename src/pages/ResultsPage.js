@@ -14,7 +14,6 @@ import GridBrowser from "../components/GridBrowser";
 import Layout from '../components/Layout'
 import Searchbar from '../components/Searchbar'
 
-import Aliens from '../dataFiles/aliens.json';
 import Evolutions from '../dataFiles/evolutions.json';
 import Hazards from '../dataFiles/hazards.json';
 import Lux from '../dataFiles/lux.json';
@@ -24,6 +23,8 @@ import Stations from '../dataFiles/stations.json';
 import Technology from '../dataFiles/technology.json';
 
 import Fuse from 'fuse.js'
+
+import { getAllAliens } from "../supabaseAPI/getAlien"
 
 
 function Item(props) {
@@ -86,9 +87,9 @@ function Item(props) {
   )
 }
 
-function GetallItems() {
+async function GetallItems() {
 
-  let items = Object.entries(Aliens.aliens)
+  let items = Object.entries(await getAllAliens())
     .map((entry) => ["Aliens/" + entry[0], entry[1]]);
 
   items = items.concat(Object.entries(Evolutions.evolutions)
@@ -194,62 +195,44 @@ export default function ResultsPage() {
   // }, [submittedQuery])
 
   useEffect(() => {
-    const allItems = Object.entries(GetallItems());
+    GetallItems().then(data => {
+      const allItems = Object.entries(data);
 
-    // const allItems = allItems.map((item) => {
-    //   if (item[0].includes('Alien')) {
-    //     return ({
-    //       'id': item[0], 'name': item[1].original.name, 'body':
-    //         (item[1].original.gameSetup +
-    //           item[1].original.powerName +
-    //           item[1].original.powerBody +
-    //           item[1].original.history +
-    //           item[1].original.wildBody +
-    //           item[1].original.superBody)
-    //     })
+      const options = {
+        includeScore: true,
+        includeMatches: true,
+        threshold: 0.6,
+        keys: [
+          { name: 'name', getFn: (item) => item[1].original.name },
+          {
+            name: 'body', getFn: (item) => {
+              if (item[0].includes('Alien')) {
+                return (
+                  (item[1].original.gameSetup +
+                    item[1].original.powerName +
+                    item[1].original.powerBody +
+                    item[1].original.history +
+                    item[1].original.wildBody +
+                    item[1].original.superBody))
 
-    //   } else if (item[0].includes('Evolution')) {
-    //     return ({ 'id': item[0], 'name': item[1].original.name.replaceAll('æ', 'ae'), 'body': item[1].original.body })
-    //   } else {
-    //     return ({ 'id': item[0], 'name': item[1].original.name, 'body': item[1].original.body })
-    //   }
-    // })
-    // console.log(allItems)
-
-    const options = {
-      includeScore: true,
-      includeMatches: true,
-      threshold: 0.6,
-      keys: [
-        { name: 'name', getFn: (item) => item[1].original.name },
-        {
-          name: 'body', getFn: (item) => {
-            if (item[0].includes('Alien')) {
-              return (
-                (item[1].original.gameSetup +
-                  item[1].original.powerName +
-                  item[1].original.powerBody +
-                  item[1].original.history +
-                  item[1].original.wildBody +
-                  item[1].original.superBody))
-
-            } else if (item[0].includes('Evolution')) {
-              return (item[1].original.body )
-            } else {
-              return (item[1].original.body )
+              } else if (item[0].includes('Evolution')) {
+                return (item[1].original.body)
+              } else {
+                return (item[1].original.body)
+              }
             }
           }
-        }
-      ]
-    }
-    const fuse = new Fuse(allItems, options)
-    const fuseQuery = { name: `${submittedQuery}` }
-    // const lunrQuery = `*${submittedQuery.replace(' ', '* *')}*`
-    // console.log(fuseQuery)
-    console.log(fuse.search(fuseQuery))
-    // console.log(fuse.search(fuseQuery).map(result => [result.item[0], Object.fromEntries(allItems)[result.item[0]]]))
-    setSearchResults(fuse.search(fuseQuery)
-      .map(result => [result.item[0], Object.fromEntries(allItems)[result.item[0]]]))
+        ]
+      }
+      const fuse = new Fuse(allItems, options)
+      const fuseQuery = { name: `${submittedQuery}` }
+      // const lunrQuery = `*${submittedQuery.replace(' ', '* *')}*`
+      // console.log(fuseQuery)
+      console.log(fuse.search(fuseQuery))
+      // console.log(fuse.search(fuseQuery).map(result => [result.item[0], Object.fromEntries(allItems)[result.item[0]]]))
+      setSearchResults(fuse.search(fuseQuery)
+        .map(result => [result.item[0], Object.fromEntries(allItems)[result.item[0]]]))
+    })
   }, [submittedQuery])
 
   return (

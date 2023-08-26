@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSearchParams, createSearchParams, useNavigate } from 'react-router-dom'
 import {
   Card,
@@ -17,10 +17,12 @@ import {
   Button
 } from 'reactstrap';
 import { Link } from "react-router-dom"
-import Aliens from '../../dataFiles/aliens.json';
 import { ReactComponent as SearchLogo } from '../../svg/searchIcon.svg';
 import GridBrowser from "../../components/GridBrowser";
 import Layout from '../../components/Layout'
+import Loading from '../../components/Loading'
+
+import { getAllAliens } from "../../supabaseAPI/getAlien"
 
 function Alien(props) {
   const alien = props.content
@@ -66,6 +68,8 @@ function filterAliens(aliens, search, expansions, phases, exactPhases, player, e
   }
 
   let filteredAliens = Object.entries(aliens);
+
+  console.log(filteredAliens)
 
   filteredAliens = filteredAliens.filter((alien) => alien[1].original.name.toLowerCase().includes(search.toLowerCase()))
   filteredAliens = filteredAliens.filter((alien) => expansions.includes(alien[1].original.expansion))
@@ -241,6 +245,14 @@ export default function AliensListPage() {
   const submittedQuery = (searchParams.get('search') || '');
   const [searchQuery, setSearchQuery] = useState(submittedQuery);
 
+  const [aliens, setAliens] = useState([])
+  useEffect(() => {
+    getAllAliens()
+      .then((data) => {
+        setAliens(data)
+      })
+  }, [])
+
   let submittedExpansions = ["Base Set", "42nd Anniversary Edition", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "Cosmic Odyssey"];
   submittedExpansions = submittedExpansions.filter((expansion) => searchParams.get(expansion) !== 'false');
   const expansions = {
@@ -310,7 +322,7 @@ export default function AliensListPage() {
 
   const navigate = useNavigate();
 
-  let filteredAliens = filterAliens(Aliens.aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases, submittedPlayer, submittedExactPlayer, submittedAlertLevels)
+  let filteredAliens = filterAliens(aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases, submittedPlayer, submittedExactPlayer, submittedAlertLevels)
 
   return (
     <Layout title="Aliens">
@@ -469,6 +481,7 @@ export default function AliensListPage() {
         content={filteredAliens}
         width={4}
       />
+      { Object.keys(filteredAliens).length === 0 ? <Loading/> : null}
     </Layout>
   );
 }
