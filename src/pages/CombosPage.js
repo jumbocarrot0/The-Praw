@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import combosData from '../dataFiles/combos.json';
 import {
   Button, Table, Row, Label, Input, FormGroup
 } from 'reactstrap';
 import { Link } from "react-router-dom"
-import Aliens from '../dataFiles/aliens.json';
 import Layout from '../components/Layout'
+import Loading from '../components/Loading'
+
+import { getRandomCombo } from "../supabaseAPI/getCombo";
 
 function Combo(props) {
   // console.log(props.Name)
@@ -15,21 +17,21 @@ function Combo(props) {
       <thead>
         <tr>
           <th colSpan={2}>
-            <h2>{props.Name}</h2>
-            <strong>{props.Author}</strong>
+            <h2>{props.name}</h2>
+            <strong>{props.author}</strong>
           </th>
         </tr>
       </thead>
       <tbody>
         <tr><th scope="row" rowSpan={3} className="align-middle">3-Player</th>
-          <td>{Aliens.aliens[props.Aliens[0]].original.name}</td></tr>
-        <tr><td>{Aliens.aliens[props.Aliens[1]].original.name}</td></tr>
-        <tr><td>{Aliens.aliens[props.Aliens[2]].original.name}</td></tr>
-        <tr><th scope="row">4-Player</th><td>{Aliens.aliens[props.Aliens[3]].original.name}</td></tr>
-        <tr><th scope="row">5-Player</th><td>{Aliens.aliens[props.Aliens[4]].original.name}</td></tr>
-        <tr><th scope="row">6-Player</th><td>{Aliens.aliens[props.Aliens[5]].original.name}</td></tr>
-        <tr><th scope="row">7-Player</th><td>{Aliens.aliens[props.Aliens[6]].original.name}</td></tr>
-        <tr><th scope="row">8-Player</th><td>{Aliens.aliens[props.Aliens[7]].original.name}</td></tr>
+          <td>{props.alien1data.original.name}</td></tr>
+        <tr><td>{props.alien2data.original.name}</td></tr>
+        <tr><td>{props.alien3data.original.name}</td></tr>
+        <tr><th scope="row">4-Player</th><td>{props.alien4data.original.name}</td></tr>
+        <tr><th scope="row">5-Player</th><td>{props.alien5data.original.name}</td></tr>
+        <tr><th scope="row">6-Player</th><td>{props.alien6data.original.name}</td></tr>
+        <tr><th scope="row">7-Player</th><td>{props.alien7data.original.name}</td></tr>
+        <tr><th scope="row">8-Player</th><td>{props.alien8data.original.name}</td></tr>
       </tbody>
     </Table>
   )
@@ -41,25 +43,41 @@ function RandomCombo() {
 }
 
 export default function Combos() {
-  const [combo, setCombo] = useState(RandomCombo())
+  const [combo, setCombo] = useState(undefined)
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    getRandomCombo()
+      .then((data) => {
+        // console.log(data)
+        setCombo(data)
+      })
+  }, [])
+
   // console.log(combo)
-  return (
-    <Layout title="Combos">
-      <Row>
-        <h1 className="text-center">Combos</h1>
-        <div className="d-flex justify-content-center">
-          <Combo {...combo} />
-        </div>
-        <div className="d-flex justify-content-center">
-          <Button
-            color="primary"
-            onClick={() => { setCombo(RandomCombo()) }}
-          >
-            New Combo!
-          </Button>
-        </div>
-        <div className="d-flex justify-content-center">
-          <FormGroup>
+  if (combo === undefined) {
+    return (<Layout title="Combos">
+      <Loading />
+    </Layout>)
+  } else {
+    return (
+      <Layout title="Combos">
+        <Row>
+          <h1 className="text-center">Combos</h1>
+          <div className="d-flex justify-content-center">
+            <Combo {...combo} />
+          </div>
+          <div className="d-flex justify-content-center">
+            <Button
+              color="primary"
+              onClick={() => { setLoading(true); getRandomCombo().then(data => setCombo(data)).then(_ => setLoading(false)) }}
+              disabled={loading}
+            >
+              New Combo!
+            </Button>
+          </div>
+          <div className="d-flex justify-content-center">
+          {/* <FormGroup>
             <Label for="exampleSelect">
               Select Combo
             </Label>
@@ -67,7 +85,7 @@ export default function Combos() {
               id="exampleSelect"
               name="select"
               type="select"
-              onChange={(e) => {setCombo(combosData[e.target.value])}}
+              onChange={(e) => { getCombo(e.target.value).then(data => setCombo(data))}}
             >
               <option value={undefined} disabled>
                 Select Combo
@@ -83,14 +101,15 @@ export default function Combos() {
                 })
               }
             </Input>
-          </FormGroup>
+          </FormGroup> */}
         </div>
-      </Row>
-      <Row className="row mt-5">
-        <div className="d-flex justify-content-center">
-          <Link className="btn btn-primary w-50" to="https://forms.gle/Xg7aXQsrtitM1dFw9" role="button" target="_blank" rel="external">Submit your own Combo!</Link>
-        </div>
-      </Row>
-    </Layout>
-  );
+        </Row>
+        <Row className="row mt-5">
+          <div className="d-flex justify-content-center">
+            <Link className="btn btn-primary w-50" to="https://forms.gle/Xg7aXQsrtitM1dFw9" role="button" target="_blank" rel="external">Submit your own Combo!</Link>
+          </div>
+        </Row>
+      </Layout>
+    );
+  }
 }
