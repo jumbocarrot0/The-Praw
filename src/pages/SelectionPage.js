@@ -23,7 +23,7 @@ import {
 
 import { getAllAliens } from "../supabaseAPI/getAlien"
 
-import Alien from '../components/Alien'
+import AlienModal from '../components/Alien'
 
 function filterAliens(aliens, search, expansions, revised, alerts
   // , phases, exactPhases
@@ -156,10 +156,10 @@ function AlienViewButton(props) {
   // console.log(alien)
 
   return (<div>
-    <Modal isOpen={modal} toggle={toggle} {...props} scrollable>
+    <Modal isOpen={modal} toggle={toggle} {...props} size={"xl"} scrollable>
       <ModalHeader toggle={toggle}>{alien.name}</ModalHeader>
       <ModalBody>
-        <Alien alien={{"original": alien}} tab="original" />
+        <AlienModal alien={{"original": alien}} tab="original" />
         {/* <h3>{alien.alert}</h3>
         {alien.gameSetup ? <p><strong>Game Setup:</strong> {alien.gameSetup}</p> : null}
           {/ * dangerouslySetInnerHTML is, well, dangerous when used on user submitted stuff. But aliens.json is trustworthy, so this is fine albiet jank.
@@ -274,6 +274,7 @@ export default function Selection() {
 
   function Alien(props) {
     const alien = props.content
+    console.log('alien:', alien)
     return (
       <Card className={"mb-5 border border-5 position-relative text-center " +
         (alien.alert === "Green" ? "border-success" : alien.alert === "Yellow" ? "border-warning" : "border-danger")
@@ -628,7 +629,7 @@ export default function Selection() {
       <GridBrowser cardTemplate={Alien}
         url="/Aliens"
         content={givenAliens}
-        revised
+        revised={revised}
         noSort
       />
     </Layout>
