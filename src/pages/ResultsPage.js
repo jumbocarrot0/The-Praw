@@ -13,6 +13,7 @@ import { Link } from "react-router-dom"
 import GridBrowser from "../components/GridBrowser";
 import Layout from '../components/Layout'
 import Searchbar from '../components/Searchbar'
+import Loading from '../components/Loading'
 
 import Evolutions from '../dataFiles/evolutions.json';
 import Hazards from '../dataFiles/hazards.json';
@@ -158,6 +159,7 @@ export default function ResultsPage() {
   const searchParams = useSearchParams()[0];
   const submittedQuery = (searchParams.get('search') || '');
   const [searchResults, setSearchResults] = useState([])
+  const [loading, setLoading] = useState(true)
 
   // useEffect(() => {
   //   const allItems = Object.entries(GetallItems());
@@ -232,7 +234,7 @@ export default function ResultsPage() {
       // console.log(fuse.search(fuseQuery).map(result => [result.item[0], Object.fromEntries(allItems)[result.item[0]]]))
       setSearchResults(fuse.search(fuseQuery)
         .map(result => [result.item[0], Object.fromEntries(allItems)[result.item[0]]]))
-    })
+    }).then(_ => setLoading(false))
   }, [submittedQuery])
 
   return (
@@ -242,16 +244,30 @@ export default function ResultsPage() {
         <Col sm={8}>
           <Searchbar />
           <hr className="border border-light border-2 opacity-100 mb-5" />
-          <GridBrowser cardTemplate={Item}
-            url=""
-            content={Object.fromEntries(searchResults.slice(0, resultsShown))}
-            noSort
-            width={1}
-          />
+          {loading ? <Loading color="light" /> :
+            <GridBrowser cardTemplate={Item}
+              url=""
+              content={Object.fromEntries(searchResults.slice(0, resultsShown))}
+              noSort
+              width={1}
+            />
+          }
           {resultsShown < searchResults.length ?
             <Button color="secondary" className='w-100 fs-2' onClick={() => setResultsShown(resultsShown + resultsPerPage)}>
               More Results
             </Button>
+            : null
+          }
+          {searchResults.length === 0 && !loading ?
+            <div>
+              <h3>Sorry! We couldn't find anything!</h3>
+              <p></p>
+              <ul>
+                <li>Make sure that all words are spelled correctly.</li>
+                <li>Try different keywords.</li>
+                <li>Try more general keywords.</li>
+              </ul>
+            </div>
             : null
           }
         </Col>
