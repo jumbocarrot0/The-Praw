@@ -60,6 +60,11 @@ export default function PrawNav() {
                   Alien Dealer
                 </Link>
               </DropdownItem>
+              <DropdownItem>
+                <Link className="nav-link" to="/Geek">
+                  Geek Practice
+                </Link>
+              </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <NavItem key={6}>

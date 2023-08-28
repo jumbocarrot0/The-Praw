@@ -17,9 +17,7 @@ export default function Home() {
         <p className="hero__subtitle">A Fan-Made Website for <a href="https://futurepastimes.com/cosmic-encounter-board-game">Cosmic Encounter</a></p>
         <Searchbar />
         <Button className='mt-5 fs-3' color="primary" onClick={() => {
-          const aliens = require('../dataFiles/aliens.json')
-          let randomAlienIndex = Math.floor(Math.random() * Object.keys(aliens.aliens).length)
-          randomAlienIndex = Object.keys(aliens.aliens)[randomAlienIndex]
+          const randomAlienIndex = Math.floor(Math.random() * 237)
           navigate({pathname: `/Aliens/${randomAlienIndex}`})
         }}>
           Random Alien

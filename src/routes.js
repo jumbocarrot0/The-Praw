@@ -4,6 +4,7 @@ import Results from "./pages/ResultsPage";
 import Combos from "./pages/CombosPage";
 import HouseRulesPage from "./pages/HouseRulesPage";
 import SelectionPage from "./pages/SelectionPage";
+import GeekPage from "./pages/GeekPage";
 
 import AlienListPage from "./pages/Lists/AlienListPage";
 import IndividualAlienPage from "./pages/IndividualItem/IndividualAlienPage";
@@ -59,6 +60,10 @@ export const routes = [
     {
       path: "/Combos",
       element: <Combos />,
+    },
+    {
+      path: "/Geek",
+      element: <GeekPage />,
     },
     {
       path: "/Aliens",
