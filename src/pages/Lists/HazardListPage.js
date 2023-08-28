@@ -8,6 +8,7 @@ import {
   AccordionHeader,
   AccordionItem
 } from 'reactstrap'
+import { Link } from "react-router-dom"
 
 export default function HazardListPage() {
   return (
@@ -43,8 +44,11 @@ export default function HazardListPage() {
             <p className="text-light">Cosmic Conflict had two types of hazards, and Cosmic Odyssey added two new types of hazard cards.</p>
             <ul>
               <li className="text-light">Temporary, which is the standard hazard card that is not labeled otherwise. When such a card is drawn, its effect is resolved and discarded.</li>
-              <li className="text-light">Semi-Permanent, which are hazard cards that have a yellow bar that reads "Semi-Permanent". These remain in play and have a continuous effect. When another Semi-Permanent card is placed in the play area, the previous card is discarded.</li>
               <li className="text-light">Permanent, which are hazards card that have a red bar that reads "Remains in play". These remain in play and have a continuous effect. Some have a condition on the card that cause the hazard to be discarded.</li>
+              <li className="text-light">Semi-Permanent, which are hazard cards that have a yellow bar that reads "Semi-Permanent". These remain in play and have a continuous effect. When another Permanent or Semi-Permanent hazard is placed in the play area, the previous card is discarded.</li>
+              <ul>
+                <li className="text-light">The Praw recommends to not discard a semi-permanent hazard when a permanent hazard is added, but instead to treat 'The Entropy Beast', 'The Witness' and 'The Cosmic Guardian' as semi-permanent. This makes 'Alliance' have no effect on Semi-Permanent hazards.</li>
+              </ul>
               <li className="text-light">Alt-Hazards, which give the offense an alternative option to having an encounter. If the offense chooses to use the alt-hazard effect, it ends that player’s encounter and provides a different effect for all other players.</li>
             </ul>
           </AccordionBody>

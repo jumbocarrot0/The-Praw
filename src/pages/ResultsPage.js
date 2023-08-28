@@ -205,7 +205,7 @@ export default function ResultsPage() {
         includeMatches: true,
         threshold: 0.6,
         keys: [
-          { name: 'name', getFn: (item) => item[1].original.name },
+          { name: 'name', getFn: (item) => item[1].original.name, weight: 2 },
           {
             name: 'body', getFn: (item) => {
               if (item[0].includes('Alien')) {
@@ -227,8 +227,7 @@ export default function ResultsPage() {
         ]
       }
       const fuse = new Fuse(allItems, options)
-      const fuseQuery = { name: `${submittedQuery}` }
-      // const lunrQuery = `*${submittedQuery.replace(' ', '* *')}*`
+      const fuseQuery = `${submittedQuery}`
       // console.log(fuseQuery)
       console.log(fuse.search(fuseQuery))
       // console.log(fuse.search(fuseQuery).map(result => [result.item[0], Object.fromEntries(allItems)[result.item[0]]]))

@@ -25,10 +25,15 @@ export default function Item(props) {
                             {content.expansion}
                         </Badge>
                         <Badge className={props.border(content) === "warning" ? " text-dark" : ""}
-                        color={props.border(content) ? props.border(content) : "secondary"}>
-                        {props.type(content) ? props.type(content) : null}
+                            color={props.border(content) ? props.border(content) : "secondary"}>
+                            {props.type(content) ? props.type(content) : null}
                         </Badge>
                     </h6>
+                    {content.thumbnail ? <img alt={content.name + " Thumbnail"}
+                        className='mx-auto d-block'
+                        src={require(`../images/${content.thumbnail}`)}
+                    /> : null}
+
                     <strong>{content.short}</strong>
                 </CardBody>
             </Button>

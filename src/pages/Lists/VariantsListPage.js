@@ -5,18 +5,18 @@ import Layout from '../../components/Layout'
 export default function VariantsListPage() {
 
     const variants = {
-        "Techs": { name: "Technology", image: "", complexity: 2, short: "Research Powerful Techs" },
-        "RewardsDeck": { name: "Rewards Deck", image: "", complexity: 1, short: "Special Deck for Rewards" },
-        "Hazards": { name: "Hazards", image: "", complexity: 1, short: "Random Events" },
-        "TeamMode": { name: "Team Cosmic", image: "", complexity: 1, short: "Play in Pairs" },
-        "Stations": { name: "Space Stations", image: "", complexity: 2, short: "Attach Abilities to Planets" },
-        "Dials": { name: "Hidden Alliances", image: "", complexity: 1, short: "Join Side via Dial" },
-        "ForeignAid": { name: "Foreign Aid", image: "", complexity: 1, short: "Give Help as Ally" },
-        "Evolutions": { name: "Evolutions", image: "", complexity: 2, short: "Mutate with Ships" },
-        "Moons": { name: "Moons", image: "", complexity: 3, short: "Discover Abilities on Planets" },
-        "Lux": { name: "Lux", image: "", complexity: 3, short: "Stardust Economy" },
-        "Objectives": { name: "Array Objectives", image: "", complexity: 2, short: "Win with Points" },
-        "Campaign": { name: "Campaign Mode", image: "", complexity: 3, short: "4+ Games of Legacy Cosmic" },
+        "Techs": { name: "Technology", image: "", complexity: 2, short: "Research Powerful Techs", thumbnail: "variant icons/Tech Icon.png" },
+        "RewardsDeck": { name: "Rewards Deck", image: "", complexity: 1, short: "Special Deck for Rewards", thumbnail: "variant icons/Rewards Icon.png" },
+        "Hazards": { name: "Hazards", image: "", complexity: 1, short: "Random Events", thumbnail: "variant icons/Hazard Icon.png" },
+        "TeamMode": { name: "Team Cosmic", image: "", complexity: 1, short: "Play in Pairs", thumbnail: "variant icons/Alliance Icon.png" },
+        "Stations": { name: "Space Stations", image: "", complexity: 2, short: "Attach Abilities to Planets", thumbnail: "variant icons/Stations Icon.png" },
+        "Dials": { name: "Hidden Alliances", image: "", complexity: 1, short: "Join Side via Dial", thumbnail: "variant icons/Dial Icon.png" },
+        "ForeignAid": { name: "Foreign Aid", image: "", complexity: 1, short: "Give Help as Ally", thumbnail: "variant icons/Foreign Aid Icon.png" },
+        "Evolutions": { name: "Evolutions", image: "", complexity: 2, short: "Mutate with Ships", thumbnail: "variant icons/Evolution Icon.png" },
+        "Moons": { name: "Moons", image: "", complexity: 3, short: "Discover Abilities on Planets", thumbnail: "variant icons/Moon Icon.png" },
+        "Lux": { name: "Lux", image: "", complexity: 3, short: "Stardust Economy", thumbnail: "variant icons/Lux Icon.png" },
+        "Objectives": { name: "Array Objectives", image: "", complexity: 2, short: "Win with Points", thumbnail: "variant icons/Objectives Icon.png" },
+        "Campaign": { name: "Campaign Mode", image: "", complexity: 3, short: "4+ Games of Legacy Cosmic", thumbnail: "variant icons/Campaign Icon 2.png" },
     }
 
     return (
