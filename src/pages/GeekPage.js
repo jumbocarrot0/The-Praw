@@ -11,7 +11,8 @@ export default function Home() {
     const [alien, setAlien] = useState(undefined)
 
     const [guess, setGuess] = useState("")
-    const [correctGuesses, setCorrectGuesses] = useState("")
+    // const [correctGuesses, setCorrectGuesses] = useState(0)
+    const [alienCount, setAlienCount] = useState(0)
     const [incorrect, setIncorrect] = useState(false)
     const [correct, setCorrect] = useState(false)
 
@@ -19,9 +20,9 @@ export default function Home() {
         getRandomAlien()
             .then((data) => {
                 setAlien(data)
-                console.log(data)
+                // console.log(data)
             })
-    }, [correctGuesses])
+    }, [alienCount])
 
     return (
         <Layout>
@@ -31,10 +32,13 @@ export default function Home() {
                     if (guess.toLocaleLowerCase() === alien.original.name.toLocaleLowerCase() ||
                         (alien.revised && guess.toLocaleLowerCase() === alien.revised.name.toLocaleLowerCase())) {
                         // alert("Correct");
+                        setIncorrect(false)
                         setCorrect(true)
                         setAlien(undefined)
-                        setCorrectGuesses(e => e + 1)
+                        setAlienCount(e => e + 1)
+                        setGuess("")
                     } else {
+                        setCorrect(false)
                         setIncorrect(true)
                         // alert("Incorrect");
                     }
@@ -65,8 +69,16 @@ export default function Home() {
                     }}
                     invalid={incorrect}
                     valid={correct} />
-                <Button className='mt-3 mb-2' color="primary">
+                <Button className='mt-3 mb-2 w-25' color="primary">
                     Submit
+                </Button>
+                <br/>
+                <Button className='mt-3 mb-2 w-25' color="secondary" onClick={() => {
+                    setCorrect(false)
+                    setIncorrect(false)
+                    setAlienCount(e => e + 1)
+                }}>
+                    Next
                 </Button>
                 <FormFeedback className='fs-3' invalid>
                     Incorrect

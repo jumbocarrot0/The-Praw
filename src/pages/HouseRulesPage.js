@@ -62,7 +62,7 @@ export default function HouseRulesPage() {
           </AccordionHeader>
           <AccordionBody accordionId="objectives">
             <p>
-              The Praw recommends to use the additional scording conditions on the 'Forgotten Age of Eons' when playing with array objectives outside of a campaign, i.e. 1 point per foreign colony and 6 points for achieving a victory condition. This makes winning encounters desirable and does not make the game wholly rely on the objectives.
+              The Praw recommends to use the additional scoring conditions on the 'Forgotten Age of Eons' when playing with array objectives outside of a campaign, i.e. 1 point per foreign colony and 6 points for achieving a victory condition. This makes winning encounters desirable and does not make the game wholly rely on the objectives.
             </p>
           </AccordionBody>
         </AccordionItem>

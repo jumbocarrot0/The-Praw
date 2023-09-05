@@ -8,7 +8,7 @@ import {
   AccordionHeader,
   AccordionItem
 } from 'reactstrap'
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
 export default function HazardListPage() {
   return (
@@ -19,7 +19,8 @@ export default function HazardListPage() {
         Cosmic Conflict introduced 17 hazard cards, 8 of which had duplicated to create a 24-card deck. Cosmic Odyssey introduced an additional 26 cards to bring the total up to 50 hazard cards.</p>
       <h2>Trivia</h2>
       <ul>
-        <li className="text-light">Alt-Hazards were originally called Armistices during playtesting.</li>
+        <li className='text-light'>Hazards are likely a remake of the <a rel="external" href="http://warp.redamedia.com/comets.php3">'Comets'</a> variant from the Mayfair edition. Comets were cards with special effects that would be shuffled into the destiny deck, and would trigger alongside a standard destiny draw.</li>
+        <li className="text-light">Alt-Hazards are based off <a rel="external" href="http://warp.redamedia.com/armist.php3">'Armistices'</a>, which were a homebrew variant that involved extra cards shuffled into the destiny deck that would give the offense an optional bonus, if they accepted it..</li>
       </ul>
       <hr className="border border-light border-2 opacity-100 mb-3" />
       <UncontrolledAccordion defaultOpen={[]}>
