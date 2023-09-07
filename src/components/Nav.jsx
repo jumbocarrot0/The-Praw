@@ -56,6 +56,11 @@ export default function PrawNav() {
                 </Link>
               </DropdownItem>
               <DropdownItem>
+                <Link className="nav-link" to="/Selection2">
+                  Online Alien Dealer
+                </Link>
+              </DropdownItem>
+              <DropdownItem>
                 <Link className="nav-link" to="/Selection">
                   Alien Dealer
                 </Link>

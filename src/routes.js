@@ -6,6 +6,8 @@ import HouseRulesPage from "./pages/HouseRulesPage";
 import SelectionPage from "./pages/SelectionPage";
 import GeekPage from "./pages/GeekPage";
 
+import SelectionMainPage from "./pages/Selection/SelectionMainPage";
+
 import AlienListPage from "./pages/Lists/AlienListPage";
 import IndividualAlienPage from "./pages/IndividualItem/IndividualAlienPage";
 import ThrowbackPage from "./pages/IndividualItem/ThrowbackPage";
@@ -82,6 +84,10 @@ export const routes = [
     {
       path: '/Selection',
       element: <SelectionPage />,
+    },
+    {
+      path: '/Selection2',
+      element: <SelectionMainPage />,
     },
     {
       path: "/Variants",
