@@ -106,7 +106,7 @@ export default function Combos() {
         </Row>
         <Row className="row mt-5">
           <div className="d-flex justify-content-center">
-            <Link className="btn btn-primary w-50" to="https://forms.gle/Xg7aXQsrtitM1dFw9" role="button" target="_blank" rel="external">Submit your own Combo!</Link>
+            <Link className="btn btn-primary w-50" to="/Combos/Submit" role="button">Submit your own Combo!</Link>
           </div>
         </Row>
       </Layout>

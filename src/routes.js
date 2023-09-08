@@ -2,6 +2,7 @@
 import Home from "./pages/HomePage";
 import Results from "./pages/ResultsPage";
 import Combos from "./pages/CombosPage";
+import CombosSubmit from "./pages/CombosSubmitPage";
 import HouseRulesPage from "./pages/HouseRulesPage";
 import SelectionPage from "./pages/SelectionPage";
 import GeekPage from "./pages/GeekPage";
@@ -60,6 +61,10 @@ export const routes = [
     {
       path: "/Combos",
       element: <Combos />,
+    },
+    {
+      path: "/Combos/Submit",
+      element: <CombosSubmit />,
     },
     {
       path: "/Geek",
