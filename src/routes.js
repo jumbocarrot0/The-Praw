@@ -6,6 +6,8 @@ import HouseRulesPage from "./pages/HouseRulesPage";
 import SelectionPage from "./pages/SelectionPage";
 import GeekPage from "./pages/GeekPage";
 
+import Error404Page from "./pages/ErrorPages/Error404";
+
 import AlienListPage from "./pages/Lists/AlienListPage";
 import IndividualAlienPage from "./pages/IndividualItem/IndividualAlienPage";
 import ThrowbackPage from "./pages/IndividualItem/ThrowbackPage";
@@ -173,5 +175,10 @@ export const routes = [
       path: "/Variants/Campaign",
       element: <CampaignPage />,
       breadcrumb: "Campaign Mode"
+    },
+    {
+      path: "/*",
+      element: <Error404Page />,
+      breadcrumb: "",
     }
 ]

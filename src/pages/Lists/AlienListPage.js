@@ -99,6 +99,15 @@ function filterAliens(aliens, search, expansions, phases, exactPhases, player, e
       notInvolved: false
     }
     switch ('revised' in alien[1] ? alien[1].revised.powerTiming.player : alien[1].original.powerTiming.player) {
+      case "As Any Player":
+        alienPlayerTiming = {
+          offense: true,
+          defense: true,
+          offensiveAlly: true,
+          defensiveAlly: true,
+          notInvolved: true
+        }
+        break;
       case "Offense Only":
         alienPlayerTiming = {
           offense: true,
@@ -144,16 +153,43 @@ function filterAliens(aliens, search, expansions, phases, exactPhases, player, e
           notInvolved: false
         }
         break;
+      case "Not Offense":
+        alienPlayerTiming = {
+          offense: false,
+          defense: true,
+          offensiveAlly: true,
+          defensiveAlly: true,
+          notInvolved: true
+        }
+        break;
+      case "Not Defense":
+        alienPlayerTiming = {
+          offense: true,
+          defense: false,
+          offensiveAlly: true,
+          defensiveAlly: true,
+          notInvolved: true
+        }
+        break;
       case "Not Main Player":
         alienPlayerTiming = {
           offense: false,
           defense: false,
           offensiveAlly: true,
           defensiveAlly: true,
-          notInvolved: false
+          notInvolved: true
         }
         break;
-      case "Offense or Offensive Only":
+      case "Not Ally":
+        alienPlayerTiming = {
+          offense: true,
+          defense: true,
+          offensiveAlly: false,
+          defensiveAlly: false,
+          notInvolved: true
+        }
+        break;
+      case "Offense or Offensive Ally Only":
         alienPlayerTiming = {
           offense: true,
           defense: false,
@@ -162,7 +198,7 @@ function filterAliens(aliens, search, expansions, phases, exactPhases, player, e
           notInvolved: false
         }
         break;
-      case "Defense or Defensive Only":
+      case "Defense or Defensive Ally Only":
         alienPlayerTiming = {
           offense: false,
           defense: true,
@@ -245,7 +281,7 @@ export default function AliensListPage() {
   const submittedQuery = (searchParams.get('search') || '');
   const [searchQuery, setSearchQuery] = useState(submittedQuery);
 
-  const [aliens, setAliens] = useState([])
+  const [aliens, setAliens] = useState(undefined)
   useEffect(() => {
     getAllAliens()
       .then((data) => {
@@ -322,8 +358,13 @@ export default function AliensListPage() {
 
   const navigate = useNavigate();
 
-  let filteredAliens = filterAliens(aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases, submittedPlayer, submittedExactPlayer, submittedAlertLevels)
+  let filteredAliens;
+  if (aliens === undefined) {
+    filteredAliens = []
+  } else {
+    filteredAliens = filterAliens(aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases, submittedPlayer, submittedExactPlayer, submittedAlertLevels)
 
+  }
   return (
     <Layout title="Aliens">
       <h1 className='mb-4'>Aliens</h1>
@@ -481,7 +522,9 @@ export default function AliensListPage() {
         content={filteredAliens}
         width={4}
       />
-      { Object.keys(filteredAliens).length === 0 ? <Loading/> : null}
+      {aliens === undefined ? <Loading /> : Object.keys(filteredAliens).length === 0 ? <div>
+        <p className="fs-3 text-center">No aliens match your filters.</p>
+      </div> : null}
     </Layout>
   );
 }
