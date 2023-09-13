@@ -619,7 +619,7 @@ export default function Selection() {
             </Row>
             <Row>
               <Col>
-                <Button type="submit" className="w-100 mt-3" disabled={allAliens === []}>Submit</Button>
+                <Button type="submit" className="w-100 mt-3" disabled={allAliens.length === 0}>Submit</Button>
               </Col>
             </Row>
           </Form>

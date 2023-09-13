@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import combosData from '../dataFiles/combos.json';
 import {
-  Button, Table, Row, Col, Form, Label, Input, FormGroup
+  Button, Table, Row, Col, Form, Label, Input, FormGroup, FormFeedback
 } from 'reactstrap';
 import { Link } from "react-router-dom"
 import Layout from '../components/Layout'
@@ -59,7 +59,7 @@ function AlienInput(props) {
   return (
     <FormGroup>
       <Label for={`Alien${props.id}`}>
-        {props.id === 1 ? "1st Alien" : props.id === 2 ? "2nd Alien" : props.id == 3 ? "3rd Alien" : `${props.id}th Alien`}
+        {props.id === 1 ? "1st Alien" : props.id === 2 ? "2nd Alien" : props.id === 3 ? "3rd Alien" : `${props.id}th Alien`}
       </Label>
       <Input
         id={`Alien${props.id}`}
@@ -67,7 +67,7 @@ function AlienInput(props) {
         type="select"
         onChange={(e) => {
           if (!/[^0-9]/.test(e.target.value)) {
-            console.log(e.target.value)
+            // console.log(e.target.value)
             props.comboAliens[props.id - 1][1](e.target.value)
           }
         }}
@@ -104,6 +104,7 @@ export default function CombosSubmit() {
   const [comboName, setComboName] = useState("")
   const [comboAuthor, setComboAuthor] = useState("")
   const [loading, setLoading] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
   const comboAliens = [
     useState(0),
     useState(1),
@@ -115,73 +116,116 @@ export default function CombosSubmit() {
     useState(7)
   ]
 
-  console.log(comboAliens)
+  const [comboNameError, setComboNameError] = useState(false)
+  const [comboAuthorError, setComboAuthorError] = useState(false)
+
+  // console.log(comboAliens)
 
   return (
     <Layout title="Combos">
       <Row>
-        <h1 className="text-center">Combos</h1>
-        <div className="d-flex justify-content-center">
-          <Form>
-            <Input placeholder="Combo Name"
-              value={comboName}
-              onChange={(e) => {
-                if (!/[^ A-Za-z0-9\-,'/+\\]/.test(e.target.value)) {
-                  setComboName(e.target.value)
-                }
-              }} />
-            <Input placeholder="Author"
-              value={comboAuthor}
-              onChange={(e) => {
-                if (!/[^ A-Za-z0-9\-,'/+\\]/.test(e.target.value)) {
-                  setComboAuthor(e.target.value)
-                }
-              }} />
-            <Row>
-              <Col>
-                <AlienInput id={1} comboAliens={comboAliens} aliens={aliens} />
-              </Col>
-              <Col>
-                <AlienInput id={2} comboAliens={comboAliens} aliens={aliens} />
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <AlienInput id={3} comboAliens={comboAliens} aliens={aliens} />
-              </Col>
-              <Col>
-                <AlienInput id={4} comboAliens={comboAliens} aliens={aliens} />
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <AlienInput id={5} comboAliens={comboAliens} aliens={aliens} />
-              </Col>
-              <Col>
-                <AlienInput id={6} comboAliens={comboAliens} aliens={aliens} />
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <AlienInput id={7} comboAliens={comboAliens} aliens={aliens} />
-              </Col>
-              <Col>
-                <AlienInput id={8} comboAliens={comboAliens} aliens={aliens} />
-              </Col>
-            </Row>
-          </Form>
-        </div>
-        <div className="d-flex justify-content-center">
+        <h1 className="text-center">Submit your Combo!</h1>
+        {submitted ? <div className="text-center">
+          <p>Your Combo has been submitted! It will need to be manually verified first, but then it will appear on this site's combo generator!</p>
           <Button
             color="primary"
-            onClick={async () => { setLoading(true); uploadCombo(comboName, comboAuthor, comboAliens.map(alien => alien[0]))().then(_ => setLoading(false)) }}
-            disabled={loading}
+            disabled={!submitted}
+            onClick={() => {
+              setComboName("");
+              setComboAuthor("");
+              setSubmitted(false);
+              setLoading(false);
+            }}
           >
-            Submit!
+            Press here to make another!
           </Button>
-        </div>
-        <div className="d-flex justify-content-center">
-        </div>
+        </div> :
+          <div className="d-flex justify-content-center">
+            <Form
+              onSubmit={async (event) => {
+
+
+                event.preventDefault();
+
+                if (comboName.length === 0) {
+                  setComboNameError(true)
+                }
+                if (comboAuthor.length === 0) {
+                  setComboAuthorError(true)
+                }
+                if (comboName.length !== 0 && comboAuthor.length !== 0) {
+                  setLoading(true);
+                  uploadCombo(comboName, comboAuthor, comboAliens.map(alien => alien[0]))
+                    .then(_ => setSubmitted(true))
+                }
+
+                return false
+              }
+              }
+            >
+
+              <Input placeholder="Combo Name" invalid={comboNameError && comboName.length === 0}
+                value={comboName}
+                onChange={(e) => {
+                  if (!/[^ A-Za-z0-9\-,'/+\\]/.test(e.target.value)) {
+                    setComboName(e.target.value)
+                  }
+                }} />
+              <FormFeedback>
+                Please add a name
+              </FormFeedback>
+              <Input placeholder="Author" invalid={comboAuthorError && comboAuthor.length === 0}
+                value={comboAuthor}
+                onChange={(e) => {
+                  if (!/[^ A-Za-z0-9\-,'/+\\]/.test(e.target.value)) {
+                    setComboAuthor(e.target.value)
+                  }
+                }} />
+              <FormFeedback>
+                Please add an author
+              </FormFeedback>
+              <Row>
+                <Col>
+                  <AlienInput id={1} comboAliens={comboAliens} aliens={aliens} />
+                </Col>
+                <Col>
+                  <AlienInput id={2} comboAliens={comboAliens} aliens={aliens} />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <AlienInput id={3} comboAliens={comboAliens} aliens={aliens} />
+                </Col>
+                <Col>
+                  <AlienInput id={4} comboAliens={comboAliens} aliens={aliens} />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <AlienInput id={5} comboAliens={comboAliens} aliens={aliens} />
+                </Col>
+                <Col>
+                  <AlienInput id={6} comboAliens={comboAliens} aliens={aliens} />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <AlienInput id={7} comboAliens={comboAliens} aliens={aliens} />
+                </Col>
+                <Col>
+                  <AlienInput id={8} comboAliens={comboAliens} aliens={aliens} />
+                </Col>
+              </Row>
+              <Button
+                className="w-100"
+                color="primary"
+                disabled={loading}
+              >
+                Submit!
+              </Button>
+            </Form>
+          </div>
+        }
       </Row>
       {/* <Row className="row mt-5">
         <div className="d-flex justify-content-center">

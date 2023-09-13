@@ -96,7 +96,7 @@ export async function uploadCombo(ComboName, ComboAuthor, ComboAliens) {
             alien8: ComboAliens[7],
         })
 
-    console.log(data, error)
+    // console.log(data, error)
 
     // console.log(Object.keys(Aliens.aliens).map((index) => { return { id: index, alienData: Aliens.aliens[index], viewable: true }}))
 
