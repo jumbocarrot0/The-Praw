@@ -34,18 +34,18 @@ function Item(props) {
   let previewBody;
 
   if (props.to.includes('Alien')) {
-    previewBody = <span>
+    previewBody = <p>
       <strong>{item.powerName}</strong> {item.powerBody.slice(0, 280).replaceAll('\n$')}{item.powerBody.length > 280 ? '...' : ''}
-    </span>
+    </p>
 
   } else if (props.to.includes('Evolution')) {
     previewBody = <ul>
       {item.body.map((row) => {
-        return (row.cost ? <li key={row.cost}>{row.cost}: {row.text}</li> : <p key="noCost">{row.text}</p>)
+        return (row.cost ? <li key={row.cost}>{row.cost}: {row.text}</li> : <li key="noCost">{row.text}</li>)
       })}
     </ul>
   } else {
-    previewBody = item.body.slice(0, 260)
+    previewBody = <p>{item.body.slice(0, 260)}</p>
   }
 
 
@@ -80,7 +80,7 @@ function Item(props) {
             color="dark">
             {props.to.split('/').at('-2')}
           </Badge>
-          <p className='mt-3 link-underline-opacity-0-hover'>{previewBody}</p>
+          <div className='mt-3 link-underline-opacity-0-hover'>{previewBody}</div>
           {/* <strong>{item.short}</strong> */}
         </CardBody>
       </Link>
@@ -205,24 +205,18 @@ export default function ResultsPage() {
         includeMatches: true,
         threshold: 0.6,
         keys: [
-          { name: 'name', getFn: (item) => item[1].original.name, weight: 2 },
+          { name: 'name', getFn: (item) => item[1].original.name, weight: 1 },
           {
             name: 'body', getFn: (item) => {
               if (item[0].includes('Alien')) {
                 return (
-                  (item[1].original.gameSetup +
-                    item[1].original.powerName +
-                    item[1].original.powerBody +
-                    item[1].original.history +
-                    item[1].original.wildBody +
-                    item[1].original.superBody))
-
+                  (`${item[1].original.gameSetup} ${item[1].original.powerName} ${item[1].original.powerBody} ${item[1].original.history} ${item[1].original.wildBody} ${item[1].original.superBody}`))
               } else if (item[0].includes('Evolution')) {
                 return (item[1].original.body)
               } else {
                 return (item[1].original.body)
               }
-            }
+            }, weight: 1
           }
         ]
       }
