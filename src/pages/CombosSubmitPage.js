@@ -167,7 +167,7 @@ export default function CombosSubmit() {
               <Input placeholder="Combo Name" invalid={comboNameError && comboName.length === 0}
                 value={comboName}
                 onChange={(e) => {
-                  if (!/[^ A-Za-z0-9\-,'/+\\]/.test(e.target.value)) {
+                  if (!/[^ A-Za-z0-9\-,'/+\\!?#"]/.test(e.target.value)) {
                     setComboName(e.target.value)
                   }
                 }} />
@@ -177,7 +177,7 @@ export default function CombosSubmit() {
               <Input placeholder="Author" invalid={comboAuthorError && comboAuthor.length === 0}
                 value={comboAuthor}
                 onChange={(e) => {
-                  if (!/[^ A-Za-z0-9\-,'/+\\]/.test(e.target.value)) {
+                  if (!/[^ A-Za-z0-9\-,'/+\\!?#"]/.test(e.target.value)) {
                     setComboAuthor(e.target.value)
                   }
                 }} />
