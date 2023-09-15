@@ -46,8 +46,8 @@ table.th-w-50 tbody tr th {
 }
 
 .hero {
-  max-width: 60%;
-  margin: 10% 20%;
+  max-width: 80%;
+  margin: 10% 10%;
   /* background-image: url("../public/img/dining.jpg"); */
   background-size: cover;
 }
@@ -61,13 +61,13 @@ table.th-w-50 tbody tr th {
 
 .hero__title {
   padding-top:25px;
-  font-size: 100px;
+  font-size: calc(4rem + 2vw);
   margin: 0;
   /* font-family: "Merriweather", serif; */
 }
 
 .hero__subtitle{
-  font-size: 40px;
+  font-size: calc(1rem + 1.5vw);
   font-style: italic;
 }
 

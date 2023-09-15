@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 // the footer
 export default function Footer() {
   return (
-    <footer className="mt-5 pb-3 text-center">
+    <footer className="mt-5 p-3 text-center">
       <span>
         This site is not affiliated with Future Pastimes or Fantasy Flight Games.
         <br />
@@ -15,7 +15,7 @@ export default function Footer() {
         <br />
         Bill Martinson for the Cosmodex, which this site started upon.
         <br />
-        Version: 1.3.3a
+        Version: 1.3.3b
       </span>
     </footer>
   );
