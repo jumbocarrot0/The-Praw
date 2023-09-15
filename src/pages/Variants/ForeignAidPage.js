@@ -12,7 +12,7 @@ export default function ForeignAidPage() {
       <ul>
         <li className="text-light">When a player is invited to be an ally, that player may choose to send foreign aid rather than committing ships normally.</li>
         <li className="text-light">The potential ally offers the inviting main player a card from their hand. If the main player accepts the card, the ally may send <strong>up to one ship</strong> into the encounter. If the card is rejected, the player may not be an ally for either side.</li>
-        <li className="text-light">If playing with hidden alliances, the foreign aid is offered after alliance dials have been revealed. This gives players the chance to see which sides other players have joined.</li>
+        <li className="text-light">If playing with hidden alliances, players offer foreign aid by first turning the dial to the foreign aid icon (it looks like a card). Then, after alliance dials have been revealed, each player who offered foreign aid does so now. This gives players the chance to see which sides other players have joined before offering foreign aid.</li>
       </ul>
     </Layout>
   );

@@ -35,6 +35,7 @@ function Item(props) {
 
   if (props.to.includes('Alien')) {
     previewBody = <p>
+      <div className='fs-4 text-light'>{item.short}</div>
       <strong>{item.powerName}</strong> {item.powerBody.slice(0, 280).replaceAll('\n$')}{item.powerBody.length > 280 ? '...' : ''}
     </p>
 
