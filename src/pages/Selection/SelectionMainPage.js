@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button, Label, Input, Form } from 'reactstrap'
 
 import Layout from '../../components/Layout'
@@ -17,6 +17,68 @@ export default function SelectionMain() {
 
     const [gameName, setGameName] = useState('');
     const [playerName, setPlayerName] = useState('');
+    const [connectionLive, setConnectionLive] = useState(false);
+    const [channel, setChannel] = useState(null);
+
+
+    useEffect(() => {
+        if (connectionLive === "Host") {
+            channel
+                .on(
+                    'presence',
+                    { event: 'sync' },
+                    () => {
+                        const newState = channel.presenceState()
+                        console.log('sync', newState)
+                    }
+                )
+                .on(
+                    'presence',
+                    { event: 'join' },
+                    ({ key, newPresences }) => {
+                        console.log('join', key, newPresences)
+                    }
+                )
+                .on(
+                    'presence',
+                    { event: 'leave' },
+                    ({ key, leftPresences }) => {
+                        console.log('leave', key, leftPresences)
+                    }
+                )
+                .on(
+                    'broadcast',
+                    { event: 'aliens_dealt' },
+                    (payload) => console.log(payload)
+                )
+                .subscribe(async (status) => {
+                    if (status === 'SUBSCRIBED') {
+                        const presenceTrackStatus = await channel.track({
+                            user: playerName,
+                            online_at: new Date().toISOString(),
+                        })
+                        console.log(presenceTrackStatus)
+                    }
+                })
+        } else if (connectionLive === "Join") {
+            channel
+                .on(
+                    'broadcast',
+                    { event: 'aliens_dealt' },
+                    (payload) => console.log('payload', payload)
+                )
+                .subscribe(async (status) => {
+                    if (status === 'SUBSCRIBED') {
+                        const presenceTrackStatus = await channel.track({
+                            user: playerName,
+                            online_at: new Date().toISOString(),
+                        })
+                        console.log(presenceTrackStatus)
+                    }
+                })
+        }
+    }, [connectionLive])
+
 
     // const [channel, setChannel] = useState(null)
 
@@ -44,90 +106,41 @@ export default function SelectionMain() {
                             setPlayerName(e.target.value)
                         }
                     }} />
-                <Button color="primary" onClick={
+                <Button color="primary" disabled={connectionLive} onClick={
                     (event) => {
                         event.preventDefault();
                         const client = createClient(
                             'https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY
                         )
-                        const channel = client.channel(gameName);
-                        channel
-                            .on(
-                                'presence',
-                                { event: 'sync' },
-                                () => {
-                                    const newState = channel.presenceState()
-                                    console.log('sync', newState)
-                                }
-                            )
-                            .on(
-                                'presence',
-                                { event: 'join' },
-                                ({ key, newPresences }) => {
-                                    console.log('join', key, newPresences)
-                                }
-                            )
-                            .on(
-                                'presence',
-                                { event: 'leave' },
-                                ({ key, leftPresences }) => {
-                                    console.log('leave', key, leftPresences)
-                                }
-                            )
-                            .on(
-                                'broadcast',
-                                { event: 'aliens_dealt' },
-                                (payload) => console.log(payload)
-                            )
-                            .subscribe(async (status) => {
-                                if (status === 'SUBSCRIBED') {
-                                    const presenceTrackStatus = await channel.track({
-                                        user: playerName,
-                                        online_at: new Date().toISOString(),
-                                    })
-                                    console.log(presenceTrackStatus)
-                                }
-                            })
+                        setChannel(client.channel(gameName));
+                        setConnectionLive("Host")
                     }}>
                     Create
                 </Button>
-                <Button className="ms-3" color="secondary" onClick={
+                <Button className="ms-3" color="secondary" disabled={connectionLive} onClick={
                     (event) => {
                         event.preventDefault();
                         const client = createClient(
                             'https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY
                         )
-                        const channel = client.channel(gameName);
-                        channel
-                            .on(
-                                'broadcast',
-                                { event: 'aliens_dealt' },
-                                (payload) => console.log(payload)
-                            )
-                            .subscribe(async (status) => {
-                                if (status === 'SUBSCRIBED') {
-                                    const presenceTrackStatus = await channel.track({
-                                        user: playerName,
-                                        online_at: new Date().toISOString(),
-                                    })
-                                    console.log(presenceTrackStatus)
-                                }
-                            })
+                        setChannel(client.channel(gameName));
+                        setConnectionLive("Join")
                     }}>
                     Join
                 </Button>
                 <Button className="ms-3" color="secondary" onClick={
                     (event) => {
                         event.preventDefault();
-                        // getRandomAlien(8).then((data) => {
-                        //     channel.send({
-                        //         type: 'broadcast',
-                        //         event: 'send_aliens',
-                        //         payload: {
-                        //             message: data
-                        //         },
-                        //     })
-                        // })
+                        getRandomAlien(8).then((data) => {
+                            console.log(data)
+                            channel.send({
+                                type: 'broadcast',
+                                event: 'send_aliens',
+                                payload: {
+                                    message: data
+                                },
+                            })
+                        })
                     }}>
                     Send Aliens
                 </Button>
