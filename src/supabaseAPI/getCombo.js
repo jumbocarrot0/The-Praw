@@ -10,7 +10,7 @@ export async function getRandomCombo() {
     }
     const supabase = createClient('https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY, options)
 
-    const { data, error } = await supabase.rpc('getrandomcombos')
+    const { data } = await supabase.rpc('getrandomcombos')
         .eq('viewable', true)
         .limit(1)
         .single()
@@ -31,7 +31,7 @@ export async function getCombo(id) {
     }
     const supabase = createClient('https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY, options)
 
-    const { data, error } = await supabase.from('Combos')
+    const { data } = await supabase.from('Combos')
         .select('*')
         .eq('viewable', true)
         .eq('id', id)
@@ -54,7 +54,7 @@ export async function getAllCombos() {
     }
     const supabase = createClient('https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY, options)
 
-    const { data, error } = await supabase.from('Combos')
+    const { data } = await supabase.from('Combos')
         .select('*')
         .eq('viewable', true)
 
@@ -83,7 +83,7 @@ export async function uploadCombo(ComboName, ComboAuthor, ComboAliens) {
     // console.log(error1)
     // console.log(data)
 
-    const { data, error } = await supabase
+    await supabase
         .from('Combos')
         .insert({ name: ComboName, author: ComboAuthor, viewable: false, 
             alien1: ComboAliens[0],

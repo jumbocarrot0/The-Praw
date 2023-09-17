@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import {
   Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
-import { Link, useParams } from "react-router-dom"
-import TimingBar from '../../components/TimingBar';
+import { useParams } from "react-router-dom"
+// import TimingBar from '../../components/TimingBar';
 import Layout from '../../components/Layout'
 import Alien from '../../components/Alien'
 import Loading from '../../components/Loading'

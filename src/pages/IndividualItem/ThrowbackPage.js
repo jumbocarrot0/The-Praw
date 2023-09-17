@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom"
-import Aliens from '../../dataFiles/aliens.json';
 import Layout from '../../components/ThrowbackLayout'
 import ThrowbackBox from '../../components/ThrowbackBox';
 

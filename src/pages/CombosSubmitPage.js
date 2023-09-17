@@ -1,47 +1,46 @@
 import { useState, useEffect } from "react";
-import combosData from '../dataFiles/combos.json';
 import {
-  Button, Table, Row, Col, Form, Label, Input, FormGroup, FormFeedback
+  Button, Row, Col, Form, Label, Input, FormGroup, FormFeedback
 } from 'reactstrap';
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import Layout from '../components/Layout'
-import Loading from '../components/Loading'
+// import Loading from '../components/Loading'
 
 import { getAllAliens } from "../supabaseAPI/getAlien"
 import { uploadCombo } from "../supabaseAPI/getCombo"
 
-function Combo(props) {
-  // console.log(props.Name)
-  // console.log(props.Aliens)
-  return (
-    <Table dark className="text-center w-50 th-w-50">
-      <thead>
-        <tr>
-          <th colSpan={2}>
-            <h2>{props.name}</h2>
-            <strong>{props.author}</strong>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><th scope="row" rowSpan={3} className="align-middle">3-Player</th>
-          <td>{props.alien1data.original.name}</td></tr>
-        <tr><td>{props.alien2data.original.name}</td></tr>
-        <tr><td>{props.alien3data.original.name}</td></tr>
-        <tr><th scope="row">4-Player</th><td>{props.alien4data.original.name}</td></tr>
-        <tr><th scope="row">5-Player</th><td>{props.alien5data.original.name}</td></tr>
-        <tr><th scope="row">6-Player</th><td>{props.alien6data.original.name}</td></tr>
-        <tr><th scope="row">7-Player</th><td>{props.alien7data.original.name}</td></tr>
-        <tr><th scope="row">8-Player</th><td>{props.alien8data.original.name}</td></tr>
-      </tbody>
-    </Table>
-  )
-}
+// function Combo(props) {
+//   // console.log(props.Name)
+//   // console.log(props.Aliens)
+//   return (
+//     <Table dark className="text-center w-50 th-w-50">
+//       <thead>
+//         <tr>
+//           <th colSpan={2}>
+//             <h2>{props.name}</h2>
+//             <strong>{props.author}</strong>
+//           </th>
+//         </tr>
+//       </thead>
+//       <tbody>
+//         <tr><th scope="row" rowSpan={3} className="align-middle">3-Player</th>
+//           <td>{props.alien1data.original.name}</td></tr>
+//         <tr><td>{props.alien2data.original.name}</td></tr>
+//         <tr><td>{props.alien3data.original.name}</td></tr>
+//         <tr><th scope="row">4-Player</th><td>{props.alien4data.original.name}</td></tr>
+//         <tr><th scope="row">5-Player</th><td>{props.alien5data.original.name}</td></tr>
+//         <tr><th scope="row">6-Player</th><td>{props.alien6data.original.name}</td></tr>
+//         <tr><th scope="row">7-Player</th><td>{props.alien7data.original.name}</td></tr>
+//         <tr><th scope="row">8-Player</th><td>{props.alien8data.original.name}</td></tr>
+//       </tbody>
+//     </Table>
+//   )
+// }
 
-function RandomCombo() {
-  let comboIndex = Math.floor(Math.random() * combosData.length);
-  return combosData[comboIndex];
-}
+// function RandomCombo() {
+//   let comboIndex = Math.floor(Math.random() * combosData.length);
+//   return combosData[comboIndex];
+// }
 
 function AlienSelect(props) {
   return (

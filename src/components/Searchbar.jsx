@@ -5,7 +5,6 @@ import { ReactComponent as SearchLogo } from '../svg/searchIcon.svg';
 import {
     Input,
     InputGroup,
-    InputGroupText,
     Form,
     Button
 } from 'reactstrap';

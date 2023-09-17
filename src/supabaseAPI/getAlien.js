@@ -10,7 +10,7 @@ export async function getRandomAlien() {
     }
     const supabase = createClient('https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY, options)
 
-    const { data, error } = await supabase.rpc('getrandomaliens')
+    const { data } = await supabase.rpc('getrandomaliens')
         .select('aliendata')
         .limit(1)
         .single()
@@ -28,7 +28,7 @@ export async function getAlien(index) {
     }
     const supabase = createClient('https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY, options)
 
-    const { data, error } = await supabase
+    const { data } = await supabase
         .from('Aliens')
         .select('alienData')
         .eq('id', index)
@@ -49,7 +49,7 @@ export async function getAllAliens() {
     }
     const supabase = createClient('https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY, options)
 
-    const { data, error } = await supabase
+    const { data } = await supabase
         .from('Aliens')
         .select('id, alienData')
         .eq('viewable', true)

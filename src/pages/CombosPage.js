@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import combosData from '../dataFiles/combos.json';
 import {
-  Button, Table, Row, Label, Input, FormGroup
+  Button, Table, Row
 } from 'reactstrap';
 import { Link } from "react-router-dom"
 import Layout from '../components/Layout'
@@ -37,10 +36,10 @@ function Combo(props) {
   )
 }
 
-function RandomCombo() {
-  let comboIndex = Math.floor(Math.random() * combosData.length);
-  return combosData[comboIndex];
-}
+// function RandomCombo() {
+//   let comboIndex = Math.floor(Math.random() * combosData.length);
+//   return combosData[comboIndex];
+// }
 
 export default function Combos() {
   const [combo, setCombo] = useState(undefined)
