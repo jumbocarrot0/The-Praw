@@ -32,6 +32,7 @@ export default function Item(props) {
                     {content.thumbnail ? <img alt={content.name + " Thumbnail"}
                         className='mx-auto d-block'
                         src={require(`../images/${content.thumbnail}`)}
+                        style={{"maxHeight": "72px"}}
                     /> : null}
 
                     <strong>{content.short}</strong>
