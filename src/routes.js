@@ -33,6 +33,17 @@ import AllianceDialPage from "./pages/Variants/AllianceDialPage";
 import ForeignAidPage from "./pages/Variants/ForeignAidPage";
 import CampaignPage from "./pages/Variants/CampaignPage";
 
+import FourPlanetsPage from "./pages/Variants/FourPlanetsPage";
+import FreewheelingPage from "./pages/Variants/FreewheelingPage";
+import SuperShotsPage from "./pages/Variants/SuperShotsPage";
+import HandDraftPage from "./pages/Variants/HandDraftPage";
+import CommonRewardsPage from "./pages/Variants/CommonRewardsPage";
+import ContractsPage from "./pages/Lists/ContractsListPage";
+import SpecialShipsPage from "./pages/Lists/SpecialShipsListPage";
+import AnomaliesPage from "./pages/Lists/AnomaliesListPage";
+import AlienInfluencersPage from "./pages/Variants/AlienInfluencersPage";
+import EnvoysPage from "./pages/Lists/EnvoysListPage";
+
 import Aliens from './dataFiles/aliens.json'
 import Techs from './dataFiles/technology.json'
 import Hazards from './dataFiles/hazards.json'
@@ -93,6 +104,21 @@ export const routes = [
     {
       path: "/Variants",
       element: <VariantsListPage />
+    },
+    {
+      path: "/Variants/FourPlanets",
+      element: <FourPlanetsPage />,
+      breadcrumb: "Four Planets"
+    },
+    {
+      path: "/Variants/Freewheeling",
+      element: <FreewheelingPage />,
+      breadcrumb: "Freewheeling Flares"
+    },
+    {
+      path: "/Variants/CommonRewards",
+      element: <CommonRewardsPage />,
+      breadcrumb: "Common Rewards"
     },
     {
       path: "/Variants/Techs",
@@ -180,6 +206,38 @@ export const routes = [
       path: "/Variants/Campaign",
       element: <CampaignPage />,
       breadcrumb: "Campaign Mode"
+    },
+    {
+      path: "/Variants/Supershots",
+      element: <SuperShotsPage />,
+      breadcrumb: "Super Shots"
+    },
+    {
+      path: "/Variants/HandDraft",
+      element: <HandDraftPage />,
+      breadcrumb: "Hand Draft"
+    },
+    {
+      path: "/Variants/Contracts",
+      element: <ContractsPage />
+    },
+    {
+      path: "/Variants/SpecialShips",
+      element: <SpecialShipsPage />,
+      breadcrumb: "Special Ships"
+    },
+    {
+      path: "/Variants/Anomalies",
+      element: <AnomaliesPage />
+    },
+    {
+      path: "/Variants/AlienInfluencers",
+      element: <AlienInfluencersPage />,
+      breadcrumb: "Alien Influencers"
+    },
+    {
+      path: "/Variants/Envoys",
+      element: <EnvoysPage />
     },
     {
       path: "/*",

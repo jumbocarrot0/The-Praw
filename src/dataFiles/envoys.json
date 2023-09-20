@@ -1,0 +1,108 @@
+{
+    "envoys": {
+        "0": {
+            "original": {
+                "name": "Crabby",
+                "gameSetup": "",
+                "powerBody": "As a main player, before encounter cards are selected, if both main players have at least two cards in hand, you may use this power. Take two cards at random from your opponent and set them aside facedown. Give that player two cards of your choice from your hand. Then, add the set-aside cards to your hand.",
+                "powerTiming": {
+                    "player": "Main Player Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": true,
+                        "reveal": false,
+                        "resolution": false
+                    }
+                },
+                "history": "The Crabbys are often salty from unsatisfactory trades, and are almost always covered in sodium chloride.",
+                "expansion": "Cosmic Odyssey",
+                "designers": [
+                ],
+                "thumbnail": "avatar_Ace.png"
+            }
+        },
+        "1": {
+            "original": {
+                "name": "Intelligent Mineral",
+                "gameSetup": "",
+                "powerBody": "As a main player, after encounter cards are selected but before they are revealed, you may use this power to guess a number from 1-9. If your opponent reveals an attack card that has that number as a digit, add 9 to your total.",
+                "powerTiming": {
+                    "player": "Main Player Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": true,
+                        "reveal": false,
+                        "resolution": false
+                    }
+                },
+                "history": "Those that interacted with this shockingly sentient substance were often left wondering how it managed to outplay them.",
+                "expansion": "Cosmic Odyssey",
+                "designers": [
+                ],
+                "thumbnail": "avatar_Ace.png"
+            }
+        },
+        "2": {
+            "original": {
+                "name": "Musician",
+                "gameSetup": "",
+                "powerBody": "As a main player, after you win an encounter, use this power either to draw cards from the deck until you have a hand of eight cards or to discard down to four cards of your choice.",
+                "powerTiming": {
+                    "player": "Main Player Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": true
+                    }
+                },
+                "history": "Although many cultured have developed music for different occasions, the Musicians have a different melody for every event, from the triumphant horns and rolling kettle drums of birth to the sad trombone solo they play when alone.",
+                "expansion": "Cosmic Odyssey",
+                "designers": [
+                ],
+                "thumbnail": "avatar_Ace.png"
+            }
+        },
+        "3": {
+            "original": {
+                "name": "Preservationist",
+                "gameSetup": "",
+                "powerBody": "Once per encounter, after another player discards a card, you may use this power to force them to return the card to their hand.",
+                "powerTiming": {
+                    "player": "As Any Player",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "history": "Although their tradition leans toward arboreal conservationism, after they discovered consumerism, the Preservationists' cheecks and aspirations expanded greatly.",
+                "expansion": "Cosmic Odyssey",
+                "designers": [
+                ],
+                "thumbnail": "avatar_Ace.png"
+            }
+        }
+    }
+}
