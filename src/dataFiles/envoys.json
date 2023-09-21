@@ -21,9 +21,8 @@
                 },
                 "history": "The Crabbys are often salty from unsatisfactory trades, and are almost always covered in sodium chloride.",
                 "expansion": "Cosmic Odyssey",
-                "designers": [
-                ],
-                "thumbnail": "avatar_Ace.png"
+                "designers": [],
+                "thumbnail": "envoy icons/avatar_Crabby.png"
             }
         },
         "1": {
@@ -47,9 +46,8 @@
                 },
                 "history": "Those that interacted with this shockingly sentient substance were often left wondering how it managed to outplay them.",
                 "expansion": "Cosmic Odyssey",
-                "designers": [
-                ],
-                "thumbnail": "avatar_Ace.png"
+                "designers": [],
+                "thumbnail": "envoy icons/avatar_Intelligent_Mineral.png"
             }
         },
         "2": {
@@ -73,9 +71,8 @@
                 },
                 "history": "Although many cultured have developed music for different occasions, the Musicians have a different melody for every event, from the triumphant horns and rolling kettle drums of birth to the sad trombone solo they play when alone.",
                 "expansion": "Cosmic Odyssey",
-                "designers": [
-                ],
-                "thumbnail": "avatar_Ace.png"
+                "designers": [],
+                "thumbnail": "envoy icons/avatar_Musician.png"
             }
         },
         "3": {
@@ -99,9 +96,182 @@
                 },
                 "history": "Although their tradition leans toward arboreal conservationism, after they discovered consumerism, the Preservationists' cheecks and aspirations expanded greatly.",
                 "expansion": "Cosmic Odyssey",
-                "designers": [
-                ],
-                "thumbnail": "avatar_Ace.png"
+                "designers": [],
+                "thumbnail": "envoy icons/avatar_Preservationist.png"
+            }
+        },
+        "4": {
+            "original": {
+                "name": "Prime",
+                "gameSetup": "",
+                "powerBody": "As a main player or ally, during the reveal phase, when you play or reveal a card with a prime number, use this power to double its value for encounter totals.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "history": "The holy nature of certain numbers empower the Prime to presevere as well as triumph: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97.",
+                "expansion": "Cosmic Odyssey",
+                "designers": [],
+                "thumbnail": "envoy icons/avatar_Prime.png"
+            },
+            "revised": {
+                "name": "Prime",
+                "gameSetup": "",
+                "powerBody": "As a main player or ally, during the reveal phase, when you play or reveal a card with a prime number, use this power to double its value for encounter totals.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "history": "The holy nature of certain numbers empower the Prime to presevere as well as triumph: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97. Alternatively, all negative numbers have been deemed unholy and incorrigible as prime numbers cannot be negative.",
+                "expansion": "Cosmic Odyssey",
+                "designers": [],
+                "thumbnail": "envoy icons/avatar_Prime.png",
+                "revisionNotes": "Revisions from The Praw\n\nEdited to include the deleted part of the history that clarified negative numbers cannot be prime."
+            }
+        },
+        "5": {
+            "original": {
+                "name": "Roller",
+                "gameSetup": "",
+                "powerBody": "As a main player or ally, after cards are selected but before they are revealed, you may use this power. If you do, opposing allies that wish to play reinforcement cards must do so now and cannot play reinforcement cards after cards are revealed.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": true,
+                        "reveal": false,
+                        "resolution": false
+                    }
+                },
+                "history": "In order to appease their king whose outrageous requests for offering gre too excessive, the Rollers fabricated large spheres of rolled-up stuff to an excessive scale. Soon they rolled up their whole planet and went to the skies to acquire more things.",
+                "expansion": "Cosmic Odyssey",
+                "designers": [],
+                "thumbnail": "envoy icons/avatar_Roller.png"
+            }
+        },
+        "6": {
+            "original": {
+                "name": "Swarm",
+                "gameSetup": "",
+                "powerBody": "As a main player or ally, after encounter cards are revealed, use this power. Each opposing player who has at least as many foreign colonies as you does not add their ships to encounter totals. Each of your allies' ships is worth double toward encounter totals if that ally does not have more foreign colonies than you.",
+                "powerTiming": {
+                    "player": "Main Player Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "history": "The Swarm are known for assaulting foes in relentless waves, and for their tasty banana mead.",
+                "expansion": "Cosmic Odyssey",
+                "designers": [],
+                "thumbnail": "envoy icons/avatar_Swarm.png"
+            }
+        },
+        "7": {
+            "original": {
+                "name": "Uber-Reserve",
+                "gameSetup": "",
+                "powerBody": "As a main player or ally, after encounter cards are revealed, use this power. The value of each reinforcement card your side plays is doubled.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "history": "The Reserves think the rest of the galaxy's obsession with superheroes is hilarious and silly, while they fail to see any connotation with their own Uberheroes.",
+                "expansion": "Cosmic Odyssey",
+                "designers": [],
+                "thumbnail": "envoy icons/avatar_Uber_Reserve.png"
+            }
+        },
+        "8": {
+            "original": {
+                "name": "Underdog",
+                "gameSetup": "",
+                "powerBody": "As a main player, after the outcome is determined, if both sides revealed attack cards and you lost by 15 or more, use this power. Your side wins instead.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "history": "Priding themselves on their come-from-behind attitude and their proclivity for winning when the odds are stacked against them, the Underdogs hate a fair fight.",
+                "expansion": "Cosmic Odyssey",
+                "designers": [],
+                "thumbnail": "envoy icons/avatar_Underdog.png"
+            }
+        },
+        "9": {
+            "original": {
+                "name": "Worry Wart",
+                "gameSetup": "",
+                "powerBody": "As a main player, after allies are invited, use this power. Gain one reward for each player your opponent invited.",
+                "powerTiming": {
+                    "player": "Main Player Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": true,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": false
+                    }
+                },
+                "history": "The Worry Warts have the amazing ability to make their thoughts into reality. Unfortunately, their thoughts are consumed with worrying about what horrible thing they might accidently think up!",
+                "expansion": "Cosmic Odyssey",
+                "designers": [],
+                "thumbnail": "envoy icons/avatar_Worry_Wart.png"
             }
         }
     }

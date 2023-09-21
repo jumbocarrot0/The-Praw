@@ -43,6 +43,7 @@ import SpecialShipsPage from "./pages/Lists/SpecialShipsListPage";
 import AnomaliesPage from "./pages/Lists/AnomaliesListPage";
 import AlienInfluencersPage from "./pages/Variants/AlienInfluencersPage";
 import EnvoysPage from "./pages/Lists/EnvoysListPage";
+import IndividualEnvoyPage from "./pages/IndividualItem/IndividualEnvoyPage";
 
 import Aliens from './dataFiles/aliens.json'
 import Techs from './dataFiles/technology.json'
@@ -52,6 +53,7 @@ import Lux from './dataFiles/lux.json'
 import Evolutions from './dataFiles/evolutions.json'
 import Moons from './dataFiles/moons.json'
 import Objectives from './dataFiles/objectives.json'
+import Envoys from './dataFiles/envoys.json'
 
 // const AlienBreadcrumb = ({ match }) => Aliens.aliens[match.params.alienIndex].original.name;
 
@@ -238,6 +240,11 @@ export const routes = [
     {
       path: "/Variants/Envoys",
       element: <EnvoysPage />
+    },
+    {
+      path: "/Variants/Envoys/:envoyIndex",
+      element: <IndividualEnvoyPage />,
+      breadcrumb: ({ match }) => Envoys.envoys[match.params.envoyIndex].original.name
     },
     {
       path: "/*",

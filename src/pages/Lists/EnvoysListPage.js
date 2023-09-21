@@ -1,4 +1,5 @@
 import Item from '../../components/Item'
+import Envoys from '../../dataFiles/envoys.json';
 import GridBrowser from "../../components/GridBrowser";
 import Layout from '../../components/Layout'
 import {
@@ -31,7 +32,19 @@ export default function EnvoysPage() {
             </ul>
           </AccordionBody>
         </AccordionItem>
+        <hr className="border border-light border-2 opacity-100 mb-5" />
       </UncontrolledAccordion>
+      <GridBrowser cardTemplate={Item}
+        noSort={true}
+        url="/Variants/Envoys"
+        content={Envoys.envoys}
+        border={(envoy) => {
+          const borders = { "Cosmic Odyssey": "success", "Fan Made": "indigo" };
+          return borders[envoy.expansion];
+        }}
+        type={() => { return null }}
+        width={4}
+      />
     </Layout>
   );
 }
