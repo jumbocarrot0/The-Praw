@@ -3,7 +3,6 @@ import {
   Button, Table, Row
 } from 'reactstrap';
 import { Link } from "react-router-dom"
-import Layout from '../components/Layout'
 import Loading from '../components/Loading'
 
 import { getRandomCombo } from "../supabaseAPI/getCombo";

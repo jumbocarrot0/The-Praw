@@ -5,7 +5,6 @@ import {
 import { useParams } from "react-router-dom"
 import Lux from '../../dataFiles/lux.json';
 import TimingBar from '../../components/TimingBar';
-import Layout from '../../components/Layout'
 
 export default function IndividualLuxPage() {
 

@@ -1,6 +1,5 @@
 import Item from '../../components/Item'
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 
 export default function VariantsListPage() {
 

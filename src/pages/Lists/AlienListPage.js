@@ -19,7 +19,6 @@ import {
 import { Link } from "react-router-dom"
 import { ReactComponent as SearchLogo } from '../../svg/searchIcon.svg';
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import Loading from '../../components/Loading'
 
 import { getAllAliens } from "../../supabaseAPI/getAlien"

@@ -1,10 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { Button } from 'reactstrap'
 
-import Layout from '../components/Layout'
 import Searchbar from '../components/Searchbar'
-
-
 
 export default function Home() {
 

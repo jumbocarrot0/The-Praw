@@ -11,7 +11,6 @@ import {
 } from 'reactstrap';
 import { Link } from "react-router-dom"
 import GridBrowser from "../components/GridBrowser";
-import Layout from '../components/Layout'
 import Searchbar from '../components/Searchbar'
 import Loading from '../components/Loading'
 

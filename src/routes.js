@@ -37,7 +37,6 @@ import AllianceDialPage from "./pages/Variants/AllianceDialPage";
 import ForeignAidPage from "./pages/Variants/ForeignAidPage";
 import CampaignPage from "./pages/Variants/CampaignPage";
 
-import Aliens from './dataFiles/aliens.json'
 import Techs from './dataFiles/technology.json'
 import Hazards from './dataFiles/hazards.json'
 import Stations from './dataFiles/stations.json'

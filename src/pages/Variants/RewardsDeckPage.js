@@ -1,5 +1,3 @@
-import Layout from '../../components/Layout'
-
 export default function RewardsDeckPage() {
   return (
     <div>

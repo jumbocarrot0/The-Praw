@@ -1,7 +1,6 @@
 import Item from '../../components/Item'
 import Objectives from '../../dataFiles/objectives.json';
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import {
   UncontrolledAccordion,
   AccordionBody,

@@ -3,7 +3,6 @@ import {
   Button, Row, Col, Form, Label, Input, FormGroup, FormFeedback
 } from 'reactstrap';
 // import { Link } from "react-router-dom"
-import Layout from '../components/Layout'
 // import Loading from '../components/Loading'
 
 import { getAllAliens } from "../supabaseAPI/getAlien"

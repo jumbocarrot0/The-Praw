@@ -1,4 +1,3 @@
-import Layout from '../components/Layout'
 import {
   Button,
   UncontrolledAccordion,

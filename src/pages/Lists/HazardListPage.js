@@ -1,7 +1,6 @@
 import Item from '../../components/Item'
 import Hazards from '../../dataFiles/hazards.json';
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import {
   UncontrolledAccordion,
   AccordionBody,

@@ -1,7 +1,6 @@
 import Item from '../../components/Item'
 import Lux from '../../dataFiles/lux.json';
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import {
   UncontrolledAccordion,
   AccordionBody,

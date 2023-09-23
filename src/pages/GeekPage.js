@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Input, Form, FormFeedback } from 'reactstrap'
 
-import Layout from '../components/Layout'
 import Loading from '../components/Loading'
 
 import { getRandomAlien } from '../supabaseAPI/getAlien'

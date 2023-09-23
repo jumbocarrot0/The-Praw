@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from 'react-router-dom'
 import GridBrowser from "../components/GridBrowser";
-import Layout from '../components/Layout';
 import Loading from '../components/Loading';
 import {
   Card,

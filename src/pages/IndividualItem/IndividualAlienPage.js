@@ -4,7 +4,6 @@ import {
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
 // import TimingBar from '../../components/TimingBar';
-import Layout from '../../components/Layout'
 import Alien from '../../components/Alien'
 import Loading from '../../components/Loading'
 
