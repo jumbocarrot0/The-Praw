@@ -47,12 +47,12 @@ export default function IndividualAlienPage() {
   // console.log("bans", alienBans)
 
   if (alien === undefined) {
-    return <Layout>
+    return <div>
       <Loading/>
-    </Layout>
+    </div>
   } else {
     return (
-      <Layout title={alien[tab].name}>
+      <div>
         {alien.revised || alien.homebrew ?
           <Nav className="ps-5 mx-1" tabs>
             <NavItem>
@@ -80,7 +80,7 @@ export default function IndividualAlienPage() {
 
           </CardBody>
         </Card>
-      </Layout>
+      </div>
     );
   }
 }

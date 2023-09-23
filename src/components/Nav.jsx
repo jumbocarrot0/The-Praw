@@ -65,6 +65,11 @@ export default function PrawNav() {
                   Geek Practice
                 </Link>
               </DropdownItem>
+              <DropdownItem>
+                <Link className="nav-link" to="/DigitalDial">
+                  Digital Dial
+                </Link>
+              </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <NavItem key={6}>

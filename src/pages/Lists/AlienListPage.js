@@ -366,7 +366,7 @@ export default function AliensListPage() {
 
   }
   return (
-    <Layout title="Aliens">
+    <div>
       <h1 className='mb-4'>Aliens</h1>
       <Card className='mb-4 bg-light'>
         <CardBody>
@@ -525,6 +525,6 @@ export default function AliensListPage() {
       {aliens === undefined ? <Loading /> : Object.keys(filteredAliens).length === 0 ? <div>
         <p className="fs-3 text-center">No aliens match your filters.</p>
       </div> : null}
-    </Layout>
+    </div>
   );
 }

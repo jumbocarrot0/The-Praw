@@ -10,7 +10,7 @@ import {
 
 export default function CampaignPage() {
   return (
-    <Layout title="Campaign Mode">
+    <div>
       <h1 className='mb-4'>Campaign Mode</h1>
       <p className="text-light">The Campaign variant is the box-featured variant of Cosmic Odyssey, designed to allow players to easily explore that expansion's 8+ variants.
         <br /><br />
@@ -192,6 +192,6 @@ export default function CampaignPage() {
           </AccordionBody>
         </AccordionItem>
       </UncontrolledAccordion>
-    </Layout>
+    </div>
   );
 }

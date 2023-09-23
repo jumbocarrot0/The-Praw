@@ -20,7 +20,7 @@ export default function IndividualMoonPage() {
   }, [moonIndex])
 
   return (
-    <Layout title={moon.name}>
+    <div>
       {Moons.moons[moonIndex].revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
@@ -51,7 +51,7 @@ export default function IndividualMoonPage() {
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

@@ -2,7 +2,7 @@ import Layout from '../../components/Layout'
 
 export default function RewardsDeckPage() {
   return (
-    <Layout title="Rewards Deck">
+    <div>
       <h1 className='mb-4'>Rewards Deck</h1>
       <p className="text-light">The rewards deck is an official variant introduced in Cosmic Incursion. The deck is a purple-backed deck of cards that can only be drawn from when players gain rewards.
         <br />
@@ -33,6 +33,6 @@ export default function RewardsDeckPage() {
           <li className="text-light">If players find the above rule too ambiguous, The Praw recommends the following altnerative rule: If a player has already drawn an ultra reward from the rewards deck in this encounter (not from another source like another player's hand), they may not draw another from the rewards deck.</li>
         </ul>
       </ul>
-    </Layout>
+    </div>
   );
 }

@@ -11,7 +11,7 @@ export default function Home() {
   const navigate = useNavigate()
 
   return (
-    <Layout>
+    <div>
       <section className="hero text-center">
         <h1 className="hero__title">The Praw</h1>
         <p className="hero__subtitle">A Fan-Made Website for <a href="https://futurepastimes.com/cosmic-encounter-board-game">Cosmic Encounter</a></p>
@@ -23,6 +23,6 @@ export default function Home() {
           Random Alien
         </Button>
       </section>
-    </Layout>
+    </div>
   );
 }

@@ -26,7 +26,7 @@ function AccordionAlienBody(props) {
 
 export default function HouseRulesPage() {
   return (
-    <Layout title="House Rules">
+    <div>
       <h1 className='mb-4'>House Rules</h1>
       <p className="text-light">Cosmic Encounter has a lot of components, including aliens and various cards for its many variants. Throughout their release, the playerbase has noted that some of these components have issues with them that render them unfun. This may be due to a rules issue, which this site corrects on each item's page, but sometimes its due to a more opinionated stance on whether an alien or other component is too weak or too obtrusively strong.
         <br /><br />
@@ -275,6 +275,6 @@ export default function HouseRulesPage() {
           </AccordionAlienBody>
         </AccordionItem>
       </UncontrolledAccordion>
-    </Layout>
+    </div>
   );
 }

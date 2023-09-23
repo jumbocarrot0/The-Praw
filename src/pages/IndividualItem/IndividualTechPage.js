@@ -20,7 +20,7 @@ export default function IndividualTechPage() {
   }, [techIndex])
 
   return (
-    <Layout title={tech.name}>
+    <div>
       {Techs.technologies[techIndex].revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
@@ -57,7 +57,7 @@ export default function IndividualTechPage() {
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

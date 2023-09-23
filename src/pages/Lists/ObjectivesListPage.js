@@ -11,7 +11,7 @@ import {
 
 export default function HazardListPage() {
   return (
-    <Layout>
+    <div>
       <h1 className='mb-4'>Objectives</h1>
       <p className="text-light">Objectives are an official variant introduced in Cosmic Odyssey. It is intended primarially with use in the Campaign Mode but can be used as a standalone variant as well. The variant adds an objectives deck, with 4 objectives drawn at the start of the game. At the end of the game, the winner is not the first player to 5 foreign colonies (although that is how the game ends), but the player who scores the most points.
         <br />
@@ -44,6 +44,6 @@ export default function HazardListPage() {
         type={() => { return null }}
         width={4}
       />
-    </Layout>
+    </div>
   );
 }

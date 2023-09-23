@@ -20,7 +20,7 @@ export default function IndividualObjectivePage() {
   }, [objectiveIndex])
 
   return (
-    <Layout title={objective.name}>
+    <div>
       {Objectives.objectives[objectiveIndex].revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
@@ -38,7 +38,7 @@ export default function IndividualObjectivePage() {
           <h1 className='text-light'>{objective.name}</h1>
 
           <p>{objective.body}</p>
-          <p><strong>{objective.points}</strong></p>
+          <p className='font-digit fs-big'>{objective.points}</p>
           <br />
 
 
@@ -52,7 +52,7 @@ export default function IndividualObjectivePage() {
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

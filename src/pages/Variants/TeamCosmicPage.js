@@ -2,7 +2,7 @@ import Layout from '../../components/Layout'
 
 export default function TechListPage() {
   return (
-    <Layout title="Team Cosmic">
+    <div>
       <h1 className='mb-4'>Team Cosmic</h1>
       <p className="text-light">Team Cosmic is an official variant introduced in Cosmic Alliance. The variant has no additional components, but is designed for higher player counts. Cosmic Odyssey makes this even more explicit, with the age card corresponding to this variant only being usable with 5 or more players.
       </p>
@@ -25,6 +25,6 @@ export default function TechListPage() {
         <li className="text-light">Although players still cannot show other players cards from their hands, they may talk openly - so that all players can hear - about their strategy and even name specific cards.</li>
         <li className="text-light">Since the odd player does not have a partner, the odd player only needs to complete a win condition by themselves to win. Also, when the turn order arrives at the unused planet across from the odd player, they receive a full turn. Afterwards, turn order continues from the unused planet.</li>
       </ul>
-    </Layout>
+    </div>
   );
 }

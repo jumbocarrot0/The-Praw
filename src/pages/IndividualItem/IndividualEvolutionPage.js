@@ -22,7 +22,7 @@ export default function IndividualEvolutionPage() {
   console.log(Object.entries(evolution.body))
 
   return (
-    <Layout title={evolution.name}>
+    <div>
       {Evolutions.evolutions[evolutionIndex].revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
@@ -57,7 +57,7 @@ export default function IndividualEvolutionPage() {
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

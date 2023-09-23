@@ -20,7 +20,7 @@ export default function IndividualLuxPage() {
   }, [luxIndex])
 
   return (
-    <Layout title={lux.name}>
+    <div>
       {Lux.lux[luxIndex].revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
@@ -51,7 +51,7 @@ export default function IndividualLuxPage() {
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

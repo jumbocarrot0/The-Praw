@@ -20,7 +20,7 @@ export default function IndividualHazardPage() {
   }, [hazardIndex])
 
   return (
-    <Layout title={hazard.name}>
+    <div>
     {Hazards.hazards[hazardIndex].revised || Hazards.hazards[hazardIndex].homebrew ?
       <Nav className="ps-5 mx-1" tabs>
         <NavItem>
@@ -73,7 +73,7 @@ export default function IndividualHazardPage() {
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

@@ -11,7 +11,7 @@ import {
 
 export default function MoonListPage() {
   return (
-    <Layout title="Moons">
+    <div>
       <h1 className='mb-4'>Moons</h1>
       <p className="text-light">Moons are an official variant originally introduced in the 5th expanion of the Eons editions, and reimplemented in the FFG edition in Cosmic Odyssey. In it, players start with moons attached to two planets in their system. When a player wins an encounter on a planet with a moon, they may gain control of the moon and get to use its effect. Some moons have ongoing effects, some are one-time effects.
         <br />
@@ -68,6 +68,6 @@ export default function MoonListPage() {
         type={(item) => { return item.type }}
         width={4}
       />
-    </Layout>
+    </div>
   );
 }

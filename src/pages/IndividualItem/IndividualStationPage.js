@@ -20,7 +20,7 @@ export default function IndividualStationPage() {
   }, [stationIndex])
 
   return (
-    <Layout title={station.name}>
+    <div>
       {Stations.stations[stationIndex].revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
@@ -51,7 +51,7 @@ export default function IndividualStationPage() {
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

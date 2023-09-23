@@ -6,7 +6,7 @@ import Loading from '../components/Loading'
 
 import { getRandomAlien } from '../supabaseAPI/getAlien'
 
-export default function Home() {
+export default function Geek() {
 
     const [alien, setAlien] = useState(undefined)
 
@@ -25,7 +25,7 @@ export default function Home() {
     }, [alienCount])
 
     return (
-        <Layout>
+        <div>
             <Form className="hero text-center" onSubmit={
                 (event) => {
                     event.preventDefault();
@@ -87,6 +87,6 @@ export default function Home() {
                     Correct
                 </FormFeedback>
             </Form>
-        </Layout>
+        </div>
     );
 }
