@@ -5,7 +5,7 @@ import {
 } from 'reactstrap';
 
 import Header from "./ThrowbackHeader";
-import ScrollIntoView from "./ScrollIntoView";
+import ScrollToTop from "./ScrollToTop";
 
 export default function Layout(props) {
     return (
@@ -15,7 +15,7 @@ export default function Layout(props) {
                     <title>Display Any Alien</title>
                     <body className='throwback' />
                 </Helmet>
-                <ScrollIntoView>
+                <ScrollToTop/>
                     <Row>
                         <Col md={3}>
                         </Col>
@@ -34,7 +34,6 @@ export default function Layout(props) {
                         </Col>
                     </Row>
                     {/* <Footer /> */}
-                </ScrollIntoView>
             </HelmetProvider>
         </div>
     );

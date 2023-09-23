@@ -9,14 +9,9 @@ export default function Breadcrumbs(props) {
   // console.log(breadcrumbs)
 
   const matches = useMatches();
-  console.log(matches)
   const crumbs = matches
-  // first get rid of any matches that don't have handle and crumb
   .filter((match) => Boolean(match.handle?.breadcrumb))
-  // now map them into an array of elements, passing the loader
-  // data to each one
-  .map((match) => match.handle.breadcrumb(match.data));
-  console.log(crumbs)
+  .map((match) => match.handle.breadcrumb(match.data))
 
   return (
       <Breadcrumb>

@@ -15,7 +15,7 @@ export default function Footer() {
         <br />
         Bill Martinson for the Cosmodex, which this site started upon.
         <br />
-        Version: 1.4.0a
+        Version: 1.4.0b
       </span>
     </footer>
   );
