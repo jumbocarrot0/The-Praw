@@ -5,7 +5,6 @@ import {
 import { useParams } from "react-router-dom"
 import Lux from '../../dataFiles/lux.json';
 import TimingBar from '../../components/TimingBar';
-import Layout from '../../components/Layout'
 
 export default function IndividualLuxPage() {
 
@@ -20,7 +19,7 @@ export default function IndividualLuxPage() {
   }, [luxIndex])
 
   return (
-    <Layout title={lux.name}>
+    <div>
       {Lux.lux[luxIndex].revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
@@ -51,7 +50,7 @@ export default function IndividualLuxPage() {
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

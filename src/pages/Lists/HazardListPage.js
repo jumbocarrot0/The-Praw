@@ -1,7 +1,6 @@
 import Item from '../../components/Item'
 import Hazards from '../../dataFiles/hazards.json';
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import {
   UncontrolledAccordion,
   AccordionBody,
@@ -12,7 +11,7 @@ import {
 
 export default function HazardListPage() {
   return (
-    <Layout title="Hazard">
+    <div>
       <h1 className='mb-4'>Hazards</h1>
       <p className="text-light">Hazards are an official variant introduced in Cosmic Conflict. The variant adds an additional hazard deck which is drawn from whenever a destiny card with a hazard warning is drawn (which is roughly 25% of the destiny deck).
         <br />
@@ -64,6 +63,6 @@ export default function HazardListPage() {
         }}
         type={(item) => { return item.type }}
       />
-    </Layout>
+    </div>
   );
 }

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from 'react-router-dom'
 import GridBrowser from "../components/GridBrowser";
-import Layout from '../components/Layout';
 import Loading from '../components/Loading';
 import {
   Card,
@@ -319,8 +318,8 @@ export default function Selection() {
   }
 
   return (
-    <Layout title="Alien Selection">
-      <h1 className='mb-4'>Aliens</h1>
+    <div>
+      <h1 className='mb-4'>Alien Selection</h1>
       <Modal isOpen={errorModal} toggle={() => setErrorModal(!errorModal)}>
         <ModalHeader toggle={() => setErrorModal(!errorModal)}>Invalid Filters</ModalHeader>
         <ModalBody>
@@ -632,6 +631,6 @@ export default function Selection() {
         revised={revised}
         noSort
       />
-    </Layout>
+    </div>
   )
 }

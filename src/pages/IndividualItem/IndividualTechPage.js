@@ -5,7 +5,6 @@ import {
 import { useParams } from "react-router-dom"
 import Techs from '../../dataFiles/technology.json';
 import TimingBar from '../../components/TimingBar';
-import Layout from '../../components/Layout'
 
 export default function IndividualTechPage() {
 
@@ -20,7 +19,7 @@ export default function IndividualTechPage() {
   }, [techIndex])
 
   return (
-    <Layout title={tech.name}>
+    <div>
       {Techs.technologies[techIndex].revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
@@ -57,7 +56,7 @@ export default function IndividualTechPage() {
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

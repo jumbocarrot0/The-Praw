@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
-import { useSearchParams, createSearchParams, useNavigate } from 'react-router-dom'
+import React from "react";
+import { useState } from "react";
+import { useSearchParams, createSearchParams, useNavigate, Await, useRouteLoaderData } from 'react-router-dom'
 import {
   Card,
   CardTitle,
@@ -19,10 +20,7 @@ import {
 import { Link } from "react-router-dom"
 import { ReactComponent as SearchLogo } from '../../svg/searchIcon.svg';
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import Loading from '../../components/Loading'
-
-import { getAllAliens } from "../../supabaseAPI/getAlien"
 
 function Alien(props) {
   const alien = props.content
@@ -69,7 +67,7 @@ function filterAliens(aliens, search, expansions, phases, exactPhases, player, e
 
   let filteredAliens = Object.entries(aliens);
 
-  console.log(filteredAliens)
+  // console.log(filteredAliens)
 
   filteredAliens = filteredAliens.filter((alien) => alien[1].original.name.toLowerCase().includes(search.toLowerCase()))
   filteredAliens = filteredAliens.filter((alien) => expansions.includes(alien[1].original.expansion))
@@ -281,13 +279,14 @@ export default function AliensListPage() {
   const submittedQuery = (searchParams.get('search') || '');
   const [searchQuery, setSearchQuery] = useState(submittedQuery);
 
-  const [aliens, setAliens] = useState(undefined)
-  useEffect(() => {
-    getAllAliens()
-      .then((data) => {
-        setAliens(data)
-      })
-  }, [])
+  const aliens = useRouteLoaderData("aliens")
+  // const [aliens, setAliens] = useState(undefined)
+  // useEffect(() => {
+  //   getAllAliens()
+  //     .then((data) => {
+  //       setAliens(data)
+  //     })
+  // }, [])
 
   let submittedExpansions = ["Base Set", "42nd Anniversary Edition", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "Cosmic Odyssey"];
   submittedExpansions = submittedExpansions.filter((expansion) => searchParams.get(expansion) !== 'false');
@@ -357,16 +356,10 @@ export default function AliensListPage() {
   }
 
   const navigate = useNavigate();
+  let filteredAliens = [];
 
-  let filteredAliens;
-  if (aliens === undefined) {
-    filteredAliens = []
-  } else {
-    filteredAliens = filterAliens(aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases, submittedPlayer, submittedExactPlayer, submittedAlertLevels)
-
-  }
   return (
-    <Layout title="Aliens">
+    <div>
       <h1 className='mb-4'>Aliens</h1>
       <Card className='mb-4 bg-light'>
         <CardBody>
@@ -516,15 +509,33 @@ export default function AliensListPage() {
         </CardBody>
       </Card>
       <hr className="border border-light border-2 opacity-100 mb-4" />
-      <p>{Object.keys(filteredAliens).length}/238 Results</p>
-      <GridBrowser cardTemplate={Alien}
-        url="/Aliens"
-        content={filteredAliens}
-        width={4}
-      />
-      {aliens === undefined ? <Loading /> : Object.keys(filteredAliens).length === 0 ? <div>
-        <p className="fs-3 text-center">No aliens match your filters.</p>
-      </div> : null}
-    </Layout>
+      <React.Suspense fallback={<Loading />}>
+        <Await
+          resolve={aliens.aliens}
+          errorElement={
+            <p className="fs-3 text-center">Error loading aliens!</p>
+          }
+        >
+          {(aliens) => {
+            if (aliens !== undefined) {
+              filteredAliens = filterAliens(aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases, submittedPlayer, submittedExactPlayer, submittedAlertLevels)
+            }
+            console.log(filteredAliens)
+            return <>
+              <p>{Object.keys(filteredAliens).length}/238 Results</p>
+              <GridBrowser cardTemplate={Alien}
+                url="/Aliens"
+                content={filteredAliens}
+                width={4}
+              />
+              {Object.keys(filteredAliens).length === 0 ? <div>
+                <p className="fs-3 text-center">No aliens match your filters.</p>
+              </div> : null}
+            </>
+          }
+          }
+        </Await>
+      </React.Suspense>
+    </div>
   );
 }

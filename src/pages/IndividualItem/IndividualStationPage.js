@@ -5,7 +5,6 @@ import {
 import { useParams } from "react-router-dom"
 import Stations from '../../dataFiles/stations.json';
 import TimingBar from '../../components/TimingBar';
-import Layout from '../../components/Layout'
 
 export default function IndividualStationPage() {
 
@@ -20,7 +19,7 @@ export default function IndividualStationPage() {
   }, [stationIndex])
 
   return (
-    <Layout title={station.name}>
+    <div>
       {Stations.stations[stationIndex].revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
@@ -51,7 +50,7 @@ export default function IndividualStationPage() {
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

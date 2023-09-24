@@ -11,7 +11,6 @@ import {
 } from 'reactstrap';
 import { Link } from "react-router-dom"
 import GridBrowser from "../components/GridBrowser";
-import Layout from '../components/Layout'
 import Searchbar from '../components/Searchbar'
 import Loading from '../components/Loading'
 
@@ -162,41 +161,6 @@ export default function ResultsPage() {
   const [searchResults, setSearchResults] = useState([])
   const [loading, setLoading] = useState(true)
 
-  // useEffect(() => {
-  //   const allItems = Object.entries(GetallItems());
-  //   const idx = lunr(function () {
-
-  //     this.ref('id')
-  //     this.field('name')
-  //     this.field('body')
-
-  //     allItems.forEach(function (doc) {
-  //       if (doc[0].includes('Alien')) {
-  //         this.add({
-  //           'id': doc[0], 'name': doc[1].original.name, 'body':
-  //             (doc[1].original.gameSetup +
-  //             doc[1].original.powerName +
-  //             doc[1].original.powerBody +
-  //             doc[1].original.history +
-  //             doc[1].original.wildBody +
-  //             doc[1].original.superBody)
-  //         })
-
-  //       } else if (doc[0].includes('Evolution')) {
-  //         this.add({ 'id': doc[0], 'name': doc[1].original.name.replaceAll('æ', 'ae'), 'body': doc[1].original.body })
-  //       } else {
-  //         this.add({ 'id': doc[0], 'name': doc[1].original.name, 'body': doc[1].original.body })
-  //       }
-  //     }, this)
-  //   })
-
-  //   const lunrQuery = `name:${submittedQuery} name:*${submittedQuery}* ${submittedQuery} ${submittedQuery}* *${submittedQuery}* *${submittedQuery}`
-  //   // const lunrQuery = `*${submittedQuery.replace(' ', '* *')}*`
-  //   console.log(lunrQuery)
-  //   setSearchResults(idx.search(lunrQuery)
-  //     .map(result => [result.ref, Object.fromEntries(allItems)[result.ref]]))
-  // }, [submittedQuery])
-
   useEffect(() => {
     GetallItems().then(data => {
       const allItems = Object.entries(data);
@@ -232,7 +196,7 @@ export default function ResultsPage() {
   }, [submittedQuery])
 
   return (
-    <Layout title="Search">
+    <div>
       <h1 className='mb-4'>Search</h1>
       <Row>
         <Col sm={8}>
@@ -268,6 +232,6 @@ export default function ResultsPage() {
         <Col sm={4}>
         </Col>
       </Row>
-    </Layout>
+    </div>
   );
 }

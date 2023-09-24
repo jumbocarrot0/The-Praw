@@ -1,8 +1,6 @@
-import Layout from '../../components/Layout'
-
 export default function ForeignAidPage() {
   return (
-    <Layout title="Foreign Aid">
+    <div>
       <h1 className='mb-4'>Foreign Aid</h1>
       <p className="text-light">Foreign Aid is an official variant introduced in Cosmic Eons. When accepting ally invitations, a player may choose to provide foreign aid by showing the inviting player a card from their hand. If accepted, the main player gains the card and the potential ally joins as normal. If rejected, the invited player keeps the card and cannot join as an ally</p>
       <hr className="border border-light border-2 opacity-100 my-4" />
@@ -14,6 +12,6 @@ export default function ForeignAidPage() {
         <li className="text-light">The potential ally offers the inviting main player a card from their hand. If the main player accepts the card, the ally may send <strong>up to one ship</strong> into the encounter. If the card is rejected, the player may not be an ally for either side.</li>
         <li className="text-light">If playing with hidden alliances, players offer foreign aid by first turning the dial to the foreign aid icon (it looks like a card). Then, after alliance dials have been revealed, each player who offered foreign aid does so now. This gives players the chance to see which sides other players have joined before offering foreign aid.</li>
       </ul>
-    </Layout>
+    </div>
   );
 }

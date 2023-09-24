@@ -3,7 +3,6 @@ import {
   Button, Row, Col, Form, Label, Input, FormGroup, FormFeedback
 } from 'reactstrap';
 // import { Link } from "react-router-dom"
-import Layout from '../components/Layout'
 // import Loading from '../components/Loading'
 
 import { getAllAliens } from "../supabaseAPI/getAlien"
@@ -121,7 +120,7 @@ export default function CombosSubmit() {
   // console.log(comboAliens)
 
   return (
-    <Layout title="Combos">
+    <div>
       <Row>
         <h1 className="text-center">Submit your Combo!</h1>
         {submitted ? <div className="text-center">
@@ -231,6 +230,6 @@ export default function CombosSubmit() {
           <Link className="btn btn-primary w-50" to="https://forms.gle/Xg7aXQsrtitM1dFw9" role="button" target="_blank" rel="external">Submit your own Combo!</Link>
         </div>
       </Row> */}
-    </Layout>
+    </div>
   );
 }

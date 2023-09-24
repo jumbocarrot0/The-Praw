@@ -5,7 +5,6 @@ import {
 import { useParams } from "react-router-dom"
 import Moons from '../../dataFiles/moons.json';
 import TimingBar from '../../components/TimingBar';
-import Layout from '../../components/Layout'
 
 export default function IndividualMoonPage() {
 
@@ -20,7 +19,7 @@ export default function IndividualMoonPage() {
   }, [moonIndex])
 
   return (
-    <Layout title={moon.name}>
+    <div>
       {Moons.moons[moonIndex].revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
@@ -51,7 +50,7 @@ export default function IndividualMoonPage() {
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

@@ -1,29 +1,44 @@
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Outlet } from 'react-router-dom';
 
 import Header from "./Header";
 import Footer from "./Footer";
 import Breadcrumbs from "./Breadcrumbs";
 import { Container } from "reactstrap";
-import ScrollIntoView from "./ScrollIntoView";
+import ScrollToTop from "./ScrollToTop";
 
 export default function Layout(props) {
+
+    // const [title, setTitle] = useState("")
+
+    // const matches = useMatches();
+    // const match = matches.filter((match) => Boolean(match.handle?.breadcrumb)).at(-1)
+    // useEffect(() => {
+    //     async function fetchTitle() {
+    //         const title = await match.handle.breadcrumb(match.data)
+    //         return title
+    //     }
+    //     fetchTitle().then((title) => {console.log(title); setTitle(title)})
+    // }, [match])
+
     return (
-        <div className="App">
-            <HelmetProvider>
+        <>
+            {/* <HelmetProvider>
                 <Helmet>
-                    <title>The Praw {props.title ? "- " + props.title : ""}</title>
+                    <title>The Praw {title ? `- ${title}` : ""}</title>
                 </Helmet>
-                <ScrollIntoView>
-                    <Header />
-                    <main>
-                        <Container>
-                            <Breadcrumbs />
-                            {props.children}
-                        </Container>
-                    </main>
-                    <Footer />
-                </ScrollIntoView>
-            </HelmetProvider>
-        </div>
+            </HelmetProvider> */}
+            <div id="app" className="App">
+                <Header />
+                <main>
+                    <ScrollToTop/>
+                    <Container className={props.className}>
+                        <Breadcrumbs />
+                        <Outlet />
+                        {/* {props.children} */}
+                    </Container>
+                </main>
+                <Footer />
+            </div>
+        </>
     );
 }

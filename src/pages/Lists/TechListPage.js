@@ -1,7 +1,6 @@
 import Item from '../../components/Item'
 import Techs from '../../dataFiles/technology.json';
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import {
   UncontrolledAccordion,
   AccordionBody,
@@ -12,7 +11,7 @@ import {
 export default function TechListPage() {
 
   return (
-    <Layout title="Technologies">
+    <div>
       <h1 className='mb-4'>Technology</h1>
       <p className="text-light">Technology is an official variant introduced in the base set of Cosmic Encounter. In it, players draw tech cards and keep them facedown. Each regroup phase, a player may research a facedown tech using their ships. One fully researched, techs grant useful abilities to its owner.
         <br />
@@ -63,6 +62,6 @@ export default function TechListPage() {
         }}
         type={(item) => { return item.type }}
       />
-    </Layout>
+    </div>
   );
 }

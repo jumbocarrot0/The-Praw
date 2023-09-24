@@ -4,8 +4,6 @@ import {
 } from 'reactstrap';
 import { useParams } from "react-router-dom"
 import Hazards from '../../dataFiles/hazards.json';
-import Layout from '../../components/Layout'
-
 
 export default function IndividualHazardPage() {
 
@@ -20,7 +18,7 @@ export default function IndividualHazardPage() {
   }, [hazardIndex])
 
   return (
-    <Layout title={hazard.name}>
+    <div>
     {Hazards.hazards[hazardIndex].revised || Hazards.hazards[hazardIndex].homebrew ?
       <Nav className="ps-5 mx-1" tabs>
         <NavItem>
@@ -73,7 +71,7 @@ export default function IndividualHazardPage() {
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

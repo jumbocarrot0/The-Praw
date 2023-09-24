@@ -1,7 +1,6 @@
 import Item from '../../components/Item'
 import Stations from '../../dataFiles/stations.json';
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import {
   UncontrolledAccordion,
   AccordionBody,
@@ -11,7 +10,7 @@ import {
 
 export default function StationListPage() {
   return (
-    <Layout title="Space Stations">
+    <div>
       <h1 className='mb-4'>Space Stations</h1>
       <p className="text-light">Space Stations are an official variant introduced in Cosmic Storm. In it, players get control of stations attached to their planets, which they use the ability of for as long as they keep the planet.
         <br />
@@ -63,6 +62,6 @@ export default function StationListPage() {
         }}
         type={(item) => { return item.type }}
       />
-    </Layout>
+    </div>
   );
 }

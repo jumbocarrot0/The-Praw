@@ -3,7 +3,6 @@ import {
   Button, Table, Row
 } from 'reactstrap';
 import { Link } from "react-router-dom"
-import Layout from '../components/Layout'
 import Loading from '../components/Loading'
 
 import { getRandomCombo } from "../supabaseAPI/getCombo";
@@ -55,12 +54,12 @@ export default function Combos() {
 
   // console.log(combo)
   if (combo === undefined) {
-    return (<Layout title="Combos">
+    return (<div>
       <Loading />
-    </Layout>)
+    </div>)
   } else {
     return (
-      <Layout title="Combos">
+      <div>
         <Row>
           <h1 className="text-center">Combos</h1>
           <div className="d-flex justify-content-center">
@@ -108,7 +107,7 @@ export default function Combos() {
             <Link className="btn btn-primary w-50" to="/Combos/Submit" role="button">Submit your own Combo!</Link>
           </div>
         </Row>
-      </Layout>
+      </div>
     );
   }
 }
