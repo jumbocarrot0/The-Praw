@@ -1,8 +1,6 @@
-import Layout from '../../components/Layout'
-
 export default function SuperShotsPage() {
   return (
-    <Layout title="Super Shots">
+    <div>
       <h1 className='mb-4'>Super Shots</h1>
       <p className="text-light">Super Shots is a fan-made variant. In it, super flares are not shuffled into the deck and instead are given to each player for limited use.</p>
       <hr className="border border-light border-2 opacity-100 my-4" />
@@ -38,6 +36,6 @@ export default function SuperShotsPage() {
           <li className="text-light">When using the Inferno super through the super-shot flare, the flare is added to the player's hand and any tokens on it are discarded.</li>
         </ul>
       </ul>
-    </Layout>
+    </div>
   );
 }

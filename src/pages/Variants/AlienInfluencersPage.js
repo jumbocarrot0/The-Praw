@@ -1,9 +1,6 @@
-import { Link } from 'react-router-dom';
-import Layout from '../../components/Layout'
-
 export default function AlienInfluencersPage() {
   return (
-    <Layout title="Alien Influencers">
+    <div>
       <h1 className='mb-4'>Alien Influencers</h1>
       <p className="text-light">Alien Influencers is a fan variant that works very similarly to Evolutions, but with alien powers.</p>
       <hr className="border border-light border-2 opacity-100 my-4" />
@@ -18,6 +15,6 @@ export default function AlienInfluencersPage() {
         <li className="text-light">The player with the most ships (no ties) on an ambassador has the use of its alien power in addition to their power(s).</li>
         <li className="text-light">When a player sends ships during an encounter, they can take ships from ambassadors. After the encounter, if the player needs to return those ships, they cannot place them back on ambassadors; they must place those ships on any of their colonies instead.</li>
       </ul>
-    </Layout>
+    </div>
   );
 }

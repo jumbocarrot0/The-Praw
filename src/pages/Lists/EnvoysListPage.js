@@ -1,7 +1,6 @@
 import Item from '../../components/Item'
 import Envoys from '../../dataFiles/envoys.json';
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import {
   UncontrolledAccordion,
   AccordionBody,
@@ -12,7 +11,7 @@ import {
 
 export default function EnvoysPage() {
   return (
-    <Layout title="Envoys">
+    <div>
       <h1 className='mb-4'>Envoys</h1>
       <p className="text-light">Envoys are an official component of the Campaign mode in Cosmic Odyssey, but it does not have its own offical variant. The rules on this page are fan made, although not very experimental.</p>
       <hr className="border border-light border-2 opacity-100 my-4" />
@@ -45,6 +44,6 @@ export default function EnvoysPage() {
         type={() => { return null }}
         width={4}
       />
-    </Layout>
+    </div>
   );
 }

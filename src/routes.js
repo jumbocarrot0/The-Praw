@@ -227,20 +227,27 @@ export const routes = [
           },
 
           {
-            path: "/Variants/FourPlanets",
+            path: "FourPlanets",
             element: <FourPlanetsPage />,
-            breadcrumb: "Four Planets"
+            handle: {
+              breadcrumb: () => "Four Planets"
+            }
           },
           {
-            path: "/Variants/Freewheeling",
+            path: "FreewheelingFlares",
             element: <FreewheelingPage />,
-            breadcrumb: "Freewheeling Flares"
+            handle: {
+              breadcrumb: () => "Freewheeling Flares"
+            }
           },
           {
-            path: "/Variants/CommonRewards",
+            path: "CommonRewards",
             element: <CommonRewardsPage />,
-            breadcrumb: "Common Rewards"
+            handle: {
+              breadcrumb: () => "Common Rewards"
+            }
           },
+
           itemPageRoute(
             "Techs",
             "Techs",
@@ -355,7 +362,7 @@ export const routes = [
           },
           {
             path: "Contracts",
-            element: <ContractsPage />
+            element: <ContractsPage />,
             handle: {
               breadcrumb: () => "Contracts"
             }
@@ -388,7 +395,7 @@ export const routes = [
             "envoyIndex",
             <EnvoysPage />,
             <IndividualEnvoyPage />,
-            ({ params }) => Envoys.envoys[match.params.envoyIndex]
+            ({ params }) => Envoys.envoys[params.envoyIndex]
           )
         ]
       }

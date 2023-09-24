@@ -1,8 +1,6 @@
-import Layout from '../../components/Layout'
-
 export default function FreewheelingPage() {
   return (
-    <Layout title="Common Rewards">
+    <div>
       <h1 className='mb-4'>Common Rewards</h1>
       <p className="text-light">Common Rewards is an official variant introduced in Cosmic Incursion that adds reward cards to the cosmic deck.</p>
       <hr className="border border-light border-2 opacity-100 my-4" />
@@ -16,6 +14,6 @@ export default function FreewheelingPage() {
       <ul>
         <li className="text-light">Ultra Reward cards have no limit when drawing from the cosmic deck (or any deck outside of the reward deck).</li>
       </ul>
-    </Layout>
+    </div>
   );
 }

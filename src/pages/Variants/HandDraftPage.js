@@ -1,8 +1,6 @@
-import Layout from '../../components/Layout'
-
 export default function HandDraftPage() {
   return (
-    <Layout title="Hand Draft">
+    <div>
       <h1 className='mb-4'>Hand Draft</h1>
       <p className="text-light">Hand Draft is a fan-made variant that changes the way starting hands are dealt.</p>
       <hr className="border border-light border-2 opacity-100 my-4" />
@@ -20,6 +18,6 @@ export default function HandDraftPage() {
         <li className="text-light">When playing with Aristocrat in this variant, they perform their <strong>Game Setup</strong> before the draft and select their starting hand. They then do not participate in the draft.</li>
         <li className="text-light">If a player draws cards from another source such as the rewards deck, they draw those cards at the beginning of the draft. This means that their true starting hand will not have any extra cards, and they may not have all the cards from alternative sources.</li>
       </ul>
-    </Layout>
+    </div>
   );
 }

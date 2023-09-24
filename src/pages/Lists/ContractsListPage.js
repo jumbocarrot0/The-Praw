@@ -1,6 +1,5 @@
 import Item from '../../components/Item'
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import {
   UncontrolledAccordion,
   AccordionBody,
@@ -11,7 +10,7 @@ import {
 
 export default function ContractsPage() {
   return (
-    <Layout title="Contracts">
+    <div>
       <h1 className='mb-4'>Contracts</h1>
       <p className="text-light">Contracts are a fan-made variant by LordAscapelion. It changes the rules behind deal to make them less repetitive.</p>
       <hr className="border border-light border-2 opacity-100 my-4" />
@@ -54,6 +53,6 @@ export default function ContractsPage() {
           </AccordionBody>
         </AccordionItem>
       </UncontrolledAccordion>
-    </Layout>
+    </div>
   );
 }

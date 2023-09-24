@@ -1,6 +1,5 @@
 import Item from '../../components/Item'
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import {
   UncontrolledAccordion,
   AccordionBody,
@@ -11,7 +10,7 @@ import {
 
 export default function SpecialShipsPage() {
   return (
-    <Layout title="Special Ships">
+    <div>
       <h1 className='mb-4'>Special Ships</h1>
       <p className="text-light">Special Ships is an official variant in Cosmic Dominion, but with most of its content designed by fans. In it, each player is given a special ship with a unique ability.</p>
       <hr className="border border-light border-2 opacity-100 my-4" />
@@ -40,6 +39,6 @@ export default function SpecialShipsPage() {
           </AccordionBody>
         </AccordionItem>
       </UncontrolledAccordion>
-    </Layout>
+    </div>
   );
 }

@@ -1,6 +1,5 @@
 import Item from '../../components/Item'
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import {
   UncontrolledAccordion,
   AccordionBody,
@@ -11,7 +10,7 @@ import {
 
 export default function AnomaliesPage() {
   return (
-    <Layout title="Contracts">
+    <div>
       <h1 className='mb-4'>Anomalies</h1>
       <p className="text-light">Anomalies are a fan variant originally made by Jack Reda as 'Cosmic Stars' and was remade and mordernised by Jumbocarrot. It adds special abilities to each player's system.</p>
       <hr className="border border-light border-2 opacity-100 my-4" />
@@ -58,6 +57,6 @@ export default function AnomaliesPage() {
           </AccordionBody>
         </AccordionItem>
       </UncontrolledAccordion>
-    </Layout>
+    </div>
   );
 }
