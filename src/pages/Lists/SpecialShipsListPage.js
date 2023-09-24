@@ -1,4 +1,5 @@
 import Item from '../../components/Item'
+import SpecialShips from '../../dataFiles/specialShips.json';
 import GridBrowser from "../../components/GridBrowser";
 import {
   UncontrolledAccordion,
@@ -16,8 +17,26 @@ export default function SpecialShipsPage() {
       <hr className="border border-light border-2 opacity-100 my-4" />
       <UncontrolledAccordion defaultOpen={[]}>
         <AccordionItem>
-          <AccordionHeader targetId="1">Rules</AccordionHeader>
+          <AccordionHeader targetId="1">Official Rules</AccordionHeader>
           <AccordionBody accordionId="1">
+            <h3>Setup</h3>
+            <ul>
+              <li className="text-light">Each player takes their color ship marker and places it faceup on one of their ships.</li>
+              <li className="text-light">Choose a special ship type for all players' special ship to represent.</li>
+            </ul>
+            {/* <p className="text-light">These are copied from the Base Game rules.</p> */}
+            <h3>Gameplay</h3>
+            <ul>
+              <li className="text-light">Using your special ship's game effects requires having control of that ship (not in the warp, not captured, etc.).</li>
+              <li className="text-light">If a variant provides a special action, the ship's owner may activate this single-use effect by flipping the ship marker facedown. The owner may then “recharge” the special action for re-use by turning the marker faceup again whenever the special ship is retrieved from the warp, or if the owner does not have a second encounter on their turn.</li>
+              <li className="text-light">If a special ship is captured or removed from the game, when its owner retrieves a different ship from the warp during their own regroup phase, that player may place their marker on it, faceup, to create a replacement special ship.</li>
+            </ul>
+          </AccordionBody>
+        </AccordionItem>
+        <AccordionItem>
+          <AccordionHeader targetId="2">Fan 'Special Ship Cards' Rules</AccordionHeader>
+          <AccordionBody accordionId="2">
+            <p className="text-light">These fan rules tweak the official rules slightly to adapt them for a card-based version of special ships. This gives each player's special ship an individual ability.</p>
             <h3>Setup</h3>
             <ul>
               <li className="text-light">Each player takes their color ship marker and places it faceup on one of their ships.</li>
@@ -39,6 +58,17 @@ export default function SpecialShipsPage() {
           </AccordionBody>
         </AccordionItem>
       </UncontrolledAccordion>
+      <hr className="border border-light border-2 opacity-100 mb-5" />
+      <GridBrowser cardTemplate={Item}
+        url="/Variants/SpecialShips"
+        content={SpecialShips.ships}
+        border={(ship) => {
+          const borders = { "Cosmic Dominion": "success", "Fan Made": "indigo" };
+          return borders[ship.expansion];
+        }}
+        type={() => { return null }}
+        width={4}
+      />
     </div>
   );
 }

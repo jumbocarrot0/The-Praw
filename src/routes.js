@@ -48,6 +48,7 @@ import HandDraftPage from "./pages/Variants/HandDraftPage";
 import CommonRewardsPage from "./pages/Variants/CommonRewardsPage";
 import ContractsPage from "./pages/Lists/ContractsListPage";
 import SpecialShipsPage from "./pages/Lists/SpecialShipsListPage";
+import IndividualSpecialShipPage from "./pages/IndividualItem/IndividualSpecialShipPage";
 import AnomaliesPage from "./pages/Lists/AnomaliesListPage";
 import AlienInfluencersPage from "./pages/Variants/AlienInfluencersPage";
 import EnvoysPage from "./pages/Lists/EnvoysListPage";
@@ -61,6 +62,7 @@ import Evolutions from './dataFiles/evolutions.json'
 import Moons from './dataFiles/moons.json'
 import Objectives from './dataFiles/objectives.json'
 import Envoys from './dataFiles/envoys.json'
+import SpecialShips from './dataFiles/specialShips.json'
 
 import { getAlien, getAllAliens } from "./supabaseAPI/getAlien"
 
@@ -367,13 +369,15 @@ export const routes = [
               breadcrumb: () => "Contracts"
             }
           },
-          {
-            path: "SpecialShips",
-            element: <SpecialShipsPage />,
-            handle: {
-              breadcrumb: () => "Special Ships"
-            }
-          },
+
+          itemPageRoute(
+            "SpecialShips",
+            "Special Ships",
+            "specialShipIndex",
+            <SpecialShipsPage />,
+            <IndividualSpecialShipPage />,
+            ({ params }) => SpecialShips.ships[params.specialShipIndex]
+          ),
           {
             path: "Anomalies",
             element: <AnomaliesPage />,
