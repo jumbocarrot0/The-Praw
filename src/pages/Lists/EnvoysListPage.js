@@ -31,10 +31,9 @@ export default function EnvoysPage() {
             </ul>
           </AccordionBody>
         </AccordionItem>
-        <hr className="border border-light border-2 opacity-100 mb-5" />
       </UncontrolledAccordion>
+      <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}
-        noSort={true}
         url="/Variants/Envoys"
         content={Envoys.envoys}
         border={(envoy) => {

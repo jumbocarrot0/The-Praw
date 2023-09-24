@@ -9,7 +9,7 @@ import Loading from '../../components/Loading'
 import Envoys from '../../dataFiles/envoys.json';
 
 
-export default function IndividualAlienPage() {
+export default function IndividualEnvoyPage() {
 
   const { envoyIndex } = useParams();
 
