@@ -1,6 +1,10 @@
 //Pages
+import React from "react";
+import { Await, defer } from "react-router-dom"
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import Layout from "./components/Layout";
+// import Loading from "./components/Loading";
 
 import Home from "./pages/HomePage";
 import Results from "./pages/ResultsPage";
@@ -45,7 +49,7 @@ import Evolutions from './dataFiles/evolutions.json'
 import Moons from './dataFiles/moons.json'
 import Objectives from './dataFiles/objectives.json'
 
-import { getAlien } from "./supabaseAPI/getAlien"
+import { getAlien, getAllAliens } from "./supabaseAPI/getAlien"
 
 // const AlienBreadcrumb = ({ match }) => Aliens.aliens[match.params.alienIndex].original.name;
 
@@ -65,6 +69,7 @@ const itemPageRoute = (rootpath, crumb, indexpath, list, item, loader) => ({
       path: `:${indexpath}`,
       element: item,
       loader: loader,
+      id: indexpath,
       handle: {
         breadcrumb: itemPageBreadcrumb
       }
@@ -133,6 +138,8 @@ export const routes = [
       },
       {
         path: "Aliens",
+        id: "aliens",
+        loader: () => defer({ aliens: getAllAliens() }),
         handle: {
           breadcrumb: () => "Aliens"
         },
@@ -144,9 +151,46 @@ export const routes = [
           {
             element: <IndividualAlienPage />,
             path: ":alienIndex",
-            loader: async ({ params }) => getAlien(params.alienIndex),
+            loader: ({ params }) => {
+              const alienDataPromise = getAlien(params.alienIndex)
+              return defer({ alien: alienDataPromise })
+            },
+            id: "alienIndex",
             handle: {
-              breadcrumb: itemPageBreadcrumb
+              breadcrumb: (data) => (
+                <React.Suspense fallback={null}>
+                  <Await
+                    resolve={data.alien}
+                    errorElement={
+                      <p>Error loading alien!</p>
+                    }
+                  >
+                    {(alien) => alien.original.name}
+                  </Await>
+                </React.Suspense>
+              ),
+              title: (data) => (
+                <React.Suspense fallback={null}>
+                  <Await
+                    resolve={data.alien}
+                    errorElement={
+                      <HelmetProvider>
+                        <Helmet>
+                          <title>The Praw</title>
+                        </Helmet>
+                      </HelmetProvider>
+                    }
+                  >
+                    {(alien) => (
+                      <HelmetProvider>
+                        <Helmet>
+                          <title>The Praw - {alien.original.name}</title>
+                        </Helmet>
+                      </HelmetProvider>
+                    )}
+                  </Await>
+                </React.Suspense>
+              )
             }
           }
         ]

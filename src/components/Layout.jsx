@@ -1,6 +1,4 @@
-import { useEffect } from 'react'
-import { Outlet, useMatches, ScrollRestoration } from 'react-router-dom';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Outlet } from 'react-router-dom';
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,21 +8,25 @@ import ScrollToTop from "./ScrollToTop";
 
 export default function Layout(props) {
 
-    const matches = useMatches();
-    const match = matches.filter((match) => Boolean(match.handle?.breadcrumb)).at(-1)
-    const title = match.handle.breadcrumb(match.data)
-    
+    // const [title, setTitle] = useState("")
+
+    // const matches = useMatches();
+    // const match = matches.filter((match) => Boolean(match.handle?.breadcrumb)).at(-1)
     // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, [match]);
+    //     async function fetchTitle() {
+    //         const title = await match.handle.breadcrumb(match.data)
+    //         return title
+    //     }
+    //     fetchTitle().then((title) => {console.log(title); setTitle(title)})
+    // }, [match])
 
     return (
         <>
-            <HelmetProvider>
+            {/* <HelmetProvider>
                 <Helmet>
                     <title>The Praw {title ? `- ${title}` : ""}</title>
                 </Helmet>
-            </HelmetProvider>
+            </HelmetProvider> */}
             <div id="app" className="App">
                 <Header />
                 <main>
