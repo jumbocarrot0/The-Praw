@@ -26,7 +26,7 @@ export default function GridBrowser(props) {
 
   if (!props.noSort) {
     sortedKeys.sort(function (a, b) {
-      const expansions = ["Base Set", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "42nd Anniversary Edition", "Cosmic Odyssey"]
+      const expansions = ["Base Set", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "42nd Anniversary Edition", "Cosmic Odyssey", "Fan Made"]
       // console.log(a.expansion)
       if (expansions.findIndex((e) => e === content[a].expansion) < expansions.findIndex((e) => e === content[b].expansion)) {
         return -1;
