@@ -53,6 +53,7 @@ import AnomaliesPage from "./pages/Lists/AnomaliesListPage";
 import AlienInfluencersPage from "./pages/Variants/AlienInfluencersPage";
 import EnvoysPage from "./pages/Lists/EnvoysListPage";
 import IndividualEnvoyPage from "./pages/IndividualItem/IndividualEnvoyPage";
+import WinLimitationPage from "./pages/Variants/WinLimitationPage"
 
 import Techs from './dataFiles/technology.json'
 import Hazards from './dataFiles/hazards.json'
@@ -392,7 +393,6 @@ export const routes = [
               breadcrumb: () => "Alien Influencers"
             }
           },
-
           itemPageRoute(
             "Envoys",
             "Envoys",
@@ -400,7 +400,14 @@ export const routes = [
             <EnvoysPage />,
             <IndividualEnvoyPage />,
             ({ params }) => Envoys.envoys[params.envoyIndex]
-          )
+          ),
+          {
+            path: "WinLimitation",
+            element: <WinLimitationPage />,
+            handle: {
+              breadcrumb: () => "Win Limitation"
+            }
+          },
         ]
       }
     ]
