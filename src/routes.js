@@ -55,6 +55,8 @@ import EnvoysPage from "./pages/Lists/EnvoysListPage";
 import IndividualEnvoyPage from "./pages/IndividualItem/IndividualEnvoyPage";
 import WinLimitationPage from "./pages/Variants/WinLimitationPage"
 
+import AgesPage from "./pages/Lists/Campaign/AgeMasterListPage";
+
 import Techs from './dataFiles/technology.json'
 import Hazards from './dataFiles/hazards.json'
 import Stations from './dataFiles/stations.json'
@@ -230,6 +232,35 @@ export const routes = [
           },
 
           {
+            path: "Campaign",
+            handle: {
+              breadcrumb: () => "Campaign Mode"
+            },
+            children: [
+              {
+                index: true,
+                element: <CampaignPage />
+              },
+              
+              itemPageRoute(
+                "Ages",
+                "Ages",
+                "ageIndex",
+                <AgesPage />,
+                ({ params }) => Envoys.envoys[params.envoyIndex]
+              ),
+              itemPageRoute(
+                "Envoys",
+                "Envoys",
+                "envoyIndex",
+                <EnvoysPage />,
+                <IndividualEnvoyPage />,
+                ({ params }) => Envoys.envoys[params.envoyIndex]
+              ),
+            ]
+          },
+
+          {
             path: "FourPlanets",
             element: <FourPlanetsPage />,
             handle: {
@@ -343,13 +374,6 @@ export const routes = [
             }
           },
           {
-            path: "Campaign",
-            element: <CampaignPage />,
-            handle: {
-              breadcrumb: () => "Campaign Mode"
-            }
-          },
-          {
             path: "Supershots",
             element: <SuperShotsPage />,
             handle: {
@@ -393,14 +417,6 @@ export const routes = [
               breadcrumb: () => "Alien Influencers"
             }
           },
-          itemPageRoute(
-            "Envoys",
-            "Envoys",
-            "envoyIndex",
-            <EnvoysPage />,
-            <IndividualEnvoyPage />,
-            ({ params }) => Envoys.envoys[params.envoyIndex]
-          ),
           {
             path: "WinLimitation",
             element: <WinLimitationPage />,
