@@ -97,7 +97,7 @@ function Item(props) {
           </Badge>
           <Badge
             color="dark">
-            {props.to.split(/[\/#]/).at('-2')}
+            {props.to.split(/[/#]/).at('-2')}
           </Badge>
           <div className='mt-3 link-underline-opacity-0-hover'>{previewBody}</div>
           {/* <strong>{item.short}</strong> */}
