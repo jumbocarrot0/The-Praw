@@ -6,16 +6,31 @@ import {
   AccordionItem,
   Badge
 } from 'reactstrap'
+import Item from '../../components/Item'
+import GridBrowser from "../../components/GridBrowser";
 
 export default function CampaignPage() {
+
+  const campaign_components = {
+      "Ages": { name: "Ages", short: "", thumbnail: "variant icons/4 Planets Icon.png" },
+      "Privileges": { name: "Privilege Cards", short: "", thumbnail: "variant icons/Freewheeling Icon.png" },
+      "Envoys": { name: "Envoys", short: "", thumbnail: "variant icons/Envoy Icon.png" },
+      "Master": { name: "Master Cards", short: "", thumbnail: "variant icons/Tech Icon.png" },
+      "Wrench": { name: "Wrench Cards", short: "", thumbnail: "variant icons/Rewards Icon.png" },
+      "Selection": { name: "Alien Selection Methods", short: "", thumbnail: "" }
+  }
+
   return (
     <div>
       <h1 className='mb-4'>Campaign Mode</h1>
       <p className="text-light">The Campaign variant is the box-featured variant of Cosmic Odyssey, designed to allow players to easily explore that expansion's 8+ variants.
         <br /><br />
-        In this variant, players will play through four games of Cosmic. Throught the campaign players will add aliens to their coalitions, earn prizes for future games, endure through ages that introduce random variants, culminating in an epic and crazy finale.</p>
+        In this variant, players will play through four games of Cosmic. Throught the campaign players will add aliens to their coalitions, earn prizes for future games, endure through ages that introduce random variants, culminating in an epic and crazy finale.
+        <br /><br />
+        This page will detail the rules of a campaign, but will also act as a hub page for other campaign components, such as envoys, age cards, etc..
+      </p>
       <hr className="border border-light border-2 opacity-100 my-4" />
-      <UncontrolledAccordion defaultOpen="1">
+      <UncontrolledAccordion defaultOpen="">
         <AccordionItem>
           <AccordionHeader targetId="1">Rules</AccordionHeader>
           <AccordionBody accordionId="1">
@@ -191,6 +206,16 @@ export default function CampaignPage() {
           </AccordionBody>
         </AccordionItem>
       </UncontrolledAccordion>
+      <hr className="border border-light border-2 opacity-100 my-4" />
+      <h1 className='mb-4'>Campaign Components</h1>
+            <GridBrowser cardTemplate={Item}
+                noSort={true}
+                url="/Variants/Campaign"
+                border={() => "pink"}
+                type={() => { return null }}
+                content={campaign_components}
+                width={4}
+            />
     </div>
   );
 }
