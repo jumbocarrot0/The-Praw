@@ -14,6 +14,7 @@ import HouseRulesPage from "./pages/HouseRulesPage";
 import SelectionPage from "./pages/SelectionPage";
 import GeekPage from "./pages/GeekPage";
 import HiddenDialPage from "./pages/HiddenDialPage"
+import SelectionMethodsPage from "./pages/SelectionMethodsPage";
 
 import Error404Page from "./pages/ErrorPages/Error404";
 
@@ -218,6 +219,13 @@ export const routes = [
         element: <SelectionPage />,
         handle: {
           breadcrumb: () => "Alien Selection"
+        }
+      },
+      {
+        path: '/SelectionMethods',
+        element: <SelectionMethodsPage />,
+        handle: {
+          breadcrumb: () => "Selection Methods"
         }
       },
       {
