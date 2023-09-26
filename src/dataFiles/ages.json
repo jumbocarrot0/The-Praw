@@ -1,0 +1,267 @@
+{
+    "ages": {
+        "0": {
+            "original": {
+                "name": "Classic Age",
+                "name2": "of Innovation",
+                "type": "Standard",
+                "selectionMethodID": 0,
+                "variants": [
+                    {
+                        "Name": "Technology",
+                        "Link": "/Variants/Techs"
+                    }
+                ],
+                "scoring": {
+                    "FC": 4,
+                    "HC": 2,
+                    "T": 1
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "1": {
+            "original": {
+                "name": "Obedient Age",
+                "name2": "of Incursion",
+                "type": "Standard",
+                "selectionMethodID": 1,
+                "variants": [
+                    {
+                        "Name": "Rewards Deck",
+                        "Link": "/Variants/RewardsDeck"
+                    },
+                    {
+                        "Name": "Ultra Rewards",
+                        "Link": "/Variants/RewardsDeck",
+                        "Subvariant": true
+                    }
+                ],
+                "scoring": {
+                    "FC": 3,
+                    "HC": 1,
+                    "W": 2
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "2": {
+            "original": {
+                "name": "Doomed Age",
+                "name2": "of Conflict",
+                "type": "Standard",
+                "selectionMethodID": 2,
+                "variants": [
+                    {
+                        "Name": "Hazard Deck",
+                        "Link": "/Variants/Hazards"
+                    }
+                ],
+                "scoring": {
+                    "FC": 4,
+                    "HC": 3
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "3": {
+            "original": {
+                "name": "Dignified Age",
+                "name2": "of Alliances",
+                "type": "Standard",
+                "selectionMethodID": 3,
+                "variants": [
+                    {
+                        "Name": "Team Cosmic",
+                        "Link": "/Variants/TeamMode"
+                    }
+                ],
+                "scoring": {
+                    "FC": 2,
+                    "HC": 1
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "4": {
+            "original": {
+                "name": "Tenuous Age",
+                "name2": "of Storms",
+                "type": "Standard",
+                "selectionMethodID": 4,
+                "variants": [
+                    {
+                        "Name": "Space Stations",
+                        "Link": "/Variants/Stations"
+                    }
+                ],
+                "scoring": {
+                    "FC": 2,
+                    "HC": 1,
+                    "SS": 1
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "5": {
+            "original": {
+                "name": "Mundane Age",
+                "name2": "of Dominion",
+                "type": "Standard",
+                "selectionMethodID": 5,
+                "variants": [
+                    {
+                        "Name": "Reward Deck",
+                        "Link": "/Variants/RewardsDeck"
+                    },
+                    {
+                        "Name": "Hazard Deck",
+                        "Link": "/Variants/Hazards"
+                    }
+                ],
+                "scoring": {
+                    "FC": 3,
+                    "HC": 2
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "6": {
+            "designNotes": "Strangely, despite referecing Cosmic Eons, this age does utilise the hidden alliance variant nor foreign aid.",
+            "original": {
+                "name": "Forgotten Age",
+                "name2": "of Eons",
+                "type": "Standard",
+                "selectionMethodID": 6,
+                "variants": [
+                    {
+                        "Name": "Array Objectives",
+                        "Link": "/Variants/Objectives"
+                    }
+                ],
+                "scoring": {
+                    "FC": 1,
+                    "V": 6
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "7": {
+            "original": {
+                "name": "Cynical Age",
+                "name2": "of Frontiers",
+                "type": "Standard",
+                "selectionMethodID": 7,
+                "variants": [
+                    {
+                        "Name": "Moons",
+                        "Link": "/Variants/Moons"
+                    }
+                ],
+                "scoring": {
+                    "FC": 1,
+                    "HC": 1,
+                    "M": 1
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "8": {
+            "original": {
+                "name": "Vibrant Age",
+                "name2": "of Luminance",
+                "type": "Standard",
+                "selectionMethodID": 8,
+                "variants": [
+                    {
+                        "Name": "Lux",
+                        "Link": "/Variants/Lux"
+                    }
+                ],
+                "scoring": {
+                    "FC": 3,
+                    "HC": 1,
+                    "ML": 6
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "9": {
+            "original": {
+                "name": "Polarized Age",
+                "name2": "of Mutations",
+                "type": "Standard",
+                "selectionMethodID": 9,
+                "variants": [
+                    {
+                        "Name": "Evolution",
+                        "Link": "/Variants/Evolutions"
+                    }
+                ],
+                "scoring": {
+                    "FC": 3,
+                    "HC": 1
+                },
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "10": {
+            "original": {
+                "name": "MEGA",
+                "name2": "",
+                "type": "Modifier",
+                "selectionMethodID": null,
+                "variants": [
+                    {
+                        "Name": "Double Aliens",
+                        "Link": ""
+                    }
+                ],
+                "scoring": {},
+                "expansion": "Cosmic Odyssey"
+            }
+        }
+    },
+    "scoring": {
+        "FC": {
+            "name": "per foreign colony",
+            "rules": "Players score this many points for each of their foreign colonies at the end of the game.",
+            "icon": ""
+        },
+        "HC": {
+            "name": "per home colony",
+            "rules": "Players score this many points for each of their home colonies at the end of the game.",
+            "icon": ""
+        },
+        "W": {
+            "name": "per ship in the warp",
+            "rules": "Players score this many points for each of their ships in the warp at the end of the game. (This does not include ships that are captured or removed from the game.)",
+            "icon": ""
+        },
+        "T": {
+            "name": "per tech",
+            "rules": "Players score this many points for each of their techs the end of the game, regardless of research state.",
+            "icon": ""
+        },
+        "SS": {
+            "name": "per space stations",
+            "rules": "Players score this many points for each space stations, sky city and deep space station they control at the end of the game.",
+            "icon": ""
+        },
+        "V": {
+            "name": "for winning",
+            "rules": "The player(s) who reached the normal victory condition will not automatically be ranked #1 this game, but will instead score this many points.",
+            "icon": ""
+        },
+        "M": {
+            "name": "per moon",
+            "rules": "Players score this many points for each moon they occupy at the end of the game.",
+            "icon": ""
+        },
+        "ML": {
+            "name": "for the most lux",
+            "rules": "The player(s) who have the most lux at the end of the game will score this many points.",
+            "icon": ""
+        }
+    }
+}
