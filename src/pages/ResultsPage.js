@@ -22,6 +22,10 @@ import Objectives from '../dataFiles/objectives.json';
 import Stations from '../dataFiles/stations.json';
 import Technology from '../dataFiles/technology.json';
 
+import Ages from "../dataFiles/ages.json"
+import Envoys from "../dataFiles/envoys.json"
+import SpecialShips from "../dataFiles/specialShips.json"
+
 import Fuse from 'fuse.js'
 
 import { getAllAliens } from "../supabaseAPI/getAlien"
@@ -31,12 +35,19 @@ function Item(props) {
   const item = props.content
 
   let previewBody;
+  let previewName = item.name;
 
   if (props.to.includes('Alien')) {
-    previewBody = <p>
+    previewBody = <>
       <div className='fs-4 text-light'>{item.short}</div>
       <strong>{item.powerName}</strong> {item.powerBody.slice(0, 280).replaceAll('\n$')}{item.powerBody.length > 280 ? '...' : ''}
-    </p>
+    </>
+
+  } else if (props.to.includes('Envoy')) {
+    previewBody = <p>{`${item.powerBody} ${item.history}`.slice(0, 260)}</p>
+
+  } else if (props.to.includes('SpecialShip')) {
+    previewBody = <p>{`${item.powerBody} ${item.specialName} ${item.specialBody}`.slice(0, 260)}</p>
 
   } else if (props.to.includes('Evolution')) {
     previewBody = <ul>
@@ -44,6 +55,10 @@ function Item(props) {
         return (row.cost ? <li key={row.cost}>{row.cost}: {row.text}</li> : <li key="noCost">{row.text}</li>)
       })}
     </ul>
+  } else if (props.to.includes('Ages') && item.type === "Standard") {
+    previewName = `${item.name} ${item.name2}`
+    previewBody = <>{`Use the following alien selection method: ${Ages.selectionMethods[item?.selectionMethodID].original.name}; Add the following variant(s): ${item.variants.map((variant, index) => `${index !== 0 ? variant.Subvariant ? " with " : " and " : ""}${variant.Name}`
+    )}`.slice(0, 260)}</>
   } else {
     previewBody = <p>{item.body.slice(0, 260)}</p>
   }
@@ -55,12 +70,16 @@ function Item(props) {
       <Link className="border border-2 border-secondary link-underline link-underline-opacity-0 link-underline-opacity-75-hover" to={props.to} reloadDocument>
         <CardBody className='text-body-emphasis'>
           {item.thumbnail ?
-            <img alt={item.name + " Thumbnail"}
+            item.thumbnail.includes('/') ? <img alt={item.name + " Thumbnail"}
               className='float-end'
-              src={require(`../images/alien icons/${item.thumbnail}`)}
-            /> : null
+              src={require(`../images/${item.thumbnail}`)}
+            /> :
+              <img alt={previewName + " Thumbnail"}
+                className='float-end'
+                src={require(`../images/alien icons/${item.thumbnail}`)}
+              /> : null
           }
-          <h2>{item.name}</h2>
+          <h2>{previewName}</h2>
           <Badge
             className={["Cosmic Alliance", "Cosmic Conflict"].includes(item.expansion) ? " text-dark" : ""}
             color={
@@ -78,7 +97,7 @@ function Item(props) {
           </Badge>
           <Badge
             color="dark">
-            {props.to.split('/').at('-2')}
+            {props.to.split(/[\/#]/).at('-2')}
           </Badge>
           <div className='mt-3 link-underline-opacity-0-hover'>{previewBody}</div>
           {/* <strong>{item.short}</strong> */}
@@ -119,6 +138,22 @@ async function GetallItems() {
 
   items = items.concat(Object.entries(Technology.technologies)
     .map((entry) => ["Variants/Techs/" + entry[0], entry[1]])
+  );
+
+  items = items.concat(Object.entries(Ages.ages)
+    .map((entry) => ["Variants/Campaign/Ages#" + entry[0], entry[1]])
+  );
+
+  items = items.concat(Object.entries(SpecialShips.ships)
+    .map((entry) => ["Variants/SpecialShips/" + entry[0], entry[1]])
+  );
+
+  items = items.concat(Object.entries(Envoys.envoys)
+    .map((entry) => ["Variants/Campaign/Envoys/" + entry[0], entry[1]])
+  );
+
+  items = items.concat(Object.entries(Ages.selectionMethods)
+    .map((entry) => ["Variants/Campaign/SelectionMethods#" + entry[1].original.name.replaceAll(' ', '_'), entry[1]])
   );
 
   return Object.fromEntries(items)
@@ -164,18 +199,37 @@ export default function ResultsPage() {
   useEffect(() => {
     GetallItems().then(data => {
       const allItems = Object.entries(data);
+      console.log(allItems)
 
       const options = {
         includeScore: true,
         includeMatches: true,
         threshold: 0.6,
         keys: [
-          { name: 'name', getFn: (item) => item[1].original.name, weight: 1 },
+          {
+            name: 'name', getFn: (item) => {
+              if (item[0].includes('Ages')) {
+                return item[1].original.name + item[1].original.name2
+              } else {
+                return item[1].original.name
+              }
+            }, weight: 1
+          },
           {
             name: 'body', getFn: (item) => {
               if (item[0].includes('Alien')) {
-                return (
-                  (`${item[1].original.gameSetup} ${item[1].original.powerName} ${item[1].original.powerBody} ${item[1].original.history} ${item[1].original.wildBody} ${item[1].original.superBody}`))
+                return (`${item[1].original.gameSetup} ${item[1].original.powerName} ${item[1].original.powerBody} ${item[1].original.history} ${item[1].original.wildBody} ${item[1].original.superBody}`)
+              } else if (item[0].includes('Envoy')) {
+                return (`${item[1].original.powerBody} ${item[1].original.history}`)
+              } else if (item[0].includes('SpecialShips')) {
+                return (`${item[1].original.powerBody} ${item[1].original.specialName} ${item[1].original.specialBody}`)
+              } else if (item[0].includes('Ages') && item[1].original.type === "Standard") {
+                console.log(item[0])
+                const body = (`Use the following alien selection method: ${Ages.selectionMethods[item[1].original?.selectionMethodID].original.name} Add the following variant(s): ${item[1].original.variants.map((variant, index) => 
+                  `${index !== 0 ? variant.Subvariant ? " with " : " and " : ""}${variant.Name}`
+                )}`)
+                console.log(body)
+                return body
               } else if (item[0].includes('Evolution')) {
                 return (item[1].original.body)
               } else {
