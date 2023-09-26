@@ -12,7 +12,7 @@ import GridBrowser from "../../components/GridBrowser";
 export default function CampaignPage() {
 
   const campaign_components = {
-      "Ages": { name: "Ages", short: "", thumbnail: "variant icons/4 Planets Icon.png" },
+      "Ages": { name: "Ages", short: "", thumbnail: "variant icons/Age Icon.png" },
       "Privileges": { name: "Privilege Cards", short: "", thumbnail: "variant icons/Freewheeling Icon.png" },
       "Envoys": { name: "Envoys", short: "", thumbnail: "variant icons/Envoy Icon.png" },
       "Master": { name: "Master Cards", short: "", thumbnail: "variant icons/Tech Icon.png" },
@@ -30,7 +30,7 @@ export default function CampaignPage() {
         This page will detail the rules of a campaign, but will also act as a hub page for other campaign components, such as envoys, age cards, etc..
       </p>
       <hr className="border border-light border-2 opacity-100 my-4" />
-      <UncontrolledAccordion defaultOpen="">
+      <UncontrolledAccordion defaultOpen={[]}>
         <AccordionItem>
           <AccordionHeader targetId="1">Rules</AccordionHeader>
           <AccordionBody accordionId="1">
