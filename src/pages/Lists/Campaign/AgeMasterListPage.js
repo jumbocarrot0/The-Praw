@@ -24,30 +24,32 @@ function AgeItem(props) {
             {content.type === "Standard"
                 ?
                 <Modal isOpen={modal} toggle={toggle}>
-                    <ModalHeader toggle={toggle}><h2>{content.name}...</h2></ModalHeader>
+                    <ModalHeader toggle={toggle} tag={'h2'}>{content.name}...</ModalHeader>
                     <ModalBody>
                         <p>Use the following alien selection method:</p>
-                        <Link>{content.selectionMethodID}</Link>
+                        <Link to={`/selectionMethods#${Ages.selectionMethods[content.selectionMethodID].original.name}`}>{Ages.selectionMethods[content.selectionMethodID].original.name}</Link>
                     </ModalBody>
-                    <ModalHeader><h2>...{content.name2}</h2></ModalHeader>
+                    <ModalHeader tag={'h2'}>...{content.name2}</ModalHeader>
                     <ModalBody>
                         <p>Add the following variant(s):</p>
                         {
-                            content.variants.map((variant, index) => <>
+                            content.variants.map((variant, index) => <span key={index}>
                                 {index !== 0 ? variant.Subvariant ? " with " : " and " : null}<Link to={variant.Link}>{variant.Name}</Link>
-                            </>
+                            </span>
                             )
                         }
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         <ul>
                             {
-                                Object.keys(content.scoring).map((score) => <>
-                                    <li key={score}>{content.scoring[score]} points {Ages.scoring[score].name}</li>
-                                </>
+                                Object.keys(content.scoring).map((score) => <li key={score}>{content.scoring[score]} points {Ages.scoring[score].name}</li>
                                 )
                             }
                         </ul>
+                    </ModalBody>
+                    <ModalHeader tag={'h2'}>Master Card</ModalHeader>
+                    <ModalBody>
+                        <Link>{content.name2}</Link>
                     </ModalBody>
                 </Modal>
                 : null
