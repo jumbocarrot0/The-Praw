@@ -263,5 +263,77 @@
             "rules": "The player(s) who have the most lux at the end of the game will score this many points.",
             "icon": ""
         }
+    },
+    "selectionMethods": {
+        "0": {
+            "original": {
+                "name": "Deal 2, Choose 1",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, deal each player two alien sheets facedown. Each player looks at their alien sheets, chooses one, and discards the other. After each player has chosen an alien, they reveal their alien."
+            }
+        },
+        "1": {
+            "original": {
+                "name": "Endowment",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, deal each player two alien sheets. Each player gives one facedown to the player on their right and discards the other. After each player has made their decision, all players reveal the alien they were given."
+            }
+        },
+        "2": {
+            "original": {
+                "name": "Draw Straws",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, the player to the right of the first player draws a number of alien sheets equal to the number of players. That player chooses one, reveals it, and passes the remaining aliens clockwise to the next player. This process repeats until all players have chosen an alien, with the last player not having a choice."
+            }
+        },
+        "3": {
+            "original": {
+                "name": "Delegation",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, the first player draws one alien sheet, looks at it, and assigns it to another player. Then, that player draws one alien sheet, looks at it, and assigns it to a player that has not been assigned an alien sheet yet. The process repeats until all but one player has been assigned an alien. That player draws two alien sheets, chooses one to keep, and discards the other."
+            }
+        },
+        "4": {
+            "original": {
+                "name": "Tidy Bowl",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, deal each player two alien sheets. Each player chooses one to discard and places the other facedown in a pile. The pile is shuffled and one alien from the pile is dealt to each player. Then, each player reveals their dealt alien."
+            }
+        },
+        "5": {
+            "original": {
+                "name": "Draft",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, the player to the right of the first player draws a number of alien sheets equal to one more than the number of players. That player chooses one alien, reveals it, and passes the remaining aliens clockwise to next player. This process repeats until all players have chosen an alien. The remaining alien is discarded."
+            }
+        },
+        "6": {
+            "original": {
+                "name": "Unseen",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, the player to the right of the first player is the 'decider'. The decider takes an alien from the top of the alien stack and holds it up so they cannot see it, but all other players can. Clockwise from the decider, each player announces whether or not they want that alien. After each player has made their choice known, the decider either gives the alien to any player who announced that they wanted it or the decider chooses to keep it. If they keep it, the next player clockwise from the decider without an alien becomes the decider and repeats this process. If no one wants the alien, it is discarded, and the decider takes another alien from the top of the stack. When there is only one player without an alien, they draw and keep the alien from the top of the alien stack."
+            }
+        },
+        "7": {
+            "original": {
+                "name": "Eliminator",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, reveal two aliens per player and place them in the middle of the play area. The first player chooses an alien to discard. The next player in clockwise order repeats this process until each player has discarded one alien. Then, the first player chooses one alien to take. The next player in clockwise order repeats this process until all players have an alien, with the last player not having a choice."
+            }
+        },
+        "8": {
+            "original": {
+                "name": "Spectrum",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, separate the aliens into three decks by alert level (green, yellow, and red). Deal each player one card from each deck. Each player chooses one alien sheet and discards the other two. After each player has chosen an alien, they reveal their chosen alien."
+            }
+        },
+        "9": {
+            "original": {
+                "name": "Options",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, deal each player two alien sheets. Each player gives one facedown to the player to their left and gives the other facedown to the player to their right. Then, each player picks up both aliens that they were given, chooses one alien sheet, and discards the other. After each player has chosen an alien, they reveal their chosen alien."
+            }
+        }
     }
 }
