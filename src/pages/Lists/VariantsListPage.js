@@ -28,7 +28,7 @@ export default function VariantsListPage() {
         "Envoys": { name: "Envoys", complexity: 2, short: "Secondary Alien Powers", thumbnail: "variant icons/Envoy Icon.png" },
         "AlienInfluencers": { name: "Alien Influencers", complexity: 3, short: "Sway Out-of-Play Aliens", thumbnail: "variant icons/Influencers Icon.png" },
         "SpecialShips": { name: "Special Ships", complexity: 2, short: "Abilities Tied to Ships", thumbnail: "variant icons/Special Ship Icon.png" },
-        "Anomalies": { name: "Anomalies", complexity: 3, short: "Unique Systems", thumbnail: "variant icons/Anomalies Icon.png" },
+        // "Anomalies": { name: "Anomalies", complexity: 3, short: "Unique Systems", thumbnail: "variant icons/Anomalies Icon.png" },
         "WinLimitation": { name: "Win Limitation", complexity: 1, short: "Minmise Shared Wins", thumbnail: "variant icons/Win Limit Icon.png" },
     }
 

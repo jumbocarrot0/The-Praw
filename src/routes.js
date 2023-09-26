@@ -379,13 +379,13 @@ export const routes = [
             <IndividualSpecialShipPage />,
             ({ params }) => SpecialShips.ships[params.specialShipIndex]
           ),
-          {
-            path: "Anomalies",
-            element: <AnomaliesPage />,
-            handle: {
-              breadcrumb: () => "Anomalies"
-            }
-          },
+          // {
+          //   path: "Anomalies",
+          //   element: <AnomaliesPage />,
+          //   handle: {
+          //     breadcrumb: () => "Anomalies"
+          //   }
+          // },
           {
             path: "AlienInfluencers",
             element: <AlienInfluencersPage />,
