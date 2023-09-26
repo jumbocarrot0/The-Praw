@@ -5,8 +5,6 @@ import {
 import { useParams } from "react-router-dom"
 import TimingBar from '../../components/TimingBar';
 import { Link } from 'react-router-dom';
-import Layout from '../../components/Layout'
-import Loading from '../../components/Loading'
 import SpecialShips from '../../dataFiles/specialShips.json';
 
 

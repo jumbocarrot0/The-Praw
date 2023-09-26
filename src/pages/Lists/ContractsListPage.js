@@ -1,5 +1,5 @@
-import Item from '../../components/Item'
-import GridBrowser from "../../components/GridBrowser";
+// import Item from '../../components/Item'
+// import GridBrowser from "../../components/GridBrowser";
 import {
   UncontrolledAccordion,
   AccordionBody,
