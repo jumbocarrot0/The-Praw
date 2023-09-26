@@ -13,11 +13,11 @@ export default function CampaignPage() {
 
   const campaign_components = {
       "Ages": { name: "Ages", short: "", thumbnail: "variant icons/Age Icon.png" },
-      "Privileges": { name: "Privilege Cards", short: "", thumbnail: "variant icons/Freewheeling Icon.png" },
+      "Privileges": { name: "Privilege Cards", short: "WIP", thumbnail: "variant icons/Freewheeling Icon.png" },
       "Envoys": { name: "Envoys", short: "", thumbnail: "variant icons/Envoy Icon.png" },
-      "Master": { name: "Master Cards", short: "", thumbnail: "variant icons/Tech Icon.png" },
-      "Wrench": { name: "Wrench Cards", short: "", thumbnail: "variant icons/Rewards Icon.png" },
-      "Selection": { name: "Alien Selection Methods", short: "", thumbnail: "" }
+      "Master": { name: "Master Cards", short: "WIP", thumbnail: "variant icons/Tech Icon.png" },
+      "Wrench": { name: "Wrench Cards", short: "WIP", thumbnail: "variant icons/Rewards Icon.png" },
+      "SelectionMethods": { name: "Alien Selection Methods", short: "", thumbnail: "" }
   }
 
   return (

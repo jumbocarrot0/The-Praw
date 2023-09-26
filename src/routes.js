@@ -14,7 +14,7 @@ import HouseRulesPage from "./pages/HouseRulesPage";
 import SelectionPage from "./pages/SelectionPage";
 import GeekPage from "./pages/GeekPage";
 import HiddenDialPage from "./pages/HiddenDialPage"
-import SelectionMethodsPage from "./pages/SelectionMethodsPage";
+import SelectionMethodsPage from "./pages/Lists/Campaign/SelectionMethodsPage";
 
 import Error404Page from "./pages/ErrorPages/Error404";
 
@@ -222,13 +222,6 @@ export const routes = [
         }
       },
       {
-        path: '/SelectionMethods',
-        element: <SelectionMethodsPage />,
-        handle: {
-          breadcrumb: () => "Selection Methods"
-        }
-      },
-      {
         path: "Variants",
         handle: {
           breadcrumb: () => "Variants"
@@ -265,6 +258,13 @@ export const routes = [
                 <IndividualEnvoyPage />,
                 ({ params }) => Envoys.envoys[params.envoyIndex]
               ),
+              {
+                path: 'SelectionMethods',
+                element: <SelectionMethodsPage />,
+                handle: {
+                  breadcrumb: () => "Selection Methods"
+                }
+              }
             ]
           },
 

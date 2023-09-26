@@ -1,4 +1,4 @@
-import Ages from '../dataFiles/ages.json';
+import Ages from '../../../dataFiles/ages.json';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
