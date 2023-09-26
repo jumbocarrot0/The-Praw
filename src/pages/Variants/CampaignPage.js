@@ -27,7 +27,7 @@ export default function CampaignPage() {
         <br /><br />
         In this variant, players will play through four games of Cosmic. Throught the campaign players will add aliens to their coalitions, earn prizes for future games, endure through ages that introduce random variants, culminating in an epic and crazy finale.
         <br /><br />
-        This page will detail the rules of a campaign, but will also act as a hub page for other campaign components, such as envoys, age cards, etc..
+        This page details the rules of a campaign, and also contains links for other campaign components, such as envoys, age cards, etc..
       </p>
       <hr className="border border-light border-2 opacity-100 my-4" />
       <UncontrolledAccordion defaultOpen={[]}>
