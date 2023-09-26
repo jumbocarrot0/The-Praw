@@ -49,7 +49,7 @@ import CommonRewardsPage from "./pages/Variants/CommonRewardsPage";
 import ContractsPage from "./pages/Lists/ContractsListPage";
 import SpecialShipsPage from "./pages/Lists/SpecialShipsListPage";
 import IndividualSpecialShipPage from "./pages/IndividualItem/IndividualSpecialShipPage";
-import AnomaliesPage from "./pages/Lists/AnomaliesListPage";
+// import AnomaliesPage from "./pages/Lists/AnomaliesListPage";
 import AlienInfluencersPage from "./pages/Variants/AlienInfluencersPage";
 import EnvoysPage from "./pages/Lists/EnvoysListPage";
 import IndividualEnvoyPage from "./pages/IndividualItem/IndividualEnvoyPage";
