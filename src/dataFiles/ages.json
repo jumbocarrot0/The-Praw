@@ -284,6 +284,11 @@
                 "name": "Draw Straws",
                 "expansion": "Cosmic Odyssey",
                 "body": "When selecting aliens for this age, the player to the right of the first player draws a number of alien sheets equal to the number of players. That player chooses one, reveals it, and passes the remaining aliens clockwise to the next player. This process repeats until all players have chosen an alien, with the last player not having a choice."
+            },
+            "revised": {
+                "name": "Draw Straws",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, the first player draws a number of alien sheets equal to the number of players. That player chooses one, reveals it, and passes the remaining aliens clockwise to the next player. This process repeats until all players have chosen an alien, with the last player not having a choice."
             }
         },
         "3": {
@@ -305,6 +310,11 @@
                 "name": "Draft",
                 "expansion": "Cosmic Odyssey",
                 "body": "When selecting aliens for this age, the player to the right of the first player draws a number of alien sheets equal to one more than the number of players. That player chooses one alien, reveals it, and passes the remaining aliens clockwise to next player. This process repeats until all players have chosen an alien. The remaining alien is discarded."
+            },
+            "revised": {
+                "name": "Draft",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, the first player draws a number of alien sheets equal to one more than the number of players. That player chooses one alien, reveals it, and passes the remaining aliens clockwise to next player. This process repeats until all players have chosen an alien. The remaining alien is discarded."
             }
         },
         "6": {
@@ -312,6 +322,11 @@
                 "name": "Unseen",
                 "expansion": "Cosmic Odyssey",
                 "body": "When selecting aliens for this age, the player to the right of the first player is the 'decider'. The decider takes an alien from the top of the alien stack and holds it up so they cannot see it, but all other players can. Clockwise from the decider, each player announces whether or not they want that alien. After each player has made their choice known, the decider either gives the alien to any player who announced that they wanted it or the decider chooses to keep it. If they keep it, the next player clockwise from the decider without an alien becomes the decider and repeats this process. If no one wants the alien, it is discarded, and the decider takes another alien from the top of the stack. When there is only one player without an alien, they draw and keep the alien from the top of the alien stack."
+            },
+            "revised": {
+                "name": "Unseen",
+                "expansion": "Cosmic Odyssey",
+                "body": "When selecting aliens for this age, the first player is the 'decider'. The decider takes an alien from the top of the alien stack and holds it up so they cannot see it, but all other players can. Clockwise from the decider, each player announces whether or not they want that alien. After each player has made their choice known, the decider either gives the alien to any player who announced that they wanted it or the decider chooses to keep it. If they keep it, the next player clockwise from the decider without an alien becomes the decider and repeats this process. If no one wants the alien, it is discarded, and the decider takes another alien from the top of the stack. When there is only one player without an alien, they draw and keep the alien from the top of the alien stack."
             }
         },
         "7": {
@@ -333,6 +348,175 @@
                 "name": "Options",
                 "expansion": "Cosmic Odyssey",
                 "body": "When selecting aliens for this age, deal each player two alien sheets. Each player gives one facedown to the player to their left and gives the other facedown to the player to their right. Then, each player picks up both aliens that they were given, chooses one alien sheet, and discards the other. After each player has chosen an alien, they reveal their chosen alien."
+            }
+        },
+        "10": {
+            "original": {
+                "name": "Eeny Meany",
+                "expansion": "Fan Made",
+                "body": "The oldest player draws a number of random aliens equal to one more than the number of players. That player assigns each other player one of the aliens. The youngest player decides which of the remaining two aliens to assign to the oldest player."
+            }
+        },
+        "11": {
+            "original": {
+                "name": "Democracy",
+                "expansion": "Fan Made",
+                "body": "Draw a random alien. On the count of three, all players point at one other player (not themselves) they want to assign that alien to. If a majority of players vote for the same player, they get the alien. If there is a tie, the alien is set aside and a new one is drawn. Repeat until all players have an alien except one. That player chooses one of the set-aside aliens if there are any, otherwise they draw one at random."
+            }
+        },
+        "12": {
+            "original": {
+                "name": "Test Your Luck",
+                "expansion": "Fan Made",
+                "body": "Deal out 2 aliens per player, half face up and half face down. Choose a player to go first, picking any alien, and continue counter-clockwise until all players have one alien. Whichever player chose last will be the first player when the game starts."
+            }
+        },
+        "13": {
+            "designNotes": "This one has been edited to be inline with selection method terminology",
+            "original": {
+                "name": "All-in All-the-time",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, each player draws and discards an alien until they get an alien that can be used as any player during any phase, which they keep as their chosen alien."
+            }
+        },
+        "14": {
+            "original": {
+                "name": "White Elephant",
+                "expansion": "Fan Made",
+                "body": "The first player draws a random alien and adds it to their coalition. The next player clockwise can either steal an alien from any player's coalition, or draw a random one and add it. Proceed until every player has the same number of aliens in their coalitions.\n\nWhen a player has had an alien stolen from them, they can either steal an alien from someone else (if it hasn't been stolen since the last time a new alien was drawn), or else draw a random alien.\n\nOnce a specific alien has been stolen three times, it cannot be stolen again.\n\nAfter the last player has added an alien to their coalition, the first player can choose to steal an alien from anyone, giving them one of their aliens in return."
+            }
+        },
+        "15": {
+            "original": {
+                "name": "Vote Bowl",
+                "expansion": "Fan Made",
+                "body": "Draw an alien for all to see. Players vote whether or not to add it to the alien pool. If a majority vote yes, set it aside. Otherwise discard it. Continue this until there are as many aliens in the pool as there are players. Then take the alien pool and deal it out randomly to the players."
+            }
+        },
+        "16": {
+            "original": {
+                "name": "Rich Pool",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, deal each player an alien and place one alien faceup in the middle of the play area for each player in the game. Starting with the first player and going clockwise, each player may either keep the alien they were dealt or take a faceup alien and replace it with the alien they initially drew. Their previous alien is now available for others to take. After each player has made their decision, all players reveal the alien they were given."
+            }
+        },
+        "17": {
+            "original": {
+                "name": "Random",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, each player is dealt a random alien and reveals it. This is their chosen alien."
+            }
+        },
+        "18": {
+            "original": {
+                "name": "Mad Grab",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, each player is dealt a random alien, but may not yet look at this alien. Place the unused alien pile in the center of the play area where everyone can reach. Then, start a 30-second timer. Players may now simultaneously look at their alien and may, at any time, discard their alien faceup to either draw a new alien from the unused alien pile or take any one faceup, discarded alien. Players may hold up to two aliens at a time while the timer is going, but must hold only one by the time 30 seconds is over. When the 30 seconds are up, each player reveals the alien they are holding, this is their chosen alien. If a player is not holding exactly one alien, then they draw a random alien as their chosen alien."
+            }
+        },
+        "19": {
+            "original": {
+                "name": "5x5",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, each player writes a 'wish list' of 5 aliens and a 'ban list' of 5 aliens. Players may not put an alien on either list if it is already in a player's coalition. Once everyone has completed their lists, all players reveal them. Any alien that appears on multiple lists is crossed out on all wish lists that contain it. Once all lists are completed and aliens are crossed out, each player collects the remaining aliens from their wish list. If all of a player's aliens in their wish list were crossed out, and that player has no other aliens in their coalition, then they draw a random alien to add to their coalition."
+            }
+        },
+        "20": {
+            "original": {
+                "name": "Mulligan",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, deal each player a random alien sheet. Each player can choose to either keep their alien or discard and draw again. If a player discards an alien for the second time, they must keep the third alien sheet drawn. After each player has chosen an alien, they reveal their chosen alien."
+            }
+        },
+        "21": {
+            "original": {
+                "name": "Random Envoy",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, deal each player a random envoy card. This envoy is added to each player's coalition as if it were a standard alien. When adding flares to the deck, for each player who plays as an envoy, add a random flare instead of a matching flare (since envoys don't have matching flares)."
+            }
+        },
+        "22": {
+            "original": {
+                "name": "Combo Card",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, draw a combo card at random - from a physical deck, or perhaps from this site's combo generator ;). Retrieve all the aliens listed on that card up to the player count, shuffle them then deal them at random to each player. If an alien on the card is in a player's coalition, use the next unused alien on the combo card, if possible, otherwise, draw a random alien, reveal it to all players, and shuffle it with the other aliens on the combo card."
+            }
+        },
+        "23": {
+            "original": {
+                "name": "Geek",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, the first player starts as “the reader”. The reader draws an unused alien and reads out the alien's history blurb (at the bottom in italics), except they do not say the name of the alien if/when it ever comes up. Other players may guess the name of an alien at any time. The first player to make a correct guess gets a token and assigns that alien to a player (including themselves) who does not yet have an alien. The player that receives the alien becomes the reader and the process continues.\n\nIn the case of a tie (i.e., too close to call), the reader puts the alien aside and draws another alien. If the reader gets to the end of the history and no one can guess the alien after a short time, the reader chooses who receives the alien.\n\nPlayers who have received an alien may continue to guess (but they cannot assign the alien to themselves). Once everyone but one person has been assigned an alien, that player draws a random alien, plus an additional alien for each token they have, and can choose one alien from any of those drawn or any aliens put aside to play as."
+            }
+        },
+        "24": {
+            "original": {
+                "name": "Replacement",
+                "expansion": "Fan Made",
+                "body": "If this is the first game of a campaign, or if playing a single-shot game, this selection method is not used. Instead, draw another age card and use that card's selection method.\n\nWhen selecting aliens for this age, deal each player an alien. Starting with the first player, each player chooses an alien from any one player's coalition (including their own) to remove from that player's coalition and replace it with their drawn alien. A player may choose to replace an alien that itself was a replacement for another alien."
+            }
+        },
+        "25": {
+            "original": {
+                "name": "Alien Index",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, the first player draws an alien at random, then draws the next alien alphabetically from that alien. All other players, going clockwise, draw the next two aliens in alphabetical order (looping back from Z to A if necessary) until each player has two aliens. Then, each player chooses one of the two to keep, and discards the other."
+            }
+        },
+        "26": {
+            "original": {
+                "name": "Something New",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, each player draws aliens at random until they find two that they do not remember ever playing before. Each player chooses one of these two aliens to play. If a player somehow recalls playing every single alien, they choose whichever power they think they played the longest ago. Then, each player reveals their chosen alien."
+            }
+        },
+        "27": {
+            "original": {
+                "name": "Coronal Ejection",
+                "expansion": "Fan Made",
+                "body": "This selection method also affects starting hands.\n\nWhen selecting aliens for this age, each player draws three aliens and chooses two to reveal and add to their coalition. When adding flares to the deck, each player adds only their super flare to the deck and collects the other flares among those from aliens in their coalition and the flare of the alien they did not choose from this selection method. Then, each player selects one additional flare to add to the deck and a 2nd flare to add to their starting hand after they have been dealt."
+            }
+        },
+        "28": {
+            "original": {
+                "name": "Token Toss",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, draw two aliens for each player and arrange them in the center of the playing area in a square-like fashion (or as close to a square as possible). Starting with the first player and continuing clockwise, each player takes one attempt at throwing a Cosmic token onto an alien sheet, adding whichever alien the token lands on to their coalition. Tokens that do not land fully on a single alien sheet do not count. If the thrower fails to land their token on a sheet, they must wait for everyone else to throw the token before they get a second go. This continues until everyone has received one alien."
+            }
+        },
+        "29": {
+            "original": {
+                "name": "Theft and Shrubbery",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, each player draws two aliens to add to their coalition. The first player chooses an alien from the coalition of the player to their left to remove from that player's coalition and add to their own. That player then does the same for the player to their left, and so on until every player has done so."
+            }
+        },
+        "30": {
+            "original": {
+                "name": "Fresh Blood",
+                "expansion": "Fan Made",
+                "body": "Each player draws an alien at random to add to their coalition. When selecting an alien for this game, each player must select an alien they have not played before (if able)."
+            }
+        },
+        "31": {
+            "original": {
+                "name": "Leasing Agent",
+                "expansion": "Fan Made",
+                "body": "Each player draws two aliens and chooses one to keep, discarding the other.\n\nAfter aliens have been initially selected, starting with the first player and going clockwise, each player must offer any one player an alien from their coalition to use this game only. If that player accepts, the alien is leased for this age and used by that player. If they have already selected an alien, they play as the leased alien instead. If rejected, the player who made the offer must play as that alien instead of the alien they offered."
+            }
+        },
+        "32": {
+            "original": {
+                "name": "Eliminator 2.0",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, reveal two aliens per player and place them in the middle of the play area. Additionally, give each player two tokens. Each player, starting with the first and going clockwise, places a token on an alien sheet of their choice. Once each player has done this, do it a second time starting with the last player and going anti-clockwise. Once you've done this process, discard any aliens with two tokens on them. Shuffle the remaining aliens together and deal each player a random alien."
+            }
+        },
+        "33": {
+            "original": {
+                "name": "Favorites",
+                "expansion": "Fan Made",
+                "body": "When selecting aliens for this age, the player to the right of the first player takes any one unused alien, reveals it, and passes the remaining aliens to the next player counter-clockwise until everyone has chosen an alien."
             }
         }
     }
