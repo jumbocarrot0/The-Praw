@@ -47,12 +47,18 @@ function AgeItem(props) {
                             }
                         </ul>
                     </ModalBody>
-                    <ModalHeader tag={'h2'}>Master Card</ModalHeader>
+                    {/* <ModalHeader tag={'h2'}>Master Card</ModalHeader>
                     <ModalBody>
                         <Link>{content.name2}</Link>
+                    </ModalBody> */}
+                </Modal>
+                :
+                <Modal isOpen={modal} toggle={toggle}>
+                    <ModalHeader toggle={toggle} tag={'h2'}>{content.name}</ModalHeader>
+                    <ModalBody>
+                        {content.body}
                     </ModalBody>
                 </Modal>
-                : null
             }
 
             <Card className='mb-5'>
