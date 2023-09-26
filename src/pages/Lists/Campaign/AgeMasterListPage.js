@@ -27,7 +27,7 @@ function AgeItem(props) {
                     <ModalHeader toggle={toggle} tag={'h2'}>{content.name}...</ModalHeader>
                     <ModalBody>
                         <p>Use the following alien selection method:</p>
-                        <Link to={`/selectionMethods#${Ages.selectionMethods[content.selectionMethodID].original.name}`}>{Ages.selectionMethods[content.selectionMethodID].original.name}</Link>
+                        <Link to={`/Variants/Campaign/selectionMethods#${Ages.selectionMethods[content.selectionMethodID].original.name.replaceAll(' ', '_')}`}>{Ages.selectionMethods[content.selectionMethodID].original.name}</Link>
                     </ModalBody>
                     <ModalHeader tag={'h2'}>...{content.name2}</ModalHeader>
                     <ModalBody>
