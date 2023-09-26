@@ -38,6 +38,16 @@ function AgeItem(props) {
                             </>
                             )
                         }
+                        <br/>
+                        <br/>
+                        <ul>
+                            {
+                                Object.keys(content.scoring).map((score) => <>
+                                    <li key={score}>{content.scoring[score]} points {Ages.scoring[score].name}</li>
+                                </>
+                                )
+                            }
+                        </ul>
                     </ModalBody>
                 </Modal>
                 : null
