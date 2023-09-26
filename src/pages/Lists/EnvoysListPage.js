@@ -34,7 +34,7 @@ export default function EnvoysPage() {
       </UncontrolledAccordion>
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}
-        url="/Variants/Envoys"
+        url="/Variants/Campaign/Envoys"
         content={Envoys.envoys}
         border={(envoy) => {
           const borders = { "Cosmic Odyssey": "success", "Fan Made": "indigo" };
