@@ -211,6 +211,7 @@
                 "name2": "",
                 "type": "Modifier",
                 "selectionMethodID": null,
+                "body": "Draw another age card. Resolve the alien selection method twice. Use the Double Aliens variant.\n\nAt the end of the game, if this was the first time Mega was drawn this campaign, shuffle it back into the age deck.",
                 "variants": [
                     {
                         "Name": "Double Aliens",
