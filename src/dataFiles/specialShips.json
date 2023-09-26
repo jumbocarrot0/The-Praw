@@ -508,7 +508,7 @@
             "designNotes": "",
             "original": {
                 "name": "Capitol Ship",
-                "powerBody": "Your capital ship is worth 4 towards encounter totals.",
+                "powerBody": "Your capitol ship is worth 4 towards encounter totals.",
                 "powerTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "Mandatory",
@@ -524,7 +524,7 @@
                     }
                 },
                 "specialName": "Power Shunts",
-                "specialBody": "You may exhaust your capital ship when it is involved in an encounter to double the value of each reinforcement card you play this encounter.",
+                "specialBody": "You may exhaust your capitol ship when it is involved in an encounter to double the value of each reinforcement card you play this encounter.",
                 "specialTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "Mandatory",
