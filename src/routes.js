@@ -56,7 +56,13 @@ import EnvoysPage from "./pages/Lists/EnvoysListPage";
 import IndividualEnvoyPage from "./pages/IndividualItem/IndividualEnvoyPage";
 import WinLimitationPage from "./pages/Variants/WinLimitationPage"
 
-import AgesPage from "./pages/Lists/Campaign/AgeMasterListPage";
+import AgesPage from "./pages/Lists/Campaign/AgeListPage";
+import MasterPage from "./pages/Lists/Campaign/MasterListPage";
+import IndividualMasterPage from "./pages/Lists/Campaign/IndividualMasterPage";
+import WrenchPage from "./pages/Lists/Campaign/WrenchListPage";
+import IndividualWrenchPage from "./pages/Lists/Campaign/IndividualWrenchPage";
+import PrivilegePage from "./pages/Lists/Campaign/PrivilegeListPage";
+import IndividualPrivilegePage from "./pages/Lists/Campaign/IndividualPrivilegePage";
 
 import Techs from './dataFiles/technology.json'
 import Hazards from './dataFiles/hazards.json'
@@ -67,6 +73,9 @@ import Moons from './dataFiles/moons.json'
 import Objectives from './dataFiles/objectives.json'
 import Envoys from './dataFiles/envoys.json'
 import SpecialShips from './dataFiles/specialShips.json'
+import Ages from './dataFiles/ages.json'
+import Wrenches from './dataFiles/wrenches.json'
+import Privileges from './dataFiles/privileges.json'
 
 import { getAlien, getAllAliens } from "./supabaseAPI/getAlien"
 
@@ -248,7 +257,31 @@ export const routes = [
                 "Ages",
                 "ageIndex",
                 <AgesPage />,
-                ({ params }) => Envoys.envoys[params.envoyIndex]
+                ({ params }) => Ages.ages[params.ageIndex]
+              ),
+              itemPageRoute(
+                "MasterCards",
+                "Master Cards",
+                "masterIndex",
+                <MasterPage />,
+                <IndividualMasterPage />,
+                ({ params }) => Ages.master[params.masterIndex]
+              ),
+              itemPageRoute(
+                "WrenchCards",
+                "Wrench Cards",
+                "wrenchIndex",
+                <WrenchPage />,
+                <IndividualWrenchPage />,
+                ({ params }) => Wrenches.wrench[params.wrenchIndex]
+              ),
+              itemPageRoute(
+                "PrivilegeCards",
+                "Privilege Cards",
+                "privilegeIndex",
+                <PrivilegePage />,
+                <IndividualPrivilegePage />,
+                ({ params }) => Privileges.privilege[params.privilegeIndex]
               ),
               itemPageRoute(
                 "Envoys",

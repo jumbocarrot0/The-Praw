@@ -6,6 +6,7 @@
                 "name2": "of Innovation",
                 "type": "Standard",
                 "selectionMethodID": 0,
+                "masterID": 0,
                 "variants": [
                     {
                         "Name": "Technology",
@@ -26,6 +27,7 @@
                 "name2": "of Incursion",
                 "type": "Standard",
                 "selectionMethodID": 1,
+                "masterID": 1,
                 "variants": [
                     {
                         "Name": "Rewards Deck",
@@ -51,6 +53,7 @@
                 "name2": "of Conflict",
                 "type": "Standard",
                 "selectionMethodID": 2,
+                "masterID": 2,                
                 "variants": [
                     {
                         "Name": "Hazard Deck",
@@ -70,6 +73,7 @@
                 "name2": "of Alliances",
                 "type": "Standard",
                 "selectionMethodID": 3,
+                "masterID": 3,
                 "variants": [
                     {
                         "Name": "Team Cosmic",
@@ -89,6 +93,7 @@
                 "name2": "of Storms",
                 "type": "Standard",
                 "selectionMethodID": 4,
+                "masterID": 4,
                 "variants": [
                     {
                         "Name": "Space Stations",
@@ -109,6 +114,7 @@
                 "name2": "of Dominion",
                 "type": "Standard",
                 "selectionMethodID": 5,
+                "masterID": 5,
                 "variants": [
                     {
                         "Name": "Reward Deck",
@@ -133,6 +139,7 @@
                 "name2": "of Eons",
                 "type": "Standard",
                 "selectionMethodID": 6,
+                "masterID": 6,
                 "variants": [
                     {
                         "Name": "Array Objectives",
@@ -152,6 +159,7 @@
                 "name2": "of Frontiers",
                 "type": "Standard",
                 "selectionMethodID": 7,
+                "masterID": 7,
                 "variants": [
                     {
                         "Name": "Moons",
@@ -172,6 +180,7 @@
                 "name2": "of Luminance",
                 "type": "Standard",
                 "selectionMethodID": 8,
+                "masterID": 8,
                 "variants": [
                     {
                         "Name": "Lux",
@@ -192,6 +201,7 @@
                 "name2": "of Mutations",
                 "type": "Standard",
                 "selectionMethodID": 9,
+                "masterID": 9,
                 "variants": [
                     {
                         "Name": "Evolution",
@@ -518,6 +528,140 @@
                 "name": "Favorites",
                 "expansion": "Fan Made",
                 "body": "When selecting aliens for this age, the player to the right of the first player takes any one unused alien, reveals it, and passes the remaining aliens to the next player counter-clockwise until everyone has chosen an alien."
+            }
+        }
+    },
+    "master": {
+        "0": {
+            "original": {
+                "name": "Innovation",
+                "body": "If the Technology variant is being used, draw two additional tech cards.\n\nIf the Technology variant (🕮10) is not being used, add it, but only you draw tech cards during setup. During the game, only you can draw additional techs.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Innovation",
+                "body": "If the Technology variant is being used, draw two additional tech cards.\n\nIf the Technology variant (🕮9) is not being used, add it, but only you draw tech cards during setup. During the game, only you can draw additional techs.",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited to correct the rulebook reference."
+            }
+        },
+        "1": {
+            "original": {
+                "name": "Incursion",
+                "body": "Draw two ultra reward cards as part of your opening hand.\n\nIf the Reward Deck variant (🕮10) is not being used, add it. If it is already being used, add the Ultra Reward Deck sub-variant.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Incursion",
+                "body": "Draw two ultra reward cards as part of your starting hand.\n\nIf the Reward Deck variant (🕮10) is not being used, add it. If it is already being used, add the Ultra Reward Deck sub-variant.",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
+            }
+        },
+        "2": {
+            "original": {
+                "name": "Conflict",
+                "body": "Draw two flares from the unused flare deck as part of your opening hand.\n\nIf the Hazard Deck variant (🕮11) is not being used, add it.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Incursion",
+                "body": "Draw two flares from the unused flare deck as part of your starting hand.\n\nIf the Hazard Deck variant (🕮11) is not being used, add it.",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
+            }
+        },
+        "3": {
+            "original": {
+                "name": "Alliances",
+                "body": "Draw four envoy cards, place up faceup next to your alien sheet, and shuffle the other three into the envoy deck.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Incursion",
+                "body": "Draw four envoy cards, choose one to keep, and shuffle the other three into the envoy deck.",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
+            }
+        },
+        "4": {
+            "original": {
+                "name": "Storms",
+                "body": "If the Space Stations variant is being used, you (and no one else) perform its setup again.\n\nIf the Space Stations variant (🕮13) is not being used, add it, but only you perform its setup. During Step 1, keep all three cards.",
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "5": {
+            "original": {
+                "name": "Dominion",
+                "body": "If the Reward Deck variant (🕮10) is not being used, add it. If it is already being used, add the Ultra Reward Deck sub-variant.\n\nWhenever you draw a new hand (including your opening hand), you may draw up to two reward cards as part of your hand.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Dominion",
+                "body": "If the Reward Deck variant (🕮10) is not being used, add it. If it is already being used, add the Ultra Reward Deck sub-variant.\n\nWhenever you draw a new hand (including your starting hand), you may draw up to two reward cards as part of your hand.",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
+            }
+        },
+        "6": {
+            "original": {
+                "name": "Eons",
+                "body": "Add the Foreign Aid variant (🕮18).\n\nDraw three privilege cards, choose two to keep, and shuffle the other card into the privilege deck.",
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "7": {
+            "original": {
+                "name": "Frontiers",
+                "body": "If the Moons variant is being used, you (and no one else) perform its setup again.\n\nIf the Moons variant (🕮15) is not being used, add it, but only you perform its setup and draw one additional moon card.\n\nYou may immediately occupy any of your non-cheesy moons.",
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "8": {
+            "original": {
+                "name": "Luminance",
+                "body": "If the Lux variant is being used, draw one additional lux card.\n\nIf the Lux variant (🕮16) is not being used, after you draw your opening hand, draw 2 flares from the unused flare deck.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Luminance",
+                "body": "If the Lux variant (🕮16) is being used, after setup, draw one additional lux card and keep it lux market side facedown.\n\nIf the Lux variant is not being used, after you draw your starting hand, draw 2 flares from the unused flare deck.",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
+            }
+        },
+        "9": {
+            "original": {
+                "name": "Mutations",
+                "body": "Whether or not the Evolution variant (🕮17) is being used, draw two evolution cards, place one faceup next to your alien sheet, and shuffle the other into the evolution deck. Each other player places one of their ships on the card and cannot place any additional ships there.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Mutations",
+                "body": "If the Evolution variant (🕮17) is not being used, add it but don't perform its setup.\n\nDraw two evolution cards, place one faceup next to your alien sheet, and shuffle the other into the evolution deck. Each other player places one of their ships on the card.\n\nOnly you may place ships on the evolution next to your alien sheet. (Other players may remove ships as usual.)",
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "10": {
+            "original": {
+                "name": "Doubling Up",
+                "body": "If the Double Aliens variant (🕮18) is not being used, you may add it.\n\nYou (and no one else) use the Hidden Aliens variant (🕮19). To do so, return your selected alien(s) to your coalition and select again.",
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "11": {
+            "original": {
+                "name": "Abandonment",
+                "body": "Cross out one alien in another player's coalition and remove it from the game.\n\nIf the other player had selected the crossed-out alien, they must select another alien from their coalition.",
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "12": {
+            "original": {
+                "name": "Betrayal",
+                "body": "Cross out one alien in another player's coalition and add it to yours. You must play with that alien instead of the one you selected.\n\nIf the other player had selected the crossed-out alien, they must select another alien from their coalition.",
+                "expansion": "Cosmic Odyssey"
             }
         }
     }
