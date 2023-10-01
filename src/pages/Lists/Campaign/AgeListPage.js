@@ -47,10 +47,10 @@ function AgeItem(props) {
                             }
                         </ul>
                     </ModalBody>
-                    {/* <ModalHeader tag={'h2'}>Master Card</ModalHeader>
+                    <ModalHeader tag={'h2'}>Master Card</ModalHeader>
                     <ModalBody>
-                        <Link>{content.name2}</Link>
-                    </ModalBody> */}
+                        <Link to={`/Variants/Campaign/MasterCards/${content.masterID}`}>{Ages.master[content.masterID].original.name}</Link>
+                    </ModalBody>
                 </Modal>
                 :
                 <Modal isOpen={modal} toggle={toggle}>

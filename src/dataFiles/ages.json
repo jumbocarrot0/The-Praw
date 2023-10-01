@@ -6,7 +6,7 @@
                 "name2": "of Innovation",
                 "type": "Standard",
                 "selectionMethodID": 0,
-                "masterID": 0,
+                "masterID": "0",
                 "variants": [
                     {
                         "Name": "Technology",
@@ -27,7 +27,7 @@
                 "name2": "of Incursion",
                 "type": "Standard",
                 "selectionMethodID": 1,
-                "masterID": 1,
+                "masterID": "1",
                 "variants": [
                     {
                         "Name": "Rewards Deck",
@@ -53,7 +53,7 @@
                 "name2": "of Conflict",
                 "type": "Standard",
                 "selectionMethodID": 2,
-                "masterID": 2,                
+                "masterID": "2",                
                 "variants": [
                     {
                         "Name": "Hazard Deck",
@@ -73,7 +73,7 @@
                 "name2": "of Alliances",
                 "type": "Standard",
                 "selectionMethodID": 3,
-                "masterID": 3,
+                "masterID": "3",
                 "variants": [
                     {
                         "Name": "Team Cosmic",
@@ -93,7 +93,7 @@
                 "name2": "of Storms",
                 "type": "Standard",
                 "selectionMethodID": 4,
-                "masterID": 4,
+                "masterID": "4",
                 "variants": [
                     {
                         "Name": "Space Stations",
@@ -114,7 +114,7 @@
                 "name2": "of Dominion",
                 "type": "Standard",
                 "selectionMethodID": 5,
-                "masterID": 5,
+                "masterID": "5",
                 "variants": [
                     {
                         "Name": "Reward Deck",
@@ -139,7 +139,7 @@
                 "name2": "of Eons",
                 "type": "Standard",
                 "selectionMethodID": 6,
-                "masterID": 6,
+                "masterID": "6",
                 "variants": [
                     {
                         "Name": "Array Objectives",
@@ -159,7 +159,7 @@
                 "name2": "of Frontiers",
                 "type": "Standard",
                 "selectionMethodID": 7,
-                "masterID": 7,
+                "masterID": "7",
                 "variants": [
                     {
                         "Name": "Moons",
@@ -180,7 +180,7 @@
                 "name2": "of Luminance",
                 "type": "Standard",
                 "selectionMethodID": 8,
-                "masterID": 8,
+                "masterID": "8",
                 "variants": [
                     {
                         "Name": "Lux",
@@ -201,7 +201,7 @@
                 "name2": "of Mutations",
                 "type": "Standard",
                 "selectionMethodID": 9,
-                "masterID": 9,
+                "masterID": "9",
                 "variants": [
                     {
                         "Name": "Evolution",
