@@ -86,7 +86,7 @@
                 "body": "Shuffle each age card not in use and reveal one. Starting with the first player and proceeding clockwise, each player votes \"Splup\" or \"Gwarq\". If more players vote \"Splup,\" replace the current age card with the revealed one and resolve its variant's setup instead.",
                 "expansion": "Cosmic Odyssey"
             },
-            "revised": {
+            "revised_unused": {
                 "name": "Public Option",
                 "body": "Shuffle each age card not in use and reveal one. Starting with the first player and proceeding clockwise, each player votes \"Splup\" or \"Gwarq\". If more players vote \"Splup,\" replace the current game's age card with the revealed one, remove the replaced age's variant from play and resolve the new age's variant setup instead.",
                 "expansion": "Cosmic Odyssey",
@@ -99,7 +99,7 @@
                 "body": "Shuffle each age card not in use and reveal one. Starting with the first player and proceeding clockwise, each player votes \"Bopf\" or \"Plark\". If more players vote \"Bopf,\" replace the previous age card with the revealed one and resolve its variant's setup instead.",
                 "expansion": "Cosmic Odyssey"
             },
-            "revised": {
+            "revised_unused": {
                 "name": "Selective Omission",
                 "body": "Shuffle each age card not in use and reveal one. Starting with the first player and proceeding clockwise, each player votes \"Bopf\" or \"Plark\". If more players vote \"Bopf,\" replace the previous game's age card with the revealed one, remove the replaced age's variant from play and resolve the new age's variant setup instead.\n\nPlayers that resolved that age's master card reverse its effect and resolve the new age's master card instead.",
                 "expansion": "Cosmic Odyssey",
