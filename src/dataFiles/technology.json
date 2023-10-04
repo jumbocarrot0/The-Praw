@@ -77,7 +77,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -367,7 +367,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -389,7 +389,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -414,7 +414,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -436,7 +436,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -527,7 +527,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -549,7 +549,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -674,7 +674,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -715,7 +715,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -739,7 +739,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -796,7 +796,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -837,7 +837,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -927,7 +927,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -951,7 +951,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -975,7 +975,7 @@
                 "timing": {
                     "player": "Main Player or Ally",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -997,7 +997,7 @@
                 "timing": {
                     "player": "Main Player or Ally Only",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1022,7 +1022,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1113,7 +1113,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1131,7 +1131,7 @@
                 "name": "Xaq Attack",
                 "refresh": true,
                 "short": "Force Invitation.",
-                "body": "Before main players invite allies, you may give this tech faceup to a main player. They must invited you.",
+                "body": "Before main players invite allies, you may give this tech faceup to a main player. They must invite you.",
                 "cost": "X+1",
                 "type": "Mili-Tech",
                 "timing": {
@@ -1146,7 +1146,7 @@
                 "name": "Xaq Attack",
                 "refresh": true,
                 "short": "Force Invitation.",
-                "body": "Before allies are invited, you may give this tech faceup to a main player. They must invited you.",
+                "body": "Before allies are invited, you may give this tech faceup to a main player. They must invite you.",
                 "cost": "X+1",
                 "type": "Mili-Tech",
                 "timing": {
@@ -1170,7 +1170,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1194,7 +1194,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1235,7 +1235,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,

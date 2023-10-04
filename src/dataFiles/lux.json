@@ -36,7 +36,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -57,7 +57,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -140,7 +140,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -161,7 +161,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -182,7 +182,7 @@
                 "timing": {
                     "player": "Offense Only",
                     "phases": {
-                        "start turn": true
+                        "startTurn": true
                     }
                 },
                 "expansion": "Cosmic Odyssey"
@@ -196,7 +196,7 @@
                 "timing": {
                     "player": "Offense Only",
                     "phases": {
-                        "start turn": true
+                        "startTurn": true
                     }
                 },
                 "expansion": "Cosmic Odyssey"
@@ -238,7 +238,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -259,7 +259,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -336,7 +336,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -357,7 +357,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -378,7 +378,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -399,7 +399,7 @@
                 "timing": {
                     "player": "Not Offense",
                     "phases": {
-                        "start turn": true
+                        "startTurn": true
                     }
                 },
                 "expansion": "Cosmic Odyssey"

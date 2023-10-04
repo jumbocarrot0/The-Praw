@@ -8,7 +8,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -27,7 +27,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -188,7 +188,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -308,7 +308,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -329,7 +329,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -392,7 +392,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -509,7 +509,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
