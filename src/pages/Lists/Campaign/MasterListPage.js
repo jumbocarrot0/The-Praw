@@ -3,17 +3,6 @@ import { Link } from 'react-router-dom';
 import GridBrowser from "../../../components/GridBrowser";
 import Item from '../../../components/Item'
 
-import { useState } from 'react';
-
-import {
-    Modal,
-    ModalHeader,
-    ModalBody,
-    Card,
-    CardBody,
-    Badge
-} from 'reactstrap';
-
 export default function MasterPage() {
     return (
         <div>
