@@ -54,8 +54,7 @@ export async function getAllCombos() {
     }
     const supabase = createClient('https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY, options)
 
-    const { data } = await supabase.from('Combos')
-        .select('*')
+    const { data } = await supabase.rpc('getallcombos')
         .eq('viewable', true)
 
     // console.log(data)
