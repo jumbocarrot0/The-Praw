@@ -72,6 +72,14 @@ export default function Geek() {
                     Submit
                 </Button>
                 <br/>
+                <Button className='mt-3 mb-2 w-25' color="danger" onClick={() => {
+                    setCorrect(false)
+                    setIncorrect(false)
+                    setGuess(alien.original.name)
+                }}>
+                    Show Answer
+                </Button>
+                <br/>
                 <Button className='mt-3 mb-2 w-25' color="secondary" onClick={() => {
                     setCorrect(false)
                     setIncorrect(false)

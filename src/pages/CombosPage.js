@@ -1,15 +1,18 @@
 import { useState, useEffect } from "react";
 import {
-  Button, Table, Row
+  Button, Table, Row, FormGroup, Input, Label
 } from 'reactstrap';
 import { Link } from "react-router-dom"
 import Loading from '../components/Loading'
 
-import { getRandomCombo } from "../supabaseAPI/getCombo";
+import { getAllCombos } from "../supabaseAPI/getCombo";
 
 function Combo(props) {
   // console.log(props.Name)
   // console.log(props.Aliens)
+
+  // console.log(props)
+
   return (
     <Table dark className="text-center w-50 th-w-50">
       <thead>
@@ -35,20 +38,22 @@ function Combo(props) {
   )
 }
 
-// function RandomCombo() {
-//   let comboIndex = Math.floor(Math.random() * combosData.length);
-//   return combosData[comboIndex];
-// }
+function RandomCombo(combosData) {
+  let comboIndex = Math.floor(Math.random() * combosData.length);
+  return combosData[comboIndex];
+}
 
 export default function Combos() {
+  const [allCombos, setAllCombos] = useState(undefined)
   const [combo, setCombo] = useState(undefined)
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    getRandomCombo()
+    getAllCombos()
       .then((data) => {
         // console.log(data)
-        setCombo(data)
+        setAllCombos(data)
+        setCombo(RandomCombo(data))
       })
   }, [])
 
@@ -68,14 +73,14 @@ export default function Combos() {
           <div className="d-flex justify-content-center">
             <Button
               color="primary"
-              onClick={() => { setLoading(true); getRandomCombo().then(data => setCombo(data)).then(_ => setLoading(false)) }}
+              onClick={() => { setLoading(true); setCombo(RandomCombo(allCombos)); setLoading(false) }}
               disabled={loading}
             >
               New Combo!
             </Button>
           </div>
           <div className="d-flex justify-content-center">
-          {/* <FormGroup>
+          <FormGroup className="mt-3">
             <Label for="exampleSelect">
               Select Combo
             </Label>
@@ -83,23 +88,23 @@ export default function Combos() {
               id="exampleSelect"
               name="select"
               type="select"
-              onChange={(e) => { getCombo(e.target.value).then(data => setCombo(data))}}
+              onChange={(e) => { setCombo(allCombos[e.target.value])}}
             >
               <option value={undefined} disabled>
                 Select Combo
               </option>
               {
-                combosData.map((combo, index) => {
+                allCombos.map((combo, index) => {
                   // console.log(combo, index)
                   return (
                     <option key={index} value={index}>
-                      {combo.Name}
+                      {combo.name}
                     </option>
                   )
                 })
               }
             </Input>
-          </FormGroup> */}
+          </FormGroup>
         </div>
         </Row>
         <Row className="row mt-5">
