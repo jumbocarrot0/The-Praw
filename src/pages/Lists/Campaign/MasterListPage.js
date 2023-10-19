@@ -1,9 +1,12 @@
-import Ages from '../../../dataFiles/ages.json';
 import { Link } from 'react-router-dom';
 import GridBrowser from "../../../components/GridBrowser";
 import Item from '../../../components/Item'
+import { useRouteLoaderData } from 'react-router-dom';
 
 export default function MasterPage() {
+
+    const Masters = useRouteLoaderData("mastercards")
+
     return (
         <div>
             <h1 className='mb-4'>Master Cards</h1>
@@ -15,7 +18,7 @@ export default function MasterPage() {
             <GridBrowser cardTemplate={Item}
                 noSort={true}
                 url="/Variants/Campaign/MasterCards"
-                content={Ages.master}
+                content={Masters}
                 border={() => "secondary"}
                 type={() => { return null }}
                 width={4}

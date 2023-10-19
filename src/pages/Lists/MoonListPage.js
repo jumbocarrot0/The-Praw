@@ -1,5 +1,4 @@
 import Item from '../../components/Item'
-import Moons from '../../dataFiles/moons.json';
 import GridBrowser from "../../components/GridBrowser";
 import {
   UncontrolledAccordion,
@@ -7,8 +6,12 @@ import {
   AccordionHeader,
   AccordionItem
 } from 'reactstrap'
+import { useRouteLoaderData } from 'react-router-dom';
 
 export default function MoonListPage() {
+
+  const Moons = useRouteLoaderData("moons")
+
   return (
     <div>
       <h1 className='mb-4'>Moons</h1>
@@ -59,7 +62,7 @@ export default function MoonListPage() {
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item} noSort={true}
         url="/Variants/Moons"
-        content={Moons.moons}
+        content={Moons}
         border={(item) => {
           const types = { "Cheesy Moon": "success", "Blue Moon": "primary", "Full Moon": "warning", "Half Moon": "indigo", "Hub Moon": "orange", "New Moon": "primary-subtle", "Quarter Moon": "danger-subtle", "Secret Moon": "danger" }
           return types[item.type] ? types[item.type] : "secondary";

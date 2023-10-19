@@ -1,5 +1,4 @@
 import Item from '../../components/Item'
-import Envoys from '../../dataFiles/envoys.json';
 import GridBrowser from "../../components/GridBrowser";
 import {
   UncontrolledAccordion,
@@ -7,9 +6,12 @@ import {
   AccordionHeader,
   AccordionItem
 } from 'reactstrap'
-// import { Link } from "react-router-dom"
+import { useRouteLoaderData } from 'react-router-dom';
 
 export default function EnvoysPage() {
+
+  const Envoys = useRouteLoaderData("envoys")
+
   return (
     <div>
       <h1 className='mb-4'>Envoys</h1>
@@ -35,7 +37,7 @@ export default function EnvoysPage() {
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}
         url="/Variants/Campaign/Envoys"
-        content={Envoys.envoys}
+        content={Envoys}
         border={(envoy) => {
           const borders = { "Cosmic Odyssey": "success", "Fan Made": "indigo" };
           return borders[envoy.expansion];

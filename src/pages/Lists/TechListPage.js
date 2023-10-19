@@ -1,5 +1,4 @@
 import Item from '../../components/Item'
-import Techs from '../../dataFiles/technology.json';
 import GridBrowser from "../../components/GridBrowser";
 import {
   UncontrolledAccordion,
@@ -7,8 +6,11 @@ import {
   AccordionHeader,
   AccordionItem
 } from 'reactstrap'
+import { useRouteLoaderData } from 'react-router-dom';
 
 export default function TechListPage() {
+
+  const Techs = useRouteLoaderData("techs")
 
   return (
     <div>
@@ -56,7 +58,7 @@ export default function TechListPage() {
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}
         url="/Variants/Techs"
-        content={Techs.technologies}
+        content={Techs}
         border={(item) => {
           return { "Mili-Tech": "success", "Haz-Tech": "danger", "Tech": "warning" }[item.type];
         }}

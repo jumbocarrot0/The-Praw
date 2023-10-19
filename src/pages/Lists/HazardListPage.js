@@ -1,5 +1,4 @@
 import Item from '../../components/Item'
-import Hazards from '../../dataFiles/hazards.json';
 import GridBrowser from "../../components/GridBrowser";
 import {
   UncontrolledAccordion,
@@ -7,9 +6,13 @@ import {
   AccordionHeader,
   AccordionItem
 } from 'reactstrap'
-// import { Link } from "react-router-dom"
+import { useRouteLoaderData } from 'react-router-dom';
 
 export default function HazardListPage() {
+
+  const Hazards = useRouteLoaderData("hazards")
+  console.log(Hazards)
+
   return (
     <div>
       <h1 className='mb-4'>Hazards</h1>
@@ -57,7 +60,7 @@ export default function HazardListPage() {
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}
         url="/Variants/Hazards"
-        content={Hazards.hazards}
+        content={Hazards}
         border={(item) => {
           return { "AltHazard": "success", "Permanent": "danger", "SemiPermanent": "warning", "Hazard": "secondary" }[item.type];
         }}

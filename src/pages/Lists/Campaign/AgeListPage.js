@@ -1,4 +1,4 @@
-import Ages from '../../../dataFiles/ages.json';
+
 import { Link } from 'react-router-dom';
 import GridBrowser from "../../../components/GridBrowser";
 
@@ -12,8 +12,12 @@ import {
     CardBody,
     Badge
 } from 'reactstrap';
+import { useRouteLoaderData } from 'react-router-dom';
 
 function AgeItem(props) {
+
+    const Ages = useRouteLoaderData("ages")
+
     const content = props.content
 
     const [modal, setModal] = useState(false)
@@ -101,6 +105,11 @@ function AgeItem(props) {
 }
 
 export default function AgesPage() {
+
+    const Ages = useRouteLoaderData("ages")
+    console.log('hello')
+    console.log(Ages)
+    
     return (
         <div>
             <h1 className='mb-4'>Ages</h1>

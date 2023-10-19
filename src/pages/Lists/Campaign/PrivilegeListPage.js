@@ -1,9 +1,12 @@
-import Priviliges from "../../../dataFiles/privileges.json"
 import { Link } from 'react-router-dom';
 import GridBrowser from "../../../components/GridBrowser";
 import Item from '../../../components/Item'
+import { useRouteLoaderData } from 'react-router-dom';
 
 export default function PrivilegePage() {
+
+    const Privileges = useRouteLoaderData("privilegecards")
+
     return (
         <div>
             <h1 className='mb-4'>Privilege Cards</h1>
@@ -14,7 +17,7 @@ export default function PrivilegePage() {
             <hr className="border border-light border-2 opacity-100 mb-5" />
             <GridBrowser cardTemplate={Item}
                 url="/Variants/Campaign/PrivilegeCards"
-                content={Priviliges.privilege}
+                content={Privileges}
                 border={() => "success"}
                 type={() => { return null }}
                 width={4}

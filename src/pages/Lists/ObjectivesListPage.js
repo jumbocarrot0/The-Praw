@@ -1,5 +1,4 @@
 import Item from '../../components/Item'
-import Objectives from '../../dataFiles/objectives.json';
 import GridBrowser from "../../components/GridBrowser";
 import {
   UncontrolledAccordion,
@@ -7,8 +6,12 @@ import {
   AccordionHeader,
   AccordionItem
 } from 'reactstrap'
+import { useRouteLoaderData } from 'react-router-dom';
 
-export default function HazardListPage() {
+export default function ObjectivesListPage() {
+
+  const Objectives = useRouteLoaderData("objectives")
+
   return (
     <div>
       <h1 className='mb-4'>Objectives</h1>
@@ -36,7 +39,7 @@ export default function HazardListPage() {
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}
         url="/Variants/Objectives"
-        content={Objectives.objectives}
+        content={Objectives}
         border={() => {
           return "indigo";
         }}

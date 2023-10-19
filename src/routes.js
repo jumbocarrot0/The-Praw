@@ -83,11 +83,13 @@ import { getAlien, getAllAliens } from "./supabaseAPI/getAlien"
 
 const itemPageBreadcrumb = (data) => data.original.name
 
-const itemPageRoute = (rootpath, crumb, indexpath, list, item, loader) => ({
+const itemPageRoute = (rootpath, crumb, indexpath, list, item, loader, parentLoader) => ({
   path: rootpath,
+  id: rootpath.toLowerCase(),
   handle: {
     breadcrumb: () => crumb
   },
+  loader: parentLoader,
   children: [
     {
       index: true,
@@ -251,13 +253,15 @@ export const routes = [
                 index: true,
                 element: <CampaignPage />
               },
-              
+
               itemPageRoute(
                 "Ages",
                 "Ages",
                 "ageIndex",
                 <AgesPage />,
-                ({ params }) => Ages.ages[params.ageIndex]
+                null,
+                ({ params }) => Ages.ages[params.ageIndex],
+                () => {return Ages}
               ),
               itemPageRoute(
                 "MasterCards",
@@ -265,7 +269,8 @@ export const routes = [
                 "masterIndex",
                 <MasterPage />,
                 <IndividualMasterPage />,
-                ({ params }) => Ages.master[params.masterIndex]
+                ({ params }) => Ages.master[params.masterIndex],
+                () => Ages.master
               ),
               itemPageRoute(
                 "WrenchCards",
@@ -273,7 +278,8 @@ export const routes = [
                 "wrenchIndex",
                 <WrenchPage />,
                 <IndividualWrenchPage />,
-                ({ params }) => Wrenches.wrench[params.wrenchIndex]
+                ({ params }) => Wrenches.wrench[params.wrenchIndex],
+                () => Wrenches.wrench
               ),
               itemPageRoute(
                 "PrivilegeCards",
@@ -281,7 +287,8 @@ export const routes = [
                 "privilegeIndex",
                 <PrivilegePage />,
                 <IndividualPrivilegePage />,
-                ({ params }) => Privileges.privilege[params.privilegeIndex]
+                ({ params }) => Privileges.privilege[params.privilegeIndex],
+                () => Privileges.privilege
               ),
               itemPageRoute(
                 "Envoys",
@@ -289,11 +296,14 @@ export const routes = [
                 "envoyIndex",
                 <EnvoysPage />,
                 <IndividualEnvoyPage />,
-                ({ params }) => Envoys.envoys[params.envoyIndex]
+                ({ params }) => Envoys.envoys[params.envoyIndex],
+                () => Envoys.envoys
               ),
               {
                 path: 'SelectionMethods',
+                id: 'selectionmethods',
                 element: <SelectionMethodsPage />,
+                loader: () => Ages.selectionMethods,
                 handle: {
                   breadcrumb: () => "Selection Methods"
                 }
@@ -329,7 +339,8 @@ export const routes = [
             "techIndex",
             <TechListPage />,
             <IndividualTechPage />,
-            ({ params }) => Techs.technologies[params.techIndex]
+            ({ params }) => Techs.technologies[params.techIndex],
+            () => Techs.technologies
           ),
 
           itemPageRoute(
@@ -338,7 +349,8 @@ export const routes = [
             "hazardIndex",
             <HazardListPage />,
             <IndividualHazardPage />,
-            ({ params }) => Hazards.hazards[params.hazardIndex]
+            ({ params }) => Hazards.hazards[params.hazardIndex],
+            () => Hazards.hazards
           ),
 
           itemPageRoute(
@@ -347,7 +359,8 @@ export const routes = [
             "stationIndex",
             <StationListPage />,
             <IndividualStationPage />,
-            ({ params }) => Stations.stations[params.stationIndex]
+            ({ params }) => Stations.stations[params.stationIndex],
+            () => Stations.stations
           ),
 
           itemPageRoute(
@@ -356,7 +369,8 @@ export const routes = [
             "luxIndex",
             <LuxListPage />,
             <IndividualLuxPage />,
-            ({ params }) => Lux.lux[params.luxIndex]
+            ({ params }) => Lux.lux[params.luxIndex],
+            () => Lux.lux
           ),
 
           itemPageRoute(
@@ -365,7 +379,8 @@ export const routes = [
             "moonIndex",
             <MoonListPage />,
             <IndividualMoonPage />,
-            ({ params }) => Moons.moons[params.moonIndex]
+            ({ params }) => Moons.moons[params.moonIndex],
+            () => Moons.moons
           ),
 
           itemPageRoute(
@@ -374,7 +389,8 @@ export const routes = [
             "evolutionIndex",
             <EvolutionListPage />,
             <IndividualEvolutionPage />,
-            ({ params }) => Evolutions.evolutions[params.evolutionIndex]
+            ({ params }) => Evolutions.evolutions[params.evolutionIndex],
+            () => Evolutions.evolutions
           ),
 
           itemPageRoute(
@@ -383,7 +399,8 @@ export const routes = [
             "objectiveIndex",
             <ObjectivesListPage />,
             <IndividualObjectivePage />,
-            ({ params }) => Objectives.objectives[params.objectiveIndex]
+            ({ params }) => Objectives.objectives[params.objectiveIndex],
+            () => Objectives.objectives
           ),
 
           {
@@ -442,7 +459,8 @@ export const routes = [
             "specialShipIndex",
             <SpecialShipsPage />,
             <IndividualSpecialShipPage />,
-            ({ params }) => SpecialShips.ships[params.specialShipIndex]
+            ({ params }) => SpecialShips.ships[params.specialShipIndex],
+            () => SpecialShips.ships
           ),
           // {
           //   path: "Anomalies",
@@ -473,8 +491,14 @@ export const routes = [
     element: <ThrowbackPage />,
     path: "Aliens/221",
     handle: {
-      breadcrumb: () => "Throwback"
-    }
+      breadcrumb: () => "Throwback",
+      title: () => "The Praw - Throwback"
+    },
+    loader: () => {
+      const alienDataPromise = getAlien("221")
+      return defer({ alien: alienDataPromise })
+    },
+    id: "throwback"
   },
   {
     path: "*",
@@ -484,3 +508,5 @@ export const routes = [
     }
   }
 ]
+
+console.log(routes)

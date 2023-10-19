@@ -1,9 +1,12 @@
-import Wrenches from "../../../dataFiles/wrenches.json"
 import { Link } from 'react-router-dom';
 import GridBrowser from "../../../components/GridBrowser";
 import Item from '../../../components/Item'
+import { useRouteLoaderData } from 'react-router-dom';
 
 export default function WrenchPage() {
+
+    const Wrenches = useRouteLoaderData("wrenchcards")
+
     return (
         <div>
             <h1 className='mb-4'>Wrench Cards</h1>
@@ -14,7 +17,7 @@ export default function WrenchPage() {
             <hr className="border border-light border-2 opacity-100 mb-5" />
             <GridBrowser cardTemplate={Item}
                 url="/Variants/Campaign/WrenchCards"
-                content={Wrenches.wrench}
+                content={Wrenches}
                 border={() => "secondary"}
                 type={() => { return null }}
                 width={4}

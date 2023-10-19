@@ -1,5 +1,4 @@
 import Item from '../../components/Item'
-import Evolutions from '../../dataFiles/evolutions.json';
 import GridBrowser from "../../components/GridBrowser";
 import {
   UncontrolledAccordion,
@@ -7,8 +6,12 @@ import {
   AccordionHeader,
   AccordionItem
 } from 'reactstrap'
+import { useRouteLoaderData } from 'react-router-dom';
 
 export default function EvolutionListPage() {
+
+  const Evolutions = useRouteLoaderData("evolutions")
+
   return (
     <div>
       <h1 className='mb-4'>Evolutions</h1>
@@ -37,7 +40,7 @@ export default function EvolutionListPage() {
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}
         url="/Variants/Evolutions"
-        content={Evolutions.evolutions}
+        content={Evolutions}
         border={(item) => {
           return "success";
         }}

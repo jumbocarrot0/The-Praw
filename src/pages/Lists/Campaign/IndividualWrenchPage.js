@@ -1,48 +1,40 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {
   Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
-import { useParams } from "react-router-dom"
-import Wrenches from '../../../dataFiles/wrenches.json';
+import { useRouteLoaderData } from "react-router-dom"
 
 export default function IndividualWrenchPage() {
 
-  const { wrenchIndex } = useParams();
-
-  const [wrench, setWrench] = useState(Wrenches.wrench[wrenchIndex].original)
-  const [revised, setRevised] = useState(false)
-
-  useEffect(() => {
-    setWrench(Wrenches.wrench[wrenchIndex].original)
-    setRevised(false)
-  }, [wrenchIndex])
+  const wrench = useRouteLoaderData("wrenchIndex")
+  const [tab, setTab] = useState("original")
 
   return (
     <div>
-      {Wrenches.wrench[wrenchIndex].revised ?
+      {wrench.revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
-            <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
-              onClick={() => { setWrench(Wrenches.wrench[wrenchIndex].original); setRevised(false) }}>Original</NavLink>
+            <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
+              onClick={() => { setTab("original") }}>Original</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={"nav-link" + (revised ? " active" : "")} href="#"
-              onClick={() => { setWrench(Wrenches.wrench[wrenchIndex].revised); setRevised(true) }}>Revised</NavLink>
+            <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
+              onClick={() => { setTab("revised") }}>Revised</NavLink>
           </NavItem>
         </Nav> : null
       }
-      <Card className={"mx-1" + (Wrenches.wrench[wrenchIndex].revised ? " border-top-0 rounded-top-0" : "")}>
+      <Card className={"mx-1" + (wrench.revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
-          <h1 className='text-light'>{wrench.name}</h1>
+          <h1 className='text-light'>{wrench[tab].name}</h1>
 
-          <p>{wrench.body}</p>
+          <p>{wrench[tab].body}</p>
           <br />
 
 
-          {revised && wrench.revisionNotes ? (
+          {wrench[tab].revisionNotes ? (
             <Card className="bg-light border-warning border-5">
               <CardBody>
-                <p className="text-dark">{wrench.revisionNotes}</p>
+                <p className="text-dark">{wrench[tab].revisionNotes}</p>
               </CardBody>
             </Card>
           ) : null}

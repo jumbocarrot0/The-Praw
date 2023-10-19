@@ -1,5 +1,4 @@
 import Item from '../../components/Item'
-import Stations from '../../dataFiles/stations.json';
 import GridBrowser from "../../components/GridBrowser";
 import {
   UncontrolledAccordion,
@@ -7,8 +6,12 @@ import {
   AccordionHeader,
   AccordionItem
 } from 'reactstrap'
+import { useRouteLoaderData } from 'react-router-dom';
 
 export default function StationListPage() {
+
+  const Stations = useRouteLoaderData("stations")
+
   return (
     <div>
       <h1 className='mb-4'>Space Stations</h1>
@@ -56,7 +59,7 @@ export default function StationListPage() {
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}
         url="/Variants/Stations"
-        content={Stations.stations}
+        content={Stations}
         border={(item) => {
           return { "Sky City": "success", "Space Station": "primary", "Deep Space Station": "indigo" }[item.type];
         }}

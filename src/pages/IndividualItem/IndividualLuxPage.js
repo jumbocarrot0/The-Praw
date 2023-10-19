@@ -1,49 +1,41 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {
   Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
-import { useParams } from "react-router-dom"
-import Lux from '../../dataFiles/lux.json';
+import { useRouteLoaderData } from "react-router-dom"
 import TimingBar from '../../components/TimingBar';
 
 export default function IndividualLuxPage() {
 
-  const { luxIndex } = useParams();
-
-  const [lux, setLux] = useState(Lux.lux[luxIndex].original)
-  const [revised, setRevised] = useState(false)
-
-  useEffect(() => {
-    setLux(Lux.lux[luxIndex].original)
-    setRevised(false)
-  }, [luxIndex])
+  const lux = useRouteLoaderData("luxIndex")
+  const [tab, setTab] = useState("original")
 
   return (
     <div>
-      {Lux.lux[luxIndex].revised ?
+      {lux.revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
-            <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
-              onClick={() => { setLux(Lux.lux[luxIndex].original); setRevised(false) }}>Original</NavLink>
+            <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
+              onClick={() => { setTab("original") }}>Original</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={"nav-link" + (revised ? " active" : "")} href="#"
-              onClick={() => { setLux(Lux.lux[luxIndex].revised); setRevised(true) }}>Revised</NavLink>
+            <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
+              onClick={() => { setTab("revised") }}>Revised</NavLink>
           </NavItem>
         </Nav> : null
       }
-      <Card className={"mx-1" + (Lux.lux[luxIndex].revised ? " border-top-0 rounded-top-0" : "")}>
+      <Card className={"mx-1" + (lux.revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
-          <h1 className='text-light'>{lux.name}</h1>
-          <p>{lux.body}</p>
+          <h1 className='text-light'>{lux[tab].name}</h1>
+          <p>{lux[tab].body}</p>
           <br />
-          <TimingBar timing={lux.timing}/>
+          <TimingBar timing={lux[tab].timing}/>
 
 
-          {revised && lux.revisionNotes ? (
+          {lux[tab].revisionNotes ? (
             <Card className="bg-light border-warning border-5">
               <CardBody>
-                <p className="text-dark">{lux.revisionNotes}</p>
+                <p className="text-dark">{lux[tab].revisionNotes}</p>
               </CardBody>
             </Card>
           ) : null}

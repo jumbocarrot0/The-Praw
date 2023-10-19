@@ -86,6 +86,16 @@ export default function HouseRulesPage() {
           </AccordionBody>
         </AccordionItem>
         <AccordionItem>
+          <AccordionHeader targetId="lux">
+            Lux
+          </AccordionHeader>
+          <AccordionBody accordionId="lux">
+            <p>
+              Some Lux cards are able to be used to high-octane effect by trading lux around immediately. Some players find this can lead to long, exploitative gameplay. The Praw recommends for these players a change to how Lux is traded (taking inspiration from Dune): that any Lux traded during the game is only usable at the start of the encounter after it has been received. Further, some players may wish to extend this to apply to <em>all</em> lux gained during an encounter, including those for the main players, as to avoid last-minute lux spending during resolution if so desired.
+            </p>
+          </AccordionBody>
+        </AccordionItem>
+        <AccordionItem>
           <AccordionHeader targetId="permanentHazards">
             'Remains in Play' Hazards
           </AccordionHeader>

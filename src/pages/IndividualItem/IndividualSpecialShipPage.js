@@ -1,44 +1,37 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
-import { useParams } from "react-router-dom"
 import TimingBar from '../../components/TimingBar';
 import { Link } from 'react-router-dom';
-import SpecialShips from '../../dataFiles/specialShips.json';
+import { useRouteLoaderData } from "react-router-dom"
 
 
 export default function IndividualSpecialShipPage() {
 
-  const { specialShipIndex } = useParams();
-
-  const [specialShip, setSpecialShip] = useState(SpecialShips.ships[specialShipIndex])
+  const specialShip = useRouteLoaderData("specialShipIndex")
   const [tab, setTab] = useState("original")
 
-  useEffect(() => {
-    setSpecialShip(SpecialShips.ships[specialShipIndex])
-    setTab("original")
-  }, [specialShipIndex])
   return (
     <div >
       {specialShip.revised || specialShip.homebrew ?
         <Nav className="ps-5 mx-1" tabs>
+        <NavItem>
+          <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
+            onClick={() => { setTab("original") }}>Original</NavLink>
+        </NavItem>
+        {specialShip.revised ?
           <NavItem>
-            <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
-              onClick={() => { setTab("original") }}>Original</NavLink>
-          </NavItem>
-          {specialShip.revised ?
-            <NavItem>
-              <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
-                onClick={() => { setTab("revised") }}>Revised</NavLink>
-            </NavItem> : null
-          }
-          {specialShip.homebrew ?
-            <NavItem>
-              <NavLink className={"nav-link" + (tab === "homebrew" ? " active" : "")} href="#"
-                onClick={() => { setTab("homebrew") }}>House Rules</NavLink>
-            </NavItem> : null
-          }
+            <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
+              onClick={() => { setTab("revised") }}>Revised</NavLink>
+          </NavItem> : null
+        }
+        {specialShip.homebrew ?
+          <NavItem>
+            <NavLink className={"nav-link" + (tab === "homebrew" ? " active" : "")} href="#"
+              onClick={() => { setTab("homebrew") }}>House Rules</NavLink>
+          </NavItem> : null
+        }
         </Nav> : null
       }
       <Card className={"mx-1" + (specialShip.revised || specialShip.homebrew ? " border-top-0 rounded-top-0" : "")}>

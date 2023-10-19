@@ -1,5 +1,4 @@
 import Item from '../../components/Item'
-import Lux from '../../dataFiles/lux.json';
 import GridBrowser from "../../components/GridBrowser";
 import {
   UncontrolledAccordion,
@@ -7,8 +6,12 @@ import {
   AccordionHeader,
   AccordionItem
 } from 'reactstrap'
+import { useRouteLoaderData } from 'react-router-dom';
 
 export default function LuxListPage() {
+
+  const Lux = useRouteLoaderData("lux")
+
   return (
     <div>
       <h1 className='mb-4'>Lux</h1>
@@ -61,7 +64,7 @@ export default function LuxListPage() {
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}
         url="/Variants/Lux"
-        content={Lux.lux}
+        content={Lux}
         border={(item) => {
           return { "De-Lux": "info", "Re-Lux": "success", "Ultra Lux": "danger" }[item.type];
         }}

@@ -1,5 +1,4 @@
-import Ages from '../../../dataFiles/ages.json';
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 // import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -19,6 +18,9 @@ function LinkIcon() {
 // }
 
 export default function SelectionMethodsPage() {
+
+  const SelectionMethods = useLoaderData("selectionmethods");
+
   const { 
     // pathname, 
     hash } = useLocation();
@@ -81,12 +83,12 @@ export default function SelectionMethodsPage() {
       <h2>Official Selection Methods</h2>
       <p>These have been revised slightly to fix some oddities.</p>
       {
-        Object.values(Ages.selectionMethods).filter((method) => method.original.expansion !== "Fan Made").map((method, i) => <SelectionMethod method={method} key={i} />)
+        Object.values(SelectionMethods).filter((method) => method.original.expansion !== "Fan Made").map((method, i) => <SelectionMethod method={method} key={i} />)
       }
       <h2>Fan-made Selection Methods</h2>
       <p>These have been created by fans without a corresponding age card, and also includes the <Link to="https://futurepastimes.com/blog/2023/4/24/new-campaign-alien-selection-methods">"semi-official"</Link> methods posted on the Future Pastimes blog..</p>
       {
-        Object.values(Ages.selectionMethods).filter((method) => method.original.expansion === "Fan Made").sort(function (a, b) { return a.original.name > b.original.name }).map((method, i) => <SelectionMethod method={method} key={i} />)
+        Object.values(SelectionMethods).filter((method) => method.original.expansion === "Fan Made").sort(function (a, b) { return a.original.name > b.original.name }).map((method, i) => <SelectionMethod method={method} key={i} />)
       }
     </div>
   );

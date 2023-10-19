@@ -1,23 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
-import { useParams } from "react-router-dom"
+import { useRouteLoaderData } from "react-router-dom"
 import TimingBar from '../../components/TimingBar';
-import Envoys from '../../dataFiles/envoys.json';
 
 
 export default function IndividualEnvoyPage() {
 
-  const { envoyIndex } = useParams();
-
-  const [envoy, setEnvoy] = useState(Envoys.envoys[envoyIndex])
+  const envoy = useRouteLoaderData("envoyIndex")
   const [tab, setTab] = useState("original")
 
-  useEffect(() => {
-    setEnvoy(Envoys.envoys[envoyIndex])
-    setTab("original")
-  }, [envoyIndex])
   return (
     <div >
       {envoy.revised || envoy.homebrew ?
