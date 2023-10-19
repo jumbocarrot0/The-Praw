@@ -7,7 +7,7 @@
                 "powerBody": "When a main player or ally has his or her flagship in an encounter, after encounter cards are revealed he or she may add an extra +3 to his or her side's total.",
                 "powerTiming": {
                     "player": "Main Player or Ally Only",
-                    "choice": "Mandatory",
+                    "choice": "Optional",
                     "phases": {
                         "startTurn": false,
                         "regroup": false,
@@ -286,7 +286,7 @@
                 "specialBody": "When you attempt to make a deal, you may exhaust your lawyer's ship. If the deal fails, you will lose three fewer ships, and your opponent will lose three additional ships.",
                 "specialTiming": {
                     "player": "Main Player Only",
-                    "choice": "Mandatory",
+                    "choice": "Optional",
                     "phases": {
                         "startTurn": false,
                         "regroup": false,
@@ -329,7 +329,7 @@
                 "specialBody": "When a main player or ally has his or her mothership in an encounter, after encounter cards are revealed, he or she may send one to four ships from his or her colonies into the encounter, increasing the number of ships he or she has in the encounter.",
                 "specialTiming": {
                     "player": "Main Player or Ally Only",
-                    "choice": "Mandatory",
+                    "choice": "Optional",
                     "phases": {
                         "startTurn": false,
                         "regroup": false,
@@ -485,7 +485,7 @@
                 "specialBody": "You may exhaust your capital ship when it is involved in an encounter to double the value of all ships on your side of the encounter.",
                 "specialTiming": {
                     "player": "Main Player or Ally Only",
-                    "choice": "Mandatory",
+                    "choice": "Optional",
                     "phases": {
                         "startTurn": false,
                         "regroup": false,
@@ -527,7 +527,7 @@
                 "specialBody": "You may exhaust your capitol ship when it is involved in an encounter to double the value of each reinforcement card you play this encounter.",
                 "specialTiming": {
                     "player": "Main Player or Ally Only",
-                    "choice": "Mandatory",
+                    "choice": "Optional",
                     "phases": {
                         "startTurn": false,
                         "regroup": false,
@@ -570,7 +570,7 @@
                 "specialBody": "When you reveal a negotiate card and your opponent reveals an attack card, if your consular chambers is involed in the encounter, you may exhaust it to discard your negotiate and replace it with an attack card from your hand.",
                 "specialTiming": {
                     "player": "Main Player or Ally Only",
-                    "choice": "Mandatory",
+                    "choice": "Optional",
                     "phases": {
                         "startTurn": false,
                         "regroup": false,
