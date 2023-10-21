@@ -520,7 +520,7 @@ export default function AliensListPage() {
             if (aliens !== undefined) {
               filteredAliens = filterAliens(aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases, submittedPlayer, submittedExactPlayer, submittedAlertLevels)
             }
-            console.log(filteredAliens)
+            // console.log(filteredAliens)
             return <>
               <p>{Object.keys(filteredAliens).length}/238 Results</p>
               <GridBrowser cardTemplate={Alien}
