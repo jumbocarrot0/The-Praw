@@ -34,22 +34,25 @@ import { getAllAliens } from "../supabaseAPI/getAlien"
 function Item(props) {
   const item = props.content
 
+  console.log(item)
+  console.log(props.to)
+
   let previewBody;
   let previewName = item.name;
 
-  if (props.to.includes('Alien')) {
+  if (props.to.includes('/Aliens/')) {
     previewBody = <>
       <div className='fs-4 text-light'>{item.short}</div>
       <strong>{item.powerName}</strong> {item.powerBody.slice(0, 280).replaceAll('\n$')}{item.powerBody.length > 280 ? '...' : ''}
     </>
 
-  } else if (props.to.includes('Envoy')) {
+  } else if (props.to.includes('/Variants/Campaign/Envoy/')) {
     previewBody = <p>{`${item.powerBody} ${item.history}`.slice(0, 260)}</p>
 
-  } else if (props.to.includes('SpecialShip')) {
+  } else if (props.to.includes('/Variants/SpecialShip/')) {
     previewBody = <p>{`${item.powerBody} ${item.specialName} ${item.specialBody}`.slice(0, 260)}</p>
 
-  } else if (props.to.includes('Evolution')) {
+  } else if (props.to.includes('/Variants/Evolution/')) {
     previewBody = <ul>
       {item.body.map((row) => {
         return (row.cost ? <li key={row.cost}>{row.cost}: {row.text}</li> : <li key="noCost">{row.text}</li>)
@@ -199,7 +202,7 @@ export default function ResultsPage() {
   useEffect(() => {
     GetallItems().then(data => {
       const allItems = Object.entries(data);
-      console.log(allItems)
+      // console.log(allItems)
 
       const options = {
         includeScore: true,
@@ -224,11 +227,11 @@ export default function ResultsPage() {
               } else if (item[0].includes('SpecialShips')) {
                 return (`${item[1].original.powerBody} ${item[1].original.specialName} ${item[1].original.specialBody}`)
               } else if (item[0].includes('Ages') && item[1].original.type === "Standard") {
-                console.log(item[0])
+                // console.log(item[0])
                 const body = (`Use the following alien selection method: ${Ages.selectionMethods[item[1].original?.selectionMethodID].original.name} Add the following variant(s): ${item[1].original.variants.map((variant, index) => 
                   `${index !== 0 ? variant.Subvariant ? " with " : " and " : ""}${variant.Name}`
                 )}`)
-                console.log(body)
+                // console.log(body)
                 return body
               } else if (item[0].includes('Evolution')) {
                 return (item[1].original.body)
@@ -242,7 +245,7 @@ export default function ResultsPage() {
       const fuse = new Fuse(allItems, options)
       const fuseQuery = `${submittedQuery}`
       // console.log(fuseQuery)
-      console.log(fuse.search(fuseQuery))
+      // console.log(fuse.search(fuseQuery))
       // console.log(fuse.search(fuseQuery).map(result => [result.item[0], Object.fromEntries(allItems)[result.item[0]]]))
       setSearchResults(fuse.search(fuseQuery)
         .map(result => [result.item[0], Object.fromEntries(allItems)[result.item[0]]]))
