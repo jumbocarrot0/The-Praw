@@ -70,6 +70,11 @@ export default function PrawNav() {
                   Digital Dial
                 </Link>
               </DropdownItem>
+              <DropdownItem>
+                <Link className="nav-link" to="/CampaignLog">
+                  Campaign Log
+                </Link>
+              </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <NavItem key={6}>

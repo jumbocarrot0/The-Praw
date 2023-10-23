@@ -15,6 +15,8 @@ import SelectionPage from "./pages/SelectionPage";
 import GeekPage from "./pages/GeekPage";
 import HiddenDialPage from "./pages/HiddenDialPage"
 import SelectionMethodsPage from "./pages/Lists/Campaign/SelectionMethodsPage";
+import CampaignGeneratePage from "./pages/CampaignGeneratePage"
+import CampaignViewPage from "./pages/CampaignViewPage"
 
 import Error404Page from "./pages/ErrorPages/Error404";
 
@@ -484,7 +486,14 @@ export const routes = [
             }
           },
         ]
-      }
+      },
+      {
+        path: "/CampaignLog",
+        element: <CampaignGeneratePage />,
+        handle: {
+          breadcrumb: () => "Campaign Log"
+        }
+      },
     ]
   },
   {
