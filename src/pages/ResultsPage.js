@@ -34,8 +34,8 @@ import { getAllAliens } from "../supabaseAPI/getAlien"
 function Item(props) {
   const item = props.content
 
-  console.log(item)
-  console.log(props.to)
+  // console.log(item)
+  // console.log(props.to)
 
   let previewBody;
   let previewName = item.name;
@@ -46,13 +46,13 @@ function Item(props) {
       <strong>{item.powerName}</strong> {item.powerBody.slice(0, 280).replaceAll('\n$')}{item.powerBody.length > 280 ? '...' : ''}
     </>
 
-  } else if (props.to.includes('/Variants/Campaign/Envoy/')) {
+  } else if (props.to.includes('/Variants/Campaign/Envoys/')) {
     previewBody = <p>{`${item.powerBody} ${item.history}`.slice(0, 260)}</p>
 
-  } else if (props.to.includes('/Variants/SpecialShip/')) {
+  } else if (props.to.includes('/Variants/SpecialShips/')) {
     previewBody = <p>{`${item.powerBody} ${item.specialName} ${item.specialBody}`.slice(0, 260)}</p>
 
-  } else if (props.to.includes('/Variants/Evolution/')) {
+  } else if (props.to.includes('/Variants/Evolutions/')) {
     previewBody = <ul>
       {item.body.map((row) => {
         return (row.cost ? <li key={row.cost}>{row.cost}: {row.text}</li> : <li key="noCost">{row.text}</li>)
