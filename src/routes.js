@@ -489,10 +489,22 @@ export const routes = [
       },
       {
         path: "/CampaignLog",
-        element: <CampaignGeneratePage />,
         handle: {
           breadcrumb: () => "Campaign Log"
-        }
+        },
+        children: [
+          {
+            index: true,
+            element: <CampaignGeneratePage />
+          },
+          {
+            path: ":campaignID",
+            element: <CampaignViewPage />,
+            handle: {
+              breadcrumb: () => "Submit"
+            }
+          }
+        ]
       },
     ]
   },
