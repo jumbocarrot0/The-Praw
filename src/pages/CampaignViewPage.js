@@ -1,60 +1,43 @@
-import { useState, useEffect } from "react";
-import { useNavigate, useParams, Link } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import { Await, useRouteLoaderData, Link } from "react-router-dom"
 import { Button, Table } from 'reactstrap'
 
 import Loading from "../components/Loading";
 
-import { getCampaign } from "../supabaseAPI/getCampaign";
-
-export default function CampaignViewPage() {
-
+const campaignPage = (campaign) => {
   const colors = ["table-primary",
-      'table-danger',
-      'table-success',
-      'table-warning',
-      'table-indigo',
-      'table-orange',
-      'table-black',
-      'table-white',
-      'table-pink']
+    'table-danger',
+    'table-success',
+    'table-warning',
+    'table-indigo',
+    'table-orange',
+    'table-black',
+    'table-white',
+    'table-pink']
 
-  const { campaignID } = useParams()
-
-  const [campaign, setCampaign] = useState(undefined)
-
-  useEffect(() => {
-    getCampaign(campaignID)
-      .then((data) => {
-        setCampaign(data)
-      })
-  }, [campaignID])
-
-  if (campaign === undefined) {
-    return <Loading />
-  } else {
-    console.log(campaign)
-    return (
-      <div>
-        <Table>
-          <thead>
-            <tr>
-              <th>
-                Player
-              </th>
-              <th>
-                Coalition Name
-              </th>
-              <th>
-                Coalition Members
-              </th>
-              <th colSpan={8}>
-                Ranking
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              campaign.CampaignPlayers.map(player =>
+  return (
+    <>
+      <h1>{campaign.name}</h1>
+      <Table>
+        <thead>
+          <tr>
+            <th>
+              Player
+            </th>
+            <th>
+              Coalition Name
+            </th>
+            <th>
+              Coalition Members
+            </th>
+            <th colSpan={8}>
+              Ranking
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            campaign.CampaignPlayers.map(player =>
               <tr key={player.color} className={colors[player.color]}>
                 <td>
                   {player.name}
@@ -92,11 +75,28 @@ export default function CampaignViewPage() {
                   {player.CampaignRankings[7]}
                 </td>
               </tr>
-              )
-            }
-          </tbody>
-        </Table>
-      </div>
-    );
-  }
+            )
+          }
+        </tbody>
+      </Table>
+    </>
+  )
+}
+
+export default function CampaignViewPage() {
+
+  const campaign = useRouteLoaderData("campaignID")
+
+  return (
+    <React.Suspense fallback={<Loading />}>
+      <Await
+        resolve={campaign.campaign}
+        errorElement={
+          <p>Error loading campaign!</p>
+        }
+      >
+        {(campaign) => campaignPage(campaign)}
+      </Await>
+    </React.Suspense>
+  );
 }

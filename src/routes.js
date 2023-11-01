@@ -80,6 +80,7 @@ import Wrenches from './dataFiles/wrenches.json'
 import Privileges from './dataFiles/privileges.json'
 
 import { getAlien, getAllAliens } from "./supabaseAPI/getAlien"
+import { getCampaign } from "./supabaseAPI/getCampaign";
 
 // const AlienBreadcrumb = ({ match }) => Aliens.aliens[match.params.alienIndex].original.name;
 
@@ -499,9 +500,47 @@ export const routes = [
           },
           {
             path: ":campaignID",
+            id: "campaignID",
             element: <CampaignViewPage />,
+            loader: ({ params }) => {
+              const campaignDataPromise = getCampaign(params.campaignID)
+              return defer({ campaign: campaignDataPromise })
+            },
             handle: {
-              breadcrumb: () => "Submit"
+              breadcrumb: (data) => (
+                <React.Suspense fallback={null}>
+                  <Await
+                    resolve={data.campaign}
+                    errorElement={
+                      <p>Error loading campaign!</p>
+                    }
+                  >
+                    {(campaign) => campaign.name}
+                  </Await>
+                </React.Suspense>
+              ),
+              title: (data) => (
+                <React.Suspense fallback={null}>
+                  <Await
+                    resolve={data.campaign}
+                    errorElement={
+                      <HelmetProvider>
+                        <Helmet>
+                          <title>The Praw</title>
+                        </Helmet>
+                      </HelmetProvider>
+                    }
+                  >
+                    {(campaign) => (
+                      <HelmetProvider>
+                        <Helmet>
+                          <title>The Praw - {campaign.name}</title>
+                        </Helmet>
+                      </HelmetProvider>
+                    )}
+                  </Await>
+                </React.Suspense>
+              )
             }
           }
         ]
