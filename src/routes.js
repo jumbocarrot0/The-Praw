@@ -7,6 +7,7 @@ import SelectionPage from "./pages/SelectionPage";
 import GeekPage from "./pages/GeekPage";
 
 import SelectionMainPage from "./pages/Selection/SelectionMainPage";
+import SelectionViewPage from "./pages/Selection/SelectionViewPage";
 
 import AlienListPage from "./pages/Lists/AlienListPage";
 import IndividualAlienPage from "./pages/IndividualItem/IndividualAlienPage";
@@ -88,6 +89,10 @@ export const routes = [
     {
       path: '/Selection2',
       element: <SelectionMainPage />,
+    },
+    {
+      path: '/Selection2/:gameID',
+      element: <SelectionViewPage />,
     },
     {
       path: "/Variants",

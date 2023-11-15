@@ -1,150 +1,159 @@
 import { useState, useEffect } from "react";
-import { Button, Label, Input, Form } from 'reactstrap'
+import { Button, Form, FormGroup, Input, Label, Row, Col } from 'reactstrap'
+import { createLobby, joinLobby } from "../../supabaseAPI/getSelection";
 
-import Layout from '../../components/Layout'
+function PlayerInput(props) {
 
-import { getRandomAlien } from "../../supabaseAPI/getAlien"
+    const colors = ["bg-primary text-white",
+        'bg-danger text-white',
+        'bg-success text-white',
+        'bg-warning text-dark',
+        'bg-indigo text-white',
+        'bg-orange text-dark',
+        'bg-black text-white',
+        'bg-white text-dark',
+        'bg-pink text-dark']
 
-import {
-    createClient
-} from '@supabase/supabase-js'
-
-
+    return (<FormGroup row>
+        <Label className="text-white text-end" for="player1Name" sm={3}>
+            Your Player Name
+        </Label>
+        <Col sm={6}>
+            <Input id="player1Name"
+                value={props.name}
+                onChange={(e) => {
+                    if (!/[^ A-Za-z0-9\-,'/+\\!?#"]/.test(e.target.value)) {
+                        props.setName(e.target.value)
+                    }
+                }} />
+        </Col>
+        <Col sm={3}>
+            <Input
+                id="player1Color"
+                type="select"
+                className={colors[props.color]}
+                value={props.color}
+                onChange={(e) => {
+                    if (!/[^0-9]/.test(e.target.value)) {
+                        props.setColor(e.target.value)
+                    }
+                }}
+            >
+                <option value={0}>
+                    Blue
+                </option>
+                <option value={1}>
+                    Red
+                </option>
+                <option value={2}>
+                    Green
+                </option>
+                <option value={3}>
+                    Yellow
+                </option>
+                <option value={4}>
+                    Purple
+                </option>
+                <option value={5}>
+                    Orange
+                </option>
+                <option value={6}>
+                    Black
+                </option>
+                <option value={7}>
+                    White
+                </option>
+                <option value={8}>
+                    Pink
+                </option>
+            </Input>
+        </Col>
+    </FormGroup>)
+}
 
 export default function SelectionMain() {
 
-    const PUBLIC_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVxbmVnd2hxdnFrcXFva2ZlenhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTA4ODE0NTEsImV4cCI6MjAwNjQ1NzQ1MX0.t9fYQQ_KzxGr_FGU7JNtndiHLI3nGjRdINhbQbg11CY"
+    const randomTitlePlaceholders = ["Something Cool", "Something Funny", "Something Random", "Something Bizarre", "Some random pun"]
+    const [randomTitlePlaceholder, setRandomTitlePlaceholder] = useState(randomTitlePlaceholders[Math.floor(Math.random() * randomTitlePlaceholders.length)])
 
-    const [gameName, setGameName] = useState('');
-    const [playerName, setPlayerName] = useState('');
-    const [connectionLive, setConnectionLive] = useState(false);
-    const [channel, setChannel] = useState(null);
+    const [loading, setLoading] = useState(false)
 
+    const [gameName, setGameName] = useState("");
+    const [playerCount, setPlayerCount] = useState(5);
 
-    useEffect(() => {
-        if (connectionLive === "Host") {
-            channel
-                .on(
-                    'presence',
-                    { event: 'sync' },
-                    () => {
-                        const newState = channel.presenceState()
-                        console.log('sync', newState)
-                    }
-                )
-                .on(
-                    'presence',
-                    { event: 'join' },
-                    ({ key, newPresences }) => {
-                        console.log('join', key, newPresences)
-                    }
-                )
-                .on(
-                    'presence',
-                    { event: 'leave' },
-                    ({ key, leftPresences }) => {
-                        console.log('leave', key, leftPresences)
-                    }
-                )
-                .on(
-                    'broadcast',
-                    { event: 'aliens_dealt' },
-                    (payload) => console.log(payload)
-                )
-                .subscribe(async (status) => {
-                    if (status === 'SUBSCRIBED') {
-                        const presenceTrackStatus = await channel.track({
-                            user: playerName,
-                            online_at: new Date().toISOString(),
-                        })
-                        console.log(presenceTrackStatus)
-                    }
-                })
-        } else if (connectionLive === "Join") {
-            channel
-                .on(
-                    'broadcast',
-                    { event: 'aliens_dealt' },
-                    (payload) => console.log('payload', payload)
-                )
-                .subscribe(async (status) => {
-                    if (status === 'SUBSCRIBED') {
-                        const presenceTrackStatus = await channel.track({
-                            user: playerName,
-                            online_at: new Date().toISOString(),
-                        })
-                        console.log(presenceTrackStatus)
-                    }
-                })
+    const [player1Name, setPlayer1Name] = useState("");
+    const [player1Color, setPlayer1Color] = useState(0);
+
+    function joinGame(){
+        joinLobby(gameName, player1Name, player1Color)
+    }
+    
+    function createGame(){
+        const successful = createLobby(gameName)
+        if (successful){
+            joinLobby(gameName, player1Name, player1Color)
         }
-    }, [connectionLive])
-
-
-    // const [channel, setChannel] = useState(null)
+    }
 
     return (
-        <Layout>
-            <div>
-                <h1>Create/Join Game</h1>
-                <Label for="gameName">
-                    Game Name
-                </Label>
-                <Input type="text" id="gameName"
-                    value={gameName}
-                    onChange={(e) => {
-                        if (!/[^ A-Za-z0-9\-,'/+\\]/.test(e.target.value)) {
-                            setGameName(e.target.value)
-                        }
-                    }} />
-                <Label for="gameName">
-                    Player Name
-                </Label>
-                <Input type="text" id="gameName"
-                    value={playerName}
-                    onChange={(e) => {
-                        if (!/[^ A-Za-z0-9\-,'/+\\]/.test(e.target.value)) {
-                            setPlayerName(e.target.value)
-                        }
-                    }} />
-                <Button color="primary" disabled={connectionLive} onClick={
-                    (event) => {
-                        event.preventDefault();
-                        const client = createClient(
-                            'https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY
-                        )
-                        setChannel(client.channel(gameName));
-                        setConnectionLive("Host")
-                    }}>
-                    Create
-                </Button>
-                <Button className="ms-3" color="secondary" disabled={connectionLive} onClick={
-                    (event) => {
-                        event.preventDefault();
-                        const client = createClient(
-                            'https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY
-                        )
-                        setChannel(client.channel(gameName));
-                        setConnectionLive("Join")
-                    }}>
-                    Join
-                </Button>
-                <Button className="ms-3" color="secondary" onClick={
-                    (event) => {
-                        event.preventDefault();
-                        getRandomAlien(8).then((data) => {
-                            console.log(data)
-                            channel.send({
-                                type: 'broadcast',
-                                event: 'send_aliens',
-                                payload: {
-                                    message: data
-                                },
-                            })
-                        })
-                    }}>
-                    Send Aliens
-                </Button>
+        <div>
+            <h1 className="text-center">Alien Selection</h1>
+            <div className='d-flex justify-content-center'>
+                <Form onSubmit={(event) => {
+                    event.preventDefault();
+                }}>
+                    <FormGroup>
+                        <Label className="fs-3 text-white" for="gameName">
+                            Game Name
+                        </Label>
+                        <p>This is optional, a random name will be generated if you don't give one.</p>
+                        <Input placeholder={`${randomTitlePlaceholder}...`}
+                            value={gameName}
+                            onChange={(e) => {
+                                if (!/[^ A-Za-z0-9\-,'/+\\!?#"]/.test(e.target.value)) {
+                                    setGameName(e.target.value)
+                                }
+                            }}
+                            id="gameName" />
+                    </FormGroup>
+                    <FormGroup row>
+                        <Label className="text-white text-end" for="playerCount" sm={3}>
+                            Max # of Players
+                        </Label>
+                        <Col sm={9}>
+                            <Input id="playerCount" type="number"
+                                value={playerCount}
+                                onChange={(e) => {
+                                    if (!/[^0-9"]/.test(e.target.value)) {
+                                        if (e.target.value >= 3 && e.target.value <= 8) {
+                                            setPlayerCount(e.target.value)
+                                        }
+                                    }
+                                }}
+                            />
+                        </Col>
+                    </FormGroup>
+                    <PlayerInput index={1} name={player1Name} setName={setPlayer1Name} color={player1Color} setColor={setPlayer1Color} />
+
+                    <Button
+                        className="w-100 mb-3"
+                        color="primary"
+                        disabled={loading}
+                        onClick={() => joinGame()}
+                    >
+                        Join Lobby!
+                    </Button>
+
+                    <Button
+                        className="w-100"
+                        color="danger"
+                        disabled={loading}
+                        onClick={() => createGame()}
+                    >
+                        Create Lobby!
+                    </Button>
+                </Form>
             </div>
-        </Layout >
+        </div>
     );
 }
