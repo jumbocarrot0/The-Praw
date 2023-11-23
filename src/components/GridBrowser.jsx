@@ -7,6 +7,8 @@ export default function GridBrowser(props) {
 
   // console.log(props.content)
 
+  const elementsToDisplay = props.elementsToDisplay ?? Infinity
+
   let groupByN = (n, arr) => {
     let result = [];
     for (let i = 0; i < arr.length; i += n) result.push(arr.slice(i, i + n));
@@ -44,6 +46,8 @@ export default function GridBrowser(props) {
       return 0;
     })
   }
+
+  sortedKeys = sortedKeys.slice(0, elementsToDisplay)
 
   return groupByN(props.width || 3, sortedKeys).map((row) => {
     return (

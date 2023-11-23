@@ -21,6 +21,7 @@ import { Link } from "react-router-dom"
 import { ReactComponent as SearchLogo } from '../../svg/searchIcon.svg';
 import GridBrowser from "../../components/GridBrowser";
 import Loading from '../../components/Loading'
+import InfiniteScroll from "react-infinite-scroll-component";
 
 function Alien(props) {
   const alien = props.content
@@ -282,6 +283,8 @@ export default function AliensListPage() {
   const submittedQuery = (searchParams.get('search') || '');
   const [searchQuery, setSearchQuery] = useState(submittedQuery);
 
+  const [dataLength, setDataLength] = useState(20)
+
   const aliens = useRouteLoaderData("aliens")
   // const [aliens, setAliens] = useState(undefined)
   // useEffect(() => {
@@ -526,14 +529,29 @@ export default function AliensListPage() {
             // console.log(filteredAliens)
             return <>
               <p>{Object.keys(filteredAliens).length}/238 Results</p>
-              <GridBrowser cardTemplate={Alien}
+              {/* <GridBrowser cardTemplate={Alien}
                 url="/Aliens"
                 content={filteredAliens}
                 width={4}
-              />
+              /> */}
               {Object.keys(filteredAliens).length === 0 ? <div>
                 <p className="fs-3 text-center">No aliens match your filters.</p>
-              </div> : null}
+              </div> :
+                <InfiniteScroll
+                  dataLength={Math.min(dataLength, Object.keys(filteredAliens).length)}
+                  next={() => setDataLength(value => Math.min(value + 20, Object.keys(filteredAliens).length))}
+                  hasMore={dataLength < Object.keys(filteredAliens).length}
+                  loader={<Loading />}
+                  className="overflow-hidden"
+                >
+                  <GridBrowser cardTemplate={Alien}
+                    url="/Aliens"
+                    content={filteredAliens}
+                    elementsToDisplay={dataLength}
+                    width={4}
+                  />
+                </InfiniteScroll>
+              }
             </>
           }
           }

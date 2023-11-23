@@ -30,6 +30,8 @@ import Fuse from 'fuse.js'
 
 import { getAllAliens } from "../supabaseAPI/getAlien"
 
+import InfiniteScroll from 'react-infinite-scroll-component';
+
 
 function Item(props) {
   const item = props.content
@@ -228,7 +230,7 @@ export default function ResultsPage() {
                 return (`${item[1].original.powerBody} ${item[1].original.specialName} ${item[1].original.specialBody}`)
               } else if (item[0].includes('Ages') && item[1].original.type === "Standard") {
                 // console.log(item[0])
-                const body = (`Use the following alien selection method: ${Ages.selectionMethods[item[1].original?.selectionMethodID].original.name} Add the following variant(s): ${item[1].original.variants.map((variant, index) => 
+                const body = (`Use the following alien selection method: ${Ages.selectionMethods[item[1].original?.selectionMethodID].original.name} Add the following variant(s): ${item[1].original.variants.map((variant, index) =>
                   `${index !== 0 ? variant.Subvariant ? " with " : " and " : ""}${variant.Name}`
                 )}`)
                 // console.log(body)
@@ -260,19 +262,33 @@ export default function ResultsPage() {
           <Searchbar />
           <hr className="border border-light border-2 opacity-100 mb-5" />
           {loading ? <Loading color="light" /> :
-            <GridBrowser cardTemplate={Item}
-              url=""
-              content={Object.fromEntries(searchResults.slice(0, resultsShown))}
-              noSort
-              width={1}
-            />
+            // <GridBrowser cardTemplate={Item}
+            //   url=""
+            //   content={Object.fromEntries(searchResults.slice(0, resultsShown))}
+            //   noSort
+            //   width={1}
+            // />
+            <InfiniteScroll
+              dataLength={resultsShown}
+              next={() => setResultsShown(resultsShown + resultsPerPage)}
+              hasMore={resultsShown < searchResults.length}
+              loader={<Loading />}
+              className="overflow-hidden"
+            >
+              <GridBrowser cardTemplate={Item}
+                url=""
+                content={Object.fromEntries(searchResults.slice(0, resultsShown))}
+                noSort
+                width={1}
+              />
+            </InfiniteScroll>
           }
-          {resultsShown < searchResults.length ?
+          {/* {resultsShown < searchResults.length ?
             <Button color="secondary" className='w-100 fs-2' onClick={() => setResultsShown(resultsShown + resultsPerPage)}>
               More Results
             </Button>
             : null
-          }
+          } */}
           {searchResults.length === 0 && !loading ?
             <div>
               <h3>Sorry! We couldn't find anything!</h3>
