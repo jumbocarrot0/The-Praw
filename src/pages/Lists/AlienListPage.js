@@ -362,7 +362,7 @@ export default function AliensListPage() {
   let filteredAliens = [];
 
   return (
-    <div>
+    <>
       <h1 className='mb-4'>Aliens</h1>
       <Card className='mb-4 bg-light'>
         <CardBody>
@@ -539,6 +539,6 @@ export default function AliensListPage() {
           }
         </Await>
       </React.Suspense>
-    </div>
+    </>
   );
 }
