@@ -25,7 +25,7 @@ export default function PrawNav() {
 
   return (
     <Navbar className="navbar navbar-expand-md bg-light" data-bs-theme="light" fixed="top">
-      <NavbarBrand>The Praw</NavbarBrand>
+      <NavbarBrand tag="span">The Praw</NavbarBrand>
       <NavbarToggler onClick={toggle} className="bg-dark">
       </NavbarToggler>
       <Collapse isOpen={isOpen} navbar>
