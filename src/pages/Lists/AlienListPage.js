@@ -24,6 +24,7 @@ import Loading from '../../components/Loading'
 
 function Alien(props) {
   const alien = props.content
+
   return (
     <Card className='mb-5'>
       <Link className={"btn border border-5 " +
@@ -50,6 +51,8 @@ function Alien(props) {
           </h6>
           <img alt={alien.name + " Thumbnail"}
             className='mx-auto d-block'
+            width="72"
+            height="72"
             src={require(`../../images/alien icons/${alien.thumbnail}`)}
           />
           <strong>{alien.short}</strong>
