@@ -9,32 +9,30 @@ import ScrollToTop from "./ScrollToTop";
 
 export default function Layout(props) {
     return (
-        <div className="App">
-            <HelmetProvider>
-                <Helmet>
-                    <title>Display Any Alien</title>
-                    <body className='throwback' />
-                </Helmet>
-                <ScrollToTop/>
-                    <Row>
-                        <Col md={3}>
-                        </Col>
-                        <Col md={6}>
-                            <Header className="my-3" />
-                            <main>
-                                {props.children}
-                                <div className="d-flex justify-content-center my-3">
-                                    <Link to="/Aliens">
-                                        <img src={require('../images/goback.gif')} alt="Go Back" />
-                                    </Link>
-                                </div>
-                            </main>
-                        </Col>
-                        <Col md={3}>
-                        </Col>
-                    </Row>
-                    {/* <Footer /> */}
-            </HelmetProvider>
-        </div>
+        <HelmetProvider>
+            <Helmet>
+                <title>Display Any Alien</title>
+                <body className='throwback' />
+            </Helmet>
+            <ScrollToTop />
+            <Row>
+                <Col md={3}>
+                </Col>
+                <Col md={6}>
+                    <Header className="my-3" />
+                    <main>
+                        {props.children}
+                        <div className="d-flex justify-content-center my-3">
+                            <Link to="/Aliens">
+                                <img src={require('../images/goback.gif')} alt="Go Back" />
+                            </Link>
+                        </div>
+                    </main>
+                </Col>
+                <Col md={3}>
+                </Col>
+            </Row>
+            {/* <Footer /> */}
+        </HelmetProvider>
     );
 }

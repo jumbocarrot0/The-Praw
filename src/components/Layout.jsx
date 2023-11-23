@@ -27,7 +27,7 @@ export default function Layout(props) {
                     <title>The Praw {title ? `- ${title}` : ""}</title>
                 </Helmet>
             </HelmetProvider> */}
-            <div id="app" className="App">
+            <>
                 <Header />
                 <main>
                     <ScrollToTop/>
@@ -38,7 +38,7 @@ export default function Layout(props) {
                     </Container>
                 </main>
                 <Footer />
-            </div>
+            </>
         </>
     );
 }
