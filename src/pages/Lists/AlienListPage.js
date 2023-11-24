@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { useState } from "react";
 import { useSearchParams, createSearchParams, useNavigate, Await, useRouteLoaderData } from 'react-router-dom'
 import {
@@ -19,9 +19,14 @@ import {
 } from 'reactstrap';
 import { Link } from "react-router-dom"
 import { ReactComponent as SearchLogo } from '../../svg/searchIcon.svg';
-import GridBrowser from "../../components/GridBrowser";
+// import GridBrowser from "../../components/GridBrowser";
+
 import Loading from '../../components/Loading'
-import InfiniteScroll from "react-infinite-scroll-component";
+// import InfiniteScroll from "react-infinite-scroll-component";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
+const GridBrowser = lazy(() => import('../../components/GridBrowser'));
+const InfiniteScroll = lazy(() => import('react-infinite-scroll-component'));
 
 function Alien(props) {
   const alien = props.content
@@ -36,7 +41,7 @@ function Alien(props) {
         to={props.to}>
         <CardBody>
           <h2 className={!alien.altTimeline ? "text-dark" : null}>{alien.name}</h2>
-          <h6 className="align-items-center">
+          <div className="align-items-center h6">
             <Badge className={alien.alert === "Yellow" ? " text-dark" : ""}
               color={alien.alert === "Green" ? "success" : alien.alert === "Yellow" ? "warning" : "danger"}>
               {alien.alert}
@@ -49,7 +54,7 @@ function Alien(props) {
               <Badge className="ms-3 text-dark" color="info">
                 Game Setup
               </Badge>) : null}
-          </h6>
+          </div>
           <img alt={alien.name + " Thumbnail"}
             className='mx-auto d-block'
             width="72"
@@ -366,7 +371,12 @@ export default function AliensListPage() {
 
   return (
     <>
-      <h1 className='mb-4'>Aliens</h1>
+      <HelmetProvider>
+        <Helmet>
+          <link rel="preconnect" href="https://eqnegwhqvqkqqokfezxc.supabase.co" />
+        </Helmet>
+      </HelmetProvider>
+      <h1 className='mb-4'>Browse Aliens</h1>
       <Card className='mb-4 bg-light'>
         <CardBody>
           <CardTitle className='text-dark mb-3 text-center' tag="h2">Search Filters</CardTitle>
@@ -399,6 +409,7 @@ export default function AliensListPage() {
                   )
                 )}`
               });
+              setDataLength(20);
             }}>
             <Row className="mb-3">
               <Col sm={3}></Col>
@@ -414,6 +425,7 @@ export default function AliensListPage() {
                       }
                     }} />
                   <Button
+                    aria-label="Submit search"
                     className="px-3"
                     color={searchQuery.length === 0 ? "dark" : "primary"}
                     outline={searchQuery.length === 0}>
@@ -431,9 +443,10 @@ export default function AliensListPage() {
                     return (
                       <FormGroup key={expansion} switch>
                         <Input type="switch" role="switch"
+                          id={expansion}
                           checked={expansions[expansion][0]}
                           onChange={() => expansions[expansion][1](!expansions[expansion][0])} />
-                        <Label className="text-dark" check>
+                        <Label for={expansion} className="text-dark" check>
                           {expansion}
                         </Label>
                       </FormGroup>
@@ -448,8 +461,9 @@ export default function AliensListPage() {
                     className="me-4"
                     type="checkbox"
                     checked={exactPhases}
+                    id="exactPhases"
                     onChange={() => setExactPhases(!exactPhases)} />
-                  <Label className="text-dark" check>
+                  <Label for="exactPhases" className="text-dark" check>
                     Exact Matches Only
                   </Label>
                 </FormGroup>
@@ -458,9 +472,10 @@ export default function AliensListPage() {
                     return (
                       <FormGroup key={phase} switch>
                         <Input type="switch" role="switch"
+                          id={phase}
                           checked={phases[phase][0]}
                           onChange={() => phases[phase][1](!phases[phase][0])} />
-                        <Label className="text-dark" check>
+                        <Label for={phase} className="text-dark" check>
                           {phaseLabels[phase]}
                         </Label>
                       </FormGroup>
@@ -475,8 +490,9 @@ export default function AliensListPage() {
                     className="me-4"
                     type="checkbox"
                     checked={exactPlayer}
+                    id="exactPlayer"
                     onChange={() => setExactPlayer(!exactPlayer)} />
-                  <Label className="text-dark" check>
+                  <Label for="exactPlayer" className="text-dark" check>
                     Exact Matches Only
                   </Label>
                 </FormGroup>
@@ -486,8 +502,9 @@ export default function AliensListPage() {
                       <FormGroup key={playerCategory} switch>
                         <Input type="switch" role="switch"
                           checked={player[playerCategory][0]}
+                          id={playerCategory}
                           onChange={() => player[playerCategory][1](!player[playerCategory][0])} />
-                        <Label className="text-dark" check>
+                        <Label for={playerCategory} className="text-dark" check>
                           {playerLabels[playerCategory]}
                         </Label>
                       </FormGroup>
@@ -501,8 +518,9 @@ export default function AliensListPage() {
                       <FormGroup key={alert} switch>
                         <Input type="switch" role="switch"
                           checked={alertLevels[alert][0]}
+                          id={alert}
                           onChange={() => alertLevels[alert][1](!alertLevels[alert][0])} />
-                        <Label className="text-dark" check>
+                        <Label for={alert} className="text-dark" check>
                           {alert}
                         </Label>
                       </FormGroup>
@@ -515,7 +533,7 @@ export default function AliensListPage() {
         </CardBody>
       </Card>
       <hr className="border border-light border-2 opacity-100 mb-4" />
-      <React.Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading />}>
         <Await
           resolve={aliens.aliens}
           errorElement={
@@ -556,7 +574,7 @@ export default function AliensListPage() {
           }
           }
         </Await>
-      </React.Suspense>
+      </Suspense>
     </>
   );
 }

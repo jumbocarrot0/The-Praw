@@ -37,7 +37,7 @@ export default function Searchbar(props) {
                     <SearchLogo />
                 </InputGroupText> */}
                 <Button
-                    name="Search"
+                    aria-label="Submit search"
                     className="px-3"
                     color={searchQuery.length === 0 ? "secondary" : "primary"}
                     disabled={searchQuery.length === 0}>
