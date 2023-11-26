@@ -47,13 +47,28 @@ function Alien(props) {
               {alien.alert}
             </Badge>
             {alien.altTimeline ? (
-              <Badge className="ms-3 text-dark" color="light">
+              <Badge className="ms-1 text-dark" color="light">
                 AT
               </Badge>) : null}
             {alien.gameSetup !== "" ? (
-              <Badge className="ms-3 text-dark" color="info">
+              <Badge className="ms-1 text-dark" color="info">
                 Game Setup
               </Badge>) : null}
+            <Badge
+              className={`ms-1 ${["Cosmic Alliance", "Cosmic Conflict"].includes(alien.expansion) ? "text-dark" : ""}`}
+              color={
+                alien.expansion === "Base Set" ? "primary" :
+                  alien.expansion === "Cosmic Incursion" ? "indigo" :
+                    alien.expansion === "Cosmic Conflict" ? "info" :
+                      alien.expansion === "Cosmic Alliance" ? "warning" :
+                        alien.expansion === "Cosmic Storm" ? "danger" :
+                          alien.expansion === "Cosmic Dominion" ? "success" :
+                            alien.expansion === "Cosmic Eons" ? "pink" :
+                              alien.expansion === "Cosmic Odyssey" ? "purple" :
+                                "dark"
+              }>
+              {alien.expansion}
+            </Badge>
           </div>
           <img alt={alien.name + " Thumbnail"}
             className='mx-auto d-block'
