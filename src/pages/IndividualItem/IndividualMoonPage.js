@@ -26,10 +26,12 @@ export default function IndividualMoonPage() {
       }
       <Card className={"mx-1" + (moon.revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
-          <h1 className='text-light'>{moon[tab].name}</h1>
+          <span>
+            <h1 className='text-light d-inline'>{moon[tab].name}</h1> <h3 className='text-light d-inline'>({moon[tab].type})</h3>
+          </span>
           <p>{moon[tab].body}</p>
           <br />
-          <TimingBar timing={moon[tab].timing}/>
+          <TimingBar timing={moon[tab].timing} />
 
 
           {moon[tab].revisionNotes ? (
