@@ -16,9 +16,9 @@ export default function Alien(props) {
                 // src={require(`../../images/alien icons/avatar_${alien[tab].name.replace('The ', '').replace(' ', '_')}${alien[tab].altTimeline ? '_AT' : ''}.png`)} 
                 src={require(`../images/alien icons/${alien[tab].thumbnail}`)}
             />
-            <span><h1 className='text-light d-inline'>{alien[tab].altTimeline ? (alien[tab].name + " (AT)") : alien[tab].name} </h1><h3 className='text-light d-inline'>({alien[tab].alert})</h3></span>
+            <span><h1 className='text-light d-inline'>{alien[tab].altTimeline ? (alien[tab].name + " (AT)") : alien[tab].name}</h1> <h3 className='text-light d-inline'>({alien[tab].alert})</h3> <h3 className='text-light d-inline'>({alien[tab].expansion})</h3></span>
             <h3 className='text-light'>{alien[tab].short}</h3>
-
+            
             {alien[tab].gameSetup ? <p><strong>Game Setup:</strong> {alien[tab].gameSetup}</p> : null}
             {/* dangerouslySetInnerHTML is, well, dangerous when used on user submitted stuff. But aliens.json is trustworthy, so this is fine albiet jank.
   If/when I add a homebrew aliens option, PLEASE PLEASE PLEASE dont forget to sanitise them. */}

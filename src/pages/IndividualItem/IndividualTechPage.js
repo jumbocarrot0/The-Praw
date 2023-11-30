@@ -29,7 +29,9 @@ export default function IndividualTechPage() {
       }
       <Card className={"mx-1" + (tech.revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
-          <h1 className='text-light'>{tech[tab].name}</h1>
+          <span>
+            <h1 className='text-light d-inline'>{tech[tab].name}</h1> <h3 className='text-light d-inline'>({tech[tab].expansion})</h3>
+          </span>
           <p><strong>Type: {tech[tab].type}</strong></p>
           {tech[tab].refresh ? <p>When completed, draw another Techs.</p> : null}
           <p><strong>{tech[tab].short}</strong> {tech[tab].body}</p>
@@ -38,7 +40,7 @@ export default function IndividualTechPage() {
           }>
             <strong><p className='font-digit' style={{ paddingTop: 0 + 'px', textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black", lineHeight: (tech[tab].type === "Mili-Tech" ? 37 : 45) + "px" }}>{tech[tab].cost}</p></strong>
           </div>
-          <TimingBar timing={tech[tab].timing}/>
+          <TimingBar timing={tech[tab].timing} />
 
 
           {tech[tab].revisionNotes ? (

@@ -16,29 +16,31 @@ export default function IndividualSpecialShipPage() {
     <div >
       {specialShip.revised || specialShip.homebrew ?
         <Nav className="ps-5 mx-1" tabs>
-        <NavItem>
-          <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
-            onClick={() => { setTab("original") }}>Original</NavLink>
-        </NavItem>
-        {specialShip.revised ?
           <NavItem>
-            <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
-              onClick={() => { setTab("revised") }}>Revised</NavLink>
-          </NavItem> : null
-        }
-        {specialShip.homebrew ?
-          <NavItem>
-            <NavLink className={"nav-link" + (tab === "homebrew" ? " active" : "")} href="#"
-              onClick={() => { setTab("homebrew") }}>House Rules</NavLink>
-          </NavItem> : null
-        }
+            <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
+              onClick={() => { setTab("original") }}>Original</NavLink>
+          </NavItem>
+          {specialShip.revised ?
+            <NavItem>
+              <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
+                onClick={() => { setTab("revised") }}>Revised</NavLink>
+            </NavItem> : null
+          }
+          {specialShip.homebrew ?
+            <NavItem>
+              <NavLink className={"nav-link" + (tab === "homebrew" ? " active" : "")} href="#"
+                onClick={() => { setTab("homebrew") }}>House Rules</NavLink>
+            </NavItem> : null
+          }
         </Nav> : null
       }
       <Card className={"mx-1" + (specialShip.revised || specialShip.homebrew ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
 
           <div>
-            <h1 className='text-light'>{specialShip[tab].name}</h1>
+            <span>
+              <h1 className='text-light d-inline'>{specialShip[tab].name}</h1> <h3 className='text-light d-inline'>({specialShip[tab].expansion})</h3>
+            </span>
             {specialShip.designers.length !== 0 ?
               specialShip.source ?
                 <Link to={specialShip.source}><p>Designed by {
