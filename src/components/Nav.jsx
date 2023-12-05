@@ -83,7 +83,6 @@ export default function PrawNav() {
             </Link>
           </NavItem>
         </Nav>
-        <NavbarText>Powered by React</NavbarText>
       </Collapse>
     </Navbar>
   );
