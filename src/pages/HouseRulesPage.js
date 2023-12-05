@@ -91,7 +91,7 @@ export default function HouseRulesPage() {
           </AccordionHeader>
           <AccordionBody accordionId="lux">
             <p>
-              Some Lux cards are able to be used to high-octane effect by trading lux around immediately. Some players find this can lead to long, exploitative gameplay. The Praw recommends for these players a change to how Lux is traded (taking inspiration from Dune): that any Lux traded during the game is only usable at the start of the encounter after it has been received. Further, some players may wish to extend this to apply to <em>all</em> lux gained during an encounter, including those for the main players, as to avoid last-minute lux spending during resolution if so desired.
+              Some Lux cards are able to be used to high-octane effect by trading lux around immediately. Some players find this can lead to long, exploitative gameplay. The Praw recommends for these players a change to how Lux is traded (taking inspiration from Dune): that any Lux traded during the game is kept aside, and may only begin to be used at the start of the encounter after it has been received. Further, some players may wish to extend this to apply to <em>all</em> lux gained during an encounter, including those for the main players, as to avoid last-minute lux spending during resolution if so desired.
             </p>
           </AccordionBody>
         </AccordionItem>
@@ -111,7 +111,7 @@ export default function HouseRulesPage() {
           </AccordionHeader>
           <AccordionBody accordionId="stationSetup">
             <p>
-              Odyssey's campaign guide has each player draw 3 station cards - one of each type - and pick two to put in play. This setup can make the game too convoluted with so many effects in play, especially for newer players who are trying to remember the differences between the 3 types of space stations. The Praw recommends to have players pick only 1 of the 3 drawn stations, and further to have the station types drawn be random.
+              Odyssey's campaign guide has each player draw 3 station cards - one of each type - and pick two to put in play. This setup can make the game too convoluted with so many effects in play, especially for newer players who are trying to remember the differences between the 3 types of space stations. The Praw recommends to have players pick only 1 of the 3 drawn stations, and further to have the station types drawn be random for variety.
             </p>
           </AccordionBody>
         </AccordionItem>
@@ -209,7 +209,7 @@ export default function HouseRulesPage() {
           </AccordionHeader>
           <AccordionAlienBody alienId="220" name="The Meek" accordionId="meek">
             <p>
-              The Meek, as printed, is a bit of a cumbersome alien to use. Using a colony marker in such an abnormal fashion, whilst an interesting concept, doesn't work for various practical and rules-breaking reasons. For one, its easy to nudge the colony markers and lose track of the Meek's true score. It also has poor interact with aliens like Plant, Reincarnator, etc.. <Link to="https://youtu.be/ahRh3CthMdg?t=1098">In his video covering Cosmic Odyssey aliens</Link>, designer Jack Reda mentioned that The Meek would've been clearer if it just gained and lost colonies explicitly, rather than fandangling around with the colony marker. The Praw supports this idea for an alternative Meek, as it maintains the core of the power whilst being much clearer.
+              The Meek, as printed, is a bit of a cumbersome alien to use. Using a colony marker in such an abnormal fashion, whilst an interesting concept, doesn't work for various practical and rules-breaking reasons. For one, its easy to nudge the colony markers and lose track of the Meek's true score. It also has poor interactions with aliens like Plant, Reincarnator, etc.. <Link to="https://youtu.be/ahRh3CthMdg?t=1098">In his video covering Cosmic Odyssey aliens</Link>, designer Jack Reda mentioned that The Meek would've been clearer if it just gained and lost colonies explicitly, rather than fandangling around with the colony marker. The Praw supports this idea for an alternative Meek, as it maintains the core of the power whilst being much clearer.
             </p>
           </AccordionAlienBody>
         </AccordionItem>
