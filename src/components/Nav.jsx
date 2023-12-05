@@ -10,7 +10,7 @@ import {
   Nav,
   NavItem,
   // NavLink,
-  NavbarText,
+  // NavbarText,
   DropdownMenu,
   UncontrolledDropdown,
   DropdownToggle,
