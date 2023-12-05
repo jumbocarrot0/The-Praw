@@ -388,7 +388,7 @@
             "designNotes": "The original designer named this ship the 'Graviton Ship'. The Praw has renamed it to distinct it from the Graviton alien.",
             "original": {
                 "name": "Singularity Carrier",
-                "powerBody": "A player may not commit their singularity carrier into an encounter unless he or she is committing the maximum possible amount of ships (usually four).\n\nWhen a player's graviton ship is removed from the game, that ship's ship marker is removed from the game and may not be used again.",
+                "powerBody": "A player may not commit their singularity carrier into an encounter unless he or she is committing the maximum possible amount of ships (usually four).\n\nWhen a player's singularity carrier is removed from the game, that ship's ship marker is removed from the game and may not be used again.",
                 "powerTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "Mandatory",
@@ -422,7 +422,7 @@
                 "expansion": "Fan Made"
             },
             "revised": {
-                "name": "Singularity Drive",
+                "name": "Singularity Carrier",
                 "powerBody": "You may only send your singularity carrier into an encounter if you send the maximum possible number of ships.",
                 "powerTiming": {
                     "player": "Main Player or Ally Only",
