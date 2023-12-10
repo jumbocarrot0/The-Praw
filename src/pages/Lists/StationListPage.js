@@ -64,6 +64,7 @@ export default function StationListPage() {
           return { "Sky City": "success", "Space Station": "primary", "Deep Space Station": "indigo" }[item.type];
         }}
         type={(item) => { return item.type }}
+        width={3}
       />
     </div>
   );

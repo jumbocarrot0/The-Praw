@@ -26,9 +26,15 @@ export default function IndividualStationPage() {
       }
       <Card className={"mx-1" + (station.revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
+          {station[tab].thumbnail ? <img alt={station[tab].name + " Thumbnail"}
+            className='float-end'
+            src={require(`../../images/${station[tab].thumbnail}`)}
+          /> : null}
+
           <span>
             <h1 className='text-light d-inline'>{station[tab].name}</h1> <h3 className='text-light d-inline'>({station[tab].expansion})</h3>
           </span>
+          <h3 className='text-light'>{station[tab].type}</h3>
           <p>{station[tab].body}</p>
           <br />
           <TimingBar timing={station[tab].timing} />
