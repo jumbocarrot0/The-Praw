@@ -29,10 +29,14 @@ export default function IndividualTechPage() {
       }
       <Card className={"mx-1" + (tech.revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
+          {tech[tab].thumbnail ? <img alt={tech[tab].name + " Thumbnail"}
+            className='float-end'
+            src={require(`../../images/${tech[tab].thumbnail}`)}
+          /> : null}
           <span>
             <h1 className='text-light d-inline'>{tech[tab].name}</h1> <h3 className='text-light d-inline'>({tech[tab].expansion})</h3>
           </span>
-          <p><strong>Type: {tech[tab].type}</strong></p>
+          <h3 className='text-light'>{tech[tab].type}</h3>
           {tech[tab].refresh ? <p>When completed, draw another Techs.</p> : null}
           <p><strong>{tech[tab].short}</strong> {tech[tab].body}</p>
           <div style={{ width: (tech[tab].type === "Mili-Tech" ? 75 : 50) + 'px', height: (tech[tab].type === "Mili-Tech" ? 40 : 50) + 'px' }} className={

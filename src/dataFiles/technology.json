@@ -187,7 +187,8 @@
                         "regroup": true
                     }
                 },
-                "expansion": "Base Set"
+                "expansion": "Base Set",
+                "thumbnail": "Genesis_Planet_Token.png"
             },
             "revised": {
                 "name": "Genesis Bomb",
@@ -203,6 +204,7 @@
                     }
                 },
                 "expansion": "Base Set",
+                "thumbnail": "Genesis_Planet_Token.png",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency."
             }
         },
@@ -286,7 +288,8 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Base Set"
+                "expansion": "Base Set",
+                "thumbnail": "Lunar_Cannon_Token.png"
             },
             "revised": {
                 "name": "Lunar Cannon",
@@ -302,6 +305,7 @@
                     }
                 },
                 "expansion": "Base Set",
+                "thumbnail": "Lunar_Cannon_Token.png",
                 "revisionNotes": ""
             }
         },
@@ -424,7 +428,8 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Base Set"
+                "expansion": "Base Set",
+                "thumbnail": "Prometheus_Token.png"
             },
             "revised": {
                 "name": "The Prometheus",
@@ -447,6 +452,7 @@
                     }
                 },
                 "expansion": "Base Set",
+                "thumbnail": "Prometheus_Token.png",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited for consistency."
             }
         },

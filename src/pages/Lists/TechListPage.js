@@ -63,6 +63,7 @@ export default function TechListPage() {
           return { "Mili-Tech": "success", "Haz-Tech": "danger", "Tech": "warning" }[item.type];
         }}
         type={(item) => { return item.type }}
+        width={4}
       />
     </div>
   );
