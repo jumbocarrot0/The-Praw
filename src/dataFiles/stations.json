@@ -212,8 +212,7 @@
                 },
                 "expansion": "Cosmic Odyssey",
                 "thumbnail": "station icons/Artifact_Detection_Grid.png"
-            },
-            "revised": {}
+            }
         },
         "11": {
             "original": {
@@ -554,8 +553,7 @@
                 },
                 "expansion": "Cosmic Odyssey",
                 "thumbnail": "station icons/Freewheeling_Intensifier.png"
-            },
-            "revised": {}
+            }
         },
         "30": {
             "original": {
@@ -645,8 +643,7 @@
                 },
                 "expansion": "Cosmic Odyssey",
                 "thumbnail": "station icons/Option_Cycler.png"
-            },
-            "revised": {}
+            }
         }
     }
 }
