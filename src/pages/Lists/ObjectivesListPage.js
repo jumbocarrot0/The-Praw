@@ -35,6 +35,19 @@ export default function ObjectivesListPage() {
             </ul>
           </AccordionBody>
         </AccordionItem>
+        <AccordionItem>
+          <AccordionHeader targetId="2">Sub Variants</AccordionHeader>
+          <AccordionBody accordionId="2">
+            <p className="text-light">These are copied from the Cosmic Odyssey campaign guide, with some modification for clarity.</p>
+            <h3>Hidden Objective</h3>
+            <p className="text-light">Similar to the Array Objective variant, this variant gives a player an alternative way to increase their score.</p>
+            <ul>
+              <li className="text-light">At the start of the game, shuffe the objective deck and deal two objective cards to the players with a hidden objective (this is decided through another effect like a master or wrench card, or can be decided at game start).</li>
+              <li className="text-light">Each player dealt objectives chooses one to keep, placing it facedown in front of themself, and shuffle the other into the objective deck.</li>
+              <li className="text-light">A player can look at their objective at any time. During scoring, only the player with the hidden objective adds to their score the number printed on the card (if they fulfill the requirement)</li>
+            </ul>
+          </AccordionBody>
+        </AccordionItem>
       </UncontrolledAccordion>
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}

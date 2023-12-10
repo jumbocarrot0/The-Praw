@@ -56,6 +56,16 @@ export default function HazardListPage() {
             </ul>
           </AccordionBody>
         </AccordionItem>
+        <AccordionItem>
+          <AccordionHeader targetId="2">Sub Variants</AccordionHeader>
+          <AccordionBody accordionId="2">
+            <p className="text-light">These are copied from the Cosmic Odyssey campaign guide.</p>
+            <h3>Extremely Hazardous</h3>
+            <p className="text-light">This sub-variant creates an even wilder and more chaotic experience. Instead of drawing a hazard card only when a destiny card with a hazard warning is drawn, a hazard card is drawn for every encounter.</p>
+            <h3>Procedural Change</h3>
+            <p className="text-light">This sub-variant changes the way that hazard cards are drawn. Instead of drawing a hazard card only when a destiny card with a hazard warning is drawn, a hazard card is drawn only if a player chooses to have a second encounter.</p>
+          </AccordionBody>
+        </AccordionItem>
       </UncontrolledAccordion>
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}

@@ -55,6 +55,21 @@ export default function StationListPage() {
             </ul>
           </AccordionBody>
         </AccordionItem>
+        <AccordionItem>
+          <AccordionHeader targetId="2">Sub Variants</AccordionHeader>
+          <AccordionBody accordionId="2">
+            <p className="text-light">These are copied from the Cosmic Storm rulebook.</p>
+            <h3>Space Station Conquest</h3>
+            <p className="text-light">This variant allows players to acquire other players' space stations for their own use.</p>
+            <ul>
+              <li className="text-light">When a player wins an offensive encounter against a planet outside their home system which has a space station attached, that player <strong>Conquers</strong> that space station.</li>
+              <li className="text-light">At the end of the resolution phase, the winning offensive player takes the space station card and its corresponding marker from the defending player.</li>
+              <li className="text-light">They then attach the conquered space station to any planet in their home system which does not currently have an attached space station.</li>
+              <li className="text-light">Space stations may still be traded as part of a deal as normal.</li>
+              <li className="text-light">If a player acquires at least five space stations (four if playing with the Four Planets variant), that player wins the game! This victory condition is only available if enough space stations are in play.</li>
+            </ul>
+          </AccordionBody>
+        </AccordionItem>
       </UncontrolledAccordion>
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}
