@@ -75,13 +75,13 @@ function Item(props) {
       <Link className="border border-2 border-secondary link-underline link-underline-opacity-0 link-underline-opacity-75-hover" to={props.to} reloadDocument>
         <CardBody className='text-body-emphasis'>
           {item.thumbnail ?
-            item.thumbnail.includes('/') ? <img alt={item.name + " Thumbnail"}
+            props.to.includes('/Aliens/') ? <img alt={item.name + " Thumbnail"}
               className='float-end'
-              src={require(`../images/${item.thumbnail}`)}
+              src={require(`../images/alien icons/${item.thumbnail}`)}
             /> :
               <img alt={previewName + " Thumbnail"}
                 className='float-end'
-                src={require(`../images/alien icons/${item.thumbnail}`)}
+                src={require(`../images/${item.thumbnail}`)}
               /> : null
           }
           <h2>{previewName}</h2>
