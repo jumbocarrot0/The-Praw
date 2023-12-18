@@ -362,7 +362,7 @@
                 "name": "Turbo Cannon",
                 "body": [
                     {
-                        "cost:": "2+",
+                        "cost": "2+",
                         "text": "As a main player, add the number of your ships on this card to your side's total."
                     }
                 ],
