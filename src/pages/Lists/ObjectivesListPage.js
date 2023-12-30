@@ -36,7 +36,7 @@ export default function ObjectivesListPage() {
           </AccordionBody>
         </AccordionItem>
         <AccordionItem>
-          <AccordionHeader targetId="2">Sub Variants</AccordionHeader>
+          <AccordionHeader targetId="2">Hidden Objectives</AccordionHeader>
           <AccordionBody accordionId="2">
             <p className="text-light">These are copied from the Cosmic Odyssey campaign guide, with some modification for clarity.</p>
             <h3>Hidden Objective</h3>
