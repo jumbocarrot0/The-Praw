@@ -36,6 +36,7 @@ favicon/
 *.ods
 *.ods#
 *.pdn
+*.zip
 src/svg/Full Moon.svg
 src/svg/Half Moon.svg
 src/svg/Quarter Moon.svg
