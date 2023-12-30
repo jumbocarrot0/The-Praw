@@ -8,7 +8,7 @@ export default function VariantsListPage() {
         "FreewheelingFlares": { name: "Freewheeling Flares", complexity: 2, short: "No Flare Limit", thumbnail: "variant icons/Freewheeling Icon.png" },
         "Techs": { name: "Technology", complexity: 2, short: "Research Powerful Techs", thumbnail: "variant icons/Tech Icon.png" },
         "RewardsDeck": { name: "Rewards Deck", complexity: 1, short: "Special Deck for Rewards", thumbnail: "variant icons/Rewards Icon.png" },
-        "CommonRewards": { name: "Common Rewards", complexity: 1, short: "Add Reward Cards to Deck", thumbnail: "variant icons/Common Icon.png" },
+        // "CommonRewards": { name: "Common Rewards", complexity: 1, short: "Add Reward Cards to Deck", thumbnail: "variant icons/Common Icon.png" },
         "Hazards": { name: "Hazards", complexity: 1, short: "Random Events", thumbnail: "variant icons/Hazard Icon.png" },
         "TeamMode": { name: "Team Cosmic", complexity: 1, short: "Play in Pairs", thumbnail: "variant icons/Alliance Icon.png" },
         "Stations": { name: "Space Stations", complexity: 2, short: "Attach Abilities to Planets", thumbnail: "variant icons/Stations Icon.png" },

@@ -31,6 +31,16 @@ export default function RewardsDeckPage() {
           <li className="text-light">If players find the above rule too ambiguous, The Praw recommends the following altnerative rule: If a player has already drawn an ultra reward from the rewards deck in this encounter (not from another source like another player's hand), they may not draw another from the rewards deck.</li>
         </ul>
       </ul>
+      <h3>Common Rewards</h3>
+      <ul>
+        <li className="text-light">This sub-variant, introduced in Cosmic Incursion, mixes reward cards to the cosmic deck.</li>
+        <li className="text-light">During setup, shuffle the rewards deck in the cosmic deck.</li>
+        <li className="text-light">During gameplay, reward cards are treated like any other card from the deck.</li>
+        <ul>
+          <li className="text-light">Ultra Reward cards have no limit when drawing from the cosmic deck (or any deck outside of the reward deck).</li>
+          <li className="text-light">House Rule: The Praw recommends to only shuffle a fraction of the full reward deck into the deck (and not all 96 cards.)</li>
+        </ul>
+      </ul>
     </div>
   );
 }
