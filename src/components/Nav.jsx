@@ -10,7 +10,7 @@ import {
   Nav,
   NavItem,
   // NavLink,
-  NavbarText,
+  // NavbarText,
   DropdownMenu,
   UncontrolledDropdown,
   DropdownToggle,
@@ -25,7 +25,7 @@ export default function PrawNav() {
 
   return (
     <Navbar className="navbar navbar-expand-md bg-light" data-bs-theme="light" fixed="top">
-      <NavbarBrand>The Praw</NavbarBrand>
+      <NavbarBrand tag="span">The Praw</NavbarBrand>
       <NavbarToggler onClick={toggle} className="bg-dark">
       </NavbarToggler>
       <Collapse isOpen={isOpen} navbar>
@@ -60,6 +60,16 @@ export default function PrawNav() {
                   Alien Dealer
                 </Link>
               </DropdownItem>
+              <DropdownItem>
+                <Link className="nav-link" to="/Geek">
+                  Geek Practice
+                </Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link className="nav-link" to="/DigitalDial">
+                  Digital Dial
+                </Link>
+              </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <NavItem key={6}>
@@ -73,7 +83,6 @@ export default function PrawNav() {
             </Link>
           </NavItem>
         </Nav>
-        <NavbarText>Powered by React</NavbarText>
       </Collapse>
     </Navbar>
   );

@@ -5,7 +5,6 @@ import { ReactComponent as SearchLogo } from '../svg/searchIcon.svg';
 import {
     Input,
     InputGroup,
-    InputGroupText,
     Form,
     Button
 } from 'reactstrap';
@@ -38,6 +37,7 @@ export default function Searchbar(props) {
                     <SearchLogo />
                 </InputGroupText> */}
                 <Button
+                    aria-label="Submit search"
                     className="px-3"
                     color={searchQuery.length === 0 ? "secondary" : "primary"}
                     disabled={searchQuery.length === 0}>

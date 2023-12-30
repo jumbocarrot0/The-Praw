@@ -1,17 +1,19 @@
 import Item from '../../components/Item'
-import Stations from '../../dataFiles/stations.json';
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import {
   UncontrolledAccordion,
   AccordionBody,
   AccordionHeader,
   AccordionItem
 } from 'reactstrap'
+import { useRouteLoaderData } from 'react-router-dom';
 
 export default function StationListPage() {
+
+  const Stations = useRouteLoaderData("stations")
+
   return (
-    <Layout title="Space Stations">
+    <div>
       <h1 className='mb-4'>Space Stations</h1>
       <p className="text-light">Space Stations are an official variant introduced in Cosmic Storm. In it, players get control of stations attached to their planets, which they use the ability of for as long as they keep the planet.
         <br />
@@ -53,16 +55,32 @@ export default function StationListPage() {
             </ul>
           </AccordionBody>
         </AccordionItem>
+        <AccordionItem>
+          <AccordionHeader targetId="2">Sub Variants</AccordionHeader>
+          <AccordionBody accordionId="2">
+            <p className="text-light">These are copied from the Cosmic Storm rulebook.</p>
+            <h3>Space Station Conquest</h3>
+            <p className="text-light">This variant allows players to acquire other players' space stations for their own use.</p>
+            <ul>
+              <li className="text-light">When a player wins an offensive encounter against a planet outside their home system which has a space station attached, that player <strong>Conquers</strong> that space station.</li>
+              <li className="text-light">At the end of the resolution phase, the winning offensive player takes the space station card and its corresponding marker from the defending player.</li>
+              <li className="text-light">They then attach the conquered space station to any planet in their home system which does not currently have an attached space station.</li>
+              <li className="text-light">Space stations may still be traded as part of a deal as normal.</li>
+              <li className="text-light">If a player acquires at least five space stations (four if playing with the Four Planets variant), that player wins the game! This victory condition is only available if enough space stations are in play.</li>
+            </ul>
+          </AccordionBody>
+        </AccordionItem>
       </UncontrolledAccordion>
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}
         url="/Variants/Stations"
-        content={Stations.stations}
+        content={Stations}
         border={(item) => {
           return { "Sky City": "success", "Space Station": "primary", "Deep Space Station": "indigo" }[item.type];
         }}
         type={(item) => { return item.type }}
+        width={3}
       />
-    </Layout>
+    </div>
   );
 }

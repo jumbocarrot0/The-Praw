@@ -77,7 +77,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -88,29 +88,6 @@
                     }
                 },
                 "expansion": "Base Set"
-            },
-            "revised": {
-                "name": "Cosmic Field Generator",
-                "refresh": false,
-                "short": "Stop Alien Power.",
-                "body": "Once completed, you may discard this tech to cancel one use of any alien's power, including your own. That power may not be used again during the current encounter. The use of this tech is considered to be a \"Cosmic Zap,\" but this is not an artifact card.",
-                "cost": "2",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": ""
             }
         },
         "3": {
@@ -194,22 +171,6 @@
                     }
                 },
                 "expansion": "Base Set"
-            },
-            "revised": {
-                "name": "Enigma Device",
-                "refresh": false,
-                "short": "Reset All Hands to 8 Cards.",
-                "body": "Once completed, you may discard this tech at the start of any encounter. Each player, starting with you and continuing clockwise, either draws cards from the deck or discards cards at random as needed to bring his or her hand to exactly eight cards. You (and only you) may discard as many of your cards as you wish beforehand.",
-                "cost": "4",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": ""
             }
         },
         "6": {
@@ -226,7 +187,8 @@
                         "regroup": true
                     }
                 },
-                "expansion": "Base Set"
+                "expansion": "Base Set",
+                "thumbnail": "Genesis_Planet_Token.png"
             },
             "revised": {
                 "name": "Genesis Bomb",
@@ -242,6 +204,7 @@
                     }
                 },
                 "expansion": "Base Set",
+                "thumbnail": "Genesis_Planet_Token.png",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency."
             }
         },
@@ -325,7 +288,8 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Base Set"
+                "expansion": "Base Set",
+                "thumbnail": "Lunar_Cannon_Token.png"
             },
             "revised": {
                 "name": "Lunar Cannon",
@@ -341,6 +305,7 @@
                     }
                 },
                 "expansion": "Base Set",
+                "thumbnail": "Lunar_Cannon_Token.png",
                 "revisionNotes": ""
             }
         },
@@ -359,22 +324,6 @@
                     }
                 },
                 "expansion": "Base Set"
-            },
-            "revised": {
-                "name": "Omega Missile",
-                "refresh": false,
-                "short": "Destroy Planet.",
-                "body": "Once completed, you may discard this tech at the start of any encounter to choose a planet in any system. Remove that planet from the game and send all ships on it to the warp.",
-                "cost": "8",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": ""
             }
         },
         "11": {
@@ -422,7 +371,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -444,7 +393,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -469,7 +418,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -479,7 +428,8 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Base Set"
+                "expansion": "Base Set",
+                "thumbnail": "Prometheus_Token.png"
             },
             "revised": {
                 "name": "The Prometheus",
@@ -491,7 +441,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -502,6 +452,7 @@
                     }
                 },
                 "expansion": "Base Set",
+                "thumbnail": "Prometheus_Token.png",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited for consistency."
             }
         },
@@ -582,7 +533,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -604,7 +555,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -633,22 +584,6 @@
                     }
                 },
                 "expansion": "Base Set"
-            },
-            "revised": {
-                "name": "Vacuum Turbines",
-                "refresh": false,
-                "short": "Draw Four Cards.",
-                "body": "Once completed, you may discard this tech at the start of any encounter to draw four cards from the deck. Look at them and add any of them you wish to your hand, discarding the rest.",
-                "cost": "2",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": ""
             }
         },
         "18": {
@@ -732,22 +667,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Destiny Holo-Flux",
-                "refresh": true,
-                "short": "Redraw Destiny.",
-                "body": "After destiny is drawn, you may reset this tech to discard that destiny card. If you do, the offense draws another destiny card.",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "destiny": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "21": {
@@ -761,7 +680,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -772,29 +691,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Freewheeling Projector",
-                "refresh": true,
-                "short": "Play Multiple Flares.",
-                "body": "You can play more than one flare card per encounter. (Each flare can be played only once per encounter.)",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "22": {
@@ -812,22 +708,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Lucky Charm",
-                "refresh": true,
-                "short": "Free One Ship.",
-                "body": "During the regroup phase, you may discard this tech to free one of your ships from the warp.",
-                "cost": "0",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "23": {
@@ -841,7 +721,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -852,29 +732,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Power Radiant",
-                "refresh": true,
-                "short": "Zap Powers with Falres.",
-                "body": "You may discard an alien's flare to cancel one use of that alien's power. That power cannot be used again during this encounter. (This is not treated as a Cosmic Zap.)",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "24": {
@@ -888,7 +745,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -899,29 +756,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Proximity Mining",
-                "refresh": true,
-                "short": "Remove One Ship.",
-                "body": "At any time, you may send one ship belonging to another player from a colony to the warp. If you do, reset this tech and give it to that player.",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "25": {
@@ -968,7 +802,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -979,29 +813,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Warp Breaker",
-                "refresh": false,
-                "short": "Free your Ships.",
-                "body": "At any time, you may reset this tech to free all of your ships from the warp.",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "27": {
@@ -1019,22 +830,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Cosmic Catapult",
-                "refresh": false,
-                "short": "Bombard.",
-                "body": "You cannot complete this tech.\n\nDuring the reveal phase, if a hazard warning is active, you may reveal this tech. For each ship on it, add 3 to one side's total. Then, discard this tech and send all ships on it to the warp.",
-                "cost": "X",
-                "type": "Haz-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "reveal": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "28": {
@@ -1048,7 +843,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1059,29 +854,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Nuclear Missiles",
-                "refresh": false,
-                "short": "Nuke Planet.",
-                "body": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to choose a planet. For each ship on this tech, send one ship to the warp from the chosen planet. Then, discard this tech and send all ships on it to the warp.",
-                "cost": "X",
-                "type": "Haz-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "29": {
@@ -1104,27 +876,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Sabotage",
-                "refresh": false,
-                "short": "Reset Tech.",
-                "body": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to choose one or more techs; a tech that has more ships on it than this tech cannot be chosen. All ships on the chosen techs return to their owner's colonies. Then, discard this tech, send all ships on it to the warp, and draw another tech.",
-                "cost": "X",
-                "type": "Haz-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "30": {
@@ -1147,27 +898,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Strange Attractor",
-                "refresh": false,
-                "short": "Find and Gain Flares.",
-                "body": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to reveal all flares in the discard pile an in each other player's hand. For each ship on this tech, take one revealed flare of your choice and add it to your hand. This, discard this tech and send all ships on it to the warp.",
-                "cost": "X",
-                "type": "Haz-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "31": {
@@ -1190,27 +920,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Thorium Rod",
-                "refresh": false,
-                "short": "Force discard.",
-                "body": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to choose a player. For each ship on this tech, that player discards a card at random from their hand. Then, discard this tech and send all ships on it to the warp.",
-                "cost": "X",
-                "type": "Haz-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "32": {
@@ -1224,7 +933,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1235,29 +944,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Treasure Drones",
-                "refresh": false,
-                "short": "Recover Cards.",
-                "body": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to shuffle either the cosmic or the reward deck discard pile. For each ship on this tech, draw a card from that discard pile. Then, discard this tech and send all ships on it to the warp.",
-                "cost": "X",
-                "type": "Haz-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "33": {
@@ -1271,7 +957,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1282,29 +968,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Galactose Intolerance",
-                "refresh": false,
-                "short": "Inconvenience Other Players.",
-                "body": "Discard at any time. If you do, each other play must discard all non-encounter cards from their hand or lose eight ships to the warp.",
-                "cost": "\u226525",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "34": {
@@ -1318,7 +981,7 @@
                 "timing": {
                     "player": "Main Player or Ally",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1340,7 +1003,7 @@
                 "timing": {
                     "player": "Main Player or Ally Only",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1365,7 +1028,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1376,29 +1039,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Nu'x'xian Orb",
-                "refresh": true,
-                "short": "Protect against Wild Flares.",
-                "body": "When a player plays a wild flare, if you have a colony in that player's home system, you may send one of your ships from that colony to the warp to cancel the flare and return it to that player's hand. (Each flare can be played only once per encounter.)",
-                "cost": "X+1",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "36": {
@@ -1449,22 +1089,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Protective NRG Halo",
-                "refresh": false,
-                "short": "Defend Home System.",
-                "body": "During the planning phase of an encounter in your home system, any player with a colony on the targeted planet may play a card faceup next to the hyperspace gate. If the main player makes a deal, the offense gains those cards. Otherwise, each card adds 3 to the defense's total, and the defense gains them at the end of the reveal phase.",
-                "cost": "X=X",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "planning": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "38": {
@@ -1482,22 +1106,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Rewards Distributor",
-                "refresh": true,
-                "short": "Adds Reward Deck.",
-                "body": "Add the Reward Deck variant (🕮10) to the game. If it is already being used, or if you discarded attack cards with a total value of at least 21, add the Ultra Reward Deck sub-variant. Then, discard this tech and draw two reward cards.",
-                "cost": "\u226510",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "39": {
@@ -1511,7 +1119,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1522,29 +1130,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Solar Harness",
-                "refresh": false,
-                "short": "Protect a Flare.",
-                "body": "At any time, you may place one flare faceup from your hand on this tech. This flare can be played, cannot be canceled, and is not part of your hand. (When this card is played, it returns to your hand like normal.) You may discard the flare on this tech at any time. If you need to draw a new hand, you must first discard the flare on this tech.",
-                "cost": "X+1",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "40": {
@@ -1552,7 +1137,7 @@
                 "name": "Xaq Attack",
                 "refresh": true,
                 "short": "Force Invitation.",
-                "body": "Before main players invite allies, you may give this tech faceup to a main player. They must invited you.",
+                "body": "Before main players invite allies, you may give this tech faceup to a main player. They must invite you.",
                 "cost": "X+1",
                 "type": "Mili-Tech",
                 "timing": {
@@ -1567,7 +1152,7 @@
                 "name": "Xaq Attack",
                 "refresh": true,
                 "short": "Force Invitation.",
-                "body": "Before allies are invited, you may give this tech faceup to a main player. They must invited you.",
+                "body": "Before allies are invited, you may give this tech faceup to a main player. They must invite you.",
                 "cost": "X+1",
                 "type": "Mili-Tech",
                 "timing": {
@@ -1591,7 +1176,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1602,29 +1187,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "X-Lot-L Pod",
-                "refresh": true,
-                "short": "Retain a Lost Ship.",
-                "body": "When more than one of your ships would be sent to the wapr, you may send one of them to any of your colonies instead.",
-                "cost": "\u226513",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "42": {
@@ -1638,7 +1200,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1649,29 +1211,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Nanite Mining",
-                "refresh": true,
-                "short": "Increase Hand Size.",
-                "body": "When you draw a new hand, you may draw one additional card.",
-                "cost": "2",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "43": {
@@ -1689,22 +1228,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Brainwave Tracer",
-                "refresh": false,
-                "short": "Steal a Card.",
-                "body": "Before encounter cards are selected, you may take a card at random from another player's hand. If you do, reset this tech and give it to that player.",
-                "cost": "2",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "planning": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         },
         "44": {
@@ -1718,7 +1241,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -1729,29 +1252,6 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Zap-O-Tron",
-                "refresh": false,
-                "short": "Cancel Alien's Power.",
-                "body": "Reset this tech to cancel one use of any alien's power, including your own. That power cannot be used again during this encounter. (This is treated as a Cosmic Zap, but is not an artifact.)",
-                "cost": "5",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": ""
             }
         }
     }

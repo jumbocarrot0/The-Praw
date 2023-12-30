@@ -1,5 +1,4 @@
-import { useNavigate } from 'react-router-dom'
-import Button from '../components/Button'
+import { Link } from "react-router-dom"
 
 import {
     Card,
@@ -9,14 +8,15 @@ import {
 
 export default function Item(props) {
     const content = props.content
-    const navigate = useNavigate();
 
     return (
         <Card className='mb-5'>
-            <Button color="light"
-                border={props.border(content) ? props.border(content) : "secondary"}
+            <Link color="light"
+                className={`btn btn-light border-5 border-${props.border(content) ? props.border(content) : "secondary"}`}
+                // border={props.border(content) ? props.border(content) : "secondary"}
                 width={5}
-                onClick={() => navigate(props.to)}>
+                to={props.to}
+                >
                 <CardBody>
                     <h2 className="text-dark">{content.name}</h2>
                     <h6 className="align-items-center">
@@ -25,13 +25,19 @@ export default function Item(props) {
                             {content.expansion}
                         </Badge>
                         <Badge className={props.border(content) === "warning" ? " text-dark" : ""}
-                        color={props.border(content) ? props.border(content) : "secondary"}>
-                        {props.type(content) ? props.type(content) : null}
+                            color={props.border(content) ? props.border(content) : "secondary"}>
+                            {props.type(content) ? props.type(content) : null}
                         </Badge>
                     </h6>
+                    {content.thumbnail ? <img alt={content.name + " Thumbnail"}
+                        className='mx-auto d-block'
+                        src={require(`../images/${content.thumbnail}`)}
+                        style={{"maxHeight": "72px"}}
+                    /> : null}
+
                     <strong>{content.short}</strong>
                 </CardBody>
-            </Button>
+            </Link>
         </Card>
     )
 }

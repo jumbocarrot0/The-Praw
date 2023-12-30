@@ -58,13 +58,6 @@
                 "body": "During this encounter, any alien powers that are used are immediately zapped.",
                 "expansion": "Cosmic Conflict",
                 "type": "Hazard"
-            },
-            "revised": {
-                "name": "Cosmic Nebula",
-                "body": "During this encounter, any alien powers that are used are immediately zapped.",
-                "expansion": "Cosmic Conflict",
-                "type": "Hazard",
-                "revisionNotes": ""
             }
         },
         "4": {
@@ -124,8 +117,7 @@
                 "name": "Galactic Council",
                 "body": "Instead of having a normal encounter, all of the players in the game have three minutes to make a deal. All players must accept the deal or it fails. If the deal fails, all players lose 3 ships to the warp.",
                 "expansion": "Cosmic Conflict",
-                "type": "Hazard",
-                "revisionNotes": "Revisions from the Cosmodex\n\n"
+                "type": "Hazard"
             },
             "revised": {
                 "name": "Galactic Council",
@@ -156,13 +148,6 @@
                 "body": "During this encounter, if both main players reveal attack cards, add together the totals of both sides. If the combined total is over 25, a deadly meteor storm is triggered by the fighting, causing both sides to lose, regardless of other game effects.",
                 "expansion": "Cosmic Conflict",
                 "type": "Hazard"
-            },
-            "revised": {
-                "name": "Meteor Storm",
-                "body": "During this encounter, if both main players reveal attack cards, add together the totals of both sides. If the combined total is over 25, a deadly meteor storm is triggered by the fighting, causing both sides to lose, regardless of other game effects.",
-                "expansion": "Cosmic Conflict",
-                "type": "Hazard",
-                "revisionNotes": ""
             }
         },
         "10": {
@@ -171,13 +156,6 @@
                 "body": "Immediately flip over both the discard pile and the deck. The deck becomes the new discard pile and vice versa. Afterwards, shuffle the new deck.",
                 "expansion": "Cosmic Conflict",
                 "type": "Hazard"
-            },
-            "revised": {
-                "name": "Mirror Universe",
-                "body": "Immediately flip over both the discard pile and the deck. The deck becomes the new discard pile and vice versa. Afterwards, shuffle the new deck.",
-                "expansion": "Cosmic Conflict",
-                "type": "Hazard",
-                "revisionNotes": ""
             }
         },
         "11": {
@@ -186,13 +164,6 @@
                 "body": "During this encounter, if one main player reveals an odd-numbered attack card and the other reveals an even-numbered attack card, the player who revealed the odd-numbered attack card automatically wins the encounter.",
                 "expansion": "Cosmic Conflict",
                 "type": "Hazard"
-            },
-            "revised": {
-                "name": "Odd Way to Win a War",
-                "body": "During this encounter, if one main player reveals an odd-numbered attack card and the other reveals an even-numbered attack card, the player who revealed the odd-numbered attack card automatically wins the encounter.",
-                "expansion": "Cosmic Conflict",
-                "type": "Hazard",
-                "revisionNotes": ""
             }
         },
         "12": {
@@ -231,13 +202,6 @@
                 "body": "During this encounter, any cards played (including encounter cards, flares, artifacts, etc.) are removed from the game after taking effect.",
                 "expansion": "Cosmic Conflict",
                 "type": "Hazard"
-            },
-            "revised": {
-                "name": "Sargasso Web",
-                "body": "During this encounter, any cards played (including encounter cards, flares, artifacts, etc.) are removed from the game after taking effect.",
-                "expansion": "Cosmic Conflict",
-                "type": "Hazard",
-                "revisionNotes": ""
             }
         },
         "15": {
@@ -246,13 +210,6 @@
                 "body": "Play now proceeds in the opposite direction (i.e., if play was passing clockwise, it now proceeds counterclockwise).",
                 "expansion": "Cosmic Conflict",
                 "type": "Hazard"
-            },
-            "revised": {
-                "name": "Temporal Anomaly",
-                "body": "Play now proceeds in the opposite direction (i.e., if play was passing clockwise, it now proceeds counterclockwise).",
-                "expansion": "Cosmic Conflict",
-                "type": "Hazard",
-                "revisionNotes": ""
             }
         },
         "16": {
@@ -264,7 +221,7 @@
             },
             "revised": {
                 "name": "The Witness",
-                "body": "While The Witness is in play, players do not lose their alien powers because {they have} of having too few home colonies. Any player who has lost his or her alien power in this manner gets it back while The Witness remains in play.\n\nDiscard The Entropy Beast and The Cosmic Guardian when The Witness enters play.",
+                "body": "While The Witness is in play, players do not lose their alien powers because of having too few home colonies. Any player who has lost his or her alien power in this manner gets it back while The Witness remains in play.\n\nDiscard The Entropy Beast and The Cosmic Guardian when The Witness enters play.",
                 "expansion": "Cosmic Conflict",
                 "type": "Permanent",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited for capitalization and wording consistency."

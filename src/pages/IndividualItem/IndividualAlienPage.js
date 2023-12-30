@@ -1,141 +1,59 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
-import { Link, useParams } from "react-router-dom"
-import Aliens from '../../dataFiles/aliens.json';
-import TimingBar from '../../components/TimingBar';
-import Layout from '../../components/Layout'
+import { Await, useRouteLoaderData } from "react-router-dom"
+// import TimingBar from '../../components/TimingBar';
+import Alien from '../../components/Alien'
+import Loading from '../../components/Loading'
+
 
 export default function IndividualAlienPage() {
 
-  const { alienIndex } = useParams();
-
-  const [alien, setAlien] = useState(Aliens.aliens[alienIndex].original)
+  const alien = useRouteLoaderData("alienIndex")
   const [tab, setTab] = useState("original")
 
-  useEffect(() => {
-    setAlien(Aliens.aliens[alienIndex].original)
-    setTab("original")
-  }, [alienIndex])
-
   return (
-    <Layout title={alien.name}>
-      {Aliens.aliens[alienIndex].revised || Aliens.aliens[alienIndex].homebrew ?
-        <Nav className="ps-5 mx-1" tabs>
-          <NavItem>
-            <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
-              onClick={() => { setAlien(Aliens.aliens[alienIndex].original); setTab("original") }}>Original</NavLink>
-          </NavItem>
-          {Aliens.aliens[alienIndex].revised ?
-            <NavItem>
-              <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
-                onClick={() => { setAlien(Aliens.aliens[alienIndex].revised); setTab("revised") }}>Revised</NavLink>
-            </NavItem> : null
-          }
-          {Aliens.aliens[alienIndex].homebrew ?
-            <NavItem>
-              <NavLink className={"nav-link" + (tab === "homebrew" ? " active" : "")} href="#"
-                onClick={() => { setAlien(Aliens.aliens[alienIndex].homebrew); setTab("homebrew") }}>House Rules</NavLink>
-            </NavItem> : null
-          }
-        </Nav> : null
-      }
-      <Card className={"mx-1" + (Aliens.aliens[alienIndex].revised || Aliens.aliens[alienIndex].homebrew ? " border-top-0 rounded-top-0" : "")}>
-        <CardBody>
-          <img alt={alien.name + " Thumbnail"}
-            className='float-end'
-            // src={require(`../../images/alien icons/avatar_${alien.name.replace('The ', '').replace(' ', '_')}${alien.altTimeline ? '_AT' : ''}.png`)} 
-            src={require(`../../images/alien icons/${alien.thumbnail}`)}
-          />
-          <span><h1 className='text-light d-inline'>{alien.altTimeline ? (alien.name + " (AT)") : alien.name} </h1><h3 className='text-light d-inline'>({alien.alert})</h3></span>
-          <h3 className='text-light'>{alien.short}</h3>
-
-          {alien.gameSetup ? <p><strong>Game Setup:</strong> {alien.gameSetup}</p> : null}
-          {/* dangerouslySetInnerHTML is, well, dangerous when used on user submitted stuff. But aliens.json is trustworthy, so this is fine albiet jank.
-          If/when I add a homebrew aliens option, PLEASE PLEASE PLEASE dont forget to sanitise them. */}
-          <p><strong>{alien.powerName}</strong> <span dangerouslySetInnerHTML={
-            {
-              __html: alien.powerBody
-                .replaceAll('may use this power', '<strong><em>may use</em></strong> this power')
-                .replaceAll('use this power', '<strong><em>use</em></strong> this power')
-                .replaceAll('this power is used', 'this power is <strong><em>used</em></strong>')
+    <React.Suspense fallback={<Loading />}>
+      <Await
+        resolve={alien.alien}
+        errorElement={
+          <p>Error loading alien!</p>
+        }
+      >
+        {(alien) => (
+          <>
+            {alien.revised || alien.homebrew ?
+              <Nav className="ps-5 mx-1" tabs>
+                <NavItem>
+                  <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
+                    onClick={() => { setTab("original") }}>Original</NavLink>
+                </NavItem>
+                {alien.revised ?
+                  <NavItem>
+                    <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
+                      onClick={() => { setTab("revised") }}>Revised</NavLink>
+                  </NavItem> : null
+                }
+                {alien.homebrew ?
+                  <NavItem>
+                    <NavLink className={"nav-link" + (tab === "homebrew" ? " active" : "")} href="#"
+                      onClick={() => { setTab("homebrew") }}>House Rules</NavLink>
+                  </NavItem> : null
+                }
+              </Nav> : null
             }
-          } />
-          </p>
-          {alien.powerSpecialName ?
-            <p><strong>{alien.powerSpecialName}</strong> <span dangerouslySetInnerHTML={
-              {
-                __html: alien.powerSpecialBody
-                  .replaceAll('may use this power', '<strong><em>may use</em></strong> this power')
-                  .replaceAll('use this power', '<strong><em>use</em></strong> this power')
-                  .replaceAll('this power is used', 'this power is <strong><em>used</em></strong>')
-              }
-            } />
-            </p>
-            : null}
-          <br />
-          <p><em>{alien.history}</em></p>
-          {alien.bans ?
-            <p className='fs-3'>Do not use with {
-              alien.bans.map((alienID, index) => {
-                return <span ><Link to={`/Aliens/${alienID}`}>{
-                  Aliens.aliens[alienID].original.altTimeline ? (Aliens.aliens[alienID].original.name + " (AT)") : Aliens.aliens[alienID].original.name
-                }</Link>{index !== alien.bans.length - 1 ? <span>, or </span> : null}</span>
-              })
-            }</p>
-            : null
-          }
-
-          <p></p>
-          <TimingBar timing={alien.powerTiming} />
-          <br />
-          <h3>Wild Flare</h3>
-          <p>{alien.wildBody}</p>
-          <TimingBar timing={alien.wildTiming} />
-          <br />
-          <h3>Super Flare</h3>
-          <p>{alien.superBody}</p>
-          <TimingBar timing={alien.superTiming} />
-          <br />
-          <br />{
-            alien.wildClassicBody ? (
-              <div>
-                <h3>Classic Wild Flare</h3>
-                <p>{alien.wildClassicBody}</p>
-                <TimingBar timing={alien.wildClassicTiming} />
-                <br />
-                <h3>Classic Super Flare</h3>
-                <p>{alien.superClassicBody}</p>
-                <TimingBar timing={alien.superClassicTiming} />
-              </div>
-            ) : null
-          }
-          {alien.essences ? <div>
-            <h3>{alien.name} {alien.essences.name}s</h3>
-            <ol>
-              {Object.keys(alien.essences.list).sort().map((essenceID => {
-                return <li><strong>{alien.essences.list[essenceID].name}</strong>: {alien.essences.list[essenceID].body}{
-                  alien.essences.list[essenceID].value ? <strong className='font-digit fs-4'> {alien.essences.list[essenceID].value}</strong> : null
-                }</li>
-              }))}
-
-            </ol>
-          </div>
-            : null}
-
-
-          {alien.revisionNotes ? (
-            <Card className="bg-light border-warning border-5">
+            <Card className={"mx-1" + (alien.revised || alien.homebrew ? " border-top-0 rounded-top-0" : "")}>
               <CardBody>
-                <p className="text-dark">{alien.revisionNotes}</p>
+
+                <Alien alien={alien} tab={tab} />
+
               </CardBody>
             </Card>
-          ) : null}
-
-        </CardBody>
-      </Card>
-    </Layout>
+          </>
+        )}
+      </Await>
+    </React.Suspense>
   );
 }
 

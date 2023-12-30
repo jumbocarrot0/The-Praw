@@ -1,57 +1,56 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {
   Card, CardBody, Nav, NavItem, NavLink
 } from 'reactstrap';
-import { useParams } from "react-router-dom"
-import Stations from '../../dataFiles/stations.json';
+import { useRouteLoaderData } from "react-router-dom"
 import TimingBar from '../../components/TimingBar';
-import Layout from '../../components/Layout'
 
 export default function IndividualStationPage() {
 
-  const { stationIndex } = useParams();
-
-  const [station, setStation] = useState(Stations.stations[stationIndex].original)
-  const [revised, setRevised] = useState(false)
-
-  useEffect(() => {
-    setStation(Stations.stations[stationIndex].original)
-    setRevised(false)
-  }, [stationIndex])
+  const station = useRouteLoaderData("stationIndex")
+  const [tab, setTab] = useState("original")
 
   return (
-    <Layout title={station.name}>
-      {Stations.stations[stationIndex].revised ?
+    <div>
+      {station.revised ?
         <Nav className="ps-5 mx-1" tabs>
           <NavItem>
-            <NavLink className={"nav-link" + (revised ? "" : " active")} aria-current="page" href="#"
-              onClick={() => { setStation(Stations.stations[stationIndex].original); setRevised(false) }}>Original</NavLink>
+            <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
+              onClick={() => { setTab("original") }}>Original</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={"nav-link" + (revised ? " active" : "")} href="#"
-              onClick={() => { setStation(Stations.stations[stationIndex].revised); setRevised(true) }}>Revised</NavLink>
+            <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
+              onClick={() => { setTab("revised") }}>Revised</NavLink>
           </NavItem>
         </Nav> : null
       }
-      <Card className={"mx-1" + (Stations.stations[stationIndex].revised ? " border-top-0 rounded-top-0" : "")}>
+      <Card className={"mx-1" + (station.revised ? " border-top-0 rounded-top-0" : "")}>
         <CardBody>
-          <h1 className='text-light'>{station.name}</h1>
-          <p>{station.body}</p>
+          {station[tab].thumbnail ? <img alt={station[tab].name + " Thumbnail"}
+            className='float-end'
+            src={require(`../../images/${station[tab].thumbnail}`)}
+          /> : null}
+
+          <span>
+            <h1 className='text-light d-inline'>{station[tab].name}</h1> <h3 className='text-light d-inline'>({station[tab].expansion})</h3>
+          </span>
+          <h3 className='text-light'>{station[tab].type}</h3>
+          <p>{station[tab].body}</p>
           <br />
-          <TimingBar timing={station.timing}/>
+          <TimingBar timing={station[tab].timing} />
 
 
-          {revised && station.revisionNotes ? (
+          {station[tab].revisionNotes ? (
             <Card className="bg-light border-warning border-5">
               <CardBody>
-                <p className="text-dark">{station.revisionNotes}</p>
+                <p className="text-dark">{station[tab].revisionNotes}</p>
               </CardBody>
             </Card>
           ) : null}
 
         </CardBody>
       </Card>
-    </Layout>
+    </div>
   );
 }
 

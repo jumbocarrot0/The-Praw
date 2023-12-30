@@ -10212,7 +10212,7 @@
                 "short": "Launches Sneak Attacks",
                 "gameSetup": "Shuffle the three \"Invasion!\" destiny cards into the destiny deck. These destiny cards allow you to have an extra encounter when drawn during another player's turn. After you have an extra encounter due to an \"Invasion!\" destiny card, the player who drew it during his or her turn receives another encounter.",
                 "powerName": "You have the power of Invasion.",
-                "powerBody": "As a main player, after an \"Invasion!\" destiny card or a destiny card of your player color is drawn, you may use this power to discard your entire hand and draw a new hand of eight cards before having your extra encounter. Only se this power once per encounter.",
+                "powerBody": "As a main player, after an \"Invasion!\" destiny card or a destiny card of your player color is drawn, you may use this power to discard your entire hand and draw a new hand of eight cards before having your extra encounter. Only use this power once per encounter.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Optional",
@@ -24377,7 +24377,7 @@
                         },
                         "5": {
                             "name": "Alliance",
-                            "body": "After alliances are formed, if you are not a main player or ally, you may ally with either main player by sending more ships into the encounter (without exceeding your ship limit) than the play has in the encounter."
+                            "body": "After alliances are formed, if you are not a main player or ally, you may ally with either main player by sending more ships into the encounter (without exceeding your ship limit) than the player has in the encounter."
                         },
                         "6": {
                             "name": "Planning",
@@ -24471,7 +24471,7 @@
                         },
                         "5": {
                             "name": "Alliance",
-                            "body": "After alliances are formed, if you are not a main player or ally, you may ally with either main player by sending more ships into the encounter (without exceeding your ship limit) than the play has in the encounter."
+                            "body": "After alliances are formed, if you are not a main player or ally, you may ally with either main player by sending more ships into the encounter (without exceeding your ship limit) than the player has in the encounter."
                         },
                         "6": {
                             "name": "Planning",
