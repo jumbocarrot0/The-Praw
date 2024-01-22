@@ -107,8 +107,8 @@ function AgeItem(props) {
 export default function AgesPage() {
 
     const Ages = useRouteLoaderData("ages")
-    console.log('hello')
-    console.log(Ages)
+    // console.log('hello')
+    // console.log(Ages)
     
     return (
         <div>
