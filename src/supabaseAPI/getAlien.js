@@ -28,15 +28,27 @@ export async function getAlien(index) {
     }
     const supabase = createClient('https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY, options)
 
-    const { data } = await supabase
-        .from('Aliens')
-        .select('alienData')
-        .eq('id', index)
-        .eq('viewable', true)
-        .limit(1)
-        .single()
+    if (index.match(/^\d+$/)) {
+        const { data } = await supabase
+            .from('Aliens')
+            .select('alienData')
+            .eq('id', index)
+            .eq('viewable', true)
+            .limit(1)
+            .single()
+            return data.alienData
+    } else {
+        const { data } = await supabase
+            .from('Aliens')
+            .select('alienData')
+            .eq('alienData->original->>name', index.replaceAll('_', ' ').replace('-AT', ''))
+            .eq('viewable', true)
+            .or(`alienData->original->altTimeline.eq.${index.replaceAll('_', ' ').includes('-AT') ? 'true' : 'false,alienData->original->altTimeline.is.null'}`)
+            .limit(1)
+            .single()
+            return data.alienData
+    }
 
-    return data.alienData
 }
 
 export async function getAllAliens() {

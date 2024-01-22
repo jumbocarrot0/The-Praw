@@ -1,6 +1,6 @@
 //Pages
 import React from "react";
-import { Await, defer } from "react-router-dom"
+import { Await, defer, redirect } from "react-router-dom"
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import Layout from "./components/Layout";
@@ -81,7 +81,7 @@ import { getAlien, getAllAliens } from "./supabaseAPI/getAlien"
 
 // const AlienBreadcrumb = ({ match }) => Aliens.aliens[match.params.alienIndex].original.name;
 
-const itemPageBreadcrumb = (data) => data.original.name
+const itemPageBreadcrumb = (data) => data?.original?.name ?? '???'
 
 const itemPageRoute = (rootpath, crumb, indexpath, list, item, loader, parentLoader) => ({
   path: rootpath,
@@ -182,6 +182,9 @@ export const routes = [
             element: <IndividualAlienPage />,
             path: ":alienIndex",
             loader: ({ params }) => {
+              if (params.alienIndex.match(/ /)){
+                return redirect(`../${params.alienIndex.replaceAll(/ /g, '_')}`)
+              }
               const alienDataPromise = getAlien(params.alienIndex)
               return defer({ alien: alienDataPromise })
             },
@@ -254,22 +257,53 @@ export const routes = [
                 element: <CampaignPage />
               },
 
-              itemPageRoute(
-                "Ages",
-                "Ages",
-                "ageIndex",
-                <AgesPage />,
-                null,
-                ({ params }) => Ages.ages[params.ageIndex],
-                () => {return Ages}
-              ),
+              {
+                path: 'Ages',
+                id: 'ages',
+                element: <AgesPage />,
+                loader: () => {return Ages},
+                handle: {
+                  breadcrumb: () => "Ages"
+                },
+              },
+              // itemPageRoute(
+              //   "Ages",
+              //   "Ages",
+              //   "ageIndex",
+              //   <AgesPage />,
+              //   null,
+              //   ({ params }) => {
+              //     if(params.ageIndex.match(/^\d+$/)){
+              //       return Ages.ages[params.ageIndex]
+              //     } else{
+              //       for(const index in Ages.ages){
+              //         if ((Ages.ages[index].name + Ages.ages[index].name).replaceAll(' ', '_') === params.ageIndex){
+              //           return Ages.ages[index]
+              //         }
+              //       }
+              //       return null
+              //     }
+              //   },
+              //   () => {return Ages}
+              // ),
               itemPageRoute(
                 "MasterCards",
                 "Master Cards",
                 "masterIndex",
                 <MasterPage />,
                 <IndividualMasterPage />,
-                ({ params }) => Ages.master[params.masterIndex],
+                ({ params }) => {
+                  if(params.masterIndex.match(/^\d+$/)){
+                    return Ages.master[params.masterIndex]
+                  } else{
+                    for(const index in Ages.master){
+                      if ((Ages.master[index].original.name).replaceAll(' ', '_') === params.masterIndex){
+                        return Ages.master[index]
+                      }
+                    }
+                    return null
+                  }
+                },
                 () => Ages.master
               ),
               itemPageRoute(
@@ -278,7 +312,18 @@ export const routes = [
                 "wrenchIndex",
                 <WrenchPage />,
                 <IndividualWrenchPage />,
-                ({ params }) => Wrenches.wrench[params.wrenchIndex],
+                ({ params }) => {
+                  if(params.wrenchIndex.match(/^\d+$/)){
+                    return Wrenches.wrench[params.wrenchIndex]
+                  } else{
+                    for(const index in Wrenches.wrench){
+                      if ((Wrenches.wrench[index].original.name).replaceAll(' ', '_') === params.wrenchIndex){
+                        return Wrenches.wrench[index]
+                      }
+                    }
+                    return null
+                  }
+                },
                 () => Wrenches.wrench
               ),
               itemPageRoute(
@@ -287,7 +332,18 @@ export const routes = [
                 "privilegeIndex",
                 <PrivilegePage />,
                 <IndividualPrivilegePage />,
-                ({ params }) => Privileges.privilege[params.privilegeIndex],
+                ({ params }) => {
+                  if(params.privilegeIndex.match(/^\d+$/)){
+                    return Privileges.privilege[params.privilegeIndex]
+                  } else{
+                    for(const index in Privileges.privilege){
+                      if ((Privileges.privilege[index].original.name).replaceAll(' ', '_') === params.privilegeIndex){
+                        return Privileges.privilege[index]
+                      }
+                    }
+                    return null
+                  }
+                },
                 () => Privileges.privilege
               ),
               itemPageRoute(
@@ -296,7 +352,18 @@ export const routes = [
                 "envoyIndex",
                 <EnvoysPage />,
                 <IndividualEnvoyPage />,
-                ({ params }) => Envoys.envoys[params.envoyIndex],
+                ({ params }) => {
+                  if(params.envoyIndex.match(/^\d+$/)){
+                    return Envoys.envoys[params.envoyIndex]
+                  } else{
+                    for(const index in Envoys.envoys){
+                      if ((Envoys.envoys[index].original.name).replaceAll(' ', '_') === params.envoyIndex){
+                        return Envoys.envoys[index]
+                      }
+                    }
+                    return null
+                  }
+                },
                 () => Envoys.envoys
               ),
               {
@@ -339,7 +406,18 @@ export const routes = [
             "techIndex",
             <TechListPage />,
             <IndividualTechPage />,
-            ({ params }) => Techs.technologies[params.techIndex],
+            ({ params }) => {
+              if(params.techIndex.match(/^\d+$/)){
+                return Techs.technologies[params.techIndex]
+              } else{
+                for(const index in Techs.technologies){
+                  if ((Techs.technologies[index].original.name).replaceAll(' ', '_') === params.techIndex){
+                    return Techs.technologies[index]
+                  }
+                }
+                return null
+              }
+            },
             () => Techs.technologies
           ),
 
@@ -349,7 +427,18 @@ export const routes = [
             "hazardIndex",
             <HazardListPage />,
             <IndividualHazardPage />,
-            ({ params }) => Hazards.hazards[params.hazardIndex],
+            ({ params }) => {
+              if(params.hazardIndex.match(/^\d+$/)){
+                return Hazards.hazards[params.hazardIndex]
+              } else{
+                for(const index in Hazards.hazards){
+                  if ((Hazards.hazards[index].original.name).replaceAll(' ', '_') === params.hazardIndex){
+                    return Hazards.hazards[index]
+                  }
+                }
+                return null
+              }
+            },
             () => Hazards.hazards
           ),
 
@@ -359,7 +448,22 @@ export const routes = [
             "stationIndex",
             <StationListPage />,
             <IndividualStationPage />,
-            ({ params }) => Stations.stations[params.stationIndex],
+            ({ params }) => {
+              if(params.stationIndex.match(/^\d+$/)){
+                return Stations.stations[params.stationIndex]
+              } else if (params.stationIndex === "Observation_Platform_2"){
+                console.log(params.stationIndex)
+                return Stations.stations['13']
+              } else{
+                console.log(params.stationIndex)
+                for(const index in Stations.stations){
+                  if ((Stations.stations[index].original.name).replaceAll(' ', '_') === params.stationIndex){
+                    return Stations.stations[index]
+                  }
+                }
+                return null
+              }
+            },
             () => Stations.stations
           ),
 
@@ -369,7 +473,18 @@ export const routes = [
             "luxIndex",
             <LuxListPage />,
             <IndividualLuxPage />,
-            ({ params }) => Lux.lux[params.luxIndex],
+            ({ params }) => {
+              if(params.luxIndex.match(/^\d+$/)){
+                return Lux.lux[params.luxIndex]
+              } else{
+                for(const index in Lux.lux){
+                  if ((Lux.lux[index].original.name).replaceAll(' ', '_') === params.luxIndex){
+                    return Lux.lux[index]
+                  }
+                }
+                return null
+              }
+            },
             () => Lux.lux
           ),
 
@@ -379,7 +494,18 @@ export const routes = [
             "moonIndex",
             <MoonListPage />,
             <IndividualMoonPage />,
-            ({ params }) => Moons.moons[params.moonIndex],
+            ({ params }) => {
+              if(params.moonIndex.match(/^\d+$/)){
+                return Moons.moons[params.moonIndex]
+              } else{
+                for(const index in Moons.moons){
+                  if ((Moons.moons[index].original.name).replaceAll(' ', '_') === params.moonIndex){
+                    return Moons.moons[index]
+                  }
+                }
+                return null
+              }
+            },
             () => Moons.moons
           ),
 
@@ -389,7 +515,20 @@ export const routes = [
             "evolutionIndex",
             <EvolutionListPage />,
             <IndividualEvolutionPage />,
-            ({ params }) => Evolutions.evolutions[params.evolutionIndex],
+            ({ params }) => {
+              if(params.evolutionIndex.match(/^\d+$/)){
+                return Evolutions.evolutions[params.evolutionIndex]
+              } else if(params.evolutionIndex === "Archaeology"){
+                return redirect("../Archæology");
+              } else{
+                for(const index in Evolutions.evolutions){
+                  if ((Evolutions.evolutions[index].original.name).replaceAll(' ', '_') === params.evolutionIndex){
+                    return Evolutions.evolutions[index]
+                  }
+                }
+                return null
+              }
+            },
             () => Evolutions.evolutions
           ),
 
@@ -399,7 +538,18 @@ export const routes = [
             "objectiveIndex",
             <ObjectivesListPage />,
             <IndividualObjectivePage />,
-            ({ params }) => Objectives.objectives[params.objectiveIndex],
+            ({ params }) => {
+              if(params.objectiveIndex.match(/^\d+$/)){
+                return Objectives.objectives[params.objectiveIndex]
+              } else{
+                for(const index in Objectives.objectives){
+                  if ((Objectives.objectives[index].original.name).replaceAll(' ', '_') === params.objectiveIndex){
+                    return Objectives.objectives[index]
+                  }
+                }
+                return null
+              }
+            },
             () => Objectives.objectives
           ),
 
@@ -459,7 +609,18 @@ export const routes = [
             "specialShipIndex",
             <SpecialShipsPage />,
             <IndividualSpecialShipPage />,
-            ({ params }) => SpecialShips.ships[params.specialShipIndex],
+            ({ params }) => {
+              if(params.specialShipIndex.match(/^\d+$/)){
+                return SpecialShips.ships[params.specialShipIndex]
+              } else{
+                for(const index in SpecialShips.ships){
+                  if ((SpecialShips.ships[index].original.name).replaceAll(' ', '_') === params.specialShipIndex){
+                    return SpecialShips.ships[index]
+                  }
+                }
+                return null
+              }
+            },
             () => SpecialShips.ships
           ),
           // {
@@ -489,11 +650,19 @@ export const routes = [
   },
   {
     element: <ThrowbackPage />,
-    path: "Aliens/221",
+    path: "Aliens",
     handle: {
       breadcrumb: () => "Throwback",
       title: () => "The Praw - Throwback"
     },
+    children: [
+      {
+        path: "221"
+      },
+      {
+        path: "Throwback"
+      }
+    ],
     loader: () => {
       const alienDataPromise = getAlien("221")
       return defer({ alien: alienDataPromise })
