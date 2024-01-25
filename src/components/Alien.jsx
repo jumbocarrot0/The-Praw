@@ -27,6 +27,7 @@ export default function Alien(props) {
                     __html: alien[tab].powerBody
                         .replaceAll('may use this power', '<strong><em>may use</em></strong> this power')
                         .replaceAll('use this power', '<strong><em>use</em></strong> this power')
+                        .replaceAll('Use this power', '<strong><em>Use</em></strong> this power')
                         .replaceAll('this power is used', 'this power is <strong><em>used</em></strong>')
                 }
             } />
@@ -37,6 +38,7 @@ export default function Alien(props) {
                         __html: alien[tab].powerSpecialBody
                             .replaceAll('may use this power', '<strong><em>may use</em></strong> this power')
                             .replaceAll('use this power', '<strong><em>use</em></strong> this power')
+                            .replaceAll('Use this power', '<strong><em>Use</em></strong> this power')
                             .replaceAll('this power is used', 'this power is <strong><em>used</em></strong>')
                     }
                 } />
