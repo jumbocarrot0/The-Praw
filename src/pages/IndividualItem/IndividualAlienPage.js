@@ -7,11 +7,23 @@ import { Await, useRouteLoaderData } from "react-router-dom"
 import Alien from '../../components/Alien'
 import Loading from '../../components/Loading'
 
+const VERSIONS = {
+  "original": "Original",
+  "revised": "Revised",
+  "homebrew": "House Rules"
+}
+
+const MODES = {
+    "PLAIN": 0,
+    "REVISION_EXPLAINATION": 1
+}
 
 export default function IndividualAlienPage() {
 
   const alien = useRouteLoaderData("alienIndex")
   const [tab, setTab] = useState("original")
+
+  const [viewMode, setViewMode] = useState(MODES.REVISION_EXPLAINATION)
 
   return (
     <React.Suspense fallback={<Loading />}>
@@ -23,9 +35,16 @@ export default function IndividualAlienPage() {
       >
         {(alien) => (
           <>
-            {alien.revised || alien.homebrew ?
               <Nav className="ps-5 mx-1" tabs>
-                <NavItem>
+
+                {
+                  alien.versions.map(version => 
+                    <NavItem key={version}>
+                      <NavLink className={"nav-link" + (tab === version ? " active" : "")} aria-current="page" href="#"
+                        onClick={() => { setTab(version) }}>{VERSIONS[version]}</NavLink>
+                    </NavItem>)
+                }
+                {/* <NavItem>
                   <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
                     onClick={() => { setTab("original") }}>Original</NavLink>
                 </NavItem>
@@ -40,14 +59,11 @@ export default function IndividualAlienPage() {
                     <NavLink className={"nav-link" + (tab === "homebrew" ? " active" : "")} href="#"
                       onClick={() => { setTab("homebrew") }}>House Rules</NavLink>
                   </NavItem> : null
-                }
-              </Nav> : null
-            }
-            <Card className={"mx-1" + (alien.revised || alien.homebrew ? " border-top-0 rounded-top-0" : "")}>
+                } */}
+              </Nav>
+            <Card className={"mx-1 border-top-0 rounded-top-0"}>
               <CardBody>
-
-                <Alien alien={alien} tab={tab} />
-
+                <Alien alien={alien} tab={tab} viewMode={viewMode} />
               </CardBody>
             </Card>
           </>

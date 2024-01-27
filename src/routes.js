@@ -195,7 +195,7 @@ export const routes = [
                       <p>Error loading alien!</p>
                     }
                   >
-                    {(alien) => alien.original.name}
+                    {(alien) => alien.name}
                   </Await>
                 </React.Suspense>
               ),
@@ -214,7 +214,7 @@ export const routes = [
                     {(alien) => (
                       <HelmetProvider>
                         <Helmet>
-                          <title>The Praw - {alien.original.name}</title>
+                          <title>The Praw - {alien.name}</title>
                         </Helmet>
                       </HelmetProvider>
                     )}
