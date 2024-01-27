@@ -1,0 +1,50 @@
+{
+    "3": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "4": {
+        "0": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "1": {"note": "Edited to eliminate the unnecessary \"rule on a card\" that could have unintended consequences when the Amoeba player has some other way to gain a colony.", "author": "Cosmodex"}
+    },
+    "5": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "6": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "7": {
+        "0": {"note": "Edited for Inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for consistent capitalisation with other cards.", "author": "Cosmodex"},
+        "2": {"note": "Edited for consistency with other cards.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "4": {"note": "Edited for grammar.", "author": "Cosmodex"}
+    },
+    "8": {
+        "0": {"note": "Edited to avoid implying that card values are modified.", "author": "Cosmodex"},
+        "1": {"note": "Edited to clarify that the subtraction replaces the normal addition.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency with other cards.", "author": "Cosmodex"},
+        "3": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "4": {"note": "Edited for consistency between Wild and Super Anti-Matter.", "author": "Cosmodex"}
+    },
+    "9": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to remove unecessary capitalisation.", "author": "Cosmodex"},
+        "2": {"note": "Edited to prevent Arcade from pwning when losing the encounter with attack vs negotiate.", "author": "The Praw"}
+    },
+    "11": {
+        "0": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "13": {
+        "0": {"note": "Edited for consistent terminology.", "author": "Cosmodex"},
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "2": {"note": "Edited for consistent terminology - specifically to simplify rewards vs defender rewards.", "author": "Cosmodex"}
+    },
+    "14": {
+        "0": {"note": "Edited to clarify that Wild Barbarian can wait to see all the cards before deciding what to discard.", "author": "Cosmodex"},
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify terminology from power that assumes Barbarian is the offense.", "author": "Cosmodex"}
+    },
+    "15": {
+        "0": {"note": "Edited for punctuation.", "author": "Cosmodex"}
+    }
+}
