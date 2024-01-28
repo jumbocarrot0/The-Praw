@@ -26,7 +26,7 @@ export default function Searchbar(props) {
             <InputGroup>
                 <Input
                     className="fs-5"
-                    placeholder="Search the Cosmos"
+                    placeholder={props.placeholder}
                     value={searchQuery}
                     onChange={(e) => {
                         if (!/[^ A-Za-z0-9\-,'/+\\]/.test(e.target.value)) {

@@ -71,3 +71,21 @@ export async function getAllAliens() {
 
     return outputData
 }
+
+export async function getAlienCount() {
+    const PUBLIC_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVxbmVnd2hxdnFrcXFva2ZlenhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTA4ODE0NTEsImV4cCI6MjAwNjQ1NzQ1MX0.t9fYQQ_KzxGr_FGU7JNtndiHLI3nGjRdINhbQbg11CY"
+
+    const options = {
+        auth: {
+            persistSession: false
+        }
+    }
+    const supabase = createClient('https://eqnegwhqvqkqqokfezxc.supabase.co', PUBLIC_KEY, options)
+
+    const { count } = await supabase
+        .from('Aliens')
+        .select('*', {count: 'exact', head: true})
+        .eq('viewable', true)
+
+    return count
+}
