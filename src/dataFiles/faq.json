@@ -1,0 +1,406 @@
+{
+    "aliens": {
+        "3": [
+            {
+                "question": "If a captured ship on a trauma card is removed by an effect like Ship Zap, what happens to the trauma card?",
+                "answer": "It is returned to Alien and placed in its essence card discard pile.",
+                "source": "2018 FAQ",
+                "notes": "",
+                "tags": []
+            }
+        ],
+        "4": [
+            {
+                "question": "Can Amoeba ooze all 20 ships into the hyperspace gate, or would they lose their power immediately upon reducing their home colonies to 2? What happens to the ships that were removed from home colony #3?",
+                "answer": "Amoeba may ooze all 20 ships, as the power happens all at once. Once all 20 have been moved, then yes, Amoeba would lose their power.",
+                "source": "2018 FAQ",
+                "notes": "",
+                "tags": []
+            },
+            {
+                "question": "If Amoeba Super oozes all of their ships out of an encounter as an ally, is Amoeba Super considered to have allied in the first place (for effects such as Grudge and Mutant Wild flare)?",
+                "answer": "Yes.",
+                "source": "2018 FAQ",
+                "notes": "Importantly, this does not answer whether or not they remain an ally",
+                "tags": []
+            },
+            {
+                "question": "Can a player use Amoeba Wild to increase their ship count if they have no ships as the defense?",
+                "answer": "Yes.",
+                "source": "2018 FAQ",
+                "notes": "",
+                "tags": []
+            }
+        ],
+        "21": [
+            {
+                "question": "What happens if one player reveals a Safegaurd or Intimidate when the other reveals an attack?",
+                "answer": "The Safeguard/Intimidate will turn into an attack card, and can affect Calculator's power.",
+                "source": "The Praw",
+                "notes": "Safeguards, whilst not printed or stated as such in Cosmic Odyssey, have been confirmed by designer Jack Reda to turn into attack cards if opposed by one, similar to Intimidate cards.",
+                "tags": []
+            }
+        ],
+        "23": [
+            {
+                "question": "If Changeling changes alien sheets with Pentaform, what swaps?",
+                "answer": "Pentaform and all lifestages move to the player using Changeling.",
+                "source": "2018 FAQ",
+                "notes": "In general, aliens like Pentaform, Reincarnator, etc. will consider their 'extra powers' to be facets of the main power.",
+                "tags": []
+            }
+        ],
+        "24": [
+            {
+                "question": "Does Chosen’s Super flare have to be played before or after they look at the cards they’ve drawn?",
+                "answer": "After.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "Can you Cosmic Zap Chosen after they’ve drawn cards, when you’ve seen what they want to play?",
+                "answer": "Yes.",
+                "source": "2018 FAQ",
+                "notes": "This ruling is dubious. Generally, an effect can be cancelled after the player has stated any target of the effect and any other significant choices for resolving the effect (e.g. Seeker's question), but before the effect begins to resolve or cause any alteration to the game state. In this case, the game state has changed significantly (cards being drawn from the deck) and a zap should not be possible - or if it was it should need further clarification about the state of the drawn cards which neithe the FAQ nor the Chosen's alien power provide.",
+                "tags": ["Contentious"]
+            }
+        ],
+        "25": [
+            {
+                "question": "Can a player replay a flare that was played in the original encounter during the planning phase or later?",
+                "answer": "No. A flare played that affects the outcome of the encounter is still considered to be played, and its effects are still active (e.g., Calculator Wild). If the new outcome alters the validity of the flare, it simply has no effect (e.g., Deuce Wild).",
+                "source": "2018 FAQ",
+                "tags": ["Contentious"], 
+                "notes": "This ruling isn't game-breaking by any means, but does seem to contradict a following ruling that allows alien powers to be used again even if they are \"once per encounter\" (meaning some once per encounter effects can be replayed but others can't be? Flares and Alien Powers are not necessarially equivalent, but it's strange they act differently here). It also goes against the spirit of the alien and especially the phrase from the power: \"The encounter is then replayed from the start of the planning phase\". Plus it could require a certain amount of memory to keep into account ongoing effects that are still in play that you usually wouldn't consider during the planning phase.\n\nYou can rule that these cards were never considered played and could be played again (if any flares changed hands they would need to be given back) and it shouldn't cause any more issues than this official ruling does."
+            },
+            {
+                "question": "What happens to tokens spent or cards discarded in the initial encounter with Chronos?",
+                "answer": "Tokens are spent, but all cards played from the Planning Phase on are returned to hand. Those played before are discarded.",
+                "source": "2018 FAQ",
+                "tags": [], 
+                "notes": "Tokens remaining discarded does feel against the spirit of the power like the first ruling, though the ruling here is comparatively much clearer from the text of the power. You could house rule otherwise if you'd like."
+            },
+            {
+                "question": "Is a kicker played in the first encounter still allowed in the repeat of the encounter?",
+                "answer": "Only the opponent’s encounter card is set aside. kickers may be reused in the replayed encounter.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "When Chronos declares time travel, does Deuce have to set aside both cards played?",
+                "answer": "Deuce’s second card does not count as an encounter card, so it returns to hand and may be replayed.",
+                "source": "2018 FAQ",
+                "tags": [],
+                "notes": "To be clear, Duece's played card is an encounter card, it's just not their revealed encounter card."
+            },
+            {
+                "question": "Do powers that happened at Planning or Reveal get to trigger again, like Sorcerer or Chosen?",
+                "answer": "Yes. Even though some alien powers say “once per encounter,” the encounter is being replayed from the start of the Planning Phase, so those aliens have an opportunity to replay their effects if they are used from Planning or later (even if they didn’t use an optional power the first time through).",
+                "source": "2018 FAQ",
+                "tags": ["Contentious"], 
+                "notes": "Seems contradictory with the first Chronos FAQ entry that disallows played flares to be used again, though there's a sound arguement that flares and powers shouldn't be correlated this way."
+            }
+        ],
+        "26": [
+            {
+                "question": "When using the Chrysalis Wild flare, what happens to the extra flare you draw each time at the end of the encounter (as well as when you have to draw again because of a Game Setup alien)?",
+                "answer": "They are removed from the game.",
+                "source": "2018 FAQ",
+                "tags": [], 
+                "notes": "Doesn't quite answer what happens if you choose not to transform into the alien, but safe to assume its removed from the game."
+            }
+        ],
+        "27": [
+            {
+                "question": "If the Citadel’s power is lost or discarded, are the citadels discarded or not?",
+                "answer": "The citadels remain in play if Citadel’s sheet is turned facedown, but if the sheet is discarded, the citadels are discarded as well.",
+                "source": "2018 FAQ",
+                "tags": []
+            }
+        ],
+        "28": [
+            {
+                "question": "Can a Negotiate card be chosen as the claw after the game setup?",
+                "answer": "No.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "What happens when The Claw’s last encounter card is taken (by a Finder artifact, for instance), and there’s no claw on the alien sheet?",
+                "answer": "The Claw chooses a new claw after drawing a new hand.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "If The Claw’s claw is a 12, and Mirror changes an attack 21 into a 12, does The Claw use its power? Likewise any other effect that changes the value of a card to the claw?",
+                "answer": "No. The card revealed must be a 12, not whatever game effect changes its value to a 12. Similarly, if an effect like The Cosmic Guardian changes an attack card into a negotiate, The Claw still uses its power when that attack card is revealed if it matches the claw.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "Does discarding a card trigger The Claw (for instance, when Hate uses its power)?",
+                "answer": "No. Playing a card (like a flare, reinforcement, artifact) does, and revealing an encounter card you have played (including Deuce’s second encounter card, and Cavalry’s encounter card as an ally) triggers The Claw.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "If the claw card is an attack 10 from the cosmic deck and a player reveals an attack 10 from the reward deck, does The Claw get to use its power?",
+                "answer": "Yes. The backs of the card don’t matter, only the face",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "If I play a card that matches The Claw’s claw card, but it is switched by Sorcerer, who loses their planet to The Claw?",
+                "answer": "The errata explains that whoever reveals the card is the target of The Claw’s power.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "What if both main player reveal copies of the claw card?",
+                "answer": "The Claw chooses which player is affected (but not both).",
+                "source": "2018 FAQ",
+                "tags": []
+            }
+        ],
+        "30": [
+            {
+                "question": "If Sorcerer switches cards, which card does Clone or Filch take?",
+                "answer": "Clone takes the card that ends the encounter in front of him, Filch takes the card that ends the encounter in front of their opponent.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "Do Clone, Filch, and Fido have any precedence over each other?",
+                "answer": "Clone does take precedence, while Filch and Fido are subject to the standard timing rules.",
+                "source": "2018 FAQ",
+                "tags": [],
+                "notes": "Clone triggers after the encounter is resolved, Fido and Filch trigger after encounter cards are discarded, hence why Clone takes precedence."
+            },
+            {
+                "question": "Clone Super flare uses the phrase “up to.” Does this mean Clone can choose any number between the regular compensation amount and double that?",
+                "answer": "Yes.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "Does Clone get to also keep a kicker played?",
+                "answer": "No.",
+                "source": "2018 FAQ",
+                "tags": []
+            }
+        ],
+        "31": [
+            {
+                "question": "Can the Converter use their power to draw a card during the regroup phase even if he has no ships in the warp.",
+                "answer": "No, because he would not be retrieving any ships.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "What does “ships saved during an encounter” refer to?",
+                "answer": "Any ships Converter saves through power use during a player’s encounter (from regroup to resolution).",
+                "source": "2018 FAQ",
+                "tags": ["Contentious"],
+                "notes": "The last part stating \"from regroup to resolution\" is an odd inclusion. After all, the power can still be ***used*** on ships sent to the warp during the Start Turn phase (e.g. via Hate's power), so this is forming an undefined situation. It is much clearer to rule that the second sentence is referring to any ships saved by Converter, regardless of what phase the game is in."
+            }
+        ],
+        "35": [
+            {
+                "question": "Can Mind look at Miser’s hoard or Cryo’s stored hand?",
+                "answer": "No, but AI can.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "When using the Cryo Super flare, can both of its effects be used in the same encounter?",
+                "answer": "Yes. You must do so in the order listed on the flare.",
+                "source": "2018 FAQ",
+                "tags": []
+            }
+        ],
+        "38": [
+            {
+                "question": "What happens when The Cult faces off against Warhawk?",
+                "answer": "The encounter cards ultimately end on a value of Attack 00.",
+                "source": "2018 FAQ",
+                "tags": ["Contentious"],
+                "notes": "The word 'ultimately' here, alongside the Warhawk errata, are both misleading. Both imply (or state) that Warhawk and The Cult (and Bleeding Heart) can cause an infinite loop. But, following the FAQ ruling that each power is only \"usable once per relevant context,\" this shouldn't be possible.\n\nNow this leads to two different interpretations: if 'usable' is refering only to an alien's ***use***, then Bleeding Heart and The Cult override Warhawk, since the former's changes to card types are not reliant on power ***use*** whereas Warhawk is. However, if the FAQ ruling is talking more generally about any power effect, then Warhawk would trump the other two; Bleeding Heart and The Cult use the word 'becomes' which matches that on Retreats, Safeguards, etc. implying that it occurs before any powers trigger (like Warhawk), so Warhawk would trigger later.\n\nIf you find yourself in a game with The Cult and Warhawk, best to hash out which interpretaion your group will use before game start."
+            }
+        ],
+        "43": [
+            {
+                "question": "If Deuce only has two encounter cards, does Magician have any effect?",
+                "answer": "Magician forces Deuce to play two encounter cards (before encounter cards are selected). At that point, Deuce has selected an encounter card, but Deuce’s power kicks in “after cards are selected,” and would either end their turn as offense, or as defense, draw a new hand, and then play a second card normally.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "Can Deuce play two Morphs without triggering the automatic loss?",
+                "answer": "Yes. The Morphs are not copying each other.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "Can Deuce play a kicker on their second encounter card?",
+                "answer": "No, Deuce can play only one kicker and it affects whichever card ends up being their encounter card (i.e., if the second card is a negotiate, it replaces the first card, and the kicker then affects it).",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "When Chronos declares time travel, does Deuce have to set aside both cards played?",
+                "answer": "Deuce’s second card does not count as an encounter card, so it returns to hand and may be replayed.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "If Loser calls an upset, does Deuce’s second card have to be an attack card?",
+                "answer": "No.",
+                "source": "2018 FAQ",
+                "tags": []
+            }
+        ],
+        "45": [
+            {
+                "question": "In a three-way deal, can one player end up gaining a foreign colony from each of the other players?",
+                "answer": "No. Unless an effect like Negotiate: Epic Oratory is involved, each player in any deal can gain at most one foreign colony.",
+                "source": "2018 FAQ",
+                "tags": []
+            }
+        ],
+        "48": [
+            {
+                "question": "Can Empath turn an attack card into a Crooked Deal negotiate (or other special negotiate)?",
+                "answer": "No. But Empath’s ability works if either main player reveals a special negotiate.",
+                "source": "2018 FAQ",
+                "tags": []
+            }
+        ],
+        "50": [
+            {
+                "question": "Can I count the ships in the warp researching Gluon Mines or Tech Scrambler towards their effect.",
+                "answer": "Yes, since they specify 'the number of ships researching this tech'.",
+                "source": "The Praw",
+                "tags": []
+            },
+            {
+                "question": "Can I count the ships in the warp researching Haz-Techs towards their effects.",
+                "answer": "No, since they specify 'the number of ships on this tech' instead of 'researching this tech'.",
+                "source": "The Praw",
+                "tags": []
+            },
+            {
+                "question": "How does Engineer interact with the new Mili-Tech and Haz-Tech types from Cosmic Odyssey?",
+                "answer": "In no special way. Neither tech type has any interaction with Engineer; the ships in the warp cannot help with researching Mili-Techs, and the effects of Haz-Techs are only modifed by the number of ships on the card (not the number of ships researching like for Gluon Mines or Tech Scrambler, see above).",
+                "source": "The Praw",
+                "tags": []
+            },
+            {
+                "question": "Can Engineer trade the tech card on their alien sheet?",
+                "answer": "No.",
+                "source": "The Praw",
+                "tags": [],
+                "notes": "Though you may like to house rule that otherwise as a neat buff for Engineer."
+            },
+            {
+                "question": "If Engineer completes the tech on their sheet that says to draw another tech upon completion, do they?",
+                "answer": "If the Technology variant is in play normally, yes; otherwise, no.",
+                "source": "The Praw",
+                "tags": []
+            }
+        ],
+        "51": [
+            {
+                "question": "Does Ionic Gas stop Ethic from collecting compensation as part of its power?",
+                "answer": "Yes.",
+                "source": "2018 FAQ",
+                "tags": []
+            }
+        ],
+        "52": [
+            {
+                "question": "Which (if any) of the essence card in Cosmic Odyssey count as 'essence card penalties'?",
+                "answer": "The Witch's curses count; all other essence cards in Cosmic Odyssey are never given to other players so cannot be passed on via Evil Twin's power.",
+                "source": "The Praw",
+                "tags": []
+            },
+            {
+                "question": "What does it mean to be given an essence card exactly?",
+                "answer": "Any essence card that is placed faceup or facedown in front of them is considered 'given' to them.",
+                "source": "The Praw",
+                "tags": []
+            },
+            {
+                "question": "How does Evil Twin interact with Alien's essence cards?",
+                "answer": "When Alien ***uses*** their power to capture one of Evil Twin's ship, it is resolved with no interference from Evil Twin. When Alien ***uses*** their power to release Evil Twin's ship, the trauma is then given to the Good Twin, and kept until the Good Twin next becomes a main player and reveals an encounter card.",
+                "source": "The Praw",
+                "tags": []
+            },
+            {
+                "question": "Can the good twin be given multple essence card penalties from an alien even if it bypasses limits (such as Witch's one curse per player limit)?",
+                "answer": "No.",
+                "source": "The Praw",
+                "tags": ["Contentious"],
+                "notes": "This question has no clear answer; the one provided is this site's best guess."
+            },
+            {
+                "question": "If the Evil Twin needs to discard or give a player a specific card (such as through Angler's power, or a wild flare to be given to its alien), what happens?",
+                "answer": "If the Good Twin has an exact copy of that card, they must give it away/discard it to the correct recipient. Otherwise, the Evil Twin must suffer the penalty.",
+                "source": "The Praw",
+                "tags": ["Contentious"],
+                "notes": "This question has no clear answer; the one provided is this site's best guess."
+            },
+            {
+                "question": "If the Evil Twin is out of encounter cards and needs to discard their old hand, what happens?",
+                "answer": "The Good Twin discards a number of cards equal to the cards the Evil Twin has in their hand (or their whole hand if the Good Twin has fewer cards), then the Evil Twin draws 8 cards.",
+                "source": "The Praw",
+                "tags": ["Contentious"],
+                "notes": "This question has no clear answer; the one provided is this site's best guess."
+            }
+        ],
+        "53": [
+            {
+                "question": "When playing the four-planet variant, does Explorer start with only three planets on its sheet?",
+                "answer": "No, explorer always starts with four planets.",
+                "source": "2018 FAQ",
+                "tags": []
+            }
+        ],
+        "55": [
+            {
+                "question": "Can Fido pick from any encounter cards discarded in the encounter (such as those lost by the Plague), or must they pick from the ones that were actually played?",
+                "answer": "Fido must pick from the cards actually played. For example, Fido may not take Deuce’s second encounter card, or any cards discarded by Fodder or Reserve that were played due to power use.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "Do Clone, Filch, and Fido have any precedence over each other?",
+                "answer": "Clone does keep, Filch and Fido are subject to the standard timing rules.",
+                "source": "2018 FAQ",
+                "tags": [],
+                "notes": "Clone triggers after the encounter is resolved, Fido and Filch trigger after encounter cards are discarded, hence why Clone takes precedence."
+            },
+            {
+                "question": "Can Fido take discarded encounter cards that originated from the reward deck?",
+                "answer": "Yes.",
+                "source": "2018 FAQ",
+                "tags": []
+            }
+        ],
+        "69": [
+            {
+                "question": "When can I zap Greenhorn?",
+                "answer": "Only when its power is used to ask another player a question about a card in hand.",
+                "source": "The Praw",
+                "tags": [], 
+                "notes": "Greenhorn, like any power, can only be zapped the moment it is ***used***."
+            },
+            {
+                "question": "How do I cancel the rest of Greenhorn's power with a Cosmic Zap?",
+                "answer": "If the power is zapped when they ask their question, none of the other aspects of the Greenhorn power can be utilised for the rest of the encounter.",
+                "source": "The Praw",
+                "tags": [],
+                "notes": "This is a contradiction with other rulings in the official FAQ, but it's how the power was designed."
+            }
+        ]
+    }
+}
