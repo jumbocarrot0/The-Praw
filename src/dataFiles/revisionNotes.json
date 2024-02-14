@@ -46,5 +46,274 @@
     },
     "15": {
         "0": {"note": "Edited for punctuation.", "author": "Cosmodex"}
+    },
+    "16": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "17": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to clarify that Super Brute forces each player to send one of his own ships to the warp.", "author": "Cosmodex"}
+    },
+    "18": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to avoid suggesting that Bully increases the number of ships going to the warp.", "author": "Cosmodex"},
+        "2": {"note": "Edited to fix the \"coexistence bug\" that implies Bully overrides effects such as Filth.", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify that Wild Bully gives the opponent a choice between two options.", "author": "Cosmodex"},
+        "4": {"note": "Edited to prevent the opponent of wild bully from choosing ships that they will lose anyways.", "author": "Cosmodex"}
+    },
+    "19": {
+        "0": {"note": "Edited for wording consistency, and to remove the implication the flare can be played multiple times per encounter.", "author": "Cosmodex"}
+    },
+    "20": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to place actions in chronological order, and for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to make power work correctly when the targetted system is not the defense's.", "author": "Cosmodex"},
+        "3": {"note": "Edited for wording consistency", "author": "Cosmodex"},
+        "4": {"note": "Edited to prevent Wild Butler from letting a player ally against themselves, or if they otherwise couldn't.", "author": "Cosmodex"},
+        "5": {"note": "Edited to eliminate confusion about play \"resuming where it left off\" when the usual rules can apply as normal.", "author": "Cosmodex"},
+        "6": {"note": "Edited to clarify that the new offense's outcome affects if the original offense may continue their turn.", "author": "Cosmodex"}
+    },
+    "21": {
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify the power has no effect when the revealed cards have equal value.", "author": "Cosmodex"},
+        "3": {"note": "Edited for consistency between the example and how attack cards are formatted.", "author": "Cosmodex"}
+    },
+    "22": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to remove potentially confusing references to 'your second card', even though it is the only card Cavalry has played.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "4": {"note": "Edited to clarify the ally affected by Super Cavalry follows the power's timing.", "author": "Cosmodex"}
+    },
+    "23": {
+        "1": {"note": "Edited to correctly refer to the Warrior's 'tokens' (points is terminology used in previous editions).", "author": "Cosmodex"},
+        "2": {"note": "Edited to correctly capitalise the 'The' in 'The Claw'.", "author": "Cosmodex"},
+        "3": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "24": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to remove part of the alien history that is now relevant due to the power's changes since Mayfair.", "author": "Cosmodex"}
+    },
+    "25": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "2": {"note": "Edited for missing punctuation.", "author": "Cosmodex"},
+        "3": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "4": {"note": "Edited to remove the implication Super Chronos forces Chronos to change their encounter card.", "author": "Cosmodex"}
+    },
+    "26": {
+        "1": {"note": "Edited to avoid any implication that the power's use is optional.", "author": "Cosmodex"},
+        "2": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to ensure the unused flares are not discarded into the cosmic deck discard pile.", "author": "Cosmodex"},
+        "4": {"note": "Edited to clarify how \"transform\" works", "author": "Cosmodex"},
+        "5": {"note": "Edited for readability, placing the choice to transform or not transform after any redraws.", "author": "The Praw"},
+        "6": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "7": {"note": "Edited to implement the FAQ ruling that the drawn flare is removed from the game.", "author": "Cosmodex"}
+    },
+    "27": {
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify the power is once per encounter, not once per turn.", "author": "Cosmodex"},
+        "3": {"note": "Edited to define what happens to Citadel if the defense neither wins nor loses.", "author": "Cosmodex"},
+        "4": {"note": "Edited to give a clearer exit condition for citadels.", "author": "Cosmodex"}
+    },
+    "28": {
+        "1": {"note": "Edited for consistency and brevity (to fit other corrections).", "author": "Cosmodex"},
+        "2": {"note": "Edited to implement errata.", "author": "Cosmodex & 2018 FAQ"},
+        "3": {"note": "Edited for clarity", "author": "Cosmodex"},
+        "4": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"}
+    },
+    "29": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"}
+    },
+    "30": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to implement the FAQ ruling.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid the implication the flare can be played multiple times per encounter.", "author": "Cosmodex"},
+        "4": {"note": "Edited for capitalisation.", "author": "Cosmodex"}
+    },
+    "31": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to clarify that this phrase only applies to ships saved through Converter's power.", "author": "The Praw"}
+    },
+    "32": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "33": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to match short on alien sheet with that of the flare.", "author": "Cosmodex"},
+        "2": {"note": "Edited for grammar.", "author": "Cosmodex"}
+    },
+    "34": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for correct wording that prevents crushed ships from being released upon zaps.", "author": "Cosmodex"}
+    },
+    "35": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid implying this effect is mandatory.", "author": "Cosmodex"},
+        "3": {"note": "Edited to remove a typo.", "author": "Cosmodex"},
+        "4": {"note": "Edited for spelling.", "author": "Cosmodex"},
+        "5": {"note": "Edited to fix the timing icon.", "author": "Cosmodex"}
+    },
+    "36": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"}
+    },
+    "37": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid the implication the flare can be played multiple times per encounter.", "author": "Cosmodex"}
+    },
+    "39": {
+        "1": {"note": "Edited to recast card replenishing at the start of the encounter, to patch some edge-case undefined situations and for better clarity.", "author": "Cosmodex"},
+        "2": {"note": "Edited to reduce ambiguity.", "author": "Cosmodex"},
+        "3": {"note": "Edited to remove and reword unecessary (and broken) text about dealing with cards after use, which works incorrect with flares that are given to other players after use and other edge-case scenarios.", "author": "Cosmodex"},
+        "4": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "5": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "6": {"note": "Edited to fix Super Cyborg not being played (only revealed) and increase utility when on Cyborg's sheet.", "author": "Cosmodex"}
+    },
+    "40": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to fix a typo in the super flare.", "author": "Cosmodex"}
+    },
+    "41": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "42": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "43": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify that Wild Deuce allows discarding a card only from your hand.", "author": "Cosmodex"}
+    },
+    "44": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "45": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "46": {
+        "1": {"note": "Edited for better theming (how would a disease infect a player who is already infected?).", "author": "Cosmodex"},
+        "2": {"note": "Edited to remove ambiguity regarding the power's prerequisite (one colony with 3+ ships vs. 3+ ships across one or more colonies).", "author": "Cosmodex"},
+        "3": {"note": "Edited to fix the \"coexistence bug\" that implies Disease overrides effects such as Filth.", "author": "Cosmodex"},
+        "4": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "5": {"note": "Edited to clarify Disease cannot infect itself on a wild destiny.", "author": "Cosmodex"},
+        "6": {"note": "Edited to remove misuse of the term \"reveal\".", "author": "Cosmodex"},
+        "7": {"note": "Edited to clarify super disease does not allow moving other players' ships.", "author": "Cosmodex"}
+    },
+    "47": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "48": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to clarify that Empath can trigger off special negotiates, but can only turn cards into regular negotiates.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "4": {"note": "Edited to remove the ability for Masochist, Lemming, etc. to abuse the classic flare.", "author": "Cosmodex"}
+    },
+    "49": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "50": {
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"}
+    },
+    "51": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "3": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "4": {"note": "Edited to restore the original alien's history (which was presumably edited during production by someone who mistakenly thought it was a typo).", "author": "Cosmodex"}
+    },
+    "52": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to use the correct name of Nightmare's essence cards.", "author": "Cosmodex"}
+    },
+    "54": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to restore Eon's approach of taking the cards after the other player has collected them rather than the leaky method of trying to acquire cards instead of the other player.", "author": "Cosmodex"},
+        "2": {"note": "Edited to prevent Extortionist from affecting cards draws from effects like Miser or Chrysalis; gaining new tech, etc..", "author": "Cosmodex"},
+        "4": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "5": {"note": "Edited to recast Super Extortionist for readability and removal of the old Eon reference to a Lucre \"payment.\"", "author": "Cosmodex"}
+    },
+    "55": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to clarify that Fido discards any cards that were refused but Fido does not keep.", "author": "Cosmodex"},
+        "2": {"note": "Edited for grammar and wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to resolve the contradiction between \"you may\" and \"either\" that imply Fido's reward is optional or mandatory.", "author": "Cosmodex"},
+        "4": {"note": "Edited to clarify the scope of the power as defined in the FAQ.", "author": "Cosmodex"},
+        "5": {"note": "Edited to remove the ambiguous requirement of \"several encouner cards\" being discarded when it just means more than one.", "author": "Cosmodex"}
+    },
+    "56": {
+        "1": {"note": "Edited to implement the FAQ ruling.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to remove the implication that all artifacts and flares have an intended victim.", "author": "Cosmodex"},
+        "4": {"note": "Edited to clarify that super filch cannot let Filch take more than one card.", "author": "Cosmodex"},
+        "5": {"note": "Edited for spelling.", "author": "Cosmodex"},
+        "6": {"note": "Edited super classic filch to match timing with standard flare.", "author": "Cosmodex"}
+    },
+    "57": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to to clarify the reciprocal use of \"allies.\"", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid referring to a foreign planet as \"your\" planet.", "author": "Cosmodex"},
+        "4": {"note": "Edited to fix the incorrect implication that all colony trades involve colonies from both players (as written, Filth technically requires both to vacate planets even if only one colony is being granted), and to more safely attach this requirement to the actual trade itself rather than to the initial agreement (which could cause planets to be vacated too soon if something happens to alter or cancel the deal).", "author": "Cosmodex"},
+        "5": {"note": "Edited for spelling consistency (all other powers that mention life forms spell it as two words).", "author": "Cosmodex"},
+        "6": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "7": {"note": "Edited to remove unecessary rules clarification.", "author": "Cosmodex"}
+    },
+    "58": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for correct wording that prevents crushed ships from being released upon zaps.", "author": "Cosmodex"}
+    },
+    "59": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify Wild Fodder does not allow one to join a side their were not invited to.", "author": "Cosmodex"},
+        "3": {"note": "Edited to resolve Super Fodder's ambiguity.", "author": "Cosmodex"}
+    },
+    "60": {
+        "1": {"note": "Edited for wording consistency (with other game effects and between Fungus and super Fungus).", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify interaction with game effects like Anti-Matter and Virus", "author": "Cosmodex"},
+        "3": {"note": "Edited to prevent ships from wild Fungus being captures forever when the flare is not discarded.", "author": "Cosmodex"},
+        "4": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "5": {"note": "Edited to fix timing icons.", "author": "Cosmodex"},
+        "6": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "7": {"note": "Edited to clarify interaction with power stealing effects (e.g. Plant).", "author": "Cosmodex"}
+    },
+    "61": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "3": {"note": "Edited to elimate redundant text.", "author": "Cosmodex"},
+        "4": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "5": {"note": "Edited to change the super flare from saying 'use your power' in a contexted the power is not actually ***used***.", "author": "Cosmodex"}
+    },
+    "62": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to resolve what happens with an unchallenged reward-back card.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency and grammar", "author": "Cosmodex"},
+        "3": {"note": "Edited to implement FAQ ruling on Oracle.", "author": "Cosmodex"},
+        "4": {"note": "Edited to eliminate trying to calculate a \"spread\" with negotiate cards.", "author": "Cosmodex"},
+        "5": {"note": "Edited to clarify Super Gambler's ambiguity, and eliminate the old wording from previous editions.", "author": "Cosmodex"},
+        "6": {"note": "Edited to eliminate the Sorcer + Gambler conflict.", "author": "Cosmodex"}
+    },
+    "63": {
+        "1": {"note": "Edited for clarity.", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify wild General makes the player draw cards, not their allies (\"rally the troops to...\" implies its making 'the troops' do something).", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "4": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "64": {
+        "1": {"note": "Edited for spelling and wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited for clarity.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"}
+    },
+    "65": {
+        "1": {"note": "Edited for consistent terminology - specifically to simplify rewards vs defender rewards.", "author": "Cosmodex"},
+        "2": {"note": "Edited to remove redundent rules-on-a-card clarification (especially since its insufficient with the rewards deck in play).", "author": "Cosmodex"},
+        "3": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "4": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "5": {"note": "Edited to clarify the conditions of super Ghoul match the base power.", "author": "Cosmodex"},
+        "6": {"note": "Edited for grammar and capitalisation.", "author": "Cosmodex"}
     }
 }
