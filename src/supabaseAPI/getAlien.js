@@ -1,6 +1,7 @@
 import { createClient } from "@supabase/supabase-js"
 import Revisions from "../dataFiles/revisions.json"
 import RevisionNotes from "../dataFiles/revisionNotes.json"
+import faq from "../dataFiles/faq.json"
 
 export async function getRandomAlien() {
     const PUBLIC_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVxbmVnd2hxdnFrcXFva2ZlenhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTA4ODE0NTEsImV4cCI6MjAwNjQ1NzQ1MX0.t9fYQQ_KzxGr_FGU7JNtndiHLI3nGjRdINhbQbg11CY"
@@ -38,24 +39,29 @@ export async function getAlien(index) {
         .limit(1)
         .single()
 
-    for (const field of ['powerBody', 'wildBody', 'superBody', 'history', "gameSetup"].filter(field => data.original[field] ? true : false)) {
+    console.log(data.original)
+
+    const fields = ['powerName', 'short', 'powerBody', 'wildBody', 'superBody', 'wildClassicBody', 'superClassicBody', 'history', "gameSetup", "bans"].filter(field => Object.keys(data.original).includes(field))
+    // console.log(fields)
+    for (const field of fields) {
         data.original[field] = [{ value: data.original[field], style: {} }]
         if (Revisions[index] && Revisions[index][field]) {
             data.original[field] = Revisions[index][field]
             if (RevisionNotes[index]) {
-                data.original[field].map((revision, i) => {
+                data.original[field].forEach((revision, i) => {
                     Revisions[index][field][i].revisionNote = RevisionNotes[index][revision?.revisionID]
                 })
             }
         }
     }
-    for (const field of ['powerTiming', 'wildTiming', 'superTiming']) {
+    const timingFields = ['powerTiming', 'wildTiming', 'superTiming', 'wildClassicTiming', 'superClassicTiming'].filter(field => Object.keys(data.original).includes(field))
+    for (const field of timingFields) {
         if (Revisions[index] && Revisions[index][field]){
             for (const timing_field of ['player', 'choice', 'phases']) {
                 if (Revisions[index][field][timing_field]){
                     data.original[field][timing_field] = Revisions[index][field][timing_field]
                     if (RevisionNotes[index]) {
-                        data.original[field][timing_field].map((revision, i) => {
+                        data.original[field][timing_field].forEach((revision, i) => {
                             Revisions[index][field][timing_field][i].revisionNote = RevisionNotes[index][revision?.revisionID]
                         })
                     }
@@ -77,7 +83,13 @@ export async function getAlien(index) {
         data.original.versions = ["original"]
     }
 
-    console.log(data.original)
+    if (faq.aliens[index]){
+        data.original.faq = faq.aliens[index]
+    } else {
+        data.original.faq = []
+    }
+
+    // console.log(data.original)
 
     return data.original
 }
