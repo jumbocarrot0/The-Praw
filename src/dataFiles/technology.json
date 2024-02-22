@@ -714,7 +714,7 @@
             "original": {
                 "name": "Power Radiant",
                 "refresh": true,
-                "short": "Zap Powers with Falres.",
+                "short": "Zap Powers with Flares.",
                 "body": "You may discard an alien's flare to cancel one use of that alien's power. That power cannot be used again during this encounter. (This is not treated as a Cosmic Zap.)",
                 "cost": "3",
                 "type": "Tech",
