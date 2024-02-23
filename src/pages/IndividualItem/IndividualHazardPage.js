@@ -36,9 +36,9 @@ export default function IndividualHazardPage() {
           <span>
             <h1 className='text-light d-inline'>{hazard[tab].name}</h1> <h3 className='text-light d-inline'>({hazard[tab].expansion})</h3>
           </span>
-          {hazard.type === "AltHazard" ? <p><strong>Offense: </strong>{hazard[tab].body}<br /><br /><strong>Others: </strong>{hazard[tab].body2}</p> :
+          {hazard[tab].type === "AltHazard" ? <p><strong>Offense: </strong>{hazard[tab].body}<br /><br /><strong>Others: </strong>{hazard[tab].body2}</p> :
             <p>{hazard[tab].body}</p>}
-          {hazard.type === "Permanent" ? <p><strong className='text-danger'>
+          {hazard[tab].type === "Permanent" ? <p><strong className='text-danger'>
             (
             <span className='text-decoration-underline'>
               <span className="text-light">This Card Remains in Play</span>
@@ -51,7 +51,7 @@ export default function IndividualHazardPage() {
                 <span className="text-light">Semi-Permanent</span>
               </span>
               )
-            </strong></p> : null}
+            </strong></p> : <></>}
           <br />
 
 
@@ -61,7 +61,7 @@ export default function IndividualHazardPage() {
                 <p className="text-dark">{hazard[tab].revisionNotes}</p>
               </CardBody>
             </Card>
-          ) : null}
+          ) : <></>}
 
         </CardBody>
       </Card>
