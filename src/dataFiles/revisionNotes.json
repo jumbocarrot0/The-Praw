@@ -315,5 +315,136 @@
         "4": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
         "5": {"note": "Edited to clarify the conditions of super Ghoul match the base power.", "author": "Cosmodex"},
         "6": {"note": "Edited for grammar and capitalisation.", "author": "Cosmodex"}
+    },
+    "66": {
+        "1": {"note": "Edited to clarify Glutton's power only activates when retrieving their own ships.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"}
+    },
+    "67": {
+        "1": {"note": "Edited to prevent opponents from exploiting Gorgon to their benefit & to account for capturing and eradication.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "4": {"note": "Edited use language from Wild Healer, which this effect mimics.", "author": "Cosmodex"}
+    },
+    "68": {
+        "1": {"note": "Edited for wording consistency and grammar.", "author": "Cosmodex"},
+        "2": {"note": "Edited for consistency with attack cards.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "4": {"note": "Edited to change the example to use a real card.", "author": "Cosmodex"},
+        "5": {"note": "Edited to clarify the flare's timing.", "author": "Cosmodex"},
+        "6": {"note": "Edited to fix the super's timing bar.", "author": "Cosmodex"}
+    },
+    "69": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "70": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to clarify if Grudge neither wins, loses nor makes a deal.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to remove the implication that successful deals count as a win, or failed deals count as a loss.", "author": "The Praw"}
+    },
+    "71": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "72": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify what happens to other ships on the blown up planet.", "author": "Cosmodex"},
+        "4": {"note": "Edited to prevent the flare being used to blow up planets in a foreign system.", "author": "Cosmodex"},
+        "5": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"}
+    },
+    "73": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to remove ambiguity about whether Hacker can return a card they took from their opponent or not.", "author": "Cosmodex"}
+    },
+    "74": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to implement FAQ clarification.", "author": "Cosmodex"},
+        "2": {"note": "Edited for clarity.", "author": "Cosmodex"},
+        "3": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "75": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "3": {"note": "Edited for clarity.", "author": "Cosmodex"},
+        "4": {"note": "Edited to remove Healer's ability to heal ships removed from the game. This makes the alien play better with powers like Void & Remote.", "author": "Cosmodex"},
+        "5": {"note": "Edited to make the healing optional; making Masochist playable with Healer and giving slightly more power to aliens like Warpish.", "author": "Cosmodex"}
+    },
+    "76": {
+        "1": {"note": "Edited to prevent the power from firing off draws from the destiny, hazard, etc. deck.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to fix interactions with wild Schizoid and similar effects.", "author": "Cosmodex"},
+        "4": {"note": "Edited to clarify interactions with non-standard ships.", "author": "Cosmodex"},
+        "5": {"note": "Edited to clarify what happens if a bonus wild Horde ship is captured.", "author": "Cosmodex"},
+        "6": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"}
+    },
+    "78": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "80": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"}
+    },
+    "81": {
+        "1": {"note": "Edited to remove redundancy.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "3": {"note": "Edited to fix the timing bar.", "author": "Cosmodex"}
+    },
+    "82": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to avoid implying Invader can choose not to have an Invasion! encounter.", "author": "Cosmodex"},
+        "2": {"note": "Edited to remove the implication that the Invasion encounter gives the offense an additional encounter (for effects that care about that, e.g. the replacement encounter for the player's first one could be considered their second).", "author": "Cosmodex"},
+        "3": {"note": "Edited for grammar, capitalisation and wording consistency.", "author": "Cosmodex"},
+        "4": {"note": "Edited to resolve ambiguity of Invader ***using*** their power when drawing their own color.", "author": "Cosmodex"},
+        "5": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "6": {"note": "Edited to remove redundant text (which could also be rules lawyered if the ships do indeed need to be sent to the warp for an effect like Guerilla).", "author": "Cosmodex"}
+    },
+    "83": {
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"}
+    },
+    "85": {
+        "1": {"note": "Edited to remove redundancy.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid the implication the flare can be played multiple times per encounter.", "author": "Cosmodex"},
+        "3": {"note": "Edited for spelling consistency.", "author": "Cosmodex"}
+    },
+    "86": {
+        "1": {"note": "Edited to clarify design intent.", "author": "Cosmodex"},
+        "2": {"note": "Edited to add non-imperial measurements for inclusivity. (For those not maths oriented, 1ft/30cm is about the length of a forearm, but that's hard to describe in context of height.)", "author": "Cosmodex"}
+    },
+    "87": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "88": {
+        "1": {"note": "Edited to clarify design intent that the worldship is sent instead of launching ships normally.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid the implication the flare can be played multiple times per encounter.", "author": "Cosmodex"},
+        "4": {"note": "Edited to remove language implying the super is playable when you are not a main player.", "author": "Cosmodex"},
+        "5": {"note": "Edited for clarity.", "author": "Cosmodex"}
+    },
+    "89": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for terminology.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid the implication the flare can be played multiple times per encounter.", "author": "Cosmodex"},
+        "3": {"note": "Edited for clarity.", "author": "Cosmodex"},
+        "4": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "5": {"note": "Edited for consistent spelling.", "author": "Cosmodex"}
+    },
+    "91": {
+        "1": {"note": "Edited for clarity and grammar.", "author": "Cosmodex"},
+        "2": {"note": "Edited for consistency.", "author": "Cosmodex"}
+    },
+    "92": {
+        "1": {"note": "Edited for clarity and consistency.", "author": "Cosmodex"}
+    },
+    "93": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify Love takes the discarded cards.", "author": "Cosmodex"},
+        "3": {"note": "Edited to use more inclusive and clear language. (Maternalistic means \"mother-like\", which has some dated conotations, while paternalistic is simply \"parent-like\", plus is less likely to be misread as \"materialistic\".)", "author": "Cosmodex"}
     }
 }
