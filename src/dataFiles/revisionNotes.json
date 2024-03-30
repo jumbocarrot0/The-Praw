@@ -446,5 +446,89 @@
         "1": {"note": "Edited for grammar.", "author": "Cosmodex"},
         "2": {"note": "Edited to clarify Love takes the discarded cards.", "author": "Cosmodex"},
         "3": {"note": "Edited to use more inclusive and clear language. (Maternalistic means \"mother-like\", which has some dated conotations, while paternalistic is simply \"parent-like\", plus is less likely to be misread as \"materialistic\".)", "author": "Cosmodex"}
+    },
+    "94": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to let Lunatic wild draw from the reward dedk.", "author": "Cosmodex and FAQ"}
+    },
+    "95": {
+        "1": {"note": "Edited to make power work even if the encounter wasn't completed.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex and FAQ"},
+        "3": {"note": "Edited to include FAQ clarifications.", "author": "Cosmodex and FAQ"}
+    },
+    "96": {
+        "1": {"note": "Edited for brevity.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex and FAQ"},
+        "3": {"note": "Edited to clarify interactions with effects like Anti-Matter.", "author": "Cosmodex and FAQ"},
+        "4": {"note": "Edited to use language consistent with an effect that can be used by an ally.", "author": "Cosmodex and FAQ"},
+        "5": {"note": "Edited to add the community suggestion that Macron cannot be zapped during reveal.", "author": "The Praw"},
+        "6": {"note": "Edited to add the community suggestion that Macron can send up to two ships instead of one.", "author": "The Praw"},
+        "7": {"note": "Edited to add missing timing icon on super.", "author": "Cosmodex and FAQ"}
+    },
+    "97": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency and clarity.", "author": "Cosmodex"},
+        "2": {"note": "Edited to make power compatible with Oracle and Wild Magician (among other effects).", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "4": {"note": "Edited for inclusivity. This change is a bit subjective and far more pedantic, as it refers to not a player but an in-universe alien (that is a victim to the Magicians' antics).", "author": "The Praw"}
+    },
+    "98": {
+        "1": {"note": "Edited for wording consistency and clarity.", "author": "Cosmodex"},
+        "2": {"note": "Edited to prevent wild flare blocking the offense launching if their ships are blocked via some other method (e.g. Gorgon).", "author": "Cosmodex"},
+        "3": {"note": "Edited to add the restriction with Healer (which can nullify Masochost completely, if unchanged).", "author": "Cosmodex"}
+    },
+    "99": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "100": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "101": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to make power work as expected when hired ships are captured.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"}
+    },
+    "103": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "104": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid the implication the flare can be played multiple times per encounter.", "author": "Cosmodex"},
+        "3": {"note": "Edited to fix incorrect timing icons.", "author": "Cosmodex and FFG"}
+    },
+    "105": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "106": {
+        "1": {"note": "Edited to clarify Mirror only affects the main players' attack cards (not any revealed in some other way, e.g. Deuce).", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency with the power.", "author": "Cosmodex"},
+        "3": {"note": "Edited to remove redundancy.", "author": "Cosmodex"}
+    },
+    "107": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited for clarity.", "author": "Cosmodex"},
+        "3": {"note": "Edited for punctuation.", "author": "Cosmodex"},
+        "4": {"note": "Edited to avoid misusing the term \"reveal\".", "author": "Cosmodex"}
+    },
+    "108": {
+        "0": {"note": "Edited for inclusivity (and grammar).", "author": "The Praw"},
+        "1": {"note": "Edited for clarity (and to avoid the power being used too early).", "author": "Cosmodex"},
+        "2": {"note": "Edited to fix the \"coexistence bug\" that implies Mite overrides effects such as Filth.", "author": "Cosmodex"},
+        "3": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "4": {"note": "Edited to use better wording (\"omnipresence\" indicates a single entity being everywhere at once; \"ubiquity\" indicates many individual instances of something being found in a majority of locations).", "author": "Cosmodex"}
+    },
+    "109": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "110": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "111": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "112": {
+        "1": {"note": "Edited to remove redundancy.", "author": "Cosmodex"}
     }
 }
