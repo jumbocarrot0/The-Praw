@@ -41,10 +41,14 @@ export async function getAlien(index) {
 
     console.log(data.original)
 
-    const fields = ['powerName', 'short', 'powerBody', 'wildBody', 'superBody', 'wildClassicBody', 'superClassicBody', 'history', "gameSetup", "bans"].filter(field => Object.keys(data.original).includes(field))
+    const fields = ['powerName', 'short', 'powerBody', 'wildBody', 'superBody', 'wildClassicBody', 'superClassicBody', 'history', "gameSetup", "bans"].filter(field => Object.keys(data.original).includes(field) || field === "bans")
     // console.log(fields)
     for (const field of fields) {
-        data.original[field] = [{ value: data.original[field], style: {} }]
+        if (field === "bans") {
+            data.original[field] = Object.keys(data.original[field] ?? []).map(id => { return { style: {}, value: { id: id, name: data.original[field][id] } } })
+        } else {
+            data.original[field] = [{ value: data.original[field], style: {} }]
+        }
         if (Revisions[index] && Revisions[index][field]) {
             data.original[field] = Revisions[index][field]
             if (RevisionNotes[index]) {
@@ -56,9 +60,9 @@ export async function getAlien(index) {
     }
     const timingFields = ['powerTiming', 'wildTiming', 'superTiming', 'wildClassicTiming', 'superClassicTiming'].filter(field => Object.keys(data.original).includes(field))
     for (const field of timingFields) {
-        if (Revisions[index] && Revisions[index][field]){
+        if (Revisions[index] && Revisions[index][field]) {
             for (const timing_field of ['player', 'choice', 'phases']) {
-                if (Revisions[index][field][timing_field]){
+                if (Revisions[index][field][timing_field]) {
                     data.original[field][timing_field] = Revisions[index][field][timing_field]
                     if (RevisionNotes[index]) {
                         data.original[field][timing_field].forEach((revision, i) => {
@@ -66,30 +70,30 @@ export async function getAlien(index) {
                         })
                     }
                 } else if (data.original[field][timing_field]) {
-                    data.original[field][timing_field] = [{style:[], value: data.original[field][timing_field]}]
+                    data.original[field][timing_field] = [{ style: [], value: data.original[field][timing_field] }]
                 }
             }
         } else {
             for (const timing_field of ['player', 'choice', 'phases']) {
                 if (data.original[field][timing_field]) {
-                    data.original[field][timing_field] = [{style:[],value: data.original[field][timing_field]}]
+                    data.original[field][timing_field] = [{ style: [], value: data.original[field][timing_field] }]
                 }
             }
         }
     }
-    if (Revisions[index]){
+    if (Revisions[index]) {
         data.original.versions = Revisions[index].versions
     } else {
         data.original.versions = ["original"]
     }
 
-    if (faq.aliens[index]){
+    if (faq.aliens[index]) {
         data.original.faq = faq.aliens[index]
     } else {
         data.original.faq = []
     }
 
-    // console.log(data.original)
+    console.log(data.original)
 
     return data.original
 }
