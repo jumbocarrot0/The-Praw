@@ -95,7 +95,7 @@ export default function Alien(props) {
                 <p className='fs-3'>Do not use with {
                     alien.bans.map((part, index) => {
                         // console.log(bannedAlien)
-                        return <PartStyle key={part} part={part} viewMode={viewMode} tab={tab}><Link to={`/Aliens/${part.id}`}>
+                        return <PartStyle key={part} part={part} viewMode={viewMode} tab={tab}><Link to={`/Aliens/${part.value.id}`}>
                             {part.value.name}
                         </Link>{index !== Object.keys(alien.bans).length - 1 ? <span>, or </span> : null}</PartStyle>
                     })
