@@ -221,11 +221,11 @@ export default function Alien(props) {
                 ) : <></>
             }
             {alien.essences ? <div>
-                <h3>{alien.name} {alien.essences.name}s</h3>
+                <h3>{alien.name} {alien.essences.name.map(handleParts)}s</h3>
                 <ol>
                     {Object.keys(alien.essences.list).sort().map((essenceID => {
-                        return <li><strong>{alien.essences.list[essenceID].name}</strong>: {alien.essences.list[essenceID].body}{
-                            alien.essences.list[essenceID].value ? <strong className='font-digit fs-4'> {alien.essences.list[essenceID].value}</strong> : null
+                        return <li key={essenceID}><strong>{alien.essences.list[essenceID].name.map(handleParts)}</strong>: {alien.essences.list[essenceID].body.map(handleParts)}{
+                            alien.essences.list[essenceID].value ? <strong className='font-digit fs-4'> {alien.essences.list[essenceID].value.map(handleParts)}</strong> : null
                         }</li>
                     }))}
 
