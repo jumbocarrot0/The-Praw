@@ -35,9 +35,9 @@
         "0": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
     },
     "13": {
-        "0": {"note": "Edited for consistent terminology.", "author": "Cosmodex"},
+        "0": {"note": "Edited to use consistent terminology.", "author": "Cosmodex"},
         "1": {"note": "Edited for grammar.", "author": "Cosmodex"},
-        "2": {"note": "Edited for consistent terminology - specifically to simplify rewards vs defender rewards.", "author": "Cosmodex"}
+        "2": {"note": "Edited to use consistent terminology - specifically to simplify rewards vs defender rewards.", "author": "Cosmodex"}
     },
     "14": {
         "0": {"note": "Edited to clarify that Wild Barbarian can wait to see all the cards before deciding what to discard.", "author": "Cosmodex"},
@@ -309,7 +309,7 @@
         "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"}
     },
     "65": {
-        "1": {"note": "Edited for consistent terminology - specifically to simplify rewards vs defender rewards.", "author": "Cosmodex"},
+        "1": {"note": "Edited to use consistent terminology - specifically to simplify rewards vs defender rewards.", "author": "Cosmodex"},
         "2": {"note": "Edited to remove redundent rules-on-a-card clarification (especially since its insufficient with the rewards deck in play).", "author": "Cosmodex"},
         "3": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
         "4": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
@@ -475,7 +475,7 @@
     "98": {
         "1": {"note": "Edited for wording consistency and clarity.", "author": "Cosmodex"},
         "2": {"note": "Edited to prevent wild flare blocking the offense launching if their ships are blocked via some other method (e.g. Gorgon).", "author": "Cosmodex"},
-        "3": {"note": "Edited to add the restriction with Healer (which can nullify Masochost completely, if unchanged).", "author": "Cosmodex"}
+        "3": {"note": "Adding a restriction with Healer prevents games where Healer can completely nullify Masochist's power.", "author": "Cosmodex"}
     },
     "99": {
         "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
@@ -530,5 +530,105 @@
     },
     "112": {
         "1": {"note": "Edited to remove redundancy.", "author": "Cosmodex"}
+    },
+    "113": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited for brevity.", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify Mutant draws from other players' hands and not their own.", "author": "Cosmodex"},
+        "4": {"note": "Edited to clarify Mutant can both draw from the deck and from others' hands.", "author": "Cosmodex"}
+    },
+    "114": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for spelling.", "author": "Cosmodex"},
+        "2": {"note": "Edited to remove typo.", "author": "Cosmodex"}
+    },
+    "115": {
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"}
+    },
+    "116": {
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"}
+    },
+    "117": {
+        "1": {"note": "Edited for consistency and clarity.", "author": "Cosmodex"},
+        "2": {"note": "Edited for brevity.", "author": "Cosmodex"},
+        "3": {"note": "Edited to fix spelling.", "author": "Cosmodex"},
+        "4": {"note": "Edited for capitalisation.", "author": "Cosmodex"},
+        "5": {"note": "Edited to match timing bars with the effect.", "author": "Cosmodex"}
+    },
+    "118": {
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"}
+    },
+    "119": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to move the power's timing to the correct \"subphase\".", "author": "Cosmodex"},
+        "2": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to move the super flare to planning (to match the main power).", "author": "Cosmodex"},
+        "4": {"note": "Edited to clarify that \"all ships in the gate\" simply means offense and allies.", "author": "Cosmodex"},
+        "5": {"note": "Edited for spelling.", "author": "Cosmodex"}
+    },
+    "120": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"}
+    },
+    "121": {
+        "0": {"note": "Edited for inclusivity. (In this case it refers to the \"him\" in the history blurb, which is referring to an unamed opponent. Whilst only very loosely referencing a player here, it doesn't do any harm by making this opponent gender-neutral.)", "author": "The Praw"},
+        "1": {"note": "Edited for brevity.", "author": "Cosmodex"},
+        "2": {"note": "Edited for missing punctuation.", "author": "Cosmodex"},
+        "3": {"note": "Edited for consistency.", "author": "Cosmodex"}
+    },
+    "122": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "123": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for brevity.", "author": "Cosmodex"},
+        "2": {"note": "Edited to use correct terminology.", "author": "Cosmodex"},
+        "3": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "4": {"note": "Edited to fix the \"coexistence bug\" that implies this flare overrides effects such as Filth.", "author": "Cosmodex"},
+        "5": {"note": "Edited to clarify the clarification (the irony!).", "author": "Cosmodex"},
+        "6": {"note": "Edited to make the timing bar consistent with the card's text.", "author": "Cosmodex"}
+    },
+    "124": {
+        "1": {"note": "Edited to add when the card is played to the card's text.", "author": "Cosmodex"}
+    },
+    "125": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to clarify the timing and conditions.", "author": "Cosmodex"},
+        "2": {"note": "Edited to use consistent terminology.", "author": "Cosmodex"}
+    },
+    "129": {
+        "1": {"note": "Making Phantasm's power prevents it from thrasing deals or accidently losing.", "author": "Cosmodex"},
+        "2": {"note": "Nerfing the wild flare means it wont be a superset of Phantasm's power.", "author": "Cosmodex"}
+    },
+    "130": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to use consistent terminology (since Philanthropist might not have an opponent when using their power).", "author": "Cosmodex"},
+        "2": {"note": "Edited for brevity.", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify timing.", "author": "Cosmodex"},
+        "4": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "131": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "133": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to use consistent terminology.", "author": "Cosmodex"},
+        "2": {"note": "Edited for clarity.", "author": "Cosmodex"},
+        "3": {"note": "Edited for brevity (in general, a player must control their alien power to play their super flare).", "author": "Cosmodex"},
+        "4": {"note": "Edited to avoid implying this effect is mandatory.", "author": "Cosmodex"}
+    },
+    "134": {
+        "1": {"note": "Edited to correct capitalisation.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited for grammar.", "author": "Cosmodex"}
+    },
+    "135": {
+        "1": {"note": "Edited to avoid implying this effect is mandatory.", "author": "Cosmodex"},
+        "2": {"note": "Edited for grammar.", "author": "Cosmodex"}
+    },
+    "136": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to use consistent terminology.", "author": "Cosmodex"}
     }
 }

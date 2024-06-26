@@ -9924,119 +9924,77 @@
         "powerBody": [
             {
                 "style": {},
-                "value": "As a main player, before allies are invited, ",
-                "revisionID": 0
+                "value": "As a main player, before allies are invited, "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "you may use this power ",
+                "value": "you may use this power",
                 "revisionID": 1
             },
             {
                 "style": {},
-                "value": "if you have fewer than eight cards ",
+                "value": " if you have fewer than eight cards "
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "you may use this power",
+                "revisionID": 1
+            },
+            {
+                "style": {},
+                "value": " to refill your hand. "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "To do this you d",
                 "revisionID": 2
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "you may use this power ",
+                "value": "D",
+                "revisionID": 2
+            },
+            {
+                "style": {},
+                "value": "raw cards one at a time, at random, from any "
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "other",
                 "revisionID": 3
             },
             {
                 "style": {},
-                "value": "to refill your hand. ",
-                "revisionID": 4
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "To",
-                "revisionID": 5
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "Draw",
-                "revisionID": 6
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 7
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "do this you draw ",
-                "revisionID": 8
-            },
-            {
-                "style": {},
-                "value": "cards one at a time, at random, from any ",
-                "revisionID": 9
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "other ",
-                "revisionID": 10
-            },
-            {
-                "style": {},
-                "value": "player(s) ",
-                "revisionID": 11
+                "value": " player(s) "
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "and/",
-                "revisionID": 12
+                "revisionID": 4
             },
             {
                 "style": {},
-                "value": "or from the deck. Draw until you have a full hand of eight cards.",
-                "revisionID": 13
+                "value": "or from the deck. Draw until you have a full hand of eight cards."
             }
         ],
         "wildBody": [
             {
                 "style": {},
-                "value": "As a main player, if you win an encounter or make a deal, you may take one card at random from your opponent and each of ",
-                "revisionID": 0
+                "value": "As a main player, if you win an encounter or make a deal, you may take one card at random from your opponent and each of "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 1
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 2
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 3
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 4
-            },
-            {
-                "style": {},
-                "value": "allies.",
-                "revisionID": 5
-            }
-        ],
-        "superBody": [
-            {
-                "style": {},
-                "value": "As a main player, you may discard up to three cards from your hand before using your power to refill your hand.",
                 "revisionID": 0
-            }
-        ],
-        "history": [
+            },
             {
                 "style": {},
-                "value": "Evolving on a highly radioactive and unshielded moon, the protean Mutants quickly learned to augment their silicon-based heredity. Before long they began to control and accumulate key genetic codes from other life forms, stripping opponents of their most basic defenses in a Mutant drive to transform the Universe.",
-                "revisionID": 0
+                "value": " allies."
             }
         ]
     },
@@ -10045,448 +10003,609 @@
         "powerBody": [
             {
                 "style": {},
-                "value": "When you are not a main player, after alliances are formed but before encounter cards are selected, you may use this power to \"motivate\" one or both main players. To motivate a player, give ",
-                "revisionID": 0
+                "value": "When you are not a main player, after alliances are formed but before encounter cards are selected, you may use this power to \"motivate\" one or both main players. To motivate a player, give "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "him",
-                "revisionID": 1
+                "value": "him or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "them",
-                "revisionID": 2
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 3
+                "value": " one negotiate card from your hand to add to "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 4
-            },
-            {
-                "style": {},
-                "value": "one negotiate card from your hand to add to ",
-                "revisionID": 5
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 6
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 7
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 8
+                "value": " hand, and give "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 9
-            },
-            {
-                "style": {},
-                "value": "hand, and give ",
-                "revisionID": 10
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "him",
-                "revisionID": 11
+                "value": "him or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "them",
-                "revisionID": 12
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 13
+                "value": "a consequence from your essence card cache to place faceup next to "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 14
-            },
-            {
-                "style": {},
-                "value": "a consequence from your essence card cache to place faceup next to ",
-                "revisionID": 15
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 16
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 17
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 18
+                "value": " alien sheet. If a motivated player reveals a negotiate card, carry out the incentive; the consequence card is returned to you and you receive one reward. If a motivated player does not reveal a negotiate card, carry out the punishment and leave the consequence card in place to mark the timeout.\n\nA player in a timeout may not participate in the game in any way or communicate with other players, nor may other players communicate with the player in the timeout. If that player is the offense, "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 19
-            },
-            {
-                "style": {},
-                "value": "alien sheet. If a motivated player reveals a negotiate card, carry out the incentive; the consequence card is returned to you and you receive one reward. If a motivated player does not reveal a negotiate card, carry out the punishment and leave the consequence card in place to mark the timeout.\n\nA player in a timeout may not participate in the game in any way or communicate with other players, nor may other players communicate with the player in the timeout. If that player is the offense, ",
-                "revisionID": 20
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 21
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 22
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 23
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 24
-            },
-            {
-                "style": {},
-                "value": "turn ends. If that player becomes the defense, the offense draws destiny again. At the end of the timeout, the player returns the consequence card to you. In any case where play cannot progress because of timeouts, all other players' consequence cards are returned to you.\n\nWhenever one or more other players discard negotiate cards, you may use this power to retrieve one of those negotiate cards and add it to your hand. You play and discard negotiates normally.",
-                "revisionID": 25
+                "value": " turn ends. If that player becomes the defense, the offense draws destiny again. At the end of the timeout, the player returns the consequence card to you. In any case where play cannot progress because of timeouts, all other players' consequence cards are returned to you.\n\nWhenever one or more other players discard negotiate cards, you may use this power to retrieve one of those negotiate cards and add it to your hand. You play and discard negotiates normally."
             }
         ],
-        "wildBody": [
-            {
+        "essences": {
+            "name": [{
                 "style": {},
-                "value": "When the offense is going to have a second encounter, you may cancel that encounter. Give this flare to the Nanny after use (or discard it, if the Nanny isn't playing).",
-                "revisionID": 0
+                "value": "Consequence"
+            }],
+            "list": {
+                "1": {
+                    "name": [{
+                        "style": {},
+                        "value": "Warp"
+                    }],
+                    "body": [
+                    {
+                        "style": {"all": ["bold"]},
+                        "value": "Incentive: "
+                    },
+                    {
+                        "style": {},
+                        "value": "Release all of one other player's ships from the warp and receive one reward for each ship released. Punishment: Lose two ships of your choice to the warp from foreign colonies (if possible). You are on timeout during "
+                    },
+                    {
+                        "style": {"revised": ["removed"]},
+                        "value": "of",
+                        "revisionID": 2
+                    },
+                    {
+                        "style": {},
+                        "value": " the next player's turn."
+                    }
+                ]
+                },
+                "2": {
+                    "name": [
+                        {
+                        "style": {},
+                        "value": "Ship"
+                    }
+                ],
+                    "body": [
+                        {
+                        "style": {"all": ["bold"]},
+                        "value": "Incentive: "
+                    },
+                    {
+                        "style": {},
+                        "value": "Release 1 of your ships from the warp. Punishment: Lose 1 ship to the warp. You are on timeout during the next player's turn."
+                    }
+                ]
+                },
+                "3": {
+                    "name": [
+                        {
+                        "style": {},
+                        "value": "Reward"
+                    }
+                ],
+                    "body": [
+                    {
+                        "style": {"all": ["bold"]},
+                        "value": "Incentive: "
+                    },
+                    {
+                        "style": {"revised": ["removed"]},
+                        "value": "Recieve",
+                        "revisionID": 1
+                    },
+                    {
+                        "style": {"original": ["none"], "revised": ["added"]},
+                        "value": "Receive",
+                        "revisionID": 1
+                    },
+                    {
+                        "style": {},
+                        "value": " 1 reward for every ship you have in the encounter. Punishment: The Nanny looks at your hand and discards any or all artifact cards and cards from the reward deck. You are on timeout during the next player's turn."
+                    }
+                ]
+                },
+                "4": {
+                    "name": [{
+                        "style": {},
+                        "value": "Hand"
+                    }],
+                    "body": [
+                        {
+                        "style": {"all": ["bold"]},
+                        "value": "Incentive: "
+                    },
+                    {
+                        "style": {},
+                        "value": "Discard as many cards as you wish from your hand. Punishment: The Nanny looks at your hand and discards your highest attack card. You are on timeout during the next player's first encounter."
+                    }
+                ]
+                },
+                "5": {
+                    "name": [{
+                        "style": {},
+                        "value": "Deck"
+                    }],
+                    "body": [
+                        {
+                        "style": {"all": ["bold"]},
+                        "value": "Incentive: "
+                    },
+                    {
+                        "style": {},
+                        "value": "Draw up to five cards from the deck. Keep one and discard the rest. Punishment: The Nanny discards half of the cards (rounded up) from your hand at random. You are on timeout during the next player's first encounter."
+                    }
+                ]
+                },
+                "6": {
+                    "name": [{
+                        "style": {},
+                        "value": "Colony"
+                    }],
+                    "body": [
+                    {
+                        "style": {"all": ["bold"]},
+                        "value": "Incentive: "
+                    },
+                    {
+                        "style": {},
+                        "value": "Redistribute your ships among your colonies as you see fit. Punishment: The Nanny sends one of your colonies to the warp. You are on timeout during the next player's turn."
+                    }
+                ]
+                },
+                "7": {
+                    "name": [{
+                        "style": {},
+                        "value": "Card"
+                    }],
+                    "body": [
+                    {
+                        "style": {"all": ["bold"]},
+                        "value": "Incentive: "
+                    },
+                    {
+                        "style": {},
+                        "value": "Draw one card from the cosmic or (if available) reward deck. Punishment: The Nanny discards one card from your hand at random. You are on timeout during the next player's first encounter."
+                    }
+                ]
+                },
+                "8": {
+                    "name": [
+                    {
+                        "style": {},
+                        "value": "Ally"
+                    }
+                ],
+                    "body": [
+                    {
+                        "style": {"all": ["bold"]},
+                        "value": "Incentive: "
+                    },
+                    {
+                        "style": {},
+                        "value": "Receive a reward for every player who joined your side as an ally. Punishment: The Nanny dismisses one of your allies from this encounter and that player returns his or her ships to colonies. You are on timeout during the next player's first encounter."
+                    }]
+                }
             }
-        ],
-        "superBody": [
-            {
-                "style": {},
-                "value": "You may use your power as a main player, giving your opponent both a negotiate card and a consequence card.",
-                "revisionID": 0
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "The Nannies are engaged in a time out campaign throughout the Cosmos.",
-                "revisionID": 0
-            }
-        ]
+        }
     },
     "115": {
         "versions": ["original", "revised"],
         "powerBody": [
             {
                 "style": {},
-                "value": "As a main player or ally, after the main player on your side reveals an attack card, use this power to add one to your ",
-                "revisionID": 0
+                "value": "As a main player or ally, after the main player on your side reveals an attack card, use this power to add one to your "
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "side's ",
+                "value": "side's",
                 "revisionID": 1
             },
             {
                 "style": {},
-                "value": "total for each ship you have in the targeted system that is not involved in the encounter.",
-                "revisionID": 2
-            }
-        ],
-        "wildBody": [
-            {
-                "style": {},
-                "value": "As a winning defensive ally, if you earn defender rewards, you may add the number of ships the defense had involved in the encounter when calculating how many defender rewards you are entitled to.",
-                "revisionID": 0
-            }
-        ],
-        "superBody": [
-            {
-                "style": {},
-                "value": "When using your power as a main player, you may also add 1 to your total for each ship that is not involved in the encounter that each of your allies have in the targeted system.",
-                "revisionID": 0
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "No race may have as strong a sense of community and working toward the common good as the Neighbor. While some races are secretive, solitary, or sensitive, the Neighbor is always interested in what the other races nearby are doing, and they are more than happy to lend another alien their technology or tools. Several times each year, they ritualistically come together in great masses to feast on food prepared by other Neighbors, and regale each other with anecdotes everyone has heard several times before.",
-                "revisionID": 0
+                "value": " total for each ship you have in the targeted system that is not involved in the encounter."
             }
         ]
     },
     "116": {
         "versions": ["original", "revised"],
-        "powerBody": [
-            {
-                "style": {},
-                "value": "Once per encounter, when a main player has declined to invite you to ally, or another player is on the winning side of an encounter when you are on the losing side, you may use this power to place a bad dream from your essence card cache facedown near that player. You cannot give a bad dream card to a player who already has one.\n\nYou may reveal a player's bad dream card at any time. That player reads the card and carries out its effects (if they apply). Revealed bad dream cards are returned to you.",
-                "revisionID": 0
+        "powerTiming": {
+            "phases": [
+                {
+                    "style": {},
+                    "value": {
+                        "alliance": true
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "style": {"original":["none"], "revised": ["added"]},
+                    "value": {
+                        "resolution": true
+                    },
+                    "revisionID": 1
+                }
+            ]
+        },
+        "superTiming": {
+            "phases": [
+                {
+                    "style": {},
+                    "value": {
+                        "alliance": true
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "style": {"original":["none"], "revised": ["added"]},
+                    "value": {
+                        "resolution": true
+                    },
+                    "revisionID": 1
+                }
+            ]
+        },
+        "essences":{
+            "list": {
+                "2": {
+                    "body": [
+                        {
+                            "style": {},
+                            "value": "If you are revealing an attack card, "
+                        },
+                        {
+                            "style": {"revised": ["removed"]},
+                            "value": "instead of"
+                        },
+                        {
+                            "style": {},
+                            "value": " its face value"
+                        },
+                        {
+                            "style": {"revised": ["removed"]},
+                            "value": ", the card's value"
+                        },
+                        {
+                            "style": {},
+                            "value": " is divided by 2 (rounded down)."
+                        }
+                    ]
+                }
             }
-        ],
-        "wildBody": [
-            {
-                "style": {},
-                "value": "When another player is establishing a colony on any planet, you may declare it to be a bad dream. Choose an empty planet or any planet where that player already has a colony. The ships land on that other planet instead. Give this flare to the Nightmare after use (or discard it, if the Nightmare isn't playing).",
-                "revisionID": 0
-            }
-        ],
-        "superBody": [
-            {
-                "style": {},
-                "value": "When using your power to give a player a bad dream card, you may choose a player who already has one or more bad dream cards.",
-                "revisionID": 0
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "\"There are knowns - things we know. And unknowns. Meaning things we know we don't know. And unknown unknowns - things we are ignorant of not knowing.\" (Found in a journal on a backwater planet.)",
-                "revisionID": 0
-            }
-        ]
+        }
     },
     "117": {
         "versions": ["original", "revised"],
+        "short": [
+            {
+                "style": {},
+                "value": "Allies "
+            },
+            {
+                "style": {"revised": ["none"]},
+                "value": "d",
+                "revisionID": 4
+            },
+            {
+                "style": {"original": ["none"], "revised": ["added"]},
+                "value": "D",
+                "revisionID": 4
+            },
+            {
+                "style": {},
+                "value": "o "
+            },
+            {
+                "style": {"revised": ["none"]},
+                "value": "n",
+                "revisionID": 4
+            },
+            {
+                "style": {"original": ["none"], "revised": ["added"]},
+                "value": "N",
+                "revisionID": 4
+            },
+            {
+                "style": {},
+                "value": "ot "
+            },
+            {
+                "style": {"revised": ["none"]},
+                "value": "g",
+                "revisionID": 4
+            },
+            {
+                "style": {"original": ["none"], "revised": ["added"]},
+                "value": "G",
+                "revisionID": 4
+            },
+            {
+                "style": {},
+                "value": "o "
+            },
+            {
+                "style": {"revised": ["none"]},
+                "value": "t",
+                "revisionID": 4
+            },
+            {
+                "style": {"original": ["none"], "revised": ["added"]},
+                "value": "T",
+                "revisionID": 4
+            },
+            {
+                "style": {},
+                "value": "o "
+            },
+            {
+                "style": {"revised": ["none"]},
+                "value": "w",
+                "revisionID": 4
+            },
+            {
+                "style": {"original": ["none"], "revised": ["added"]},
+                "value": "W",
+                "revisionID": 4
+            },
+            {
+                "style": {},
+                "value": "arp"
+            }
+        ],
         "powerBody": [
             {
                 "style": {},
-                "value": "As an ally, ",
-                "revisionID": 0
+                "value": "As an ally, when"
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "whenever",
+                "value": "ever",
                 "revisionID": 1
             },
             {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "when",
-                "revisionID": 2
-            },
-            {
                 "style": {},
-                "value": " you should lose ships to the warp, use this power to instead return them to any of your colonies and keep using them.\n\nAs a main player, when any of your allies should lose ships to the warp, use this power to instead allow your allies to return them to any of their colonies of their choice.",
-                "revisionID": 3
-            }
-        ],
-        "wildBody": [
-            {
-                "style": {},
-                "value": "As a main player, after alliances are formed, you may allow each player who allied with you to draw one card from the deck.",
-                "revisionID": 0
+                "value": " you should lose ships to the warp, use this power to instead return them to any of your colonies and keep using them.\n\nAs a main player, when any of your allies should lose ships to the warp, use this power to instead allow your allies to return them to any of their colonies of their choice."
             }
         ],
         "superBody": [
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "As the offense or an ally, ",
-                "revisionID": 0
-            },
-            {
-                "style": {},
-                "value": "when you ",
                 "revisionID": 1
             },
             {
-                "style": {"revised":["removed"]},
-                "value": "launch",
-                "revisionID": 2
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "send",
-                "revisionID": 3
-            },
-            {
                 "style": {},
-                "value": " ships ",
-                "revisionID": 4
+                "value": "when you "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "as",
-                "revisionID": 5
+                "value": "launch ships as an ally or offense",
+                "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "into",
-                "revisionID": 6
+                "value": "send ships into the encounter",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 7
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "an",
-                "revisionID": 8
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "the",
-                "revisionID": 9
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 10
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "ally or offense",
-                "revisionID": 11
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "encounter",
-                "revisionID": 12
-            },
-            {
-                "style": {},
-                "value": ", you may retrieve one ship from the warp to ",
-                "revisionID": 13
+                "value": ", you may retrieve one ship from the warp to "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "immediately launch",
-                "revisionID": 14
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "send",
-                "revisionID": 15
-            },
-            {
-                "style": {},
-                "value": ". ",
-                "revisionID": 16
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "As",
-                "revisionID": 17
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "This",
-                "revisionID": 18
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 19
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "the offense, this ship is in addition to the ship you normally retrieve during the regroup phase, but ",
-                "revisionID": 20
-            },
-            {
-                "style": {},
-                "value": "does not allow you to exceed your normal limit of four ships in the ",
-                "revisionID": 21
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "hyperspace gate",
-                "revisionID": 22
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "encounter",
-                "revisionID": 23
-            },
-            {
-                "style": {},
-                "value": ".",
-                "revisionID": 24
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "Seldom interfering in Cosmic affairs, the Observers have been around for ",
-                "revisionID": 0
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "millenia",
                 "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "millennia",
+                "value": "send",
+                "revisionID": 1
+            },
+            {
+                "style": {},
+                "value": ". "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "As the offense, this ship is in addition to the ship you normally retrieve during the regroup phase, but",
+                "revisionID": 2
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "This",
                 "revisionID": 2
             },
             {
                 "style": {},
-                "value": ", simply watching the other alien races. With their advanced technology and strange abilities, the others were hesitant to draw them into their squabbles. Now, however, it seems that the Observers have decided that the time for action has come at last.",
+                "value": " does not allow you to exceed your normal limit of four ships in the "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "hyperspace gate",
+                "revisionID": 1
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "encounter",
+                "revisionID": 1
+            },
+            {
+                "style": {},
+                "value": "."
+            }
+        ],
+        "superTiming": {
+            "phases": [
+                {
+                    "style": {},
+                    "value": {
+                        "launch": true
+                    }
+                },
+                {
+                    "style": {"original": ["none"], "revised": ["added"]},
+                    "value": {
+                        "alliance": true
+                    }
+                }
+            ],
+            "player": [
+                {
+                    "style": {"revised":["removed"]},
+                    "value": "Ally or Main Player Only",
+                    "revisionID": 5
+                },
+                {
+                    "style": {"original": ["removed"], "revised":["added"]},
+                    "value": "Offense or Ally Only",
+                    "revisionID": 5
+                }
+            ]
+        },
+        "history": [
+            {
+                "style": {},
+                "value": "Seldom interfering in Cosmic affairs, the Observers have been around for "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "millenia",
                 "revisionID": 3
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "millennia",
+                "revisionID": 3
+            },
+            {
+                "style": {},
+                "value": ", simply watching the other alien races. With their advanced technology and strange abilities, the others were hesitant to draw them into their squabbles. Now, however, it seems that the Observers have decided that the time for action has come at last."
             }
         ]
     },
     "118": {
         "versions": ["original", "revised"],
-        "powerBody": [
-            {
-                "style": {},
-                "value": "Every time you draw a new hand of cards, including at the beginning of the game, draw one additional card.\n\nYou accumulate privileges up to the highest number of foreign colonies that has been reached by any player. Use this power whenever any one player has more foreign colonies than the number of your faceup privilege cards. Look through your essence card cache, choose one privilege, and play it faceup next to this sheet. If you are zapped, the privilege you attempted to play is removed from the game.",
-                "revisionID": 0
+        "essences": {
+            "list": {
+                "1": {
+                    "body": [
+                        {
+                            "style": {},
+                            "value": "When you should collect compensation, collect two more compensation "
+                        },
+                        {
+                            "style": {"original": ["none"], "revised": ["added"]},
+                            "value": "cards",
+                            "revisionID": 1
+                        },
+                        {
+                            "style": {},
+                            "value": ". All other players who should collect compensation collect two "
+                        },
+                        {
+                            "style": {"revised": ["removed"]},
+                            "value": "less",
+                            "revisionID": 1
+                        },
+                        {
+                            "style": {"original": ["none"], "revised": ["added"]},
+                            "value": "fewer",
+                            "revisionID": 1
+                        },
+                        {
+                            "style": {},
+                            "value": " compensation "
+                        },
+                        {
+                            "style": {"original": ["none"], "revised": ["added"]},
+                            "value": "cards",
+                            "revisionID": 1
+                        },
+                        {
+                            "style": {},
+                            "value": "."
+                        }
+                    ]
+                },
+                "3": {
+                    "body": [
+                        {
+                            "style": {},
+                            "value": "When you should receive rewards, receive two more rewards. All other players who should receive rewards receive one "
+                        },
+                        {
+                            "style": {"revised": ["removed"]},
+                            "value": "less",
+                            "revisionID": 1
+                        },
+                        {
+                            "style": {"original": ["none"], "revised": ["added"]},
+                            "value": "fewer",
+                            "revisionID": 1
+                        },
+                        {
+                            "style": {},
+                            "value": " reward."
+                        }
+                    ]
+                }
             }
-        ],
-        "wildBody": [
-            {
-                "style": {},
-                "value": "At the start of your turn, if you do not have more cards in hand than all other players, you may draw from the deck until you do (before returning this flare to your hand).",
-                "revisionID": 0
-            }
-        ],
-        "superBody": [
-            {
-                "style": {},
-                "value": "When another player should draw a new hand, you may deal the cards for that hand to yourself, choose one card from among them to keep, and give the rest to that player.",
-                "revisionID": 0
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "Overheard at the Oligarch's Elite Club Squash'em: \"It's not enough to know that I'm controlling the Universe from my holodecks, it's that I also want to know that my 'friends' see their lives as immeasurably and permanently less successful than mine.\"",
-                "revisionID": 0
-            }
-        ]
+        }
     },
     "119": {
         "versions": ["original", "revised"],
         "powerBody": [
             {
                 "style": {},
-                "value": "As a main player, ",
-                "revisionID": 0
+                "value": "As a main player, "
             },
             {
                 "style": {"revised":["removed"]},
@@ -10496,233 +10615,154 @@
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "when",
-                "revisionID": 2
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": " encounter cards are ",
-                "revisionID": 3
+                "value": " encounter cards are "
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "to be ",
-                "revisionID": 4
+                "value": "to be",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": "selected, use this power to force your opponent to play ",
-                "revisionID": 5
+                "value": " selected, use this power to force your opponent to play "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "his",
-                "revisionID": 6
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 7
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " encounter card faceup. Only after you have seen your opponent's card do you select and play your card.",
-                "revisionID": 8
+                "value": " encounter card faceup. Only after you have seen your opponent's card do you select and play your card."
             }
         ],
         "wildBody": [
             {
                 "style": {},
-                "value": "As a main player, before encounter cards are selected, you may mix your hand with that of your opponent, then ",
-                "revisionID": 0
+                "value": "As a main player, before encounter cards are selected, you may mix your hand with that of your opponent, then "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "randomly ",
-                "revisionID": 1
-            },
-            {
-                "style": {},
-                "value": "take ",
+                "value": "randomly",
                 "revisionID": 2
             },
             {
+                "style": {},
+                "value": "take "
+            },
+            {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "at random ",
-                "revisionID": 3
+                "value": "at random",
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": "as many cards as you had in your hand, giving the rest to your opponent.",
-                "revisionID": 4
+                "value": " as many cards as you had in your hand, giving the rest to your opponent."
             }
         ],
+        "superTiming": {
+            "phases": [
+                {
+                    "style": {"original": ["none"], "revised": ["added"]},
+                    "value": { "planning": true },
+                    "revisionID": 3
+                },
+                {
+                    "style": {"revised": ["removed"]},
+                    "value": { "reveal": true },
+                    "revisionID": 3
+                }
+            ]
+        },
         "superBody": [
             {
                 "style": {},
-                "value": "As a main player, you may end an encounter after your opponent ",
-                "revisionID": 0
+                "value": "As a main player, you may end an encounter after your opponent "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "reveals",
-                "revisionID": 1
+                "revisionID": 3
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "plays",
-                "revisionID": 2
-            },
-            {
-                "style": {},
-                "value": " ",
                 "revisionID": 3
             },
             {
+                "style": {},
+                "value": " "
+            },
+            {
                 "style": {"revised":["removed"]},
-                "value": "his",
+                "value": "his or her",
+                "revisionID": 0
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "their",
+                "revisionID": 0
+            },
+            {
+                "style": {},
+                "value": " card. Your opponent takes back "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "his or her",
+                "revisionID": 0
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "their",
+                "revisionID": 0
+            },
+            {
+                "style": {},
+                "value": " card, "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "all ships in the gate",
                 "revisionID": 4
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "their",
-                "revisionID": 5
+                "value": "the offense's and allies' ships",
+                "revisionID": 4
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 6
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 7
-            },
-            {
-                "style": {},
-                "value": "card. Your opponent takes back ",
-                "revisionID": 8
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 9
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "their",
-                "revisionID": 10
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 11
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 12
-            },
-            {
-                "style": {},
-                "value": "card, ",
-                "revisionID": 13
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "all",
-                "revisionID": 14
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "the",
-                "revisionID": 15
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 16
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "ships",
-                "revisionID": 17
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "offense's",
-                "revisionID": 18
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 19
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "in",
-                "revisionID": 20
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "and",
-                "revisionID": 21
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 22
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "the",
-                "revisionID": 23
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "allies'",
-                "revisionID": 24
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 25
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "gate",
-                "revisionID": 26
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "ships",
-                "revisionID": 27
-            },
-            {
-                "style": {},
-                "value": " return to colonies, and play continues as if a deal had been made.",
-                "revisionID": 28
+                "value": " return to colonies, and play continues as if a deal had been made."
             }
         ],
         "history": [
             {
                 "style": {},
-                "value": "During ",
-                "revisionID": 0
+                "value": "During "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "millenia",
-                "revisionID": 1
+                "revisionID": 5
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "millennia",
-                "revisionID": 2
+                "revisionID": 5
             },
             {
                 "style": {},
-                "value": " of civilization, the ancient Oracles developed perceptiveness about the intentions of others to uncanny lengths. While reluctant to test the outer limits of their vision, they find even short-range prescience has given them the reputation of great wisdom.",
-                "revisionID": 3
+                "value": " of civilization, the ancient Oracles developed perceptiveness about the intentions of others to uncanny lengths. While reluctant to test the outer limits of their vision, they find even short-range prescience has given them the reputation of great wisdom."
             }
         ]
     },
@@ -10731,130 +10771,101 @@
         "powerBody": [
             {
                 "style": {},
-                "value": "As a main player, after alliances are formed, you may use this power to take one card at random from your opponent and from each of ",
-                "revisionID": 0
+                "value": "As a main player, after alliances are formed, you may use this power to take one card at random from your opponent and from each of "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 1
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 2
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 3
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 4
-            },
-            {
-                "style": {},
-                "value": "allies. Add those cards to your hand.",
-                "revisionID": 5
+                "value": " allies. Add those cards to your hand."
             }
         ],
-        "wildBody": [
-            {
-                "style": {},
-                "value": "As an ally, if your side loses the encounter, you may take one card at random from the hand of any player on the winning side of the encounter.",
-                "revisionID": 0
-            }
-        ],
-        "superBody": [
-            {
-                "style": {},
-                "value": "As the defense or a defensive ally, if your side loses the encounter, you may use this flare. Winning offensive allies must return their ships to any of their colonies instead of landing on the targeted planet.",
-                "revisionID": 0
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "The Outlaws are rightly feared throughout the great expanses of space. They arrive in a fury of laser blasts, explosions, and angry threats. Their victims barely have time to react before the Outlaws have swept through a sector, pillaging and stealing loot as they go.",
-                "revisionID": 0
-            }
-        ]
+        "superTiming": {
+            "player": [
+                {
+                    "style": {},
+                    "value": "Defense or Defensive Ally"
+                },
+                {
+                    "style": {"original":["none"]},
+                    "value": " "
+                },
+                {
+                    "style": {"original":["none"], "revised": ["added"]},
+                    "value": "Only",
+                    "revisionID": 1
+                }
+            ]
+        }
     },
     "121": {
         "versions": ["original", "revised"],
         "powerBody": [
             {
                 "style": {},
-                "value": "As a main player, if you reveal a negotiate card and your opponent reveals an attack card, use this power to win the encounter.",
-                "revisionID": 0
+                "value": "As a main player, if you reveal a negotiate card and your opponent reveals an attack card, use this power to win the encounter. "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": " If you both reveal negotiate cards, you attempt to make a deal as usual.",
+                "value": "If you both reveal negotiate cards, you attempt to make a deal as usual.",
                 "revisionID": 1
-            }
-        ],
-        "wildBody": [
-            {
-                "style": {},
-                "value": "As a main player, after you reveal a negotiate card and your opponent reveals an attack card, you may change your negotiate card into an attack 15.",
-                "revisionID": 0
             }
         ],
         "superBody": [
             {
                 "style": {},
-                "value": "When you fail to make a deal, you may lose 2 fewer ships to the warp",
-                "revisionID": 0
+                "value": "When you fail to make a deal, you may lose 2 fewer ships to the warp"
             },
             {
                 "style": {"revised":["removed"]},
                 "value": ",",
-                "revisionID": 1
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": " while forcing your opponent to lose 2 extra ships to the warp.",
-                "revisionID": 2
+                "value": " while forcing your opponent to lose 2 extra ships to the warp."
             }
         ],
         "history": [
             {
                 "style": {},
-                "value": "A simple but ungainly race, the Pacifists long ago learned how to turn the power of an opponent against ",
-                "revisionID": 0
+                "value": "A simple but ungainly race, the Pacifists long ago learned how to turn the power of an opponent against "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "him",
-                "revisionID": 1
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "them",
-                "revisionID": 2
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": ". Always ready to demonstrate the superiority of retreat in unbalancing an aggressor, the Pacifists now seek to bring the ",
-                "revisionID": 3
+                "value": ". Always ready to demonstrate the superiority of retreat in unbalancing an aggressor, the Pacifists now seek to bring the "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "universe",
-                "revisionID": 4
+                "revisionID": 3
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "Universe",
-                "revisionID": 5
+                "revisionID": 3
             },
             {
                 "style": {},
-                "value": " to its knees by yielding at just the right moment.",
-                "revisionID": 6
+                "value": " to its knees by yielding at just the right moment."
             }
         ]
     },
@@ -10863,54 +10874,21 @@
         "powerBody": [
             {
                 "style": {},
-                "value": "As a main player, before encounter cards are selected, you may use this power to take one \"object\" belonging to the other main player and place it on this sheet. That player must then give you one of ",
-                "revisionID": 0
+                "value": "As a main player, before encounter cards are selected, you may use this power to take one \"object\" belonging to the other main player and place it on this sheet. That player must then give you one of "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 1
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 2
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 3
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 4
-            },
-            {
-                "style": {},
-                "value": "ships from a colony. Place it on top of the object as an owner ID. Collectible objects: a card at random from a hand, a ship from the warp, the top card from a set of essence cards, an empty planet from that player's system, a facedown, un-researched tech card, or a token on that player's alien sheet, including special tokens understood to be on the sheet, e.g. those of Fire Dancer, Grudge, or Particle. You cannot take a token if doing so would make the alien power completely unusable. You may not look at facedown collected objects. Each object you have collected adds 1 to your total when you are the defense.\n\nYou may release object(s) as part of a deal with any player. Also, when you are not a main player, during the alliance phase you may release objects in trades. These trades may be suggested by any player, must involve the release of one or more objects, and may include anything that could be given as part of a deal; however, only you may gain a foreign colony from such a trade. You must accept a simple trade of a foreign colony for an owner's object. You may use this power to finalize each alliance-phase trade. Each released object is restored to its original purpose and location and its ID ship returns to any of its owner's colonies.",
-                "revisionID": 5
-            }
-        ],
-        "wildBody": [
-            {
-                "style": {},
-                "value": "At the start of your turn, you may take one ship each belonging to any or all players from colonies. Move each ship taken to another of its owner's colonies, or to the warp.",
-                "revisionID": 0
-            }
-        ],
-        "superBody": [
-            {
-                "style": {},
-                "value": "When collecting an object, you may specify which colony the owner must choose the ID ship from.",
-                "revisionID": 0
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "The Pack Rats scurry about dragging objects back home, to the chagrin of prior owners.",
-                "revisionID": 0
+                "value": " ships from a colony. Place it on top of the object as an owner ID. Collectible objects: a card at random from a hand, a ship from the warp, the top card from a set of essence cards, an empty planet from that player's system, a facedown, un-researched tech card, or a token on that player's alien sheet, including special tokens understood to be on the sheet, e.g. those of Fire Dancer, Grudge, or Particle. You cannot take a token if doing so would make the alien power completely unusable. You may not look at facedown collected objects. Each object you have collected adds 1 to your total when you are the defense.\n\nYou may release object(s) as part of a deal with any player. Also, when you are not a main player, during the alliance phase you may release objects in trades. These trades may be suggested by any player, must involve the release of one or more objects, and may include anything that could be given as part of a deal; however, only you may gain a foreign colony from such a trade. You must accept a simple trade of a foreign colony for an owner's object. You may use this power to finalize each alliance-phase trade. Each released object is restored to its original purpose and location and its ID ship returns to any of its owner's colonies."
             }
         ]
     },
@@ -10919,442 +10897,132 @@
         "powerBody": [
             {
                 "style": {"revised":["removed"]},
-                "value": "Unless",
-                "revisionID": 0
+                "value": "Unless specifically prevented by another game effect (such as the Force Field artifact), w",
+                "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "When",
+                "value": "W",
                 "revisionID": 1
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 2
+                "value": "hen it is your turn to ally, you may use this power to ally (sending one to four ships, as usual) with one side "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "specifically prevented by another game effect (such as the Force Field artifact), when ",
-                "revisionID": 3
+                "value": "in an encounter",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": "it is your turn to ally, you may use this power to ally (sending one to four ships, as usual) with one side ",
-                "revisionID": 4
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "in an encounter ",
-                "revisionID": 5
-            },
-            {
-                "style": {},
-                "value": "as if you had been invited, even when you were not.",
-                "revisionID": 6
+                "value": "as if you had been invited, even when you were not."
             }
         ],
         "wildBody": [
             {
                 "style": {},
-                "value": "When another player loses the use of ",
-                "revisionID": 0
+                "value": "When another player loses the use of "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 1
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
+                "revisionID": 0
+            },
+            {
+                "style": {},
+                "value": " power "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "due to controlling",
+                "revisionID": 2
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "because of having",
                 "revisionID": 2
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 3
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 4
-            },
-            {
-                "style": {},
-                "value": "power ",
-                "revisionID": 5
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "due",
-                "revisionID": 6
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "because",
-                "revisionID": 7
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 8
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "to",
-                "revisionID": 9
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "of",
-                "revisionID": 10
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 11
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "controlling",
-                "revisionID": 12
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "having",
-                "revisionID": 13
-            },
-            {
-                "style": {},
-                "value": " too few home ",
-                "revisionID": 14
+                "value": " too few home "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "planets",
-                "revisionID": 15
+                "revisionID": 2
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "colonies",
-                "revisionID": 16
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": ", you may immediately establish a colony on one of ",
-                "revisionID": 17
+                "value": ", you may immediately establish a colony on one of "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 18
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 19
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 20
+                "value": " home planets with one of your ships. "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 21
-            },
-            {
-                "style": {},
-                "value": "home planets with one of your ships. ",
-                "revisionID": 22
+                "value": "Your ship coexists with any ships already on the planet. ",
+                "revisionID": 4
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "Your",
-                "revisionID": 23
+                "value": "You may establish another colony each time a player regains his or her power and loses it again",
+                "revisionID": 5
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "(If",
-                "revisionID": 24
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 25
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "ship",
-                "revisionID": 26
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "that",
-                "revisionID": 27
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 28
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "coexists",
-                "revisionID": 29
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "player",
-                "revisionID": 30
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 31
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "with",
-                "revisionID": 32
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "regains",
-                "revisionID": 33
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 34
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "any",
-                "revisionID": 35
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "their",
-                "revisionID": 36
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 37
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "ships",
-                "revisionID": 38
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "power",
-                "revisionID": 39
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 40
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "already",
-                "revisionID": 41
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "and",
-                "revisionID": 42
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 43
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "on",
-                "revisionID": 44
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "loses",
-                "revisionID": 45
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 46
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "the",
-                "revisionID": 47
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "it",
-                "revisionID": 48
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 49
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "planet.",
-                "revisionID": 50
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "again,",
-                "revisionID": 51
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 52
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "You",
-                "revisionID": 53
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "you",
-                "revisionID": 54
-            },
-            {
-                "style": {},
-                "value": " may ",
-                "revisionID": 55
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "establish",
-                "revisionID": 56
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "use",
-                "revisionID": 57
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 58
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "another",
-                "revisionID": 59
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "this",
-                "revisionID": 60
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 61
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "colony",
-                "revisionID": 62
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "flare",
-                "revisionID": 63
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 64
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "each",
-                "revisionID": 65
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "again",
-                "revisionID": 66
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 67
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "time",
-                "revisionID": 68
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "in",
-                "revisionID": 69
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 70
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "a",
-                "revisionID": 71
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "that",
-                "revisionID": 72
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 73
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "player regains his or her power and loses it again",
-                "revisionID": 74
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "system",
-                "revisionID": 75
-            },
-            {
-                "style": {},
-                "value": ".",
-                "revisionID": 76
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": ")",
-                "revisionID": 77
+                "value": "(If that player regains their power and loses it again, you may use this flare again in that system.)",
+                "revisionID": 5
             }
         ],
+        "superTiming": {
+            "phases": [
+                {
+                    "style": {"revised": ["removed"]},
+                    "value": {
+                        "launch": true
+                    },
+                    "revisionID": 6
+                },
+                {
+                    "style": {"original": ["none"], "revised": ["added"]},
+                    "value": {
+                        "alliance": true
+                    },
+                    "revisionID": 6
+                }
+            ]
+        },
         "superBody": [
             {
                 "style": {},
-                "value": "As an ally, you may ",
-                "revisionID": 0
+                "value": "As an ally, you may "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "launch",
-                "revisionID": 1
+                "revisionID": 2
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
@@ -11363,76 +11031,35 @@
             },
             {
                 "style": {},
-                "value": " any number of ships you want",
-                "revisionID": 3
+                "value": " any number of ships you want"
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": " into the encounter",
-                "revisionID": 4
+                "revisionID": 3
             },
             {
                 "style": {},
-                "value": ".",
-                "revisionID": 5
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "Evolving late on their almost totally polluted world, the Parasites had to depend on the already dominant life forms for survival. But, so rapidly did they succeed in infesting their home planets, they now need unsuspecting hosts to carry them throughout the far reaches of space.",
-                "revisionID": 0
+                "value": "."
             }
         ]
     },
     "124": {
         "versions": ["original", "revised"],
-        "powerBody": [
-            {
-                "style": {},
-                "value": "As the offense or an ally, if your ship(s) should land on the targeted planet and that planet does not have an entanglement token, use this power to entangle it with another planet. Place one unassigned entanglement token next to the targeted planet and place its paired entanglement token (with the same letter) next to any other planet that is not already entangled.\n\nWhenever the number of your ships on any entangled planet changes, including immediately after using this power, you must add your ships to or remove your ships from the corresponding entangled planet so that you have the same number of ships on both. Ships moved to resolve the entanglement must come from or go to your other colonies on planets that are not entangled.\n\nWhenever you are unable to resolve an entanglement, or you have no ships on a pair of entangled planets, those planets' paired entanglement tokens are discarded.\n\nIf an entangled planet is removed from the game, the paired entanglement tokens affecting it are discarded. Your ships stay on the remaining planet.",
-                "revisionID": 0
-            }
-        ],
         "wildBody": [
             {
-                "style": {"revised":["removed"]},
-                "value": "ou",
-                "revisionID": 0
+                "style": {"revised":["none"]},
+                "value": "Y",
+                "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "At",
+                "value": "At the start of your turn, y",
                 "revisionID": 1
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 2
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "the start of your turn, you ",
-                "revisionID": 3
-            },
-            {
-                "style": {},
-                "value": "may draw one card, discard one card, retrieve one ship from the warp, or lose one ship to the warp. Then every other player must do the same, if possible.",
-                "revisionID": 4
-            }
-        ],
-        "superBody": [
-            {
-                "style": {},
-                "value": "As the defense, if you win the encounter or gain a colony, you may use an unassigned pair of entanglement tokens to entangle the planet where you won or gained the colony with any other planet, as long as neither was already entangled. Immediately resolve this new entanglement.",
-                "revisionID": 0
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "p(a,c) - p(b,a) - p(b,c) < 1... Right?",
-                "revisionID": 0
+                "value": "ou may draw one card, discard one card, retrieve one ship from the warp, or lose one ship to the warp. Then every other player must do the same, if possible."
             }
         ]
     },
@@ -11441,339 +11068,160 @@
         "powerBody": [
             {
                 "style": {},
-                "value": "Once per encounter, you may use this power to show any player one card from your hand as a show of loyalty. If the player accepts your loyalty, ",
-                "revisionID": 0
+                "value": "Once per encounter, you may use this power to show any player one card from your hand as a show of loyalty. If the player accepts your loyalty, "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "he",
+                "value": "he or she adds",
+                "revisionID": 0
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "they add",
+                "revisionID": 0
+            },
+            {
+                "style": {},
+                "value": " the card to "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "his or her",
+                "revisionID": 0
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "their",
+                "revisionID": 0
+            },
+            {
+                "style": {},
+                "value": " hand. If the player declines your loyalty, "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "he or she",
+                "revisionID": 0
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "they",
+                "revisionID": 0
+            },
+            {
+                "style": {},
+                "value": " must give you one of "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "his or her",
+                "revisionID": 0
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "their",
+                "revisionID": 0
+            },
+            {
+                "style": {},
+                "value": "ships from any colony. Place that ship on this sheet.\n\nAs a main player, after alliances are formed"
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": ", you may use this power to return all",
                 "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "they",
+                "value": " but before encounter cards are selected, if you have any",
+                "revisionID": 1
+            },
+            {
+                "style": {},
+                "value": " ships on this sheet belonging to "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "the opposing main player",
                 "revisionID": 2
             },
             {
-                "style": {},
-                "value": " ",
-                "revisionID": 3
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or",
-                "revisionID": 4
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "your opponent",
+                "revisionID": 2
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "add",
-                "revisionID": 5
+                "value": "you may use this power to return those ships to that player",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 6
+                "value": ". Proceed to the resolution phase and resolve the encounter as if both players had revealed negotiate cards."
+            }
+        ]
+    },
+    "129": {
+        "versions": ["original", "homebrew"],
+        "powerTiming": {
+            "choice": [
+                {
+                    "style": {"homebrew": ["removed"]},
+                    "value": "Mandatory"
+                },
+                {
+                    "style": {"original": ["none"], "homebrew": ["added"]},
+                    "value": "Optional"
+                }
+            ]
+        },
+        "powerBody": [
+            {
+                "style": {},
+                "value": "As a main player, after encounter cards are revealed, "
             },
             {
-                "style": {"revised":["removed"]},
-                "value": "she adds ",
-                "revisionID": 7
+                "style": {"original": ["none"], "homebrew": ["added"]},
+                "value": "you ",
+                "revisionID": 1
+            },
+            {
+                "style": {"all": ["bold", "italic"], "original": ["none"], "homebrew": ["added"]},
+                "value": "may ",
+                "revisionID": 1
+            },
+            {
+                "style": {"all": ["bold", "italic"]},
+                "value": " use"
             },
             {
                 "style": {},
-                "value": "the card to ",
-                "revisionID": 8
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 9
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "their",
-                "revisionID": 10
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 11
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 12
-            },
-            {
-                "style": {},
-                "value": "hand. If the player declines your loyalty, ",
-                "revisionID": 13
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "he",
-                "revisionID": 14
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "they",
-                "revisionID": 15
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 16
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or she ",
-                "revisionID": 17
-            },
-            {
-                "style": {},
-                "value": "must give you one of ",
-                "revisionID": 18
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 19
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "their",
-                "revisionID": 20
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 21
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 22
-            },
-            {
-                "style": {},
-                "value": "ships from any colony. Place that ship on this sheet.\n\nAs a main player, after alliances are formed",
-                "revisionID": 23
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": ",",
-                "revisionID": 24
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 25
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "you",
-                "revisionID": 26
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "but",
-                "revisionID": 27
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 28
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "may",
-                "revisionID": 29
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "before",
-                "revisionID": 30
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 31
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "use",
-                "revisionID": 32
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "encounter",
-                "revisionID": 33
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 34
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "this",
-                "revisionID": 35
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "cards",
-                "revisionID": 36
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 37
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "power",
-                "revisionID": 38
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "are",
-                "revisionID": 39
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 40
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "to",
-                "revisionID": 41
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "selected,",
-                "revisionID": 42
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 43
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "return",
-                "revisionID": 44
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "if",
-                "revisionID": 45
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 46
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "all",
-                "revisionID": 47
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "you",
-                "revisionID": 48
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 49
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "have any ",
-                "revisionID": 50
-            },
-            {
-                "style": {},
-                "value": "ships on this sheet belonging to ",
-                "revisionID": 51
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "the",
-                "revisionID": 52
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "your",
-                "revisionID": 53
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 54
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "opposing",
-                "revisionID": 55
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "opponent,",
-                "revisionID": 56
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 57
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "main",
-                "revisionID": 58
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "you",
-                "revisionID": 59
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 60
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "may use this power to return those ships to that ",
-                "revisionID": 61
-            },
-            {
-                "style": {},
-                "value": "player. Proceed to the resolution phase and resolve the encounter as if both players had revealed negotiate cards.",
-                "revisionID": 62
+                "value": " this power to reveal the top card of the deck.\n\nIf it is not an encounter card, discard it. If it is an encounter card, replace one of either player's revealed encounter cards with the card from the deck, discarding the replaced card. In either case, the encounter then continues normally."
             }
         ],
         "wildBody": [
             {
                 "style": {},
-                "value": "As an ally, after your side wins the encounter, you may draw one card from the deck or retrieve one ship from the warp, in addition to any other benefits or rewards you may receive.",
-                "revisionID": 0
-            }
-        ],
-        "superBody": [
+                "value": "As a main player, after encounter cards are revealed, you may reveal the top card of the deck. If it is an encounter card, "
+            },
+            {
+                "style": {"homebrew": ["removed"]},
+                "value": "either discard it or",
+                "revisionID": 2
+            },
             {
                 "style": {},
-                "value": "As an ally, after encounter cards are revealed, you may select a number of opposing allies' ships equal to the number of ships you have involved in the encounter. The selected ships are sent to the warp.",
-                "revisionID": 0
-            }
-        ],
-        "history": [
+                "value": " use it to replace (and discard) your current encounter card. "
+            },
             {
-                "style": {},
-                "value": "There is no more faithful ally to have supporting your cause than the reliable, steadfast Patriot. The species is proud of its long heritage of fidelity, while many other races find its loyalty annoying and pretentious.",
-                "revisionID": 0
+                "style": {"homebrew": ["removed"]},
+                "value": "If it is not an encounter card, add it to your hand.",
+                "revisionID": 2
+            },
+            {
+                "style": {"original": ["none"], "homebrew": ["added"]},
+                "value": "Otherwise, discard it.",
+                "revisionID": 2
             }
         ]
     },
@@ -11782,385 +11230,154 @@
         "powerBody": [
             {
                 "style": {},
-                "value": "As a main player or ally, after alliances are formed, you may use this power to give one card from your hand to either main player (your opponent, if you are a main player). ",
-                "revisionID": 0
+                "value": "As a main player or ally, after alliances are formed, you may use this power to give one card from your hand to either main player (your opponent, if you are a main player). "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "Your",
+                "value": "Your opponent",
                 "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "That",
-                "revisionID": 2
+                "value": "That player",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 3
+                "value": " immediately adds the card to "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "opponent",
-                "revisionID": 4
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "player",
-                "revisionID": 5
-            },
-            {
-                "style": {},
-                "value": " immediately adds the card to ",
-                "revisionID": 6
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 7
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 8
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 9
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 10
-            },
-            {
-                "style": {},
-                "value": "hand",
-                "revisionID": 11
+                "value": "hand"
             },
             {
                 "style": {"revised":["removed"]},
                 "value": " and may play it normally",
-                "revisionID": 12
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": ". If, after using this power, you do not have any encounter cards in your hand and you are a main player, you draw a new hand.",
-                "revisionID": 13
+                "value": ". If, after using this power, you do not have any encounter cards in your hand and you are a main player, you draw a new hand."
             }
         ],
         "wildBody": [
             {
                 "style": {},
-                "value": "At the start of ",
-                "revisionID": 0
+                "value": "At the start of "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "a",
-                "revisionID": 1
+                "revisionID": 3
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "any",
-                "revisionID": 2
-            },
-            {
-                "style": {},
-                "value": " encounter, you may send one of your ships to the warp to lend your power to another player for the duration of the encounter. Until the end of the encounter, that player is considered to have your power instead of ",
                 "revisionID": 3
             },
             {
+                "style": {},
+                "value": " encounter, you may send one of your ships to the warp to lend your power to another player for the duration of the encounter. Until the end of the encounter, that player is considered to have your power instead of "
+            },
+            {
                 "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 4
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 5
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 6
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 7
-            },
-            {
-                "style": {},
-                "value": "own. You may not use your power while it is loaned out. The player may not refuse the loan",
-                "revisionID": 8
+                "value": " own. You may not use your power while it is loaned out. The player may not refuse the loan"
             },
             {
                 "style": {"revised":["removed"]},
                 "value": " of your power",
-                "revisionID": 9
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": ".",
-                "revisionID": 10
+                "value": "."
             }
         ],
         "superBody": [
             {
                 "style": {"revised":["removed"]},
-                "value": "Any",
-                "revisionID": 0
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "When",
-                "revisionID": 1
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 2
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "player",
+                "value": "Any player to whom you give an encounter card must",
                 "revisionID": 3
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "encounter",
-                "revisionID": 4
+                "value": "When encounter cards are to be selected, if you used your power to give a player an encounter card, you may force them to",
+                "revisionID": 3
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 5
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "cards are ",
-                "revisionID": 6
-            },
-            {
-                "style": {},
-                "value": "to ",
-                "revisionID": 7
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "whom",
-                "revisionID": 8
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "be",
-                "revisionID": 9
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 10
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "selected, if ",
-                "revisionID": 11
-            },
-            {
-                "style": {},
-                "value": "you ",
-                "revisionID": 12
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "used your power to ",
-                "revisionID": 13
-            },
-            {
-                "style": {},
-                "value": "give ",
-                "revisionID": 14
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "a player ",
-                "revisionID": 15
-            },
-            {
-                "style": {},
-                "value": "an encounter card",
-                "revisionID": 16
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": ",",
-                "revisionID": 17
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 18
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "must",
-                "revisionID": 19
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "you",
-                "revisionID": 20
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 21
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "may force them to ",
-                "revisionID": 22
-            },
-            {
-                "style": {},
-                "value": "play it in that encounter if ",
-                "revisionID": 23
+                "value": " play it in that encounter if "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "he or she can",
-                "revisionID": 24
+                "revisionID": 4
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "possible",
-                "revisionID": 25
+                "revisionID": 4
             },
             {
                 "style": {},
-                "value": ".",
-                "revisionID": 26
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "Rejecting a heavy-handed, dogmatic religious background, the cynical Philanthropists have learned to parody greed itself. Knowing that the Universe cannot bring itself to reject a gift, even when it is no present, the race has grown cunning in the art of self-serving charity.",
-                "revisionID": 0
+                "value": "."
             }
         ]
     },
     "131": {
         "versions": ["original", "revised"],
-        "powerBody": [
-            {
-                "style": {},
-                "value": "Once per encounter, you may use this power to take one card at random from the hand of any other player who has a foreign colony in your system. Add the card to your hand or discard it.",
-                "revisionID": 0
-            }
-        ],
         "wildBody": [
             {
                 "style": {},
-                "value": "When the hyperspace gate is aimed at a planet in your system, you may take a number of cards at random from the offense's hand up to the number of ships ",
+                "value": "When the hyperspace gate is aimed at a planet in your system, you may take a number of cards at random from the offense's hand up to the number of ships "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "he or she has",
                 "revisionID": 0
             },
             {
-                "style": {"revised":["removed"]},
-                "value": "he",
-                "revisionID": 1
-            },
-            {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "they",
-                "revisionID": 2
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 3
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or",
-                "revisionID": 4
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "have",
-                "revisionID": 5
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 6
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "she has ",
-                "revisionID": 7
-            },
-            {
-                "style": {},
-                "value": "in the gate. Keep or discard each card taken. If the offense now has no encounter cards in hand, ",
-                "revisionID": 8
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "he",
-                "revisionID": 9
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "they",
-                "revisionID": 10
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 11
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or",
-                "revisionID": 12
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "draw",
-                "revisionID": 13
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 14
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "she draws ",
-                "revisionID": 15
-            },
-            {
-                "style": {},
-                "value": "a new hand.",
-                "revisionID": 16
-            }
-        ],
-        "superBody": [
-            {
-                "style": {},
-                "value": "When using your power, you may take a card from any or all other players who have a foreign colony in your system.",
+                "value": "they have",
                 "revisionID": 0
-            }
-        ],
-        "history": [
+            },
             {
                 "style": {},
-                "value": "The glorious civilization of the once-noble Edificabi throve for millennia before giving in to the ease of burgling over building. As production of new resources dwindled, their world fell into decline and might have faded from the annals of Cosmic history, had not an unwitting company of spacefarers stumbled upon their troubled neighborhood. Quickly relieving the visitors of every last item of value, the Edificabi - by now reduced to little more than squabbling Pickpockets - saw their chance at a better future. Empowered by their newfound spaceflight technology, they artfully turned their nefarious skills upward and outward. Centuries later, these \"big dippers\" are still at work lightening the loads of their fellow travelers.",
+                "value": "in the gate. Keep or discard each card taken. If the offense now has no encounter cards in hand, "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "he or she draws",
                 "revisionID": 0
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "they draw",
+                "revisionID": 0
+            },
+            {
+                "style": {},
+                "value": "a new hand."
             }
         ]
     },
@@ -12169,446 +11386,232 @@
         "powerBody": [
             {
                 "style": {},
-                "value": "As a main player, before encounter cards are selected, you may use this power to graft any one player in whose home system you have at least one colony. If that player has not lost ",
-                "revisionID": 0
+                "value": "As a main player, before encounter cards are selected, you may use this power to graft any one player in whose home system you have at least one colony. If that player has not lost "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 1
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 2
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 3
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 4
-            },
-            {
-                "style": {},
-                "value": "power, you steal that power until the end of the encounter. If you lose your own power, you may not graft any power until you get your own back.",
-                "revisionID": 5
+                "value": " power, you steal that power until the end of the encounter. If you lose your own power, you may not graft any power until you get your own back."
             }
         ],
         "wildBody": [
             {
                 "style": {},
-                "value": "As a main player, after ",
-                "revisionID": 0
+                "value": "As a main player, after "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "allies",
+                "value": "allies are assigned",
                 "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "alliances",
+                "value": "alliances are formed",
+                "revisionID": 1
+            },
+            {
+                "style": {},
+                "value": ", you may steal the power of any ally (yours or your opponent's)"
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": " for that encounter. ",
+                "revisionID": 2
+            },
+            {
+                "style": {"revised":["none"]},
+                "value": "Y",
+                "revisionID": 2
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": ". Until the end of the encounter, y",
                 "revisionID": 2
             },
             {
                 "style": {},
-                "value": " are ",
-                "revisionID": 3
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "assigned",
-                "revisionID": 4
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "formed",
-                "revisionID": 5
-            },
-            {
-                "style": {},
-                "value": ", you may steal the power of any ally (yours or your opponent's)",
-                "revisionID": 6
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": ".",
-                "revisionID": 7
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 8
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "for",
-                "revisionID": 9
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "Until",
-                "revisionID": 10
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 11
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "that",
-                "revisionID": 12
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "the",
-                "revisionID": 13
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 14
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "end of the ",
-                "revisionID": 15
-            },
-            {
-                "style": {},
-                "value": "encounter",
-                "revisionID": 16
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": ".",
-                "revisionID": 17
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": ",",
-                "revisionID": 18
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 19
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "You",
-                "revisionID": 20
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "you",
-                "revisionID": 21
-            },
-            {
-                "style": {},
-                "value": " have the stolen power instead of your own, and the affected ally does not have the power",
-                "revisionID": 22
+                "value": "ou have the stolen power instead of your own, and the affected ally does not have the power"
             },
             {
                 "style": {"revised":["removed"]},
                 "value": ", until the end of the encounter",
-                "revisionID": 23
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": ".",
-                "revisionID": 24
+                "value": "."
             }
         ],
         "superBody": [
             {
                 "style": {},
-                "value": "If you have ",
-                "revisionID": 0
+                "value": "If you have "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "your own power and have ",
-                "revisionID": 1
-            },
-            {
-                "style": {},
-                "value": "a colony in the system of any player who wins the game, ",
-                "revisionID": 2
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "you may cause ",
+                "value": "your own power and have",
                 "revisionID": 3
             },
             {
                 "style": {},
-                "value": "the win ",
+                "value": " a colony in the system of any player who wins the game, "
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "you may cause",
                 "revisionID": 4
+            },
+            {
+                "style": {},
+                "value": " the win "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "is",
-                "revisionID": 5
+                "revisionID": 4
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "to",
-                "revisionID": 6
+                "value": "to be",
+                "revisionID": 4
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 7
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "be ",
-                "revisionID": 8
-            },
-            {
-                "style": {},
-                "value": "ignored",
-                "revisionID": 9
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": ".",
-                "revisionID": 10
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 11
+                "value": " ignored"
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "and",
-                "revisionID": 12
+                "value": " and instead",
+                "revisionID": 4
             },
             {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "Instead,",
-                "revisionID": 13
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 14
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "instead ",
-                "revisionID": 15
+                "style": {"original": ["none"], "revised":["added"]},
+                "value": ". Instead,",
+                "revisionID": 4
             },
             {
                 "style": {},
-                "value": "you win alone.",
-                "revisionID": 16
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "This species of Plant combines the longevity of the redwood, the persistence of the weed, and the delicacy of the fern. Slowly grafting to themselves the traits of others, they can afford to quietly wait until their enemies grow tired, then spread their tendrils unopposed throughout the Cosmos.",
-                "revisionID": 0
+                "value": " you win alone"
             }
         ]
     },
     "134": {
         "versions": ["original", "revised"],
-        "powerBody": [
+        "short": [
             {
                 "style": {},
-                "value": "Each time a card with a hazard warning is drawn from the destiny deck, use this power. Each foreign colony in your home system loses one ship to the warp.\n\nIn addition, as a main player, if both players reveal attack cards and your opponent's attack card value is within 2 of your attack card's value (such as an attack 04 and an attack 06), you may use this power to win the encounter, regardless of the actual totals.",
-                "revisionID": 0
-            }
-        ],
-        "wildBody": [
+                "value": "Has H"
+            },
+            {
+                "style": {"revised": ["none"]},
+                "value": "A",
+                "revisionID": 1
+            },
+            {
+                "style": {"original": ["none"], "revised": ["added"]},
+                "value": "a",
+                "revisionID": 1
+            },
             {
                 "style": {},
-                "value": "As the offense, after aiming the hyperspace gate at a planet, you may send one ship belonging to a player other than yourself on that planet to the warp.",
-                "revisionID": 0
+                "value": "zardous Home System"
             }
         ],
         "superBody": [
             {
                 "style": {"revised":["removed"]},
-                "value": "Your",
-                "revisionID": 0
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "You",
-                "revisionID": 1
-            },
-            {
-                "style": {},
-                "value": " ",
+                "value": "Your power may be used",
                 "revisionID": 2
             },
             {
-                "style": {"revised":["removed"]},
-                "value": "power ",
-                "revisionID": 3
-            },
-            {
-                "style": {},
-                "value": "may ",
-                "revisionID": 4
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "be",
-                "revisionID": 5
-            },
-            {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "use",
-                "revisionID": 6
+                "value": "You may use your power",
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 7
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "used",
-                "revisionID": 8
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "your",
-                "revisionID": 9
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 10
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "power ",
-                "revisionID": 11
-            },
-            {
-                "style": {},
-                "value": "if you and your opponent reveal attack cards within 3 of each other, rather than 2.",
-                "revisionID": 12
+                "value": " if you and your opponent reveal attack cards within 3 of each other, rather than 2."
             }
         ],
         "history": [
             {
                 "style": {},
-                "value": "Born from an ooze of chemicals that are highly toxic to all other ",
-                "revisionID": 0
+                "value": "Born from an ooze of chemicals that are highly toxic to all other "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "lifeforms",
-                "revisionID": 1
+                "revisionID": 3
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "life forms",
-                "revisionID": 2
+                "revisionID": 3
             },
             {
                 "style": {},
-                "value": ", the Poison are greatly feared for their ability to kill with a single touch. Those who visit their homeworlds must exercise extreme caution, as even the barest whiff of the atmosphere can prove fatal.",
-                "revisionID": 3
+                "value": ", the Poison are greatly feared for their ability to kill with a single touch. Those who visit their homeworlds must exercise extreme caution, as even the barest whiff of the atmosphere can prove fatal."
             }
         ]
     },
     "135": {
         "versions": ["original", "revised"],
-        "powerBody": [
-            {
-                "style": {},
-                "value": "As a main player or ally, if both players revealed attack cards and your side would lose the encounter, you may use this power to discard any number of cards from your hand. Then, add or subtract from your side's total an amount equal to the number of cards you discarded.",
-                "revisionID": 0
-            }
-        ],
-        "wildBody": [
-            {
-                "style": {},
-                "value": "As a main player, after both players reveal attack cards, you may reveal any number of cards in your hand. Then add one to your side's total for each card revealed, including this flare.",
-                "revisionID": 0
-            }
-        ],
         "superBody": [
             {
                 "style": {},
-                "value": "When using your power, ",
-                "revisionID": 0
+                "value": "When using your power, "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "each card ",
+                "value": "each card",
                 "revisionID": 1
             },
             {
                 "style": {},
-                "value": "you ",
-                "revisionID": 2
+                "value": " you "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "discard",
-                "revisionID": 3
+                "value": "discard adds",
+                "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "may",
-                "revisionID": 4
+                "value": "may add",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 5
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "adds",
-                "revisionID": 6
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "add",
-                "revisionID": 7
-            },
-            {
-                "style": {},
-                "value": " three to your side's total instead of one",
-                "revisionID": 8
+                "value": " three to your side's total instead of one"
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": " for each card you discard",
-                "revisionID": 9
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": ".",
-                "revisionID": 10
+                "value": "."
             }
         ],
         "history": [
             {
                 "style": {},
-                "value": "Under no circumstance is meeting a Porcupine a pleasant experience. Although highly intelligent, these creatures declare vendettas with little or no provocation. They exhibit no sense of self-preservation when pursuing the target of their ill will. Rather than talking out their problems, they are more than happy to let their ",
-                "revisionID": 0
+                "value": "Under no circumstance is meeting a Porcupine a pleasant experience. Although highly intelligent, these creatures declare vendettas with little or no provocation. They exhibit no sense of self-preservation when pursuing the target of their ill will. Rather than talking out their problems, they are more than happy to let their "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "razorsharp",
-                "revisionID": 1
+                "revisionID": 2
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
@@ -12617,8 +11620,7 @@
             },
             {
                 "style": {},
-                "value": " quills do all the talking for them.",
-                "revisionID": 3
+                "value": " quills do all the talking for them."
             }
         ]
     },
@@ -12627,48 +11629,35 @@
         "powerBody": [
             {
                 "style": {},
-                "value": "As the offense, after destiny is drawn, you may use this power to take your alien sheet(s) and everything on them and move to what you consider to be the best seat. The player in that seat takes ",
-                "revisionID": 0
+                "value": "As the offense, after destiny is drawn, you may use this power to take your alien sheet(s) and everything on them and move to what you consider to be the best seat. The player in that seat takes "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 1
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 2
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 3
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 4
-            },
-            {
-                "style": {},
-                "value": "alien sheet(s) and moves to your seat. Facets of alien powers, such as the Miser's hoard, the Warrior's tokens, and alien essence cards, move with those powers. Everything else is left behind to become the property of the arriving player, including player colors, ships, hands, planet systems, colonies, etc.\n\nAfter taking over another player's seat and ",
-                "revisionID": 5
+                "value": " alien sheet(s) and moves to your seat. Facets of alien powers, such as the Miser's hoard, the Warrior's tokens, and alien essence cards, move with those powers. Everything else is left behind to become the property of the arriving player, including player colors, ships, hands, planet systems, colonies, etc.\n\nAfter taking over another player's seat and "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "taking",
-                "revisionID": 6
+                "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "finishing",
-                "revisionID": 7
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": " your turn, play continues from you based on the new seating order.",
-                "revisionID": 8
+                "value": " your turn, play continues from you based on the new seating order."
             }
         ],
         "wildBody": [
@@ -12679,82 +11668,31 @@
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "he",
-                "revisionID": 1
+                "value": "he or she gives",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "they",
-                "revisionID": 2
+                "value": "they give",
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 3
+                "value": " you whichever one is the best from "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "or",
-                "revisionID": 4
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "give",
-                "revisionID": 5
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 6
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "she gives ",
-                "revisionID": 7
-            },
-            {
-                "style": {},
-                "value": "you whichever one is the best from ",
-                "revisionID": 8
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 9
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 10
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 11
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 12
-            },
-            {
-                "style": {},
-                "value": "point of view. Give this flare to that player after use.",
-                "revisionID": 13
-            }
-        ],
-        "superBody": [
-            {
-                "style": {},
-                "value": "When you use your power, you may decide that both players must also move their hands to their new seats.",
                 "revisionID": 0
-            }
-        ],
-        "history": [
+            },
             {
                 "style": {},
-                "value": "Pretenders instinctually gravitate toward those with power and privilege. Now their sphere of possible targets has widened to include the many life forms of an increasingly complex Cosmos.",
-                "revisionID": 0
+                "value": " point of view. Give this flare to that player after use."
             }
         ]
     },
