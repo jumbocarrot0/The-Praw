@@ -630,5 +630,33 @@
     "136": {
         "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
         "1": {"note": "Edited to use consistent terminology.", "author": "Cosmodex"}
+    },
+    "137": {
+        "1": {"note": "Edited to clarify timing.", "author": "Cosmodex"},
+        "2": {"note": "Edited to use consistent terminology.", "author": "Cosmodex"},
+        "3": {"note": "Edited to define what happens if neither main player wins.", "author": "Cosmodex"},
+        "4": {"note": "Edited to avoid implying this effect is mandatory.", "author": "Cosmodex"},
+        "5": {"note": "Edited to clarify that a deal only counts as a win for the purpose of Prophet's power, and not in general.", "author": "Cosmodex"}
+    },
+    "138": {
+        "1": {"note": "Edited to make the unused-player-color requirement consistent with Symbiote.", "author": "Cosmodex"},
+        "2": {"note": "Edited to define foreign colonies on Pygmy planets as being worth half only toward a game win and thus counting as full colonies for all other puposes (in order to clarify issues such as Prophet, Siren, Relic, or Winner needing to gain one foreign colony in Pygmy's system).", "author": "Cosmodex"},
+        "3": {"note": "Edited to block power-trading and -lending effects like Changeling, Wild Philanthropist, Wild Sorcerer, and Psychic Switcheroo, and to prevent Wild Schizoid from violating the intent of the \"power cannot be lost\" clause.", "author": "Cosmodex"},
+        "4": {"note": "Edited to avoid implying this effect is mandatory.", "author": "Cosmodex"},
+        "5": {"note": "Edited to use a more appropriate timing bar, as mandatory implies the power is used.", "author": "Cosmodex"}
+    },
+    "140": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "141": {
+        "1": {"note": "Edited to clarify that Reborn and Wild Reborn draw cards from the cosmic deck.", "author": "Cosmodex"}
+    },
+    "142": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to clarify the power works as a main player or ally.", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify Reincarnator only draws from unused alien powers.", "author": "Cosmodex"},
+        "3": {"note": "Edited to use consistent terminology.", "author": "Cosmodex"},
+        "4": {"note": "Edited for brevity and clarity.", "author": "Cosmodex"},
+        "5": {"note": "Edited to properly define what happens when the Reincarnator power is stolen.", "author": "Cosmodex"}
     }
 }

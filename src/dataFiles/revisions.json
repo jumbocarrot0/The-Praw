@@ -11702,7 +11702,7 @@
             {
                 "style": {"revised":["removed"]},
                 "value": "If",
-                "revisionID": 0
+                "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
@@ -11711,172 +11711,125 @@
             },
             {
                 "style": {},
-                "value": " you are not ",
+                "value": " you are not "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "involved as",
                 "revisionID": 2
             },
             {
+                "style": {},
+                "value": " a main player or ally "
+            },
+            {
                 "style": {"revised":["removed"]},
-                "value": "involved as ",
-                "revisionID": 3
+                "value": "in an encounter",
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": "a main player or ally",
-                "revisionID": 4
+                "value": ", you may use this power before encounter cards are selected to predict aloud which main player (offense or defense) will win. A deal counts as a win "
             },
             {
-                "style": {"revised":["removed"]},
-                "value": " in an encounter",
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "for this purpose",
                 "revisionID": 5
             },
             {
                 "style": {},
-                "value": ", you may use this power before encounter cards are selected to predict aloud which main player (offense or defense) will win. A deal counts as a win",
-                "revisionID": 6
+                "value": ". If you are correct, you gain a colony on any one planet of your choice. If you are not correct, the winner selects any two of your ships and sends them to the warp. "
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": " for this purpose",
-                "revisionID": 7
-            },
-            {
-                "style": {},
-                "value": ". If you are correct, you gain a colony on any one planet of your choice. If you are not correct, the winner selects any two of your ships and sends them to the warp.",
-                "revisionID": 8
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": " If there is no winner, this power has no effect.",
-                "revisionID": 9
+                "value": "If there is no winner, this power has no effect.",
+                "revisionID": 3
             }
         ],
         "wildBody": [
             {
                 "style": {},
-                "value": "Before encounter cards are selected",
-                "revisionID": 0
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": ",",
-                "revisionID": 1
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 2
+                "value": "Before encounter cards are selected"
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "in",
-                "revisionID": 3
+                "value": " in an encounter,",
+                "revisionID": 2
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "you",
+                "value": ", you may",
                 "revisionID": 4
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 5
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "an",
-                "revisionID": 6
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "may",
-                "revisionID": 7
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 8
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "encounter, ",
-                "revisionID": 9
-            },
-            {
-                "style": {},
-                "value": "play this ",
-                "revisionID": 10
+                "value": " play this "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "card",
-                "revisionID": 11
+                "revisionID": 2
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "flare",
-                "revisionID": 12
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": " and secretly predict whether one or two negotiate cards will be played. Conceal that many ",
-                "revisionID": 13
+                "value": " and secretly predict whether one or two negotiate cards will be played. Conceal that many "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "cosmic ",
-                "revisionID": 14
+                "value": "cosmic",
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": "tokens in your hand to indicate your prediction. If your prediction is correct, each other player in the game must lose a ship of their choice to the warp. If you are wrong, ",
-                "revisionID": 15
+                "value": " tokens in your hand to indicate your prediction. If your prediction is correct, each other player in the game must lose a ship of their choice to the warp. If you are wrong, "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "pass",
-                "revisionID": 16
+                "revisionID": 2
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "give",
-                "revisionID": 17
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": " this ",
-                "revisionID": 18
+                "value": " this "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "card",
-                "revisionID": 19
+                "revisionID": 2
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "flare",
-                "revisionID": 20
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": " to the player on your left.",
-                "revisionID": 21
+                "value": " to the player on your left."
             }
         ],
         "superBody": [
             {
                 "style": {},
-                "value": "You may predict after ",
-                "revisionID": 0
+                "value": "You may predict after "
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "encounter ",
+                "value": "encounter",
                 "revisionID": 1
             },
             {
                 "style": {},
-                "value": "cards are ",
-                "revisionID": 2
+                "value": " cards are "
             },
             {
                 "style": {"revised":["removed"]},
@@ -11890,35 +11843,59 @@
             },
             {
                 "style": {},
-                "value": " but before they are revealed.",
-                "revisionID": 5
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "Declaring themselves to be omniscient, the Prophets set forth into the promised vacuum of space to seek a new home in the interstellar wilderness. Are these Prophets false? Only the Eons will judge.",
-                "revisionID": 0
+                "value": " but before they are revealed."
             }
         ]
     },
     "138": {
         "versions": ["original", "revised"],
-        "powerBody": [
+        "gameSetup": [
             {
                 "style": {},
-                "value": "Each of your home worlds counts as only half of a foreign colony ",
-                "revisionID": 0
+                "value": "Choose one unused player color and place the five extra planets "
             },
             {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "toward victory ",
+                "style": {"original": ["none"], "revised": ["added"]},
+                "value": "of that color",
                 "revisionID": 1
             },
             {
                 "style": {},
-                "value": "for all other players (rounding down). There can never be more than four ships on any of your planets (counting yours). When determining landing order, use the timing rules. ",
+                "value": " in your home system (four in a four-planet game). Place two of your ships on each of your home planets. Your player color is the color of your ships. "
+            },
+            {
+                "style": {"original": ["none"], "revised": ["added"]},
+                "value": "Do not use this power unless you have an unused player color.",
+                "revisionID": 1
+            }
+        ],
+        "powerTiming": {
+            "choice": [
+                {
+                    "style": {"original":["none"], "revised": ["added"]},
+                    "value": "Continuous",
+                    "revisionID": 5
+                },
+                {
+                    "style": {"revised": ["removed"]},
+                    "value": "Mandatory",
+                    "revisionID": 5
+                }
+            ]
+        },
+        "powerBody": [
+            {
+                "style": {},
+                "value": "Each of your home worlds counts as only half of a foreign colony "
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "toward victory",
                 "revisionID": 2
+            },
+            {
+                "style": {},
+                "value": " for all other players (rounding down). There can never be more than four ships on any of your planets (counting yours). When determining landing order, use the timing rules. "
             },
             {
                 "style": {"revised":["removed"]},
@@ -11928,178 +11905,83 @@
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "This",
-                "revisionID": 4
+                "revisionID": 3
             },
             {
                 "style": {},
-                "value": " power cannot be zapped, lost, stolen, ",
-                "revisionID": 5
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "copied, ",
-                "revisionID": 6
-            },
-            {
-                "style": {},
-                "value": "or ",
-                "revisionID": 7
+                "value": " power cannot be zapped, lost, stolen, "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "copied",
-                "revisionID": 8
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "separated",
-                "revisionID": 9
+                "value": "or",
+                "revisionID": 3
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 10
+                "value": " copied"
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "from your player color ",
-                "revisionID": 11
+                "value": ", or ",
+                "revisionID": 3
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "separated from your player color",
+                "revisionID": 3
             },
             {
                 "style": {},
-                "value": "through any means.",
-                "revisionID": 12
+                "value": " through any means."
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "\n\nRequires Unused Player Color",
-                "revisionID": 13
+                "revisionID": 1
             }
         ],
         "wildBody": [
             {
                 "style": {},
-                "value": "When a player collects rewards, ",
-                "revisionID": 0
+                "value": "When a player collects rewards, "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "he",
-                "revisionID": 1
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "you",
-                "revisionID": 2
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 3
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or",
+                "value": "he or she may only take",
                 "revisionID": 4
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "may",
-                "revisionID": 5
+                "value": "you may cause them to take only",
+                "revisionID": 4
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 6
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "she",
-                "revisionID": 7
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "cause",
-                "revisionID": 8
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 9
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "may",
-                "revisionID": 10
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "them",
-                "revisionID": 11
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 12
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "only",
-                "revisionID": 13
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "to",
-                "revisionID": 14
-            },
-            {
-                "style": {},
-                "value": " take ",
-                "revisionID": 15
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "only ",
-                "revisionID": 16
-            },
-            {
-                "style": {},
-                "value": "half as many rewards as usual (rounding down).",
-                "revisionID": 17
+                "value": " half as many rewards as usual (rounding down)."
             }
         ],
         "superBody": [
             {
                 "style": {},
-                "value": "As the defense in your home system, if your opponent reveals an attack card, ",
-                "revisionID": 0
+                "value": "As the defense in your home system, if your opponent reveals an attack card, "
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "you may divide ",
-                "revisionID": 1
+                "value": "you may divide",
+                "revisionID": 4
             },
             {
                 "style": {},
-                "value": "its value ",
-                "revisionID": 2
+                "value": " its value "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "is divided ",
-                "revisionID": 3
+                "value": "is divided",
+                "revisionID": 4
             },
             {
                 "style": {},
-                "value": "in half (rounded down).",
-                "revisionID": 4
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "When the Cosmos was young, the Pygmies were quite large, living on twin worlds, rich with valuable resources. A gravitational anomaly caused the two planets to collide, scattering the Pygmies among the ruined rubble of their former homes. With so little space to exist, each successive generation of the Pygmy race became physically smaller, but the desire to grow their empire never diminished. The inhospitable chunks of debris on which the Pygmies now live serve only as a staging ground for their invasion of other worlds.",
-                "revisionID": 0
+                "value": " in half (rounded down)."
             }
         ]
     },
@@ -12108,79 +11990,35 @@
         "powerBody": [
             {
                 "style": {},
-                "value": "As an ally, if the main player on your side wins the encounter and ",
-                "revisionID": 0
+                "value": "As an ally, if the main player on your side wins the encounter and "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 1
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 2
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 3
+                "value": " matching flare(s) are on this sheet, use this power to give that player "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 4
-            },
-            {
-                "style": {},
-                "value": "matching flare(s) are on this sheet, use this power to give that player ",
-                "revisionID": 5
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 6
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 7
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 8
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or her ",
-                "revisionID": 9
-            },
-            {
-                "style": {},
-                "value": "matching flare(s).\n\nIf neither main player invites you to ally and one of them loses the encounter, you may add the losing main player's matching flare(s) to your hand from this sheet, discard that player's matching flare(s) from your hand, or add your own matching flare(s) to your hand from this sheet.\n\nWhen any player's matching flare is discarded by a player other than you, use this power to place that flare faceup on this sheet.",
-                "revisionID": 10
-            }
-        ],
-        "wildBody": [
-            {
-                "style": {},
-                "value": "As the winning defense, you may establish one colony on any foreign planet. Give this flare to the Reactor after use (or discard it, if the Reactor isn't playing).",
-                "revisionID": 0
-            }
-        ],
-        "superBody": [
-            {
-                "style": {},
-                "value": "If your side wins an encounter and you have no other flares in your hand or on your sheet, you may use this flare to win the game.",
-                "revisionID": 0
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "Originally an environmentally conscious race of peaceful activists, the Reactors sought to turn themselves into a source of sustainable energy. Yet the awesome power of Cosmic radiation and its mutating properties transformed the Reactors into radioactive freaks, eager to spread their sickness to other power-hungry cultures.",
-                "revisionID": 0
+                "value": " matching flare(s).\n\nIf neither main player invites you to ally and one of them loses the encounter, you may add the losing main player's matching flare(s) to your hand from this sheet, discard that player's matching flare(s) from your hand, or add your own matching flare(s) to your hand from this sheet.\n\nWhen any player's matching flare is discarded by a player other than you, use this power to place that flare faceup on this sheet."
             }
         ]
     },
@@ -12189,49 +12027,31 @@
         "powerBody": [
             {
                 "style": {},
-                "value": "For each ship you lose to the warp, you may use this power to draw a card",
-                "revisionID": 0
+                "value": "For each ship you lose to the warp, you may use this power to draw a card "
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": " from the deck",
+                "value": "from the deck",
                 "revisionID": 1
             },
             {
                 "style": {},
-                "value": ".\n\nFor each ship you retrieve from the warp, you may use this power to discard a card of your choice from your hand.",
-                "revisionID": 2
+                "value": ".\n\nFor each ship you retrieve from the warp, you may use this power to discard a card of your choice from your hand."
             }
         ],
         "wildBody": [
             {
                 "style": {},
-                "value": "During any regroup phase, if the offense retrieves a ship from the warp, you may draw a card",
-                "revisionID": 0
+                "value": "During any regroup phase, if the offense retrieves a ship from the warp, you may draw a card "
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": " from the deck",
+                "value": "from the deck",
                 "revisionID": 1
             },
             {
                 "style": {},
-                "value": ".",
-                "revisionID": 2
-            }
-        ],
-        "superBody": [
-            {
-                "style": {},
-                "value": "During your regroup phase, you may discard cards from your hand to retrieve your ships from the warp on a 1-for-1 basis.",
-                "revisionID": 0
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "The Reborn were once a vibrant, happy race spreading across the Cosmos. But then, one of their scientists discovered a fateful technology that allowed the older members of the race to transfer their consciousness into the bodies of their offspring. Although this allowed them to preserve the memories and skills of their wiser members, the chance to cheat death was ultimately too tempting for the Reborn, who have since become a ghoulish race of nearly immortal beings living on in their children's bodies.",
-                "revisionID": 0
+                "value": "."
             }
         ]
     },
@@ -12240,864 +12060,311 @@
         "powerBody": [
             {
                 "style": {},
-                "value": "As a main player or ally, when ",
-                "revisionID": 0
+                "value": "As a main player or ally, when "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "you",
+                "value": "you lose",
                 "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "your",
-                "revisionID": 2
+                "value": "your side loses",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": " ",
+                "value": " an encounter (or "
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "you",
+                "revisionID": 1
+            },
+            {
+                "style": {},
+                "value": " fail to deal), use this power to reincarnate. Draw an "
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "unused",
                 "revisionID": 3
             },
             {
+                "style": {},
+                "value": " alien power "
+            },
+            {
                 "style": {"revised":["removed"]},
-                "value": "lose",
+                "value": "card",
+                "revisionID": 3
+            },
+            {
+                "style": {},
+                "value": " at random "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "from the unused pile",
+                "revisionID": 3
+            },
+            {
+                "style": {},
+                "value": " and become that alien. If the alien has Game Setup text or is not allowed in the current game, "
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "discard it and",
+                "revisionID": 4
+            },
+            {
+                "style": {},
+                "value": " draw again. If "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "you lose a later encounter",
+                "revisionID": 1
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "your side loses or you fail to deal again",
+                "revisionID": 1
+            },
+            {
+                "style": {},
+                "value": ", discard that alien and "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "draw a new one",
                 "revisionID": 4
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "side",
+                "value": "reincarnate again",
+                "revisionID": 4
+            },
+            {
+                "style": {},
+                "value": ". This power stays with you while you use the others. "
+            },
+            {
+                "style": {"revised":["removed"]},
+                "value": "Aliens with the power to copy",
+                "revisionID": 5
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "Players that copy or steal",
                 "revisionID": 5
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 6
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "loses ",
-                "revisionID": 7
-            },
-            {
-                "style": {},
-                "value": "an encounter (or ",
-                "revisionID": 8
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "you ",
-                "revisionID": 9
-            },
-            {
-                "style": {},
-                "value": "fail to deal), use this power to reincarnate. Draw an ",
-                "revisionID": 10
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "unused ",
-                "revisionID": 11
-            },
-            {
-                "style": {},
-                "value": "alien power ",
-                "revisionID": 12
+                "value": " your power "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "card ",
-                "revisionID": 13
-            },
-            {
-                "style": {},
-                "value": "at random ",
-                "revisionID": 14
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "from the unused pile ",
-                "revisionID": 15
-            },
-            {
-                "style": {},
-                "value": "and become that alien. If the alien has Game Setup text or is not allowed in the current game, ",
-                "revisionID": 16
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "discard it and ",
-                "revisionID": 17
-            },
-            {
-                "style": {},
-                "value": "draw again. If ",
-                "revisionID": 18
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "your side loses or ",
-                "revisionID": 19
-            },
-            {
-                "style": {},
-                "value": "you ",
-                "revisionID": 20
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "lose",
-                "revisionID": 21
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "fail",
-                "revisionID": 22
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 23
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "a",
-                "revisionID": 24
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "to",
-                "revisionID": 25
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 26
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "later",
-                "revisionID": 27
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "deal",
-                "revisionID": 28
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 29
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "encounter",
-                "revisionID": 30
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "again",
-                "revisionID": 31
-            },
-            {
-                "style": {},
-                "value": ", discard that alien and ",
-                "revisionID": 32
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "draw",
-                "revisionID": 33
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "reincarnate",
-                "revisionID": 34
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 35
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "a new one",
-                "revisionID": 36
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "again",
-                "revisionID": 37
-            },
-            {
-                "style": {},
-                "value": ". This power stays with you while you use the others. ",
-                "revisionID": 38
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "Aliens",
-                "revisionID": 39
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "Players",
-                "revisionID": 40
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 41
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "with",
-                "revisionID": 42
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "that",
-                "revisionID": 43
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 44
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "the",
-                "revisionID": 45
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "copy",
-                "revisionID": 46
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 47
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "power",
-                "revisionID": 48
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "or",
-                "revisionID": 49
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 50
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "to",
-                "revisionID": 51
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "steal",
-                "revisionID": 52
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 53
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "copy ",
-                "revisionID": 54
-            },
-            {
-                "style": {},
-                "value": "your power ",
-                "revisionID": 55
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "may",
-                "revisionID": 56
+                "value": "may do so (copying",
+                "revisionID": 5
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "use",
-                "revisionID": 57
+                "revisionID": 5
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 58
+                "value": " both your Reincarnator power and whatever power you are reincarnated as"
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "do so (copying ",
-                "revisionID": 59
+                "value": "), but if they lose",
+                "revisionID": 1
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": ". If while doing so their side loses",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": "both your Reincarnator power and whatever power you are reincarnated as",
-                "revisionID": 60
+                "value": " an encounter "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "),",
-                "revisionID": 61
+                "value": "while doing so",
+                "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": ".",
-                "revisionID": 62
+                "value": "or they fail to deal,",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 63
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "but",
-                "revisionID": 64
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "If",
-                "revisionID": 65
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 66
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "if",
-                "revisionID": 67
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "while",
-                "revisionID": 68
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 69
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "they",
-                "revisionID": 70
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "doing",
-                "revisionID": 71
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 72
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "lose",
-                "revisionID": 73
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "so",
-                "revisionID": 74
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 75
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "their side loses ",
-                "revisionID": 76
-            },
-            {
-                "style": {},
-                "value": "an encounter ",
-                "revisionID": 77
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "while",
-                "revisionID": 78
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "or",
-                "revisionID": 79
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 80
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "doing",
-                "revisionID": 81
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "they",
-                "revisionID": 82
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 83
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "so",
-                "revisionID": 84
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "fail",
-                "revisionID": 85
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 86
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "to deal, ",
-                "revisionID": 87
-            },
-            {
-                "style": {},
-                "value": "they must reincarnate, losing their original power.",
-                "revisionID": 88
+                "value": " they must reincarnate, losing their original power."
             }
         ],
         "wildBody": [
             {
                 "style": {},
-                "value": "After another player ",
-                "revisionID": 0
+                "value": "After another player "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "besides",
-                "revisionID": 1
+                "revisionID": 4
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "who",
-                "revisionID": 2
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 3
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "is not ",
+                "value": "who is not",
                 "revisionID": 4
             },
             {
                 "style": {},
-                "value": "the Reincarnator ",
-                "revisionID": 5
+                "value": " the Reincarnator "
             },
             {
                 "style": {"revised":["removed"]},
                 "value": "loses",
-                "revisionID": 6
+                "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "is",
-                "revisionID": 7
+                "value": "is on the losing side of",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 8
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "on the losing side of ",
-                "revisionID": 9
-            },
-            {
-                "style": {},
-                "value": "an encounter or fails to make a deal, you may give this flare to that player. Immediately after the end of this encounter, that player must discard ",
-                "revisionID": 10
+                "value": " an encounter or fails to make a deal, you may give this flare to that player. Immediately after the end of this encounter, that player must discard "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "his",
-                "revisionID": 11
+                "value": "his or her",
+                "revisionID": 0
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "their",
-                "revisionID": 12
+                "revisionID": 0
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 13
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "or",
-                "revisionID": 14
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "current",
-                "revisionID": 15
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 16
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "her",
-                "revisionID": 17
+                "value": " current "
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "alien",
-                "revisionID": 18
+                "revisionID": 4
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 19
+                "value": " power and draw "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "current ",
-                "revisionID": 20
+                "value": "a new",
+                "revisionID": 2
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "an unused",
+                "revisionID": 2
             },
             {
                 "style": {},
-                "value": "power and draw ",
-                "revisionID": 21
+                "value": " one "
+            },
+            {
+                "style": {"original":["none"], "revised": ["added"]},
+                "value": "at random",
+                "revisionID": 4
+            },
+            {
+                "style": {},
+                "value": ". "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "a",
-                "revisionID": 22
+                "value": "Aliens with",
+                "revisionID": 4
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "an",
-                "revisionID": 23
+                "value": "If the alien has",
+                "revisionID": 4
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 24
+                "value": " Game Setup text or "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "new",
-                "revisionID": 25
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "unused",
-                "revisionID": 26
-            },
-            {
-                "style": {},
-                "value": " one",
-                "revisionID": 27
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": " at random",
-                "revisionID": 28
-            },
-            {
-                "style": {},
-                "value": ". ",
-                "revisionID": 29
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "Aliens",
-                "revisionID": 30
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "If",
-                "revisionID": 31
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 32
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "with",
-                "revisionID": 33
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "the",
-                "revisionID": 34
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 35
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "alien has ",
-                "revisionID": 36
-            },
-            {
-                "style": {},
-                "value": "Game Setup text or ",
-                "revisionID": 37
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "that",
-                "revisionID": 38
+                "value": "that are",
+                "revisionID": 4
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
                 "value": "is",
-                "revisionID": 39
+                "revisionID": 4
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 40
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "are ",
-                "revisionID": 41
-            },
-            {
-                "style": {},
-                "value": "not allowed in the current game",
-                "revisionID": 42
+                "value": " not allowed in the current game"
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": ",",
-                "revisionID": 43
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 44
+                "value": ", the player must discard it and",
+                "revisionID": 4
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "should",
-                "revisionID": 45
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "the",
-                "revisionID": 46
+                "value": "should be discarded and the player allowed to",
+                "revisionID": 4
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 47
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "be",
-                "revisionID": 48
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "player",
-                "revisionID": 49
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 50
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "discarded",
-                "revisionID": 51
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "must",
-                "revisionID": 52
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 53
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "and",
-                "revisionID": 54
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "discard",
-                "revisionID": 55
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 56
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "the",
-                "revisionID": 57
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "it",
-                "revisionID": 58
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 59
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "player",
-                "revisionID": 60
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "and",
-                "revisionID": 61
-            },
-            {
-                "style": {},
-                "value": " ",
-                "revisionID": 62
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "allowed to ",
-                "revisionID": 63
-            },
-            {
-                "style": {},
-                "value": "draw again.",
-                "revisionID": 64
+                "value": " draw again."
             }
         ],
         "superBody": [
             {
                 "style": {},
-                "value": "You don't have to reincarnate when ",
-                "revisionID": 0
+                "value": "You don't have to reincarnate when "
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "you",
+                "value": "you lose an encounter",
                 "revisionID": 1
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "your",
-                "revisionID": 2
+                "value": "your side loses",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 3
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "lose",
-                "revisionID": 4
+                "value": " or "
             },
             {
                 "style": {"original":["none"], "revised": ["added"]},
-                "value": "side",
-                "revisionID": 5
+                "value": "you",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 6
+                "value": " fail to ",
+                "revisionID": 1
             },
             {
                 "style": {"revised":["removed"]},
-                "value": "an",
-                "revisionID": 7
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "loses",
-                "revisionID": 8
+                "value": "make a",
+                "revisionID": 1
             },
             {
                 "style": {},
-                "value": " ",
-                "revisionID": 9
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "encounter ",
-                "revisionID": 10
-            },
-            {
-                "style": {},
-                "value": "or ",
-                "revisionID": 11
-            },
-            {
-                "style": {"original":["none"], "revised": ["added"]},
-                "value": "you ",
-                "revisionID": 12
-            },
-            {
-                "style": {},
-                "value": "fail to ",
-                "revisionID": 13
-            },
-            {
-                "style": {"revised":["removed"]},
-                "value": "make a ",
-                "revisionID": 14
-            },
-            {
-                "style": {},
-                "value": "deal.",
-                "revisionID": 15
-            }
-        ],
-        "history": [
-            {
-                "style": {},
-                "value": "Having conquered the fear of death, the Reincarnators rejoice with the passing of each of their kind. Feeling kinship with all life forms, they know that those who die will soon be born again in an endless cycle.",
-                "revisionID": 0
+                "value": " deal."
             }
         ]
     },
