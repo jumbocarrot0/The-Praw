@@ -386,6 +386,51 @@
                 "tags": []
             }
         ],
+        "56": [
+            {
+                "question": "Do Clone, Filch, and Fido have any precedence over each other?",
+                "answer": "Clone does keep, Filch and Fido are subject to the standard timing rules.",
+                "source": "2018 FAQ",
+                "tags": [],
+                "notes": "Clone triggers after the encounter is resolved, Fido and Filch trigger after encounter cards are discarded, hence why Clone takes precedence."
+            },
+            {
+                "question": "If Sorcerer switches cards, which card does Clone or Filch take?",
+                "answer": "Clone takes the card that ends the encounter in front of him, Filch takes the card that ends the encounter in front of their opponent.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "Does the classic Filch flare have to be played to be used at all?",
+                "answer": "No, it is only revealed if the cheating player is caught, at which point it may be zapped.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "Can Filch take Gambler’s unrevealed card, and if so, can he notify the table whether the truth was told?",
+                "answer": "No. Gambler’s unrevealed encounter card is not discarded, but rather placed at the bottom of the appropriate deck.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "Can the classic Filch Wild flare target the reward deck (and discard pile)?",
+                "answer": "No.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "Can Filch take their opponent’s encounter card if it is from the reward deck?",
+                "answer": "Yes.",
+                "source": "2018 FAQ",
+                "tags": []
+            },
+            {
+                "question": "Does Filch get to take their opponent's kicker?",
+                "answer": "No.",
+                "source": "2018 FAQ",
+                "tags": []
+            }
+        ],
         "69": [
             {
                 "question": "When can I zap Greenhorn?",
@@ -400,6 +445,86 @@
                 "source": "The Praw",
                 "tags": [],
                 "notes": "This is a contradiction with other rulings in the official FAQ, but it's how the power was designed."
+            }
+        ],
+        "203": [
+            {
+                "question": "If the defense is displaced, are their ships still involved in the encounter?",
+                "answer": "Yes.",
+                "source": "Designer Clarification",
+                "tags": [],
+                "notes": "This implies that the position of a player's involved ships does not dictate their role in the encounter."
+            },
+            {
+                "question": "If the defense is displaced and the new defense has ships on the targetted planet, are those ships involved in the encounter?",
+                "answer": "Yes. If the offense wins the encounter, both the new defense and the original defense with lose their colony on the targeted planet.",
+                "source": "Designer Clarification",
+                "tags": ["Contentious"],
+                "notes": "This ruling comes from a comment Jack Reda made on BGG. Whilst as close to an official ruling as we have, the clarification is not 100% consistent.\n\nThe Praw prefers to play that these ships are not involved in the encounter, which means Delegator does not change which ships are involved in the encounter."
+            },
+            {
+                "question": "If the defense is displaced and the new defense has ships on the targetted planet, are their previous ships still involved in the encounter?",
+                "answer": "Yes.",
+                "source": "Designer Clarification",
+                "tags": [],
+                "notes": "This implies that the position of a player's involved ships does not dictate their role in the encounter."
+            }
+        ],
+        "205": [
+            {
+                "question": "If Extractor moves a player's foreign colony onto another planet outsider that player's home system, does that player \"gain a foreign colony\" for the purpose of Extractor.",
+                "answer": "Yes.",
+                "source": "Designer Clarification",
+                "tags": ["Contentious"],
+                "notes": "This ruling comes from one of Jack Reda's videos, and is contentious moreso for the impact of balance of the alien. Prior, the rewards came with a balance that it grants other players foreign colony, a fair trade. But in this scenario, it allows Extractor to gain rewards for free (well, that player's ships are saved, but that's not comparable).\n\nThe Praw recommends to play it that for Extractor to gain rewards, the extracted player must end with more foriegn colonies than they started with."
+            }
+        ],
+        "207": [
+            {
+                "question": "Is the Wild Geek flare played the moment a player or players win, or when their win is obvious?",
+                "answer": "The card is played when a player would win the game (usually during resolution) and not any earlier. For example, if a player has a higher encounter total during reveal and is likely to gain their final foreign colony, the wild Geek cannot yet be played until that player gains their finaly foriegn colony (and actually wins).",
+                "source": "The Praw",
+                "tags": ["Contentious"],
+                "notes": "This question has no clear answer; the one provided is this site's best guess."
+            },
+            {
+                "question": "Which cards can be named using the Geek Wild flare?",
+                "answer": "If the card can be played, and would change the winning players in some way (either by granting one or more players a win or by preventing a win), it can be named. This excludes techs, stations, moons, envoys, etc. as these cards are never played.",
+                "source": "The Praw",
+                "tags": ["Contentious"],
+                "notes": "This question has no clear answer; the one provided is this site's best guess."
+            },
+            {
+                "question": "When using the Geek Wild flare, can I name a flare and then play it?",
+                "answer": "Yes, it bypasses the one flare per encounter limit.",
+                "source": "The Praw",
+                "tags": ["Contentious"],
+                "notes": "This question has no clear answer; the one provided is this site's best guess. This answer is based mostly on fun factor, as preventing it otherwise restricts this card to just artifacts."
+            }
+        ],
+        "214": [
+            {
+                "question": "Can Lloyd offer to insure cards for a player as compensation is being taken from them.",
+                "answer": "The offer to insure must come before compensation has begun to be taken. I.e., a player cannot wait to see which cards their opponent takes from compensation before insuring them.",
+                "source": "Designer Clarification",
+                "tags": []
+            }
+        ],
+        "219": [
+            {
+                "question": "Can Tentacle add the value of their opponent's digits to their own side, or vice versa?",
+                "answer": "No. Tentacle either adds their digits to their own side, or their opponent's digits to their opponent's side.",
+                "source": "The Praw",
+                "tags": []
+            }
+        ],
+        "220": [
+            {
+                "question": "If The Meek wins as the offense, and thus gains a foreign colony, does their colony marker stay the same or move down one?",
+                "answer": "The Meek's colony marker would first be reduced by their own power, then be increased when they gain the colony. This would cause the colony marker to stay the same normally, or increase by 1 if The Meek's colony marker was initially zero.",
+                "source": "The Praw",
+                "tags": ["Contentious"],
+                "notes": "This question has no clear answer; the one provided is this site's best guess."
             }
         ]
     }
