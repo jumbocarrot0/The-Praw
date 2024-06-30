@@ -10,7 +10,11 @@ import {
   Nav,
   NavItem,
   // NavLink,
-  NavbarText
+  // NavbarText,
+  DropdownMenu,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownItem
 } from 'reactstrap';
 
 // navigation links
@@ -21,19 +25,14 @@ export default function PrawNav() {
 
   return (
     <Navbar className="navbar navbar-expand-md bg-light" data-bs-theme="light" fixed="top">
-      <NavbarBrand>The Praw</NavbarBrand>
+      <NavbarBrand tag="span">The Praw</NavbarBrand>
       <NavbarToggler onClick={toggle} className="bg-dark">
-        </NavbarToggler>
+      </NavbarToggler>
       <Collapse isOpen={isOpen} navbar>
         <Nav className="me-auto" navbar>
           <NavItem key={0}>
             <Link className="nav-link" to="/">
               Home
-            </Link>
-          </NavItem>
-          <NavItem key={1}>
-            <Link className="nav-link" to="/Combos">
-              Combos
             </Link>
           </NavItem>
           <NavItem key={2}>
@@ -46,14 +45,36 @@ export default function PrawNav() {
               Variants
             </Link>
           </NavItem>
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle nav caret>
+              Tools
+            </DropdownToggle>
+            <DropdownMenu end>
+              <DropdownItem>
+                <Link className="nav-link" to="/Combos">
+                  Combo Generator
+                </Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link className="nav-link" to="/Selection">
+                  Alien Dealer
+                </Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link className="nav-link" to="/Geek">
+                  Geek Practice
+                </Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link className="nav-link" to="/DigitalDial">
+                  Digital Dial
+                </Link>
+              </DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
           <NavItem key={6}>
             <Link className="nav-link" to="/HouseRules">
               House Rules
-            </Link>
-          </NavItem>
-          <NavItem key={5}>
-            <Link className="nav-link" to="/Selection">
-              Selection
             </Link>
           </NavItem>
           <NavItem key={4}>
@@ -62,7 +83,6 @@ export default function PrawNav() {
             </Link>
           </NavItem>
         </Nav>
-        <NavbarText>Powered by React</NavbarText>
       </Collapse>
     </Navbar>
   );

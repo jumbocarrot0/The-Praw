@@ -8,26 +8,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Storm"
-            },
-            "revised": {
-                "name": "Alien Outpost",
-                "type": "Space Station",
-                "body": "When you receive this card, draw one card from the unused flare deck. Place the matching alien sheet next to this card, then remove that flare from the game. If the alien has Game Setup text, is not allowed in this game, or has an alternate victory condition, discard it and draw again. While you have a colony on this planet, you have this alien power in addition to any other alien(s) you control.",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -38,6 +19,27 @@
                     }
                 },
                 "expansion": "Cosmic Storm",
+                "thumbnail": "station icons/Alien_Outpost.png"
+            },
+            "revised": {
+                "name": "Alien Outpost",
+                "type": "Space Station",
+                "body": "When you receive this card, draw one card from the unused flare deck. Place the matching alien sheet next to this card, then remove that flare from the game. If the alien has Game Setup text, is not allowed in this game, or has an alternate victory condition, discard it and draw again. While you have a colony on this planet, you have this alien power in addition to any other alien(s) you control.",
+                "timing": {
+                    "player": "As Any Player",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Storm",
+                "thumbnail": "station icons/Alien_Outpost.png",
                 "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency"
             }
         },
@@ -52,7 +54,8 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Cosmic Storm"
+                "expansion": "Cosmic Storm",
+                "thumbnail": "station icons/Big_Space_Laser.png"
             }
         },
         "2": {
@@ -66,7 +69,8 @@
                         "launch": true
                     }
                 },
-                "expansion": "Cosmic Storm"
+                "expansion": "Cosmic Storm",
+                "thumbnail": "station icons/Colony_Cloak.png"
             }
         },
         "3": {
@@ -80,7 +84,8 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Cosmic Storm"
+                "expansion": "Cosmic Storm",
+                "thumbnail": "station icons/Cosmic_Energy_Generator.png"
             }
         },
         "4": {
@@ -94,7 +99,8 @@
                         "alliance": true
                     }
                 },
-                "expansion": "Cosmic Storm"
+                "expansion": "Cosmic Storm",
+                "thumbnail": "station icons/Observation_Platform.png"
             },
             "revised": {
                 "name": "Observation Platform",
@@ -107,6 +113,7 @@
                     }
                 },
                 "expansion": "Cosmic Storm",
+                "thumbnail": "station icons/Observation_Platform.png",
                 "revisionNotes": "Revisions from The Praw\n\nEdited to be consistent with Odyssey's observation platform, which is clearer in its wording and to give it a small buff to make it not a subset of Odyssey's observation platform. The latter is a very opinionated change, feel free to ignore it."
             }
         },
@@ -121,7 +128,8 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Cosmic Storm"
+                "expansion": "Cosmic Storm",
+                "thumbnail": "station icons/Shield_Generator.png"
             }
         },
         "6": {
@@ -135,7 +143,8 @@
                         "regroup": true
                     }
                 },
-                "expansion": "Cosmic Storm"
+                "expansion": "Cosmic Storm",
+                "thumbnail": "station icons/Shock_Trooper_Shuttle_Pods.png"
             }
         },
         "7": {
@@ -149,7 +158,8 @@
                         "launch": true
                     }
                 },
-                "expansion": "Cosmic Storm"
+                "expansion": "Cosmic Storm",
+                "thumbnail": "station icons/Tactical_Array.png"
             }
         },
         "8": {
@@ -163,7 +173,8 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Cosmic Storm"
+                "expansion": "Cosmic Storm",
+                "thumbnail": "station icons/Temporal_Matrix.png"
             }
         },
         "9": {
@@ -177,7 +188,8 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Cosmic Storm"
+                "expansion": "Cosmic Storm",
+                "thumbnail": "station icons/Transdimensional_Rift_Relay.png"
             }
         },
         "10": {
@@ -188,7 +200,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -198,13 +210,13 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
-            },
-            "revised": {}
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Artifact_Detection_Grid.png"
+            }
         },
         "11": {
             "original": {
-                "name": "Fluxx Capacitory",
+                "name": "Fluxx Capacitor",
                 "type": "Space Station",
                 "body": "After alliances are formed, if you were invited to both sides, place a cosmic token on this card.\n\nAfter cards are selected but before they are revealed, if you are an ally, you may spend a token from this card to switch to the other side.",
                 "timing": {
@@ -213,7 +225,8 @@
                         "planning": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Fluxx_Capacitor.png"
             }
         },
         "12": {
@@ -227,7 +240,8 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Massive_Battery.png"
             }
         },
         "13": {
@@ -241,7 +255,8 @@
                         "alliance": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Observation_Platform_2.png"
             }
         },
         "14": {
@@ -255,7 +270,8 @@
                         "regroup": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Orbital_Billboards.png"
             }
         },
         "15": {
@@ -269,7 +285,8 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Oscillation_Overthruster.png"
             }
         },
         "16": {
@@ -283,7 +300,8 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Stun_Apparatus.png"
             }
         },
         "17": {
@@ -297,18 +315,19 @@
                         "planning": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Targeting_Depot.png"
             }
         },
         "18": {
             "original": {
-                "name": "Rift Enhancer",
+                "name": "Rift Enacter",
                 "type": "Space Station",
                 "body": "After a player takes an attack 01-06 from your hand, you may force that player to lose a number of their ships equal to the value of the card and discard that card. During the regroup phase, you may discard an attack 01-06 to free a number of the offense's ships from the warp equal to the value of the card.",
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -318,7 +337,8 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Rift_Enacter.png"
             }
         },
         "19": {
@@ -329,7 +349,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -339,7 +359,8 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Zap_Zapper.png"
             }
         },
         "20": {
@@ -353,7 +374,8 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Big_Sky_Laser.png"
             }
         },
         "21": {
@@ -367,7 +389,8 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Exhortation.png"
             }
         },
         "22": {
@@ -381,7 +404,8 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Golden_City.png"
             }
         },
         "23": {
@@ -392,7 +416,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -402,7 +426,8 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Hand_Additor.png"
             }
         },
         "24": {
@@ -416,7 +441,8 @@
                         "regroup": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Icy_Optimization.png"
             }
         },
         "25": {
@@ -430,7 +456,8 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Recycler.png"
             }
         },
         "26": {
@@ -444,7 +471,8 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Warp_Harvester.png"
             }
         },
         "27": {
@@ -458,7 +486,8 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Zaptimizer.png"
             },
             "revised": {
                 "name": "Zaptimizer",
@@ -471,6 +500,7 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Zaptimizer.png",
                 "revisionNotes": "Revisions from The Praw\n\nEdited to be consistent with the Cosmodex's revised Card Zap"
             }
         },
@@ -485,7 +515,8 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Burst_Targeter.png"
             },
             "revised": {
                 "name": "Burst Targeter",
@@ -498,6 +529,7 @@
                     }
                 },
                 "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Burst_Targeter.png",
                 "revisionNotes": "Revisions from The Praw\n\nEdited for wording consistency"
             }
         },
@@ -509,7 +541,7 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "start turn": true,
+                        "startTurn": true,
                         "regroup": true,
                         "destiny": true,
                         "launch": true,
@@ -519,9 +551,9 @@
                         "resolution": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
-            },
-            "revised": {}
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Freewheeling_Intensifier.png"
+            }
         },
         "30": {
             "original": {
@@ -534,7 +566,8 @@
                         "alliance": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/High-Activity_Staging_Zone.png"
             }
         },
         "31": {
@@ -548,7 +581,8 @@
                         "alliance": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Hyperspace_Redirect.png"
             }
         },
         "32": {
@@ -562,7 +596,8 @@
                         "alliance": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Obligatron.png"
             }
         },
         "33": {
@@ -576,7 +611,8 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Population_Monitor.png"
             }
         },
         "34": {
@@ -590,7 +626,8 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Quark_Refinery.png"
             }
         },
         "35": {
@@ -604,9 +641,9 @@
                         "reveal": true
                     }
                 },
-                "expansion": "Cosmic Odyssey"
-            },
-            "revised": {}
+                "expansion": "Cosmic Odyssey",
+                "thumbnail": "station icons/Option_Cycler.png"
+            }
         }
     }
 }

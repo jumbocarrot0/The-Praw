@@ -1,5 +1,6 @@
+import React, { Suspense, lazy } from "react";
 import { useState } from "react";
-import { useSearchParams, createSearchParams, useNavigate } from 'react-router-dom'
+import { useSearchParams, createSearchParams, useNavigate, Await, useRouteLoaderData } from 'react-router-dom'
 import {
   Card,
   CardTitle,
@@ -17,13 +18,19 @@ import {
   Button
 } from 'reactstrap';
 import { Link } from "react-router-dom"
-import Aliens from '../../dataFiles/aliens.json';
 import { ReactComponent as SearchLogo } from '../../svg/searchIcon.svg';
-import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
+// import GridBrowser from "../../components/GridBrowser";
+
+import Loading from '../../components/Loading'
+// import InfiniteScroll from "react-infinite-scroll-component";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
+const GridBrowser = lazy(() => import('../../components/GridBrowser'));
+const InfiniteScroll = lazy(() => import('react-infinite-scroll-component'));
 
 function Alien(props) {
   const alien = props.content
+
   return (
     <Card className='mb-5'>
       <Link className={"btn border border-5 " +
@@ -34,22 +41,39 @@ function Alien(props) {
         to={props.to}>
         <CardBody>
           <h2 className={!alien.altTimeline ? "text-dark" : null}>{alien.name}</h2>
-          <h6 className="align-items-center">
+          <div className="align-items-center h6">
             <Badge className={alien.alert === "Yellow" ? " text-dark" : ""}
               color={alien.alert === "Green" ? "success" : alien.alert === "Yellow" ? "warning" : "danger"}>
               {alien.alert}
             </Badge>
             {alien.altTimeline ? (
-              <Badge className="ms-3 text-dark" color="light">
+              <Badge className="ms-1 text-dark" color="light">
                 AT
               </Badge>) : null}
             {alien.gameSetup !== "" ? (
-              <Badge className="ms-3 text-dark" color="info">
+              <Badge className="ms-1 text-dark" color="info">
                 Game Setup
               </Badge>) : null}
-          </h6>
+            <Badge
+              className={`ms-1 ${["Cosmic Alliance", "Cosmic Conflict"].includes(alien.expansion) ? "text-dark" : ""}`}
+              color={
+                alien.expansion === "Base Set" ? "primary" :
+                  alien.expansion === "Cosmic Incursion" ? "indigo" :
+                    alien.expansion === "Cosmic Conflict" ? "info" :
+                      alien.expansion === "Cosmic Alliance" ? "warning" :
+                        alien.expansion === "Cosmic Storm" ? "danger" :
+                          alien.expansion === "Cosmic Dominion" ? "success" :
+                            alien.expansion === "Cosmic Eons" ? "pink" :
+                              alien.expansion === "Cosmic Odyssey" ? "purple" :
+                                "dark"
+              }>
+              {alien.expansion}
+            </Badge>
+          </div>
           <img alt={alien.name + " Thumbnail"}
             className='mx-auto d-block'
+            width="72"
+            height="72"
             src={require(`../../images/alien icons/${alien.thumbnail}`)}
           />
           <strong>{alien.short}</strong>
@@ -66,6 +90,8 @@ function filterAliens(aliens, search, expansions, phases, exactPhases, player, e
   }
 
   let filteredAliens = Object.entries(aliens);
+
+  // console.log(filteredAliens)
 
   filteredAliens = filteredAliens.filter((alien) => alien[1].original.name.toLowerCase().includes(search.toLowerCase()))
   filteredAliens = filteredAliens.filter((alien) => expansions.includes(alien[1].original.expansion))
@@ -95,6 +121,15 @@ function filterAliens(aliens, search, expansions, phases, exactPhases, player, e
       notInvolved: false
     }
     switch ('revised' in alien[1] ? alien[1].revised.powerTiming.player : alien[1].original.powerTiming.player) {
+      case "As Any Player":
+        alienPlayerTiming = {
+          offense: true,
+          defense: true,
+          offensiveAlly: true,
+          defensiveAlly: true,
+          notInvolved: true
+        }
+        break;
       case "Offense Only":
         alienPlayerTiming = {
           offense: true,
@@ -140,16 +175,43 @@ function filterAliens(aliens, search, expansions, phases, exactPhases, player, e
           notInvolved: false
         }
         break;
+      case "Not Offense":
+        alienPlayerTiming = {
+          offense: false,
+          defense: true,
+          offensiveAlly: true,
+          defensiveAlly: true,
+          notInvolved: true
+        }
+        break;
+      case "Not Defense":
+        alienPlayerTiming = {
+          offense: true,
+          defense: false,
+          offensiveAlly: true,
+          defensiveAlly: true,
+          notInvolved: true
+        }
+        break;
       case "Not Main Player":
         alienPlayerTiming = {
           offense: false,
           defense: false,
           offensiveAlly: true,
           defensiveAlly: true,
-          notInvolved: false
+          notInvolved: true
         }
         break;
-      case "Offense or Offensive Only":
+      case "Not Ally":
+        alienPlayerTiming = {
+          offense: true,
+          defense: true,
+          offensiveAlly: false,
+          defensiveAlly: false,
+          notInvolved: true
+        }
+        break;
+      case "Offense or Offensive Ally Only":
         alienPlayerTiming = {
           offense: true,
           defense: false,
@@ -158,7 +220,7 @@ function filterAliens(aliens, search, expansions, phases, exactPhases, player, e
           notInvolved: false
         }
         break;
-      case "Defense or Defensive Only":
+      case "Defense or Defensive Ally Only":
         alienPlayerTiming = {
           offense: false,
           defense: true,
@@ -241,6 +303,17 @@ export default function AliensListPage() {
   const submittedQuery = (searchParams.get('search') || '');
   const [searchQuery, setSearchQuery] = useState(submittedQuery);
 
+  const [dataLength, setDataLength] = useState(20)
+
+  const aliens = useRouteLoaderData("aliens")
+  // const [aliens, setAliens] = useState(undefined)
+  // useEffect(() => {
+  //   getAllAliens()
+  //     .then((data) => {
+  //       setAliens(data)
+  //     })
+  // }, [])
+
   let submittedExpansions = ["Base Set", "42nd Anniversary Edition", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "Cosmic Odyssey"];
   submittedExpansions = submittedExpansions.filter((expansion) => searchParams.get(expansion) !== 'false');
   const expansions = {
@@ -309,12 +382,16 @@ export default function AliensListPage() {
   }
 
   const navigate = useNavigate();
-
-  let filteredAliens = filterAliens(Aliens.aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases, submittedPlayer, submittedExactPlayer, submittedAlertLevels)
+  let filteredAliens = [];
 
   return (
-    <Layout title="Aliens">
-      <h1 className='mb-4'>Aliens</h1>
+    <>
+      <HelmetProvider>
+        <Helmet>
+          <link rel="preconnect" href="https://eqnegwhqvqkqqokfezxc.supabase.co" />
+        </Helmet>
+      </HelmetProvider>
+      <h1 className='mb-4'>Browse Aliens</h1>
       <Card className='mb-4 bg-light'>
         <CardBody>
           <CardTitle className='text-dark mb-3 text-center' tag="h2">Search Filters</CardTitle>
@@ -347,6 +424,7 @@ export default function AliensListPage() {
                   )
                 )}`
               });
+              setDataLength(20);
             }}>
             <Row className="mb-3">
               <Col sm={3}></Col>
@@ -362,6 +440,7 @@ export default function AliensListPage() {
                       }
                     }} />
                   <Button
+                    aria-label="Submit search"
                     className="px-3"
                     color={searchQuery.length === 0 ? "dark" : "primary"}
                     outline={searchQuery.length === 0}>
@@ -379,9 +458,10 @@ export default function AliensListPage() {
                     return (
                       <FormGroup key={expansion} switch>
                         <Input type="switch" role="switch"
+                          id={expansion}
                           checked={expansions[expansion][0]}
                           onChange={() => expansions[expansion][1](!expansions[expansion][0])} />
-                        <Label className="text-dark" check>
+                        <Label for={expansion} className="text-dark" check>
                           {expansion}
                         </Label>
                       </FormGroup>
@@ -396,8 +476,9 @@ export default function AliensListPage() {
                     className="me-4"
                     type="checkbox"
                     checked={exactPhases}
+                    id="exactPhases"
                     onChange={() => setExactPhases(!exactPhases)} />
-                  <Label className="text-dark" check>
+                  <Label for="exactPhases" className="text-dark" check>
                     Exact Matches Only
                   </Label>
                 </FormGroup>
@@ -406,9 +487,10 @@ export default function AliensListPage() {
                     return (
                       <FormGroup key={phase} switch>
                         <Input type="switch" role="switch"
+                          id={phase}
                           checked={phases[phase][0]}
                           onChange={() => phases[phase][1](!phases[phase][0])} />
-                        <Label className="text-dark" check>
+                        <Label for={phase} className="text-dark" check>
                           {phaseLabels[phase]}
                         </Label>
                       </FormGroup>
@@ -423,8 +505,9 @@ export default function AliensListPage() {
                     className="me-4"
                     type="checkbox"
                     checked={exactPlayer}
+                    id="exactPlayer"
                     onChange={() => setExactPlayer(!exactPlayer)} />
-                  <Label className="text-dark" check>
+                  <Label for="exactPlayer" className="text-dark" check>
                     Exact Matches Only
                   </Label>
                 </FormGroup>
@@ -434,8 +517,9 @@ export default function AliensListPage() {
                       <FormGroup key={playerCategory} switch>
                         <Input type="switch" role="switch"
                           checked={player[playerCategory][0]}
+                          id={playerCategory}
                           onChange={() => player[playerCategory][1](!player[playerCategory][0])} />
-                        <Label className="text-dark" check>
+                        <Label for={playerCategory} className="text-dark" check>
                           {playerLabels[playerCategory]}
                         </Label>
                       </FormGroup>
@@ -449,8 +533,9 @@ export default function AliensListPage() {
                       <FormGroup key={alert} switch>
                         <Input type="switch" role="switch"
                           checked={alertLevels[alert][0]}
+                          id={alert}
                           onChange={() => alertLevels[alert][1](!alertLevels[alert][0])} />
-                        <Label className="text-dark" check>
+                        <Label for={alert} className="text-dark" check>
                           {alert}
                         </Label>
                       </FormGroup>
@@ -463,12 +548,48 @@ export default function AliensListPage() {
         </CardBody>
       </Card>
       <hr className="border border-light border-2 opacity-100 mb-4" />
-      <p>{Object.keys(filteredAliens).length}/238 Results</p>
-      <GridBrowser cardTemplate={Alien}
-        url="/Aliens"
-        content={filteredAliens}
-        width={4}
-      />
-    </Layout>
+      <Suspense fallback={<Loading />}>
+        <Await
+          resolve={aliens.aliens}
+          errorElement={
+            <p className="fs-3 text-center">Error loading aliens!</p>
+          }
+        >
+          {(aliens) => {
+            if (aliens !== undefined) {
+              filteredAliens = filterAliens(aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases, submittedPlayer, submittedExactPlayer, submittedAlertLevels)
+            }
+            // console.log(filteredAliens)
+            return <>
+              <p>{Object.keys(filteredAliens).length}/238 Results</p>
+              {/* <GridBrowser cardTemplate={Alien}
+                url="/Aliens"
+                content={filteredAliens}
+                width={4}
+              /> */}
+              {Object.keys(filteredAliens).length === 0 ? <div>
+                <p className="fs-3 text-center">No aliens match your filters.</p>
+              </div> :
+                <InfiniteScroll
+                  dataLength={Math.min(dataLength, Object.keys(filteredAliens).length)}
+                  next={() => setDataLength(value => Math.min(value + 20, Object.keys(filteredAliens).length))}
+                  hasMore={dataLength < Object.keys(filteredAliens).length}
+                  loader={<Loading />}
+                  className="overflow-hidden"
+                >
+                  <GridBrowser cardTemplate={Alien}
+                    url="/Aliens"
+                    content={filteredAliens}
+                    elementsToDisplay={dataLength}
+                    width={4}
+                  />
+                </InfiniteScroll>
+              }
+            </>
+          }
+          }
+        </Await>
+      </Suspense>
+    </>
   );
 }

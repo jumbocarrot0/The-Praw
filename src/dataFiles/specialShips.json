@@ -1,0 +1,673 @@
+{
+    "ships": {
+        "0": {
+            "designers": [],
+            "original": {
+                "name": "Flagship",
+                "powerBody": "When a main player or ally has his or her flagship in an encounter, after encounter cards are revealed he or she may add an extra +3 to his or her side's total.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "specialName": "Hyperspace drive",
+                "specialBody": "A player's flagship may interrupt play to move to one of his or her colonies, to one of his or her tech cards being researched, or into an encounter in which he or she is involved (ignoring hyperspace gate limits).",
+                "specialTiming": {
+                    "player": "As Any Player",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Dominion"
+            },
+            "revised": {
+                "name": "Flagship",
+                "powerBody": "When your flagship is involved in an encounter, after encounter cards are revealed you may add an extra +3 to your side's total.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "specialName": "Hyperspace drive",
+                "specialBody": "At any time, you may flip your flagship's ship marker facedown to move it to one of your colonies, to one of your tech cards being researched, or into an encounter in which you are involved (ignoring hyperspace gate limits).",
+                "specialTiming": {
+                    "player": "As Any Player",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Dominion",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited to use fan-made 'exhaust' terminology (which means flip your ship marker facedown), for inclusive language, to rewrite from a 1st person perspective for clarity, and to remove the unique phrase 'interrupt play'."
+            }
+        },
+        "1": {
+            "designers": [],
+            "original": {
+                "name": "Salvage Vessel",
+                "powerBody": "When a main player or ally has his or her salvage vessel in an encounter, after winning the encounter he or she may either receive two rewards, or draw two tech cards from the tech deck (if in use) and choose one to keep. This is in addition to any other benefits received for winning.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": true
+                    }
+                },
+                "specialName": "Tractor Beam",
+                "specialBody": "A player's salvage vessel may interrupt play to retrieve one card from the discard pile.",
+                "specialTiming": {
+                    "player": "As Any Player",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Dominion"
+            },
+            "revised": {
+                "name": "Salvage Vessel",
+                "powerBody": "As a main player or ally, after winning the encounter in which your salvage vessel was involved in, you may either receive two rewards, or draw two tech cards from the tech deck (if in use) and choose one to keep. This is in addition to any other benefits you receive for winning.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": true
+                    }
+                },
+                "specialName": "Tractor Beam",
+                "specialBody": "At any time, you may exhaust your salvage vessel to retrieve one card from the discard pile.",
+                "specialTiming": {
+                    "player": "As Any Player",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Cosmic Dominion",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited to use fan-made 'exhaust' terminology (which means flip your ship marker facedown), for inclusive language, to rewrite from a 1st person perspective for clarity, and to remove the unique phrase 'interrupt play'."
+            }
+        },
+        "2": {
+            "designers": [
+                "SpaghettiToastBook (on BGG)"
+            ],
+            "source": "https://boardgamegeek.com/thread/1243431/few-my-ship-marker-variants",
+            "original": {
+                "name": "Biolab",
+                "powerBody": "When a main player or ally has his or her biolab in an encounter, he or she may play one extra flare in that encounter. The biolab may not be used to play the same flare more than once in one encounter.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "specialName": "Biosynthesizer",
+                "specialBody": "A player's biolab may interrupt play to draw one flare from the unused flare deck and put it into its owner's hand.",
+                "specialTiming": {
+                    "player": "As Any Player",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Fan Made"
+            },
+            "revised": {
+                "name": "Bio-Lab",
+                "powerBody": "While the bio-lab is involved in an encounter, you may play one extra flare during this encounter (even the same flare twice if applicable).",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "specialName": "Biosynthesizer",
+                "specialBody": "You may exhaust your bio-lab at any time to draw one flare from the unused flare deck into your hand.",
+                "specialTiming": {
+                    "player": "As Any Player",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Fan Made",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited to use fan-made 'exhaust' terminology (which means flip your ship marker facedown), for inclusive language, to rewrite from a 1st person perspective for clarity, and to remove the unique phrase 'interrupt play'."
+            }
+        },
+        "3": {
+            "designers": [
+                "SpaghettiToastBook (on BGG)"
+            ],
+            "source": "https://boardgamegeek.com/thread/1243431/few-my-ship-marker-variants",
+            "original": {
+                "name": "Lawyer's Ship",
+                "powerBody": "When a main player or ally had/has his or her lawyer's ship in an encounter, he or she may add or subtract 2 from one main player's compensation or ships lost from a failed deal, when and if appropriate.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": true
+                    }
+                },
+                "specialName": "Enhanced Negotiation",
+                "specialBody": "When a player about to attempt a deal has his or her lawyer's ship in the encounter, he or she will lose three fewer ships if the deal fails, and his or her opponent will lose three additional ships.",
+                "specialTiming": {
+                    "player": "Main Player Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Fan Made"
+            },
+            "revised": {
+                "name": "Lawyer's Ship",
+                "powerBody": "As main player or ally, if your lawyer is/was in an encounter, you may add or subtract 2 from one main player's compensation when they would collect it or from the number of ships lost in a failed deal.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": true
+                    }
+                },
+                "specialName": "Enhanced Negotiation",
+                "specialBody": "When you attempt to make a deal, you may exhaust your lawyer's ship. If the deal fails, you will lose three fewer ships, and your opponent will lose three additional ships.",
+                "specialTiming": {
+                    "player": "Main Player Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Fan Made",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited to use fan-made 'exhaust' terminology (which means flip your ship marker facedown), for inclusive language, to rewrite from a 1st person perspective for clarity, and to remove the unique phrase 'interrupt play'."
+            }
+        },
+        "4": {
+            "designers": [
+                "SpaghettiToastBook (on BGG)"
+            ],
+            "source": "https://boardgamegeek.com/thread/1243431/few-my-ship-marker-variants",
+            "designNotes": "The original designer did not have anything extra to say. The Praw notes that this effect is similar to Guardian from Cosmic Odyssey, which this special ship predates.",
+            "original": {
+                "name": "Mothership",
+                "powerBody": "When a main player or ally has his or her mothership in an encounter, it counts as the number of his or her ships in the encounter (including itself) instead of 1 toward his or her side's total.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "specialName": "Distress Beacon",
+                "specialBody": "When a main player or ally has his or her mothership in an encounter, after encounter cards are revealed, he or she may send one to four ships from his or her colonies into the encounter, increasing the number of ships he or she has in the encounter.",
+                "specialTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "expansion": "Fan Made"
+            },
+            "revised": {
+                "name": "Mothership",
+                "powerBody": "Your mothership counts as the number of your ships in the encounter (including itself) towards encounter totals.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "specialName": "Distress Beacon",
+                "specialBody": "After encounter cards are revealed, if your mothership is involved in the encounter, you may exaust it and send up to four of your ships from your colonies into the encounter.",
+                "specialTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "expansion": "Fan Made",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited to use fan-made 'exhaust' terminology (which means flip your ship marker facedown), for inclusive language, to rewrite from a 1st person perspective for clarity, and to remove the unique phrase 'interrupt play'."
+            }
+        },
+        "5": {
+            "designers": [
+                "SpaghettiToastBook (on BGG)"
+            ],
+            "source": "https://boardgamegeek.com/thread/1243431/few-my-ship-marker-variants",
+            "designNotes": "The original designer named this ship the 'Graviton Ship'. The Praw has renamed it to distinct it from the Graviton alien.",
+            "original": {
+                "name": "Singularity Carrier",
+                "powerBody": "A player may not commit their singularity carrier into an encounter unless he or she is committing the maximum possible amount of ships (usually four).\n\nWhen a player's singularity carrier is removed from the game, that ship's ship marker is removed from the game and may not be used again.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "specialName": "Black Hole Bomb",
+                "specialBody": "When a main player or ally has his or her singularity carrier in an encounter, if that player ends up on the losing side of the encounter, he or she removes the targeted planet, played encounter cards, kickers, and reinforcements, and all ships involved in the encounter or on the targeted planet (including the singularity carrier) from the game. A player cannot be reduced to fewer ships than the number of foreign colonies needed to win the game. Any ships that would reduce a player below this number are sent to the warp as usual.",
+                "specialTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Fan Made"
+            },
+            "revised": {
+                "name": "Singularity Carrier",
+                "powerBody": "You may only send your singularity carrier into an encounter if you send the maximum possible number of ships.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": false
+                    }
+                },
+                "specialName": "Black Hole Bomb",
+                "specialBody": "When your side loses an encounter your singularity carrier is involved in, remove the targeted planet; all ships involved in the encounter; and all played encounter cards, kickers and reinforcements from the game. You may not create a replacement singularity carrier once your original one is removed from the game.\n\nAny ships that would be removed from the game but reduce a player below the number of colonies needed to win are instead sent to the warp.",
+                "specialTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": true
+                    }
+                },
+                "expansion": "Fan Made",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited to use fan-made 'exhaust' terminology (which means flip your ship marker facedown), for inclusive language, to rewrite from a 1st person perspective for clarity, and to remove the unique phrase 'interrupt play'."
+            }
+        },
+        "6": {
+            "designers": [
+                "Jack Reda"
+            ],
+            "source": "https://www.youtube.com/watch?v=W0IJZZU-gA0",
+            "designNotes": "This was originally named 'Power Shunts'. The Praw has reformatted it to fit the official special ship rules better, and has given it a new name to be consistent with the name of the special ship being something to call the ship itself.",
+            "original": {
+                "name": "Capital Ship",
+                "powerBody": "Your capital ship is worth 4 towards encounter totals.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "specialName": "Power Shunts",
+                "specialBody": "You may exhaust your capital ship when it is involved in an encounter to double the value of all ships on your side of the encounter.",
+                "specialTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "expansion": "Fan Made"
+            }
+        },
+        "7": {
+            "designers": [
+                "Jumbocarrot"
+            ],
+            "source": "",
+            "designNotes": "",
+            "original": {
+                "name": "Capitol Ship",
+                "powerBody": "Your capitol ship is worth 4 towards encounter totals.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "specialName": "Big Guns",
+                "specialBody": "You may exhaust your capitol ship when it is involved in an encounter to double the value of each reinforcement card you play this encounter.",
+                "specialTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "expansion": "Fan Made"
+            }
+        },
+        "8": {
+            "designers": [
+                "Jack Reda",
+                "Jumbocarrot"
+            ],
+            "source": "https://www.youtube.com/watch?v=W0IJZZU-gA0",
+            "designNotes": "Jack's version was only the passive effect, Jumbo added the special effect.",
+            "original": {
+                "name": "Consular Chambers",
+                "powerBody": "After you make a deal, if your consular chambers was involved in the encounter, receive one reward if the deal was successful and send 1 less ship to the warp if you failed to make a deal.",
+                "powerTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "specialName": "Backup",
+                "specialBody": "When you reveal a negotiate card and your opponent reveals an attack card, if your consular chambers is involed in the encounter, you may exhaust it to discard your negotiate and replace it with an attack card from your hand.",
+                "specialTiming": {
+                    "player": "Main Player or Ally Only",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "expansion": "Fan Made"
+            }
+        },
+        "9": {
+            "designers": [
+                "Jumbocarrot"
+            ],
+            "source": "",
+            "designNotes": "",
+            "original": {
+                "name": "Planetary Defense System",
+                "powerBody": "You may not send this ship into an encounter. You may add 10 to the defense's total if this ship is on the targeted planet.",
+                "powerTiming": {
+                    "player": "As Any Player",
+                    "choice": "Varies",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": false,
+                        "reveal": true,
+                        "resolution": false
+                    }
+                },
+                "specialName": "Reconstruction",
+                "specialBody": "You may exhaust this ship after the hyperspace gate has been aimed to move its ship marker onto any one of your other ships, designating it as your Planetary Defense System.",
+                "specialTiming": {
+                    "player": "As Any Player",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": true,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": false
+                    }
+                },
+                "expansion": "Fan Made"
+            }
+        },
+        "10": {
+            "designers": [
+                "Jumbocarrot"
+            ],
+            "source": "",
+            "designNotes": "",
+            "original": {
+                "name": "Research Vessel",
+                "powerBody": "Your research vessel counts as 4 when researching a tech or, when on an envolution card, as the highest cost on that card.",
+                "powerTiming": {
+                    "player": "As Any Player",
+                    "choice": "Mandatory",
+                    "phases": {
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
+                        "reveal": true,
+                        "resolution": true
+                    }
+                },
+                "specialName": "Dangerous Research",
+                "specialBody": "During regroup, you may send your research vessel to the warp to draw 2 tech cards (even if the Technology variant is not in play); choose 1 to keep and discard the other.",
+                "specialTiming": {
+                    "player": "As Any Player",
+                    "choice": "Optional",
+                    "phases": {
+                        "startTurn": false,
+                        "regroup": true,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
+                        "reveal": false,
+                        "resolution": false
+                    }
+                },
+                "expansion": "Fan Made"
+            }
+        }
+    }
+}

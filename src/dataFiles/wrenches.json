@@ -1,0 +1,123 @@
+{
+    "wrench": {
+        "0": {
+            "original": {
+                "name": "Bright",
+                "body": "When you compare the cosmic deck, add ten additional flares from the unused flare deck.",
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "1": {
+            "original": {
+                "name": "Clunkers",
+                "body": "Choose a number from one to five. Each player sends that number of ships to the warp.",
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "2": {
+            "original": {
+                "name": "Gemination",
+                "body": "If the Double Aliens variant is being used, add the Hazard Aliens sub-variant (🕮18).\n\nOtherwise, add the Double Aliens variant and the Hidden Options sub-variant.",
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "3": {
+            "original": {
+                "name": "Generosity",
+                "body": "If the Reward Deck variant (🕮10) is not being used, add it.\n\nDeal each player one reward card as part of their opening hand.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Generosity",
+                "body": "If the Reward Deck variant (🕮10) is not being used, add it.\n\nDeal each player one reward card as part of their starting hand.",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
+            }
+        },
+        "4": {
+            "original": {
+                "name": "Impoverished",
+                "body": "When each player draws a new hand (including their starting hand), they draw two fewer cards.",
+                "expansion": "Cosmic Odyssey"
+            }
+        },
+        "5": {
+            "original": {
+                "name": "Lo-Tex",
+                "body": "If the Technology variant is being used, each player discards one of their tech cards.\n\nIf the Technology variant (🕮9) is not being used, each player draws one flare card from the unused flare deck as part of their opening hand.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Lo-Tex",
+                "body": "If the Technology variant is being used, each player discards one of their tech cards.\n\nIf the Technology variant (🕮9) is not being used, each player draws one flare card from the unused flare deck as part of their starting hand.",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
+            }
+        },
+        "6": {
+            "original": {
+                "name": "Mutagens",
+                "body": "If the Evolution variant is being used, reveal two additional evolution cards.\n\nIf the Objectives (Array) variant is being used, reveal two additional objective cards.\n\nIf neither variant is being used, draw and resolve another wrench card.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Mutagens",
+                "body": "If the Evolution variant is being used, reveal two additional evolution cards.\n\nIf the Array Objectives variant is being used, reveal two additional objective cards.\n\nIf neither variant is being used, draw and resolve another wrench card.",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited to clarify it affects only the Array Objectives variant, not any other/ objectives variant."
+            }
+        },
+        "7": {
+            "original": {
+                "name": "One More Time",
+                "body": "Another selection card is drawn and resolved.\n\nThen, each player may replace their currently selected alien with their new alien. All decisions must be announced simultaneously.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "One More Time",
+                "body": "Another age card is drawn and its alien selection method resolved.\n\nThen, each player may replace their currently selected alien with their new alien. All decisions must be announced simultaneously.",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited to fix a reference to a 'selection cards', likely an artefact from early versions."
+            }
+        },
+        "8": {
+            "original": {
+                "name": "Public Option",
+                "body": "Shuffle each age card not in use and reveal one. Starting with the first player and proceeding clockwise, each player votes \"Splup\" or \"Gwarq\". If more players vote \"Splup,\" replace the current age card with the revealed one and resolve its variant's setup instead.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised_unused": {
+                "name": "Public Option",
+                "body": "Shuffle each age card not in use and reveal one. Starting with the first player and proceeding clockwise, each player votes \"Splup\" or \"Gwarq\". If more players vote \"Splup,\" replace the current game's age card with the revealed one, remove the replaced age's variant from play and resolve the new age's variant setup instead.",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited for clarity."
+            }
+        },
+        "9": {
+            "original": {
+                "name": "Selective Omission",
+                "body": "Shuffle each age card not in use and reveal one. Starting with the first player and proceeding clockwise, each player votes \"Bopf\" or \"Plark\". If more players vote \"Bopf,\" replace the previous age card with the revealed one and resolve its variant's setup instead.",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised_unused": {
+                "name": "Selective Omission",
+                "body": "Shuffle each age card not in use and reveal one. Starting with the first player and proceeding clockwise, each player votes \"Bopf\" or \"Plark\". If more players vote \"Bopf,\" replace the previous game's age card with the revealed one, remove the replaced age's variant from play and resolve the new age's variant setup instead.\n\nPlayers that resolved that age's master card reverse its effect and resolve the new age's master card instead.",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited for clarity, and to define what happens with the replace age's master card."
+            }
+        },
+        "10": {
+            "original": {
+                "name": "X-Haz",
+                "body": "If the Hazard Deck variant (🕮10) is not being used, add it.\n\nSearch the hazard deck for Danger Zone and put it into play",
+                "expansion": "Cosmic Odyssey"
+            },
+            "revised": {
+                "name": "Selective Omission",
+                "body": "If the Hazard Deck variant (🕮10) is not being used, add it.\n\nSearch the hazard deck for the \"Danger Zone hazard\" card and put it into play",
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited for clarity."
+            }
+        }
+    }
+}

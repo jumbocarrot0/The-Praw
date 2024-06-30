@@ -707,7 +707,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -863,7 +863,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Cedric Chin (as Fish)"
@@ -1220,7 +1220,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to remove uncesessary capitalisation.\n\nRevisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -1279,7 +1279,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "House rule from The Praw\n\nPrevents Arcade from pwning when losing the encounter with attack vs negotiate.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -2025,7 +2025,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Lila Boutin"
@@ -2146,7 +2146,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex\n\nClarifies that super flare does not let opposing players remove any ship in the encounter, only their own.\n\nRevisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -3814,7 +3814,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -4329,12 +4329,12 @@
                     "choice": "",
                     "phases": {
                         "startTurn": false,
-                        "regroup": false,
+                        "regroup": true,
                         "destiny": false,
                         "launch": false,
                         "alliance": false,
                         "planning": false,
-                        "reveal": true,
+                        "reveal": false,
                         "resolution": false
                     }
                 },
@@ -4344,7 +4344,7 @@
                     "choice": "",
                     "phases": {
                         "startTurn": false,
-                        "regroup": true,
+                        "regroup": false,
                         "destiny": false,
                         "launch": false,
                         "alliance": false,
@@ -4367,7 +4367,7 @@
                 "powerName": "You have the power to Refract.",
                 "powerBody": "As a main player or ally, use this power after both main players reveal attack cards. Any one player on your side can discard one attack card from their hand that matches the value of your side's revealed attack card. If a player does so, multiply your side's revealed card by the discarded card's value. For instance, if your side reveals an attack 08, any one player on your side may discard an attack 08 to change the revealed card into an attack 64.",
                 "powerTiming": {
-                    "player": "Main Player or Ally ",
+                    "player": "Main Player or Ally Only",
                     "choice": "",
                     "phases": {
                         "startTurn": false,
@@ -4381,28 +4381,28 @@
                     }
                 },
                 "history": "Arranged in orderly three-dimensional lattices, Crystals tend to dominate the arrangement of their local environment. They know that, with a few suggestive seeding hints, they can bring the entire Universe into the most efficient energy packing: Crystalline order.",
-                "wildBody": "",
+                "wildBody": "At the start of any encounter, you may rearrange your ships among your colonies as you wish.",
                 "wildTiming": {
-                    "player": "Only",
+                    "player": "As Any Player",
                     "choice": "",
                     "phases": {
                         "startTurn": false,
-                        "regroup": false,
+                        "regroup": true,
                         "destiny": false,
                         "launch": false,
                         "alliance": false,
                         "planning": false,
-                        "reveal": true,
+                        "reveal": false,
                         "resolution": false
                     }
                 },
-                "superBody": "At the start of any encounter, you may rearrange your ships among your colonies as you wish.\n\n \n\n When another player discards a card to activate your power, you may add that card to your hand.",
+                "superBody": "When another player discards a card to activate your power, you may add that card to your hand.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
                     "phases": {
                         "startTurn": false,
-                        "regroup": true,
+                        "regroup": false,
                         "destiny": false,
                         "launch": false,
                         "alliance": false,
@@ -4649,7 +4649,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -4889,7 +4889,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Zach Whelchel"
@@ -5010,7 +5010,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "42nd Anniversary Edition",
                 "designers": [
                     "designed by Robin Raianiemi"
@@ -5129,7 +5129,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -5296,7 +5296,7 @@
                 },
                 "superBody": "You may use your power as the offense.",
                 "superTiming": {
-                    "player": "Offense ",
+                    "player": "Offense",
                     "choice": "",
                     "phases": {
                         "startTurn": false,
@@ -5355,7 +5355,7 @@
                 },
                 "superBody": "You may use your power as the offense.",
                 "superTiming": {
-                    "player": "Only",
+                    "player": "Offense Only",
                     "choice": "",
                     "phases": {
                         "startTurn": false,
@@ -5489,7 +5489,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Future Pastimes",
@@ -5729,7 +5729,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Future Pastimes",
@@ -6028,7 +6028,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [],
                 "thumbnail": "avatar_Emperor.png"
@@ -6936,7 +6936,7 @@
                 "short": "Drives Away Others' Ships",
                 "gameSetup": "",
                 "powerName": "You have the power to Reek.",
-                "powerBody": "Any time any of your ships are coexisting on the same planet as any other player's ships, use this power to force the other player's ships to return to his or her other colonies.\n\n, our allies in a winning offensive encounter do not land on the defending planet with you. However, they each still gain a colony on any other planet of their choice (each player chooses separately) in the defending system.\n\nWhen you lose an encounter as the defense on a planet where you have ships, use this power to force all opposing ships to return to their other colonies instead of landing on your planet. Your losing ships go to the warp normally and the planet is then \"fumigated.\"\n\nWhen you agree to trade colonies in a deal, you and that other player must each vacate a planet for the other player to land on.",
+                "powerBody": "Any time any of your ships are coexisting on the same planet as any other player's ships, use this power to force the other player's ships to return to his or her other colonies.\n\nYour allies in a winning offensive encounter do not land on the defending planet with you. However, they each still gain a colony on any other planet of their choice (each player chooses separately) in the defending system.\n\nWhen you lose an encounter as the defense on a planet where you have ships, use this power to force all opposing ships to return to their other colonies instead of landing on your planet. Your losing ships go to the warp normally and the planet is then \"fumigated.\"\n\nWhen you agree to trade colonies in a deal, you and that other player must each vacate a planet for the other player to land on.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -8537,7 +8537,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Chris Oliveira"
@@ -8777,7 +8777,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify Grumpus' power cannot prevent other powers that player has from being lost due to home colonies.\n\nRevisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -9925,7 +9925,7 @@
                 "short": "Launches Sneak Attacks",
                 "gameSetup": "Shuffle the three \"Invasion!\" destiny cards into the destiny deck. These destiny cards allow you to have an extra encounter when drawn during another player's turn. After you have an extra encounter due to an \"Invasion!\" destiny card, the player who drew it during his or her turn receives another encounter.",
                 "powerName": "You have the power of Invasion.",
-                "powerBody": "As a main player, after an \"Invasion!\" destiny card or a destiny card of your player color is drawn, you may use this power to discard your entire hand and draw a new hand of eight cards before having your extra encounter. Only se this power once per encounter.",
+                "powerBody": "As a main player, after an \"Invasion!\" destiny card or a destiny card of your player color is drawn, you may use this power to discard your entire hand and draw a new hand of eight cards before having your extra encounter. Only use this power once per encounter.",
                 "powerTiming": {
                     "player": "Main Player Only",
                     "choice": "Optional",
@@ -10075,7 +10075,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "At any time, you may name any encounter card to become the new wild card, such as attack 06, the regular negotiate card, or egotiate (Epic Oratory). When you lose this flare, attack 08 immediately becomes the wild card again.",
+                "superBody": "At any time, you may name any encounter card to become the new wild card, such as attack 06, the regular negotiate card, or negotiate (Epic Oratory). When you lose this flare, attack 08 immediately becomes the wild card again.",
                 "superTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -10149,7 +10149,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for capitalization.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Phil Fleischmann and the Cosmodex's trained human minion",
@@ -10565,7 +10565,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Future Pastimes",
@@ -11721,7 +11721,7 @@
                 "altTimelineID": "231",
                 "gameSetup": "",
                 "powerName": "You have the power to Hurt Yourself.",
-                "powerBody": "At the start of any player's regroup phase, before the offense retrieves a ship from the warp, use this power to win the game if you have lost all of your ships. Lost ships include those in the warp, those removed from the game, and those captured by other players.\n\nYou do not lose this power because of having too few home colonies, and you may still win the game via the normal manner.\n\nDo Not Use with Healer",
+                "powerBody": "At the start of any player's regroup phase, before the offense retrieves a ship from the warp, use this power to win the game if you have lost all of your ships. Lost ships include those in the warp, those removed from the game, and those captured by other players.\n\nYou do not lose this power because of having too few home colonies, and you may still win the game via the normal manner.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -12664,7 +12664,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Cedric Chin (as Alexander)"
@@ -13140,7 +13140,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -13378,7 +13378,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by the fans"
@@ -13772,7 +13772,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -14662,7 +14662,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -14900,7 +14900,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Eons",
                 "designers": [
                     "designed by Bill Eberle & Peter Olotka"
@@ -15257,7 +15257,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify the timing of the 2nd paragraph, to prevent power use well after intended.\n\nRevisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -15795,7 +15795,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by the fans"
@@ -16752,7 +16752,7 @@
                     }
                 },
                 "flareSpecialBody": "If at any time you play any other super flare and the Reactor is playing, you must give them this flare.",
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Jack Reda"
@@ -18155,7 +18155,7 @@
                         "resolution": true
                     }
                 },
-                "superClassicBody": "If this flare is in your starting hand, reveal it and write a victory condition down instead of choosing a Schizoid card. The condition must 1) be possible for all players to meet, 2) be clear to all as it happens, 3) not require remembering past events, and 4) require at least 3 foreign colonies. If this card leaves your hand, reveal your written victory condition to all players.\n\n \n\nSFkStartingHands",
+                "superClassicBody": "If this flare is in your starting hand, reveal it and write a victory condition down instead of choosing a Schizoid card. The condition must 1) be possible for all players to meet, 2) be clear to all as it happens, 3) not require remembering past events, and 4) require at least 3 foreign colonies. If this card leaves your hand, reveal your written victory condition to all players.",
                 "superClassicTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -18245,7 +18245,7 @@
                         "resolution": true
                     }
                 },
-                "superClassicBody": "If this flare is in your starting hand, reveal it and write a victory condition down instead of choosing a schizoid card. The condition must 1) be possible for all players to meet, 2) be clear to all as it happens, 3) not require remembering past events, and 4) require at least 3 foreign colonies. If this flare leaves your hand, reveal your written victory condition to all players.\n\n \n\nSFkStartingHands",
+                "superClassicBody": "If this flare is in your starting hand, reveal it and write a victory condition down instead of choosing a schizoid card. The condition must 1) be possible for all players to meet, 2) be clear to all as it happens, 3) not require remembering past events, and 4) require at least 3 foreign colonies. If this flare leaves your hand, reveal your written victory condition to all players.",
                 "superClassicTiming": {
                     "player": "As Any Player",
                     "choice": "",
@@ -18499,7 +18499,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for grammar, to fix the attack bug, for wording consistency, and to prevent Wild Shadow from incorrectly referring to a planet that may not be yours as \"your planet,\" as well as to avoid problems with effects like Winner and (perhaps someday) moons. Links: [Corrected flare]",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for grammar, to fix the attack bug, for wording consistency, and to prevent Wild Shadow from incorrectly referring to a planet that may not be yours as \"your planet,\" as well as to avoid problems with effects like Winner and (perhaps someday) moons.",
                 "expansion": "Base Set",
                 "designers": [
                     "designed by Future Pastimes (as Assassin)"
@@ -18865,7 +18865,7 @@
                         "resolution": false
                     }
                 },
-                "superBody": "When you tell a player you doubt that he will win, you also tell him how many ships not in the encounter (1 to20) are at risk (instead of your normal Skeptic method of determining risk ). If he double doubts you and plays the encounter, the loser (or both if you fail to deal) loses that number of ships to the warp in addition to the ships lost in the encounter.",
+                "superBody": "When you tell a player you doubt that he will win, you also tell him how many ships not in the encounter (1 to20) are at risk (instead of your normal Skeptic method of determining risk). If he double doubts you and plays the encounter, the loser (or both if you fail to deal) loses that number of ships to the warp in addition to the ships lost in the encounter.",
                 "superTiming": {
                     "player": "Main Player or Ally Only",
                     "choice": "",
@@ -19593,7 +19593,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -21144,7 +21144,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency and removing redudant rules on a card.\n\nRevisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -21264,7 +21264,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Bryan Stout (as Federalist)",
@@ -21277,10 +21277,10 @@
             "original": {
                 "name": "Vacuum",
                 "alert": "Green",
-                "short": "Takes Other",
+                "short": "Takes Other Ships to Warp",
                 "gameSetup": "",
                 "powerName": "You have the power of Catharsis.",
-                "powerBody": "Ships to Warp Whenever you lose ships to the warp, use this power to take along up to an equal number of other ships. You specify which players must lose them, and how many each player must lose. The targeted players decide which colony or colonies the ships are taken from. Ships lost to the Vacuum this way are in addition to any ships normally lost in an encounter.",
+                "powerBody": "Whenever you lose ships to the warp, use this power to take along up to an equal number of other ships. You specify which players must lose them, and how many each player must lose. The targeted players decide which colony or colonies the ships are taken from. Ships lost to the Vacuum this way are in addition to any ships normally lost in an encounter.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -21335,10 +21335,10 @@
             "revised": {
                 "name": "Vacuum",
                 "alert": "Green",
-                "short": "Takes Other",
+                "short": "Takes Others' Ships to Warp",
                 "gameSetup": "",
                 "powerName": "You have the power of Catharsis.",
-                "powerBody": "s' Ships to Warp Whenever you lose ships to the warp, use this power to take along up to an equal number of other players' ships. You specify which players must lose them, and how many each player must lose. The targeted players decide which colonies the ships are taken from. Ships lost to the Vacuum this way are in addition to any ships normally lost in an encounter.",
+                "powerBody": "Whenever you lose ships to the warp, use this power to take along up to an equal number of other players' ships. You specify which players must lose them, and how many each player must lose. The targeted players decide which colonies the ships are taken from. Ships lost to the Vacuum this way are in addition to any ships normally lost in an encounter.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Mandatory",
@@ -22518,7 +22518,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by Tess Boutin"
@@ -22996,7 +22996,7 @@
                         "resolution": false
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Storm",
                 "designers": [
                     "designed by Fantasy Flight Games"
@@ -23235,7 +23235,7 @@
                         "resolution": true
                     }
                 },
-                "revisionNotes": "",
+                "revisionNotes": "Revisions from the Praw\n\nEdited for inclusive language.",
                 "expansion": "Cosmic Dominion",
                 "designers": [
                     "designed by George Membreno",
@@ -24020,7 +24020,7 @@
                         },
                         "5": {
                             "name": "Alliance",
-                            "body": "After alliances are formed, if you are not a main player or ally, you may ally with either main player by sending more ships into the encounter (without exceeding your ship limit) than the play has in the encounter."
+                            "body": "After alliances are formed, if you are not a main player or ally, you may ally with either main player by sending more ships into the encounter (without exceeding your ship limit) than the player has in the encounter."
                         },
                         "6": {
                             "name": "Planning",
@@ -24114,7 +24114,7 @@
                         },
                         "5": {
                             "name": "Alliance",
-                            "body": "After alliances are formed, if you are not a main player or ally, you may ally with either main player by sending more ships into the encounter (without exceeding your ship limit) than the play has in the encounter."
+                            "body": "After alliances are formed, if you are not a main player or ally, you may ally with either main player by sending more ships into the encounter (without exceeding your ship limit) than the player has in the encounter."
                         },
                         "6": {
                             "name": "Planning",
@@ -25995,7 +25995,7 @@
             "original": {
                 "name": "Tentacle",
                 "alert": "Green",
-                "short": "Adds Dgitis to the Total",
+                "short": "Adds Digits to the Total",
                 "gameSetup": "",
                 "powerName": "You have the power of Appendages.",
                 "powerBody": "As a main player or ally, after encounter cards are revealed, use this power. Choose one revealed encounter card that has a numerical value (including a morph). Add each of the value's digits to that side's total. For example, if you reveal an attack 15, add 1 and 5 to the card's value for a total of 21.",
@@ -26051,7 +26051,7 @@
             "revised": {
                 "name": "Tentacle",
                 "alert": "Green",
-                "short": "Adds Dgitis to the Total",
+                "short": "Adds Digits to the Total",
                 "gameSetup": "",
                 "powerName": "You have the power of Appendages.",
                 "powerBody": "As a main player or ally, after encounter cards are revealed, use this power. Choose one revealed encounter card that has a numerical value (including a morph). Add each of the value's digits to that side's total. For example, if you reveal an attack 15, add 1 and 5 to the card's value for a total of 21.",
@@ -26285,7 +26285,7 @@
                 "short": "Does things the old way",
                 "gameSetup": "",
                 "powerName": "You have the power of anarchronism.",
-                "powerBody": "Whenever you draw a hand, including your starting hand, draw seven cards instead of eight.\n\nWhen speaking, you should refer to colonies as bases, ships as tokens, encounters as challenges, encounter cards as challenge cards, artifacts as edicts, negotiate cards as compromise cards, compensation as consolation, and the hyperspace gate as the cone. When other players use the modern terms, you may this power to receive one reward when you correct another player in this way.\n\nAt any time, you may use this power to purge from your hand one or more modern cards having: a card type other than Attack, Compromise (Negotiate), Flare, Edict (Artifact), or kicker; a cardback not matching the cosmic deck; or an Attack value other than 01, 04-10, 12-18, 20, 30 or 40. You may discard them and draw an equal number of cards; give these cards to another player; or trade these cards to other players (if willing) for anything they could give you as part of a deal.\n\nYou may play any number of flares per challenge, even playing the same flare more than once if the context for playing it comes up more than once.",
+                "powerBody": "Whenever you draw a hand, including your starting hand, draw seven cards instead of eight.\n\nWhen speaking, you should refer to colonies as bases, ships as tokens, encounters as challenges, encounter cards as challenge cards, artifacts as edicts, negotiate cards as compromise cards, compensation as consolation, and the hyperspace gate as the cone. When other players use the modern terms, you may use this power to receive one reward when you correct another player in this way.\n\nAt any time, you may use this power to purge from your hand one or more modern cards having: a card type other than Attack, Compromise (Negotiate), Flare, Edict (Artifact), or kicker; a cardback not matching the cosmic deck; or an Attack value other than 01, 04-10, 12-18, 20, 30 or 40. You may discard them and draw an equal number of cards; give these cards to another player; or trade these cards to other players (if willing) for anything they could give you as part of a deal.\n\nYou may play any number of flares per challenge, even playing the same flare more than once if the context for playing it comes up more than once.",
                 "powerTiming": {
                     "player": "As Any Player",
                     "choice": "Optional",
@@ -27886,7 +27886,7 @@
                 "short": "Defeats Ships to Win",
                 "gameSetup": "",
                 "powerName": "You have the power of Cruelty.",
-                "powerBody": "When another player has at least eight ships in the warp, captured and/or out of the game, place a token under that player's colony marker. At the end of the resolution phase, if all other players have a token under their colony marker, use this power to win the game. You may still win the game via the normal manner. As a main player or ally, after your side wins the encounter, if any players on the other side would lose fewer than three ships to the warp, use this power to force each of those players to lose one additional ship to the warp.",
+                "powerBody": "When another player has at least eight ships in the warp, captured and/or out of the game, place a token under that player's colony marker. At the end of the resolution phase, if all other players have a token under their colony marker, use this power to win the game. You may still win the game via the normal manner.\n\nAs a main player or ally, after your side wins the encounter, if any players on the other side would lose fewer than three ships to the warp, use this power to force each of those players to lose one additional ship to the warp.",
                 "bans": [
                     "195",
                     "237",
@@ -27948,7 +27948,7 @@
                 "short": "Defeats Ships to Win",
                 "gameSetup": "",
                 "powerName": "You have the power of Cruelty.",
-                "powerBody": "When another player has at least eight ships in the warp, captured and/or removed of the game, place a token under that player's colony marker. At the end of the resolution phase, if all other players have a token under their colony marker, use this power to win the game. You may still win the game via the normal manner. As a main player or ally, after your side wins the encounter, if any players on the other side would lose fewer than three ships to the warp, use this power to force each of those players to lose one additional ship to the warp.",
+                "powerBody": "When another player has at least eight ships in the warp, captured and/or removed of the game, place a token under that player's colony marker. At the end of the resolution phase, if all other players have a token under their colony marker, use this power to win the game. You may still win the game via the normal method.\n\nAs a main player or ally, after your side wins the encounter, if any players on the other side would lose fewer than three ships to the warp, use this power to force each of those players to lose one additional ship to the warp.",
                 "bans": [
                     "195",
                     "237",

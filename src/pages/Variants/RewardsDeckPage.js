@@ -1,8 +1,6 @@
-import Layout from '../../components/Layout'
-
 export default function RewardsDeckPage() {
   return (
-    <Layout title="Rewards Deck">
+    <div>
       <h1 className='mb-4'>Rewards Deck</h1>
       <p className="text-light">The rewards deck is an official variant introduced in Cosmic Incursion. The deck is a purple-backed deck of cards that can only be drawn from when players gain rewards.
         <br />
@@ -33,6 +31,16 @@ export default function RewardsDeckPage() {
           <li className="text-light">If players find the above rule too ambiguous, The Praw recommends the following altnerative rule: If a player has already drawn an ultra reward from the rewards deck in this encounter (not from another source like another player's hand), they may not draw another from the rewards deck.</li>
         </ul>
       </ul>
-    </Layout>
+      <h3>Common Rewards</h3>
+      <ul>
+        <li className="text-light">This sub-variant, introduced in Cosmic Incursion, mixes reward cards to the cosmic deck.</li>
+        <li className="text-light">During setup, shuffle the rewards deck in the cosmic deck.</li>
+        <li className="text-light">During gameplay, reward cards are treated like any other card from the deck.</li>
+        <ul>
+          <li className="text-light">Ultra Reward cards have no limit when drawing from the cosmic deck (or any deck outside of the reward deck).</li>
+          <li className="text-light">House Rule: The Praw recommends to only shuffle a fraction of the full reward deck into the deck (and not all 96 cards.)</li>
+        </ul>
+      </ul>
+    </div>
   );
 }

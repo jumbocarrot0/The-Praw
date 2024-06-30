@@ -1,17 +1,19 @@
 import Item from '../../components/Item'
-import Lux from '../../dataFiles/lux.json';
 import GridBrowser from "../../components/GridBrowser";
-import Layout from '../../components/Layout'
 import {
   UncontrolledAccordion,
   AccordionBody,
   AccordionHeader,
   AccordionItem
 } from 'reactstrap'
+import { useRouteLoaderData } from 'react-router-dom';
 
 export default function LuxListPage() {
+
+  const Lux = useRouteLoaderData("lux")
+
   return (
-    <Layout title="Lux Cards">
+    <div>
       <h1 className='mb-4'>Lux</h1>
       <p className="text-light">Lux is an official variant introduced in Cosmic Odyssey. The variant adds a currency to the game, which players earn by being a main player. Players are also given lux cards that provide unique ways to spend lux, and may also spend lux to earn rewards at any time.
         <br />
@@ -62,12 +64,12 @@ export default function LuxListPage() {
       <hr className="border border-light border-2 opacity-100 mb-5" />
       <GridBrowser cardTemplate={Item}
         url="/Variants/Lux"
-        content={Lux.lux}
+        content={Lux}
         border={(item) => {
           return { "De-Lux": "info", "Re-Lux": "success", "Ultra Lux": "danger" }[item.type];
         }}
         type={(item) => { return item.type }}
       />
-    </Layout>
+    </div>
   );
 }

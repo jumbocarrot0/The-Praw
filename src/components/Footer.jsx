@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 // the footer
 export default function Footer() {
   return (
-    <footer className="mt-5 pb-3 text-center">
-      <span>
+    <footer className="mt-5 p-3 text-center">
+      <>
         This site is not affiliated with Future Pastimes or Fantasy Flight Games.
         <br />
         Thanks to Bill Eberle, Jack Kittredge, Bill Norton & Peter Olotka for this amazing game.
@@ -15,8 +15,8 @@ export default function Footer() {
         <br />
         Bill Martinson for the Cosmodex, which this site started upon.
         <br />
-        Version: 1.2.2
-      </span>
+        Version: 1.4.9
+      </>
     </footer>
   );
 }
