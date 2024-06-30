@@ -41,20 +41,77 @@ export async function getAlien(index) {
 
     console.log(data.original)
 
-    const fields = ['powerName', 'short', 'powerBody', 'wildBody', 'superBody', 'wildClassicBody', 'superClassicBody', 'history', "gameSetup", "bans"].filter(field => Object.keys(data.original).includes(field) || field === "bans")
+    const fields = ['powerName', 'short', 'powerBody', 'wildBody', 'superBody', 'wildClassicBody', 'superClassicBody', 'history', "gameSetup", "bans", "essences"].filter(field => Object.keys(data.original).includes(field) || field === "bans" || field === "essences")
     // console.log(fields)
     for (const field of fields) {
         if (field === "bans") {
             data.original[field] = Object.keys(data.original[field] ?? []).map(id => { return { style: {}, value: { id: id, name: data.original[field][id] } } })
-        } else {
+        }
+        else if (field === "essences") {
+            if (data.original[field]) {
+                data.original[field] = {
+                    name: [{
+                        style: {},
+                        value: data.original[field].name
+                    }], list: Object.fromEntries(Object.entries(data.original[field].list).map(entry => [entry[0], { name: [{ style: {}, value: entry[1].name }], body: [{ style: {}, value: entry[1].body }] }]))
+                }
+            }
+        }
+        else {
             data.original[field] = [{ value: data.original[field], style: {} }]
         }
         if (Revisions[index] && Revisions[index][field]) {
-            data.original[field] = Revisions[index][field]
+            // For essence cards, only replaces essences that actually have revisions.
+            if (field === "essences") {
+                if (Revisions[index][field].name){
+                    data.original[field].name = Revisions[index][field].name
+                }
+                if (Revisions[index][field].list){
+                    for (const cardID of Object.keys(data.original[field].list)){
+                        if (Revisions[index][field].list[cardID]){
+                            if (Revisions[index][field].list[cardID].name){
+                                data.original[field].list[cardID].name = Revisions[index][field].list[cardID].name
+                            }
+                            if (Revisions[index][field].list[cardID].body){
+                                data.original[field].list[cardID].body = Revisions[index][field].list[cardID].body
+                            }
+                        }
+                    }
+                    if (Revisions[index][field].name){
+                        data.original[field].name = Revisions[index][field].name
+                    }
+                }
+            } else {
+                data.original[field] = Revisions[index][field]
+            }
             if (RevisionNotes[index]) {
-                data.original[field].forEach((revision, i) => {
-                    Revisions[index][field][i].revisionNote = RevisionNotes[index][revision?.revisionID]
-                })
+                if (field === "essences") {
+                    if (Revisions[index][field].name){
+                        data.original[field].name.forEach((revision, i) => {
+                            Revisions[index][field].name[i].revisionNote = RevisionNotes[index][revision?.revisionID]
+                        })
+                    }
+                    if (Revisions[index][field].list){
+                        Object.keys(data.original[field].list).forEach(cardID => {
+                            if (Revisions[index][field].list[cardID]){
+                                if (Revisions[index][field].list[cardID].name){
+                                    data.original[field].list[cardID].name.forEach((revision, i) => {
+                                        Revisions[index][field].list[cardID].name[i].revisionNote = RevisionNotes[index][revision?.revisionID]
+                                    })
+                                }
+                                if (Revisions[index][field].list[cardID].body){
+                                    data.original[field].list[cardID].body.forEach((revision, i) => {
+                                        Revisions[index][field].list[cardID].body[i].revisionNote = RevisionNotes[index][revision?.revisionID]
+                                    })
+                                }
+                            }
+                        })
+                    }
+                } else {
+                    data.original[field].forEach((revision, i) => {
+                        Revisions[index][field][i].revisionNote = RevisionNotes[index][revision?.revisionID]
+                    })
+                }
             }
         }
     }
