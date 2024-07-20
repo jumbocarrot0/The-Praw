@@ -70,12 +70,13 @@ function Alien(props) {
               {alien.expansion}
             </Badge>
           </div>
-          <img alt={alien.name + " Thumbnail"}
+          {alien.thumbnail ? <img alt={alien.name + " Thumbnail"}
             className='mx-auto d-block'
             width="72"
             height="72"
-            src={require(`../../images/alien icons/${alien.thumbnail}`)}
-          />
+            src={alien.thumbnail}
+          /> : <></>}
+
           <strong>{alien.short}</strong>
         </CardBody>
       </Link>
@@ -83,31 +84,27 @@ function Alien(props) {
   )
 }
 
-function filterAliens(aliens, search, expansions, phases, exactPhases, player, exactPlayer, alertLevels) {
+function filterAliens(aliens, search, phases, exactPhases, player, exactPlayer, alertLevels) {
 
-  if (expansions.includes("42nd Anniversary Edition")) {
-    expansions.push("Base Set");
-  }
-
+  console.log(aliens, search, phases, exactPhases, player, exactPlayer, alertLevels)
   let filteredAliens = Object.entries(aliens);
 
   // console.log(filteredAliens)
 
-  filteredAliens = filteredAliens.filter((alien) => alien[1].original.name.toLowerCase().includes(search.toLowerCase()))
-  filteredAliens = filteredAliens.filter((alien) => expansions.includes(alien[1].original.expansion))
-  filteredAliens = filteredAliens.filter((alien) => alertLevels.includes(alien[1].original.alert))
+  filteredAliens = filteredAliens.filter((alien) => alien[1].name.toLowerCase().includes(search.toLowerCase()))
+  filteredAliens = filteredAliens.filter((alien) => alertLevels.includes(alien[1].alert))
 
   if (exactPhases) {
     filteredAliens = filteredAliens.filter((alien) => {
-      const alienPhases = Object.keys(alien[1].original.powerTiming.phases).filter(phase => alien[1].original.powerTiming.phases[phase])
+      const alienPhases = Object.keys(alien[1].powerTiming.phases).filter(phase => alien[1].powerTiming.phases[phase])
       // console.log(alienPhases)
       // console.log(phases)
       return (alienPhases.length === phases.length) && alienPhases.every((phase, index) => phase === phases[index])
     }
     )
-    // filteredAliens = filteredAliens.filter((alien) => phases === Object.keys(alien[1].original.powerTiming.phases).filter(phase => alien[1].original.powerTiming.phases[phase]))
+    // filteredAliens = filteredAliens.filter((alien) => phases === Object.keys(alien[1].powerTiming.phases).filter(phase => alien[1].powerTiming.phases[phase]))
   } else {
-    filteredAliens = filteredAliens.filter((alien) => phases.filter(phase => alien[1].original.powerTiming.phases[phase]).length > 0)
+    filteredAliens = filteredAliens.filter((alien) => phases.filter(phase => alien[1].powerTiming.phases[phase]).length > 0)
   }
 
   // console.log(exactPlayer)
@@ -305,7 +302,7 @@ export default function AliensListPage() {
 
   const [dataLength, setDataLength] = useState(20)
 
-  const aliens = useRouteLoaderData("aliens")
+  const aliens = useRouteLoaderData("homebrew")
   console.log(aliens)
   // const [aliens, setAliens] = useState(undefined)
   // useEffect(() => {
@@ -314,20 +311,6 @@ export default function AliensListPage() {
   //       setAliens(data)
   //     })
   // }, [])
-
-  let submittedExpansions = ["Base Set", "42nd Anniversary Edition", "Cosmic Incursion", "Cosmic Conflict", "Cosmic Alliance", "Cosmic Storm", "Cosmic Dominion", "Cosmic Eons", "Cosmic Odyssey", "Homebrew"];
-  submittedExpansions = submittedExpansions.filter((expansion) => searchParams.get(expansion) !== 'false');
-  const expansions = {
-    "Base Set": useState(submittedExpansions.includes("Base Set")),
-    "42nd Anniversary Edition": useState(submittedExpansions.includes("42nd Anniversary Edition")),
-    "Cosmic Incursion": useState(submittedExpansions.includes("Cosmic Incursion")),
-    "Cosmic Conflict": useState(submittedExpansions.includes("Cosmic Conflict")),
-    "Cosmic Alliance": useState(submittedExpansions.includes("Cosmic Alliance")),
-    "Cosmic Storm": useState(submittedExpansions.includes("Cosmic Storm")),
-    "Cosmic Dominion": useState(submittedExpansions.includes("Cosmic Dominion")),
-    "Cosmic Eons": useState(submittedExpansions.includes("Cosmic Eons")),
-    "Cosmic Odyssey": useState(submittedExpansions.includes("Cosmic Odyssey"))
-  }
 
   const phaseLabels = {
     "startTurn": "Start Turn",
@@ -404,11 +387,6 @@ export default function AliensListPage() {
                 pathname: `/Aliens`,
                 search: `?${createSearchParams([['search', searchQuery], ['exactPhases', exactPhases], ['exactPlayer', exactPlayer]]
                   .concat(
-                    Object.keys(expansions)
-                      .filter((expansion) => !expansions[expansion][0])
-                      .map((expansion) => [expansion, expansions[expansion][0]])
-                  )
-                  .concat(
                     Object.keys(phases)
                       .filter((phase) => !phases[phase][0])
                       .map((phase) => [phase, phases[phase][0]])
@@ -452,24 +430,6 @@ export default function AliensListPage() {
               <Col sm={3}></Col>
             </Row>
             <Row>
-              <Col>
-                <h3 className='text-dark'>Expansions</h3>
-                {
-                  Object.keys(expansions).map((expansion) => {
-                    return (
-                      <FormGroup key={expansion} switch>
-                        <Input type="switch" role="switch"
-                          id={expansion}
-                          checked={expansions[expansion][0]}
-                          onChange={() => expansions[expansion][1](!expansions[expansion][0])} />
-                        <Label for={expansion} className="text-dark" check>
-                          {expansion}
-                        </Label>
-                      </FormGroup>
-                    )
-                  })
-                }
-              </Col>
               <Col>
                 <h3 className='text-dark'>Phases</h3>
                 <FormGroup>
@@ -557,12 +517,14 @@ export default function AliensListPage() {
           }
         >
           {(aliens) => {
-            if (aliens !== undefined) {
-              filteredAliens = filterAliens(aliens, submittedQuery, submittedExpansions, submittedPhases, submittedExactPhases, submittedPlayer, submittedExactPlayer, submittedAlertLevels)
-            }
+            console.log(aliens)
+            // if (aliens !== undefined) {
+            //   filteredAliens = filterAliens(aliens, submittedQuery, submittedPhases, submittedExactPhases, submittedPlayer, submittedExactPlayer, submittedAlertLevels)
+            // }
+            filteredAliens = aliens
+            console.log(filteredAliens)
             // console.log(filteredAliens)
             return <>
-              <p>{Object.keys(filteredAliens).length}/238 Results</p>
               {/* <GridBrowser cardTemplate={Alien}
                 url="/Aliens"
                 content={filteredAliens}
@@ -579,7 +541,7 @@ export default function AliensListPage() {
                   className="overflow-hidden"
                 >
                   <GridBrowser cardTemplate={Alien}
-                    url="/Aliens"
+                    url="/Homebrew"
                     content={filteredAliens}
                     elementsToDisplay={dataLength}
                     width={4}
