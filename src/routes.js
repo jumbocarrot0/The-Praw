@@ -42,6 +42,7 @@ import AllianceDialPage from "./pages/Variants/AllianceDialPage";
 import ForeignAidPage from "./pages/Variants/ForeignAidPage";
 import CampaignPage from "./pages/Variants/CampaignPage";
 
+import HomebrewAlienListPage from "./pages/Lists/HomebrewAlienListPage"
 import HomebrewAlienSubmissionPage from "./pages/HomebrewAlienSubmissionPage";
 
 import FourPlanetsPage from "./pages/Variants/FourPlanetsPage";
@@ -79,7 +80,8 @@ import Ages from './dataFiles/ages.json'
 import Wrenches from './dataFiles/wrenches.json'
 import Privileges from './dataFiles/privileges.json'
 
-import { getAlien, getAllAliens } from "./supabaseAPI/getAlien"
+import { getAlien, getHomebrewAlien, getAllAliens, getAllHomebrewAliens } from "./supabaseAPI/getAlien"
+import IndividualHomebrewAlienPage from "./pages/IndividualItem/IndividualHomebrewAlienPage";
 
 // const AlienBreadcrumb = ({ match }) => Aliens.aliens[match.params.alienIndex].original.name;
 
@@ -646,6 +648,75 @@ export const routes = [
               breadcrumb: () => "Win Limitation"
             }
           },
+        ]
+      },
+      {
+        path: "/Homebrew",
+        id: "homebrew",
+        loader: () => defer({ aliens: getAllHomebrewAliens() }),
+        handle: {
+          breadcrumb: () => "Homebrew"
+        },
+        children: [
+          {
+            index: true,
+            element: <HomebrewAlienListPage />
+          },
+          {
+            path: "Submit",
+            element: <HomebrewAlienSubmissionPage />,
+            handle: {
+              breadcrumb: () => "Submit Alien"
+            }
+          },
+          {
+            element: <IndividualHomebrewAlienPage />,
+            path: ":homebrewAlienIndex",
+            loader: ({ params }) => {
+              if (params.homebrewAlienIndex.match(/ /)){
+                return redirect(`../${params.homebrewAlienIndex.replaceAll(/ /g, '_')}`)
+              }
+              const alienDataPromise = getHomebrewAlien(params.homebrewAlienIndex)
+              return defer({ alien: alienDataPromise })
+            },
+            id: "homebrewAlienIndex",
+            handle: {
+              breadcrumb: (data) => (
+                <React.Suspense fallback={null}>
+                  <Await
+                    resolve={data.alien}
+                    errorElement={
+                      <p>Error loading alien!</p>
+                    }
+                  >
+                    {(alien) => alien.name}
+                  </Await>
+                </React.Suspense>
+              ),
+              title: (data) => (
+                <React.Suspense fallback={null}>
+                  <Await
+                    resolve={data.alien}
+                    errorElement={
+                      <HelmetProvider>
+                        <Helmet>
+                          <title>The Praw</title>
+                        </Helmet>
+                      </HelmetProvider>
+                    }
+                  >
+                    {(alien) => (
+                      <HelmetProvider>
+                        <Helmet>
+                          <title>The Praw - {alien.name}</title>
+                        </Helmet>
+                      </HelmetProvider>
+                    )}
+                  </Await>
+                </React.Suspense>
+              )
+            }
+          }
         ]
       }
     ]

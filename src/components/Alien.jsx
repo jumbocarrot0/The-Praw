@@ -2,23 +2,26 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 import {
-  Card, CardBody
+    Card, CardBody
 } from 'reactstrap';
 import TimingBar from './TimingBar';
 
 export default function Alien(props) {
     const alien = props.alien
     const tab = props.tab
+    console.log(alien[tab])
     return (
         <div>
-            <img alt={alien[tab].name + " Thumbnail"}
-                className='float-end'
-                // src={require(`../../images/alien icons/avatar_${alien[tab].name.replace('The ', '').replace(' ', '_')}${alien[tab].altTimeline ? '_AT' : ''}.png`)} 
-                src={require(`../images/alien icons/${alien[tab].thumbnail}`)}
-            />
+            {alien[tab].thumbnail ?
+                <img alt={alien[tab].name + " Thumbnail"}
+                    className='float-end'
+                    // src={require(`../../images/alien icons/avatar_${alien[tab].name.replace('The ', '').replace(' ', '_')}${alien[tab].altTimeline ? '_AT' : ''}.png`)} 
+                    src={require(`../images/alien icons/${alien[tab].thumbnail}`)}
+                />
+                : <></>}
             <span><h1 className='text-light d-inline'>{alien[tab].altTimeline ? (alien[tab].name + " (AT)") : alien[tab].name}</h1> <h3 className='text-light d-inline'>({alien[tab].alert})</h3> <h3 className='text-light d-inline'>({alien[tab].expansion})</h3></span>
             <h3 className='text-light'>{alien[tab].short}</h3>
-            
+
             {alien[tab].gameSetup ? <p><strong>Game Setup:</strong> {alien[tab].gameSetup}</p> : null}
             {/* dangerouslySetInnerHTML is, well, dangerous when used on user submitted stuff. But aliens.json is trustworthy, so this is fine albiet jank.
   If/when I add a homebrew aliens option, PLEASE PLEASE PLEASE dont forget to sanitise them. */}
@@ -46,7 +49,7 @@ export default function Alien(props) {
                 : null}
             <br />
             <p><em>{alien[tab].history}</em></p>
-            {alien[tab].bans ?
+            {alien[tab].bans && alien[tab].bans.length > 0 ?
                 <p className='fs-3'>Do not use with {
                     Object.keys(alien[tab].bans).map((banID, index) => {
                         // console.log(bannedAlien)
