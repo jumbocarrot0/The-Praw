@@ -64,16 +64,9 @@ export default function Alien(props) {
             <p><strong>{alien.powerName.map(handleParts)}</strong> {alien.powerBody.map(handleParts)}
             </p>
             {alien.powerSpecialName ?
-                <p><strong>{alien.powerSpecialName}</strong> <span dangerouslySetInnerHTML={
-                    {
-                        __html: alien.powerSpecialBody
-                            .replaceAll('may use this power', '<strong><em>may use</em></strong> this power')
-                            .replaceAll('use this power', '<strong><em>use</em></strong> this power')
-                            .replaceAll('this power is used', 'this power is <strong><em>used</em></strong>')
-                    }
-                } />
+                <p><strong>{alien.powerSpecialName.map(handleParts)}</strong> {alien.powerSpecialBody.map(handleParts)}
                 </p>
-                : null}
+                : <></>}
             <br />
             <p><em>
                 {alien.history.map(handleParts)}

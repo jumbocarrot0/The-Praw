@@ -41,7 +41,7 @@ export async function getAlien(index) {
 
     console.log(data.original)
 
-    const fields = ['powerName', 'short', 'powerBody', 'wildBody', 'superBody', 'wildClassicBody', 'superClassicBody', 'history', "gameSetup", "bans", "essences"].filter(field => Object.keys(data.original).includes(field) || field === "bans" || field === "essences")
+    const fields = ['powerName', 'powerSpecialName', 'short', 'powerBody', 'powerSpecialBody', 'wildBody', 'superBody', 'wildClassicBody', 'superClassicBody', 'history', "gameSetup", "bans", "essences"].filter(field => Object.keys(data.original).includes(field) || field === "bans" || field === "essences")
     // console.log(fields)
     for (const field of fields) {
         if (field === "bans") {
