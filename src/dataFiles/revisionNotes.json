@@ -658,5 +658,251 @@
         "3": {"note": "Edited to use consistent terminology.", "author": "Cosmodex"},
         "4": {"note": "Edited for brevity and clarity.", "author": "Cosmodex"},
         "5": {"note": "Edited to properly define what happens when the Reincarnator power is stolen.", "author": "Cosmodex"}
+    },
+    "143": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to use consistent terminology.", "author": "Cosmodex"},
+        "2": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid implying this effect is mandatory.", "author": "Cosmodex"}
+    },
+    "144": {
+        "1": {"note": "Edited to clarify that the restriction only applies to Remora's power, and not other forms of ship retrival.", "author": "Cosmodex"},
+        "2": {"note": "Edited for brevity.", "author": "Cosmodex"},
+        "3": {"note": "Edited for capitalisation.", "author": "Cosmodex"}
+    },
+    "145": {
+        "1": {"note": "Edited to clarify the power works as a main player only", "author": "Cosmodex"},
+        "2": {"note": "Edited to place the timing before the power effect, for clarity..", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify what happens if a player cannot send four ships.", "author": "Cosmodex"},
+        "4": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "5": {"note": "Edited to avoid implying this effect is mandatory.", "author": "Cosmodex"}
+    },
+    "146": {
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid the implication the flare can be played multiple times per encounter.", "author": "Cosmodex"},
+        "3": {"note": "Edited for punctuation.", "author": "Cosmodex"},
+        "4": {"note": "Edited for consistency with other game terminology.", "author": "Cosmodex"}
+    },
+    "147": {
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"}
+    },
+    "148": {
+        "1": {"note": "Edited to use existing coexistence terminology instead of the vaguer \"share a colony\".", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid implying this effect is mandatory.", "author": "Cosmodex"}
+    },
+    "149": {
+        "1": {"note": "Edited for brevity.", "author": "Cosmodex"},
+        "2": {"note": "Edited for punctuation.", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify that every player must lose 8 ships.", "author": "Cosmodex"},
+        "4": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "5": {"note": "Edited to avoid the implication the flare can be played multiple times per encounter.", "author": "Cosmodex"},
+        "6": {"note": "Edited to avoid implying this effect is mandatory.", "author": "Cosmodex"}
+    },
+    "150": {
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid implying this effect is mandatory.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid the implication the flare can be played multiple times per encounter.", "author": "Cosmodex"}
+    },
+    "152": {
+        "1": {"note": "Edited for clarity and brevity.", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify Schizoid does not affect other alternative victory conditions.", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify that Schizoid must announce when a player or players has won.", "author": "Cosmodex"},
+        "4": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "5": {"note": "Edited to fix the timing icon.", "author": "Cosmodex"}
+    },
+    "153": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to place the condition of the power before use.", "author": "Cosmodex"},
+        "3": {"note": "Edited for clarity and grammar.", "author": "Cosmodex"},
+        "4": {"note": "Edited to eliminate Super Seeker's addition that does not appear on the base power..", "author": "Cosmodex"}
+    },
+    "154": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "2": {"note": "Edited to use correct terminology.", "author": "Cosmodex"},
+        "3": {"note": "Edited to cover scenario where Shadow is defending on a planet that is not \"theirs\".", "author": "Cosmodex"}
+    },
+    "155": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to remove reference to a non-existent icon.", "author": "Cosmodex"}
+    },
+    "156": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify that Wild Siren receives all drawn copies of the named card (as ruled in Encounter magazine v1n5p8).", "author": "Cosmodex"},
+        "4": {"note": "Edited to define how the free colonies provided by Super Siren are populated.", "author": "Cosmodex"},
+        "5": {"note": "Edited to fix the timing icon.", "author": "2018 FAQ"},
+        "6": {"note": "Edited to be consistent if Siren's power is used as the defense.", "author": "The Praw"}
+    },
+    "157": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to include defensive allies' ships when ships are being returned.", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify ships are returned to their owner's colonies.", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify the power does not force cards to be selected, in case of effects that modify how planning plays out.", "author": "Cosmodex"},
+        "4": {"note": "Edited to clarify what happens if both sides lose the encounter.", "author": "Cosmodex"},
+        "5": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "6": {"note": "Edited to fix Wild Skeptic to correctly refer to decisions rather than commitments (it is possible that no players will commit).", "author": "Cosmodex"},
+        "7": {"note": "Removed redundancy.", "author": "Cosmodex"},
+        "8": {"note": "Editied to clarify the stated number overwrites the doubled ship loss, rather than add to it.", "author": "Cosmodex"},
+        "9": {"note": "Edited to fix timing icons."}
+    },
+    "158": {
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "2": {"note": "Edited to remove redundant Game Setup text.", "author": "The Praw"}
+    },
+    "160": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to prevent Sniveler from whining when they are only tied for most ships in the warp or least colonies.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid implying this effect is mandatory.", "author": "Cosmodex"},
+        "3": {"note": "Edited for grammar.", "author": "Cosmodex"}
+    },
+    "161": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "2": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "4": {"note": "Edited for capitalisation.", "author": "Cosmodex"}
+    },
+    "162": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to remove redundancy.", "author": "Cosmodex"},
+        "2": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "3": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "4": {"note": "Edited to fix the \"coexistence bug\" that implies Spiff overrides effects such as Filth.", "author": "Cosmodex"},
+        "5": {"note": "Edited to fix incorrect timing icons.", "author": "Cosmodex"}
+    },
+    "163": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "164": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify Sting takes cards at random.", "author": "Cosmodex"}
+    },
+    "165": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"}
+    },
+    "166": {
+        "1": {"note": "Edited for capitalisation.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "167": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited for punctuation.", "author": "Cosmodex"}
+    },
+    "168": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to block power-trading/lending effects from taking Symbiote.", "author": "Cosmodex"},
+        "3": {"note": "Edited for agreement between Wild Symbiote's text and timing icon.", "author": "Cosmodex"},
+        "4": {"note": "Edited to avoid implying this effect is mandatory.", "author": "Cosmodex"},
+        "5": {"note": "Edited to define the scope and duration of Super Symbiote's coexistence override.", "author": "Cosmodex"},
+        "6": {"note": "Edited to avoid implying other alien powers the Symbiote player has cannot be lost.", "author": "Cosmodex"}
+    },
+    "169": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid the implication the flare can be played multiple times per encounter.", "author": "Cosmodex"}
+    },
+    "170": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to remove unecessary Game Setup.", "author": "The Praw"},
+        "3": {"note": "Edited to have Tide opponents' discard cards at random.", "author": "The Praw"}
+    },
+    "171": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to that Wild Tortoise does not require multiple encounter cards to continue the turn.", "author": "Cosmodex"}
+    },
+    "173": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to implement the FAQ ruling that Trader cannot trade a hand that contains no encounter cards to their opponent.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "174": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "3": {"note": "Edited to remove ambiguity (on heads could mean heads-down).", "author": "Cosmodex"},
+        "4": {"note": "Edited to fix the timing icon.", "author": "Cosmodex"}
+    },
+    "175": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify super Tripler does not affect the opponent's card.", "author": "Cosmodex"},
+        "4": {"note": "Edited to avoid the implication the flare can be played multiple times per encounter.", "author": "Cosmodex"}
+    },
+    "176": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to remove clarification (for aliens that ignore this penalty).", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"}
+    },
+    "177": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "178": {
+        "1": {"note": "Edited to implement FAQ ruling that Vacuum can not take out their own ships.", "author": "Cosmodex"},
+        "2": {"note": "Edited power summary to match updated text (and CEOnline).", "author": "Cosmodex"},
+        "3": {"note": "Edited for brevity.", "author": "Cosmodex"},
+        "4": {"note": "Edited to clarify super flare can take any ships, not just those of Vacuum's opponents.", "author": "Cosmodex"}
+    },
+    "179": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "3": {"note": "Edited for clarity.", "author": "Cosmodex"}
+    },
+    "180": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for capitalisation.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "3": {"note": "Edited for grammar.", "author": "Cosmodex"}
+    },
+    "181": {
+        "1": {"note": "Edited to implement the FAQ ruling that Void trumps other powers like Zombie.", "author": "Cosmodex"},
+        "2": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify Void must win as an ally to use its super.", "author": "Cosmodex"}
+    },
+    "182": {
+        "1": {"note": "Edited to let Vox use their power as a defensive ally.", "author": "Cosmodex"},
+        "2": {"note": "Edited to buff Vox, making their power usable on reinforcement cards.", "author": "Cosmodex"},
+        "3": {"note": "Edited to turn the super effect into the wild effect.", "author": "Cosmodex"},
+        "4": {"note": "Edited to add a new super effect.", "author": "Cosmodex"}
+    },
+    "184": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify super collects flares only from other players.", "author": "Cosmodex"}
+    },
+    "185": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to clarify the interaction of the three use clauses.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"}
+    },
+    "186": {
+        "1": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to add language that clarifies whether the effects applies as an ally or not.", "author": "Cosmodex"}
+    },
+    "187": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for consistency and brevity.", "author": "Cosmodex"},
+        "2": {"note": "Edited for clarity.", "author": "Cosmodex"}
+    },
+    "188": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "189": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to clarify Will's power works even if another player draws destiny (i.e. Dictator).", "author": "Cosmodex"},
+        "2": {"note": "Edited to move Will's declaration of the defense in Destiny.", "author": "Cosmodex"},
+        "3": {"note": "Edited to remove reference of encountering an alien (rather than a player).", "author": "Cosmodex"},
+        "4": {"note": "Edited for grammar.", "author": "Cosmodex"}
+    },
+    "190": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "2": {"note": "Edited for consistency.", "author": "Cosmodex"}
     }
 }
