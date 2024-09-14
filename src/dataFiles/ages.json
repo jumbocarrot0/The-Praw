@@ -626,9 +626,9 @@
             },
             "revised": {
                 "name": "Luminance",
-                "body": "If the Lux variant (🕮16) is being used, after setup, draw one additional lux card and keep it lux market side facedown.\n\nIf the Lux variant is not being used, after you draw your starting hand, draw 2 flares from the unused flare deck.",
+                "body": "If the Lux variant (🕮16) is being used, draw one additional lux card during setup and choose two to flip market side facedown.\n\nIf the Lux variant is not being used, after you draw your starting hand, draw 2 flares from the unused flare deck.",
                 "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
+                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency, and to clarify that you keep the ability of 2 lux cards."
             }
         },
         "9": {
@@ -640,7 +640,8 @@
             "revised": {
                 "name": "Mutations",
                 "body": "If the Evolution variant (🕮17) is not being used, add it but don't perform its setup.\n\nDraw two evolution cards, place one faceup next to your alien sheet, and shuffle the other into the evolution deck. Each other player places one of their ships on the card.\n\nOnly you may place ships on the evolution next to your alien sheet. (Other players may remove ships as usual.)",
-                "expansion": "Cosmic Odyssey"
+                "expansion": "Cosmic Odyssey",
+                "revisionNotes": "Revisions from The Praw:\n\nEdited for readability and clarity."
             }
         },
         "10": {
