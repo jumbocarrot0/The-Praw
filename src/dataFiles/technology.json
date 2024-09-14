@@ -957,14 +957,14 @@
                 "timing": {
                     "player": "As Any Player",
                     "phases": {
-                        "startTurn": false,
-                        "regroup": false,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": false,
-                        "planning": false,
+                        "startTurn": true,
+                        "regroup": true,
+                        "destiny": true,
+                        "launch": true,
+                        "alliance": true,
+                        "planning": true,
                         "reveal": true,
-                        "resolution": false
+                        "resolution": true
                     }
                 },
                 "expansion": "Cosmic Odyssey"
@@ -981,14 +981,14 @@
                 "timing": {
                     "player": "Main Player or Ally",
                     "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
+                        "startTurn": false,
+                        "regroup": false,
+                        "destiny": false,
+                        "launch": false,
+                        "alliance": false,
+                        "planning": false,
                         "reveal": true,
-                        "resolution": true
+                        "resolution": false
                     }
                 },
                 "expansion": "Cosmic Odyssey"
