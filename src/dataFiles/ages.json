@@ -574,11 +574,11 @@
         "3": {
             "original": {
                 "name": "Alliances",
-                "body": "Draw four envoy cards, place up faceup next to your alien sheet, and shuffle the other three into the envoy deck.",
+                "body": "Draw four envoy cards, place one faceup next to your alien sheet, and shuffle the other three into the envoy deck.",
                 "expansion": "Cosmic Odyssey"
             },
             "revised": {
-                "name": "Incursion",
+                "name": "Alliances",
                 "body": "Draw four envoy cards, choose one to keep, and shuffle the other three into the envoy deck.",
                 "expansion": "Cosmic Odyssey",
                 "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
