@@ -71,7 +71,8 @@
         "3": {"note": "Edited for wording consistency", "author": "Cosmodex"},
         "4": {"note": "Edited to prevent Wild Butler from letting a player ally against themselves, or if they otherwise couldn't.", "author": "Cosmodex"},
         "5": {"note": "Edited to eliminate confusion about play \"resuming where it left off\" when the usual rules can apply as normal.", "author": "Cosmodex"},
-        "6": {"note": "Edited to clarify that the new offense's outcome affects if the original offense may continue their turn.", "author": "Cosmodex"}
+        "6": {"note": "Edited to clarify that the new offense's outcome affects if the original offense may continue their turn.", "author": "Cosmodex"},
+        "7": {"note": "Edited to avoid using the term \"legal encounter\" (which is defined in the FAQ) that goes against the intent of the power to let Butler target a planet where the offense has a colony.", "author": "The Praw"}
     },
     "21": {
         "1": {"note": "Edited for consistency.", "author": "Cosmodex"},
@@ -904,5 +905,173 @@
         "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
         "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
         "2": {"note": "Edited for consistency.", "author": "Cosmodex"}
+    },
+    "191": {
+        "1": {"note": "Edited to avoid using the term \"legal encounter\" (which is only defined in the FAQ and not any rulebook) so the power's effect is unambiguous.", "author": "Cosmodex"}
+    },
+    "192": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"}
+    },
+    "193": {
+        "1": {"note": "Edited for consistency.", "author": "Cosmodex"},
+        "2": {"note": "Edited to keep the wording consistent if the Xenophile is an ally.", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "4": {"note": "Edited for grammar and capitalisation.", "author": "Cosmodex"}
+    },
+    "194": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited for clarity when the losing ship is not on the targeted planet (e.g. for Bully).", "author": "The Praw"}
+    },
+    "195": {
+        "0": {"note": "Edited for inclusivity.", "author": "The Praw"},
+        "1": {"note": "Edited properly use the game term \"release\" (for clarity with effects that trigger on ship retrieval/release).", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid language that implies the flare can be played multiple times per encounter", "author": "Cosmodex"},
+        "3": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "4": {"note": "Edited for brevity.", "author": "Cosmodex"},
+        "5": {"note": "Edited for grammar.", "author": "Cosmodex"},
+        "6": {"note": "Edited to let Zombie collect compensation.", "author": "Cosmodex"}
+    },
+    "196": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "197": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "198": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited to move the wild destiny effect for clarity.", "author": "The Praw"},
+        "3": {"note": "Edited to prevent power theft (for changeling), and to simplify the wild desting effect (avoiding the weird \"even if this sheet is facedown\" clause. (This also gives a buff to avoid planet loss, but this prevents the unfun strategy to eliminate Boomerang ASAP and make their win impossible.)", "author": "The Praw"}
+    },
+    "199": {
+        "1": {"note": "Edited to use correct terminology.", "author": "Cosmodex"},
+        "2": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "Cosmodex"},
+        "3": {"note": "Edited to clarify what happens if Booster should discard 2 cards but only has one (it could be interpreted as Booster not needing to discard at all).", "author": "Cosmodex"},
+        "4": {"note": "Edited for wording conventions.", "author": "Cosmodex"},
+        "5": {"note": "Edited for capitalisation.", "author": "Cosmodex"}
+    },
+    "200": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "201": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited to use correct terminology.", "author": "The Praw"},
+        "3": {"note": "Edited for consistency.", "author": "The Praw"}
+    },
+    "203": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited to use the term \"bystander\" correctly.", "author": "The Praw"},
+        "3": {"note": "Edited for clarity.", "author": "The Praw"},
+        "4": {"note": "Edited to correct the timing bar.", "author": "The Praw"}
+    },
+    "205": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "207": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "208": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "209": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "210": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "211": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited for consistency.", "author": "The Praw"},
+        "3": {"note": "Edited for readability by removing the weird \"return this card to your hand\" portion that at first glance can make the card seem useless.", "author": "The Praw"},
+        "4": {"note": "Edited to match true effect of the power (Inferno does not collect discarded flares at all).", "author": "The Praw"}
+    },
+    "212": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "213": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "214": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited to implement designer intent that insured cards must be present in the insuree's hand.", "author": "The Praw"},
+        "3": {"note": "Edited for capitalisation.", "author": "The Praw"}
+    },
+    "215": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited for readability, by moving the example to the portion of the effect that it references.", "author": "The Praw"},
+        "3": {"note": "Edited for clarity. (Magnet does not have two power, it is one power with two use effects.)", "author": "The Praw"}
+    },
+    "216": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "217": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "218": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "219": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited the example to avoid implying that Tentacle's power changes the card's value.", "author": "The Praw"},
+        "3": {"note": "House ruled to allow Tentacle to add their opponent's digits to their own side (and vice versa) to add more mind games options.", "author": "The Praw"}
+    },
+    "220": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited to avoid implying that deals not being wins is an exception for Meek rather than a game rule.", "author": "The Praw"},
+        "3": {"note": "House ruled to overhaul the power while maintaining the intent in a much cleaner fashion.", "author": "The Praw"},
+        "4": {"note": "Edited for consistency.", "author": "The Praw"}
+    },
+    "222": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "223": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "224": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "225": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited for capitalisation.", "author": "The Praw"}
+    },
+    "227": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited for wording consistency.", "author": "The Praw"}
+    },
+    "228": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "House ruled to let Demon dominate the offense's (but not the defense's) ships in order to let it be impactful in a 3 player game.", "author": "The Praw"}
+    },
+    "229": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "230": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "231": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited to use consistent terminology."}
+    },
+    "232": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "233": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "234": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited to use consistent terminology.", "author": "The Praw"},
+        "3": {"note": "Edited for clarity.", "author": "The Praw"}
+    },
+    "235": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"},
+        "2": {"note": "Edited to remove reference to a non-existent \"selection card\".", "author": "The Praw"},
+        "3": {"note": "Edited to prevent players receiving aliens not allowed in play.", "author": "The Praw"},
+        "4": {"note": "Edited for consistency.", "author": "The Praw"}
+    },
+    "236": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
+    },
+    "237": {
+        "1": {"note": "Edited to avoid language that implies the flare is mandatory to play.", "author": "The Praw"}
     }
 }
