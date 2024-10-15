@@ -1,12 +1,19 @@
 import React from 'react';
-import { Link } from "react-router-dom"
-import Layout from '../../components/ThrowbackLayout'
+import { Link } from "react-router-dom";
+import Layout from '../../components/ThrowbackLayout';
 import ThrowbackBox from '../../components/ThrowbackBox';
-import { Await, useRouteLoaderData } from "react-router-dom"
+import { Await, useRouteLoaderData } from "react-router-dom";
+import PartStyle from '../../components/PartStyle';
 
 export default function ThrowbackPage() {
 
   const alien = useRouteLoaderData("throwback")
+  const tab = "original"
+  const viewMode = 0
+
+  function handleParts(part, i) {
+      return part.value.split(' ').map((word, j) => <PartStyle key={`${i}${j}`} part={part} viewMode={viewMode} tab={tab}>{j === 0 ? `${word}` : ` ${word}`}</PartStyle>)
+  }
 
   return (
     <Layout class="throwback">
@@ -20,20 +27,20 @@ export default function ThrowbackPage() {
           >
             {(alien) => (
               <div className='px-1'>
-                <b>{alien.original.name.toUpperCase()}</b> [O:CO] {alien.original.short.toUpperCase()} <Link to="/Aliens">Fantasy Flight</Link>
-                <img className='float-end' alt={alien.original.name + " Avatar"} src={require(`../../images/alien icons/avatar_${alien.original.name.replace('The ', '').replace(' ', '_')}${alien.original.altTimeline ? '_AT' : ''}.png`)} />
-                <p><strong>{alien.original.powerName}</strong> {alien.original.powerBody}</p>
+                <b>{alien.name.toUpperCase()}</b> [O:CO] {alien.short.map((part) => {return {style: part.style, value: part.value.toUpperCase()}}).map(handleParts)} <Link to="/Aliens">Fantasy Flight</Link>
+                <img className='float-end' alt={alien.name + " Avatar"} src={require(`../../images/alien icons/avatar_${alien.name.replace('The ', '').replace(' ', '_')}${alien.altTimeline ? '_AT' : ''}.png`)} />
+                <p><strong>{alien.powerName.map(handleParts)}</strong> {alien.powerBody.map(handleParts)}</p>
                 <p>
-                  <strong>History:</strong> {alien.original.history}
+                  <strong>History:</strong> {alien.history.map(handleParts)}
                 </p>
                 <p>
                   <strong>Notes:</strong> The recommended experience level for this power is <strong>Expert</strong>. This is a <strong>Resource</strong> type power.
                 </p>
                 <p>
-                  <strong>Wild:</strong> {alien.original.wildBody}
+                  <strong>Wild:</strong> {alien.wildBody.map(handleParts)}
                 </p>
                 <p>
-                  <strong>Super:</strong> {alien.original.superBody}
+                  <strong>Super:</strong> {alien.superBody.map(handleParts)}
                 </p>
                 <br />
                 <p>

@@ -1,5 +1,5 @@
 import { createClient } from "@supabase/supabase-js"
-import Revisions from "../dataFiles/revisions.json"
+import Revisions from "../dataFiles/revisions2.json"
 import RevisionNotes from "../dataFiles/revisionNotes.json"
 import faq from "../dataFiles/faq.json"
 

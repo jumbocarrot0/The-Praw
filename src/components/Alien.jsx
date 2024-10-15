@@ -61,7 +61,7 @@ export default function Alien(props) {
             ).length > 0 ? <p><strong>Game Setup:</strong> {alien.gameSetup.map(handleParts)}</p> : <></>}
             {/* dangerouslySetInnerHTML is, well, dangerous when used on user submitted stuff. But aliens.json is trustworthy, so this is fine albiet jank.
   If/when I add a homebrew aliens option, PLEASE PLEASE PLEASE dont forget to sanitise them. */}
-            <p><strong>{alien.powerName.map(handleParts)}</strong> {alien.powerBody.map(handleParts)}
+            <p>{alien.powerBody.map(handleParts)}
             </p>
             {alien.powerSpecialName ?
                 <p><strong>{alien.powerSpecialName.map(handleParts)}</strong> {alien.powerSpecialBody.map(handleParts)}
