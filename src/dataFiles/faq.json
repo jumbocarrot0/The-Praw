@@ -36,6 +36,130 @@
                 "tags": []
             }
         ],
+        "8": [
+            {
+                "question": "If Anti-Matter’s flare is used to prevent another flare being played, is the prevented flare kept in hand? Also, does it count against that player’s limit of one flare per encounter?",
+                "answer": "The prevented flare is kept in hand. Since the player was prevented from playing the flare (rather than having it be cancelled), the prevented flare does not count against the player’s limit of one flare per encounter. However, remember that the prevented flare may not be played again that encounter.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "notes": "",
+                "tags": []
+            },
+            {
+                "question": "The Anti-Matter Super flare says it works “during each encounter.” Do you have to play it each time you want to use it, or is it automatic?",
+                "answer": "You must play the flare each time you want to use its effect.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "notes": "",
+                "tags": []
+            },
+            {
+                "question": "If Fungus is allied with Anti-Matter and has a ship with 5 other ships stacked under it, does Fungus subtract 6?",
+                "answer": "Yes. The same is true if Fungus is allied with Anti-Matter’s opponent.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "notes": "",
+                "tags": []
+            }
+        ],
+        "9": [
+            {
+                "question": "Does ”Pwning” count as capturing?",
+                "answer": "Yes.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "notes": "",
+                "tags": []
+            },
+            {
+                "question": "Can Arcade pwn a hired ship from Merchant, a horde token from Horde, etc.?",
+                "answer": "No.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "notes": "",
+                "tags": []
+            },
+            {
+                "question": "Can the Arcade use its power to pwn one ship even if he lost (against Human, Loser or Pacifist) after playing an attack card versus a negotiate card?",
+                "answer": "Yes.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "notes": "",
+                "tags": []
+            }
+        ],
+        "10": [
+            {
+                "question": "Does a permanent tower mean that Architect may continue doubling even without use of their power?",
+                "answer": "No. It just means the towers themselves are not physically disassembled.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "notes": "",
+                "tags": []
+            }
+        ],
+        "14": [
+            {
+                "question": "Are rifts triggered when Barbarian pillages another player’s hand?",
+                "answer": "Only if Barbarian takes one of the rifts. Typically, Barbarian will discard those cards after pillaging a hand, so the rift never entered Barbarian’s hand",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "notes": "",
+                "tags": []
+            }
+        ],
+        "15": [
+            {
+                "question": "What happens when Bleeding Heart faces off against Warhawk?",
+                "answer": "The encounter cards ultimately end on a value of Attack 00.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
+                "notes": "The word 'ultimately' here, alongside the Warhawk errata, are both misleading. Both imply (or state) that Warhawk and Bleeding Heart (and The Cult) can cause an infinite loop. But, following the FAQ ruling that each power is only \"usable once per relevant context,\" this shouldn't be possible.\n\nNow this leads to two different interpretations: if 'usable' is referring only to an alien's ***use***, then Bleeding Heart and The Cult override Warhawk, since the former's changes to card types are not reliant on power ***use*** whereas Warhawk is. However, if the FAQ ruling is talking more generally about any power effect, then Warhawk would trump the other two; Bleeding Heart and The Cult use the word 'becomes' which matches that on Retreats, Safeguards, etc. implying that it occurs before any powers trigger (like Warhawk), so Warhawk would trigger later.\n\nIf you find yourself in a game with The Cult and Warhawk, best to hash out which interpretation your group will use before game start."
+            }
+        ],
+        "16": [
+            {
+                "question": "Does the engagement ship count as being captured?",
+                "answer": "Yes.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "notes": "",
+                "tags": []
+            }
+        ],
+        "18": [
+            {
+                "question": "Can Bully target ships researching tech?",
+                "answer": "Yes.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "notes": "",
+                "tags": []
+            }
+        ],
+        "19": [
+            {
+                "question": "What happens when it is not possible for ships to remain in place or the number of ships lost is not known?",
+                "answer": "Ships are sent to the warp normally.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "notes": "",
+                "tags": []
+            }
+        ],
+        "20": [
+            {
+                "question": "Butler Wild flare says “play resumes where it left off.” What does that mean?",
+                "answer": "If the new offense has a successful encounter, then the original offense is treated as such. This has been implemented as official errata.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "notes": "",
+                "tags": []
+            }
+        ],
         "21": [
             {
                 "question": "What happens if one player reveals a Safegaurd or Intimidate when the other reveals an attack?",
@@ -264,7 +388,7 @@
                 "tags": [
                     "Contentious"
                 ],
-                "notes": "The word 'ultimately' here, alongside the Warhawk errata, are both misleading. Both imply (or state) that Warhawk and The Cult (and Bleeding Heart) can cause an infinite loop. But, following the FAQ ruling that each power is only \"usable once per relevant context,\" this shouldn't be possible.\n\nNow this leads to two different interpretations: if 'usable' is referring only to an alien's ***use***, then Bleeding Heart and The Cult override Warhawk, since the former's changes to card types are not reliant on power ***use*** whereas Warhawk is. However, if the FAQ ruling is talking more generally about any power effect, then Warhawk would trump the other two; Bleeding Heart and The Cult use the word 'becomes' which matches that on Retreats, Safeguards, etc. implying that it occurs before any powers trigger (like Warhawk), so Warhawk would trigger later.\n\nIf you find yourself in a game with The Cult and Warhawk, best to hash out which interpretaion your group will use before game start."
+                "notes": "The word 'ultimately' here, alongside the Warhawk errata, are both misleading. Both imply (or state) that Warhawk and The Cult (and Bleeding Heart) can cause an infinite loop. But, following the FAQ ruling that each power is only \"usable once per relevant context,\" this shouldn't be possible.\n\nNow this leads to two different interpretations: if 'usable' is referring only to an alien's ***use***, then Bleeding Heart and The Cult override Warhawk, since the former's changes to card types are not reliant on power ***use*** whereas Warhawk is. However, if the FAQ ruling is talking more generally about any power effect, then Warhawk would trump the other two; Bleeding Heart and The Cult use the word 'becomes' which matches that on Retreats, Safeguards, etc. implying that it occurs before any powers trigger (like Warhawk), so Warhawk would trigger later.\n\nIf you find yourself in a game with The Cult and Warhawk, best to hash out which interpretation your group will use before game start."
             }
         ],
         "43": [
@@ -2027,7 +2151,7 @@
                 "tags": [
                     "Contentious"
                 ],
-                "notes": "The word 'ultimately' here, alongside the Warhawk errata, are both misleading. Both imply (or state) that Warhawk and The Cult or Bleeding Heart can cause an infinite loop. But, following the FAQ ruling that each power is only \"usable once per relevant context,\" this shouldn't be possible.\n\nNow this leads to two different interpretations: if 'usable' is referring only to an alien's ***use***, then Bleeding Heart and The Cult override Warhawk, since the former's changes to card types are not reliant on power ***use*** whereas Warhawk is. However, if the FAQ ruling is talking more generally about any power effect, then Warhawk would trump the other two; Bleeding Heart and The Cult use the word 'becomes' which matches that on Retreats, Safeguards, etc. implying that it occurs before any powers trigger (like Warhawk), so Warhawk would trigger later.\n\nIf you find yourself in a game with The Cult and Warhawk, best to hash out which interpretaion your group will use before game start."
+                "notes": "The word 'ultimately' here, alongside the Warhawk errata, are both misleading. Both imply (or state) that Warhawk and The Cult or Bleeding Heart can cause an infinite loop. But, following the FAQ ruling that each power is only \"usable once per relevant context,\" this shouldn't be possible.\n\nNow this leads to two different interpretations: if 'usable' is referring only to an alien's ***use***, then Bleeding Heart and The Cult override Warhawk, since the former's changes to card types are not reliant on power ***use*** whereas Warhawk is. However, if the FAQ ruling is talking more generally about any power effect, then Warhawk would trump the other two; Bleeding Heart and The Cult use the word 'becomes' which matches that on Retreats, Safeguards, etc. implying that it occurs before any powers trigger (like Warhawk), so Warhawk would trigger later.\n\nIf you find yourself in a game with The Cult and Warhawk, best to hash out which interpretation your group will use before game start."
             }
         ],
         "186": [
