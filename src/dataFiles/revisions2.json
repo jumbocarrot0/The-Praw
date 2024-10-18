@@ -2922,7 +2922,7 @@
                         "added"
                     ]
                 },
-                "value": "If that player wins or deals, it counts as a success for you",
+                "value": "If that player wins or deals, it counts as a successful encounter for you, otherwise it counts as unsuccessful",
                 "revisionID": 6
             },
             {
