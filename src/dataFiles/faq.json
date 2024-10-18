@@ -5,6 +5,7 @@
                 "question": "If a captured ship on a trauma card is removed by an effect like Ship Zap, what happens to the trauma card?",
                 "answer": "It is returned to Alien and placed in its essence card discard pile.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "notes": "",
                 "tags": []
             }
@@ -14,6 +15,7 @@
                 "question": "Can Amoeba ooze all 20 ships into the hyperspace gate, or would they lose their power immediately upon reducing their home colonies to 2? What happens to the ships that were removed from home colony #3?",
                 "answer": "Amoeba may ooze all 20 ships, as the power happens all at once. Once all 20 have been moved, then yes, Amoeba would lose their power.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "notes": "",
                 "tags": []
             },
@@ -21,6 +23,7 @@
                 "question": "If Amoeba Super oozes all of their ships out of an encounter as an ally, is Amoeba Super considered to have allied in the first place (for effects such as Grudge and Mutant Wild flare)?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "notes": "Importantly, this does not answer whether or not they remain an ally",
                 "tags": []
             },
@@ -28,6 +31,7 @@
                 "question": "Can a player use Amoeba Wild to increase their ship count if they have no ships as the defense?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "notes": "",
                 "tags": []
             }
@@ -46,6 +50,7 @@
                 "question": "If Changeling changes alien sheets with Pentaform, what swaps?",
                 "answer": "Pentaform and all lifestages move to the player using Changeling.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "notes": "In general, aliens like Pentaform, Reincarnator, etc. will consider their 'extra powers' to be facets of the main power.",
                 "tags": []
             }
@@ -55,14 +60,18 @@
                 "question": "Does Chosen’s Super flare have to be played before or after they look at the cards they’ve drawn?",
                 "answer": "After.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can you Cosmic Zap Chosen after they’ve drawn cards, when you’ve seen what they want to play?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "notes": "This ruling is dubious. Generally, an effect can be cancelled after the player has stated any target of the effect and any other significant choices for resolving the effect (e.g. Seeker's question), but before the effect begins to resolve or cause any alteration to the game state. In this case, the game state has changed significantly (cards being drawn from the deck) and a zap should not be possible - or if it was it should need further clarification about the state of the drawn cards which neithe the FAQ nor the Chosen's alien power provide.",
-                "tags": ["Contentious"]
+                "tags": [
+                    "Contentious"
+                ]
             }
         ],
         "25": [
@@ -70,26 +79,32 @@
                 "question": "Can a player replay a flare that was played in the original encounter during the planning phase or later?",
                 "answer": "No. A flare played that affects the outcome of the encounter is still considered to be played, and its effects are still active (e.g., Calculator Wild). If the new outcome alters the validity of the flare, it simply has no effect (e.g., Deuce Wild).",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"], 
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This ruling isn't game-breaking by any means, but does seem to contradict a following ruling that allows alien powers to be used again even if they are \"once per encounter\" (meaning some once per encounter effects can be replayed but others can't be? Flares and Alien Powers are not necessarially equivalent, but it's strange they act differently here). It also goes against the spirit of the alien and especially the phrase from the power: \"The encounter is then replayed from the start of the planning phase\". Plus it could require a certain amount of memory to keep into account ongoing effects that are still in play that you usually wouldn't consider during the planning phase.\n\nYou can rule that these cards were never considered played and could be played again (if any flares changed hands they would need to be given back) and it shouldn't cause any more issues than this official ruling does."
             },
             {
                 "question": "What happens to tokens spent or cards discarded in the initial encounter with Chronos?",
                 "answer": "Tokens are spent, but all cards played from the Planning Phase on are returned to hand. Those played before are discarded.",
                 "source": "2018 FAQ",
-                "tags": [], 
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [],
                 "notes": "Tokens remaining discarded does feel against the spirit of the power like the first ruling, though the ruling here is comparatively much clearer from the text of the power. You could house rule otherwise if you'd like."
             },
             {
                 "question": "Is a kicker played in the first encounter still allowed in the repeat of the encounter?",
                 "answer": "Only the opponent’s encounter card is set aside. kickers may be reused in the replayed encounter.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "When Chronos declares time travel, does Deuce have to set aside both cards played?",
                 "answer": "Deuce’s second card does not count as an encounter card, so it returns to hand and may be replayed.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "To be clear, Deuce's played card is an encounter card, it's just not their revealed encounter card."
             },
@@ -97,7 +112,10 @@
                 "question": "Do powers that happened at Planning or Reveal get to trigger again, like Sorcerer or Chosen?",
                 "answer": "Yes. Even though some alien powers say “once per encounter,” the encounter is being replayed from the start of the Planning Phase, so those aliens have an opportunity to replay their effects if they are used from Planning or later (even if they didn’t use an optional power the first time through).",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"], 
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "Seems contradictory with the first Chronos FAQ entry that disallows played flares to be used again, though there's a sound argument that flares and powers shouldn't be correlated this way."
             }
         ],
@@ -106,7 +124,8 @@
                 "question": "When using the Chrysalis Wild flare, what happens to the extra flare you draw each time at the end of the encounter (as well as when you have to draw again because of a Game Setup alien)?",
                 "answer": "They are removed from the game.",
                 "source": "2018 FAQ",
-                "tags": [], 
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [],
                 "notes": "Doesn't quite answer what happens if you choose not to transform into the alien, but safe to assume its removed from the game."
             }
         ],
@@ -115,6 +134,7 @@
                 "question": "If the Citadel’s power is lost or discarded, are the citadels discarded or not?",
                 "answer": "The citadels remain in play if Citadel’s sheet is turned facedown, but if the sheet is discarded, the citadels are discarded as well.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -123,42 +143,49 @@
                 "question": "Can a Negotiate card be chosen as the claw after the game setup?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "What happens when The Claw’s last encounter card is taken (by a Finder artifact, for instance), and there’s no claw on the alien sheet?",
                 "answer": "The Claw chooses a new claw after drawing a new hand.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If The Claw’s claw is a 12, and Mirror changes an attack 21 into a 12, does The Claw use its power? Likewise any other effect that changes the value of a card to the claw?",
                 "answer": "No. The card revealed must be a 12, not whatever game effect changes its value to a 12. Similarly, if an effect like The Cosmic Guardian changes an attack card into a negotiate, The Claw still uses its power when that attack card is revealed if it matches the claw.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does discarding a card trigger The Claw (for instance, when Hate uses its power)?",
                 "answer": "No. Playing a card (like a flare, reinforcement, artifact) does, and revealing an encounter card you have played (including Deuce’s second encounter card, and Cavalry’s encounter card as an ally) triggers The Claw.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If the claw card is an attack 10 from the cosmic deck and a player reveals an attack 10 from the reward deck, does The Claw get to use its power?",
                 "answer": "Yes. The backs of the card don’t matter, only the face",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If I play a card that matches The Claw’s claw card, but it is switched by Sorcerer, who loses their planet to The Claw?",
                 "answer": "The errata explains that whoever reveals the card is the target of The Claw’s power.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "What if both main player reveal copies of the claw card?",
                 "answer": "The Claw chooses which player is affected (but not both).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -167,12 +194,14 @@
                 "question": "If Sorcerer switches cards, which card does Clone or Filch take?",
                 "answer": "Clone takes the card that ends the encounter in front of him, Filch takes the card that ends the encounter in front of their opponent.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Do Clone, Filch, and Fido have any precedence over each other?",
                 "answer": "Clone does take precedence, while Filch and Fido are subject to the standard timing rules.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "Clone triggers after the encounter is resolved, Fido and Filch trigger after encounter cards are discarded, hence why Clone takes precedence."
             },
@@ -180,12 +209,14 @@
                 "question": "Clone Super flare uses the phrase “up to.” Does this mean Clone can choose any number between the regular compensation amount and double that?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Clone get to also keep a kicker played?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -194,13 +225,17 @@
                 "question": "Can the Converter use their power to draw a card during the regroup phase even if he has no ships in the warp.",
                 "answer": "No, because he would not be retrieving any ships.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "What does “ships saved during an encounter” refer to?",
                 "answer": "Any ships Converter saves through power use during a player’s encounter (from regroup to resolution).",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "The last part stating \"from regroup to resolution\" is an odd inclusion. After all, the power can still be ***used*** on ships sent to the warp during the Start Turn phase (e.g. via Hate's power), so this is forming an undefined situation. It is much clearer to rule that the second sentence is referring to any ships saved by Converter, regardless of what phase the game is in."
             }
         ],
@@ -209,12 +244,14 @@
                 "question": "Can Mind look at Miser’s hoard or Cryo’s stored hand?",
                 "answer": "No, but AI can.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "When using the Cryo Super flare, can both of its effects be used in the same encounter?",
                 "answer": "Yes. You must do so in the order listed on the flare.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -223,7 +260,10 @@
                 "question": "What happens when The Cult faces off against Warhawk?",
                 "answer": "The encounter cards ultimately end on a value of Attack 00.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "The word 'ultimately' here, alongside the Warhawk errata, are both misleading. Both imply (or state) that Warhawk and The Cult (and Bleeding Heart) can cause an infinite loop. But, following the FAQ ruling that each power is only \"usable once per relevant context,\" this shouldn't be possible.\n\nNow this leads to two different interpretations: if 'usable' is referring only to an alien's ***use***, then Bleeding Heart and The Cult override Warhawk, since the former's changes to card types are not reliant on power ***use*** whereas Warhawk is. However, if the FAQ ruling is talking more generally about any power effect, then Warhawk would trump the other two; Bleeding Heart and The Cult use the word 'becomes' which matches that on Retreats, Safeguards, etc. implying that it occurs before any powers trigger (like Warhawk), so Warhawk would trigger later.\n\nIf you find yourself in a game with The Cult and Warhawk, best to hash out which interpretaion your group will use before game start."
             }
         ],
@@ -232,30 +272,35 @@
                 "question": "If Deuce only has two encounter cards, does Magician have any effect?",
                 "answer": "Magician forces Deuce to play two encounter cards (before encounter cards are selected). At that point, Deuce has selected an encounter card, but Deuce’s power kicks in “after cards are selected,” and would either end their turn as offense, or as defense, draw a new hand, and then play a second card normally.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Deuce play two Morphs without triggering the automatic loss?",
                 "answer": "Yes. The Morphs are not copying each other.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Deuce play a kicker on their second encounter card?",
                 "answer": "No, Deuce can play only one kicker and it affects whichever card ends up being their encounter card (i.e., if the second card is a negotiate, it replaces the first card, and the kicker then affects it).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "When Chronos declares time travel, does Deuce have to set aside both cards played?",
                 "answer": "Deuce’s second card does not count as an encounter card, so it returns to hand and may be replayed.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Loser calls an upset, does Deuce’s second card have to be an attack card?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -264,6 +309,7 @@
                 "question": "In a three-way deal, can one player end up gaining a foreign colony from each of the other players?",
                 "answer": "No. Unless an effect like Negotiate: Epic Oratory is involved, each player in any deal can gain at most one foreign colony.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -272,6 +318,7 @@
                 "question": "Can Empath turn an attack card into a Crooked Deal negotiate (or other special negotiate)?",
                 "answer": "No. But Empath’s ability works if either main player reveals a special negotiate.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -313,6 +360,7 @@
                 "question": "Does Ionic Gas stop Ethic from collecting compensation as part of its power?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -339,21 +387,27 @@
                 "question": "Can the good twin be given multiple essence card penalties from an alien even if it bypasses limits (such as Witch's one curse per player limit)?",
                 "answer": "No.",
                 "source": "The Praw",
-                "tags": ["Contentious"],
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This question has no clear answer; the one provided is this site's best guess."
             },
             {
                 "question": "If the Evil Twin needs to discard or give a player a specific card (such as through Angler's power, or a wild flare to be given to its alien), what happens?",
                 "answer": "If the Good Twin has an exact copy of that card, they must give it away/discard it to the correct recipient. Otherwise, the Evil Twin must suffer the penalty.",
                 "source": "The Praw",
-                "tags": ["Contentious"],
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This question has no clear answer; the one provided is this site's best guess."
             },
             {
                 "question": "If the Evil Twin is out of encounter cards and needs to discard their old hand, what happens?",
                 "answer": "The Good Twin discards a number of cards equal to the cards the Evil Twin has in their hand (or their whole hand if the Good Twin has fewer cards), then the Evil Twin draws 8 cards.",
                 "source": "The Praw",
-                "tags": ["Contentious"],
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This question has no clear answer; the one provided is this site's best guess."
             }
         ],
@@ -362,6 +416,7 @@
                 "question": "When playing the four-planet variant, does Explorer start with only three planets on its sheet?",
                 "answer": "No, explorer always starts with four planets.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -370,12 +425,14 @@
                 "question": "Can Fido pick from any encounter cards discarded in the encounter (such as those lost by the Plague), or must they pick from the ones that were actually played?",
                 "answer": "Fido must pick from the cards actually played. For example, Fido may not take Deuce’s second encounter card, or any cards discarded by Fodder or Reserve that were played due to power use.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Do Clone, Filch, and Fido have any precedence over each other?",
                 "answer": "Clone does keep, Filch and Fido are subject to the standard timing rules.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "Clone triggers after the encounter is resolved, Fido and Filch trigger after encounter cards are discarded, hence why Clone takes precedence."
             },
@@ -383,6 +440,7 @@
                 "question": "Can Fido take discarded encounter cards that originated from the reward deck?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -391,6 +449,7 @@
                 "question": "Do Clone, Filch, and Fido have any precedence over each other?",
                 "answer": "Clone does keep, Filch and Fido are subject to the standard timing rules.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "Clone triggers after the encounter is resolved, Fido and Filch trigger after encounter cards are discarded, hence why Clone takes precedence."
             },
@@ -398,36 +457,42 @@
                 "question": "If Sorcerer switches cards, which card does Clone or Filch take?",
                 "answer": "Clone takes the card that ends the encounter in front of him, Filch takes the card that ends the encounter in front of their opponent.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does the classic Filch flare have to be played to be used at all?",
                 "answer": "No, it is only revealed if the cheating player is caught, at which point it may be zapped.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Filch take Gambler’s unrevealed card, and if so, can he notify the table whether the truth was told?",
                 "answer": "No. Gambler’s unrevealed encounter card is not discarded, but rather placed at the bottom of the appropriate deck.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can the classic Filch Wild flare target the reward deck (and discard pile)?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Filch take their opponent’s encounter card if it is from the reward deck?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Filch get to take their opponent's kicker?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -436,25 +501,31 @@
                 "question": "Can Filth be Cosmic Zapped so that other players’s ships can coexist on a planet with Filth’s ships for the remainder of an encounter?",
                 "answer": "Yes. If Filth is Cosmic Zapped and lands on a planet with several allies, those allies will lose that colony at the start of the next encounter. Ouch!",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does the Symbiote Super flare let Symbiote coexist on planets with Filth?",
                 "answer": "No.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This is a weird ruling when the Symbiote flare seems to be intending to bypass Filth (many effects had weird coexistence clarification prior to Cosmic Conflict, implying they were future proofing for a version of Filth that did not make it to print).\n\nRegardless, its not ridiculous to interpret the flare as written like this. Hence why the Cosmodex (and this site by extension) provide alternate wordings that grant Filth immunity."
             },
             {
                 "question": "If Filth is an offensive ally, do the other ships on their side (including the offensive main player) have to land on a different planet than the one targeted?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "What happens to Filth’s offensive allies if they already have a colony on every other planet in the defensive system?",
                 "answer": "Their ships must land on a planet in that system where they already have a colony.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -463,7 +534,10 @@
                 "question": "If Reserve plays several attack cards as reinforcements, are they placed under the fire token as fuel?",
                 "answer": "No. Only attack cards revealed as encounter cards are placed there. So a card revealed by Cavalry would be included.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "The problematic part of this clarification is the implication Cavalry's card is included by Fire Dancer. For Fire Dancer alone this is fine, but could open up some problematic interactions by implying revealed cards includes Cavalry's chosen card (and potentially those of other aliens like Deuce).\n\nAlso, it's a bit odd this ruling is included as a part of another entry, rather than being a separate entry."
             }
         ],
@@ -472,12 +546,14 @@
                 "question": "If using the Fodder Wild flare, can you ally with a side you weren’t invited to join as long as one side invited you?",
                 "answer": "No. You may only join a side you were originally invited to, that encounter.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does the Fodder Super flare allow Fodder to discard attack cards both lower than its own AND higher than the its opponent’s card?",
                 "answer": "No, just any attacks cards lower than its opponent’s card (regardless of Fodder’s own card).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -486,12 +562,14 @@
                 "question": "If Fungus loses their power, what happens to their stacks?",
                 "answer": "The stacks remain until a stack is sent to the warp as normal, in which case the ships are freed.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "What happens to ships captured with the Fungus Wild flare when the flare is taken by another player?",
                 "answer": "Ships remain in a circle around your home system. The new owner of the flare can likewise capture ships. When the flare is finally discarded, all ships captured in this manner are freed to their owners.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "It remains unclear if these ships remain adding to a player's side if they lost the card, but that is presumably the intent here.\n\nThe Cosmodex (and this site by extension) instead change the flare so that the ships are returned when the card is lost, for the sake of memory."
             },
@@ -499,60 +577,70 @@
                 "question": "Are ships released from a Fungus stack in the warp eligible to be healed by Healer?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Fungus wins an encounter with a stack, can they add more losing ships to that same stack?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Fungus capture ships selected by Bully as an ally?",
                 "answer": "Yes. Since the ships Bully selects are the losing ships, those are one that adhere to Fungus.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Would Fungus capture the extra ships smashed by Cudgel, or lost due to Grudge or Gambler?",
                 "answer": "Yes to Cudgel, since the additional ships are lost as a result of the encounter (Cudgel simply increases their number).\nNo to Gambler, since the lost ships are a separate penalty for lying or disbelieving the truth (thus they are are “lost” ships but not “losing” ships, since that player could still win the encounter or even make a deal), and also because they are lost during the Reveal phase (Fungus captures ships only during the Resolution phase),\nand no to Grudge.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Fungus receive compensation or rewards for each ship in a stack?",
                 "answer": "No. Each stack counts as one ship for purposes of compensation or rewards.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Is it possible for Fungus to reduce a player to fewer than 5 ships?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Do captured ships immediately regain their characteristics upon entering the warp (e.g., Zombie)?",
                 "answer": "Yes. Zombie ships would return to colonies, Fury would gain a token, etc.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If you use the Fungus Wild flare, and capture one of Fungus’ stacks, does it count as only one ship, and is the stack freed when the flare is discarded?",
                 "answer": "The stack only counts as one ship. When the flare is discarded, the stack returns intact to Fungus.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Fungus is allied with Anti-Matter and has a ship with 5 other ships stacked under it, does Fungus subtract 6?",
                 "answer": "Yes. The same is true if Fungus is allied with Anti-Matter’s opponent.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Spiff tries to crash-land against Fungus, are all of their ships captured first?",
                 "answer": "No. One ship crash-lands, and the others are captured.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -561,19 +649,22 @@
                 "question": "Why does Gambler say “Do not use with Sorcerer”?",
                 "answer": "Because it’s not much of a bluff if Sorcerer has already seen the card. If this doesn’t bother you, feel free to go ahead and use them together.",
                 "source": "2018 FAQ",
-                "tags": [], 
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [],
                 "notes": "If you wish, a popular house rule is to let Gambler bluff about the card they initially played before any swaps, meaning Sorcerer does not reveal or look at their newly swapped card."
             },
             {
                 "question": "How does Gambler interact with Oracle since one forces reveal and one refuses to reveal?",
                 "answer": "Gambler must either reveal their card or bluff before Oracle chooses an encounter card.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Gambler place an unrevealed reward deck encounter card on the bottom of the reward deck?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -582,12 +673,14 @@
                 "question": "Does Ghoul get to feast on ships that are captured, or eradicated by Void?",
                 "answer": "No. Only ships that are sent to the warp.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Ghoul feast on ships lost through means other than the normal loss of an encounter (e.g., Cudgel Wild flare, Plague artifact, etc.)?",
                 "answer": "Only ships lost as a result of losing the encounter. The Cudgel Wild flare is a separate effect. Plague precedes the encounter.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "The phrase \"Plague precedes the encounter\" is misleading. It simply means that it precedes the resolution phase when Ghoul fires."
             },
@@ -595,13 +688,17 @@
                 "question": "Does Ionic Gas stop Ghoul from using its power?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This is a sensible ruling depending on how you read Ionic Gas:\n\"Play after the winner of an encounter is determined. No compensation or defensive ally rewards may be collected this encounter.\"\nIf \"defense ally rewards\" is thought to just mean any rewards, then yes this is correct. But the confusing phrase could also be meant to refer specifically to the rewards collected by defensive allies as a result of winning the encounter. This is a problem with Ionic Gas rather than Ghoul."
             },
             {
                 "question": "Does Ghoul get to draw from the reward deck when using its power?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "This confusion comes from the \"clarification\" on the power as printed. In general, whenever you gain a reward, you are eligible for a reward card. Same for \"defender rewards\" which are the same."
             }
@@ -611,12 +708,14 @@
                 "question": "The Finder, played by the Glutton: does this allow the Glutton to name three cards prior to looking through the opponent’s hand? Or to name one card and then take two additional cards of their choice? Or does the Glutton’s power only work when drawing at random from an opponent’s hand?",
                 "answer": "The Glutton does draw 2 additional cards, but they are drawn at random.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Glutton’s power of retrieving “up to” two extra ships from the warp mean that Glutton can retrieve one or none?",
                 "answer": "No. It only refers to when there are fewer of Glutton’s ships available to be retrieved.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -625,6 +724,7 @@
                 "question": "Do players have the choice of choosing to keep their petrified ships where they are for effects like failed deal in order to not lose any ships to the warp?",
                 "answer": "No. Petrified ships, if chosen for effects that send them to the warp, have them captured, or removed from the game do not get to remain on the planet.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -633,12 +733,14 @@
                 "question": "If Graviton changes a negative attack card, is the ones or tens digit value of the card still negative?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Is an attack card using only one of the digits still considered to have a 0 in front of it for effects like Mirror?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -647,7 +749,7 @@
                 "question": "When can I zap Greenhorn?",
                 "answer": "Only when its power is used to ask another player a question about a card in hand.",
                 "source": "The Praw",
-                "tags": [], 
+                "tags": [],
                 "notes": "Greenhorn, like any power, can only be zapped the moment it is ***used***."
             },
             {
@@ -663,6 +765,7 @@
                 "question": "If you send ships to ally with Grudge but then they leave the encounter (due to Amoeba’s power or Force Field, for instance), are you then affected by Grudge?",
                 "answer": "No, as long as you initially ally with at least one ship, you do not receive a grudge token.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -671,19 +774,24 @@
                 "question": "After Guerrilla loses to Leviathan and uses its power of Attrition, Leviathan will have only one ship left on the worldship. Can this ship still land on Guerrilla’s planet?",
                 "answer": "Yes. However, if Leviathan has three or fewer ships on its worldship and Guerrilla plays Guerrilla Super flare to send them all to the warp, then Leviathan has nothing to land on the targeted planet. In either case, the worldship returns (empty) to Leviathan’s system and Leviathan has still won the encounter.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Do effects like collecting rewards or Cudgel’s power occur before Guerrilla’s power or after?",
                 "answer": "They occur after. See Clarifications and Errata: \"This means that Guerrilla alters the number of ships their opponent has when calculating how many rewards they collect, or other effects based on the number of ships an opponent had in the encounter.\"",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This answer includes Errata for Guerilla's power. The intent seems to be that Guerilla makes allies only collect 1 reward, Cudgel only send 1 ship, etc..\n\nHowever, even with the component change, this ruling remains dubious. The rulebook refers to \"each ship a defensive ally committed to the encounter\" to determine rewards, and Cudgel similarly refers to \"the number of ships you had in the encounter\". Both are in the past tenese, refering to prior to when Guerilla's power would fire, implying that these effects care only about the number of ships initially commited and not how many have survived.\n\nThe FAQ's ruling would be consistent if effects like Cudgel and rewards were clarified to be in the present tense. The Praw also prefers the simplicity of the FAQ's ruling simply to remove any reliance on memory of past events."
             },
             {
                 "question": "Does Guerrilla Wild have to be used in a player’s home system, and what happens to bystanders on the destroyed planet?",
                 "answer": "Yes, it is a home planet belonging to the player with the flare. Bystanders on the planet go to the warp.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -692,7 +800,10 @@
                 "question": "Can Hacker wait to take compensation from a player that is going to draw rewards from the reward deck?",
                 "answer": "Follow the timing rules:\n1. The offense.\n2. The defense.\n3. Players who are not the main players, clockwise from the offense.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This is a non-answer that doesn't answer the question and just brings up more questions. The simple answer should be no. Read further for more details\n\nThe FAQ \"answer\" seems to imply that compensation and rewards are collected together, and that the resolution of an encounter should be performed one at a time for each player (which is unlike how people usually player, which is to do it all at once).\n\nThe Eons edition rulebook solidifly implies that compensation is collected in a seperate window to ally rewards, and the FFG edition does the same albiet more loosely.\n\nIn either case, a losing Hacker collecting compensation will do so before any allies collect rewards."
             }
         ],
@@ -701,24 +812,28 @@
                 "question": "Can Hate discard a Morph card when using their power? If so, does that mean no one else can discard one, or that whatever they discard will be the same as the Morph?",
                 "answer": "Yes, [no one else can discard]. If Hate discards a Morph card, then everyone else must discard a Morph card or lose ships. Negotiate and Negotiate (Crooked Deal) cards both have the card type of negotiate, so if Hate discards either one, the other players can discard either one.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Hate have to be zapped before he chooses which card to discard?",
                 "answer": "No. If he is zapped after choosing a card to discard, he keeps that card instead",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "When playing Hate, and you need a new hand on offense, do you get the new hand, then have to hate, or do you lose the opportunity to hate?",
                 "answer": "You draw a new hand, then use your alien power.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Hate discards an attack 20, and all I have is an attack 04, do I get to discard it, even though I still lose ships?",
                 "answer": "No. If you do not have an attack card higher than 20 you wish to discard, then you discard nothing and lose three ships",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -727,24 +842,28 @@
                 "question": "If Healer heals someone, are their ships removed from the warp or stopped from going to the warp? (Asked because, if ships are sent to the warp and then healed, Remora could cling and get ships every time Healer heals.)",
                 "answer": "The ships go to the warp and then are returned from the warp.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Healer use their power before Zombie evades going to the warp?",
                 "answer": "No, because the Zombie’s power kicks in before they go to the warp at all.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Healer heals Vacuum, does Vacuum still get to use their power?",
                 "answer": "Yes. Vacuum’s ships go to the warp first, and thus can take others along. Healer may then heal those ships as well, if they are not Healer’s.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Are ships released from a Fungus stack in the warp eligible to be healed by Healer?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -753,6 +872,7 @@
                 "question": "Does Horde add a horde token when drawing from the reward deck, the destiny deck, the tech deck, etc.?",
                 "answer": "No. Just from the cosmic deck.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -761,26 +881,34 @@
                 "question": "Does Human’s zap-him-to-win beat Pacifist’s play-an-N-to-win?",
                 "answer": "Whichever effect goes off first wins. Use the standard timing rules to determine which effect goes off first.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This ruling has two issues. The first is related to the answer below. The second is that it implies that Pacifist, Human, and other similar \"auto-win\" aliens seem to immediately end the encounter and prevent any counterplay that could change the outcome (barring zaps), which does not sit well with player intuition."
             },
             {
                 "question": "Can Human be zapped to win even if one or both players reveal a Negotiate card?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This ruling is problematic as it extends to the question for whether a side has an \"encounter total\" even if one or more sides played a negotiate. The total would typically be seen as worthless, given it has no sway on the encounter, but apparently this ruling implies that they do indeed have an encounter total.\n\nThis also implies that human can be zapped even if both sides revealed negotiate cards, which may or may not include emotion control."
             },
             {
                 "question": "If Human is zapped to win and the opponent revealed a Negotiate card, does the opponent receive compensation?",
                 "answer": "Only if Human actually revealed an Attack card.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
-                "question": "How does the Human Super flare work?", 
+                "question": "How does the Human Super flare work?",
                 "answer": "Human may play it to add 8 instead of 4. Once played, Human has the option of discarding the flare to zap their power. Alternatively, Human may forego adding 8 and simply discard the flare for its zapping effect.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -789,6 +917,7 @@
                 "question": "If Industrialist is facing Loser, and Loser has declared an upset, does allowing Industrialist to win the encounter mean that Industrialist actually loses the encounter?",
                 "answer": "The win here must be the ultimate outcome of the encounter. That is, it doesn’t matter if Loser has declared an upset or not; Industrialist must be allowed to win the encounter overall or else Industrialist adds the attack card to the stack.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -797,40 +926,50 @@
                 "question": "What is to be done when turning over the Invader’s destiny cards if the Invader has lost their power? Are they skipped and redrawn?",
                 "answer": "Yes, they are skipped and a new destiny card is drawn.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does the Invader’s “extra encounter” include all phases of an encounter (including Regroup, but presumably not Destiny), or is the intention that the Invader “takes over” from the current player’s encounter?",
                 "answer": "The encounter starts from the Launch phase. A regroup/destiny phase is not repeated. Once complete, the original player draws a new destiny card and continues their encounter from that point.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "The last part of this answer directly contradicts both the Invader alien sheet and the Invasion! destiny card, which say that the original offense \"receives another encounter\" and \"continues their turn\" respectively. This clearly indicates that their encounter is a brand new encounter, and thus would start from regroup and not from destiny."
             },
             {
                 "question": "If Invader has lost power, what do you do when drawing an “Invasion!” destiny card?",
                 "answer": "Ignore it and draw again.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "As a general rule, if a player has lost their power, they are no longer considered to be that alien."
             },
             {
-                "question": "When another player draws an “Invasion!” destiny, do they get another regroup when they “receive another encounter”?", 
+                "question": "When another player draws an “Invasion!” destiny, do they get another regroup when they “receive another encounter”?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "Contradicts with part of a previous FAQ answer."
             },
             {
-                "question": "If a player was about to have a second encounter when they revealed an “Invasion!” destiny card, and runs out of encounter cards during Invader’s interrupting encounter, does that player still get to have a second encounter?", 
+                "question": "If a player was about to have a second encounter when they revealed an “Invasion!” destiny card, and runs out of encounter cards during Invader’s interrupting encounter, does that player still get to have a second encounter?",
                 "answer": "No.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This answer is either unclear or wrong. If a player runs out of encounter cards as the defense, they redraw a new hand as usual. The rulebook stipulates that the turn end only occurs for the offense (and itself is unclear if the offense has taken over like with Invader). It seems more reasonable to rule that in this scenario the original offense can have a second encounter, as granted by the Invader power."
             },
             {
-                "question": "When you draw an Invasion! card and become the defense, does Invader skip over any phases?", 
+                "question": "When you draw an Invasion! card and become the defense, does Invader skip over any phases?",
                 "answer": "Yes. The encounter starts immediately after the Destiny Phase, so Invader does not get a Regroup Phase.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "Based on a previous answer, its more accurate to say it starts at the beginning of the launch phase."
             }
@@ -840,12 +979,14 @@
                 "question": "Can Kamikaze use its power multiple times during the planning phase to sacrifice one ship at a time or must all ships be sacrificed at once before drawing any cards?",
                 "answer": "All ships must be sacrificed at once.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "The Kamikaze Super flare says it works “during each of your regroup phases.” Do you have to play it each time you want to use it, or is it automatic?",
                 "answer": "You must play the flare each time you want to use its effect.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -854,12 +995,14 @@
                 "question": "Does Laser get to affect Miser’s hoard?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Do cards set aside by Laser still count as part of your hand?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -868,24 +1011,28 @@
                 "question": "Does Leviathan bring a planet/worldship in addition to the normal 1-4 launched ships?",
                 "answer": "The worldship replaces the normal launch. The only other ships you may bring are those already on the worldship.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Guerrilla loses to Leviathan attacking with a worldship that has only 1 ship on it, does that ship get to land on the defensive planet?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Leviathan’s power is stolen after a worldship has been placed on the hyperspace gate, does the worldship remain, and if so, does it still count as +20?",
                 "answer": "Yes. The worldship remains and still counts as 20 for the player controlling Leviathan (though only the controlling player’s ships on the worldship also count to the total). However, if the worldship is on the winning side, the controlling player decides how many ships on it get to land on the defensive planet, if any. The worldship then returns to the home system of Leviathan, not the player who has stolen the power.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "After the Leviathan Wild flare is played, do the swapped planets now count as home colonies in their respective systems?",
                 "answer": "Yes. If Blue’s planet is now in Purple’s system (and vice versa), the Blue planet now counts as a home planet for Purple (and if Purple has ships on it, they are now a home colony).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -894,6 +1041,7 @@
                 "question": "Can Lightning have an extra encounter with no encounter cards in hand (i.e., do they draw a new hand)?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -902,6 +1050,7 @@
                 "question": "If Sniveler whines about having fewest foreign colonies, do Locust’s devoured planets count, and if any player refuses to give Sniveler a foreign colony, what happens to Locust’s devoured planet?",
                 "answer": "The devoured planets do count to the total of foreign colonies for Sniveler’s whining. If any player refuses to give Sniveler a colony, Locust’s devoured planets are unaffected (though Locust could still lose a normal foreign colony if they have one).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -910,24 +1059,28 @@
                 "question": "Can Loser declare an upset if Seeker has asked “Are you playing a negotiate?” and Loser answers yes (though still holds an attack card)?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Loser calls an upset, does Deuce’s second card have to be an attack card?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Industrialist is facing Loser, and Loser has declared an upset, does allowing Industrialist to win the encounter mean that Industrialist actually loses the encounter?",
                 "answer": "The win here must be the ultimate outcome of the encounter. That is, it doesn’t matter if Loser has declared an upset or not; Industrialist must be allowed to win the encounter overall or else Industrialist adds the attack card to the stack.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can I play Loser Wild after my opponent plays a kicker? If so, is the kicker discarded?",
                 "answer": "Kickers are played before encounter cards are selected, and so is Loser Wild, so yes you can play the flare. However, the kicker returns to your opponent’s hand.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -936,12 +1089,14 @@
                 "question": "When gaining rewards per the Lunatic Wild flare, is the reward deck eligible?",
                 "answer": "Yes. The player may retrieve ships and draw from either the cosmic deck or the reward deck, or a combination of both (but does not draw the full amount from both decks).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Should the Lunatic use an Alliance Dial when allying against themselves?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -950,18 +1105,21 @@
                 "question": "Does the Machine Wild flare mean you draw 8 new cards and keep the rest of your hand, or must you discard the Machine flare after you play it?",
                 "answer": "Machine Wild guarantees the player a second encounter and allows the player to draw a new hand if needed to make that encounter. First, the Machine flare is played faceup in front of the player, then the player discards their old hand and draws a new hand. Then, the player returns the Machine flare to their hand.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "The Machine Super flare says it works “during each of your regroup phases.” Do you have to play it each time you want to use it, or is it automatic?",
                 "answer": "You must play the flare each time you want to use its effect.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "The Machine Wild flare says “you may always have a second encounter.” Do you have to play it each time you want to use it, or is it automatic?",
                 "answer": "You must play the flare each time you want to use its effect.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -970,6 +1128,7 @@
                 "question": "When can you zap Macron? His power is used to bring only 1 ship in the gate, so is it then, or during resolution?",
                 "answer": "Macron’s power may be zapped either when launching ships (to launch up to four ships worth 1 each) or after cards are revealed (to keep their ships from being worth 4 each). Macron’s ability has been errata’ed to clarify this intent.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "It is a popular house rule that Macron cannot be zapped during reveal."
             },
@@ -977,6 +1136,7 @@
                 "question": "Does the Macron Super flare mean to exclude being a defensive ally? The card specifies “launch up to four ships in the hyperspace gate.”",
                 "answer": "No. Macron Super may launch up to four ships as a defensive ally as well.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -985,6 +1145,7 @@
                 "question": "If Deuce only has two encounter cards, does Magician have any effect?",
                 "answer": "Magician forces Deuce to play two encounter cards (before encounter cards are selected). At that point, Deuce has selected an encounter card, but Deuce’s power kicks in “after cards are selected,” and would either end their turn as offense, or as the defense, draw a new hand, and then play a second card normally.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -993,6 +1154,7 @@
                 "question": "The Masochist Super flare says it works “during each of your regroup phases.” Do you have to play it each time you want to use it, or is it automatic?",
                 "answer": "You must play the flare each time you want to use its effect.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1001,6 +1163,7 @@
                 "question": "Does Ionic Gas stop Mercenary from using their power?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1009,18 +1172,21 @@
                 "question": "The Merchant’s card specifies that the additional hired ships (cards) they can field can be lost as normal during the encounter, but return to the player’s hand at the end of the encounter. One time this is key is if using these ships to invade a planet with a Saboteur bomb: if the cards return after the encounter, then they would “land” on the planet and be destroyed; but if they are intended to return to the Merchant’s hand as soon as the combat is over, then they are not affected by the bomb.",
                 "answer": "In this case, returning the merchants cards to your hand is the very last thing that happens in the encounter. They are treated as ships; therefore, they would go to the warp in the situation you presented, and thus be discarded.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can hired ships be taken as compensation?",
                 "answer": "No. They do not return to hand until the end of the encounter.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "What happens if a hired ship is captured?",
                 "answer": "It is discarded.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1029,6 +1195,7 @@
                 "question": "Can Mesmer change an artifact into one from another expansion that is not present in the game?",
                 "answer": "Yes, but only if you can verify its exact effects.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1037,6 +1204,7 @@
                 "question": "When using the Mimic Wild flare, do you have to be eligible for the original flare or artifact yourself (i.e., if it states “as a main player,” but you are an ally).",
                 "answer": "You must satisfy the requirements of the original card, so if it reads “as a main player,” you must be a main player to duplicate its effects with the Mimic Wild flare.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1045,24 +1213,28 @@
                 "question": "Can Mind look at Miser’s hoard or Cryo’s stored hand?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Mind looks at your hand, is a rift triggered?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "The Mind Wild flare says it works “whenever another player draws a card.” Do you have to play it each time you want to use it, or is it automatic?",
                 "answer": "You must play the flare each time you want to use its effect (which then lasts through the end of that encounter).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Mind Wild flare affect the reward deck?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1071,12 +1243,14 @@
                 "question": "Do you calculate the effect of a kicker before or after reversing the digits?",
                 "answer": "After.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Graviton makes an attack card use only one digit, does it still have a 0 in front of it? What if Mirror uses the Graviton Wild flare?",
                 "answer": "Yes. Mirror can still reverse the digits. With the Graviton Wild flare, an attack 08 that is reversed would count as an attack 00.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1085,42 +1259,49 @@
                 "question": "Do flares return to the Miser’s hoard after being played?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If a miser has an encounter card in their horde, but not their primary hand, is he eligible to have a second encounter.",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Miser have to return a flare to the same hand from which it originated?",
                 "answer": "Yes. Any card that would return to hand must go to the hoard if that’s where it was played from.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Mind look at Miser’s hoard or Cryo’s stored hand?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Miser discard a card from the hoard in response to Hate’s power?",
                 "answer": "Yes. Any time Miser must discard a card from hand, Miser can discard from the hoard instead.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "The Miser Super flare says it works “at the start of each of your encounters.” Do you have to play it each time you want to use it, or is it automatic?",
                 "answer": "You must play the flare each time you want to use its effect.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can you save fewer than two cards when using Miser Wild?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1129,6 +1310,7 @@
                 "question": "Do the other players get to see which cards Mouth has removed from the game?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1137,12 +1319,14 @@
                 "question": "Can Observer, as an ally, lose ships outside the encounter? (Such as Grudge or Void Wild.)",
                 "answer": "No, Observer must protect all of its ships, whether inside or outside the encounter, when it is an ally (and similarly must protect all of its allies’ ships when a main player). Thus, as an ally, when Observer receives a Grudge token it does not lose 1 or 4 ships to the warp but may instead relocate that number to different colonies if it wishes, and may use Void Wild without paying the cost of losing a ship (see ruling for Zombie or Kamikaze Wild ). This power applies only during the Resolution phase, as indicated by Observer’s timing bar.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Is Observer immune to Void?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1151,6 +1335,7 @@
                 "question": "How does Gambler interact with Oracle since one forces reveal and one refuses to reveal?",
                 "answer": "Gambler must either reveal their card or bluff before Oracle chooses an encounter card.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1159,13 +1344,17 @@
                 "question": "If Pacifist must play an N when Loser calls upset, does he get compensation?",
                 "answer": "Yes, if Loser revealed an attack card; otherwise, no.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Human’s zap-him-to-win beat Pacifist’s play-an-N-to-win?",
                 "answer": "Whichever effect goes off first wins. Use the standard timing rules to determine which effect goes off first.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This implies that Pacifist, Human, and other similar \"auto-win\" aliens seem to immediately end the encounter and prevent any counterplay that could change the outcome (barring zaps), which does not sit well with player intuition."
             }
         ],
@@ -1174,6 +1363,7 @@
                 "question": "Is a planet with a space station, citadel, saboteur token, etc. still considered empty if there are no ships on it?",
                 "answer": "Yes. And those items remain with the planet when Pack Rat collects it.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1182,6 +1372,7 @@
                 "question": "Can Parasite ally with the defense even if the Energy Cloak is used? (Since the Energy Cloak only stops invitations, not allies themselves.)",
                 "answer": "Yes, Parasite may ally with the defense.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1190,6 +1381,7 @@
                 "question": "If a planet with an entanglement token on it is destroyed, what happens?",
                 "answer": "Discard the paired entanglement tokens. You do not have to send the Particle’s ships on the remaining planet to the warp since the entanglement is broken.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1198,6 +1390,7 @@
                 "question": "Is a ship given to Patriot considered captured?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1206,6 +1399,7 @@
                 "question": "If Changeling changes alien sheets with Pentaform, what swaps?",
                 "answer": "Pentaform and all lifestages move to the player using Changeling.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1214,18 +1408,21 @@
                 "question": "Is a rift triggered when Philosopher gives one to another player?",
                 "answer": "No. In this case, the card was given, not taken.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can the defense invoke the timing rule when Philanthropist uses its Super flare?",
                 "answer": "No. The defense must play the card given.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If you use the Philanthropist Wild flare and lend your power, do things like Fury’s tokens, Miser’s hoard, etc. go with it?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1234,30 +1431,35 @@
                 "question": "If Plant steals Fungus’ power and captures ships, do they remain under Plant’s ships, and do they count when Plant is not using Fungus’ power?",
                 "answer": "The ships remain, but do not count to the total unless Plant is again grafting Fungus’ power. Ships are freed from Plant’s stacks when they go to the warp.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Plant steals your power and then loses its own power, do you get yours back immediately?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Plant or the Plant Wild flare steals someone else’s power, does it also get the tokens/cards, etc. that are part of the power (e.g., Miser’s hoard, Warriors tokens, Fury’s tokens)?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Plant graft Reincarnator’s current incarnation?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Plant steals your alien and you have that alien’s flare, do you get to use the Super?",
                 "answer": "No, but you may use the flare’s Wild effect.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1266,6 +1468,7 @@
                 "question": "Can Pretender switch seats with Horde, Lizard, Pygmy, Roach, Swindler, or Symbiote?",
                 "answer": "No. Pretender can not switch with any alien that cannot be separated from its player color.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1274,6 +1477,7 @@
                 "question": "What happens after Prophet makes a prediction but there is no winner?",
                 "answer": "There is no effect.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1282,6 +1486,7 @@
                 "question": "If a flare is added mid-game, does it go onto Reactor’s sheet?",
                 "answer": "No, unless it is discarded by anyone other than Reactor (and matches an alien in the game).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1290,25 +1495,31 @@
                 "question": "If someone plays the Reincarnator flare on me, do I still get to use my power if it happens in the same phase as the flare?",
                 "answer": "The Reincarnator flare has been errata’ed to take place after the end of the encounter, so yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can I play the Reincarnator Wild flare on myself?",
                 "answer": "No, as the card says another player, rather than any player.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Plant graft Reincarnator’s current incarnation?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Reincarnator use the Super flare for any of its incarnations?",
                 "answer": "No.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This answer is simply wrong. Allowing players to use the wild flare of aliens they possess has the potential for multiple rules and balance issues. It is much simpler to rule that you can (and must) use the super in this instance."
             }
         ],
@@ -1317,18 +1528,21 @@
                 "question": "Does Cryo picking up their cold storage hand count as drawing a new hand?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "When does Relic’s power go into effect when someone has played the Cavalry Wild flare?",
                 "answer": "As soon as the first card is drawn.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Relic gain a free colony when Miser draw’s a new hoard?",
                 "answer": "No (though it triggers when Miser draws a new hand as usual).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1337,6 +1551,7 @@
                 "question": "If a player draws from the reward deck, can Remora use its power to draw a card from the reward deck?",
                 "answer": "No. Unless the reward deck is specified by an alien power or other effect, Remora can only draw from the Cosmic deck when using its power.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "It is a common house rule to allow Remora to trigger from the rewards deck in some way. The Praw lists its own recommended house rule."
             }
@@ -1346,18 +1561,21 @@
                 "question": "If Reserve is Cosmic Zapped, does it get to keep the card it was about to play (for example, an Attack 04)?",
                 "answer": "Yes. Being Zapped prevents Reserve from playing the card.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "The Reserve Wild flare says it works “whenever another player discards a reinforcement card.” Do you have to play it each time you want to use it, or is it automatic?",
                 "answer": "You need only play the flare one time per encounter, and whenever another player discards a reinforcement for the rest of the encounter, you may take it and add it to your hand",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Reserve plays several attack cards as reinforcements, are they placed under one of Fire Dancer’s fire tokens as fuel?",
                 "answer": "No. Only attack cards revealed as encounter cards are placed there",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1366,6 +1584,7 @@
                 "question": "Can players land only one ship on a colony to see if it sets off a trap before placing the rest of their ships there?",
                 "answer": "No. Ships land on colonies simultaneously (e.g., when released from the warp after a Mobius Tubes), and you must commit all ships to a particular planet before Saboteur reveals the token.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1374,6 +1593,7 @@
                 "question": "The Sadist Wild flare states that “Whenever you send another player’s ships to the warp…” What constitutes sending someone’s ships to the warp?",
                 "answer": "Winning an encounter as a main player, or using a card or other effect that targets ships or a player to lose ships (e.g., Vacuum’s power, the Plague artifact, or the Saboteur Wild flare).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1382,18 +1602,21 @@
                 "question": "When must Schizoid announce that a player has met the victory conditions?",
                 "answer": "As soon as they are met.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Schizoid show a schizoid card to another player, say as part of a deal?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If you play the Schizoid Wild flare and switch systems with someone who has just won the game, do you steal the win?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1402,30 +1625,35 @@
                 "question": "A main player is asked by Seeker who is an ally whether he will play a specific card and answers yes. Then their opponent Visionary requests him to play a different card which he also has in their hand. Which card must he play now?",
                 "answer": "The last sentence of the Visionary states “he or she must play it unless prevented by another player.” If the Seekers ability is in fact preventing that card from being played, the card specified by the Seeker must be played",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If you have Seeker Super flare and ask a contingent question, does the player have to commit to a decision? For example, asking Oracle what card they will play (when Oracle doesn’t choose a card until seeing what the opposing player has played",
                 "answer": "Players are only instructed to “answer it truthfully to the best of their ability.” Since a contingency is involved, the player is not required to commit.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Seeker ask Mind about specific cards in another player’s hand? For example, “Does Virus have a negotiate?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Loser declare an upset if Seeker has asked “Are you playing a negotiate?” and Loser answers yes (though still holds an attack card)?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "What happens if Seeker asks a question you don’t know the answer to, like “Are you going to win the encounter?",
                 "answer": "Players must answer truthfully, so if they don’t know, they may say so.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1434,6 +1662,7 @@
                 "question": "If the offense draws more than one destiny card, does Shadow pick off one ship for each card, or one ship for whichever card the offense uses?",
                 "answer": "One for each card drawn.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1442,6 +1671,7 @@
                 "question": "Does Siren have to use its power when Siren’s system color comes up in order to gain a colony when winning as the defense?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "Only if you are using the official Errata (or The Praw's revision which matches this)."
             },
@@ -1449,6 +1679,7 @@
                 "question": "Does a card given to a player using the Siren Wild flare get replaced?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1457,24 +1688,28 @@
                 "question": "If you double doubt and reveal a negotiate, do you get double the compensation?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Void double doubts Skeptic and wins, are the extra ships eradicated?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If both sides lose, do both main players lose double?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can the Skeptic Super flare allow Skeptic to set the number of ships lose beyond the number they can actually lose (say to 15 ships if Skeptic already has 10 in the warp), and if so, what happens in this example if Skeptic loses?",
                 "answer": "Yes, Skeptic can set it to any number from 1 to 20, and if either player doesn’t have that many to lose, they only send the number of their ships not in the warp (or captured/removed from the game).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1483,6 +1718,7 @@
                 "question": "Is Sloth immune to Force Field?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1491,6 +1727,7 @@
                 "question": "Can Sneak give the Sneak Super flare to themselves after playing?",
                 "answer": "No. It must be given to another player.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1499,30 +1736,35 @@
                 "question": "Can the Sniveler Whine about cards other than Encounter cards?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Sniveler whine about attack card values that aren’t in the game, or about general values (e.g., “I don’t have an attack card higher than the highest card in Blue’s hand”)?",
                 "answer": "No. Sniveler must whine about specific values that are part of the cosmic deck or reward deck.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Sniveler is tied for most ships in the warp or fewest foreign colonies, does it still get to whine?",
                 "answer": "No. Sniveler must have more ships in the warp than anyone else, or fewer colonies than everyone else in order to whine about those things.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "When using the Sniveler Super flare, do Sniveler’s allies have to be within one colony of winning in order to share the win with Sniveler?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does the Sniveler Super flare create a new encounter, and if so, does it mean Sniveler can then play a different flare? Can Sniveler replay the Super flare?",
                 "answer": "This special encounter is considered a new encounter, and Sniveler can play a different flare. However, the Sniveler Super cannot be played again.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1531,19 +1773,22 @@
                 "question": "If Sorcerer switches cards, which card does Clone or Filch take?",
                 "answer": "Clone takes the card that ends the encounter in front of him, Filch takes the card that ends the encounter in front of their opponent.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Why does Gambler say “Do not use with Sorcerer”?",
                 "answer": "Because it’s not much of a bluff if Sorcerer has already seen the card. If this doesn’t bother you, feel free to go ahead and use them together.",
                 "source": "2018 FAQ",
-                "tags": [], 
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [],
                 "notes": "If you wish, a popular house rule is to let Gambler bluff about the card they initially played before any swaps, meaning Sorcerer does not reveal or look at their newly swapped card."
             },
             {
                 "question": "Does a kicker switch with the encounter card?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1552,6 +1797,7 @@
                 "question": "If Spiff tries to crash-land against Fungus, are all of their ships captured first?",
                 "answer": "No. One ship crash-lands, and the others are captured.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1560,6 +1806,7 @@
                 "question": "Does Sting take cards at random?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1568,6 +1815,7 @@
                 "question": "Can the Sycophant give their Super flare to themselves?",
                 "answer": "No. It must be given to another player.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1576,12 +1824,14 @@
                 "question": "The Symbiote Wild flare says “You may retrieve a ship from the warp during every regroup phase, not just your own.” Do you have to play it each regroup, or it is automatic after the first time you play it?",
                 "answer": "You must play the flare each encounter to use its effect. This counts as your one flare per encounter if you do play it.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does the Symbiote Super flare let Symbiote coexist on planets with Filth?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "The Cosmodex revision allows this interaction to occur. But as written, the flare confusingly does not stop Filth's power."
             },
@@ -1589,6 +1839,7 @@
                 "question": "What if Symbiote has fewer planets than they started with when playing Symbiote Super?",
                 "answer": "Symbiote can only regain enough ships to place 8 on each home planet",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1597,6 +1848,7 @@
                 "question": "If two players make a deal to win the game, and Tick-Tock discards their last token because a deal was made, does he win alongside them?",
                 "answer": "Yes, the game would end in a three-way win.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1605,30 +1857,35 @@
                 "question": "Can Tortoise use Mobius Tubes or other Regroup effects?",
                 "answer": "No, unless it is Cosmic Zapped or has no power.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Tortoise play the Butler Wild flare during its “final turn”?",
                 "answer": "No. No other player may become the offense at this time.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does Tortoises’s “one extra encounter” win cancel out alternate win aliens, like Genius?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Tortoise still get rewards from the discard pile while going on the game end turn?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Is Tortoise affected by Nanny’s timeouts during the game end turn?",
                 "answer": "No.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1637,7 +1894,10 @@
                 "question": "Does Tourist Wild flare let you look at any card in an essence card set or cache?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This is simply incorrect. It makes no sense for the flare to look at an essence cache, since that is the equivalent to a hand which the flare does not allow. And the purposeful use of the terms set and cache are to specifically disallow effects that affect hands and decks (such as Tourist Wild) from manipulating these mechanics."
             }
         ],
@@ -1646,12 +1906,14 @@
                 "question": "If the Trader becomes the defense, but has no cards in their hand, does the Trader get to use their power to trade hands and give their opponent an empty hand?",
                 "answer": "No. Trader must have a hand in order to trade hands. After drawing a new hand, Trader may then choose to trade hands.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "When Trader takes another player’s hand, do the rifts in it detonate?",
                 "answer": "Yes, since Trader is taking the rifts. Any rifts in the hand Trader is giving to the other player do not detonate (since the other player is not taking them).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1660,18 +1922,21 @@
                 "question": "Van Vacuum use its power on itself, and if so, can it cause an infinite loop?",
                 "answer": "No. Vacuum cannot use its power on itself.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can the Vacuum, with their Super flare, remove a Zombie colony? If Zombie has 4 foreign colonies with 1 ship each, and vacuum loses 4 ships, can the Super remove all 4 of those colonies?",
                 "answer": "Yes, and yes. All losses that occur because of a single effect (such as Vacuum Super flare) happen at the same instant, so Zombie could not save one of their ships and send it to another colony that he is losing at the same moment.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "If Healer heals Vacuum, does Vacuum still get to use their power?",
                 "answer": "Yes. Vacuum’s ships go to the warp first, and thus can take others along. Healer may then heal those ships as well, if they are not Healer’s.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1680,6 +1945,7 @@
                 "question": "If you play the Virus Wild flare and have no allies, are you essentially multiplying by zero?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1688,6 +1954,7 @@
                 "question": "Can Visionary specify a Crooked Deal negotiate must be played?",
                 "answer": "Yes. But if a player does not have one but does have a regular negotiate, they are not required to play it. Also, if Visionary specifies a negotiate card, and the player only has a Crooked Deal negotiate, it must be played.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1696,18 +1963,21 @@
                 "question": "If you fail to deal with Void, are your ships eradicated?",
                 "answer": "No. Void only eradicates when winning as a main player (or ally, when using the Void Super flare).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Do you actually get compensation when losing with a negotiate to Void?",
                 "answer": "No, since no ships are lost to the warp.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Is there an official ruling on Zombie vs. Void?",
                 "answer": "Void trumps Zombie. Zombie’s power kicks in when it should go to the warp, however the intent for Void is that it never sends its opponent’s to the warp at all. Void also trumps Observer.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1716,24 +1986,28 @@
                 "question": "If Vulch gets Cosmic Zapped, does he get the Zap that zapped him?",
                 "answer": "No, as he will not have a power when that artifact would go to the discard pile.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Vulch take discarded artifacts that originated from the reward deck?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Vulch pick up artifacts that are being discarded by a player that has played the Vulch Wild flare against the Vulch?",
                 "answer": "Yes. Vulch may then have to hand the artifacts to the player again, who in turn may discard them again, etc.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Does the Vulch Super flare mean that Vulch can take all flare cards discarded at the same time, or in the encounter?",
                 "answer": "All flares in the encounter. The flare should be played the first time any flares are discarded in the encounter, and then its effect lasts until the end of the encounter, letting Vulch “use” their power any number of times flares are discarded. However, Vulch would not be able to pick up their own flare in this manner.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1742,13 +2016,17 @@
                 "question": "Can you force Warhawk into negotiation by playing an Emotion Control artifact?",
                 "answer": "Both effects create a timing conflict. Use the timing conflict chart to determine whether warhawk’s ability happens before or after the artifact. In which case the answer would be yes if Warhawk is the offense, and the defense played the artifact.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "What happens when Warhawk faces off against Bleeding Heart or The Cult?",
                 "answer": "The encounter cards ultimately end on a value of Attack 00.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "The word 'ultimately' here, alongside the Warhawk errata, are both misleading. Both imply (or state) that Warhawk and The Cult or Bleeding Heart can cause an infinite loop. But, following the FAQ ruling that each power is only \"usable once per relevant context,\" this shouldn't be possible.\n\nNow this leads to two different interpretations: if 'usable' is referring only to an alien's ***use***, then Bleeding Heart and The Cult override Warhawk, since the former's changes to card types are not reliant on power ***use*** whereas Warhawk is. However, if the FAQ ruling is talking more generally about any power effect, then Warhawk would trump the other two; Bleeding Heart and The Cult use the word 'becomes' which matches that on Retreats, Safeguards, etc. implying that it occurs before any powers trigger (like Warhawk), so Warhawk would trigger later.\n\nIf you find yourself in a game with The Cult and Warhawk, best to hash out which interpretaion your group will use before game start."
             }
         ],
@@ -1757,6 +2035,7 @@
                 "question": "If ships are sent to the warp during Reveal, does Warpish update their total accordingly?",
                 "answer": "If the ships are added to the warp prior to Warpish using their power, then yes. If not, then no. Refer to the timing rules if in doubt.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1765,14 +2044,20 @@
                 "question": "If Warrior gets zapped, do they still earn tokens?",
                 "answer": "Yes.",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This answer really depends on some interpretation of the rules.\n\nFirstly, if you rule that zaps do not prevent any non-***use*** part of a power, this is a fine interpretation. Otherwise, the token gain would be disabled and would not trigger. The errata attempts to fix this by placing token gain after the end of the encounter, with the assumption that the cosmic zap period would end before the token gain. This, however, is unclear within the interpretation of the rules and could only be reasonably ruled in response to this errata (and not from any other part of the rules)."
             },
             {
                 "question": "If Warrior draws their own color and reclaims an empty home planet, does he collect experience?",
                 "answer": "Yes, recolonizing a home planet counts as winning an encounter, and Warrior collects experience accordingly",
                 "source": "2018 FAQ",
-                "tags": ["Contentious"],
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "Reestablishing a colony on a home planet should not necessarily count as a win (it does count as successful, however) as it can have wider ramifications and ambiguity."
             }
         ],
@@ -1781,6 +2066,7 @@
                 "question": "If the defensive main player uses the Whirligig Wild flare and ends up losing their last encounter card, does the flare get added back to the hand before or after drawing a new hand?",
                 "answer": "Before. Thus, the flare would be discarded.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1789,6 +2075,7 @@
                 "question": "Can Will attack Blue on Red’s planet even if Blue has no colony there?",
                 "answer": "No. Blue doesn’t have a colony there to attack, while Red may always be forced to defend their home planet.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1797,6 +2084,7 @@
                 "question": "Does the Winner Super flare mean that Winner would get three free colonies if they won by 29 points?",
                 "answer": "No, only two colonies. The Super effect works in place of, not in addition to, Winner’s base power effect.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1805,6 +2093,7 @@
                 "question": "Does the Zombie get compensation?",
                 "answer": "Not unless their ships actually go to the warp (such as when their power is Cosmic Zapped). Compensation is awarded based on ships going to the warp, after all. If Zombie’s ships went to the warp and were then retrieved by their power, he would receive compensation, but Zombie’s power prevents them from going to the warp in the first place.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
                 "notes": "Before Cosmic Odyssey, it was a popular house rule to allow Zombie to collect compensation regardless (or even to change how Compensation works entirely). Now with an official alternate Zombie that circumvents the issue, this is less relevant."
             },
@@ -1812,36 +2101,42 @@
                 "question": "Is there a limit to how many ships Zombie can liberate at once as part of a deal?",
                 "answer": "No, there is no limit.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Healer use their power before Zombie evades going to the warp?",
                 "answer": "No, because the Zombie’s power kicks in before he goes to the warp at all.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Zombie use the Kamikaze Wild or similar cards that require sending ships to warp to use, and if so, are the ships actually sent to warp?",
                 "answer": "Yes, Zombie may use the card, and then may use their power to prevent those ships from entering the warp",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can the Vacuum, with their Super flare, remove a Zombie colony? If Zombie has 4 foreign colonies with 1 ship each, and vacuum loses 4 ships, can the Super remove all 4 of those colonies?",
                 "answer": "Yes, and yes. All losses that occur because of a single effect (such as Vacuum Super flare) happen at the same instant, so Zombie could not save one of their ships and send it to another colony that he is losing at the same moment.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Is there an official ruling on Zombie vs. Void?",
                 "answer": "Void trumps Zombie. Zombie’s power kicks in when it should go to the warp, however the intent for Void is that it never sends its opponent’s to the warp at all.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Zombie free Masochist’s ships when Zombie is making a deal with a different alien (like Void, for instance)?",
                 "answer": "No. Zombie could only free Void’s ships in that deal.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1850,6 +2145,7 @@
                 "question": "If the defense is displaced, are their ships still involved in the encounter?",
                 "answer": "Yes.",
                 "source": "Designer Clarification",
+                "url": "https://boardgamegeek.com/thread/2901761/article/40498575#40498575",
                 "tags": [],
                 "notes": "This implies that the position of a player's involved ships does not dictate their role in the encounter."
             },
@@ -1857,13 +2153,17 @@
                 "question": "If the defense is displaced and the new defense has ships on the targeted planet, are those ships involved in the encounter?",
                 "answer": "Yes. If the offense wins the encounter, both the new defense and the original defense with lose their colony on the targeted planet.",
                 "source": "Designer Clarification",
-                "tags": ["Contentious"],
+                "url": "https://boardgamegeek.com/thread/2901761/article/40498895#40498895",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This ruling comes from a comment Jack Reda made on BGG. Whilst as close to an official ruling as we have, the clarification is not 100% consistent.\n\nThe Praw prefers to play that these ships are not involved in the encounter, which means Delegator does not change which ships are involved in the encounter."
             },
             {
                 "question": "If the defense is displaced and the new defense has ships on the targeted planet, are their previous ships still involved in the encounter?",
                 "answer": "Yes.",
                 "source": "Designer Clarification",
+                "url": "https://boardgamegeek.com/thread/2901761/article/40498895#40498895",
                 "tags": [],
                 "notes": "This implies that the position of a player's involved ships does not dictate their role in the encounter."
             }
@@ -1873,7 +2173,10 @@
                 "question": "If Extractor moves a player's foreign colony onto another planet outsider that player's home system, does that player \"gain a foreign colony\" for the purpose of Extractor.",
                 "answer": "Yes.",
                 "source": "Designer Clarification",
-                "tags": ["Contentious"],
+                "url": "https://www.youtube.com/watch?v=X_tqfzc1C8I",
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This ruling comes from one of Jack Reda's videos, and is contentious more so for the impact of balance of the alien. Prior, the rewards came with a balance that it grants other players foreign colony, a fair trade. But in this scenario, it allows Extractor to gain rewards for free (well, that player's ships are saved, but that's not comparable).\n\nThe Praw recommends to play it that for Extractor to gain rewards, the extracted player must end with more foreign colonies than they started with."
             }
         ],
@@ -1882,21 +2185,27 @@
                 "question": "Is the Wild Geek flare played the moment a player or players win, or when their win is obvious?",
                 "answer": "The card is played when a player would win the game (usually during resolution) and not any earlier. For example, if a player has a higher encounter total during reveal and is likely to gain their final foreign colony, the wild Geek cannot yet be played until that player gains their final foreign colony (and actually wins).",
                 "source": "The Praw",
-                "tags": ["Contentious"],
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This question has no clear answer; the one provided is this site's best guess."
             },
             {
                 "question": "Which cards can be named using the Geek Wild flare?",
                 "answer": "If the card can be played, and would change the winning players in some way (either by granting one or more players a win or by preventing a win), it can be named. This excludes techs, stations, moons, envoys, etc. as these cards are never played.",
                 "source": "The Praw",
-                "tags": ["Contentious"],
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This question has no clear answer; the one provided is this site's best guess."
             },
             {
                 "question": "When using the Geek Wild flare, can I name a flare and then play it?",
                 "answer": "Yes, it bypasses the one flare per encounter limit.",
                 "source": "The Praw",
-                "tags": ["Contentious"],
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This question has no clear answer; the one provided is this site's best guess. This answer is based mostly on fun factor, as preventing it otherwise restricts this card to just artifacts."
             }
         ],
@@ -1905,21 +2214,32 @@
                 "question": "If the hazard deck was not in play and the Gremlin plays \"Danger Zone\" or \"Easy Does It\" to add a hazard sub-variant, does this let hazards be drawn normally?",
                 "answer": "No, the sub-variant has no effect unless the hazard deck is in play, otherwise there is no hazard deck in play to draw from.",
                 "source": "The Praw",
-                "tags": ["Contentious"],
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This question has no clear answer; the one provided is this site's best guess."
             }
         ],
         "214": [
             {
-                "question": "Can Lloyd offer to insure cards for a player as compensation is being taken from them.",
+                "question": "Can Lloyd offer to insure cards for a player as compensation is being taken from them?",
                 "answer": "The offer to insure must come before compensation has begun to be taken. I.e., a player cannot wait to see which cards their opponent takes from compensation before insuring them.",
                 "source": "Designer Clarification",
+                "url": "/Lloyd Ruling 1.jpg",
                 "tags": []
             },
             {
                 "question": "Can Lloyd offer to insure a card for a player if that player does not hold that card?",
                 "answer": "No. The player must have the card for it to be an asset.",
                 "source": "Designer Clarification",
+                "url": "/Lloyd Ruling 2.jpg",
+                "tags": []
+            },
+            {
+                "question": "Can Lloyd offer to insure a card well before it is about to be taken? (For example, insuring an Attack 30 during Regroup in case it gets taken in Compensation later.)",
+                "answer": "Yes.",
+                "source": "Designer Clarification",
+                "url": "/Lloyd Ruling 2.jpg",
                 "tags": []
             }
         ],
@@ -1936,7 +2256,9 @@
                 "question": "If The Meek wins as the offense, and thus gains a foreign colony, does their colony marker stay the same or move down one?",
                 "answer": "The Meek's colony marker would first be reduced by their own power, then be increased when they gain the colony. This would cause the colony marker to stay the same normally, or increase by 1 if The Meek's colony marker was initially zero.",
                 "source": "The Praw",
-                "tags": ["Contentious"],
+                "tags": [
+                    "Contentious"
+                ],
                 "notes": "This question has no clear answer; the one provided is this site's best guess."
             }
         ],
@@ -1953,6 +2275,7 @@
                 "question": "If Sniveler whines about having fewest foreign colonies, do Locust’s devoured planets count, and if any player refuses to give Sniveler a foreign colony, what happens to Locust’s devoured planet?",
                 "answer": "The devoured planets do count to the total of foreign colonies for Sniveler’s whining. If any player refuses to give Sniveler a colony, Locust’s devoured planets are unaffected (though Locust could still lose a normal foreign colony if they have one).",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1961,12 +2284,14 @@
                 "question": "If you fail to deal with Void, are your ships eradicated?",
                 "answer": "No. Void only eradicates when winning as a main player or ally.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Do you actually get compensation when losing with a negotiate to Void?",
                 "answer": "No, since no ships are lost to the warp.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ],
@@ -1975,12 +2300,14 @@
                 "question": "Is there a limit to how many ships Zombie can liberate at once as part of a deal?",
                 "answer": "No, there is no limit.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             },
             {
                 "question": "Can Zombie free Masochist’s ships when Zombie is making a deal with a different alien (like Void, for instance)?",
                 "answer": "No. Zombie could only free Void’s ships in that deal.",
                 "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
             }
         ]

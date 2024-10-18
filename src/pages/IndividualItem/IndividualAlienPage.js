@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import {
   Card, CardBody, Nav, NavItem, NavLink, Label, Input, FormGroup, Container, Alert, UncontrolledTooltip
 } from 'reactstrap';
-import { Await, useRouteLoaderData } from "react-router-dom"
+import { Await, useRouteLoaderData, Link } from "react-router-dom"
 // import TimingBar from '../../components/TimingBar';
 import Alien from '../../components/Alien'
 import Loading from '../../components/Loading'
@@ -107,7 +107,10 @@ export default function IndividualAlienPage() {
                         </Alert>
                         : <></>
                       }
-                      <p>(Origin: {entry.source})</p>
+                      {
+                        entry.url ? <p>(Origin: <Link to={entry.url}>{entry.source}</Link>)</p> : <p>(Origin: {entry.source})</p>
+                      }
+
                     </CardBody>
                   </Card>
                 })}
