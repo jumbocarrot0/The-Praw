@@ -192,7 +192,7 @@
                 "answer": "Yes.",
                 "source": "2018 FAQ",
                 "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
-                "notes": "This ruling is dubious. Generally, an effect can be cancelled after the player has stated any target of the effect and any other significant choices for resolving the effect (e.g. Seeker's question), but before the effect begins to resolve or cause any alteration to the game state. In this case, the game state has changed significantly (cards being drawn from the deck) and a zap should not be possible - or if it was it should need further clarification about the state of the drawn cards which neithe the FAQ nor the Chosen's alien power provide.",
+                "notes": "This ruling is dubious. Generally, an effect can be cancelled after the player has stated any target of the effect and any other significant choices for resolving the effect (e.g. Seeker's question), but before the effect begins to resolve or cause any alteration to the game state. In this case, the game state has changed significantly (cards being drawn from the deck) and a zap should not be possible - or if it was it should need further clarification about the state of the drawn cards which neither the FAQ nor the Chosen's alien power provide.",
                 "tags": [
                     "Contentious"
                 ]
@@ -207,7 +207,7 @@
                 "tags": [
                     "Contentious"
                 ],
-                "notes": "This ruling isn't game-breaking by any means, but does seem to contradict a following ruling that allows alien powers to be used again even if they are \"once per encounter\" (meaning some once per encounter effects can be replayed but others can't be? Flares and Alien Powers are not necessarially equivalent, but it's strange they act differently here). It also goes against the spirit of the alien and especially the phrase from the power: \"The encounter is then replayed from the start of the planning phase\". Plus it could require a certain amount of memory to keep into account ongoing effects that are still in play that you usually wouldn't consider during the planning phase.\n\nYou can rule that these cards were never considered played and could be played again (if any flares changed hands they would need to be given back) and it shouldn't cause any more issues than this official ruling does."
+                "notes": "This ruling isn't game-breaking by any means, but does seem to contradict a following ruling that allows alien powers to be used again even if they are \"once per encounter\" (meaning some once per encounter effects can be replayed but others can't be? Flares and Alien Powers are not necessarily equivalent, but it's strange they act differently here). It also goes against the spirit of the alien and especially the phrase from the power: \"The encounter is then replayed from the start of the planning phase\". Plus it could require a certain amount of memory to keep into account ongoing effects that are still in play that you usually wouldn't consider during the planning phase.\n\nYou can rule that these cards were never considered played and could be played again (if any flares changed hands they would need to be given back) and it shouldn't cause any more issues than this official ruling does."
             },
             {
                 "question": "What happens to tokens spent or cards discarded in the initial encounter with Chronos?",
@@ -215,7 +215,7 @@
                 "source": "2018 FAQ",
                 "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": [],
-                "notes": "Tokens remaining discarded does feel against the spirit of the power like the first ruling, though the ruling here is comparatively much clearer from the text of the power. You could house rule otherwise if you'd like."
+                "notes": "Tokens remaining discarded does feel against the spirit of the power like the first ruling, though the ruling here is comparatively much clearer from the text of the power. You could house rule otherwise if you'd like.\nIt is also good to note that any cards discarded or lost through means not related to playing them (e.g. Sorcerer power) are not returned to their original owner according to the power as written. (But again feel free to house rule if your table agrees.)"
             },
             {
                 "question": "Is a kicker played in the first encounter still allowed in the repeat of the encounter?",
@@ -249,8 +249,7 @@
                 "answer": "They are removed from the game.",
                 "source": "2018 FAQ",
                 "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
-                "tags": [],
-                "notes": "Doesn't quite answer what happens if you choose not to transform into the alien, but safe to assume its removed from the game."
+                "tags": []
             }
         ],
         "27": [
@@ -374,6 +373,15 @@
             {
                 "question": "When using the Cryo Super flare, can both of its effects be used in the same encounter?",
                 "answer": "Yes. You must do so in the order listed on the flare.",
+                "source": "2018 FAQ",
+                "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
+                "tags": []
+            }
+        ],
+        "37": [
+            {
+                "question": "The Cudgel Super flare says it works “whenever you use your power.” Do you have to play it each time you want to use it, or is it automatic?",
+                "answer": "You must play the flare each time you want to use its effect.",
                 "source": "2018 FAQ",
                 "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
                 "tags": []
