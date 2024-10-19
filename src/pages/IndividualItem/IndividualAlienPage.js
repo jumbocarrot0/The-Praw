@@ -108,7 +108,7 @@ export default function IndividualAlienPage() {
                         : <></>
                       }
                       {
-                        entry.url ? <p>(Origin: <Link to={entry.url}>{entry.source}</Link>)</p> : <p>(Origin: {entry.source})</p>
+                        entry.url ? <p>(Origin: <Link to={entry.url} reloadDocument={true} target="_blank" rel="noopener noreferrer">{entry.source}</Link>)</p> : <p>(Origin: {entry.source})</p>
                       }
 
                     </CardBody>
