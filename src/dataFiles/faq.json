@@ -2051,7 +2051,7 @@
         ],
         "178": [
             {
-                "question": "Van Vacuum use its power on itself, and if so, can it cause an infinite loop?",
+                "question": "Can Vacuum use its power on itself, and if so, can it cause an infinite loop?",
                 "answer": "No. Vacuum cannot use its power on itself.",
                 "source": "2018 FAQ",
                 "url": "https://images-cdn.fantasyflightgames.com/filer_public/bd/b6/bdb66dce-f409-4877-8433-184373370281/faq_2018-web.pdf",
