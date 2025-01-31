@@ -82,16 +82,16 @@ export default function Combos() {
             />
           </div>
           <div className="d-flex justify-content-center p-3">
-            {/* <Button
+            <Button
               className="me-2"
               color="secondary"
               onClick={() => { setLoading(true); setCombo([]); setCombo(combo); setLoading(false) }}
               disabled={loading}
             >
               Refresh
-            </Button> */}
+            </Button>
             <Button
-              // className="ms-2"
+              className="ms-2"
               color="primary"
               onClick={() => { setLoading(true); setCombo(RandomCombo(allCombos)); setLoading(false) }}
               disabled={loading}
