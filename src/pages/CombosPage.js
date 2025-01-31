@@ -93,6 +93,9 @@ export default function Combos() {
             />
           </div>
           <div className="d-flex justify-content-center p-3">
+            <strong>From: {combo.author ?? <br/>}</strong>
+          </div>
+          <div className="d-flex justify-content-center p-3">
             {/* <Button
               className="me-2"
               color="secondary"
