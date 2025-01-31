@@ -98,6 +98,16 @@ export default function CharacterImage(props) {
                     338, 174 + 109 * i)
                 context.font = "33px AdobeGaramondPro"
                 context.letterSpacing = "-1px";
+                let short_width = context.measureText(comboAliens[i].original.short).width
+                let letter_spacing = -1
+                let font_size = 33
+                while (short_width > 450) {
+                    letter_spacing -= 1
+                    font_size -= 1
+                    context.letterSpacing = `-${letter_spacing}px`;
+                    context.font = `${font_size}px AdobeGaramondPro`
+                    short_width = context.measureText(comboAliens[i].original.short).width
+                }
                 context.fillText(comboAliens[i].original.short, 338, 221 + 109 * i)
                 if (comboAliens[i].original.alert === "Yellow") {
                     context.drawImage(yellowLamps, 0, i * 104, 51, 104, 582, 158 + i * 104, 51, 104)

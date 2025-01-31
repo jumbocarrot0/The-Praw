@@ -53,6 +53,17 @@ export default function Combos() {
     getAllCombos()
       .then((data) => {
         // console.log(data)
+        data.sort(function (a, b) {
+          // console.log(a[1].original.name, b[1].original.name)
+          if (a.name.toLocaleLowerCase() < b.name.toLocaleLowerCase()) {
+            return -1;
+          }
+          else if (a.name.toLocaleLowerCase() > b.name.toLocaleLowerCase()) {
+            return 1;
+          } else {
+            return 0;
+          }
+        })
         setAllCombos(data)
         setCombo([])
       })
