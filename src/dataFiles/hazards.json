@@ -264,7 +264,7 @@
         "20": {
             "original": {
                 "name": "Re-Armament",
-                "body": "You may discard any number of cards from your hand. Then, draw cards until you have eight cards in hane. The encounter immediately ends successfully.",
+                "body": "You may discard any number of cards from your hand. Then, draw cards until you have eight cards in hand. The encounter immediately ends successfully.",
                 "body2": "If you have fewer than eight cards in hand, you may draw one card.",
                 "expansion": "Cosmic Odyssey",
                 "type": "AltHazard"
