@@ -20,7 +20,7 @@ export default function ThrowbackPage() {
       <ThrowbackBox>
         <React.Suspense fallback={null}>
           <Await
-            resolve={alien.alien}
+            resolve={alien}
             errorElement={
               <p>Error loading alien!</p>
             }

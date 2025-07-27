@@ -1,23 +1,40 @@
-import Phases from '../components/Phases';
+import Phases from './Phases';
+import PartStyle from "./PartStyle"
 
 export default function TimingBar(props) {
+
+    const { viewMode, tab } = props
+
     return (
         <>
-            <PlayerTiming player={props.timing.player} />
-            {props.choice ?
-                <ChoiceTiming choice={props.timing.player} /> : null
+            <PlayerTiming player={props.timing.player} viewMode={viewMode} tab={tab} />
+            {props.timing.choice ?
+                <ChoiceTiming choice={props.timing.choice} viewMode={viewMode} tab={tab} /> : null
             }
-            <PhaseTiming phases={props.timing.phases} />
+            {
+                props.timing.phases.map((part, i) =>
+                    <PartStyle key={i} part={part} viewMode={viewMode} tab={tab}>
+                        <PhaseTiming phases={part.value} />
+                    </PartStyle>)
+            }
         </>
     )
 }
 
 export function PlayerTiming(props) {
+
+    const { viewMode, tab } = props
+
     return (
         <span className='me-1 text-primary'>
             (
             <span className='text-decoration-underline'>
-                <span className="text-light">{props.player}</span>
+                <span className="text-light">
+                    {props.player.map((part, i) =>
+                        <PartStyle key={i} part={part} viewMode={viewMode} tab={tab}>
+                            {part.value}
+                        </PartStyle>)}
+                </span>
             </span>
             )
         </span>
@@ -25,11 +42,19 @@ export function PlayerTiming(props) {
 }
 
 export function ChoiceTiming(props) {
+
+    const { viewMode, tab } = props
+
     return (
         <span className='me-1 text-danger-emphasis'>
             (
             <span className='text-decoration-underline'>
-                <span className="text-light">{props.choice}</span>
+                <span className="text-light">{
+                    props.choice.map((part, i) =>
+                        <PartStyle key={i} part={part} viewMode={viewMode} tab={tab}>
+                            {part.value}
+                        </PartStyle>)
+                }</span>
             </span>
             )
         </span>

@@ -11,7 +11,7 @@ export default function Breadcrumbs(props) {
 
   const matches = useMatches();
   const crumbs = matches
-    .filter((match) => Boolean(match.handle?.breadcrumb))
+    .filter((match) => Boolean(match?.handle?.breadcrumb))
     .map((match) => match.handle.breadcrumb(match.data))
   let title = matches
     .filter((match) => Boolean(match.handle?.title || match.handle?.breadcrumb))

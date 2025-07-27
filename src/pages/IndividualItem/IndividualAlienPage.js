@@ -23,12 +23,14 @@ export default function IndividualAlienPage() {
   const alien = useRouteLoaderData("alienIndex")
   const [tab, setTab] = useState("original")
 
+//   console.log(alien)
+
   const [viewMode, setViewMode] = useState(false)
 
   return (
     <React.Suspense fallback={<Loading />}>
       <Await
-        resolve={alien.alien}
+        resolve={alien}
         errorElement={
           <p>Error loading alien!</p>
         }
@@ -46,34 +48,18 @@ export default function IndividualAlienPage() {
                         onClick={() => { setTab(version) }}>{VERSIONS[version]}</NavLink>
                     </NavItem>)
                 }
-                {/* <NavItem>
-                  <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
-                    onClick={() => { setTab("original") }}>Original</NavLink>
-                </NavItem>
-                {alien.revised ?
-                  <NavItem>
-                    <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
-                      onClick={() => { setTab("revised") }}>Revised</NavLink>
-                  </NavItem> : null
-                }
-                {alien.homebrew ?
-                  <NavItem>
-                    <NavLink className={"nav-link" + (tab === "homebrew" ? " active" : "")} href="#"
-                      onClick={() => { setTab("homebrew") }}>House Rules</NavLink>
-                  </NavItem> : null
-                } */}
               </Nav>
               <Card className={"mx-1 border-top-0 rounded-top-0"}>
                 <CardBody>
                   {
                     tab !== "original" ?
                       <FormGroup switch>
-                        <Input type="switch" role="switch" checked={viewMode} onChange={(e) => setViewMode(e.target.checked)} />
+                        <Input type="switch" role="switch" checked={viewMode} onChange={(e) => setViewMode(e.target.checked ? MODES.REVISION_EXPLAINATION : MODES.PLAIN)} />
                         <Label check>Show Difference</Label>
                       </FormGroup>
                       : <></>
                   }
-                  <Alien alien={alien} tab={tab} viewMode={viewMode ? MODES.REVISION_EXPLAINATION : MODES.PLAIN} />
+                  <Alien alien={alien} tab={tab} viewMode={viewMode} />
                 </CardBody>
               </Card>
               <Container className='mt-3'>

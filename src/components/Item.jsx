@@ -5,9 +5,14 @@ import {
     CardBody,
     Badge
 } from 'reactstrap';
+import PartStyle, { VERSIONS, MODES } from './PartStyle'
 
 export default function Item(props) {
     const content = props.content
+    
+    function handleParts(part, i) {
+        return part.value.split(' ').map((word, j) => <PartStyle key={`${i}${j}`} part={part} viewMode={MODES.PLAIN} tab={"original"}>{j === 0 ? `${word}` : ` ${word}`}</PartStyle>)
+    }
 
     return (
         <Card className='mb-5'>
@@ -35,7 +40,7 @@ export default function Item(props) {
                         style={{"maxHeight": "72px"}}
                     /> : null}
 
-                    <strong>{content.short}</strong>
+                    <strong>{content.short?.map ? content.short?.map(handleParts) : content.short}</strong>
                 </CardBody>
             </Link>
         </Card>

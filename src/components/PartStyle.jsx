@@ -1,27 +1,36 @@
 import { useState, useRef } from "react";
 import { Tooltip } from "reactstrap"
 
-const MODES = {
+export const MODES = {
     "PLAIN": 0,
     "REVISION_EXPLAINATION": 1
 }
 
+export const VERSIONS = {
+    "original": "Original",
+    "revised": "Revised",
+    "homebrew": "House Rules"
+}
+
 export default function TextPart(props) {
-    const [tooltipOpen, setTooltipOpen] = useState(false);
-    const toggle = () => setTooltipOpen(!tooltipOpen);
+    const [tooltipOpen, setTooltipOpen] = useState(false)
+    const toggle = () => setTooltipOpen(!tooltipOpen)
     const ref = useRef(null)
 
     // const tab = props.tab
     const viewMode = props.viewMode
 
-    // console.log(props.part)
     let style = {}
     let className = []
     let tooltip = null
     let author = null
+    let bar = false
 
     for (const tab of [props.tab, 'all']) {
         if (props.part.style && props.part.style[tab]) {
+            if (props.part.style[tab].includes('bar')) {
+                bar = true
+            }
             if (props.part.style[tab].includes('bold')) {
                 style.fontWeight = "bold"
             }
@@ -36,14 +45,16 @@ export default function TextPart(props) {
                     case MODES.REVISION_EXPLAINATION:
                         style.textDecoration = "line-through"
                         className.push('text-danger-emphasis')
-                        if (props.part.revisionNote) {
-                            tooltip = props.part.revisionNote?.note;
-                            author = props.part.revisionNote?.author;
-                        }
                         break;
                     default:
                         style.display = "none"
                 }
+            }
+            if (props.part.style[tab].includes('danger')) {
+                className.push("text-danger")
+            }
+            if (props.part.style[tab].includes('warning')) {
+                className.push("text-warning")
             }
             if (props.part.style[tab].includes('none')) {
                 style.display = "none"
@@ -54,27 +65,35 @@ export default function TextPart(props) {
                         break;
                     case MODES.REVISION_EXPLAINATION:
                         style.textDecoration = "dashed underline"
-                        if (props.part.revisionNote) {
-                            tooltip = props.part.revisionNote?.note;
-                            author = props.part.revisionNote?.author;
-                        }
+                        // if (props.part.revisionNote) {
+                        //     tooltip = props.part.revisionNote?.note;
+                        //     author = props.part.revisionNote?.author;
+                        // }
                         break;
                     default:
                         break;
                 }
             }
+            if (viewMode === MODES.REVISION_EXPLAINATION && props.part.revisionNote){
+                tooltip = props.part.revisionNote?.note;
+                author = props.part.revisionNote?.author;
+            }
         }
     }
 
-    // console.log(style)
+    let inner = props.children
+
+    if (bar) {
+        inner = <span className='text-decoration-underline'>
+            <span className="text-light">{inner}</span>
+        </span>
+    }
 
     if (tooltip) {
 
-        // style.whiteSpace = 'nowrap'
-
         return <>
             <span className={className.join(' ')} style={style} ref={ref}>
-                {props.children}
+                {inner}
             </span>
             <Tooltip
                 isOpen={tooltipOpen}
@@ -88,12 +107,12 @@ export default function TextPart(props) {
     } else if (Object.keys(style).length > 0 || className.length > 0) {
         return <>
             <span className={className.join(' ')} style={style}>
-                {props.children}
+                {inner}
             </span>
         </>
     } else {
         return <>
-            {props.children}
+            {inner}
         </>
     }
 

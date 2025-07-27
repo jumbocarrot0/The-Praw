@@ -1,77 +1,63 @@
 import React, { useState } from 'react';
 import {
-  Card, CardBody, Nav, NavItem, NavLink
+    Card, CardBody, Nav, NavItem, NavLink, FormGroup, Input, Label
 } from 'reactstrap';
 import { useRouteLoaderData } from "react-router-dom"
 import TimingBar from '../../components/TimingBar';
-
+import PartStyle, { VERSIONS, MODES } from '../../components/PartStyle'
 
 export default function IndividualEnvoyPage() {
 
-  const envoy = useRouteLoaderData("envoyIndex")
-  const [tab, setTab] = useState("original")
+    const envoy = useRouteLoaderData("envoyIndex")
+    const [tab, setTab] = useState("original")
+    const [viewMode, setViewMode] = useState(MODES.PLAIN)
 
-  return (
-    <div >
-      {envoy.revised || envoy.homebrew ?
-        <Nav className="ps-5 mx-1" tabs>
-          <NavItem>
-            <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
-              onClick={() => { setTab("original") }}>Original</NavLink>
-          </NavItem>
-          {envoy.revised ?
-            <NavItem>
-              <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
-                onClick={() => { setTab("revised") }}>Revised</NavLink>
-            </NavItem> : null
-          }
-          {envoy.homebrew ?
-            <NavItem>
-              <NavLink className={"nav-link" + (tab === "homebrew" ? " active" : "")} href="#"
-                onClick={() => { setTab("homebrew") }}>House Rules</NavLink>
-            </NavItem> : null
-          }
-        </Nav> : null
-      }
-      <Card className={"mx-1" + (envoy.revised || envoy.homebrew ? " border-top-0 rounded-top-0" : "")}>
-        <CardBody>
+    function handleParts(part, i) {
+        return part.value.split(' ').map((word, j) => <PartStyle key={`${i}${j}`} part={part} viewMode={viewMode ? MODES.REVISION_EXPLAINATION : MODES.PLAIN} tab={tab}>{j === 0 ? `${word}` : ` ${word}`}</PartStyle>)
+    }
 
-          <div>
-            <img alt={envoy[tab].name + " Thumbnail"}
-              className='float-end'
-              src={require(`../../images/${envoy[tab].thumbnail}`)}
-            />
-            <h1 className='text-light'>{envoy[tab].name}</h1>
+    if (envoy === null) {
+        return <></>
+    }
 
-            {envoy[tab].gameSetup ? <p><strong>Game Setup:</strong> {envoy[tab].gameSetup}</p> : null}
-            {/* dangerouslySetInnerHTML is, well, dangerous when used on user submitted stuff. But aliens.json is trustworthy, so this is fine albiet jank.
-  If/when I add a homebrew aliens option, PLEASE PLEASE PLEASE dont forget to sanitise them. */}
-            <p><span dangerouslySetInnerHTML={
-              {
-                __html: envoy[tab].powerBody
-                  .replaceAll('may use this power', '<strong><em>may use</em></strong> this power')
-                  .replaceAll('use this power', '<strong><em>use</em></strong> this power')
-                  .replaceAll('this power is used', 'this power is <strong><em>used</em></strong>')
-              }
-            } />
-            </p>
-            <p><em>{envoy[tab].history}</em></p>
-
-            <p></p>
-            <TimingBar timing={envoy[tab].powerTiming} />
-
-            {envoy[tab].revisionNotes ? (
-              <Card className="bg-light border-warning border-5">
+    return (
+        <div >
+            <Nav className="ps-5 mx-1" tabs>
+                {
+                    envoy.versions.map(version =>
+                        <NavItem key={version}>
+                            <NavLink className={"nav-link" + (tab === version ? " active" : "")} aria-current="page" href="#"
+                                onClick={() => { setTab(version) }}>{VERSIONS[version]}</NavLink>
+                        </NavItem>)
+                }
+            </Nav>
+            <Card className={"mx-1 border-top-0 rounded-top-0"}>
                 <CardBody>
-                  <p className="text-dark">{envoy[tab].revisionNotes}</p>
-                </CardBody>
-              </Card>
-            ) : null}
-          </div>
+                    {
+                        tab !== "original" ?
+                            <FormGroup switch>
+                                <Input type="switch" role="switch" checked={viewMode} onChange={(e) => setViewMode(e.target.checked ? MODES.REVISION_EXPLAINATION : MODES.PLAIN)} />
+                                <Label check>Show Difference</Label>
+                            </FormGroup>
+                            : <></>
+                    }
 
-        </CardBody>
-      </Card>
-    </div>
-  );
+                    <div>
+                        <img alt={envoy.name + " Thumbnail"}
+                            className='float-end'
+                            src={require(`../../images/${envoy.thumbnail}`)}
+                        />
+                        <h1 className='text-light'>{envoy.name}</h1>
+
+                        {envoy.gameSetup ? <p><strong>Game Setup:</strong> {envoy.map(handleParts)}</p> : null}
+                        <p>{envoy.powerBody.map(handleParts)}</p>
+                        <p><em>{envoy.history.map(handleParts)}</em></p>
+                        <TimingBar timing={envoy.powerTiming} viewMode={viewMode} tab={tab} />
+                    </div>
+
+                </CardBody>
+            </Card>
+        </div>
+    );
 }
 

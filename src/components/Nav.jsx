@@ -55,11 +55,11 @@ export default function PrawNav() {
                   Combo Generator
                 </Link>
               </DropdownItem>
-              <DropdownItem>
+              {/* <DropdownItem>
                 <Link className="nav-link" to="/Selection">
                   Alien Dealer
                 </Link>
-              </DropdownItem>
+              </DropdownItem> */}
               <DropdownItem>
                 <Link className="nav-link" to="/Geek">
                   Geek Practice

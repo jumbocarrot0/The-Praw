@@ -4,6 +4,8 @@ import GridBrowser from "../../../components/GridBrowser";
 
 import { useState } from 'react';
 
+import PartStyle, { VERSIONS, MODES } from '../../../components/PartStyle'
+
 import {
     Modal,
     ModalHeader,
@@ -31,7 +33,7 @@ function AgeItem(props) {
                     <ModalHeader toggle={toggle} tag={'h2'}>{content.name}...</ModalHeader>
                     <ModalBody>
                         <p>Use the following alien selection method:</p>
-                        <Link to={`/Variants/Campaign/selectionMethods#${Ages.selectionMethods[content.selectionMethodID].original.name.replaceAll(' ', '_')}`}>{Ages.selectionMethods[content.selectionMethodID].original.name}</Link>
+                        <Link to={`/Variants/Campaign/selectionMethods#${Ages.selectionMethods[content.selectionMethodID].name.replaceAll(' ', '_')}`}>{Ages.selectionMethods[content.selectionMethodID].name}</Link>
                     </ModalBody>
                     <ModalHeader tag={'h2'}>...{content.name2}</ModalHeader>
                     <ModalBody>
@@ -53,7 +55,7 @@ function AgeItem(props) {
                     </ModalBody>
                     <ModalHeader tag={'h2'}>Master Card</ModalHeader>
                     <ModalBody>
-                        <Link to={`/Variants/Campaign/MasterCards/${content.masterID}`}>{Ages.master[content.masterID].original.name}</Link>
+                        <Link to={`/Variants/Campaign/MasterCards/${content.masterID}`}>{Ages.master[content.masterID].name}</Link>
                     </ModalBody>
                 </Modal>
                 :
@@ -107,8 +109,11 @@ function AgeItem(props) {
 export default function AgesPage() {
 
     const Ages = useRouteLoaderData("ages")
-    console.log('hello')
     console.log(Ages)
+    
+    function handleParts(part, i) {
+        return part.value.split(' ').map((word, j) => <PartStyle key={`${i}${j}`} part={part} viewMode={0} tab={0}>{j === 0 ? `${word}` : ` ${word}`}</PartStyle>)
+    }
     
     return (
         <div>

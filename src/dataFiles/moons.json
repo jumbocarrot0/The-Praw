@@ -1,1547 +1,2668 @@
 {
     "moons": {
         "0": {
-            "original": {
-                "body": "Keep secret until: As a main player, after cards are revealed, you may reveal this moon to cause each of your ships to be worth triple for totals, compensation, and rewards for this encounter.",
-                "name": "Hulk Out",
-                "type": "Blue Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "reveal": true
+            "name": "Hulk Out",
+            "type": "Blue Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: As a main player, after cards are revealed, you may reveal this moon to cause each of your ships to be worth triple for totals, compensation, and rewards for this encounter."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             }
         },
         "1": {
-            "original": {
-                "body": "Keep secret until: At any time, you may reveal this moon to force all players who have your flare to give it to you. If nobody can, you may search the discard pile for it and take it",
-                "name": "Hearth Fire",
-                "type": "Blue Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Hearth Fire",
+            "type": "Blue Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: At any time, you may reveal this moon to force all players who have your flare to give it to you. If nobody can, you may search the discard pile for it and take it"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "2": {
-            "original": {
-                "body": "Keep secret until: As an ally you may reveal this moon to triple the value of each reinforcement played by allies on your side for this encounter.",
-                "name": "Threeinforce",
-                "type": "Blue Moon",
-                "timing": {
-                    "player": "Ally Only",
-                    "phases": {
-                        "reveal": true
+            "name": "Threeinforce",
+            "type": "Blue Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: As an ally you may reveal this moon to triple the value of each reinforcement played by allies on your side for this encounter."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Ally Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             }
         },
         "3": {
-            "original": {
-                "body": "Keep secret until: At any time, you may reveal this moon to remove any moon from the game and send any ships on it to the warp",
-                "name": "Moon Boom",
-                "type": "Blue Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Moon Boom",
+            "type": "Blue Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: At any time, you may reveal this moon to remove any moon from the game and send any ships on it to the warp"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "4": {
-            "original": {
-                "body": "Keep secret until: At any time, you may reveal this moon to force a player with the most foreign colonies to send all their ships from a foreign colony to their other colonies.",
-                "name": "Inertia",
-                "type": "Blue Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Inertia",
+            "type": "Blue Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: At any time, you may reveal this moon to force a player with the most foreign colonies to send all their ships from a foreign colony to their other colonies."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "5": {
-            "original": {
-                "body": "Keep secret until: As the defense, before allies are invited, you may reveal this moon. Players cannot become allies with the offense during this encounter.",
-                "name": "Loner",
-                "type": "Blue Moon",
-                "timing": {
-                    "player": "Defense Only",
-                    "phases": {
-                        "alliance": true
+            "name": "Loner",
+            "type": "Blue Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: As the defense, before allies are invited, you may reveal this moon. Players cannot become allies with the offense during this encounter."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Defense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "alliance": true
+                        }
+                    }
+                ]
             }
         },
         "6": {
-            "original": {
-                "body": "Keep secret until: After a player plays a card with \"Zap\" in its name, you may reveal this moon to cancel the effect of that card.",
-                "name": "Zap Rod",
-                "type": "Blue Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Zap Rod",
+            "type": "Blue Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: After a player plays a card with \"Zap\" in its name, you may reveal this moon to cancel the effect of that card."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "7": {
-            "original": {
-                "body": "Keep secret until: As a main player, after cards are revealed, you may reveal this moon to add 3 to your total for each moon occupied by other players.",
-                "name": "Blue Shift",
-                "type": "Blue Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "reveal": true
+            "name": "Blue Shift",
+            "type": "Blue Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: As a main player, after cards are revealed, you may reveal this moon to add 3 to your total for each moon occupied by other players."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             }
         },
         "8": {
-            "original": {
-                "body": "At the start of your turn, shuffle the discard pile and deal all of those cards to the players, starting with yourself and proceeding clockwise.",
-                "name": "Discard Deal",
-                "type": "Cheesy Moon",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "startTurn": true
+            "name": "Discard Deal",
+            "type": "Cheesy Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "At the start of your turn, shuffle the discard pile and deal all of those cards to the players, starting with yourself and proceeding clockwise."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true
+                        }
+                    }
+                ]
             }
         },
         "9": {
-            "original": {
-                "body": "Each player must hum whenever they are not talking or breathing in. Each time a player is caught not humming, they send one of their ships not in the encounter to the warp.",
-                "name": "Mind Blank",
-                "type": "Cheesy Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Mind Blank",
+            "type": "Cheesy Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Each player must hum whenever they are not talking or breathing in. Each time a player is caught not humming, they send one of their ships not in the encounter to the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "10": {
-            "original": {
-                "body": "At the start of your turn, each player discards their alien sheet(s) and draws replacements. Redraw each alien that has Game Setup text or is not allowed.",
-                "name": "Reboot",
-                "type": "Cheesy Moon",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "startTurn": true
+            "name": "Reboot",
+            "type": "Cheesy Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "At the start of your turn, each player discards their alien sheet(s) and draws replacements. Redraw each alien that has Game Setup text or is not allowed."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true
+                        }
+                    }
+                ]
             }
         },
         "11": {
-            "original": {
-                "body": "During the regroup phase, each player must discard one card of their choice from their hand.",
-                "name": "Atrophy",
-                "type": "Cheesy Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
+            "name": "Atrophy",
+            "type": "Cheesy Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "During the regroup phase, each player must discard one card of their choice from their hand."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             }
         },
         "12": {
-            "original": {
-                "body": "At the start of your turn, deal the cards remaining in the deck to the players, starting with yourself and proceeding clockwise.",
-                "name": "Deal Deck",
-                "type": "Cheesy Moon",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "startTurn": true
+            "name": "Deal Deck",
+            "type": "Cheesy Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "At the start of your turn, deal the cards remaining in the deck to the players, starting with yourself and proceeding clockwise."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true
+                        }
+                    }
+                ]
             }
         },
         "13": {
-            "original": {
-                "body": "When revealed, the game ends. The player with the most colonies (including foreign and home) wins! If playing a campaign, use the number of colonies to determine ranking.",
-                "name": "Game Over",
-                "type": "Cheesy Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Game Over",
+            "type": "Cheesy Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, the game ends. The player with the most colonies (including foreign and home) wins! If playing a campaign, use the number of colonies to determine ranking."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "14": {
-            "original": {
-                "body": "Each player must speak in rhymes. When a player is caught speaking without a rhyme - not including reading game text aloud - they send one of their to the warp.",
-                "name": "Tongues",
-                "type": "Cheesy Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Tongues",
+            "type": "Cheesy Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Each player must speak in rhymes. When a player is caught speaking without a rhyme - not including reading game text aloud - they send one of their to the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "15": {
-            "original": {
-                "body": "At the start of your turn, sing a short song about your alien power. Then, gain a reward.",
-                "name": "Tune",
-                "type": "Cheesy Moon",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "startTurn": true
+            "name": "Tune",
+            "type": "Cheesy Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "At the start of your turn, sing a short song about your alien power. Then, gain a reward."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true
+                        }
+                    }
+                ]
             }
         },
         "16": {
-            "original": {
-                "body": "For each occupied moon, the offense must add 1 to their total.",
-                "name": "Offence",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "reveal": true
+            "name": "Offence",
+            "type": "Full Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "For each occupied moon, the offense must add 1 to their total."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             }
         },
         "17": {
-            "original": {
-                "body": "For each occupied moon, the defense must add 1 to their total.",
-                "name": "Defence",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "Defense Only",
-                    "phases": {
-                        "reveal": true
+            "name": "Defence",
+            "type": "Full Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "For each occupied moon, the defense must add 1 to their total."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Defense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             }
         },
         "18": {
-            "original": {
-                "body": "When a player draws a new hand, they draw three fewer cards.",
-                "name": "Limiter",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Limiter",
+            "type": "Full Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When a player draws a new hand, they draw three fewer cards."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "19": {
-            "original": {
-                "body": "Any revealed attack 40 is treated as an attack 04, and vice versa.",
-                "name": "404",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "reveal": true
+            "name": "404",
+            "type": "Full Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Any revealed attack 40 is treated as an attack 04, and vice versa."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             }
         },
         "20": {
-            "original": {
-                "body": "The offense's ship limit is increased by one.",
-                "name": "Gate Version 1.1",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "launch": true
+            "name": "Gate Version 1.1",
+            "type": "Full Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "The offense's ship limit is increased by one."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "launch": true
+                        }
+                    }
+                ]
             }
         },
         "21": {
-            "original": {
-                "body": "The offense's ship limit is decreased by one.",
-                "name": "Gate Version 0.9",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "launch": true
+            "name": "Gate Version 0.9",
+            "type": "Full Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "The offense's ship limit is decreased by one."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "launch": true
+                        }
+                    }
+                ]
             }
         },
         "22": {
-            "original": {
-                "body": "Each foreign colony on this moon's planet is worth two foreign colonies.",
-                "name": "Omega Base",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Omega Base",
+            "type": "Full Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Each foreign colony on this moon's planet is worth two foreign colonies."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "23": {
-            "original": {
-                "body": "The number of encounters a player can have per turn is reduced by one (to minimum a of one).",
-                "name": "Deceleration",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Deceleration",
+            "type": "Full Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "The number of encounters a player can have per turn is reduced by one (to minimum a of one)."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "24": {
-            "original": {
-                "body": "The number of encounters a player can have per turn is increased by one.",
-                "name": "Acceleration",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Acceleration",
+            "type": "Full Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "The number of encounters a player can have per turn is increased by one."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "25": {
-            "original": {
-                "body": "Each main player must select a negotiate, if able.",
-                "name": "Compassion",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "Main Players Only",
-                    "phases": {
-                        "planning": true
+            "name": "Compassion",
+            "type": "Full Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Each main player must select a negotiate, if able."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player"
+                    },
+                    {
+                        "value": "s",
+                        "style": {
+                            "revised": [
+                                "removed"
+                            ]
+                        },
+                        "revisionID": 1
+                    },
+                    {
+                        "value": " Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "planning": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "body": "Each main player must select a negotiate, if able.",
-                "name": "Compassion",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "planning": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw\n\nRevised for consistent timing bar."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "26": {
-            "original": {
-                "body": "After alliances are formed, each player that was not invited to ally may offer a card from their hand to one main player. If the main player takes it, that uninvited player becomes one of their allies.",
-                "name": "Bribery",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "Not Main Players",
-                    "phases": {
-                        "alliance": true
+            "name": "Bribery",
+            "type": "Full Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "After alliances are formed, each player that was not invited to ally may offer a card from their hand to one main player. If the main player takes it, that uninvited player becomes one of their allies."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Not Main Player"
+                    },
+                    {
+                        "value": "s",
+                        "style": {
+                            "revised": [
+                                "removed"
+                            ]
+                        },
+                        "revisionID": 1
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "alliance": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "body": "After alliances are formed, each player that was not invited to ally may offer a card from their hand to one main player. If the main player takes it, that uninvited player becomes one of their allies.",
-                "name": "Bribery",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "Not Main Player",
-                    "phases": {
-                        "alliance": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw\n\nRevised for consistent timing bar."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "27": {
-            "original": {
-                "body": "During the regroup phase, each player other than the offense draws one card.",
-                "name": "Moon Shine",
-                "type": "Full Moon",
-                "timing": {
-                    "player": "Not Offense",
-                    "phases": {
-                        "regroup": true
+            "name": "Moon Shine",
+            "type": "Full Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "During the regroup phase, each player other than the offense draws one card."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Not Offense"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             }
         },
         "28": {
-            "original": {
-                "body": "When you fail to make a deal, lose one fewer ship. If you occupy at least two half moons, lose two fewer instead.",
-                "name": "Failed Deal -1/-2",
-                "type": "Half Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Failed Deal -1/-2",
+            "type": "Half Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When you fail to make a deal, lose one fewer ship. If you occupy at least two half moons, lose two fewer instead."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "29": {
-            "original": {
-                "body": "Add 2 to each reinforcement you play. If you occupy at least two half moons, add 4 instead.",
-                "name": "Reinforce +2/+4",
-                "type": "Half Moon",
-                "timing": {
-                    "player": "Main Player or Ally",
-                    "phases": {
-                        "reveal": true
+            "name": "Reinforce +2/+4",
+            "type": "Half Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Add 2 to each reinforcement you play. If you occupy at least two half moons, add 4 instead."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player or Ally"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             }
         },
         "30": {
-            "original": {
-                "body": "When you draw a new hand, draw one additional card. If you occupy at least two half moons, draw two additional instead.",
-                "name": "New Hand +1/+2",
-                "type": "Half Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "New Hand +1/+2",
+            "type": "Half Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When you draw a new hand, draw one additional card. If you occupy at least two half moons, draw two additional instead."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "31": {
-            "original": {
-                "body": "When you gain rewards, gain one additional reward. If you occupy at least two half moons, gain two additional instead.",
-                "name": "Rewards +1/+2",
-                "type": "Half Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Rewards +1/+2",
+            "type": "Half Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When you gain rewards, gain one additional reward. If you occupy at least two half moons, gain two additional instead."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "32": {
-            "original": {
-                "body": "During your regroup phase, retrieve one additional ship. If you occupy at least two half moons, retrieve two additional instead.",
-                "name": "Retrieval +1/+2",
-                "type": "Half Moon",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "regroup": true
+            "name": "Retrieval +1/+2",
+            "type": "Half Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "During your regroup phase, retrieve one additional ship. If you occupy at least two half moons, retrieve two additional instead."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             }
         },
         "33": {
-            "original": {
-                "body": "As the offense, increase your ship limit by one. If you occupy at least two half moons, increase it by two instead.",
-                "name": "Gate +1/+2",
-                "type": "Half Moon",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "launch": true
+            "name": "Gate +1/+2",
+            "type": "Half Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "As the offense, increase your ship limit by one. If you occupy at least two half moons, increase it by two instead."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "launch": true
+                        }
+                    }
+                ]
             }
         },
         "34": {
-            "original": {
-                "body": "You can play one additional flare per encounter. If you occupy at least two half moons, you can play two additional instead. (Each flare can only be played once per encounter)",
-                "name": "Flare +1/+2",
-                "type": "Half Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Flare +1/+2",
+            "type": "Half Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "You can play one additional flare per encounter. If you occupy at least two half moons, you can play two additional instead. (Each flare can only be played once per encounter)"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "35": {
-            "original": {
-                "body": "When you collect compensation, collect one additional card. If you occupy at least two half moons, collect two additional instead.",
-                "name": "Compensation +1/+2",
-                "type": "Half Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Compensation +1/+2",
+            "type": "Half Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When you collect compensation, collect one additional card. If you occupy at least two half moons, collect two additional instead."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "36": {
-            "original": {
-                "body": "As part of a deal, you and your opponent can each draw up to two cards from the deck",
-                "name": "Card Deal",
-                "type": "Hub Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Card Deal",
+            "type": "Hub Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "As part of a deal, you and your opponent can each draw up to two cards from the deck"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "37": {
-            "original": {
-                "body": "After you make a successful deal, gain one reward.",
-                "name": "Deal Reward",
-                "type": "Hub Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Deal Reward",
+            "type": "Hub Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "After you make a successful deal, gain one reward."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "38": {
-            "original": {
-                "body": "As part of a deal, you and your opponent can each discard up to two cards from hand.",
-                "name": "Discard Deal",
-                "type": "Hub Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Discard Deal",
+            "type": "Hub Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "As part of a deal, you and your opponent can each discard up to two cards from hand."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "39": {
-            "original": {
-                "body": "After you make a successful deal, you may take a card at random from the hand of each player with a colony on this moon's planet.",
-                "name": "Renter's Fee",
-                "type": "Hub Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Renter's Fee",
+            "type": "Hub Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "After you make a successful deal, you may take a card at random from the hand of each player with a colony on this moon's planet."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "40": {
-            "original": {
-                "body": "If you fail to make a deal, you may send one of your opponent's ships to the warp from each planet where you both have a colony.",
-                "name": "Domestic Dispute",
-                "type": "Hub Moon",
-                "timing": {
-                    "player": "Main Only Player",
-                    "phases": {
-                        "resolution": true
+            "name": "Domestic Dispute",
+            "type": "Hub Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "If you fail to make a deal, you may send one of your opponent's ships to the warp from each planet where you both have a colony."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Only Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "41": {
-            "original": {
-                "body": "As part of a deal, you and your opponent can each discard your hands and draw new hands.",
-                "name": "Garbage Day",
-                "type": "Hub Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Garbage Day",
+            "type": "Hub Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "As part of a deal, you and your opponent can each discard your hands and draw new hands."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "42": {
-            "original": {
-                "body": "As part of a deal, you and your opponent can each draw a flare from the unused flare deck.",
-                "name": "Flare Up",
-                "type": "Hub Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Flare Up",
+            "type": "Hub Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "As part of a deal, you and your opponent can each draw a flare from the unused flare deck."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "43": {
-            "original": {
-                "body": "As part of a deal, you can send up to two of your opponent's ships from the warp to this moon's planet.",
-                "name": "Warp Out",
-                "type": "Hub Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Warp Out",
+            "type": "Hub Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "As part of a deal, you can send up to two of your opponent's ships from the warp to this moon's planet."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "44": {
-            "original": {
-                "body": "This moon is treated as a colony. At the start of each player's turn, send one of your ships from one of your colonies to the warp.",
-                "name": "Flush",
-                "type": "Moon Base",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true
+            "name": "Flush",
+            "type": "Moon Base",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "This moon is treated as a colony. At the start of each player's turn, send one of your ships from one of your colonies to the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true
+                        }
+                    }
+                ]
             }
         },
         "45": {
-            "original": {
-                "body": "This moon is treated as a foreign colony. Your ships cannot be removed from the warp.",
-                "name": "Warped",
-                "type": "Moon Base",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Warped",
+            "type": "Moon Base",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "This moon is treated as a foreign colony. Your ships cannot be removed from the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "46": {
-            "original": {
-                "body": "This moon is treated as a foreign colony. You cannot win the game unless you have a colony on each planet in your home system.",
-                "name": "Home Strong",
-                "type": "Moon Base",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Home Strong",
+            "type": "Moon Base",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "This moon is treated as a foreign colony. You cannot win the game unless you have a colony on each planet in your home system."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "47": {
-            "original": {
-                "body": "This moon is treated as a foreign colony. During the regroup phase, if you have more than four cards in your hand, you must discard down to four cards of your choice.",
-                "name": "4 Is Enough",
-                "type": "Moon Base",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
+            "name": "4 Is Enough",
+            "type": "Moon Base",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "This moon is treated as a foreign colony. During the regroup phase, if you have more than four cards in your hand, you must discard down to four cards of your choice."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             }
         },
         "48": {
-            "original": {
-                "body": "This moon is treated as a foreign colony. During the regroup phase, if you have nine or fewer ships ships in the warp, send your ships to the warp until there are ten of your ships there.",
-                "name": "Streamlined",
-                "type": "Moon Base",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
+            "name": "Streamlined",
+            "type": "Moon Base",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "This moon is treated as a foreign colony. During the regroup phase, if you have nine or fewer ships ships in the warp, send your ships to the warp until there are ten of your ships there."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             }
         },
         "49": {
-            "original": {
-                "body": "This moon is treated as a foreign colony. After you use your power, send one of your ships to the warp.",
-                "name": "Power Pay",
-                "type": "Moon Base",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Power Pay",
+            "type": "Moon Base",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "This moon is treated as a foreign colony. After you use your power, send one of your ships to the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "50": {
-            "original": {
-                "body": "This moon is treated as a foreign colony. You cannot have more than one encounter on your turn.",
-                "name": "Limits",
-                "type": "Moon Base",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Limits",
+            "type": "Moon Base",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "This moon is treated as a foreign colony. You cannot have more than one encounter on your turn."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "51": {
-            "original": {
-                "body": "This moon is treated as a foreign colony. When you become an ally, you cannot send more than one ship.",
-                "name": "Tentative",
-                "type": "Moon Base",
-                "timing": {
-                    "player": "Ally Only",
-                    "phases": {
-                        "alliance": true
+            "name": "Tentative",
+            "type": "Moon Base",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "This moon is treated as a foreign colony. When you become an ally, you cannot send more than one ship."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Ally Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "alliance": true
+                        }
+                    }
+                ]
             }
         },
         "52": {
-            "original": {
-                "body": "Keep secret until: at any time you may reveal this moon to choose another occupied moon. Send that moon's ship to the warp and move the ship on this moon to that moon.",
-                "name": "Displace",
-                "type": "New Moon",
-                "trueType": "Blue Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Displace",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: at any time you may reveal this moon to choose another occupied moon. Send that moon's ship to the warp and move the ship on this moon to that moon."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "53": {
-            "original": {
-                "body": "To win the game normally, player must also occupy at a least one moon.",
-                "name": "Moon Mandate",
-                "type": "New Moon",
-                "trueType": "Full Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Moon Mandate",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "To win the game normally, player must also occupy at a least one moon."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "54": {
-            "original": {
-                "body": "This moon is treated as a colony. You cannot select your highest-value encounter card unless you have no other attack cards.",
-                "name": "Restraint",
-                "type": "New Moon",
-                "trueType": "Moon Base",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "planning": true
+            "name": "Restraint",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "This moon is treated as a colony. You cannot select your highest-value encounter card unless you have no other attack cards."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "planning": true
+                        }
+                    }
+                ]
             }
         },
         "55": {
-            "original": {
-                "body": "When players make a deal, you ship may send your ship here to your colonies and flip this moon facedown to prevent the terms of the deal from resolving. (The deal is still successful.)",
-                "name": "Translation Lost",
-                "type": "New Moon",
-                "trueType": "Hub Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Translation Lost",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When players make a deal, you ship may send your ship here to your colonies and flip this moon facedown to prevent the terms of the deal from resolving. (The deal is still successful.)"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "56": {
-            "original": {
-                "body": "Keep secret until: After you fail to make a deal, you may reveal this moon. If you do, do not lose any ships to the warp and your opponent loses three additional ships.",
-                "name": "Deal Breaker",
-                "type": "New Moon",
-                "trueType": "Blue Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "resolution": true
+            "name": "Deal Breaker",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: After you fail to make a deal, you may reveal this moon. If you do, do not lose any ships to the warp and your opponent loses three additional ships."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "57": {
-            "original": {
-                "body": "This moon is treated as a foreign colony. Each time you play an artifact, reinforcement, or flare, remove one of your ships from the game.",
-                "name": "Careless",
-                "type": "New Moon",
-                "trueType": "Moon Base",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Careless",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "This moon is treated as a foreign colony. Each time you play an artifact, reinforcement, or flare, remove one of your ships from the game."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "58": {
-            "original": {
-                "body": "When revealed, each player give you all flares from their hand. If this moon is unoccupied, flip it facedown.",
-                "name": "Flare Magnet",
-                "type": "New Moon",
-                "trueType": "Quarter Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Flare Magnet",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, each player give you all flares from their hand. If this moon is unoccupied, flip it facedown."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "59": {
-            "original": {
-                "body": "When revealed, each other player gives you one card of their choice from their hand. If this moon is unoccupied, flip it facedown.",
-                "name": "Alms",
-                "type": "New Moon",
-                "trueType": "Quarter Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Alms",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, each other player gives you one card of their choice from their hand. If this moon is unoccupied, flip it facedown."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "60": {
-            "original": {
-                "body": "When revealed, each other player shows you all artifacts and flares in their hand. If this moon unoccupied, flip it facedown.",
-                "name": "Sad Revelations",
-                "trueType": "Quarter Moon",
-                "type": "New Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Sad Revelations",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, each other player shows you all artifacts and flares in their hand. If this moon unoccupied, flip it facedown."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "61": {
-            "original": {
-                "body": "Keep secret until: As a main player, after cards are revealed, you may reveal this moon to double the value of an attack card you revealed.",
-                "name": "Multiplier",
-                "type": "New Moon",
-                "trueType": "Blue Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "reveal": true
+            "name": "Multiplier",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: As a main player, after cards are revealed, you may reveal this moon to double the value of an attack card you revealed."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             }
         },
         "62": {
-            "original": {
-                "body": "This moon is treated as a home colony and a half moon. If you occupy at least two half moons, this moon is treated as two home colonies and two half moons instead.",
-                "name": "Home +1/+2",
-                "type": "New Moon",
-                "trueType": "Half Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Home +1/+2",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "This moon is treated as a home colony and a half moon. If you occupy at least two half moons, this moon is treated as two home colonies and two half moons instead."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "63": {
-            "original": {
-                "body": "When revealed, each other player gives you all negotiate cards from their hand. If this moon is unoccupied, flip it facedown.",
-                "name": "Ascetic",
-                "type": "New Moon",
-                "trueType": "Quarter Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Ascetic",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, each other player gives you all negotiate cards from their hand. If this moon is unoccupied, flip it facedown."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "64": {
-            "original": {
-                "body": "If a player does not occupy any planets, they win the game!",
-                "name": "Planetless",
-                "type": "New Moon",
-                "trueType": "Cheesy Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Planetless",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "If a player does not occupy any planets, they win the game!"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "65": {
-            "original": {
-                "body": "Reveal at any time: during your regroup phase, instead of retrieving a ship from the warp, you may draw a card from the unused flare deck",
-                "name": "Biofuel",
-                "type": "New Moon",
-                "trueType": "Secret Moon",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "regroup": true
+            "name": "Biofuel",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Reveal at any time: during your regroup phase, instead of retrieving a ship from the warp, you may draw a card from the unused flare deck"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             }
         },
         "66": {
-            "original": {
-                "body": "Keep secret until: After a non-encounter card is discarded, you may reveal this moon to add that card to your hand.",
-                "name": "Replay",
-                "type": "New Moon",
-                "trueType": "Blue Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Replay",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: After a non-encounter card is discarded, you may reveal this moon to add that card to your hand."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "67": {
-            "original": {
-                "body": "Keep secret until: As a main player, after alliances are formed, you may reveal this moon to force all of your allies to send ships until they have as many in the encounter as you do.",
-                "name": "Fully Commit",
-                "type": "New Moon",
-                "trueType": "Blue Moon",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "alliance": true
+            "name": "Fully Commit",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: As a main player, after alliances are formed, you may reveal this moon to force all of your allies to send ships until they have as many in the encounter as you do."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "alliance": true
+                        }
+                    }
+                ]
             }
         },
         "68": {
-            "original": {
-                "body": "Keep secret until: When you would a number of gain rewards, you may reveal this moon to send that number of ships belonging to other players to the warp instead ",
-                "name": "Just Rewards",
-                "type": "New Moon",
-                "trueType": "Blue Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Just Rewards",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: When you would a number of gain rewards, you may reveal this moon to send that number of ships belonging to other players to the warp instead "
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "69": {
-            "original": {
-                "body": "When revealed, draw a sky city card (🕮13) and place its marker on this moon's planet. Move the ship from this moon to the planet and remove this moon from the game.",
-                "name": "That's No Moon!",
-                "type": "New Moon",
-                "trueType": "Cheesy Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "That's No Moon!",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, draw a sky city card (🕮13) and place its marker on this moon's planet. Move the ship from this moon to the planet and remove this moon from the game."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "70": {
-            "original": {
-                "body": "When a destiny card is discarded, it is removed from the game instead. While there are no destiny cards in the game, each destiny is wild.",
-                "name": "Eclipse",
-                "type": "New Moon",
-                "trueType": "Full Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "destiny": true
+            "name": "Eclipse",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When a destiny card is discarded, it is removed from the game instead. While there are no destiny cards in the game, each destiny is wild."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "destiny": true
+                        }
+                    }
+                ]
             }
         },
         "71": {
-            "original": {
-                "body": "Keep secret until: At any time, you may reveal this moon to discard your hand and draw a new one.",
-                "name": "Harvest",
-                "type": "New Moon",
-                "trueType": "Blue Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Harvest",
+            "type": "New Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Keep secret until: At any time, you may reveal this moon to discard your hand and draw a new one."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "72": {
-            "original": {
-                "body": "When revealed, search the deck for negotiate cards and give one to each player. Then, shuffle the deck. If this moon is unoccupied, flip it facedown.",
-                "name": "Peace Move",
-                "type": "Quarter Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Peace Move",
+            "type": "Quarter Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, search the deck for negotiate cards and give one to each player. Then, shuffle the deck. If this moon is unoccupied, flip it facedown."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "73": {
-            "original": {
-                "body": "When revealed, name a card with \"Zap\" in its name. Each player that has it must give it to you. If none do, take it from the deck. If this moon is unoccupied, flip it facedown.",
-                "name": "Zap Grab",
-                "type": "Quarter Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Zap Grab",
+            "type": "Quarter Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, name a card with \"Zap\" in its name. Each player that has it must give it to you. If none do, take it from the deck. If this moon is unoccupied, flip it facedown."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "74": {
-            "original": {
-                "body": "When revealed, draw another alien sheet to use in addition to your alien(s). Redraw any that have Game Setup text or are not allowed. If this moon is unoccupied, flip it facedown.",
-                "name": "Emergence",
-                "type": "Quarter Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Emergence",
+            "type": "Quarter Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, draw another alien sheet to use in addition to your alien(s). Redraw any that have Game Setup text or are not allowed. If this moon is unoccupied, flip it facedown."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "75": {
-            "original": {
-                "body": "When revealed, draw four cards from the deck. Then, discard four cards from your hand. If this moon is unoccupied, flip it facedown.",
-                "name": "+4 Then -4",
-                "type": "Quarter Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "+4 Then -4",
+            "type": "Quarter Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, draw four cards from the deck. Then, discard four cards from your hand. If this moon is unoccupied, flip it facedown."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "76": {
-            "original": {
-                "body": "When revealed, discard one of your alien sheets and draw another one. Redraw any that have Game Setup text or are not allowed. If this moon is unoccupied, flip it facedown.",
-                "name": "Metamorph",
-                "type": "Quarter Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Metamorph",
+            "type": "Quarter Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, discard one of your alien sheets and draw another one. Redraw any that have Game Setup text or are not allowed. If this moon is unoccupied, flip it facedown."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "77": {
-            "original": {
-                "body": "When revealed, each player must show you the highest and lowest value attack cards in their hand. If this moon is unoccupied, flip it facedown.",
-                "name": "Attack Preview",
-                "type": "Quarter Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Attack Preview",
+            "type": "Quarter Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, each player must show you the highest and lowest value attack cards in their hand. If this moon is unoccupied, flip it facedown."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "78": {
-            "original": {
-                "body": "When revealed, move one of each player's ships to another of their colonies. If this moon is unoccupied, flip it facedown.",
-                "name": "Migration",
-                "type": "Quarter Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Migration",
+            "type": "Quarter Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, move one of each player's ships to another of their colonies. If this moon is unoccupied, flip it facedown."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "79": {
-            "original": {
-                "body": "When revealed, each player gives you one card from their hand at random. You keep one of them and discard the rest. If this moon is unoccupied, flip it facedown.",
-                "name": "Treasure Hunt",
-                "type": "Quarter Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Treasure Hunt",
+            "type": "Quarter Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When revealed, each player gives you one card from their hand at random. You keep one of them and discard the rest. If this moon is unoccupied, flip it facedown."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "80": {
-            "original": {
-                "body": "Reveal at any time: As an ally, add the number of occupied moons to your sides total.",
-                "name": "Moon Solidarity",
-                "type": "Secret Moon",
-                "timing": {
-                    "player": "Only Ally",
-                    "phases": {
-                        "reveal": true
+            "name": "Moon Solidarity",
+            "type": "Secret Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Reveal at any time: As an ally, add the number of occupied moons to your sides total."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Only Ally"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             }
         },
         "81": {
-            "original": {
-                "body": "You cannot reveal this moon. This moon has no ability (but you should look pleased at having just read this).",
-                "name": "Jubba Cloak",
-                "type": "Secret Moon",
-                "timing": {
-                    "player": "???",
-                    "phases": {
-                        "secret": true
+            "name": "Jubba Cloak",
+            "type": "Secret Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "You cannot reveal this moon. This moon has no ability (but you should look pleased at having just read this)."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "???"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "secret": true
+                        }
+                    }
+                ]
             }
         },
         "82": {
-            "original": {
-                "body": "Reveal at any time: While you are an ally, allies' ships are worth double for totals, compensation, and rewards.",
-                "name": "Strengthen Allies",
-                "type": "Secret Moon",
-                "timing": {
-                    "player": "Ally Only",
-                    "phases": {
-                        "reveal": true
+            "name": "Strengthen Allies",
+            "type": "Secret Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Reveal at any time: While you are an ally, allies' ships are worth double for totals, compensation, and rewards."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Ally Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             }
         },
         "83": {
-            "original": {
-                "body": "Reveal at any time: While you are an ally, allies' ships are worth half (rounding down) for totals, compensation, and rewards.",
-                "name": "Weaken Allies",
-                "type": "Secret Moon",
-                "timing": {
-                    "player": "Ally Only",
-                    "phases": {
-                        "reveal": true
+            "name": "Weaken Allies",
+            "type": "Secret Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Reveal at any time: While you are an ally, allies' ships are worth half (rounding down) for totals, compensation, and rewards."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Ally Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             }
         },
         "84": {
-            "original": {
-                "body": "Reveal at any time: You do not lose your alien power from having too few home colonies.",
-                "name": "Hubris",
-                "type": "Secret Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Hubris",
+            "type": "Secret Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Reveal at any time: You do not lose your alien power from having too few home colonies."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "85": {
-            "original": {
-                "body": "Reveal at any time: When you gain rewards as a defensive ally, double the amount you gain.",
-                "name": "The Spoils",
-                "type": "Secret Moon",
-                "timing": {
-                    "player": "Defensive Ally Only",
-                    "phases": {
-                        "resolution": true
+            "name": "The Spoils",
+            "type": "Secret Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Reveal at any time: When you gain rewards as a defensive ally, double the amount you gain."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Defensive Ally Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "86": {
-            "original": {
-                "body": "Reveal at any time: At the start of each turn, you may place a card from your hand facedown on top of the deck",
-                "name": "Stack",
-                "type": "Secret Moon",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true
+            "name": "Stack",
+            "type": "Secret Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Reveal at any time: At the start of each turn, you may place a card from your hand facedown on top of the deck"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true
+                        }
+                    }
+                ]
             }
         },
         "87": {
-            "original": {
-                "body": "Reveal at any time: After determining the outcome, if you are an ally on the losing side, you may collect compensation from either main player.",
-                "name": "Payback",
-                "type": "Secret Moon",
-                "timing": {
-                    "player": "Ally Only",
-                    "phases": {
-                        "resolution": true
+            "name": "Payback",
+            "type": "Secret Moon",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "Reveal at any time: After determining the outcome, if you are an ally on the losing side, you may collect compensation from either main player."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Ally Only"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         }
     }

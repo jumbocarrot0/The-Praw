@@ -1,55 +1,53 @@
 import React, { useState } from 'react'
 import {
-  Card, CardBody, Nav, NavItem, NavLink
+    Card, CardBody, Nav, NavItem, NavLink, FormGroup, Input, Label
 } from 'reactstrap';
 import { useRouteLoaderData } from "react-router-dom"
-import TimingBar from "../../../components/TimingBar"
+import TimingBar from '../../../components/TimingBar';
+import PartStyle, { VERSIONS, MODES } from '../../../components/PartStyle'
 
 export default function IndividualPrivilegePage() {
 
-  // const { privilegeIndex } = useParams();
+    const privilege = useRouteLoaderData("privilegeIndex")
+    const [tab, setTab] = useState("original")
+    const [viewMode, setViewMode] = useState(MODES.PLAIN)
+    
+    function handleParts(part, i) {
+        return part.value.split(' ').map((word, j) => <PartStyle key={`${i}${j}`} part={part} viewMode={viewMode ? MODES.REVISION_EXPLAINATION : MODES.PLAIN} tab={tab}>{j === 0 ? `${word}` : ` ${word}`}</PartStyle>)
+    }
 
-  const privilege = useRouteLoaderData("privilegeIndex")
-  const [tab, setTab] = useState("original")
+    if (privilege === null) {
+        return <></>
+    }
 
-  // useEffect(() => {
-  //   setPrivilege(Privileges.privilege[privilegeIndex].original)
-  //   setRevised(false)
-  // }, [privilegeIndex])
+    return (
+        <div>
+            <Nav className="ps-5 mx-1" tabs>
+                {
+                    privilege.versions.map(version =>
+                        <NavItem key={version}>
+                            <NavLink className={"nav-link" + (tab === version ? " active" : "")} aria-current="page" href="#"
+                                onClick={() => { setTab(version) }}>{VERSIONS[version]}</NavLink>
+                        </NavItem>)
+                }
+            </Nav>
+            <Card className={"mx-1 border-top-0 rounded-top-0"}>
+                <CardBody>
+                    {
+                        tab !== "original" ?
+                            <FormGroup switch>
+                                <Input type="switch" role="switch" checked={viewMode} onChange={(e) => setViewMode(e.target.checked ? MODES.REVISION_EXPLAINATION : MODES.PLAIN)} />
+                                <Label check>Show Difference</Label>
+                            </FormGroup>
+                            : <></>
+                    }
+                    <h1 className='text-light'>{privilege.name}</h1>
 
-  return (
-    <div>
-      {privilege.revised ?
-        <Nav className="ps-5 mx-1" tabs>
-        <NavItem>
-          <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
-            onClick={() => { setTab("original") }}>Original</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
-            onClick={() => { setTab("revised") }}>Revised</NavLink>
-        </NavItem>
-        </Nav> : null
-      }
-      <Card className={"mx-1" + (privilege[tab].revised ? " border-top-0 rounded-top-0" : "")}>
-        <CardBody>
-          <h1 className='text-light'>{privilege[tab].name}</h1>
-
-          <p>{privilege[tab].body}</p>
-          {privilege[tab].timing ? <TimingBar timing={privilege[tab].timing}/> : null }
-
-
-          {privilege[tab].revisionNotes ? (
-            <Card className="bg-light border-warning border-5">
-              <CardBody>
-                <p className="text-dark">{privilege[tab].revisionNotes}</p>
-              </CardBody>
+                    <p>{privilege.body.map(handleParts)}</p>
+                    {privilege.timing ? <TimingBar timing={privilege.timing} /> : null}
+                </CardBody>
             </Card>
-          ) : null}
-
-        </CardBody>
-      </Card>
-    </div>
-  );
+        </div>
+    );
 }
 

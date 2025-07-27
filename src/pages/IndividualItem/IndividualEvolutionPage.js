@@ -1,52 +1,53 @@
 import React, { useState } from 'react'
 import {
-  Card, CardBody, Nav, NavItem, NavLink
-} from 'reactstrap';
+    Card, CardBody, Nav, NavItem, NavLink, FormGroup, Input, Label
+} from 'reactstrap'
 import { useRouteLoaderData } from "react-router-dom"
-import TimingBar from '../../components/TimingBar';
+import TimingBar from '../../components/TimingBar'
+import PartStyle, { VERSIONS, MODES } from '../../components/PartStyle'
 
 export default function IndividualEvolutionPage() {
 
-  const evolution = useRouteLoaderData("evolutionIndex")
-  const [tab, setTab] = useState("original")
+    const evolution = useRouteLoaderData("evolutionIndex")
+    const [tab, setTab] = useState("original")
+    const [viewMode, setViewMode] = useState(MODES.PLAIN)
 
-  return (
-    <div>
-      {evolution.revised ?
-        <Nav className="ps-5 mx-1" tabs>
-          <NavItem>
-            <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
-              onClick={() => { setTab("original") }}>Original</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
-              onClick={() => { setTab("revised") }}>Revised</NavLink>
-          </NavItem>
-        </Nav> : null
-      }
-      <Card className={"mx-1" + (evolution.revised ? " border-top-0 rounded-top-0" : "")}>
-        <CardBody>
-          <h1 className='text-light'>{evolution[tab].name}</h1>
-          <ul>
-            {evolution[tab].body.map((row) => {
-              return (row.cost ? <li key={row.cost}>{row.cost}: {row.text}</li> : <p key="noCost">{row.text}</p>)
-            })}
-          </ul>
-          <br />
-          <TimingBar timing={evolution[tab].timing}/>
+    function handleParts(part, i) {
+        return part.value.split(' ').map((word, j) => <PartStyle key={`${i}${j}`} part={part} viewMode={viewMode ? MODES.REVISION_EXPLAINATION : MODES.PLAIN} tab={tab}>{j === 0 ? `${word}` : ` ${word}`}</PartStyle>)
+    }
 
+    if (evolution === null) {
+        return <></>
+    }
 
-          {evolution[tab].revisionNotes ? (
-            <Card className="bg-light border-warning border-5">
-              <CardBody>
-                <p className="text-dark">{evolution[tab].revisionNotes}</p>
-              </CardBody>
+    return (
+        <div>
+            <Nav className="ps-5 mx-1" tabs>
+                {
+                    evolution.versions.map(version =>
+                        <NavItem key={version}>
+                            <NavLink className={"nav-link" + (tab === version ? " active" : "")} aria-current="page" href="#"
+                                onClick={() => { setTab(version) }}>{VERSIONS[version]}</NavLink>
+                        </NavItem>)
+                }
+            </Nav>
+            <Card className={"mx-1 border-top-0 rounded-top-0"}>
+                <CardBody>
+                    {
+                        tab !== "original" ?
+                            <FormGroup switch>
+                                <Input type="switch" role="switch" checked={viewMode} onChange={(e) => setViewMode(e.target.checked ? MODES.REVISION_EXPLAINATION : MODES.PLAIN)} />
+                                <Label check>Show Difference</Label>
+                            </FormGroup>
+                            : <></>
+                    }
+                    <h1 className='text-light'>{evolution.name}</h1>
+                    <p>{evolution.body.map(handleParts)}</p>
+                    <TimingBar timing={evolution.timing} viewMode={viewMode} tab={tab} />
+
+                </CardBody>
             </Card>
-          ) : null}
-
-        </CardBody>
-      </Card>
-    </div>
-  );
+        </div>
+    );
 }
 

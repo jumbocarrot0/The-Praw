@@ -1,47 +1,53 @@
 import React, { useState } from 'react'
 import {
-  Card, CardBody, Nav, NavItem, NavLink
+    Card, CardBody, Nav, NavItem, NavLink, FormGroup, Input, Label
 } from 'reactstrap';
 import { useRouteLoaderData } from "react-router-dom"
+import PartStyle, { VERSIONS, MODES } from '../../../components/PartStyle'
 
 export default function IndividualWrenchPage() {
 
-  const wrench = useRouteLoaderData("wrenchIndex")
-  const [tab, setTab] = useState("original")
+    const wrench = useRouteLoaderData("wrenchIndex")
+    const [tab, setTab] = useState("original")
+    const [viewMode, setViewMode] = useState(MODES.PLAIN)
+    
+    function handleParts(part, i) {
+        return part.value.split(' ').map((word, j) => <PartStyle key={`${i}${j}`} part={part} viewMode={viewMode ? MODES.REVISION_EXPLAINATION : MODES.PLAIN} tab={tab}>{j === 0 ? `${word}` : ` ${word}`}</PartStyle>)
+    }
 
-  return (
-    <div>
-      {wrench.revised ?
-        <Nav className="ps-5 mx-1" tabs>
-          <NavItem>
-            <NavLink className={"nav-link" + (tab === "original" ? " active" : "")} aria-current="page" href="#"
-              onClick={() => { setTab("original") }}>Original</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink className={"nav-link" + (tab === "revised" ? " active" : "")} href="#"
-              onClick={() => { setTab("revised") }}>Revised</NavLink>
-          </NavItem>
-        </Nav> : null
-      }
-      <Card className={"mx-1" + (wrench.revised ? " border-top-0 rounded-top-0" : "")}>
-        <CardBody>
-          <h1 className='text-light'>{wrench[tab].name}</h1>
+    if (wrench === null) {
+        return <></>
+    }
 
-          <p>{wrench[tab].body}</p>
-          <br />
+    return (
+        <div>
+            <Nav className="ps-5 mx-1" tabs>
+                {
+                    wrench.versions.map(version =>
+                        <NavItem key={version}>
+                            <NavLink className={"nav-link" + (tab === version ? " active" : "")} aria-current="page" href="#"
+                                onClick={() => { setTab(version) }}>{VERSIONS[version]}</NavLink>
+                        </NavItem>)
+                }
+            </Nav>
+            <Card className={"mx-1 border-top-0 rounded-top-0"}>
+                <CardBody>
+                    {
+                        tab !== "original" ?
+                            <FormGroup switch>
+                                <Input type="switch" role="switch" checked={viewMode} onChange={(e) => setViewMode(e.target.checked ? MODES.REVISION_EXPLAINATION : MODES.PLAIN)} />
+                                <Label check>Show Difference</Label>
+                            </FormGroup>
+                            : <></>
+                    }
 
+                    <h1 className='text-light'>{wrench.name}</h1>
 
-          {wrench[tab].revisionNotes ? (
-            <Card className="bg-light border-warning border-5">
-              <CardBody>
-                <p className="text-dark">{wrench[tab].revisionNotes}</p>
-              </CardBody>
+                    <p>{wrench.body.map(handleParts)}</p>
+                    <br />
+                </CardBody>
             </Card>
-          ) : null}
-
-        </CardBody>
-      </Card>
-    </div>
-  );
+        </div>
+    );
 }
 

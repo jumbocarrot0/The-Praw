@@ -1,1257 +1,2997 @@
 {
     "technologies": {
         "0": {
-            "original": {
-                "name": "Coldsleep Ship",
-                "refresh": false,
-                "short": "Gain Colony.",
-                "body": "Once complete, you may discard this tech at the start of any encounter to gain a new colony on any planet in any other player's system where you don't already have one. You may place up to four ships on that colony, moving them from your other colonies or this tech card.",
-                "cost": "9",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
+            "name": "Coldsleep Ship",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "9",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Gain Colony."
+                }
+            ],
+            "body": [
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 4,
+                    "value": "Once complete, "
                 },
-                "expansion": "Base Set"
+                {
+                    "style": {
+                        "revised": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 4,
+                    "value": "y"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 4,
+                    "value": "Y"
+                },
+                {
+                    "value": "ou may discard this tech at the start of any encounter to gain a new colony on any planet in any other player's system"
+                },
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "value": " where you don't already have one",
+                    "revisionID": 3
+                },
+                {
+                    "value": ". You may place up to four ships on that colony"
+                },
+                {
+                    "value": ", moving them",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 5
+                },
+                {
+                    "value": " from your other colonies"
+                },
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": " or this tech card"
+                },
+                {
+                    "value": ". "
+                },
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 6,
+                    "value": "Your ships coexsist with any ships already on the planet. "
+                },
+                {
+                    "value": "If you have no colonies to return your researching ships to when you complete this tech, you may immediately use this tech to gain your new colony using all of those ships.",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Coldsleep Ship",
-                "refresh": false,
-                "short": "Gain Colony.",
-                "body": "Once completed, you may discard this tech at the start of any encounter to gain a new colony on any planet in any other player's system where you don't already have one. You may place up to four ships on that colony from your other colonies or this tech card. If you have no colonies to return your researching ships to when you complete this tech, you may immediately use this tech to gain your new colony using all of those ships.",
-                "cost": "9",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to fix the ship leak. The original text is trying to let the player use his researching ships \"from this tech card,\" but it is impossible for there to be any ships on this card when it is used. The rulebook makes it clear that when a tech is completed, its researching ships must be returned to other colonies before using the tech. In most cases this is not a problem, though: since the card allows moving ships from any of the player's colonies, he can in fact use his (former) research ships anyway from the colonies he sent them to instead of \"from this tech card.\" Thus, this part of the tech's text (say that three times fast) is completely unnecessary \u00e2\u20ac\u201d except in the rare situation where a player has no colonies at all for his ships to land on, or when Engineer is using his power to research this tech. Were it not for these rare situations, we could simply delete the incorrect phrase, \"or this tech card.\" Instead, to prevent the researching ships from all going to the warp in the first rare case, a new sentence is required to make the card work as intended. This leaves us one remaining question: \"Since Coldsleep Ship requires 9 ships to research and allows 4 of them to go onto the new colony, what happens to the other 5 if the player has no other colonies?\" To answer that question, the revision presented here allows all nine ships to land on the new colony when the player has no other option."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "1": {
-            "original": {
-                "name": "Collapsium Hulls",
-                "refresh": false,
-                "short": "Save Ship.",
-                "body": "Once completed, this tech stays in play. While it is in play, when you lose an encounter as the defense by 5 or less, one of your ships may remain on the planet instead of going to the warp. Your ship coexists with any ships that establish a colony on the planet during the encounter.",
-                "cost": "4",
-                "type": "Tech",
-                "timing": {
-                    "player": "Defense Only",
-                    "phases": {
-                        "resolution": true
-                    }
+            "name": "Collapsium Hulls",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "4",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Save Ship."
+                }
+            ],
+            "body": [
+                {
+                    "value": "Once completed, this tech stays in play. While it is in play, ",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1
                 },
-                "expansion": "Base Set"
+                {
+                    "value": "w",
+                    "style": {
+                        "revised": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": "W",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": "hen you lose an encounter as the defense by 5 or less, one of your ships may remain on the planet instead of going to the warp."
+                },
+                {
+                    "value": " Your ship coexists with any ships that establish a colony on the planet during the encounter.",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Defense Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Collapsium Hulls",
-                "refresh": false,
-                "short": "Save Ship.",
-                "body": "When you lose an encounter as the defense by 5 or less, one of your ships may remain on the planet instead of going to the warp.",
-                "cost": "4",
-                "type": "Tech",
-                "timing": {
-                    "player": "Defense Only",
-                    "phases": {
-                        "resolution": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to delete unnecessary coexist language.\n\n\nRevisions from The Praw\n\nEdited for consistency with Odyssey techs."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "2": {
-            "original": {
-                "name": "Cosmic Field Generator",
-                "refresh": false,
-                "short": "Stop Alien Power.",
-                "body": "Once completed, you may discard this tech to cancel one use of any alien's power, including your own. That power may not be used again during the current encounter. The use of this tech is considered to be a \"Cosmic Zap,\" but this is not an artifact card.",
-                "cost": "2",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
+            "name": "Cosmic Field Generator",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "2",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Stop Alien Power."
+                }
+            ],
+            "body": [
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Once completed, "
                 },
-                "expansion": "Base Set"
+                {
+                    "style": {
+                        "revised": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "y"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Y"
+                },
+                {
+                    "value": "ou may discard this tech to cancel one "
+                },
+                {
+                    "style": {
+                        "all": [
+                            "bold",
+                            "italic"
+                        ]
+                    },
+                    "value": "use"
+                },
+                {
+                    "value": " of any alien's power, including your own. That power may not be used again during the current encounter. The use of this tech is considered to be a \"Cosmic Zap,\" but this is not an artifact card."
+                }
+            ],
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "3": {
-            "original": {
-                "name": "Delta Scanners",
-                "refresh": false,
-                "short": "Draw from Discard.",
-                "body": "Once complete, you may discard this tech at the start of any encounter to take any one card from the discard pile and add it to your hand.",
-                "cost": "2",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
+            "name": "Delta Scanners",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "2",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Draw from Discard."
+                }
+            ],
+            "body": [
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Once complete, "
                 },
-                "expansion": "Base Set"
+                {
+                    "style": {
+                        "revised": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "y"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Y"
+                },
+                {
+                    "value": "ou may discard this tech at the start of any encounter to take any one card from the discard pile and add it to your hand."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Delta Scanners",
-                "refresh": false,
-                "short": "Draw from Discard.",
-                "body": "Once completed, you may discard this tech at the start of any encounter to take any one card from the discard pile and add it to your hand.",
-                "cost": "2",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "4": {
-            "original": {
-                "name": "Energy Cloak",
-                "refresh": false,
-                "short": "Prevent Allies.",
-                "body": "Once completed, you may discard this tech when you are the offense after aiming the hyperspace gate. The defense may not invite any players to ally with him or her during this encounter.",
-                "cost": "4",
-                "type": "Tech",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "launch": true
-                    }
+            "name": "Energy Cloak",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "4",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Prevent Allies."
+                }
+            ],
+            "body": [
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Once completed, "
                 },
-                "expansion": "Base Set"
+                {
+                    "style": {
+                        "revised": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "y"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Y"
+                },
+                {
+                    "value": "ou may discard this tech "
+                },
+                {
+                    "value": "when you are",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "as",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " the offense after aiming the hyperspace gate. The defense may not invite any players to ally with him or her during this encounter."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "launch": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Energy Cloak",
-                "refresh": false,
-                "short": "Prevent Allies.",
-                "body": "Once completed, you may discard this tech as the offense after aiming the hyperspace gate. The defense may not invite any players to ally with him or her during this encounter.",
-                "cost": "4",
-                "type": "Tech",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "launch": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "5": {
-            "original": {
-                "name": "Enigma Device",
-                "refresh": false,
-                "short": "Reset All Hands to 8 Cards.",
-                "body": "Once completed, you may discard this tech at the start of any encounter. Each player, starting with you and continuing clockwise, either draws cards from the deck or discards cards at random as needed to bring his or her hand to exactly eight cards. You (and only you) may discard as many of your cards as you wish beforehand.",
-                "cost": "4",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
+            "name": "Enigma Device",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "4",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Reset All Hands to 8 Cards."
+                }
+            ],
+            "body": [
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Once completed, "
                 },
-                "expansion": "Base Set"
+                {
+                    "style": {
+                        "revised": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "y"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Y"
+                },
+                {
+                    "value": "ou may discard this tech at the start of any encounter. Each player, starting with you and continuing clockwise, either draws cards from the deck or discards cards at random as needed to bring his or her hand to exactly eight cards. You (and only you) may discard as many of your cards as you wish beforehand."
+                }
+            ],
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             }
         },
         "6": {
-            "original": {
-                "name": "Genesis Bomb",
-                "refresh": false,
-                "short": "Create Planet.",
-                "body": "Do not reveal this tech until used. You may reveal and discard this tech at the start of any player's encounter to take the Genesis planet and place it in your home system. You may immediately gain a colony on it using any or all of the ships used to research this tech.",
-                "cost": "4",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
+            "name": "Genesis Bomb",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "4",
+            "expansion": "Base Set",
+            "thumbnail": "Genesis_Planet_Token.png",
+            "short": [
+                {
+                    "value": "Create Planet."
+                }
+            ],
+            "body": [
+                {
+                    "value": "Do not reveal this tech until used. You may reveal and discard this tech at the start of any "
                 },
-                "expansion": "Base Set",
-                "thumbnail": "Genesis_Planet_Token.png"
+                {
+                    "value": "player's ",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "encounter to take the Genesis planet and place it in your home system. You may immediately gain a colony on it using any or all of the ships used to research this tech."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Genesis Bomb",
-                "refresh": false,
-                "short": "Create Planet.",
-                "body": "Do not reveal this tech until used. You may reveal and discard this tech at the start of any encounter to take the Genesis planet and place it in your home system. You may immediately gain a colony on it using any or all of the ships used to research this tech.",
-                "cost": "4",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
-                },
-                "expansion": "Base Set",
-                "thumbnail": "Genesis_Planet_Token.png",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "7": {
-            "original": {
-                "name": "Gluon Mines",
-                "refresh": false,
-                "short": "Ambush Attackers.",
-                "body": "Do not reveal this tech until used. You may reveal and discard this tech as the defense after encounter cards are selected but before they are revealed to send one attacking ship to the warp for each ship researching this tech. If there are no attacking ships left afterwards, you win this encounter, otherwise, it continues normally.",
-                "cost": "X",
-                "type": "Tech",
-                "timing": {
-                    "player": "Defense Only",
-                    "phases": {
-                        "planning": true
-                    }
+            "name": "Gluon Mines",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "X",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Ambush Attackers."
+                }
+            ],
+            "body": [
+                {
+                    "value": "Do not reveal this tech until used. You may reveal and discard this tech as the defense after encounter cards are selected but before they are revealed to send one "
                 },
-                "expansion": "Base Set"
+                {
+                    "value": "attacking",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "opposing",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " ship "
+                },
+                {
+                    "value": "of your choice ",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 3
+                },
+                {
+                    "value": "to the warp for each ship researching this tech. If there are no "
+                },
+                {
+                    "value": "attacking",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "opposing",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " ships left afterwards, you win this encounter"
+                },
+                {
+                    "value": ", o",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 4
+                },
+                {
+                    "value": ". O",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 4
+                },
+                {
+                    "value": "therwise, it continues normally."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Defense Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "planning": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Gluon Mines",
-                "refresh": false,
-                "short": "Ambush Attackers.",
-                "body": "Do not reveal this tech until used. You may reveal and discard this tech as the defense after encounter cards are selected but before they are revealed to send one opposing ship of your choice to the warp for each ship researching this tech. If there are no opposing ships left afterwards, you win this encounter. Otherwise, it continues normally.",
-                "cost": "X",
-                "type": "Tech",
-                "timing": {
-                    "player": "Defense Only",
-                    "phases": {
-                        "planning": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to clarify who chooses the ships and to fix the attack bug."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "8": {
-            "original": {
-                "name": "Infinity Drive",
-                "refresh": false,
-                "short": "Extra Encounter.",
-                "body": "Once completed, you may discard this tech at the end of any encounter (including your own) to immediately have an encounter. Afterwards, play resumes from where it left off.",
-                "cost": "6",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "resolution": true
-                    }
+            "name": "Infinity Drive",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "6",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Extra Encounter."
+                }
+            ],
+            "body": [
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Once completed, "
                 },
-                "expansion": "Base Set"
+                {
+                    "style": {
+                        "revised": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "y"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Y"
+                },
+                {
+                    "value": "ou may discard this tech at the end of any encounter (including your own) to immediately have an encounter "
+                },
+                {
+                    "value": "(if you have an encounter card in your hand)",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": ". Afterwards, play resumes from where it left off."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Infinity Drive",
-                "refresh": false,
-                "short": "Extra Encounter.",
-                "body": "Once completed, you may discard this tech at the end of any encounter (including your own) to immediately have an encounter (if you have an encounter card in your hand). Afterwards, play resumes from where it left off.",
-                "cost": "6",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "resolution": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": "Edited to add reminder text that you cannot begin an encounter without an encounter card in your hand."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "9": {
-            "original": {
-                "name": "Lunar Cannon",
-                "refresh": false,
-                "short": "Defend Two Planets.",
-                "body": "When you complete this tech, take and place the lunar cannon token between two of your home planets. While this tech is in play, you control the lunar cannon. When you are a main player or an ally, you may add 10 to your side's total in any encounters targeting a world next to the lunar cannon. Each time a wild destiny card is drawn, you may move the lunar cannon token to a new position in any system.",
-                "cost": "5",
-                "type": "Tech",
-                "timing": {
-                    "player": "Main Player or Ally Only",
-                    "phases": {
-                        "reveal": true
-                    }
+            "name": "Lunar Cannon",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "5",
+            "expansion": "Base Set",
+            "thumbnail": "Lunar_Cannon_Token.png",
+            "short": [
+                {
+                    "value": "Defend Two Planets."
+                }
+            ],
+            "body": [
+                {
+                    "value": "When you complete this tech, take and place the lunar cannon token between two of your home planets. While this tech is in play, you control the lunar cannon. "
                 },
-                "expansion": "Base Set",
-                "thumbnail": "Lunar_Cannon_Token.png"
+                {
+                    "value": "When you are",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "As",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " a main player or "
+                },
+                {
+                    "value": "an",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " ally, you may add 10 to your side's total in any encounters targeting a world next to the lunar cannon. Each time a wild destiny card is drawn, you may move the lunar cannon token to a new position in any system."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player or Ally Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Lunar Cannon",
-                "refresh": false,
-                "short": "Defend Two Planets.",
-                "body": "When you complete this tech, take and place the lunar cannon token between two of your home planets. While this tech is in play, you control the lunar cannon. As a main player or ally, you may add 10 to your side's total in any encounters targeting a world next to the lunar cannon. Each time a wild destiny card is drawn, you may move the lunar cannon token to a new position in any system.",
-                "cost": "5",
-                "type": "Tech",
-                "timing": {
-                    "player": "Main Player or Ally Only",
-                    "phases": {
-                        "reveal": true
-                    }
-                },
-                "expansion": "Base Set",
-                "thumbnail": "Lunar_Cannon_Token.png",
-                "revisionNotes": ""
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "10": {
-            "original": {
-                "name": "Omega Missile",
-                "refresh": false,
-                "short": "Destroy Planet.",
-                "body": "Once completed, you may discard this tech at the start of any encounter to choose a planet in any system. Remove that planet from the game and send all ships on it to the warp.",
-                "cost": "8",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
+            "name": "Omega Missile",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "8",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Destroy Planet."
+                }
+            ],
+            "body": [
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Once completed, "
                 },
-                "expansion": "Base Set"
+                {
+                    "style": {
+                        "revised": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "y"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Y"
+                },
+                {
+                    "value": "ou may discard this tech at the start of any encounter to choose a planet in any system. Remove that planet from the game and send all ships on it to the warp."
+                }
+            ],
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             }
         },
         "11": {
-            "original": {
-                "name": "Plasma Thrusters",
-                "refresh": false,
-                "short": "Add One Ship.",
-                "body": "Once completed, this tech stays in play. While it is in play, you may launch one extra ship into each encounter as the offense or an ally (for a total of five, normally). As the defense, you may move one ship to your planet being attacked from any of your other colonies during the launch phase.",
-                "cost": "6",
-                "type": "Tech",
-                "timing": {
-                    "player": "Main Player or Ally Only",
-                    "phases": {
-                        "launch": true
-                    }
+            "name": "Plasma Thrusters",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "6",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Add One Ship."
+                }
+            ],
+            "body": [
+                {
+                    "value": "Once completed, this tech stays in play. While it is in play, ",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1
                 },
-                "expansion": "Base Set"
+                {
+                    "value": "As the offense or an ally, ",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": "you may "
+                },
+                {
+                    "value": "launch",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "send",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " one extra ship into each encounter "
+                },
+                {
+                    "value": "as the offense or an ally ",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": "(for a total of five, normally). As the defense, "
+                },
+                {
+                    "value": "during the launch phase, ",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 4
+                },
+                {
+                    "value": "you may move one ship to "
+                },
+                {
+                    "value": "your",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "the targeted",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " planet "
+                },
+                {
+                    "value": "being attacked ",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "from any of your other colonies"
+                },
+                {
+                    "value": " during the launch phase",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 4
+                },
+                {
+                    "value": "."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player or Ally Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "launch": true
+                        }
+                    },
+                    {
+                        "style": {
+                            "original": ["none"],
+                            "revised": ["added"]
+                        },
+                        "value": {
+                            "alliance": true
+                        },
+                        "revisionID": 3
+                    }
+                ]
             },
-            "revised": {
-                "name": "Plasma Thrusters",
-                "refresh": false,
-                "short": "Add One Ship.",
-                "body": "As the offense or an ally, you may send one extra ship into each encounter (for a total of five, normally). As the defense, during the launch phase, you may move one ship to the targeted planet from any of your other colonies.",
-                "cost": "6",
-                "type": "Tech",
-                "timing": {
-                    "player": "Main Player or Ally Only",
-                    "phases": {
-                        "launch": true,
-                        "alliance": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to fix the launch bug and the attack bug, to avoid implying that you can use this tech on defense only if you are defending one of \"your\" planets, and to add missing timing indicator.\n\n\nRevisions from The Praw\n\nEdited for consistency with Odyssey techs."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "12": {
-            "original": {
-                "name": "Precursor Seed",
-                "refresh": false,
-                "short": "Gain Extra Power.",
-                "body": "When you complete this tech, draw a random alien power and place it faceup in front of you. If it is an alien with Game Setup text or an alien not allowed in this game, discard it and draw again. While this tech is in play, you may use the extra alien power you have drawn in addition to your own.",
-                "cost": "9",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
+            "name": "Precursor Seed",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "9",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Gain Extra Power."
+                }
+            ],
+            "body": [
+                {
+                    "value": "When you complete this tech, draw "
                 },
-                "expansion": "Base Set"
+                {
+                    "value": "a random",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "an unused",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " alien power "
+                },
+                {
+                    "value": "and place it faceup in front of you",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "at random",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": ". If "
+                },
+                {
+                    "value": "it is an",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "the",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " alien "
+                },
+                {
+                    "value": "with",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "has",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " Game Setup text or "
+                },
+                {
+                    "value": "an alien",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "is",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " not allowed in "
+                },
+                {
+                    "value": "this",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "the current",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " game, discard it and draw again. While this tech is in play, you "
+                },
+                {
+                    "value": "may use",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 3
+                },
+                {
+                    "value": "have the use of",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 3
+                },
+                {
+                    "value": " the extra alien power you have drawn in addition to your own."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Precursor Seed",
-                "refresh": false,
-                "short": "Gain Extra Power.",
-                "body": "When you complete this tech, draw an unused alien power at random. If the alien has Game Setup text or is not allowed in the current game, discard it and draw again. While this tech is in play, you use the extra alien power you have drawn in addition to your own.",
-                "cost": "9",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to eliminate the implication that a mandatory power can be treated as optional."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "13": {
-            "original": {
-                "name": "The Prometheus",
-                "refresh": false,
-                "short": "Create New Ship.",
-                "body": "When you complete this tech, take the Prometheus token and place it on one of your colonies. While this tech is in play, you control the Prometheus, which is treated in all ways as one of your ships except that it adds an extra +3 to your side's total when it participates in an encounter.",
-                "cost": "7",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
+            "name": "The Prometheus",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "7",
+            "expansion": "Base Set",
+            "thumbnail": "Prometheus_Token.png",
+            "short": [
+                {
+                    "value": "Create New Ship."
+                }
+            ],
+            "body": [
+                {
+                    "value": "When you complete this tech, take the Prometheus token and place it on one of your colonies. While this tech is in play, you control the Prometheus, which is treated in all ways as one of your ships except that it adds an extra +3 to your side's total when it "
                 },
-                "expansion": "Base Set",
-                "thumbnail": "Prometheus_Token.png"
+                {
+                    "value": "participates",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "is involved",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " in an encounter."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "The Prometheus",
-                "refresh": false,
-                "short": "Create New Ship.",
-                "body": "When you complete this tech, take the Prometheus token and place it on one of your colonies. While this tech is in play, you control the Prometheus, which is treated in all ways as one of your ships except that it adds an extra +3 to your side's total when it is involved in an encounter.",
-                "cost": "7",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Base Set",
-                "thumbnail": "Prometheus_Token.png",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for consistency."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "14": {
-            "original": {
-                "name": "The Qax",
-                "refresh": false,
-                "short": "Force Ally.",
-                "body": "Once complete, you may give this tech to another player when you invite them to ally with you. They must ally with you and send 4 ships, although they are not required to abandon any colonies in order to do so. That player may later give this tech to another player (including you) and so on.",
-                "cost": "4",
-                "type": "Tech",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "alliance": true
-                    }
+            "name": "The Qax",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "4",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Force Ally."
+                }
+            ],
+            "body": [
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Once complete, "
                 },
-                "expansion": "Base Set"
+                {
+                    "style": {
+                        "revised": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "y"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Y"
+                },
+                {
+                    "value": "ou may give this tech to another player when you invite them to ally with you. "
+                },
+                {
+                    "value": "They",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "That player",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " must ally with you and send 4 ships "
+                },
+                {
+                    "value": "(or as many as possible if prevented by gate limits)",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 3
+                },
+                {
+                    "value": ", although they are not required to abandon any colonies in order to do so. That player may later give this tech to another player (including you) and so on."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "alliance": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "The Qax",
-                "refresh": false,
-                "short": "Force Ally.",
-                "body": "Once completed, you may give this tech to another player when you invite them to ally with you. That player must ally with you and send 4 ships (or as many as possible up to 4), although they are not required to abandon any colonies in order to do so. That player may later give this tech to another player (including you) and so on.",
-                "cost": "4",
-                "type": "Tech",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "alliance": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for grammar and to implement the FAQ ruling on Macron."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "15": {
-            "original": {
-                "name": "Quark Battery",
-                "refresh": false,
-                "short": "Hide Encounter Card.",
-                "body": "When you complete this card, place an encounter card from your hand facedown under it. This card is not considered part of your hand and may not be looked at or taken by other players. Later, after cards are revealed in an encounter in which you are a main player, you may discard this tech to replace your revealed encounter card with the one under this card.",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "reveal": true
-                    }
+            "name": "Quark Battery",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "3",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Hide Encounter Card."
+                }
+            ],
+            "body": [
+                {
+                    "value": "When you complete this "
                 },
-                "expansion": "Base Set"
+                {
+                    "value": "card",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": "tech",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": ", place an encounter card from your hand facedown under it. This "
+                },
+                {
+                    "value": "encounter ",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 3
+                },
+                {
+                    "value": "card is not "
+                },
+                {
+                    "value": "considered ",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "part of your hand and may not be looked at or taken by other players. "
+                },
+                {
+                    "value": "\n\n",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": "Later",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": "As a main player",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": ", after "
+                },
+                {
+                    "value": "encounter ",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 3
+                },
+                {
+                    "value": "cards are revealed"
+                },
+                {
+                    "value": " in an encounter in which you are a main player",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": ", you may discard this tech to "
+                },
+                {
+                    "value": "replace",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 4
+                },
+                {
+                    "value": "discard",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 4
+                },
+                {
+                    "value": " your revealed encounter card "
+                },
+                {
+                    "value": "and replace it ",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 4
+                },
+                {
+                    "value": "with the one under this "
+                },
+                {
+                    "value": "card",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": "tech",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": "."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Quark Battery",
-                "refresh": false,
-                "short": "Hide Encounter Card.",
-                "body": "When you complete this tech, place an encounter card from your hand facedown under it. This encounter card is not part of your hand and may not be looked at or taken by other players. As a main player, after encounter cards are revealed, you may discard this tech to discard your revealed encounter card and replace it with the one under this tech.",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "reveal": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited to define what happens to the replaced card.\n\n\nRevisions from The Praw\n\nEdited for clarity and wording consistency."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "16": {
-            "original": {
-                "name": "Tech Scrambler",
-                "refresh": false,
-                "short": "Cancel Tech.",
-                "body": "Do not reveal this tech until used. You may reveal and discard this tech at any time to cancel the effect of any one other tech card. The canceled tech must have a research cost equal or less than the number of ships researching this tech. The canceled tech is discarded from play.",
-                "cost": "X",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
+            "name": "Tech Scrambler",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "X",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Cancel Tech."
+                }
+            ],
+            "body": [
+                {
+                    "value": "Do not reveal this tech until used. You may reveal and discard this tech at any time to cancel the effect of any one other tech card. The canceled tech must have a research cost equal "
                 },
-                "expansion": "Base Set"
+                {
+                    "value": "to",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " or less than the number of ships researching this tech. The canceled tech is discarded"
+                },
+                {
+                    "value": " from play",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 3
+                },
+                {
+                    "value": "."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Tech Scrambler",
-                "refresh": false,
-                "short": "Cancel Tech.",
-                "body": "Do not reveal this tech until used. You may reveal and discard this tech at any time to cancel the effect of any one other tech card. The canceled tech must have a research cost equal to or less than the number of ships researching this tech. The canceled tech card is discarded.",
-                "cost": "X",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for grammar and to avoid sounding like the affected tech is removed from the game."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "17": {
-            "original": {
-                "name": "Vacuum Turbines",
-                "refresh": false,
-                "short": "Draw Four Cards.",
-                "body": "Once completed, you may discard this tech at the start of any encounter to draw four cards from the deck. Look at them and add any of them you wish to your hand, discarding the rest.",
-                "cost": "2",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
+            "name": "Vacuum Turbines",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "2",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Draw Four Cards."
+                }
+            ],
+            "body": [
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Once completed, "
                 },
-                "expansion": "Base Set"
+                {
+                    "style": {
+                        "revised": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "y"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Y"
+                },
+                {
+                    "value": "ou may discard this tech at the start of any encounter to draw four cards from the deck. Look at them and add any of them you wish to your hand, discarding the rest."
+                }
+            ],
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             }
         },
         "18": {
-            "original": {
-                "name": "Warpspace Key",
-                "refresh": false,
-                "short": "Free Ships from Warp.",
-                "body": "Once completed, you may discard this tech during the regroup phase of one of your encounters to free all of your ships from the warp. Freed ships return to any of your colonies.",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "regroup": true
-                    }
+            "name": "Warpspace Key",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "3",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Free Ships from Warp."
+                }
+            ],
+            "body": [
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Once completed, "
                 },
-                "expansion": "Base Set"
+                {
+                    "style": {
+                        "revised": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "y"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ]
+                    },
+                    "revisionID": 1,
+                    "value": "Y"
+                },
+                {
+                    "value": "ou may discard this tech during "
+                },
+                {
+                    "value": "the",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "your",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " regroup phase "
+                },
+                {
+                    "value": "of one of your encounters",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " to "
+                },
+                {
+                    "value": "free",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 3
+                },
+                {
+                    "value": "retrieve",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 3
+                },
+                {
+                    "value": " all of your ships from the warp. Freed ships return to any of your colonies."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Offense Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Warpspace Key",
-                "refresh": false,
-                "short": "Free Ships from Warp.",
-                "body": "Once completed, you may discard this tech during your regroup phase to retrieve all of your ships from the warp. Freed ships return to any of your colonies.",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "regroup": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": ""
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "19": {
-            "original": {
-                "name": "Xenon Lasers",
-                "refresh": false,
-                "short": "Add or Subtract 1 from Total.",
-                "body": "Once completed, this tech stays in play. While it is in play, you may either add 1 to, or subtract 1 from, your side's total after encounter cards are revealed when you are a main player or ally.",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "Main Player or Ally Only",
-                    "phases": {
-                        "reveal": true
-                    }
+            "name": "Xenon Lasers",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "3",
+            "expansion": "Base Set",
+            "short": [
+                {
+                    "value": "Add or Subtract 1 from Total."
+                }
+            ],
+            "body": [
+                {
+                    "value": "Once completed, this tech stays in play. While it is in play, ",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1
                 },
-                "expansion": "Base Set"
+                {
+                    "value": "As a main player or ally, ",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": "after encounter cards are revealed, ",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": "you may either add 1 to, or subtract 1 from, your side's total"
+                },
+                {
+                    "value": " after encounter cards are revealed when you are a main player or ally",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 1
+                },
+                {
+                    "value": "."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player or Ally Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Xenon Lasers",
-                "refresh": false,
-                "short": "Add or Subtract 1 from Total.",
-                "body": "As a main player or ally, after encounter cards are revealed, you may either add 1 to, or subtract 1 from, your side's total.",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "Main Player or Ally Only",
-                    "phases": {
-                        "reveal": true
-                    }
-                },
-                "expansion": "Base Set",
-                "revisionNotes": "Revisions from the Cosmodex\n\nEdited for wording consistency.\n\n\nRevisions from The Praw\n\nEdited for clarity and further consistency with Odyssey techs."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "20": {
-            "original": {
-                "name": "Destiny Holo-Flux",
-                "refresh": true,
-                "short": "Redraw Destiny.",
-                "body": "After destiny is drawn, you may reset this tech to discard that destiny card. If you do, the offense draws another destiny card.",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "destiny": true
+            "name": "Destiny Holo-Flux",
+            "refresh": true,
+            "type": "Tech",
+            "cost": "3",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Redraw Destiny."
+                }
+            ],
+            "body": [
+                {
+                    "value": "After destiny is drawn, you may reset this tech to discard that destiny card. If you do, the offense draws another destiny card."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "destiny": true
+                        }
+                    }
+                ]
             }
         },
         "21": {
-            "original": {
-                "name": "Freewheeling Projector",
-                "refresh": true,
-                "short": "Play Multiple Flares.",
-                "body": "You can play more than one flare card per encounter. (Each flare can be played only once per encounter.)",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Freewheeling Projector",
+            "refresh": true,
+            "type": "Tech",
+            "cost": "3",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Play Multiple Flares."
+                }
+            ],
+            "body": [
+                {
+                    "value": "You can play more than one flare card per encounter. (Each flare can be played only once per encounter.)"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "22": {
-            "original": {
-                "name": "Lucky Charm",
-                "refresh": true,
-                "short": "Free One Ship.",
-                "body": "During the regroup phase, you may discard this tech to free one of your ships from the warp.",
-                "cost": "0",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
+            "name": "Lucky Charm",
+            "refresh": true,
+            "type": "Tech",
+            "cost": "0",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Free One Ship."
+                }
+            ],
+            "body": [
+                {
+                    "value": "During the regroup phase, you may discard this tech to free one of your ships from the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             }
         },
         "23": {
-            "original": {
-                "name": "Power Radiant",
-                "refresh": true,
-                "short": "Zap Powers with Falres.",
-                "body": "You may discard an alien's flare to cancel one use of that alien's power. That power cannot be used again during this encounter. (This is not treated as a Cosmic Zap.)",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Power Radiant",
+            "refresh": true,
+            "type": "Tech",
+            "cost": "3",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Zap Powers with Falres."
+                }
+            ],
+            "body": [
+                {
+                    "value": "You may discard an alien's flare to cancel one use of that alien's power. That power cannot be used again during this encounter. (This is not treated as a Cosmic Zap.)"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "24": {
-            "original": {
-                "name": "Proximity Mining",
-                "refresh": true,
-                "short": "Remove One Ship.",
-                "body": "At any time, you may send one ship belonging to another player from a colony to the warp. If you do, reset this tech and give it to that player.",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Proximity Mining",
+            "refresh": true,
+            "type": "Tech",
+            "cost": "3",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Remove One Ship."
+                }
+            ],
+            "body": [
+                {
+                    "value": "At any time, you may send one ship belonging to another player from a colony to the warp. If you do, reset this tech and give it to that player."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "25": {
-            "original": {
-                "name": "Station Dock",
-                "refresh": false,
-                "short": "Create a Space Station.",
-                "body": "During the regroup phase, you may discard this tech to draw three space station cards (even if the Space Station variant [🕮13]is not being used). Choose one to put into play in your home system and shuffle the other back into the space station deck.",
-                "cost": "5",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
+            "name": "Station Dock",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "5",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Create a Space Station."
+                }
+            ],
+            "body": [
+                {
+                    "value": "During the regroup phase, you may discard this tech to draw three space station cards (even if the Space Station variant [🕮13]"
                 },
-                "expansion": "Cosmic Odyssey"
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "value": " ",
+                    "revisionID": 2
+                },
+                {
+                    "value": "is not being used). Choose one to put into play in your home system and shuffle the other back into the space station deck."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Station Dock",
-                "refresh": false,
-                "short": "Create a Space Station.",
-                "body": "During the regroup phase, you may discard this tech to draw three space station cards (even if the Space Station variant [🕮13] is not being used). Choose one to put into play in your home system and shuffle the other back into the space station deck.",
-                "cost": "5",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw\n\nEdited to add a missing space."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "26": {
-            "original": {
-                "name": "Warp Breaker",
-                "refresh": false,
-                "short": "Free your Ships.",
-                "body": "At any time, you may reset this tech to free all of your ships from the warp.",
-                "cost": "3",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Warp Breaker",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "3",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Free your Ships."
+                }
+            ],
+            "body": [
+                {
+                    "value": "At any time, you may reset this tech to free all of your ships from the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "27": {
-            "original": {
-                "name": "Cosmic Catapult",
-                "refresh": false,
-                "short": "Bombard.",
-                "body": "You cannot complete this tech.\n\nDuring the reveal phase, if a hazard warning is active, you may reveal this tech. For each ship on it, add 3 to one side's total. Then, discard this tech and send all ships on it to the warp.",
-                "cost": "X",
-                "type": "Haz-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "reveal": true
+            "name": "Cosmic Catapult",
+            "refresh": false,
+            "type": "Haz-Tech",
+            "cost": "X",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Bombard."
+                }
+            ],
+            "body": [
+                {
+                    "value": "You cannot complete this tech.\n\nDuring the reveal phase, if a hazard warning is active, you may reveal this tech. For each ship on it, add 3 to one side's total. Then, discard this tech and send all ships on it to the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             }
         },
         "28": {
-            "original": {
-                "name": "Nuclear Missiles",
-                "refresh": false,
-                "short": "Nuke Planet.",
-                "body": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to choose a planet. For each ship on this tech, send one ship to the warp from the chosen planet. Then, discard this tech and send all ships on it to the warp.",
-                "cost": "X",
-                "type": "Haz-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Nuclear Missiles",
+            "refresh": false,
+            "type": "Haz-Tech",
+            "cost": "X",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Nuke Planet."
+                }
+            ],
+            "body": [
+                {
+                    "value": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to choose a planet. For each ship on this tech, send one ship to the warp from the chosen planet. Then, discard this tech and send all ships on it to the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "29": {
-            "original": {
-                "name": "Sabotage",
-                "refresh": false,
-                "short": "Reset Tech.",
-                "body": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to choose one or more techs; a tech that has more ships on it than this tech cannot be chosen. All ships on the chosen techs return to their owner's colonies. Then, discard this tech, send all ships on it to the warp, and draw another tech.",
-                "cost": "X",
-                "type": "Haz-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Sabotage",
+            "refresh": false,
+            "type": "Haz-Tech",
+            "cost": "X",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Reset Tech."
+                }
+            ],
+            "body": [
+                {
+                    "value": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to choose one or more techs; a tech that has more ships on it than this tech cannot be chosen. All ships on the chosen techs return to their owner's colonies. Then, discard this tech, send all ships on it to the warp, and draw another tech."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "30": {
-            "original": {
-                "name": "Strange Attractor",
-                "refresh": false,
-                "short": "Find and Gain Flares.",
-                "body": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to reveal all flares in the discard pile an in each other player's hand. For each ship on this tech, take one revealed flare of your choice and add it to your hand. This, discard this tech and send all ships on it to the warp.",
-                "cost": "X",
-                "type": "Haz-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Strange Attractor",
+            "refresh": false,
+            "type": "Haz-Tech",
+            "cost": "X",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Find and Gain Flares."
+                }
+            ],
+            "body": [
+                {
+                    "value": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to reveal all flares in the discard pile an in each other player's hand. For each ship on this tech, take one revealed flare of your choice and add it to your hand. This, discard this tech and send all ships on it to the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "31": {
-            "original": {
-                "name": "Thorium Rod",
-                "refresh": false,
-                "short": "Force discard.",
-                "body": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to choose a player. For each ship on this tech, that player discards a card at random from their hand. Then, discard this tech and send all ships on it to the warp.",
-                "cost": "X",
-                "type": "Haz-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Thorium Rod",
+            "refresh": false,
+            "type": "Haz-Tech",
+            "cost": "X",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Force discard."
+                }
+            ],
+            "body": [
+                {
+                    "value": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to choose a player. For each ship on this tech, that player discards a card at random from their hand. Then, discard this tech and send all ships on it to the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "32": {
-            "original": {
-                "name": "Treasure Drones",
-                "refresh": false,
-                "short": "Recover Cards.",
-                "body": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to shuffle either the cosmic or the reward deck discard pile. For each ship on this tech, draw a card from that discard pile. Then, discard this tech and send all ships on it to the warp.",
-                "cost": "X",
-                "type": "Haz-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Treasure Drones",
+            "refresh": false,
+            "type": "Haz-Tech",
+            "cost": "X",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Recover Cards."
+                }
+            ],
+            "body": [
+                {
+                    "value": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to shuffle either the cosmic or the reward deck discard pile. For each ship on this tech, draw a card from that discard pile. Then, discard this tech and send all ships on it to the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "33": {
-            "original": {
-                "name": "Galactose Intolerance",
-                "refresh": false,
-                "short": "Inconvenience Other Players.",
-                "body": "Discard at any time. If you do, each other play must discard all non-encounter cards from their hand or lose eight ships to the warp.",
-                "cost": "\u226525",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Galactose Intolerance",
+            "refresh": false,
+            "type": "Mili-Tech",
+            "cost": "≥25",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Inconvenience Other Players."
+                }
+            ],
+            "body": [
+                {
+                    "value": "Discard at any time. If you do, each other play must discard all non-encounter cards from their hand or lose eight ships to the warp."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "34": {
-            "original": {
-                "name": "Gamma Converter",
-                "refresh": true,
-                "short": "Discard to Increase Total.",
-                "body": "As a main player or ally, after cards are revealed, you may discard any number of cards at random from your hand. For each card you discarded, add 3 to your total.",
-                "cost": "X=X",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "Main Player or Ally",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
+            "name": "Gamma Converter",
+            "refresh": true,
+            "type": "Mili-Tech",
+            "cost": "X=X",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Discard to Increase Total."
+                }
+            ],
+            "body": [
+                {
+                    "value": "As a main player or ally, after "
                 },
-                "expansion": "Cosmic Odyssey"
+                {
+                    "value": "encounter",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": " cards are revealed, you may discard any number of cards at random from your hand. For each card you discarded, add 3 to your total."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player or Ally"
+                    },
+                    {
+                        "value": " Only",
+                        "style": {
+                            "original": [
+                                "none"
+                            ],
+                            "revised": [
+                                "added"
+                            ]
+                        },
+                        "revisionID": 2
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Gamma Converter",
-                "refresh": true,
-                "short": "Discard to Increase Total.",
-                "body": "As a main player or ally, after encounter cards are revealed, you may discard any number of cards at random from your hand. For each card you discarded, add 3 to your total.",
-                "cost": "X=X",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "Main Player or Ally Only",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Edited for wording consistency."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "35": {
-            "original": {
-                "name": "Nu'x'xian Orb",
-                "refresh": true,
-                "short": "Protect against Wild Flares.",
-                "body": "When a player plays a wild flare, if you have a colony in that player's home system, you may send one of your ships from that colony to the warp to cancel the flare and return it to that player's hand. (Each flare can be played only once per encounter.)",
-                "cost": "X+1",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Nu'x'xian Orb",
+            "refresh": true,
+            "type": "Mili-Tech",
+            "cost": "X+1",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Protect against Wild Flares."
+                }
+            ],
+            "body": [
+                {
+                    "value": "When a player plays a wild flare, if you have a colony in that player's home system, you may send one of your ships from that colony to the warp to cancel the flare and return it to that player's hand. (Each flare can be played only once per encounter.)"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "36": {
-            "original": {
-                "name": "Plasma Coil",
-                "refresh": true,
-                "short": "Play +5 Reinforcement.",
-                "body": "After card are revealed, you may play this tech, treating it as a +5 reinforcement card. After that encounter is resolved, discard this tech to the tech discard pile.",
-                "cost": "X=X",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "Main Player or Ally",
-                    "phases": {
-                        "reveal": true
+            "name": "Plasma Coil",
+            "refresh": true,
+            "type": "Mili-Tech",
+            "cost": "X=X",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Play +5 Reinforcement."
+                }
+            ],
+            "body": [
+                {
+                    "value": "After card are revealed, you may play this tech, treating it as a +5 reinforcement card. After that encounter is resolved, discard this tech to the tech discard pile."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Main Player or Ally"
+                    },
+                    {
+                        "value": " Only",
+                        "style": {
+                            "original": [
+                                "none"
+                            ],
+                            "revised": [
+                                "added"
+                            ]
+                        },
+                        "revisionID": 2
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Plasma Coil",
-                "refresh": true,
-                "short": "Play +5 Reinforcement.",
-                "body": "After card are revealed, you may play this tech, treating it as a +5 reinforcement card. After that encounter is resolved, discard this tech to the tech discard pile.",
-                "cost": "X=X",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "Main Player or Ally Only",
-                    "phases": {
-                        "reveal": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Edited for wording consistency."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "37": {
-            "original": {
-                "name": "Protective NRG Halo",
-                "refresh": false,
-                "short": "Defend Home System.",
-                "body": "During the planning phase of an encounter in your home system, any player with a colony on the targeted planet may play a card faceup next to the hyperspace gate. If the main player makes a deal, the offense gains those cards. Otherwise, each card adds 3 to the defense's total, and the defense gains them at the end of the reveal phase.",
-                "cost": "X=X",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "planning": true
+            "name": "Protective NRG Halo",
+            "refresh": false,
+            "type": "Mili-Tech",
+            "cost": "X=X",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Defend Home System."
+                }
+            ],
+            "body": [
+                {
+                    "value": "During the planning phase of an encounter in your home system, any player with a colony on the targeted planet may play a card faceup next to the hyperspace gate. If the main player makes a deal, the offense gains those cards. Otherwise, each card adds 3 to the defense's total, and the defense gains them at the end of the reveal phase."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "planning": true
+                        }
+                    }
+                ]
             }
         },
         "38": {
-            "original": {
-                "name": "Rewards Distributor",
-                "refresh": true,
-                "short": "Adds Reward Deck.",
-                "body": "Add the Reward Deck variant (🕮10) to the game. If it is already being used, or if you discarded attack cards with a total value of at least 21, add the Ultra Reward Deck sub-variant. Then, discard this tech and draw two reward cards.",
-                "cost": "\u226510",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "regroup": true
+            "name": "Rewards Distributor",
+            "refresh": true,
+            "type": "Mili-Tech",
+            "cost": "≥10",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Adds Reward Deck."
+                }
+            ],
+            "body": [
+                {
+                    "value": "Add the Reward Deck variant (🕮10) to the game. If it is already being used, or if you discarded attack cards with a total value of at least 21, add the Ultra Reward Deck sub-variant. Then, discard this tech and draw two reward cards."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "regroup": true
+                        }
+                    }
+                ]
             }
         },
         "39": {
-            "original": {
-                "name": "Solar Harness",
-                "refresh": false,
-                "short": "Protect a Flare.",
-                "body": "At any time, you may place one flare faceup from your hand on this tech. This flare can be played, cannot be canceled, and is not part of your hand. (When this card is played, it returns to your hand like normal.) You may discard the flare on this tech at any time. If you need to draw a new hand, you must first discard the flare on this tech.",
-                "cost": "X+1",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Solar Harness",
+            "refresh": false,
+            "type": "Mili-Tech",
+            "cost": "X+1",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Protect a Flare."
+                }
+            ],
+            "body": [
+                {
+                    "value": "At any time, you may place one flare faceup from your hand on this tech. This flare can be played, cannot be canceled, and is not part of your hand. (When this card is played, it returns to your hand like normal.) You may discard the flare on this tech at any time. If you need to draw a new hand, you must first discard the flare on this tech."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "40": {
-            "original": {
-                "name": "Xaq Attack",
-                "refresh": true,
-                "short": "Force Invitation.",
-                "body": "Before main players invite allies, you may give this tech faceup to a main player. They must invite you.",
-                "cost": "X+1",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "Not Main Player",
-                    "phases": {
-                        "alliance": true
-                    }
+            "name": "Xaq Attack",
+            "refresh": true,
+            "type": "Mili-Tech",
+            "cost": "X+1",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Force Invitation."
+                }
+            ],
+            "body": [
+                {
+                    "value": "Before "
                 },
-                "expansion": "Cosmic Odyssey"
+                {
+                    "value": "main players invite ",
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": "allies "
+                },
+                {
+                    "value": "are invited",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 2
+                },
+                {
+                    "value": ", you may give this tech faceup to a main player. They must invite you."
+                }
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "Not Main Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "alliance": true
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Xaq Attack",
-                "refresh": true,
-                "short": "Force Invitation.",
-                "body": "Before allies are invited, you may give this tech faceup to a main player. They must invite you.",
-                "cost": "X+1",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "Not Main Player",
-                    "phases": {
-                        "alliance": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Edited for wording consistency."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "41": {
-            "original": {
-                "name": "X-Lot-L Pod",
-                "refresh": true,
-                "short": "Retain a Lost Ship.",
-                "body": "When more than one of your ships would be sent to the wapr, you may send one of them to any of your colonies instead.",
-                "cost": "\u226513",
-                "type": "Mili-Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "X-Lot-L Pod",
+            "refresh": true,
+            "type": "Mili-Tech",
+            "cost": "≥13",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Retain a Lost Ship."
+                }
+            ],
+            "body": [
+                {
+                    "value": "When more than one of your ships would be sent to the wapr, you may send one of them to any of your colonies instead."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "42": {
-            "original": {
-                "name": "Nanite Mining",
-                "refresh": true,
-                "short": "Increase Hand Size.",
-                "body": "When you draw a new hand, you may draw one additional card.",
-                "cost": "2",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Nanite Mining",
+            "refresh": true,
+            "type": "Tech",
+            "cost": "2",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Increase Hand Size."
+                }
+            ],
+            "body": [
+                {
+                    "value": "When you draw a new hand, you may draw one additional card."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "43": {
-            "original": {
-                "name": "Brainwave Tracer",
-                "refresh": false,
-                "short": "Steal a Card.",
-                "body": "Before encounter cards are selected, you may take a card at random from another player's hand. If you do, reset this tech and give it to that player.",
-                "cost": "2",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "planning": true
+            "name": "Brainwave Tracer",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "2",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Steal a Card."
+                }
+            ],
+            "body": [
+                {
+                    "value": "Before encounter cards are selected, you may take a card at random from another player's hand. If you do, reset this tech and give it to that player."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "planning": true
+                        }
+                    }
+                ]
             }
         },
         "44": {
-            "original": {
-                "name": "Zap-O-Tron",
-                "refresh": false,
-                "short": "Cancel Alien's Power.",
-                "body": "Reset this tech to cancel one use of any alien's power, including your own. That power cannot be used again during this encounter. (This is treated as a Cosmic Zap, but is not an artifact.)",
-                "cost": "5",
-                "type": "Tech",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+            "name": "Zap-O-Tron",
+            "refresh": false,
+            "type": "Tech",
+            "cost": "5",
+            "expansion": "Cosmic Odyssey",
+            "short": [
+                {
+                    "value": "Cancel Alien's Power."
+                }
+            ],
+            "body": [
+                {
+                    "value": "Reset this tech to cancel one use of any alien's power, including your own. That power cannot be used again during this encounter. (This is treated as a Cosmic Zap, but is not an artifact.)"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "timing": {
+                "player": [
+                    {
+                        "value": "As Any Player"
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         }
     }

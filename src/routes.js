@@ -11,7 +11,7 @@ import Results from "./pages/ResultsPage";
 import Combos from "./pages/CombosPage";
 import CombosSubmit from "./pages/CombosSubmitPage";
 import HouseRulesPage from "./pages/HouseRulesPage";
-import SelectionPage from "./pages/SelectionPage";
+// import SelectionPage from "./pages/SelectionPage";
 import GeekPage from "./pages/GeekPage";
 import HiddenDialPage from "./pages/HiddenDialPage"
 import SelectionMethodsPage from "./pages/Lists/Campaign/SelectionMethodsPage";
@@ -64,6 +64,8 @@ import IndividualWrenchPage from "./pages/Lists/Campaign/IndividualWrenchPage";
 import PrivilegePage from "./pages/Lists/Campaign/PrivilegeListPage";
 import IndividualPrivilegePage from "./pages/Lists/Campaign/IndividualPrivilegePage";
 
+import Aliens from './dataFiles/aliens.json'
+import faq from "./dataFiles/faq.json"
 import Techs from './dataFiles/technology.json'
 import Hazards from './dataFiles/hazards.json'
 import Stations from './dataFiles/stations.json'
@@ -77,436 +79,649 @@ import Ages from './dataFiles/ages.json'
 import Wrenches from './dataFiles/wrenches.json'
 import Privileges from './dataFiles/privileges.json'
 
-import { getAlien, getAllAliens } from "./supabaseAPI/getAlien"
+import RevisionNotes from "./dataFiles/revisionNotes.json"
+
+// import { getAlien, getAllAliens } from "./supabaseAPI/getAlien"
 
 // const AlienBreadcrumb = ({ match }) => Aliens.aliens[match.params.alienIndex].original.name;
 
-const itemPageBreadcrumb = (data) => data.original.name
+const itemPageBreadcrumb = (data) => data ? data.name ?? data.original.name : ""
 
 const itemPageRoute = (rootpath, crumb, indexpath, list, item, loader, parentLoader) => ({
-  path: rootpath,
-  id: rootpath.toLowerCase(),
-  handle: {
-    breadcrumb: () => crumb
-  },
-  loader: parentLoader,
-  children: [
-    {
-      index: true,
-      element: list,
+    path: rootpath,
+    id: rootpath.toLowerCase(),
+    handle: {
+        breadcrumb: () => crumb
     },
-    {
-      path: `:${indexpath}`,
-      element: item,
-      loader: loader,
-      id: indexpath,
-      handle: {
-        breadcrumb: itemPageBreadcrumb
-      }
-    },
-  ]
+    loader: parentLoader,
+    children: [
+        {
+            index: true,
+            element: list,
+        },
+        {
+            path: `:${indexpath}`,
+            element: item,
+            loader: loader,
+            id: indexpath,
+            handle: {
+                breadcrumb: itemPageBreadcrumb
+            }
+        },
+    ]
 }
 )
 
 export const routes = [
-  {
-    element: <Layout />,
-    handle: {
-      breadcrumb: () => "Home"
-    },
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/Search",
-        element: <Results />,
+    {
+        element: <Layout />,
         handle: {
-          breadcrumb: () => "Search"
-        }
-      },
-      {
-        path: "/HouseRules",
-        element: <HouseRulesPage />,
-        handle: {
-          breadcrumb: () => "House Rules"
-        }
-      },
-      {
-        path: "Combos",
-        handle: {
-          breadcrumb: () => "Combos"
+            breadcrumb: () => "Home"
         },
+        // errorElement: <Error404Page />,
         children: [
-          {
-            index: true,
-            element: <Combos />
-          },
-          {
-            path: "Submit",
-            element: <CombosSubmit />,
-            handle: {
-              breadcrumb: () => "Submit"
-            }
-          }
-        ]
-      },
-      {
-        path: "/Geek",
-        element: <GeekPage />,
-        handle: {
-          breadcrumb: () => "Geek Practice"
-        }
-      },
-      {
-        path: "/DigitalDial",
-        element: <HiddenDialPage />,
-        handle: {
-          breadcrumb: () => "Digital Alliance Dial"
-        }
-      },
-      {
-        path: "Aliens",
-        id: "aliens",
-        loader: () => defer({ aliens: getAllAliens() }),
-        handle: {
-          breadcrumb: () => "Aliens"
-        },
-        children: [
-          {
-            index: true,
-            element: <AlienListPage />
-          },
-          {
-            element: <IndividualAlienPage />,
-            path: ":alienIndex",
-            loader: ({ params }) => {
-              const alienDataPromise = getAlien(params.alienIndex)
-              return defer({ alien: alienDataPromise })
+            {
+                path: "/",
+                element: <Home />,
             },
-            id: "alienIndex",
-            handle: {
-              breadcrumb: (data) => (
-                <React.Suspense fallback={null}>
-                  <Await
-                    resolve={data.alien}
-                    errorElement={
-                      <p>Error loading alien!</p>
-                    }
-                  >
-                    {(alien) => alien.name}
-                  </Await>
-                </React.Suspense>
-              ),
-              title: (data) => (
-                <React.Suspense fallback={null}>
-                  <Await
-                    resolve={data.alien}
-                    errorElement={
-                      <HelmetProvider>
-                        <Helmet>
-                          <title>The Praw</title>
-                        </Helmet>
-                      </HelmetProvider>
-                    }
-                  >
-                    {(alien) => (
-                      <HelmetProvider>
-                        <Helmet>
-                          <title>The Praw - {alien.name}</title>
-                        </Helmet>
-                      </HelmetProvider>
-                    )}
-                  </Await>
-                </React.Suspense>
-              )
-            }
-          }
-        ]
-      },
-      {
-        path: '/Selection',
-        element: <SelectionPage />,
-        handle: {
-          breadcrumb: () => "Alien Selection"
-        }
-      },
-      {
-        path: "Variants",
-        handle: {
-          breadcrumb: () => "Variants"
-        },
-        children: [
-          {
-            index: true,
-            element: <VariantsListPage />
-          },
-
-          {
-            path: "Campaign",
-            handle: {
-              breadcrumb: () => "Campaign Mode"
-            },
-            children: [
-              {
-                index: true,
-                element: <CampaignPage />
-              },
-
-              itemPageRoute(
-                "Ages",
-                "Ages",
-                "ageIndex",
-                <AgesPage />,
-                null,
-                ({ params }) => Ages.ages[params.ageIndex],
-                () => {return Ages}
-              ),
-              itemPageRoute(
-                "MasterCards",
-                "Master Cards",
-                "masterIndex",
-                <MasterPage />,
-                <IndividualMasterPage />,
-                ({ params }) => Ages.master[params.masterIndex],
-                () => Ages.master
-              ),
-              itemPageRoute(
-                "WrenchCards",
-                "Wrench Cards",
-                "wrenchIndex",
-                <WrenchPage />,
-                <IndividualWrenchPage />,
-                ({ params }) => Wrenches.wrench[params.wrenchIndex],
-                () => Wrenches.wrench
-              ),
-              itemPageRoute(
-                "PrivilegeCards",
-                "Privilege Cards",
-                "privilegeIndex",
-                <PrivilegePage />,
-                <IndividualPrivilegePage />,
-                ({ params }) => Privileges.privilege[params.privilegeIndex],
-                () => Privileges.privilege
-              ),
-              itemPageRoute(
-                "Envoys",
-                "Envoys",
-                "envoyIndex",
-                <EnvoysPage />,
-                <IndividualEnvoyPage />,
-                ({ params }) => Envoys.envoys[params.envoyIndex],
-                () => Envoys.envoys
-              ),
-              {
-                path: 'SelectionMethods',
-                id: 'selectionmethods',
-                element: <SelectionMethodsPage />,
-                loader: () => Ages.selectionMethods,
+            {
+                path: "/Search",
+                element: <Results />,
                 handle: {
-                  breadcrumb: () => "Selection Methods"
+                    breadcrumb: () => "Search"
                 }
-              }
-            ]
-          },
+            },
+            {
+                path: "/HouseRules",
+                element: <HouseRulesPage />,
+                handle: {
+                    breadcrumb: () => "House Rules"
+                }
+            },
+            {
+                path: "Combos",
+                handle: {
+                    breadcrumb: () => "Combos"
+                },
+                children: [
+                    {
+                        index: true,
+                        element: <Combos />
+                    },
+                    {
+                        path: "Submit",
+                        element: <CombosSubmit />,
+                        handle: {
+                            breadcrumb: () => "Submit"
+                        }
+                    }
+                ]
+            },
+            {
+                path: "/Geek",
+                element: <GeekPage />,
+                handle: {
+                    breadcrumb: () => "Geek Practice"
+                }
+            },
+            {
+                path: "/DigitalDial",
+                element: <HiddenDialPage />,
+                handle: {
+                    breadcrumb: () => "Digital Alliance Dial"
+                }
+            },
+            {
+                path: "Aliens",
+                id: "aliens",
+                loader: () => {
+                    const fields = ["powerName", "powerBody", "powerSpecialName", "powerSpecialBody", "wildBody", "superBody", "short", "history"]
+                    const timing_fields = ["player", "phases"]
+                    let data = Aliens.aliens
 
-          {
-            path: "FourPlanets",
-            element: <FourPlanetsPage />,
-            handle: {
-              breadcrumb: () => "Four Planets"
-            }
-          },
-          {
-            path: "FreewheelingFlares",
-            element: <FreewheelingPage />,
-            handle: {
-              breadcrumb: () => "Freewheeling Flares"
-            }
-          },
-          {
-            path: "CommonRewards",
-            element: <CommonRewardsPage />,
-            handle: {
-              breadcrumb: () => "Common Rewards"
-            }
-          },
+                    for (const index of Object.keys(data)) {
+                        for (const field of fields) {
+                            data[index][field]?.forEach((revision, i) => {
+                                if (revision?.revisionID || revision?.revisionID === 0) {
+                                    data[index][field][i].revisionNote = RevisionNotes.aliens[index][revision?.revisionID]
+                                }
+                            })
+                        }
+                        for (const parent of ["powerTiming", "wildTiming", "superTiming"]){
+                            for (const field of timing_fields) {
+                                data[index][parent][field]?.forEach((revision, i) => {
+                                    if (revision?.revisionID || revision?.revisionID === 0) {
+                                        data[index][parent][field][i].revisionNote = RevisionNotes.aliens[index][revision?.revisionID]
+                                    }
+                                })
+                            }
+                        }
+                    }
 
-          itemPageRoute(
-            "Techs",
-            "Techs",
-            "techIndex",
-            <TechListPage />,
-            <IndividualTechPage />,
-            ({ params }) => Techs.technologies[params.techIndex],
-            () => Techs.technologies
-          ),
+                    return data
+                },
+                handle: {
+                    breadcrumb: () => "Aliens"
+                },
+                children: [
+                    {
+                        index: true,
+                        element: <AlienListPage />
+                    },
+                    {
+                        element: <IndividualAlienPage />,
+                        path: ":alienIndex",
+                        loader: ({ params }) => {
+                            // const alienDataPromise = getAlien(params.alienIndex)
+                            // return defer({ alien: alienDataPromise })
+                            let data = Aliens.aliens[params.alienIndex]
+                            if (faq.aliens[params.alienIndex]) {
+                                data.faq = faq.aliens[params.alienIndex]
+                            } else {
+                                data.faq = []
+                            }
+                            return data
+                        },
+                        id: "alienIndex",
+                        handle: {
+                            breadcrumb: (alien) => (
+                                <React.Suspense fallback={null}>
+                                    <Await
+                                        resolve={alien}
+                                        errorElement={
+                                            <p>Error loading alien!</p>
+                                        }
+                                    >
+                                        {(alien) => alien.name}
+                                    </Await>
+                                </React.Suspense>
+                            ),
+                            title: (alien) => (
+                                <React.Suspense fallback={null}>
+                                    <Await
+                                        resolve={alien}
+                                        errorElement={
+                                            <HelmetProvider>
+                                                <Helmet>
+                                                    <title>The Praw</title>
+                                                </Helmet>
+                                            </HelmetProvider>
+                                        }
+                                    >
+                                        {(alien) => (
+                                            <HelmetProvider>
+                                                <Helmet>
+                                                    <title>The Praw - {alien.name}</title>
+                                                </Helmet>
+                                            </HelmetProvider>
+                                        )}
+                                    </Await>
+                                </React.Suspense>
+                            )
+                        }
+                    }
+                ]
+            },
+            // {
+            //     path: '/Selection',
+            //     element: <SelectionPage />,
+            //     handle: {
+            //         breadcrumb: () => "Alien Selection"
+            //     }
+            // },
+            {
+                path: "Variants",
+                handle: {
+                    breadcrumb: () => "Variants"
+                },
+                children: [
+                    {
+                        index: true,
+                        element: <VariantsListPage />
+                    },
 
-          itemPageRoute(
-            "Hazards",
-            "Hazards",
-            "hazardIndex",
-            <HazardListPage />,
-            <IndividualHazardPage />,
-            ({ params }) => Hazards.hazards[params.hazardIndex],
-            () => Hazards.hazards
-          ),
+                    {
+                        path: "Campaign",
+                        handle: {
+                            breadcrumb: () => "Campaign Mode"
+                        },
+                        children: [
+                            {
+                                index: true,
+                                element: <CampaignPage />
+                            },
 
-          itemPageRoute(
-            "Stations",
-            "Space Stations",
-            "stationIndex",
-            <StationListPage />,
-            <IndividualStationPage />,
-            ({ params }) => Stations.stations[params.stationIndex],
-            () => Stations.stations
-          ),
+                            itemPageRoute(
+                                "Ages",
+                                "Ages",
+                                "ageIndex",
+                                <AgesPage />,
+                                null,
+                                ({ params }) => Ages.ages[params.ageIndex],
+                                () => { return Ages }
+                            ),
+                            itemPageRoute(
+                                "MasterCards",
+                                "Master Cards",
+                                "masterIndex",
+                                <MasterPage />,
+                                <IndividualMasterPage />,
+                                ({ params }) => Ages.master[params.masterIndex],
+                                () => Ages.master
+                            ),
+                            itemPageRoute(
+                                "WrenchCards",
+                                "Wrench Cards",
+                                "wrenchIndex",
+                                <WrenchPage />,
+                                <IndividualWrenchPage />,
+                                ({ params }) => Wrenches.wrench[params.wrenchIndex],
+                                () => Wrenches.wrench
+                            ),
+                            itemPageRoute(
+                                "PrivilegeCards",
+                                "Privilege Cards",
+                                "privilegeIndex",
+                                <PrivilegePage />,
+                                <IndividualPrivilegePage />,
+                                ({ params }) => Privileges.privilege[params.privilegeIndex],
+                                () => Privileges.privilege
+                            ),
+                            itemPageRoute(
+                                "Envoys",
+                                "Envoys",
+                                "envoyIndex",
+                                <EnvoysPage />,
+                                <IndividualEnvoyPage />,
+                                ({ params }) => Envoys.envoys[params.envoyIndex],
+                                () => {
+                                    const fields = ["body", "history"]
+                                    const timing_fields = ["player", "phases"]
+                                    let data = Envoys.envoys
 
-          itemPageRoute(
-            "Lux",
-            "Lux",
-            "luxIndex",
-            <LuxListPage />,
-            <IndividualLuxPage />,
-            ({ params }) => Lux.lux[params.luxIndex],
-            () => Lux.lux
-          ),
+                                    for (const index of Object.keys(data)) {
+                                        for (const field of fields) {
+                                            data[index][field]?.forEach((revision, i) => {
+                                                if (revision?.revisionID || revision?.revisionID === 0) {
+                                                    data[index][field][i].revisionNote = RevisionNotes.envoys[index][revision?.revisionID]
+                                                }
+                                            })
+                                        }
+                                        for (const field of timing_fields) {
+                                            data[index]["powerTiming"][field]?.forEach((revision, i) => {
+                                                if (revision?.revisionID || revision?.revisionID === 0) {
+                                                    data[index]["powerTiming"][field][i].revisionNote = RevisionNotes.envoys[index][revision?.revisionID]
+                                                }
+                                            })
+                                        }
+                                    }
+                                    return Envoys.envoys
+                                }
+                            ),
+                            {
+                                path: 'SelectionMethods',
+                                id: 'selectionmethods',
+                                element: <SelectionMethodsPage />,
+                                loader: () => Ages.selectionMethods,
+                                handle: {
+                                    breadcrumb: () => "Selection Methods"
+                                }
+                            }
+                        ]
+                    },
 
-          itemPageRoute(
-            "Moons",
-            "Moons",
-            "moonIndex",
-            <MoonListPage />,
-            <IndividualMoonPage />,
-            ({ params }) => Moons.moons[params.moonIndex],
-            () => Moons.moons
-          ),
+                    {
+                        path: "FourPlanets",
+                        element: <FourPlanetsPage />,
+                        handle: {
+                            breadcrumb: () => "Four Planets"
+                        }
+                    },
+                    {
+                        path: "FreewheelingFlares",
+                        element: <FreewheelingPage />,
+                        handle: {
+                            breadcrumb: () => "Freewheeling Flares"
+                        }
+                    },
+                    {
+                        path: "CommonRewards",
+                        element: <CommonRewardsPage />,
+                        handle: {
+                            breadcrumb: () => "Common Rewards"
+                        }
+                    },
 
-          itemPageRoute(
-            "Evolutions",
-            "Evolutions",
-            "evolutionIndex",
-            <EvolutionListPage />,
-            <IndividualEvolutionPage />,
-            ({ params }) => Evolutions.evolutions[params.evolutionIndex],
-            () => Evolutions.evolutions
-          ),
+                    itemPageRoute(
+                        "Techs",
+                        "Techs",
+                        "techIndex",
+                        <TechListPage />,
+                        <IndividualTechPage />,
+                        ({ params }) => Techs.technologies[params.techIndex],
+                        () => {
+                            const fields = ["body"]
+                            const timing_fields = ["player", "phases"]
+                            let data = Techs.technologies
 
-          itemPageRoute(
-            "Objectives",
-            "Objectives",
-            "objectiveIndex",
-            <ObjectivesListPage />,
-            <IndividualObjectivePage />,
-            ({ params }) => Objectives.objectives[params.objectiveIndex],
-            () => Objectives.objectives
-          ),
+                            for (const index of Object.keys(data)) {
+                                for (const field of fields) {
+                                    data[index][field]?.forEach((revision, i) => {
+                                        if (revision?.revisionID || revision?.revisionID === 0) {
+                                            data[index][field][i].revisionNote = RevisionNotes.technologies[index][revision?.revisionID]
+                                        }
+                                    })
+                                }
+                                for (const field of timing_fields) {
+                                    data[index]["timing"][field]?.forEach((revision, i) => {
+                                        if (revision?.revisionID || revision?.revisionID === 0) {
+                                            data[index]["timing"][field][i].revisionNote = RevisionNotes.technologies[index][revision?.revisionID]
+                                        }
+                                    })
+                                }
+                            }
+                            
+                            return data
+                        }
+                    ),
 
-          {
-            path: "RewardsDeck",
-            element: <RewardsDeckPage />,
-            handle: {
-              breadcrumb: () => "Rewards Deck"
-            }
-          },
-          {
-            path: "TeamMode",
-            element: <TeamCosmicPage />,
-            handle: {
-              breadcrumb: () => "Team Cosmic"
-            }
-          },
-          {
-            path: "Dials",
-            element: <AllianceDialPage />,
-            handle: {
-              breadcrumb: () => "Hidden Alliances"
-            }
-          },
-          {
-            path: "ForeignAid",
-            element: <ForeignAidPage />,
-            handle: {
-              breadcrumb: () => "Foreign Aid"
-            }
-          },
-          {
-            path: "Supershots",
-            element: <SuperShotsPage />,
-            handle: {
-              breadcrumb: () => "Super Shots"
-            }
-          },
-          {
-            path: "HandDraft",
-            element: <HandDraftPage />,
-            handle: {
-              breadcrumb: () => "Hand Draft"
-            }
-          },
-          {
-            path: "Contracts",
-            element: <ContractsPage />,
-            handle: {
-              breadcrumb: () => "Contracts"
-            }
-          },
+                    itemPageRoute(
+                        "Hazards",
+                        "Hazards",
+                        "hazardIndex",
+                        <HazardListPage />,
+                        <IndividualHazardPage />,
+                        ({ params }) => Hazards.hazards[params.hazardIndex],
+                        () => {
+                            const fields = ["body", "barText"]
+                            let data = Hazards.hazards
 
-          itemPageRoute(
-            "SpecialShips",
-            "Special Ships",
-            "specialShipIndex",
-            <SpecialShipsPage />,
-            <IndividualSpecialShipPage />,
-            ({ params }) => SpecialShips.ships[params.specialShipIndex],
-            () => SpecialShips.ships
-          ),
-          // {
-          //   path: "Anomalies",
-          //   element: <AnomaliesPage />,
-          //   handle: {
-          //     breadcrumb: () => "Anomalies"
-          //   }
-          // },
-          {
-            path: "AlienInfluencers",
-            element: <AlienInfluencersPage />,
-            handle: {
-              breadcrumb: () => "Alien Influencers"
+                            for (const index of Object.keys(data)) {
+                                for (const field of fields) {
+                                    data[index][field]?.forEach((revision, i) => {
+                                        if (revision?.revisionID || revision?.revisionID === 0) {
+                                            data[index][field][i].revisionNote = RevisionNotes.hazards[index][revision?.revisionID]
+                                        }
+                                    })
+                                }
+                            }
+
+                            return data
+                        }
+                    ),
+
+                    itemPageRoute(
+                        "Stations",
+                        "Space Stations",
+                        "stationIndex",
+                        <StationListPage />,
+                        <IndividualStationPage />,
+                        ({ params }) => Stations.stations[params.stationIndex],
+                        () => {
+                            const fields = ["body"]
+                            const timing_fields = ["player", "phases"]
+                            let data = Stations.stations
+
+                            for (const index of Object.keys(data)) {
+                                for (const field of fields) {
+                                    data[index][field]?.forEach((revision, i) => {
+                                        if (revision?.revisionID || revision?.revisionID === 0) {
+                                            data[index][field][i].revisionNote = RevisionNotes.stations[index][revision?.revisionID]
+                                        }
+                                    })
+                                }
+                                for (const field of timing_fields) {
+                                    data[index]["timing"][field]?.forEach((revision, i) => {
+                                        if (revision?.revisionID || revision?.revisionID === 0) {
+                                            data[index]["timing"][field][i].revisionNote = RevisionNotes.stations[index][revision?.revisionID]
+                                        }
+                                    })
+                                }
+                            }
+                            return data
+                        }
+                    ),
+
+                    itemPageRoute(
+                        "Lux",
+                        "Lux",
+                        "luxIndex",
+                        <LuxListPage />,
+                        <IndividualLuxPage />,
+                        ({ params }) => Lux.lux[params.luxIndex],
+                        () => {
+                            const fields = ["body"]
+                            const timing_fields = ["player", "phases"]
+                            let data = Lux.lux
+
+                            for (const index of Object.keys(data)) {
+                                for (const field of fields) {
+                                    data[index][field]?.forEach((revision, i) => {
+                                        if (revision?.revisionID || revision?.revisionID === 0) {
+                                            data[index][field][i].revisionNote = RevisionNotes.lux[index][revision?.revisionID]
+                                        }
+                                    })
+                                }
+                                for (const field of timing_fields) {
+                                    data[index]["timing"][field]?.forEach((revision, i) => {
+                                        if (revision?.revisionID || revision?.revisionID === 0) {
+                                            data[index]["timing"][field][i].revisionNote = RevisionNotes.lux[index][revision?.revisionID]
+                                        }
+                                    })
+                                }
+                            }
+                            return data
+                        }
+                    ),
+
+                    itemPageRoute(
+                        "Moons",
+                        "Moons",
+                        "moonIndex",
+                        <MoonListPage />,
+                        <IndividualMoonPage />,
+                        ({ params }) => Moons.moons[params.moonIndex],
+                        () => {
+                            const fields = ["body"]
+                            const timing_fields = ["player", "phases"]
+                            let data = Moons.moons
+
+                            for (const index of Object.keys(data)) {
+                                for (const field of fields) {
+                                    data[index][field]?.forEach((revision, i) => {
+                                        if (revision?.revisionID || revision?.revisionID === 0) {
+                                            data[index][field][i].revisionNote = RevisionNotes.moons[index][revision?.revisionID]
+                                        }
+                                    })
+                                }
+                                for (const field of timing_fields) {
+                                    data[index]["timing"][field]?.forEach((revision, i) => {
+                                        if (revision?.revisionID || revision?.revisionID === 0) {
+                                            data[index]["timing"][field][i].revisionNote = RevisionNotes.moons[index][revision?.revisionID]
+                                        }
+                                    })
+                                }
+                            }
+                            return data
+                        }
+                    ),
+
+                    itemPageRoute(
+                        "Evolutions",
+                        "Evolutions",
+                        "evolutionIndex",
+                        <EvolutionListPage />,
+                        <IndividualEvolutionPage />,
+                        ({ params }) => Evolutions.evolutions[params.evolutionIndex],
+                        () => {
+                            const fields = ["body"]
+                            const timing_fields = ["player", "phases"]
+                            let data = Evolutions.evolutions
+
+                            for (const index of Object.keys(data)) {
+                                for (const field of fields) {
+                                    data[index][field]?.forEach((revision, i) => {
+                                        if (revision?.revisionID || revision?.revisionID === 0) {
+                                            data[index][field][i].revisionNote = RevisionNotes.evolutions[index][revision?.revisionID]
+                                        }
+                                    })
+                                }
+                                for (const field of timing_fields) {
+                                    data[index]["timing"][field]?.forEach((revision, i) => {
+                                        if (revision?.revisionID || revision?.revisionID === 0) {
+                                            data[index]["timing"][field][i].revisionNote = RevisionNotes.evolutions[index][revision?.revisionID]
+                                        }
+                                    })
+                                }
+                            }
+                            return data
+                        }
+                    ),
+
+                    itemPageRoute(
+                        "Objectives",
+                        "Objectives",
+                        "objectiveIndex",
+                        <ObjectivesListPage />,
+                        <IndividualObjectivePage />,
+                        ({ params }) => Objectives.objectives[params.objectiveIndex],
+                        () => Objectives.objectives
+                    ),
+
+                    {
+                        path: "RewardsDeck",
+                        element: <RewardsDeckPage />,
+                        handle: {
+                            breadcrumb: () => "Rewards Deck"
+                        }
+                    },
+                    {
+                        path: "TeamMode",
+                        element: <TeamCosmicPage />,
+                        handle: {
+                            breadcrumb: () => "Team Cosmic"
+                        }
+                    },
+                    {
+                        path: "Dials",
+                        element: <AllianceDialPage />,
+                        handle: {
+                            breadcrumb: () => "Hidden Alliances"
+                        }
+                    },
+                    {
+                        path: "ForeignAid",
+                        element: <ForeignAidPage />,
+                        handle: {
+                            breadcrumb: () => "Foreign Aid"
+                        }
+                    },
+                    {
+                        path: "Supershots",
+                        element: <SuperShotsPage />,
+                        handle: {
+                            breadcrumb: () => "Super Shots"
+                        }
+                    },
+                    {
+                        path: "HandDraft",
+                        element: <HandDraftPage />,
+                        handle: {
+                            breadcrumb: () => "Hand Draft"
+                        }
+                    },
+                    {
+                        path: "Contracts",
+                        element: <ContractsPage />,
+                        handle: {
+                            breadcrumb: () => "Contracts"
+                        }
+                    },
+
+                    itemPageRoute(
+                        "SpecialShips",
+                        "Special Ships",
+                        "specialShipIndex",
+                        <SpecialShipsPage />,
+                        <IndividualSpecialShipPage />,
+                        ({ params }) => SpecialShips.ships[params.specialShipIndex],
+                        () => {
+                            const fields = ["powerBody", "specialBody"]
+                            const timing_fields = ["player", "phases"]
+                            let data = SpecialShips.ships
+
+                            for (const index of Object.keys(data)) {
+                                for (const field of fields) {
+                                    data[index][field]?.forEach((revision, i) => {
+                                        if ((revision?.revisionID || revision?.revisionID === 0) && RevisionNotes.ships[index]) {
+                                            data[index][field][i].revisionNote = RevisionNotes.ships[index][revision?.revisionID]
+                                        }
+                                    })
+                                }
+                                for (const parent_field of ["powerTiming", "specialTiming"]){
+                                    for (const field of timing_fields) {
+                                        data[index][parent_field][field]?.forEach((revision, i) => {
+                                            if ((revision?.revisionID || revision?.revisionID === 0) && RevisionNotes.ships[index]) {
+                                                data[index][parent_field][field][i].revisionNote = RevisionNotes.ships[index][revision?.revisionID]
+                                            }
+                                        })
+                                    }
+                                }
+                            }
+
+                            return data
+                        }
+                    ),
+                    // {
+                    //   path: "Anomalies",
+                    //   element: <AnomaliesPage />,
+                    //   handle: {
+                    //     breadcrumb: () => "Anomalies"
+                    //   }
+                    // },
+                    {
+                        path: "AlienInfluencers",
+                        element: <AlienInfluencersPage />,
+                        handle: {
+                            breadcrumb: () => "Alien Influencers"
+                        }
+                    },
+                    {
+                        path: "WinLimitation",
+                        element: <WinLimitationPage />,
+                        handle: {
+                            breadcrumb: () => "Win Limitation"
+                        }
+                    },
+                ]
             }
-          },
-          {
-            path: "WinLimitation",
-            element: <WinLimitationPage />,
-            handle: {
-              breadcrumb: () => "Win Limitation"
-            }
-          },
         ]
-      }
-    ]
-  },
-  {
-    element: <ThrowbackPage />,
-    path: "Aliens/221",
-    handle: {
-      breadcrumb: () => "Throwback",
-      title: () => "The Praw - Throwback"
     },
-    loader: () => {
-      const alienDataPromise = getAlien("221")
-      return defer({ alien: alienDataPromise })
+    {
+        element: <ThrowbackPage />,
+        path: "Aliens/221",
+        handle: {
+            breadcrumb: () => "Throwback",
+            title: () => "The Praw - Throwback"
+        },
+        loader: () => {
+            let data = Aliens.aliens["221"]
+            if (faq.aliens["221"]) {
+                data.faq = faq.aliens["221"]
+            } else {
+                data.faq = []
+            }
+            return data
+        },
+        id: "throwback"
     },
-    id: "throwback"
-  },
-  {
-    path: "*",
-    element: <Error404Page />,
-    handle: {
-      breadcrumb: () => "404"
+    {
+        path: "*",
+        element: <Error404Page />,
+        handle: {
+            breadcrumb: () => "404"
+        }
     }
-  }
 ]
 
 // console.log(routes)

@@ -1,105 +1,279 @@
 {
     "privilege": {
-        "0": {
-            "original": {
-                "name": "Archeotheif",
-                "body": "You may play this card at any time. Search the discard piles of the cosmic deck, reward deck (if present) and tech deck (if present) for any two cards. Gain those cards. Then, remove this card from the game.",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
+    "0": {
+        "body": [{
+            "value": "You may play this card at any time. Search the discard piles of the cosmic deck, reward deck (if present) and tech deck (if present) for any two cards. Gain those cards. Then, remove this card from the game."
+        }],
+        "versions": [
+            "original"
+        ],
+        "name": "Archeotheif"
+    },
+    "1": {
+        "body": [{
+            "value": "You may play this card immediately or remove it from the game.\n\nDraw a space station card (🕮13), a moon card (🕮15), and a tech card (🕮9) (regardless of which variants are being used). Distribute them to players (including yourself) however you wish. Then, remove this card from the game."
+        }],
+        "versions": [
+            "original"
+        ],
+        "name": "Bona Fide Pioneer"
+    },
+    "2": {
+        "body": [{
+            "value": "You may play this card immediately or remove it from the game.\n\nReplace your alien with another alien from your coalition. If you are using the Double Aliens variant, you may replace both aliens. Then, remove this card from the game."
+        }],
+        "versions": [
+            "original"
+        ],
+        "name": "Falce Facade"
+    },
+    "3": {
+        "body": [
+            {
+                "value": "You may play this card immediately or remove it from the game.\n\nDraw two "
+            },
+            {
+                "value": "unused ",
+                "style": {
+                    "original": [
+                        "none"
+                    ],
+                    "revised": [
+                        "added"
+                    ]
                 },
-                "expansion": "Cosmic Odyssey"
-            }
-        },
-        "1": {
-            "original": {
-                "name": "Bona Fide Pioneer",
-                "body": "You may play this card immediately or remove it from the game.\n\nDraw a space station card (🕮13), a moon card (🕮15), and a tech card (🕮9) (regardless of which variants are being used). Distribute them to players (including yourself) however you wish. Then, remove this card from the game.",
-                "expansion": "Cosmic Odyssey"
-            }
-        },
-        "2": {
-            "original": {
-                "name": "Falce Facade",
-                "body": "You may play this card immediately or remove it from the game.\n\nReplace your alien with another alien from your coalition. If you are using the Double Aliens variant, you may replace both aliens. Then, remove this card from the game.",
-                "expansion": "Cosmic Odyssey"
-            }
-        },
-        "3": {
-            "original": {
-                "name": "Life Mulligan",
-                "body": "You may play this card immediately or remove it from the game.\n\nDraw two alien sheets from the alien stack. Choose one and shuffle the other into the alien stack. Add the chosen alien to your coalition and replace your selected alien with it. Find its flare and include it as part of your opening hand. Then, remove this card from the game.",
-                "expansion": "Cosmic Odyssey"
+                "revisionID": null
             },
-            "revised": {
-                "name": "Life Mulligan",
-                "body": "You may play this card immediately or remove it from the game.\n\nDraw two unused alien powers. Choose one and discard the other. Add the chosen alien to your coalition and replace your selected alien with it. Find its flare and include it as part of your starting hand. Then, remove this card from the game.",
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
-            }
-        },
-        "4": {
-            "original": {
-                "name": "Meritocrat",
-                "body": "You may play this card immediately or remove it from the game.\n\nWhen you draw your opening hand, draw half of those cards (rounded up) from the reward deck, even if not using the Reward Deck variant (🕮10). If you draw any ultra reward cards, replace them with standard reward cards and shuffle the ultra reward cards into the reward deck. Then, remove this card from the game.",
-                "expansion": "Cosmic Odyssey"
+            {
+                "value": "alien "
             },
-            "revised": {
-                "name": "Meritocrat",
-                "body": "You may play this card immediately or remove it from the game.\n\nWhen you draw your starting hand, draw half of those cards (rounded up) from the reward deck, even if not using the Reward Deck variant (🕮10). If you draw any ultra reward cards, replace them with standard reward cards and shuffle the ultra reward cards into the reward deck. Then, remove this card from the game.",
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
-            }
-        },
-        "5": {
-            "original": {
-                "name": "Obligatory Charity",
-                "body": "You may play this card at any time. Choose a player. That player may choose to give you their hand. If they do not, draw eight cards from the deck. Then, remove this card from the game.",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
+            {
+                "value": "sheets from the alien stack",
+                "style": {
+                    "revised": [
+                        "removed"
+                    ]
                 },
-                "expansion": "Cosmic Odyssey"
-            }
-        },
-        "6": {
-            "original": {
-                "name": "Secret Mission",
-                "body": "You may play this card immediately or remove it from the game.\n\nWhether or not an Array Objectives variant is being used, use the Hidden Objectives variant (🕮19). Then, remove this card from the game.",
-                "expansion": "Cosmic Odyssey"
+                "revisionID": null
             },
-            "revised": {
-                "name": "Secret Mission",
-                "body": "You may play this card immediately or remove it from the game.\n\nUse the Hidden Objectives variant (🕮19). Then, remove this card from the game.",
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw:\n\nEdited to remove the redundant array objectives reference."
+            {
+                "value": "powers",
+                "style": {
+                    "original": [
+                        "none"
+                    ],
+                    "revised": [
+                        "added"
+                    ]
+                },
+                "revisionID": null
+            },
+            {
+                "value": ". Choose one and "
+            },
+            {
+                "value": "shuffle",
+                "style": {
+                    "revised": [
+                        "removed"
+                    ]
+                },
+                "revisionID": null
+            },
+            {
+                "value": "discard",
+                "style": {
+                    "original": [
+                        "none"
+                    ],
+                    "revised": [
+                        "added"
+                    ]
+                },
+                "revisionID": null
+            },
+            {
+                "value": " the other"
+            },
+            {
+                "value": " into the alien stack",
+                "style": {
+                    "revised": [
+                        "removed"
+                    ]
+                },
+                "revisionID": null
+            },
+            {
+                "value": ". Add the chosen alien to your coalition and replace your selected alien with it. Find its flare and include it as part of your "
+            },
+            {
+                "value": "opening",
+                "style": {
+                    "revised": [
+                        "removed"
+                    ]
+                },
+                "revisionID": null
+            },
+            {
+                "value": "starting",
+                "style": {
+                    "original": [
+                        "none"
+                    ],
+                    "revised": [
+                        "added"
+                    ]
+                },
+                "revisionID": null
+            },
+            {
+                "value": " hand. Then, remove this card from the game."
             }
-        },
-        "7": {
-            "original": {
-                "name": "Space Shark Wrangling",
-                "body": "You may play this card during any regroup. Remove one of the following cards from the game: an evolution card, a hazard card, a moon (and card), a station (and card), a revealed objective, or a tech. Any ships on these cards are returned to their owner's colonies. Then, remove this card from the game.",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
+        ],
+        "versions": [
+            "original",
+            "revised"
+        ],
+        "name": "Life Mulligan"
+    },
+    "4": {
+        "body": [
+            {
+                "value": "You may play this card immediately or remove it from the game.\n\nWhen you draw your "
+            },
+            {
+                "value": "opening",
+                "style": {
+                    "revised": [
+                        "removed"
+                    ]
+                },
+                "revisionID": null
+            },
+            {
+                "value": "starting",
+                "style": {
+                    "original": [
+                        "none"
+                    ],
+                    "revised": [
+                        "added"
+                    ]
+                },
+                "revisionID": null
+            },
+            {
+                "value": " hand, draw half of those cards (rounded up) from the reward deck, even if not using the Reward Deck variant (🕮10). If you draw any ultra reward cards, replace them with standard reward cards and shuffle the ultra reward cards into the reward deck. Then, remove this card from the game."
+            }
+        ],
+        "versions": [
+            "original",
+            "revised"
+        ],
+        "name": "Meritocrat"
+    },
+    "5": {
+        "body": [{
+            "value": "You may play this card at any time. Choose a player. That player may choose to give you their hand. If they do not, draw eight cards from the deck. Then, remove this card from the game."
+        }],
+        "versions": [
+            "original"
+        ],
+        "name": "Obligatory Charity"
+    },
+    "6": {
+        "body": [
+            {
+                "value": "You may play this card immediately or remove it from the game.\n\n"
+            },
+            {
+                "value": "Whether or not an Array Objectives variant is being used, use",
+                "style": {
+                    "revised": [
+                        "removed"
+                    ]
+                },
+                "revisionID": null
+            },
+            {
+                "value": "Use",
+                "style": {
+                    "original": [
+                        "none"
+                    ],
+                    "revised": [
+                        "added"
+                    ]
+                },
+                "revisionID": null
+            },
+            {
+                "value": " the Hidden Objectives variant (🕮19). Then, remove this card from the game."
+            }
+        ],
+        "versions": [
+            "original",
+            "revised"
+        ],
+        "name": "Secret Mission"
+    },
+    "7": {
+        "body": [
+            {
+                "value": "You may play this card during any regroup. Remove one of the following "
+            },
+            {
+                "value": "cards",
+                "style": {
+                    "revised": [
+                        "removed"
+                    ]
+                },
+                "revisionID": null
+            },
+            {
+                "value": " from the game: an evolution card, a hazard card, a moon (and "
+            },
+            {
+                "style": {
+                    "original": [
+                        "none"
+                    ],
+                    "revised": [
+                        "added"
+                    ]
+                },
+                "value": "its"
+            },
+            {
+                "value": " card), a station (and "
+            },
+            {
+                "style": {
+                    "original": [
+                        "none"
+                    ],
+                    "revised": [
+                        "added"
+                    ]
+                },
+                "value": "its"
+            },
+            {
+                "value": " card), a revealed objective, or a tech. Any ships on these cards are returned to their owner's colonies. Then, remove this card from the game."
+            }
+        ],
+        "timing": {
+            "player": [
+                {
+                    "value": "As Any Player"
+                }
+            ],
+            "phases": [
+                {
+                    "value": {
                         "startTurn": false,
                         "regroup": true,
                         "destiny": false,
@@ -109,62 +283,41 @@
                         "reveal": false,
                         "resolution": false
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Space Shark Wrangling",
-                "body": "You may play this card during any regroup. Remove one of the following from the game: an evolution card, a hazard card, a moon (and card), a station (and card), a revealed objective, or a tech. Any ships on these cards are returned to their owner's colonies. Then, remove this card from the game.",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": false,
-                        "regroup": true,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": false,
-                        "planning": false,
-                        "reveal": false,
-                        "resolution": false
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw:\n\nEdited for clarity."
-            }
+                }
+            ]
         },
-        "8": {
-            "original": {
-                "name": "Unilateral Banishment",
-                "body": "You may play this card immediately or remove it from the game.\n\nCross out one alien in another player's coalition if it has at least two aliens. If that player had selected the crossed-out alien, they must select another alien from their coalition. Then, remove this card from the game.",
-                "expansion": "Cosmic Odyssey"
-            }
-        },
-        "9": {
-            "original": {
-                "name": "Unlimited Power",
-                "body": "You may play this card at the same timing as your alien power to use your alien power even if it was zapped, is limited to once per encounter, or is facedown. This use of your power cannot be zapped. Then, remove this card from the game.",
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
-        },
-        "10": {
-            "original": {
-                "name": "Unrefusable Offer",
-                "body": "You may play this card immediately or remove it from the game.\n\nPermanently swap an unselected alien in your coalition with an unselected alien in another player's coalition. Then, remove this card from the game.",
-                "expansion": "Cosmic Odyssey"
-            }
-        }
+        "versions": [
+            "original",
+            "revised"
+        ],
+        "name": "Space Shark Wrangling"
+    },
+    "8": {
+        "body": [{
+            "value": "You may play this card immediately or remove it from the game.\n\nCross out one alien in another player's coalition if it has at least two aliens. If that player had selected the crossed-out alien, they must select another alien from their coalition. Then, remove this card from the game."
+        }],
+        "versions": [
+            "original"
+        ],
+        "name": "Unilateral Banishment"
+    },
+    "9": {
+        "body": [{
+            "value": "You may play this card at the same timing as your alien power to use your alien power even if it was zapped, is limited to once per encounter, or is facedown. This use of your power cannot be zapped. Then, remove this card from the game."
+        }],
+        "versions": [
+            "original"
+        ],
+        "name": "Unlimited Power"
+    },
+    "10": {
+        "body": [{
+            "value": "You may play this card immediately or remove it from the game.\n\nPermanently swap an unselected alien in your coalition with an unselected alien in another player's coalition. Then, remove this card from the game."
+        }],
+        "versions": [
+            "original"
+        ],
+        "name": "Unrefusable Offer"
     }
+}
 }

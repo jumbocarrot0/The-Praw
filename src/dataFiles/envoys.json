@@ -1,277 +1,506 @@
 {
     "envoys": {
         "0": {
-            "original": {
-                "name": "Crabby",
-                "gameSetup": "",
-                "powerBody": "As a main player, before encounter cards are selected, if both main players have at least two cards in hand, you may use this power. Take two cards at random from your opponent and set them aside facedown. Give that player two cards of your choice from your hand. Then, add the set-aside cards to your hand.",
-                "powerTiming": {
-                    "player": "Main Player Only",
-                    "choice": "Optional",
-                    "phases": {
-                        "startTurn": false,
-                        "regroup": false,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": false,
-                        "planning": true,
-                        "reveal": false,
-                        "resolution": false
-                    }
+            "name": "Crabby",
+            "expansion": "Cosmic Odyssey",
+            "thumbnail": "envoy icons/avatar_Crabby.png",
+            "designers": [],
+            "powerBody": [
+                {
+                    "value": "As a main player, before encounter cards are selected, if both main players have at least two cards in hand, you "
                 },
-                "history": "The Crabbys are often salty from unsatisfactory trades, and are almost always covered in sodium chloride.",
-                "expansion": "Cosmic Odyssey",
-                "designers": [],
-                "thumbnail": "envoy icons/avatar_Crabby.png"
+                {
+                    "style": {
+                        "all": ["bold", "italic"]
+                    },
+                    "value": "may use"
+                },
+                {
+                    "value": " this power. Take two cards at random from your opponent and set them aside facedown. Give that player two cards of your choice from your hand. Then, add the set-aside cards to your hand."
+                }
+            ],
+            "history": [
+                {
+                    "value": "The Crabbys are often salty from unsatisfactory trades, and are almost always covered in sodium chloride."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "powerTiming": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": false,
+                            "regroup": false,
+                            "destiny": false,
+                            "launch": false,
+                            "alliance": false,
+                            "planning": true,
+                            "reveal": false,
+                            "resolution": false
+                        }
+                    }
+                ]
             }
         },
         "1": {
-            "original": {
-                "name": "Intelligent Mineral",
-                "gameSetup": "",
-                "powerBody": "As a main player, after encounter cards are selected but before they are revealed, you may use this power to guess a number from 1-9. If your opponent reveals an attack card that has that number as a digit, add 9 to your total.",
-                "powerTiming": {
-                    "player": "Main Player Only",
-                    "choice": "Optional",
-                    "phases": {
-                        "startTurn": false,
-                        "regroup": false,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": false,
-                        "planning": true,
-                        "reveal": false,
-                        "resolution": false
-                    }
+            "name": "Intelligent Mineral",
+            "expansion": "Cosmic Odyssey",
+            "thumbnail": "envoy icons/avatar_Intelligent_Mineral.png",
+            "designers": [],
+            "powerBody": [
+                {
+                    "value": "As a main player, after encounter cards are selected but before they are revealed, you "
                 },
-                "history": "Those that interacted with this shockingly sentient substance were often left wondering how it managed to outplay them.",
-                "expansion": "Cosmic Odyssey",
-                "designers": [],
-                "thumbnail": "envoy icons/avatar_Intelligent_Mineral.png"
+                {
+                    "style": {
+                        "all": ["bold", "italic"]
+                    },
+                    "value": "may use"
+                },
+                {
+                    "value": " this power to guess a number from 1-9. If your opponent reveals an attack card that has that number as a digit, add 9 to your total."
+                }
+            ],
+            "history": [
+                {
+                    "value": "Those that interacted with this shockingly sentient substance were often left wondering how it managed to outplay them."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "powerTiming": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": false,
+                            "regroup": false,
+                            "destiny": false,
+                            "launch": false,
+                            "alliance": false,
+                            "planning": true,
+                            "reveal": false,
+                            "resolution": false
+                        }
+                    }
+                ]
             }
         },
         "2": {
-            "original": {
-                "name": "Musician",
-                "gameSetup": "",
-                "powerBody": "As a main player, after you win an encounter, use this power either to draw cards from the deck until you have a hand of eight cards or to discard down to four cards of your choice.",
-                "powerTiming": {
-                    "player": "Main Player Only",
-                    "choice": "Optional",
-                    "phases": {
-                        "startTurn": false,
-                        "regroup": false,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": false,
-                        "planning": false,
-                        "reveal": false,
-                        "resolution": true
-                    }
+            "name": "Musician",
+            "expansion": "Cosmic Odyssey",
+            "thumbnail": "envoy icons/avatar_Musician.png",
+            "designers": [],
+            "powerBody": [
+                {
+                    "value": "As a main player, after you win an encounter, "
                 },
-                "history": "Although many cultured have developed music for different occasions, the Musicians have a different melody for every event, from the triumphant horns and rolling kettle drums of birth to the sad trombone solo they play when alone.",
-                "expansion": "Cosmic Odyssey",
-                "designers": [],
-                "thumbnail": "envoy icons/avatar_Musician.png"
+                {
+                    "style": {
+                        "all": ["bold", "italic"]
+                    },
+                    "value": "use"
+                },
+                {
+                    "value": " this power either to draw cards from the deck until you have a hand of eight cards or to discard down to four cards of your choice."
+                }
+            ],
+            "history": [
+                {
+                    "value": "Although many cultured have developed music for different occasions, the Musicians have a different melody for every event, from the triumphant horns and rolling kettle drums of birth to the sad trombone solo they play when alone."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "powerTiming": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": false,
+                            "regroup": false,
+                            "destiny": false,
+                            "launch": false,
+                            "alliance": false,
+                            "planning": false,
+                            "reveal": false,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "3": {
-            "original": {
-                "name": "Preservationist",
-                "gameSetup": "",
-                "powerBody": "Once per encounter, after another player discards a card, you may use this power to force them to return the card to their hand.",
-                "powerTiming": {
-                    "player": "As Any Player",
-                    "choice": "Optional",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
-                    }
+            "name": "Preservationist",
+            "expansion": "Cosmic Odyssey",
+            "thumbnail": "envoy icons/avatar_Preservationist.png",
+            "designers": [],
+            "powerBody": [
+                {
+                    "value": "Once per encounter, after another player discards a card, you "
                 },
-                "history": "Although their tradition leans toward arboreal conservationism, after they discovered consumerism, the Preservationists' cheecks and aspirations expanded greatly.",
-                "expansion": "Cosmic Odyssey",
-                "designers": [],
-                "thumbnail": "envoy icons/avatar_Preservationist.png"
+                {
+                    "style": {
+                        "all": ["bold", "italic"]
+                    },
+                    "value": "may use"
+                },
+                {
+                    "value": " this power to force them to return the card to their hand."
+                }
+            ],
+            "history": [
+                {
+                    "value": "Although their tradition leans toward arboreal conservationism, after they discovered consumerism, the Preservationists' cheecks and aspirations expanded greatly."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "powerTiming": {
+                "player": [
+                    {
+                        "value": "As Any Player"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
+                    }
+                ]
             }
         },
         "4": {
-            "original": {
-                "name": "Prime",
-                "gameSetup": "",
-                "powerBody": "As a main player or ally, during the reveal phase, when you play or reveal a card with a prime number, use this power to double its value for encounter totals.",
-                "powerTiming": {
-                    "player": "Main Player or Ally Only",
-                    "choice": "Mandatory",
-                    "phases": {
-                        "startTurn": false,
-                        "regroup": false,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": false,
-                        "planning": false,
-                        "reveal": true,
-                        "resolution": false
-                    }
+            "name": "Prime",
+            "expansion": "Cosmic Odyssey",
+            "thumbnail": "envoy icons/avatar_Prime.png",
+            "designers": [],
+            "powerBody": [
+                {
+                    "value": "As a main player or ally, during the reveal phase, when you play or reveal a card with a prime number, "
                 },
-                "history": "The holy nature of certain numbers empower the Prime to presevere as well as triumph: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97.",
-                "expansion": "Cosmic Odyssey",
-                "designers": [],
-                "thumbnail": "envoy icons/avatar_Prime.png"
+                {
+                    "style": {
+                        "all": ["bold", "italic"]
+                    },
+                    "value": "use"
+                },
+                {
+                    "value": " this power to double its value for encounter totals."
+                }
+            ],
+            "history": [
+                {
+                    "value": "The holy nature of certain numbers empower the Prime to presevere as well as triumph: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97. "
+                },
+                {
+                    "value": "Alternatively, all negative numbers have been deemed unholy and incorrigible as prime numbers cannot be negative.",
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "revisionID": 1
+                }
+            ],
+            "powerTiming": {
+                "player": [
+                    {
+                        "value": "Main Player or Ally Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": false,
+                            "regroup": false,
+                            "destiny": false,
+                            "launch": false,
+                            "alliance": false,
+                            "planning": false,
+                            "reveal": true,
+                            "resolution": false
+                        }
+                    }
+                ]
             },
-            "revised": {
-                "name": "Prime",
-                "gameSetup": "",
-                "powerBody": "As a main player or ally, during the reveal phase, when you play or reveal a card with a prime number, use this power to double its value for encounter totals.",
-                "powerTiming": {
-                    "player": "Main Player or Ally Only",
-                    "choice": "Mandatory",
-                    "phases": {
-                        "startTurn": false,
-                        "regroup": false,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": false,
-                        "planning": false,
-                        "reveal": true,
-                        "resolution": false
-                    }
-                },
-                "history": "The holy nature of certain numbers empower the Prime to presevere as well as triumph: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97. Alternatively, all negative numbers have been deemed unholy and incorrigible as prime numbers cannot be negative.",
-                "expansion": "Cosmic Odyssey",
-                "designers": [],
-                "thumbnail": "envoy icons/avatar_Prime.png",
-                "revisionNotes": "Revisions from The Praw\n\nEdited to include the deleted part of the history that clarified negative numbers cannot be prime."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ]
         },
         "5": {
-            "original": {
-                "name": "Roller",
-                "gameSetup": "",
-                "powerBody": "As a main player or ally, after cards are selected but before they are revealed, you may use this power. If you do, opposing allies that wish to play reinforcement cards must do so now and cannot play reinforcement cards after cards are revealed.",
-                "powerTiming": {
-                    "player": "Main Player or Ally Only",
-                    "choice": "Optional",
-                    "phases": {
-                        "startTurn": false,
-                        "regroup": false,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": false,
-                        "planning": true,
-                        "reveal": false,
-                        "resolution": false
-                    }
+            "name": "Roller",
+            "expansion": "Cosmic Odyssey",
+            "thumbnail": "envoy icons/avatar_Roller.png",
+            "designers": [],
+            "powerBody": [
+                {
+                    "value": "As a main player or ally, after cards are selected but before they are revealed, you "
                 },
-                "history": "In order to appease their king whose outrageous requests for offering gre too excessive, the Rollers fabricated large spheres of rolled-up stuff to an excessive scale. Soon they rolled up their whole planet and went to the skies to acquire more things.",
-                "expansion": "Cosmic Odyssey",
-                "designers": [],
-                "thumbnail": "envoy icons/avatar_Roller.png"
+                {
+                    "style": {
+                        "all": ["bold", "italic"]
+                    },
+                    "value": "may use"
+                },
+                {
+                    "value": " this power. If you do, opposing allies that wish to play reinforcement cards must do so now and cannot play reinforcement cards after cards are revealed."
+                }
+            ],
+            "history": [
+                {
+                    "value": "In order to appease their king whose outrageous requests for offering gre too excessive, the Rollers fabricated large spheres of rolled-up stuff to an excessive scale. Soon they rolled up their whole planet and went to the skies to acquire more things."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "powerTiming": {
+                "player": [
+                    {
+                        "value": "Main Player or Ally Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": false,
+                            "regroup": false,
+                            "destiny": false,
+                            "launch": false,
+                            "alliance": false,
+                            "planning": true,
+                            "reveal": false,
+                            "resolution": false
+                        }
+                    }
+                ]
             }
         },
         "6": {
-            "original": {
-                "name": "Swarm",
-                "gameSetup": "",
-                "powerBody": "As a main player or ally, after encounter cards are revealed, use this power. Each opposing player who has at least as many foreign colonies as you does not add their ships to encounter totals. Each of your allies' ships is worth double toward encounter totals if that ally does not have more foreign colonies than you.",
-                "powerTiming": {
-                    "player": "Main Player Only",
-                    "choice": "Mandatory",
-                    "phases": {
-                        "startTurn": false,
-                        "regroup": false,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": false,
-                        "planning": false,
-                        "reveal": true,
-                        "resolution": false
-                    }
+            "name": "Swarm",
+            "expansion": "Cosmic Odyssey",
+            "thumbnail": "envoy icons/avatar_Swarm.png",
+            "designers": [],
+            "powerBody": [
+                {
+                    "value": "As a main player or ally, after encounter cards are revealed, "
                 },
-                "history": "The Swarm are known for assaulting foes in relentless waves, and for their tasty banana mead.",
-                "expansion": "Cosmic Odyssey",
-                "designers": [],
-                "thumbnail": "envoy icons/avatar_Swarm.png"
+                {
+                    "style": {
+                        "all": ["bold", "italic"]
+                    },
+                    "value": "use"
+                },
+                {
+                    "value": " this power. Each opposing player who has at least as many foreign colonies as you does not add their ships to encounter totals. Each of your allies' ships is worth double toward encounter totals if that ally does not have more foreign colonies than you."
+                }
+            ],
+            "history": [
+                {
+                    "value": "The Swarm are known for assaulting foes in relentless waves, and for their tasty banana mead."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "powerTiming": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": false,
+                            "regroup": false,
+                            "destiny": false,
+                            "launch": false,
+                            "alliance": false,
+                            "planning": false,
+                            "reveal": true,
+                            "resolution": false
+                        }
+                    }
+                ]
             }
         },
         "7": {
-            "original": {
-                "name": "Uber-Reserve",
-                "gameSetup": "",
-                "powerBody": "As a main player or ally, after encounter cards are revealed, use this power. The value of each reinforcement card your side plays is doubled.",
-                "powerTiming": {
-                    "player": "Main Player or Ally Only",
-                    "choice": "Mandatory",
-                    "phases": {
-                        "startTurn": false,
-                        "regroup": false,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": false,
-                        "planning": false,
-                        "reveal": true,
-                        "resolution": false
-                    }
+            "name": "Uber-Reserve",
+            "expansion": "Cosmic Odyssey",
+            "thumbnail": "envoy icons/avatar_Uber_Reserve.png",
+            "designers": [],
+            "powerBody": [
+                {
+                    "value": "As a main player or ally, after encounter cards are revealed, "
                 },
-                "history": "The Reserves think the rest of the galaxy's obsession with superheroes is hilarious and silly, while they fail to see any connotation with their own Uberheroes.",
-                "expansion": "Cosmic Odyssey",
-                "designers": [],
-                "thumbnail": "envoy icons/avatar_Uber_Reserve.png"
+                {
+                    "style": {
+                        "all": ["bold", "italic"]
+                    },
+                    "value": "use"
+                },
+                {
+                    "value": " this power. The value of each reinforcement card your side plays is doubled."
+                }
+            ],
+            "history": [
+                {
+                    "value": "The Reserves think the rest of the galaxy's obsession with superheroes is hilarious and silly, while they fail to see any connotation with their own Uberheroes."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "powerTiming": {
+                "player": [
+                    {
+                        "value": "Main Player or Ally Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": false,
+                            "regroup": false,
+                            "destiny": false,
+                            "launch": false,
+                            "alliance": false,
+                            "planning": false,
+                            "reveal": true,
+                            "resolution": false
+                        }
+                    }
+                ]
             }
         },
         "8": {
-            "original": {
-                "name": "Underdog",
-                "gameSetup": "",
-                "powerBody": "As a main player, after the outcome is determined, if both sides revealed attack cards and you lost by 15 or more, use this power. Your side wins instead.",
-                "powerTiming": {
-                    "player": "Main Player or Ally Only",
-                    "choice": "Mandatory",
-                    "phases": {
-                        "startTurn": false,
-                        "regroup": false,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": false,
-                        "planning": false,
-                        "reveal": true,
-                        "resolution": false
-                    }
+            "name": "Underdog",
+            "expansion": "Cosmic Odyssey",
+            "thumbnail": "envoy icons/avatar_Underdog.png",
+            "designers": [],
+            "powerBody": [
+                {
+                    "value": "As a main player, after the outcome is determined, if both sides revealed attack cards and you lost by 15 or more, "
                 },
-                "history": "Priding themselves on their come-from-behind attitude and their proclivity for winning when the odds are stacked against them, the Underdogs hate a fair fight.",
-                "expansion": "Cosmic Odyssey",
-                "designers": [],
-                "thumbnail": "envoy icons/avatar_Underdog.png"
+                {
+                    "style": {
+                        "all": ["bold", "italic"]
+                    },
+                    "value": "use"
+                },
+                {
+                    "value": " this power. Your side wins instead."
+                }
+            ],
+            "history": [
+                {
+                    "value": "Priding themselves on their come-from-behind attitude and their proclivity for winning when the odds are stacked against them, the Underdogs hate a fair fight."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "powerTiming": {
+                "player": [
+                    {
+                        "value": "Main Player or Ally Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": false,
+                            "regroup": false,
+                            "destiny": false,
+                            "launch": false,
+                            "alliance": false,
+                            "planning": false,
+                            "reveal": true,
+                            "resolution": false
+                        }
+                    }
+                ]
             }
         },
         "9": {
-            "original": {
-                "name": "Worry Wart",
-                "gameSetup": "",
-                "powerBody": "As a main player, after allies are invited, use this power. Gain one reward for each player your opponent invited.",
-                "powerTiming": {
-                    "player": "Main Player Only",
-                    "choice": "Mandatory",
-                    "phases": {
-                        "startTurn": false,
-                        "regroup": false,
-                        "destiny": false,
-                        "launch": false,
-                        "alliance": true,
-                        "planning": false,
-                        "reveal": false,
-                        "resolution": false
-                    }
+            "name": "Worry Wart",
+            "expansion": "Cosmic Odyssey",
+            "thumbnail": "envoy icons/avatar_Worry_Wart.png",
+            "designers": [],
+            "powerBody": [
+                {
+                    "value": "As a main player, after allies are invited, "
                 },
-                "history": "The Worry Warts have the amazing ability to make their thoughts into reality. Unfortunately, their thoughts are consumed with worrying about what horrible thing they might accidently think up!",
-                "expansion": "Cosmic Odyssey",
-                "designers": [],
-                "thumbnail": "envoy icons/avatar_Worry_Wart.png"
+                {
+                    "style": {
+                        "all": ["bold", "italic"]
+                    },
+                    "value": "use"
+                },
+                {
+                    "value": " this power. Gain one reward for each player your opponent invited."
+                }
+            ],
+            "history": [
+                {
+                    "value": "The Worry Warts have the amazing ability to make their thoughts into reality. Unfortunately, their thoughts are consumed with worrying about what horrible thing they might accidently think up!"
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "powerTiming": {
+                "player": [
+                    {
+                        "value": "Main Player Only"
+                    }
+                ],
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": false,
+                            "regroup": false,
+                            "destiny": false,
+                            "launch": false,
+                            "alliance": true,
+                            "planning": false,
+                            "reveal": false,
+                            "resolution": false
+                        }
+                    }
+                ]
             }
         }
     }

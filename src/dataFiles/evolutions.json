@@ -1,405 +1,780 @@
 {
     "evolutions": {
         "0": {
-            "original": {
-                "name": "Archæology",
-                "body": [
-                    {
-                        "cost": "0",
-                        "text": "You cannot play artifacts."
+            "name": "Archæology",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
-                    {
-                        "cost": "1-2",
-                        "text": "No effect."
+                    "value": "0: "
+                },
+                {
+                    "value": "You cannot play artifacts.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
+                    "value": "1-2: "
+                },
+                {
+                    "value": "No effect.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "3: "
+                },
+                {
+                    "value": "After you play an artifact, you may discard a flare from your hand instead of discarding the artifact. (The artifact is returned to your hand.)"
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "3",
-                        "text": "After you play an artifact, you may discard a flare from your hand instead of discarding the artifact. (The artifact is returned to your hand.)"
+                        "value": "As Any Player"
                     }
                 ],
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "1": {
-            "original": {
-                "name": "Archival Studies",
-                "body": [
-                    {
-                        "cost": "2",
-                        "text": "Before you draw a new hand, you may reveal up to two non-encounter cards from your hand and include those cards as part of your new hand."
+            "name": "Archival Studies",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
+                    "value": "2: "
+                },
+                {
+                    "value": "Before you draw a new hand, you may reveal up to two non-encounter cards from your hand and include those cards as part of your new hand.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "3: "
+                },
+                {
+                    "value": "Before you draw a new hand, you may reveal any number of non-encounter cards from your hand and include those cards as part of your new hand."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "3",
-                        "text": "Before you draw a new hand, you may reveal any number of non-encounter cards from your hand and include those cards as part of your new hand."
+                        "value": "As Any Player"
                     }
                 ],
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "2": {
-            "original": {
-                "name": "Aviation",
-                "body": [
-                    {
-                        "cost": "0",
-                        "text": "You cannot become an ally."
+            "name": "Aviation",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
-                    {
-                        "cost": "1",
-                        "text": "As an ally, your ship limit is one."
+                    "value": "0: "
+                },
+                {
+                    "value": "You cannot become an ally.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
-                    {
-                        "cost": "2-3",
-                        "text": "No effect."
+                    "value": "1: "
+                },
+                {
+                    "value": "As an ally, your ship limit is one.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
+                    "value": "2-3: "
+                },
+                {
+                    "value": "No effect.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "4: "
+                },
+                {
+                    "value": "As an ally, your ship limit is increased by one."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "4",
-                        "text": "As an ally, your ship limit is increased by one."
+                        "value": "Not Main Player"
                     }
                 ],
-                "timing": {
-                    "player": "Not Main Player",
-                    "phases": {
-                        "alliance": true
+                "phases": [
+                    {
+                        "value": {
+                            "alliance": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "3": {
-            "original": {
-                "name": "Bad Publicity",
-                "body": [
-                    {
-                        "cost": "2",
-                        "text": "As the defense, after alliances are formed, you may force each offensive ally to discard one card at random from their hand."
+            "name": "Bad Publicity",
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
+                    "value": "2: "
+                },
+                {
+                    "value": "As the defense, after alliances are formed, you may force each offensive ally to discard one card at random from their hand.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "3: "
+                },
+                {
+                    "value": "As the defense, after alliances are formed, you may force each offensive ally to discard up to two cards at random from their hand."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "3",
-                        "text": "As the defense, after alliances are formed, you may force each offensive ally to discard up to two cards at random from their hand."
+                        "value": "Defense Only"
                     }
                 ],
-                "timing": {
-                    "player": "Defense Only",
-                    "phases": {
-                        "alliance": true,
-                        "planning": true
+                "phases": [
+                    {
+                        "value": {
+                            "alliance": true
+                        }
+                    },
+                    {
+                        "style": {
+                            "revised": [
+                                "removed"
+                            ]
+                        },
+                        "value": {
+                            "planning": true
+                        },
+                        "revisionID": 1
                     }
-                },
-                "expansion": "Cosmic Odyssey"
+                ]
             },
-            "revised": {
-                "name": "Bad Publicity",
-                "body": [
-                    {
-                        "cost": "2",
-                        "text": "As the defense, after alliances are formed, you may force each offensive ally to discard one card at random from their hand."
-                    },
-                    {
-                        "cost": "3",
-                        "text": "As the defense, after alliances are formed, you may force each offensive ally to discard up to two cards at random from their hand."
-                    }
-                ],
-                "timing": {
-                    "player": "Defense Only",
-                    "phases": {
-                        "alliance": true
-                    }
-                },
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw\n\nEdited to fix timing indicator"
-            }
+            "expansion": "Cosmic Odyssey"
         },
         "4": {
-            "original": {
-                "name": "Bountiful Stockpile",
-                "body": [
-                    {
-                        "text": "If the Reward Deck variant (🕮10) is not being used, add it."
+            "name": "Bountiful Stockpile",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "text": "If the Reward Deck variant (🕮10) is not being used, add it.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
-                    {
-                        "cost": "0",
-                        "text": "When you gain rewards, you cannot draw cards from the reward deck."
+                    "value": "0: "
+                },
+                {
+                    "value": "When you gain rewards, you cannot draw cards from the reward deck.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
-                    {
-                        "cost": "1-2",
-                        "text": "No effect."
+                    "value": "1-2: "
+                },
+                {
+                    "value": "No effect.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
+                    "value": "3: "
+                },
+                {
+                    "value": "If you win an encounter as a defensive ally, gain one additional reward."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "3",
-                        "text": "If you win an encounter as a defensive ally, gain one additional reward."
+                        "value": "As Any Player"
                     }
                 ],
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "5": {
-            "original": {
-                "name": "Colonization",
-                "body": [
-                    {
-                        "cost": "0-1",
-                        "text": "If you win the encounter as the offens, you can land only one ship on the targeted planet. Return your other ships to your home colonies."
+            "name": "Colonization",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
-                    {
-                        "cost": "2",
-                        "text": "No effect."
+                    "value": "0-1: "
+                },
+                {
+                    "value": "If you win the encounter as the offense, you can land only one ship on the targeted planet. Return your other ships to your home colonies.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
+                    "value": "2: "
+                },
+                {
+                    "value": "No effect.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "3: "
+                },
+                {
+                    "value": "When you launch, if the targeted planet has no colonies, immediately win the encounter."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "3",
-                        "text": "When you launch, if the targeted planet has no colonies, immediately win the encounter."
+                        "value": "Offense Only"
                     }
                 ],
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "launch": true,
-                        "resolution": true
+                "phases": [
+                    {
+                        "value": {
+                            "launch": true,
+                            "resolution": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "6": {
-            "original": {
-                "name": "Coordination Tactics",
-                "body": [
-                    {
-                        "cost": "0",
-                        "text": "You cannot invite allies."
+            "name": "Coordination Tactics",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
-                    {
-                        "cost": "1",
-                        "text": "You cannot invite more than one player to be an ally."
+                    "value": "0: "
+                },
+                {
+                    "value": "You cannot invite allies.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
-                    {
-                        "cost": "2-3",
-                        "text": "No effect."
+                    "value": "1: "
+                },
+                {
+                    "value": "You cannot invite more than one player to be an ally.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
+                    "value": "2-3: "
+                },
+                {
+                    "value": "No effect.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "4: "
+                },
+                {
+                    "value": "After encounter cards are revealed, your allies may send additional ships (up to their ship limit)."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "4",
-                        "text": "After encounter cards are revealed, your allies may send additional ships (up to their ship limit)."
+                        "value": "Offense Only"
                     }
                 ],
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "launch": true,
-                        "resolution": true
+                "phases": [
+                    {
+                        "value": {
+                            "launch": true,
+                            "resolution": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "7": {
-            "original": {
-                "name": "Deep Radar",
-                "body": [
-                    {
-                        "cost": "1-3",
-                        "text": "Before accepting an alliance invitation, you may ask the inviting player to show you one of their encounter cards, which they may decline. Then, you choose whether to ally with them."
+            "name": "Deep Radar",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
+                    "value": "1-3: "
+                },
+                {
+                    "value": "Before accepting an alliance invitation, you may ask the inviting player to show you one of their encounter cards, which they may decline. Then, you choose whether to ally with them.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "4: "
+                },
+                {
+                    "value": "In addition to the above ability, before the main players select their encounter cards, if you are not a main player or ally, you may offer a card from your hand to a main player. If they take it, you become their ally."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "4",
-                        "text": "In addition to the above ability, before the main players select their encounter cards, if you are not a main player or ally, you may offer a card from your hand to a main player. If they take it, you become their ally."
+                        "value": "Not Main Player or Ally"
                     }
                 ],
-                "timing": {
-                    "player": "Not Main Player or Ally",
-                    "phases": {
-                        "alliance": true,
-                        "planning": true
+                "phases": [
+                    {
+                        "value": {
+                            "alliance": true,
+                            "planning": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "8": {
-            "original": {
-                "name": "Experiental Learning",
-                "body": [
-                    {
-                        "cost": "2-3",
-                        "text": "If your first encounter ended in either a loss or a failed deal, you can still have a second encounter."
+            "name": "Experiental Learning",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
+                    "value": "2-3: "
+                },
+                {
+                    "value": "If your first encounter ended in either a loss or a failed deal, you can still have a second encounter.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "4: "
+                },
+                {
+                    "value": "In addition to the above ability, if both your first and second encounters ended in either a loss or a failed deal, you can have a third encounter."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "4",
-                        "text": "In addition to the above ability, if both your first and second encounters ended in either a loss or a failed deal, you can have a third encounter."
+                        "value": "Offense Only"
                     }
                 ],
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "resolution": true
+                "phases": [
+                    {
+                        "value": {
+                            "resolution": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "9": {
-            "original": {
-                "name": "Hyperspace Portcullis",
-                "body": [
+            "name": "Hyperspace Portcullis",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "2: "
+                },
+                {
+                    "value": "When you draw destiny, you may draw two destiny cards, choose one to encounter, and place the other at the bottom of the destiny deck."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "2",
-                        "text": "When you draw destiny, you may draw two destiny cards, choose one to encounter, and place the other at the bottom of the destiny deck."
+                        "value": "Offense Only"
                     }
                 ],
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "destiny": true
+                "phases": [
+                    {
+                        "value": {
+                            "destiny": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "10": {
-            "original": {
-                "name": "Momentum Drive",
-                "body": [
-                    {
-                        "cost": "0",
-                        "text": "You cannot have a second encounter."
+            "name": "Momentum Drive",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
-                    {
-                        "cost": "1-2",
-                        "text": "No effect."
+                    "value": "0: "
+                },
+                {
+                    "value": "You cannot have a second encounter.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
+                    "value": "1-2: "
+                },
+                {
+                    "value": "No effect.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "3: "
+                },
+                {
+                    "value": "As the offense, during the planning phase, if you do not have an encounter card in your hand, your turn does not end. Discard your hand and draw a new hand."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "3",
-                        "text": "As the offense, during the planning phase, if you do not have an encounter card in your hand, your turn does not end. Discard your hand and draw a new hand."
+                        "value": "Offense Only"
                     }
                 ],
-                "timing": {
-                    "player": "Offense Only",
-                    "phases": {
-                        "reveal": true,
-                        "resolution": true
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true,
+                            "resolution": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "11": {
-            "original": {
-                "name": "Pyrology",
-                "body": [
-                    {
-                        "cost": "0",
-                        "text": "You cannot play flare cards."
+            "name": "Pyrology",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
-                    {
-                        "cost": "1",
-                        "text": "No effect."
+                    "value": "0: "
+                },
+                {
+                    "value": "You cannot play flare cards.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
-                    {
-                        "cost": "2-3",
-                        "text": "When you play your alien's flare, you can use either its wild or super ability."
+                    "value": "1: "
+                },
+                {
+                    "value": "No effect.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
+                    "value": "2-3: "
+                },
+                {
+                    "value": "When you play your alien's flare, you can use either its wild or super ability.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "4: "
+                },
+                {
+                    "value": "In addition to the above ability, after another player plays a flare, you may draw a flare from the unused flare deck."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "4",
-                        "text": "In addition to the above ability, after another player plays a flare, you may draw a flare from the unused flare deck."
+                        "value": "As Any Player"
                     }
                 ],
-                "timing": {
-                    "player": "As Any Player",
-                    "phases": {
-                        "startTurn": true,
-                        "regroup": true,
-                        "destiny": true,
-                        "launch": true,
-                        "alliance": true,
-                        "planning": true,
-                        "reveal": true,
-                        "resolution": true
+                "phases": [
+                    {
+                        "value": {
+                            "startTurn": true,
+                            "regroup": true,
+                            "destiny": true,
+                            "launch": true,
+                            "alliance": true,
+                            "planning": true,
+                            "reveal": true,
+                            "resolution": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "12": {
-            "original": {
-                "name": "Turbo Cannon",
-                "body": [
+            "name": "Turbo Cannon",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "2+: "
+                },
+                {
+                    "value": "As a main player, add the number of your ships on this card to your side's total."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "2+",
-                        "text": "As a main player, add the number of your ships on this card to your side's total."
+                        "value": "Main Player Only"
                     }
                 ],
-                "timing": {
-                    "player": "Main Player Only",
-                    "phases": {
-                        "reveal": true
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "13": {
-            "original": {
-                "name": "Unexpected Support",
-                "body": [
-                    {
-                        "cost": "0",
-                        "text": "You cannot play reinforcement cards."
+            "name": "Unexpected Support",
+            "versions": [
+                "original"
+            ],
+            "body": [
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
-                    {
-                        "cost": "1",
-                        "text": "No effect."
+                    "value": "0: "
+                },
+                {
+                    "value": "You cannot play reinforcement cards.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
                     },
+                    "value": "1: "
+                },
+                {
+                    "value": "No effect.\n\n"
+                },
+                {
+                    "style": {
+                        "all": [
+                            "digit"
+                        ]
+                    },
+                    "value": "2+: "
+                },
+                {
+                    "value": "As a main player, add the number of your ships on this card to your side's total."
+                }
+            ],
+            "timing": {
+                "player": [
                     {
-                        "cost": "2+",
-                        "text": "As a main player, add the number of your ships on this card to your side's total."
+                        "value": "Main Player or Ally Only"
                     }
                 ],
-                "timing": {
-                    "player": "Main Player or Ally Only",
-                    "phases": {
-                        "reveal": true
+                "phases": [
+                    {
+                        "value": {
+                            "reveal": true
+                        }
                     }
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+                ]
+            },
+            "expansion": "Cosmic Odyssey"
         }
     }
 }

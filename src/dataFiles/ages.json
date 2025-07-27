@@ -1,236 +1,218 @@
 {
     "ages": {
         "0": {
-            "original": {
-                "name": "Classic Age",
-                "name2": "of Innovation",
-                "type": "Standard",
-                "selectionMethodID": 0,
-                "masterID": "0",
-                "variants": [
-                    {
-                        "Name": "Technology",
-                        "Link": "/Variants/Techs"
-                    }
-                ],
-                "scoring": {
-                    "FC": 4,
-                    "HC": 2,
-                    "T": 1
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Classic Age",
+            "name2": "of Innovation",
+            "type": "Standard",
+            "selectionMethodID": 0,
+            "masterID": "0",
+            "variants": [
+                {
+                    "Name": "Technology",
+                    "Link": "/Variants/Techs"
+                }
+            ],
+            "scoring": {
+                "FC": 4,
+                "HC": 2,
+                "T": 1
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "1": {
-            "original": {
-                "name": "Obedient Age",
-                "name2": "of Incursion",
-                "type": "Standard",
-                "selectionMethodID": 1,
-                "masterID": "1",
-                "variants": [
-                    {
-                        "Name": "Rewards Deck",
-                        "Link": "/Variants/RewardsDeck"
-                    },
-                    {
-                        "Name": "Ultra Rewards",
-                        "Link": "/Variants/RewardsDeck",
-                        "Subvariant": true
-                    }
-                ],
-                "scoring": {
-                    "FC": 3,
-                    "HC": 1,
-                    "W": 2
+            "name": "Obedient Age",
+            "name2": "of Incursion",
+            "type": "Standard",
+            "selectionMethodID": 1,
+            "masterID": "1",
+            "variants": [
+                {
+                    "Name": "Rewards Deck",
+                    "Link": "/Variants/RewardsDeck"
                 },
-                "expansion": "Cosmic Odyssey"
-            }
+                {
+                    "Name": "Ultra Rewards",
+                    "Link": "/Variants/RewardsDeck",
+                    "Subvariant": true
+                }
+            ],
+            "scoring": {
+                "FC": 3,
+                "HC": 1,
+                "W": 2
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "2": {
-            "original": {
-                "name": "Doomed Age",
-                "name2": "of Conflict",
-                "type": "Standard",
-                "selectionMethodID": 2,
-                "masterID": "2",                
-                "variants": [
-                    {
-                        "Name": "Hazard Deck",
-                        "Link": "/Variants/Hazards"
-                    }
-                ],
-                "scoring": {
-                    "FC": 4,
-                    "HC": 3
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Doomed Age",
+            "name2": "of Conflict",
+            "type": "Standard",
+            "selectionMethodID": 2,
+            "masterID": "2",
+            "variants": [
+                {
+                    "Name": "Hazard Deck",
+                    "Link": "/Variants/Hazards"
+                }
+            ],
+            "scoring": {
+                "FC": 4,
+                "HC": 3
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "3": {
-            "original": {
-                "name": "Dignified Age",
-                "name2": "of Alliances",
-                "type": "Standard",
-                "selectionMethodID": 3,
-                "masterID": "3",
-                "variants": [
-                    {
-                        "Name": "Team Cosmic",
-                        "Link": "/Variants/TeamMode"
-                    }
-                ],
-                "scoring": {
-                    "FC": 2,
-                    "HC": 1
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Dignified Age",
+            "name2": "of Alliances",
+            "type": "Standard",
+            "selectionMethodID": 3,
+            "masterID": "3",
+            "variants": [
+                {
+                    "Name": "Team Cosmic",
+                    "Link": "/Variants/TeamMode"
+                }
+            ],
+            "scoring": {
+                "FC": 2,
+                "HC": 1
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "4": {
-            "original": {
-                "name": "Tenuous Age",
-                "name2": "of Storms",
-                "type": "Standard",
-                "selectionMethodID": 4,
-                "masterID": "4",
-                "variants": [
-                    {
-                        "Name": "Space Stations",
-                        "Link": "/Variants/Stations"
-                    }
-                ],
-                "scoring": {
-                    "FC": 2,
-                    "HC": 1,
-                    "SS": 1
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Tenuous Age",
+            "name2": "of Storms",
+            "type": "Standard",
+            "selectionMethodID": 4,
+            "masterID": "4",
+            "variants": [
+                {
+                    "Name": "Space Stations",
+                    "Link": "/Variants/Stations"
+                }
+            ],
+            "scoring": {
+                "FC": 2,
+                "HC": 1,
+                "SS": 1
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "5": {
-            "original": {
-                "name": "Mundane Age",
-                "name2": "of Dominion",
-                "type": "Standard",
-                "selectionMethodID": 5,
-                "masterID": "5",
-                "variants": [
-                    {
-                        "Name": "Reward Deck",
-                        "Link": "/Variants/RewardsDeck"
-                    },
-                    {
-                        "Name": "Hazard Deck",
-                        "Link": "/Variants/Hazards"
-                    }
-                ],
-                "scoring": {
-                    "FC": 3,
-                    "HC": 2
+            "name": "Mundane Age",
+            "name2": "of Dominion",
+            "type": "Standard",
+            "selectionMethodID": 5,
+            "masterID": "5",
+            "variants": [
+                {
+                    "Name": "Reward Deck",
+                    "Link": "/Variants/RewardsDeck"
                 },
-                "expansion": "Cosmic Odyssey"
-            }
+                {
+                    "Name": "Hazard Deck",
+                    "Link": "/Variants/Hazards"
+                }
+            ],
+            "scoring": {
+                "FC": 3,
+                "HC": 2
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "6": {
-            "designNotes": "Strangely, despite referecing Cosmic Eons, this age does utilise the hidden alliance variant nor foreign aid.",
-            "original": {
-                "name": "Forgotten Age",
-                "name2": "of Eons",
-                "type": "Standard",
-                "selectionMethodID": 6,
-                "masterID": "6",
-                "variants": [
-                    {
-                        "Name": "Array Objectives",
-                        "Link": "/Variants/Objectives"
-                    }
-                ],
-                "scoring": {
-                    "FC": 1,
-                    "V": 6
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+            "designNotes": "Strangely, despite referencing Cosmic Eons, this age does not utilise the hidden alliance variant nor foreign aid.",
+            "name": "Forgotten Age",
+            "name2": "of Eons",
+            "type": "Standard",
+            "selectionMethodID": 6,
+            "masterID": "6",
+            "variants": [
+                {
+                    "Name": "Array Objectives",
+                    "Link": "/Variants/Objectives"
+                }
+            ],
+            "scoring": {
+                "FC": 1,
+                "V": 6
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "7": {
-            "original": {
-                "name": "Cynical Age",
-                "name2": "of Frontiers",
-                "type": "Standard",
-                "selectionMethodID": 7,
-                "masterID": "7",
-                "variants": [
-                    {
-                        "Name": "Moons",
-                        "Link": "/Variants/Moons"
-                    }
-                ],
-                "scoring": {
-                    "FC": 1,
-                    "HC": 1,
-                    "M": 1
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Cynical Age",
+            "name2": "of Frontiers",
+            "type": "Standard",
+            "selectionMethodID": 7,
+            "masterID": "7",
+            "variants": [
+                {
+                    "Name": "Moons",
+                    "Link": "/Variants/Moons"
+                }
+            ],
+            "scoring": {
+                "FC": 1,
+                "HC": 1,
+                "M": 1
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "8": {
-            "original": {
-                "name": "Vibrant Age",
-                "name2": "of Luminance",
-                "type": "Standard",
-                "selectionMethodID": 8,
-                "masterID": "8",
-                "variants": [
-                    {
-                        "Name": "Lux",
-                        "Link": "/Variants/Lux"
-                    }
-                ],
-                "scoring": {
-                    "FC": 3,
-                    "HC": 1,
-                    "ML": 6
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Vibrant Age",
+            "name2": "of Luminance",
+            "type": "Standard",
+            "selectionMethodID": 8,
+            "masterID": "8",
+            "variants": [
+                {
+                    "Name": "Lux",
+                    "Link": "/Variants/Lux"
+                }
+            ],
+            "scoring": {
+                "FC": 3,
+                "HC": 1,
+                "ML": 6
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "9": {
-            "original": {
-                "name": "Polarized Age",
-                "name2": "of Mutations",
-                "type": "Standard",
-                "selectionMethodID": 9,
-                "masterID": "9",
-                "variants": [
-                    {
-                        "Name": "Evolution",
-                        "Link": "/Variants/Evolutions"
-                    }
-                ],
-                "scoring": {
-                    "FC": 3,
-                    "HC": 1
-                },
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Polarized Age",
+            "name2": "of Mutations",
+            "type": "Standard",
+            "selectionMethodID": 9,
+            "masterID": "9",
+            "variants": [
+                {
+                    "Name": "Evolution",
+                    "Link": "/Variants/Evolutions"
+                }
+            ],
+            "scoring": {
+                "FC": 3,
+                "HC": 1
+            },
+            "expansion": "Cosmic Odyssey"
         },
         "10": {
-            "original": {
-                "name": "MEGA",
-                "name2": "",
-                "type": "Modifier",
-                "selectionMethodID": null,
-                "body": "Draw another age card. Resolve the alien selection method twice. Use the Double Aliens variant.\n\nAt the end of the game, if this was the first time Mega was drawn this campaign, shuffle it back into the age deck.",
-                "variants": [
-                    {
-                        "Name": "Double Aliens",
-                        "Link": ""
-                    }
-                ],
-                "scoring": {},
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "MEGA",
+            "name2": "",
+            "type": "Modifier",
+            "selectionMethodID": null,
+            "body": [
+                {
+                    "value": "Draw another age card. Resolve the alien selection method twice. Use the Double Aliens variant.\n\nAt the end of the game, if this was the first time Mega was drawn this campaign, shuffle it back into the age deck."
+                }
+            ],
+            "variants": [
+                {
+                    "Name": "Double Aliens",
+                    "Link": ""
+                }
+            ],
+            "scoring": {},
+            "expansion": "Cosmic Odyssey"
         }
     },
     "scoring": {
@@ -277,392 +259,814 @@
     },
     "selectionMethods": {
         "0": {
-            "original": {
-                "name": "Deal 2, Choose 1",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, deal each player two alien sheets facedown. Each player looks at their alien sheets, chooses one, and discards the other. After each player has chosen an alien, they reveal their alien."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Deal 2, Choose 1",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, deal each player two alien sheets facedown. Each player looks at their alien sheets, chooses one, and discards the other. After each player has chosen an alien, they reveal their alien."
+                }
+            ]
         },
         "1": {
-            "original": {
-                "name": "Endowment",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, deal each player two alien sheets. Each player gives one facedown to the player on their right and discards the other. After each player has made their decision, all players reveal the alien they were given."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Endowment",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, deal each player two alien sheets. Each player gives one facedown to the player on their right and discards the other. After each player has made their decision, all players reveal the alien they were given."
+                }
+            ]
         },
         "2": {
-            "original": {
-                "name": "Draw Straws",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, the player to the right of the first player draws a number of alien sheets equal to the number of players. That player chooses one, reveals it, and passes the remaining aliens clockwise to the next player. This process repeats until all players have chosen an alien, with the last player not having a choice."
-            },
-            "revised": {
-                "name": "Draw Straws",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, the first player draws a number of alien sheets equal to the number of players. That player chooses one, reveals it, and passes the remaining aliens clockwise to the next player. This process repeats until all players have chosen an alien, with the last player not having a choice."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "name": "Draw Straws",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, the "
+                },
+                {
+                    "style": {
+                        "revised": ["removed"]
+                    },
+                    "value": "player to the right of the"
+                },
+                {
+                    "value": " first player draws a number of alien sheets equal to the number of players. That player chooses one, reveals it, and passes the remaining aliens clockwise to the next player. This process repeats until all players have chosen an alien, with the last player not having a choice."
+                }
+            ]
         },
         "3": {
-            "original": {
-                "name": "Delegation",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, the first player draws one alien sheet, looks at it, and assigns it to another player. Then, that player draws one alien sheet, looks at it, and assigns it to a player that has not been assigned an alien sheet yet. The process repeats until all but one player has been assigned an alien. That player draws two alien sheets, chooses one to keep, and discards the other."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Delegation",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, the first player draws one alien sheet, looks at it, and assigns it to another player. Then, that player draws one alien sheet, looks at it, and assigns it to a player that has not been assigned an alien sheet yet. The process repeats until all but one player has been assigned an alien. That player draws two alien sheets, chooses one to keep, and discards the other."
+                }
+            ]
         },
         "4": {
-            "original": {
-                "name": "Tidy Bowl",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, deal each player two alien sheets. Each player chooses one to discard and places the other facedown in a pile. The pile is shuffled and one alien from the pile is dealt to each player. Then, each player reveals their dealt alien."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Tidy Bowl",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, deal each player two alien sheets. Each player chooses one to discard and places the other facedown in a pile. The pile is shuffled and one alien from the pile is dealt to each player. Then, each player reveals their dealt alien."
+                }
+            ]
         },
         "5": {
-            "original": {
-                "name": "Draft",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, the player to the right of the first player draws a number of alien sheets equal to one more than the number of players. That player chooses one alien, reveals it, and passes the remaining aliens clockwise to next player. This process repeats until all players have chosen an alien. The remaining alien is discarded."
-            },
-            "revised": {
-                "name": "Draft",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, the first player draws a number of alien sheets equal to one more than the number of players. That player chooses one alien, reveals it, and passes the remaining aliens clockwise to next player. This process repeats until all players have chosen an alien. The remaining alien is discarded."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "name": "Draft",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, the "
+                },
+                {
+                    "style": {
+                        "revised": ["removed"]
+                    },
+                    "value": "player to the right of the"
+                },
+                {
+                    "value": " first player draws a number of alien sheets equal to one more than the number of players. That player chooses one alien, reveals it, and passes the remaining aliens clockwise to next player. This process repeats until all players have chosen an alien. The remaining alien is discarded."
+                }
+            ]
         },
         "6": {
-            "original": {
-                "name": "Unseen",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, the player to the right of the first player is the 'decider'. The decider takes an alien from the top of the alien stack and holds it up so they cannot see it, but all other players can. Clockwise from the decider, each player announces whether or not they want that alien. After each player has made their choice known, the decider either gives the alien to any player who announced that they wanted it or the decider chooses to keep it. If they keep it, the next player clockwise from the decider without an alien becomes the decider and repeats this process. If no one wants the alien, it is discarded, and the decider takes another alien from the top of the stack. When there is only one player without an alien, they draw and keep the alien from the top of the alien stack."
-            },
-            "revised": {
-                "name": "Unseen",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, the first player is the 'decider'. The decider takes an alien from the top of the alien stack and holds it up so they cannot see it, but all other players can. Clockwise from the decider, each player announces whether or not they want that alien. After each player has made their choice known, the decider either gives the alien to any player who announced that they wanted it or the decider chooses to keep it. If they keep it, the next player clockwise from the decider without an alien becomes the decider and repeats this process. If no one wants the alien, it is discarded, and the decider takes another alien from the top of the stack. When there is only one player without an alien, they draw and keep the alien from the top of the alien stack."
-            }
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "name": "Unseen",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, the "
+                },
+                {
+                    "style": {
+                        "revised": ["removed"]
+                    },
+                    "value": "player to the right of the"
+                },
+                {
+                    "value": " first player is the 'decider'. The decider takes an alien from the top of the alien stack and holds it up so they cannot see it, but all other players can. Clockwise from the decider, each player announces whether or not they want that alien. After each player has made their choice known, the decider either gives the alien to any player who announced that they wanted it or the decider chooses to keep it. If they keep it, the next player clockwise from the decider without an alien becomes the decider and repeats this process. If no one wants the alien, it is discarded, and the decider takes another alien from the top of the stack. When there is only one player without an alien, they draw and keep the alien from the top of the alien stack."
+                }
+            ]
         },
         "7": {
-            "original": {
-                "name": "Eliminator",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, reveal two aliens per player and place them in the middle of the play area. The first player chooses an alien to discard. The next player in clockwise order repeats this process until each player has discarded one alien. Then, the first player chooses one alien to take. The next player in clockwise order repeats this process until all players have an alien, with the last player not having a choice."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Eliminator",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, reveal two aliens per player and place them in the middle of the play area. The first player chooses an alien to discard. The next player in clockwise order repeats this process until each player has discarded one alien. Then, the first player chooses one alien to take. The next player in clockwise order repeats this process until all players have an alien, with the last player not having a choice."
+                }
+            ]
         },
         "8": {
-            "original": {
-                "name": "Spectrum",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, separate the aliens into three decks by alert level (green, yellow, and red). Deal each player one card from each deck. Each player chooses one alien sheet and discards the other two. After each player has chosen an alien, they reveal their chosen alien."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Spectrum",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, separate the aliens into three decks by alert level (green, yellow, and red). Deal each player one card from each deck. Each player chooses one alien sheet and discards the other two. After each player has chosen an alien, they reveal their chosen alien."
+                }
+            ]
         },
         "9": {
-            "original": {
-                "name": "Options",
-                "expansion": "Cosmic Odyssey",
-                "body": "When selecting aliens for this age, deal each player two alien sheets. Each player gives one facedown to the player to their left and gives the other facedown to the player to their right. Then, each player picks up both aliens that they were given, chooses one alien sheet, and discards the other. After each player has chosen an alien, they reveal their chosen alien."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Options",
+            "expansion": "Cosmic Odyssey",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, deal each player two alien sheets. Each player gives one facedown to the player to their left and gives the other facedown to the player to their right. Then, each player picks up both aliens that they were given, chooses one alien sheet, and discards the other. After each player has chosen an alien, they reveal their chosen alien."
+                }
+            ]
         },
         "10": {
-            "original": {
-                "name": "Eeny Meany",
-                "expansion": "Fan Made",
-                "body": "The oldest player draws a number of random aliens equal to one more than the number of players. That player assigns each other player one of the aliens. The youngest player decides which of the remaining two aliens to assign to the oldest player."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Eeny Meany",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "The oldest player draws a number of random aliens equal to one more than the number of players. That player assigns each other player one of the aliens. The youngest player decides which of the remaining two aliens to assign to the oldest player."
+                }
+            ]
         },
         "11": {
-            "original": {
-                "name": "Democracy",
-                "expansion": "Fan Made",
-                "body": "Draw a random alien. On the count of three, all players point at one other player (not themselves) they want to assign that alien to. If a majority of players vote for the same player, they get the alien. If there is a tie, the alien is set aside and a new one is drawn. Repeat until all players have an alien except one. That player chooses one of the set-aside aliens if there are any, otherwise they draw one at random."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Democracy",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "Draw a random alien. On the count of three, all players point at one other player (not themselves) they want to assign that alien to. If a majority of players vote for the same player, they get the alien. If there is a tie, the alien is set aside and a new one is drawn. Repeat until all players have an alien except one. That player chooses one of the set-aside aliens if there are any, otherwise they draw one at random."
+                }
+            ]
         },
         "12": {
-            "original": {
-                "name": "Test Your Luck",
-                "expansion": "Fan Made",
-                "body": "Deal out 2 aliens per player, half face up and half face down. Choose a player to go first, picking any alien, and continue counter-clockwise until all players have one alien. Whichever player chose last will be the first player when the game starts."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Test Your Luck",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "Deal out 2 aliens per player, half face up and half face down. Choose a player to go first, picking any alien, and continue counter-clockwise until all players have one alien. Whichever player chose last will be the first player when the game starts."
+                }
+            ]
         },
         "13": {
+            "versions": [
+                "original"
+            ],
             "designNotes": "This one has been edited to be inline with selection method terminology",
-            "original": {
-                "name": "All-in All-the-time",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, each player draws and discards an alien until they get an alien that can be used as any player during any phase, which they keep as their chosen alien."
-            }
+            "name": "All-in All-the-time",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, each player draws and discards an alien until they get an alien that can be used as any player during any phase, which they keep as their chosen alien."
+                }
+            ]
         },
         "14": {
-            "original": {
-                "name": "White Elephant",
-                "expansion": "Fan Made",
-                "body": "The first player draws a random alien and adds it to their coalition. The next player clockwise can either steal an alien from any player's coalition, or draw a random one and add it. Proceed until every player has the same number of aliens in their coalitions.\n\nWhen a player has had an alien stolen from them, they can either steal an alien from someone else (if it hasn't been stolen since the last time a new alien was drawn), or else draw a random alien.\n\nOnce a specific alien has been stolen three times, it cannot be stolen again.\n\nAfter the last player has added an alien to their coalition, the first player can choose to steal an alien from anyone, giving them one of their aliens in return."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "White Elephant",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "The first player draws a random alien and adds it to their coalition. The next player clockwise can either steal an alien from any player's coalition, or draw a random one and add it. Proceed until every player has the same number of aliens in their coalitions.\n\nWhen a player has had an alien stolen from them, they can either steal an alien from someone else (if it hasn't been stolen since the last time a new alien was drawn), or else draw a random alien.\n\nOnce a specific alien has been stolen three times, it cannot be stolen again.\n\nAfter the last player has added an alien to their coalition, the first player can choose to steal an alien from anyone, giving them one of their aliens in return."
+                }
+            ]
         },
         "15": {
-            "original": {
-                "name": "Vote Bowl",
-                "expansion": "Fan Made",
-                "body": "Draw an alien for all to see. Players vote whether or not to add it to the alien pool. If a majority vote yes, set it aside. Otherwise discard it. Continue this until there are as many aliens in the pool as there are players. Then take the alien pool and deal it out randomly to the players."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Vote Bowl",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "Draw an alien for all to see. Players vote whether or not to add it to the alien pool. If a majority vote yes, set it aside. Otherwise discard it. Continue this until there are as many aliens in the pool as there are players. Then take the alien pool and deal it out randomly to the players."
+                }
+            ]
         },
         "16": {
-            "original": {
-                "name": "Rich Pool",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, deal each player an alien and place one alien faceup in the middle of the play area for each player in the game. Starting with the first player and going clockwise, each player may either keep the alien they were dealt or take a faceup alien and replace it with the alien they initially drew. Their previous alien is now available for others to take. After each player has made their decision, all players reveal the alien they were given."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Rich Pool",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, deal each player an alien and place one alien faceup in the middle of the play area for each player in the game. Starting with the first player and going clockwise, each player may either keep the alien they were dealt or take a faceup alien and replace it with the alien they initially drew. Their previous alien is now available for others to take. After each player has made their decision, all players reveal the alien they were given."
+                }
+            ]
         },
         "17": {
-            "original": {
-                "name": "Random",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, each player is dealt a random alien and reveals it. This is their chosen alien."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Random",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, each player is dealt a random alien and reveals it. This is their chosen alien."
+                }
+            ]
         },
         "18": {
-            "original": {
-                "name": "Mad Grab",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, each player is dealt a random alien, but may not yet look at this alien. Place the unused alien pile in the center of the play area where everyone can reach. Then, start a 30-second timer. Players may now simultaneously look at their alien and may, at any time, discard their alien faceup to either draw a new alien from the unused alien pile or take any one faceup, discarded alien. Players may hold up to two aliens at a time while the timer is going, but must hold only one by the time 30 seconds is over. When the 30 seconds are up, each player reveals the alien they are holding, this is their chosen alien. If a player is not holding exactly one alien, then they draw a random alien as their chosen alien."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Mad Grab",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, each player is dealt a random alien, but may not yet look at this alien. Place the unused alien pile in the center of the play area where everyone can reach. Then, start a 30-second timer. Players may now simultaneously look at their alien and may, at any time, discard their alien faceup to either draw a new alien from the unused alien pile or take any one faceup, discarded alien. Players may hold up to two aliens at a time while the timer is going, but must hold only one by the time 30 seconds is over. When the 30 seconds are up, each player reveals the alien they are holding, this is their chosen alien. If a player is not holding exactly one alien, then they draw a random alien as their chosen alien."
+                }
+            ]
         },
         "19": {
-            "original": {
-                "name": "5x5",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, each player writes a 'wish list' of 5 aliens and a 'ban list' of 5 aliens. Players may not put an alien on either list if it is already in a player's coalition. Once everyone has completed their lists, all players reveal them. Any alien that appears on multiple lists is crossed out on all wish lists that contain it. Once all lists are completed and aliens are crossed out, each player collects the remaining aliens from their wish list. If all of a player's aliens in their wish list were crossed out, and that player has no other aliens in their coalition, then they draw a random alien to add to their coalition."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "5x5",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, each player writes a 'wish list' of 5 aliens and a 'ban list' of 5 aliens. Players may not put an alien on either list if it is already in a player's coalition. Once everyone has completed their lists, all players reveal them. Any alien that appears on multiple lists is crossed out on all wish lists that contain it. Once all lists are completed and aliens are crossed out, each player collects the remaining aliens from their wish list. If all of a player's aliens in their wish list were crossed out, and that player has no other aliens in their coalition, then they draw a random alien to add to their coalition."
+                }
+            ]
         },
         "20": {
-            "original": {
-                "name": "Mulligan",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, deal each player a random alien sheet. Each player can choose to either keep their alien or discard and draw again. If a player discards an alien for the second time, they must keep the third alien sheet drawn. After each player has chosen an alien, they reveal their chosen alien."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Mulligan",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, deal each player a random alien sheet. Each player can choose to either keep their alien or discard and draw again. If a player discards an alien for the second time, they must keep the third alien sheet drawn. After each player has chosen an alien, they reveal their chosen alien."
+                }
+            ]
         },
         "21": {
-            "original": {
-                "name": "Random Envoy",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, deal each player a random envoy card. This envoy is added to each player's coalition as if it were a standard alien. When adding flares to the deck, for each player who plays as an envoy, add a random flare instead of a matching flare (since envoys don't have matching flares)."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Random Envoy",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, deal each player a random envoy card. This envoy is added to each player's coalition as if it were a standard alien. When adding flares to the deck, for each player who plays as an envoy, add a random flare instead of a matching flare (since envoys don't have matching flares)."
+                }
+            ]
         },
         "22": {
-            "original": {
-                "name": "Combo Card",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, draw a combo card at random - from a physical deck, or perhaps from this site's combo generator ;). Retrieve all the aliens listed on that card up to the player count, shuffle them then deal them at random to each player. If an alien on the card is in a player's coalition, use the next unused alien on the combo card, if possible, otherwise, draw a random alien, reveal it to all players, and shuffle it with the other aliens on the combo card."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Combo Card",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, draw a combo card at random - from a physical deck, or perhaps from this site's combo generator ;). Retrieve all the aliens listed on that card up to the player count, shuffle them then deal them at random to each player. If an alien on the card is in a player's coalition, use the next unused alien on the combo card, if possible, otherwise, draw a random alien, reveal it to all players, and shuffle it with the other aliens on the combo card."
+                }
+            ]
         },
         "23": {
-            "original": {
-                "name": "Geek",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, the first player starts as “the reader”. The reader draws an unused alien and reads out the alien's history blurb (at the bottom in italics), except they do not say the name of the alien if/when it ever comes up. Other players may guess the name of an alien at any time. The first player to make a correct guess gets a token and assigns that alien to a player (including themselves) who does not yet have an alien. The player that receives the alien becomes the reader and the process continues.\n\nIn the case of a tie (i.e., too close to call), the reader puts the alien aside and draws another alien. If the reader gets to the end of the history and no one can guess the alien after a short time, the reader chooses who receives the alien.\n\nPlayers who have received an alien may continue to guess (but they cannot assign the alien to themselves). Once everyone but one person has been assigned an alien, that player draws a random alien, plus an additional alien for each token they have, and can choose one alien from any of those drawn or any aliens put aside to play as."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Geek",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, the first player starts as “the reader”. The reader draws an unused alien and reads out the alien's history blurb (at the bottom in italics), except they do not say the name of the alien if/when it ever comes up. Other players may guess the name of an alien at any time. The first player to make a correct guess gets a token and assigns that alien to a player (including themselves) who does not yet have an alien. The player that receives the alien becomes the reader and the process continues.\n\nIn the case of a tie (i.e., too close to call), the reader puts the alien aside and draws another alien. If the reader gets to the end of the history and no one can guess the alien after a short time, the reader chooses who receives the alien.\n\nPlayers who have received an alien may continue to guess (but they cannot assign the alien to themselves). Once everyone but one person has been assigned an alien, that player draws a random alien, plus an additional alien for each token they have, and can choose one alien from any of those drawn or any aliens put aside to play as."
+                }
+            ]
         },
         "24": {
-            "original": {
-                "name": "Replacement",
-                "expansion": "Fan Made",
-                "body": "If this is the first game of a campaign, or if playing a single-shot game, this selection method is not used. Instead, draw another age card and use that card's selection method.\n\nWhen selecting aliens for this age, deal each player an alien. Starting with the first player, each player chooses an alien from any one player's coalition (including their own) to remove from that player's coalition and replace it with their drawn alien. A player may choose to replace an alien that itself was a replacement for another alien."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Replacement",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "If this is the first game of a campaign, or if playing a single-shot game, this selection method is not used. Instead, draw another age card and use that card's selection method.\n\nWhen selecting aliens for this age, deal each player an alien. Starting with the first player, each player chooses an alien from any one player's coalition (including their own) to remove from that player's coalition and replace it with their drawn alien. A player may choose to replace an alien that itself was a replacement for another alien."
+                }
+            ]
         },
         "25": {
-            "original": {
-                "name": "Alien Index",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, the first player draws an alien at random, then draws the next alien alphabetically from that alien. All other players, going clockwise, draw the next two aliens in alphabetical order (looping back from Z to A if necessary) until each player has two aliens. Then, each player chooses one of the two to keep, and discards the other."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Alien Index",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, the first player draws an alien at random, then draws the next alien alphabetically from that alien. All other players, going clockwise, draw the next two aliens in alphabetical order (looping back from Z to A if necessary) until each player has two aliens. Then, each player chooses one of the two to keep, and discards the other."
+                }
+            ]
         },
         "26": {
-            "original": {
-                "name": "Something New",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, each player draws aliens at random until they find two that they do not remember ever playing before. Each player chooses one of these two aliens to play. If a player somehow recalls playing every single alien, they choose whichever power they think they played the longest ago. Then, each player reveals their chosen alien."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Something New",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, each player draws aliens at random until they find two that they do not remember ever playing before. Each player chooses one of these two aliens to play. If a player somehow recalls playing every single alien, they choose whichever power they think they played the longest ago. Then, each player reveals their chosen alien."
+                }
+            ]
         },
         "27": {
-            "original": {
-                "name": "Coronal Ejection",
-                "expansion": "Fan Made",
-                "body": "This selection method also affects starting hands.\n\nWhen selecting aliens for this age, each player draws three aliens and chooses two to reveal and add to their coalition. When adding flares to the deck, each player adds only their super flare to the deck and collects the other flares among those from aliens in their coalition and the flare of the alien they did not choose from this selection method. Then, each player selects one additional flare to add to the deck and a 2nd flare to add to their starting hand after they have been dealt."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Coronal Ejection",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "This selection method also affects starting hands.\n\nWhen selecting aliens for this age, each player draws three aliens and chooses two to reveal and add to their coalition. When adding flares to the deck, each player adds only their super flare to the deck and collects the other flares among those from aliens in their coalition and the flare of the alien they did not choose from this selection method. Then, each player selects one additional flare to add to the deck and a 2nd flare to add to their starting hand after they have been dealt."
+                }
+            ]
         },
         "28": {
-            "original": {
-                "name": "Token Toss",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, draw two aliens for each player and arrange them in the center of the playing area in a square-like fashion (or as close to a square as possible). Starting with the first player and continuing clockwise, each player takes one attempt at throwing a Cosmic token onto an alien sheet, adding whichever alien the token lands on to their coalition. Tokens that do not land fully on a single alien sheet do not count. If the thrower fails to land their token on a sheet, they must wait for everyone else to throw the token before they get a second go. This continues until everyone has received one alien."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Token Toss",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, draw two aliens for each player and arrange them in the center of the playing area in a square-like fashion (or as close to a square as possible). Starting with the first player and continuing clockwise, each player takes one attempt at throwing a Cosmic token onto an alien sheet, adding whichever alien the token lands on to their coalition. Tokens that do not land fully on a single alien sheet do not count. If the thrower fails to land their token on a sheet, they must wait for everyone else to throw the token before they get a second go. This continues until everyone has received one alien."
+                }
+            ]
         },
         "29": {
-            "original": {
-                "name": "Theft and Shrubbery",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, each player draws two aliens to add to their coalition. The first player chooses an alien from the coalition of the player to their left to remove from that player's coalition and add to their own. That player then does the same for the player to their left, and so on until every player has done so."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Theft and Shrubbery",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, each player draws two aliens to add to their coalition. The first player chooses an alien from the coalition of the player to their left to remove from that player's coalition and add to their own. That player then does the same for the player to their left, and so on until every player has done so."
+                }
+            ]
         },
         "30": {
-            "original": {
-                "name": "Fresh Blood",
-                "expansion": "Fan Made",
-                "body": "Each player draws an alien at random to add to their coalition. When selecting an alien for this game, each player must select an alien they have not played before (if able)."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Fresh Blood",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "Each player draws an alien at random to add to their coalition. When selecting an alien for this game, each player must select an alien they have not played before (if able)."
+                }
+            ]
         },
         "31": {
-            "original": {
-                "name": "Leasing Agent",
-                "expansion": "Fan Made",
-                "body": "Each player draws two aliens and chooses one to keep, discarding the other.\n\nAfter aliens have been initially selected, starting with the first player and going clockwise, each player must offer any one player an alien from their coalition to use this game only. If that player accepts, the alien is leased for this age and used by that player. If they have already selected an alien, they play as the leased alien instead. If rejected, the player who made the offer must play as that alien instead of the alien they offered."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Leasing Agent",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "Each player draws two aliens and chooses one to keep, discarding the other.\n\nAfter aliens have been initially selected, starting with the first player and going clockwise, each player must offer any one player an alien from their coalition to use this game only. If that player accepts, the alien is leased for this age and used by that player. If they have already selected an alien, they play as the leased alien instead. If rejected, the player who made the offer must play as that alien instead of the alien they offered."
+                }
+            ]
         },
         "32": {
-            "original": {
-                "name": "Eliminator 2.0",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, reveal two aliens per player and place them in the middle of the play area. Additionally, give each player two tokens. Each player, starting with the first and going clockwise, places a token on an alien sheet of their choice. Once each player has done this, do it a second time starting with the last player and going anti-clockwise. Once you've done this process, discard any aliens with two tokens on them. Shuffle the remaining aliens together and deal each player a random alien."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Eliminator 2.0",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, reveal two aliens per player and place them in the middle of the play area. Additionally, give each player two tokens. Each player, starting with the first and going clockwise, places a token on an alien sheet of their choice. Once each player has done this, do it a second time starting with the last player and going anti-clockwise. Once you've done this process, discard any aliens with two tokens on them. Shuffle the remaining aliens together and deal each player a random alien."
+                }
+            ]
         },
         "33": {
-            "original": {
-                "name": "Favorites",
-                "expansion": "Fan Made",
-                "body": "When selecting aliens for this age, the player to the right of the first player takes any one unused alien, reveals it, and passes the remaining aliens to the next player counter-clockwise until everyone has chosen an alien."
-            }
+            "versions": [
+                "original"
+            ],
+            "name": "Favorites",
+            "expansion": "Fan Made",
+            "body": [
+                {
+                    "value": "When selecting aliens for this age, the player to the right of the first player takes any one unused alien, reveals it, and passes the remaining aliens to the next player counter-clockwise until everyone has chosen an alien."
+                }
+            ]
         }
     },
     "master": {
         "0": {
-            "original": {
-                "name": "Innovation",
-                "body": "If the Technology variant is being used, draw two additional tech cards.\n\nIf the Technology variant (🕮10) is not being used, add it, but only you draw tech cards during setup. During the game, only you can draw additional techs.",
-                "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Innovation",
-                "body": "If the Technology variant is being used, draw two additional tech cards.\n\nIf the Technology variant (🕮9) is not being used, add it, but only you draw tech cards during setup. During the game, only you can draw additional techs.",
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw:\n\nEdited to correct the rulebook reference."
-            }
+            "name": "Innovation",
+            "body": [
+                {
+                    "value": "If the Technology variant is being used, draw two additional tech cards.\n\nIf the Technology variant (🕮"
+                },
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "value": "10"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "value": "9"
+                },
+                {
+                    "value": ") is not being used, add it, but only you draw tech cards during setup. During the game, only you can draw additional techs."
+                }
+            ],
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "expansion": "Cosmic Odyssey"
         },
         "1": {
-            "original": {
-                "name": "Incursion",
-                "body": "Draw two ultra reward cards as part of your opening hand.\n\nIf the Reward Deck variant (🕮10) is not being used, add it. If it is already being used, add the Ultra Reward Deck sub-variant.",
-                "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Incursion",
-                "body": "Draw two ultra reward cards as part of your starting hand.\n\nIf the Reward Deck variant (🕮10) is not being used, add it. If it is already being used, add the Ultra Reward Deck sub-variant.",
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
-            }
+            "name": "Incursion",
+            "body": [
+                {
+                    "value": "Draw two ultra reward cards as part of your "
+                },
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "value": "opening"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "value": "starting"
+                },
+                {
+                    "value": " hand.\n\nIf the Reward Deck variant (🕮10) is not being used, add it. If it is already being used, add the Ultra Reward Deck sub-variant."
+                }
+            ],
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "expansion": "Cosmic Odyssey"
         },
         "2": {
-            "original": {
-                "name": "Conflict",
-                "body": "Draw two flares from the unused flare deck as part of your opening hand.\n\nIf the Hazard Deck variant (🕮11) is not being used, add it.",
-                "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Incursion",
-                "body": "Draw two flares from the unused flare deck as part of your starting hand.\n\nIf the Hazard Deck variant (🕮11) is not being used, add it.",
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
-            }
+            "name": "Conflict",
+            "body": [
+                {
+                    "value": "Draw two flares from the unused flare deck as part of your "
+                },
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "value": "opening"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "value": "starting"
+                },
+                {
+                    "value": " hand.\n\nIf the Hazard Deck variant (🕮11) is not being used, add it."
+                }
+            ],
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "expansion": "Cosmic Odyssey"
         },
         "3": {
-            "original": {
-                "name": "Alliances",
-                "body": "Draw four envoy cards, place up faceup next to your alien sheet, and shuffle the other three into the envoy deck.",
-                "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Incursion",
-                "body": "Draw four envoy cards, choose one to keep, and shuffle the other three into the envoy deck.",
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
-            }
+            "name": "Alliances",
+            "body": [
+                {
+                    "value": "Draw four envoy cards, "
+                },
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "value": "place one faceup next to your alien sheet"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "value": "choose one to keep"
+                },
+                {
+                    "value": ", and shuffle the other three into the envoy deck."
+                }
+            ],
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "expansion": "Cosmic Odyssey"
         },
         "4": {
-            "original": {
-                "name": "Storms",
-                "body": "If the Space Stations variant is being used, you (and no one else) perform its setup again.\n\nIf the Space Stations variant (🕮13) is not being used, add it, but only you perform its setup. During Step 1, keep all three cards.",
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Storms",
+            "body": [
+                {
+                    "value": "If the Space Stations variant is being used, you (and no one else) perform its setup again.\n\nIf the Space Stations variant (🕮13) is not being used, add it, but only you perform its setup. During Step 1, keep all three cards."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "expansion": "Cosmic Odyssey"
         },
         "5": {
-            "original": {
-                "name": "Dominion",
-                "body": "If the Reward Deck variant (🕮10) is not being used, add it. If it is already being used, add the Ultra Reward Deck sub-variant.\n\nWhenever you draw a new hand (including your opening hand), you may draw up to two reward cards as part of your hand.",
-                "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Dominion",
-                "body": "If the Reward Deck variant (🕮10) is not being used, add it. If it is already being used, add the Ultra Reward Deck sub-variant.\n\nWhenever you draw a new hand (including your starting hand), you may draw up to two reward cards as part of your hand.",
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
-            }
+            "name": "Dominion",
+            "body": [
+                {
+                    "value": "If the Reward Deck variant (🕮10) is not being used, add it. If it is already being used, add the Ultra Reward Deck sub-variant.\n\nWhenever you draw a new hand (including your "
+                },
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "value": "opening"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "value": "starting"
+                },
+                {
+                    "value": " hand), you may draw up to two reward cards as part of your hand."
+                }
+            ],
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "expansion": "Cosmic Odyssey"
         },
         "6": {
-            "original": {
-                "name": "Eons",
-                "body": "Add the Foreign Aid variant (🕮18).\n\nDraw three privilege cards, choose two to keep, and shuffle the other card into the privilege deck.",
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Eons",
+            "body": [
+                {
+                    "value": "Add the Foreign Aid variant (🕮18).\n\nDraw three privilege cards, choose two to keep, and shuffle the other card into the privilege deck."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "expansion": "Cosmic Odyssey"
         },
         "7": {
-            "original": {
-                "name": "Frontiers",
-                "body": "If the Moons variant is being used, you (and no one else) perform its setup again.\n\nIf the Moons variant (🕮15) is not being used, add it, but only you perform its setup and draw one additional moon card.\n\nYou may immediately occupy any of your non-cheesy moons.",
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Frontiers",
+            "body": [
+                {
+                    "value": "If the Moons variant is being used, you (and no one else) perform its setup again.\n\nIf the Moons variant (🕮15) is not being used, add it, but only you perform its setup and draw one additional moon card.\n\nYou may immediately occupy any of your non-cheesy moons."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "expansion": "Cosmic Odyssey"
         },
         "8": {
-            "original": {
-                "name": "Luminance",
-                "body": "If the Lux variant is being used, draw one additional lux card.\n\nIf the Lux variant (🕮16) is not being used, after you draw your opening hand, draw 2 flares from the unused flare deck.",
-                "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Luminance",
-                "body": "If the Lux variant (🕮16) is being used, after setup, draw one additional lux card and keep it lux market side facedown.\n\nIf the Lux variant is not being used, after you draw your starting hand, draw 2 flares from the unused flare deck.",
-                "expansion": "Cosmic Odyssey",
-                "revisionNotes": "Revisions from The Praw:\n\nEdited for consistency."
-            }
+            "name": "Luminance",
+            "body": [
+                {
+                    "value": "If the Lux variant "
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "value": "(🕮16)"
+                },
+                {
+                    "value": " is being used, draw one additional lux card.\n\nIf the Lux variant "
+                },
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "value": "(🕮16)"
+                },
+                {
+                    "value": " is not being used, after you draw your "
+                },
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "value": "opening"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "value": "starting"
+                },
+                {
+                    "value": " hand, draw 2 flares from the unused flare deck."
+                }
+            ],
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "expansion": "Cosmic Odyssey"
         },
         "9": {
-            "original": {
-                "name": "Mutations",
-                "body": "Whether or not the Evolution variant (🕮17) is being used, draw two evolution cards, place one faceup next to your alien sheet, and shuffle the other into the evolution deck. Each other player places one of their ships on the card and cannot place any additional ships there.",
-                "expansion": "Cosmic Odyssey"
-            },
-            "revised": {
-                "name": "Mutations",
-                "body": "If the Evolution variant (🕮17) is not being used, add it but don't perform its setup.\n\nDraw two evolution cards, place one faceup next to your alien sheet, and shuffle the other into the evolution deck. Each other player places one of their ships on the card.\n\nOnly you may place ships on the evolution next to your alien sheet. (Other players may remove ships as usual.)",
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Mutations",
+            "body": [
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "value": "Whether or not the Evolution variant (🕮17) is being used, "
+                },
+                {
+                    "style": {
+                        "revised": [
+                            "none"
+                        ]
+                    },
+                    "value": "d"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "value": "If the Evolution variant (🕮17) is not being used, add it but don't perform its setup.\n\nD"
+                },
+                {
+                    "value": "raw two evolution cards, place one faceup next to your alien sheet, and shuffle the other into the evolution deck. Each other player places one of their ships on the card"
+                },
+                {
+                    "style": {
+                        "revised": [
+                            "removed"
+                        ]
+                    },
+                    "value": " and cannot place any additional ships there"
+                },
+                {
+                    "value": "."
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "value": "\n\nOnly you may place ships on the evolution next to your alien sheet. (Other players may remove ships as usual.)"
+                }
+            ],
+            "versions": [
+                "original",
+                "revised"
+            ],
+            "expansion": "Cosmic Odyssey"
         },
         "10": {
-            "original": {
-                "name": "Doubling Up",
-                "body": "If the Double Aliens variant (🕮18) is not being used, you may add it.\n\nYou (and no one else) use the Hidden Aliens variant (🕮19). To do so, return your selected alien(s) to your coalition and select again.",
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Doubling Up",
+            "body": [
+                {
+                    "value": "If the Double Aliens variant (🕮18) is not being used, you may add it.\n\nYou (and no one else) use the Hidden Aliens variant (🕮19). To do so, return your selected alien(s) to your coalition and select again."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "expansion": "Cosmic Odyssey"
         },
         "11": {
-            "original": {
-                "name": "Abandonment",
-                "body": "Cross out one alien in another player's coalition and remove it from the game.\n\nIf the other player had selected the crossed-out alien, they must select another alien from their coalition.",
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Abandonment",
+            "body": [
+                {
+                    "value": "Cross out one alien in another player's coalition and remove it from the game.\n\nIf the other player had selected the crossed-out alien, they must select another alien from their coalition."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "expansion": "Cosmic Odyssey"
         },
         "12": {
-            "original": {
-                "name": "Betrayal",
-                "body": "Cross out one alien in another player's coalition and add it to yours. You must play with that alien instead of the one you selected.\n\nIf the other player had selected the crossed-out alien, they must select another alien from their coalition.",
-                "expansion": "Cosmic Odyssey"
-            }
+            "name": "Betrayal",
+            "body": [
+                {
+                    "value": "Cross out one alien in another player's coalition and add it to yours. You must play with that alien instead of the one you selected.\n\nIf the other player had selected the crossed-out alien, they must select another alien from their coalition."
+                }
+            ],
+            "versions": [
+                "original"
+            ],
+            "expansion": "Cosmic Odyssey"
         }
     }
 }
