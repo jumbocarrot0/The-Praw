@@ -1,5 +1,5 @@
 import { createClient } from "@supabase/supabase-js"
-import Revisions from "../dataFiles/revisions2.json"
+import Revisions from "../dataFiles/revisions.json"
 import RevisionNotes from "../dataFiles/revisionNotes.json"
 import faq from "../dataFiles/faq.json"
 
@@ -39,7 +39,7 @@ export async function getAlien(index) {
         .limit(1)
         .single()
 
-    console.log(data.original)
+    // console.log(data.original)
 
     const fields = ['powerName', 'powerSpecialName', 'short', 'powerBody', 'powerSpecialBody', 'wildBody', 'superBody', 'wildClassicBody', 'superClassicBody', 'history', "gameSetup", "bans", "essences"].filter(field => Object.keys(data.original).includes(field) || field === "bans" || field === "essences")
     // console.log(fields)
@@ -84,35 +84,35 @@ export async function getAlien(index) {
             } else {
                 data.original[field] = Revisions[index][field]
             }
-            if (RevisionNotes[index]) {
-                if (field === "essences") {
-                    if (Revisions[index][field].name){
-                        data.original[field].name.forEach((revision, i) => {
-                            Revisions[index][field].name[i].revisionNote = RevisionNotes[index][revision?.revisionID]
-                        })
-                    }
-                    if (Revisions[index][field].list){
-                        Object.keys(data.original[field].list).forEach(cardID => {
-                            if (Revisions[index][field].list[cardID]){
-                                if (Revisions[index][field].list[cardID].name){
-                                    data.original[field].list[cardID].name.forEach((revision, i) => {
-                                        Revisions[index][field].list[cardID].name[i].revisionNote = RevisionNotes[index][revision?.revisionID]
-                                    })
-                                }
-                                if (Revisions[index][field].list[cardID].body){
-                                    data.original[field].list[cardID].body.forEach((revision, i) => {
-                                        Revisions[index][field].list[cardID].body[i].revisionNote = RevisionNotes[index][revision?.revisionID]
-                                    })
-                                }
-                            }
-                        })
-                    }
-                } else {
-                    data.original[field].forEach((revision, i) => {
-                        Revisions[index][field][i].revisionNote = RevisionNotes[index][revision?.revisionID]
-                    })
-                }
-            }
+            // if (RevisionNotes.aliens[index]) {
+            //     if (field === "essences") {
+            //         if (Revisions[index][field].name){
+            //             data.original[field].name.forEach((revision, i) => {
+            //                 Revisions[index][field].name[i].revisionNote = RevisionNotes.aliens[index][revision?.revisionID]
+            //             })
+            //         }
+            //         if (Revisions[index][field].list){
+            //             Object.keys(data.original[field].list).forEach(cardID => {
+            //                 if (Revisions[index][field].list[cardID]){
+            //                     if (Revisions[index][field].list[cardID].name){
+            //                         data.original[field].list[cardID].name.forEach((revision, i) => {
+            //                             Revisions[index][field].list[cardID].name[i].revisionNote = RevisionNotes.aliens[index][revision?.revisionID]
+            //                         })
+            //                     }
+            //                     if (Revisions[index][field].list[cardID].body){
+            //                         data.original[field].list[cardID].body.forEach((revision, i) => {
+            //                             Revisions[index][field].list[cardID].body[i].revisionNote = RevisionNotes.aliens[index][revision?.revisionID]
+            //                         })
+            //                     }
+            //                 }
+            //             })
+            //         }
+            //     } else {
+            //         data.original[field].forEach((revision, i) => {
+            //             Revisions[index][field][i].revisionNote = RevisionNotes.aliens[index][revision?.revisionID]
+            //         })
+            //     }
+            // }
         }
     }
     const timingFields = ['powerTiming', 'wildTiming', 'superTiming', 'wildClassicTiming', 'superClassicTiming'].filter(field => Object.keys(data.original).includes(field))
@@ -121,11 +121,11 @@ export async function getAlien(index) {
             for (const timing_field of ['player', 'choice', 'phases']) {
                 if (Revisions[index][field][timing_field]) {
                     data.original[field][timing_field] = Revisions[index][field][timing_field]
-                    if (RevisionNotes[index]) {
-                        data.original[field][timing_field].forEach((revision, i) => {
-                            Revisions[index][field][timing_field][i].revisionNote = RevisionNotes[index][revision?.revisionID]
-                        })
-                    }
+                    // if (RevisionNotes.aliens[index]) {
+                    //     data.original[field][timing_field].forEach((revision, i) => {
+                    //         Revisions[index][field][timing_field][i].revisionNote = RevisionNotes.aliens[index][revision?.revisionID]
+                    //     })
+                    // }
                 } else if (data.original[field][timing_field]) {
                     data.original[field][timing_field] = [{ style: [], value: data.original[field][timing_field] }]
                 }
@@ -144,13 +144,13 @@ export async function getAlien(index) {
         data.original.versions = ["original"]
     }
 
-    if (faq.aliens[index]) {
-        data.original.faq = faq.aliens[index]
-    } else {
-        data.original.faq = []
-    }
+    // if (faq.aliens[index]) {
+    //     data.original.faq = faq.aliens[index]
+    // } else {
+    //     data.original.faq = []
+    // }
 
-    console.log(data.original)
+    // console.log(data.original)
 
     return data.original
 }
