@@ -1767,7 +1767,7 @@
     },
     "30": {
         "body": [{
-            "value": "During this encounter, this card may be offered as part of a deal. Otherwise, at the end of the encounter, it is added to the winner's hand (after compensation, if any). While this card is in a player's hand, it has the following ability:\n\nAfter you reveal an attack card, you may reveal this card to treat the attack card at an attack 15 or, if you discard this card, an atrtack 30."
+            "value": "During this encounter, this card may be offered as part of a deal. Otherwise, at the end of the encounter, it is added to the winner's hand (after compensation, if any). While this card is in a player's hand, it has the following ability:\n\nAfter you reveal an attack card, you may reveal this card to treat the attack card at an attack 15 or, if you discard this card, an attack 30."
         }],
         "versions": [
             "original"

@@ -928,7 +928,21 @@
                     "value": "(🕮16)"
                 },
                 {
-                    "value": " is being used, draw one additional lux card.\n\nIf the Lux variant "
+                    "value": " is being used, draw one additional lux card"
+                },
+                {
+                    "style": {
+                        "original": [
+                            "none"
+                        ],
+                        "revised": [
+                            "added"
+                        ]
+                    },
+                    "value": " during setup and choose two to keep face up"
+                },
+                {
+                    "value": ".\n\nIf the Lux variant "
                 },
                 {
                     "style": {

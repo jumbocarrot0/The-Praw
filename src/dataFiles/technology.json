@@ -2070,7 +2070,7 @@
             "expansion": "Cosmic Odyssey",
             "short": [
                 {
-                    "value": "Zap Powers with Falres."
+                    "value": "Zap Powers with Flares."
                 }
             ],
             "body": [
@@ -2362,7 +2362,7 @@
             ],
             "body": [
                 {
-                    "value": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to reveal all flares in the discard pile an in each other player's hand. For each ship on this tech, take one revealed flare of your choice and add it to your hand. This, discard this tech and send all ships on it to the warp."
+                    "value": "You cannot complete this tech.\n\nWhile a hazard warning is active, you may reveal this tech to reveal all flares in the discard pile and in each other player's hand. For each ship on this tech, take one revealed flare of your choice and add it to your hand. This, discard this tech and send all ships on it to the warp."
                 }
             ],
             "versions": [
@@ -2561,14 +2561,7 @@
                 "phases": [
                     {
                         "value": {
-                            "startTurn": true,
-                            "regroup": true,
-                            "destiny": true,
-                            "launch": true,
-                            "alliance": true,
-                            "planning": true,
-                            "reveal": true,
-                            "resolution": true
+                            "reveal": true
                         }
                     }
                 ]
