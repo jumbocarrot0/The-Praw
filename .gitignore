@@ -44,3 +44,13 @@ src/images/alien icons/avatar_Sorcerer2.png
 
 .vercel
 src/components/Button.jsx
+src/dataFiles/genEnvoyRevisions.js
+src/dataFiles/genHazardRevisions.js
+src/dataFiles/genLuxRevisions.js
+src/dataFiles/genMoonRevisions.js
+src/dataFiles/genPrivilegeRevisions.js
+src/dataFiles/genRevisions.js
+src/dataFiles/genStationRevisions.js
+src/dataFiles/genTechRevisions.js
+src/dataFiles/genWrenchRevisions.js
+src/uploadAliens.js
