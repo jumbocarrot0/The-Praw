@@ -1158,7 +1158,7 @@
         "0": {
             "1": {"note": "Edited to avoid referencing ships from \"this tech card\" upon use, as techs have no ships on them once completed.", "author": "The Praw"},
             "2": {"note": "Edited to allow researching ships to be used to form a colony if researching player has no Colony.", "author": "Cosmodex"},
-            "3": {"note": "Edited to allow researching ships to be used to form a colony if researching player has no Colony.", "author": "The Praw"},
+            "3": {"note": "Edited for brevity.", "author": "The Praw"},
             "4": {"note": "Edited for brevity and consistency with Odyssey techs.", "author": "The Praw"},
             "5": {"note": "Edited for wording consistency.", "author": "Cosmodex"},
             "6": {"note": "Edited to fix the \"coexistence bug\" that implies this overrides effects such as Filth.", "author": "Cosmodex"}
