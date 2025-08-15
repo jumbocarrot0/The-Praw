@@ -11154,7 +11154,7 @@
                 },
                 {
                     "style": {},
-                    "value": " use this flare"
+                    "value": " use this flare "
                 },
                 {
                     "style": {
@@ -18228,7 +18228,7 @@
                 },
                 {
                     "style": {},
-                    "value": " tokens from your sheet "
+                    "value": " tokens from your sheet"
                 },
                 {
                     "style": {
@@ -18236,7 +18236,7 @@
                             "removed"
                         ]
                     },
-                    "value": "to use your power",
+                    "value": " to use your power",
                     "revisionID": 5
                 },
                 {
@@ -53672,7 +53672,7 @@
                 },
                 {
                     "style": {},
-                    "value": "A player cannot be reduced to fewer ships than the number of foreign colonies needed to win the game. Any eradicated ships that would reduce a player below this number are sent to the warp as "
+                    "value": " A player cannot be reduced to fewer ships than the number of foreign colonies needed to win the game. Any eradicated ships that would reduce a player below this number are sent to the warp as "
                 },
                 {
                     "style": {
@@ -63770,7 +63770,7 @@
                 },
                 {
                     "style": {},
-                    "value": " this power to choose which side your vector token is faceup: either its normal or its reverse side. If the reverse side is faceup and your side of the encounter wins, you gain the effect of winning as though you had been on the other side of the encounter (i.e., landing on the planet if allies with the defense or receiving rewards if allied with the offense). If the normal side is faceup and your side of the encounter wins, you gain the normal effects of winning. This power overrides other effects that change what happens if you win."
+                    "value": " this power to choose which side your vector token is faceup: either its normal or its reverse side. If the reverse side is faceup and your side of the encounter wins, you gain the effect of winning as though you had been on the other side of the encounter (i.e., landing on the planet if allied with the defense or receiving rewards if allied with the offense). If the normal side is faceup and your side of the encounter wins, you gain the normal effects of winning. This power overrides other effects that change what happens if you win."
                 }
             ],
             "powerName": [
