@@ -26367,8 +26367,23 @@
                 ],
                 "player": [
                     {
-                        "style": {},
+                        "style": {
+                            "revised": [
+                                "removed"
+                            ]
+                        },
                         "value": "Main Player Only"
+                    },
+                    {
+                        "style": {
+                            "original": [
+                                "none"
+                            ],
+                            "revised": [
+                                "added"
+                            ]
+                        },
+                        "value": "Offense Only"
                     }
                 ]
             },
