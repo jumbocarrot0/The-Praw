@@ -27888,7 +27888,19 @@
                 },
                 {
                     "style": {},
-                    "value": "reward you receive, you may both draw a card "
+                    "value": "reward you receive, you may "
+                },
+                {
+                    "style": {
+                        "all": [
+                            "bold"
+                        ]
+                    },
+                    "value": "both"
+                },
+                {
+                    "style": {},
+                    "value": " draw a card "
                 },
                 {
                     "style": {
@@ -27902,8 +27914,7 @@
                 {
                     "style": {
                         "all": [
-                            "bold",
-                            "heading"
+                            "bold"
                         ]
                     },
                     "value": "and"
