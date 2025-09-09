@@ -57757,7 +57757,11 @@
                 "choice": "",
                 "phases": [
                     {
-                        "style": {},
+                        "style": {
+                            "revised": [
+                                "removed"
+                            ]
+                        },
                         "value": {
                             "launch": true,
                             "reveal": false,
@@ -57767,6 +57771,26 @@
                             "planning": false,
                             "startTurn": false,
                             "resolution": false
+                        }
+                    },
+                    {
+                        "style": {
+                            "original": [
+                                "none"
+                            ],
+                            "revised": [
+                                "added"
+                            ]
+                        },
+                        "value": {
+                            "launch": true,
+                            "reveal": true,
+                            "destiny": true,
+                            "regroup": true,
+                            "alliance": true,
+                            "planning": true,
+                            "startTurn": true,
+                            "resolution": true
                         }
                     }
                 ],
