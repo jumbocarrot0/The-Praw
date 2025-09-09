@@ -37,7 +37,7 @@ export default function IndividualTechPage() {
             <h1 className='text-light d-inline'>{tech[tab].name}</h1> <h3 className='text-light d-inline'>({tech[tab].expansion})</h3>
           </span>
           <h3 className='text-light'>{tech[tab].type}</h3>
-          {tech[tab].refresh ? <p>When completed, draw another Techs.</p> : null}
+          {tech[tab].refresh ? <p>When completed, draw another Tech.</p> : null}
           <p><strong>{tech[tab].short}</strong> {tech[tab].body}</p>
           <div style={{ width: (tech[tab].type === "Mili-Tech" ? 75 : 50) + 'px', height: (tech[tab].type === "Mili-Tech" ? 40 : 50) + 'px' }} className={
             tech[tab].type === "Mili-Tech" ? 'border rounded bg-success text-light text-center mb-2 fs-3' : 'border rounded-circle bg-indigo text-light text-center mb-2 fs-2'
