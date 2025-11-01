@@ -246,7 +246,7 @@
             ],
             "body": [
                 {
-                    "text": "If the Reward Deck variant (🕮10) is not being used, add it.\n\n"
+                    "value": "If the Reward Deck variant (🕮10) is not being used, add it.\n\n"
                 },
                 {
                     "style": {
